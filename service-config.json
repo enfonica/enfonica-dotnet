@@ -1,0 +1,13 @@
+{
+  "loadBalancingConfig": [
+    { "round_robin": {} }
+  ],
+  "methodConfig": [
+    {
+      "name": [
+        { "service": "enfonica.messaging.v1.Messages" }
+      ],
+      "timeout": "10s"
+    }
+  ]
+}

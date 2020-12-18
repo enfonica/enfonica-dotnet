@@ -1,0 +1,9 @@
+{
+  "apis": [
+    {
+      "id": "messaging",
+      "generator": "micro",
+      "protoPath": "enfonica/messaging/v1"
+    }
+  ]
+}
