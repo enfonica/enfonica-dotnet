@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Version>1.0.0-alpha01</Version>
+
+    <TargetFrameworks>netstandard2.0;net461</TargetFrameworks>
+    <TargetFrameworks Condition="'$(OS)' != 'Windows_NT'">netstandard2.0</TargetFrameworks>
+    <LangVersion>latest</LangVersion>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <Deterministic>true</Deterministic>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+
+    <Description>
+      Enfonica client library to access the Enfonica APIs, which provide reliable cloud-based telecommunications services including Cloud SMS, Cloud Voice and Phone Numbers.
+    </Description>
+    <PackageTags>Enfonica;Cloud;SMS;Voice;Phone;Numbers</PackageTags>
+    <Copyright>Copyright 2020 Enfonica Pty Ltd</Copyright>
+    <PackageIconUrl>https://enfonica.com/images/enfonica-icon-64x64.png</PackageIconUrl>
+    <PackageLicenseUrl>https://www.apache.org/licenses/LICENSE-2.0</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/enfonica/enfonica-dotnet</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/enfonica/enfonica-dotnet</RepositoryUrl>
+
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google.Api.Gax.Grpc.GrpcCore" Version="3.1.0" />
+    <PackageReference Include="Grpc.Core" Version="2.32.0" />
+    <PackageReference Include="Google.Protobuf" Version="3.13.0" />
+  </ItemGroup>
+
+</Project>

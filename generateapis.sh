@@ -155,9 +155,6 @@ generate_microgenerator() {
   # the common resources proto. Clean up for now; this is being fixed in the generator.
   rm -rf $API_TMP_DIR/Google.Cloud{,.Snippets,.Tests}
 
-  # We generate our own project files
-  rm $(find tmp -name '*.csproj')
-  
   # Copy the rest into the right place
   # cp -r $API_TMP_DIR $API_OUT_DIR
   mv $GRPC_TMP_DIR/*.g.cs $API_OUT_DIR/$PACKAGE/$PACKAGE
