@@ -266,5 +266,8 @@ __pycache__/
 # Skaffold build artifacts
 build.out
 
-# Temporary files
-tmp/
+# Used when generating APIs
+tmp
+googleapis
+gapic-generator
+gapic-generator-csharp

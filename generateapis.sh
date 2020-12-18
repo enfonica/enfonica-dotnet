@@ -75,15 +75,14 @@ delete_generated() {
 
 generate_microgenerator() {
   PACKAGE_ID=$1
-  API_TMP_DIR=$OUTDIR/$PACKAGE_ID
-  PRODUCTION_PACKAGE_DIR=$API_TMP_DIR/$PACKAGE_ID
+  API_TMP_DIR=$OUTDIR/$PACKAGE_ID/client
+  GRPC_TMP_DIR=$OUTDIR/$PACKAGE_ID/grpc
   API_OUT_DIR=apis
   API_SRC_DIR=$ENFONICAAPIS/$($PYTHON3 tools/getapifield.py apis/apis.json $PACKAGE_ID protoPath)
+  PACKAGE=$($PYTHON3 tools/getapifield.py apis/apis.json $PACKAGE_ID package)
 
-  # Delete previously-generated files
-  delete_generated apis/$1/$1
-  delete_generated apis/$1/$1.Tests
-  delete_generated apis/$1/$1.Snippets
+  # Clean API tmp dir
+  rm -rf $API_TMP_DIR
 
   # If there's exactly one service config file, pass it in. Otherwise, omit it.
   GRPC_SERVICE_CONFIG=$(echo $API_SRC_DIR/*.json)
@@ -108,19 +107,25 @@ generate_microgenerator() {
     COMMON_RESOURCES_PROTO=$GOOGLEAPIS/google/cloud/common_resources.proto
   # fi
   
-  mkdir -p $PRODUCTION_PACKAGE_DIR
-  
   # Message and service generation. This doesn't need the common resources,
   # and we don't want to pass in the common resources proto because we don't
   # want to generate it.
+  echo "Generating $PACKAGE_ID: message and service"
+  mkdir -p $GRPC_TMP_DIR
   $PROTOC \
-    --csharp_out=$PRODUCTION_PACKAGE_DIR \
-    --grpc_out=$PRODUCTION_PACKAGE_DIR \
+    --csharp_out=$GRPC_TMP_DIR \
+    --grpc_out=$GRPC_TMP_DIR \
     --plugin=protoc-gen-grpc=$GRPC_PLUGIN \
+    -I $ENFONICAAPIS \
     -I $GOOGLEAPIS \
     -I $CORE_PROTOS_ROOT \
     $API_SRC_DIR/*.proto \
     2>&1 | grep -v "is unused" || true # Ignore import warnings (and grep exit code)
+  
+  # Use .g.cs for generated files
+  for f in $GRPC_TMP_DIR/*.cs; do 
+    mv -- "$f" "${f%.cs}.g.cs"
+  done
 
   # # Allow protos to be changed after proto/gRPC generation but before the
   # # GAPIC microgenerator. This is pretty extreme, but is used for service renaming.
@@ -132,6 +137,8 @@ generate_microgenerator() {
 
   # Client generation. This needs the common resources proto as a reference,
   # but it won't generate anything for it.
+  echo "Generating $PACKAGE_ID: client"
+  mkdir $API_TMP_DIR
   $PROTOC \
     --gapic_out=$API_TMP_DIR \
     $SERVICE_CONFIG_OPTION \
@@ -152,7 +159,11 @@ generate_microgenerator() {
   rm $(find tmp -name '*.csproj')
   
   # Copy the rest into the right place
-  cp -r $API_TMP_DIR $API_OUT_DIR
+  # cp -r $API_TMP_DIR $API_OUT_DIR
+  mv $GRPC_TMP_DIR/*.g.cs $API_OUT_DIR/$PACKAGE/$PACKAGE
+  mv $API_TMP_DIR/$PACKAGE_ID/*.g.cs $API_OUT_DIR/$PACKAGE/$PACKAGE
+  mv $API_TMP_DIR/$PACKAGE_ID.Snippets/*.g.cs $API_OUT_DIR/$PACKAGE/$PACKAGE.Snippets
+  mv $API_TMP_DIR/$PACKAGE_ID.Tests/*.g.cs $API_OUT_DIR/$PACKAGE/$PACKAGE.Tests
 }
 
 generate_proto() {
@@ -284,7 +295,6 @@ generate_api() {
 
 
 # Entry point
-
 install_protoc
 install_microgenerator
 install_grpc
@@ -299,6 +309,11 @@ mkdir $OUTDIR
 #   CHECK_COMPATIBILITY=true
 #   shift
 # fi
+
+# Delete previously-generated files
+delete_generated apis/Enfonica/Enfonica
+delete_generated apis/Enfonica/Enfonica.Tests
+delete_generated apis/Enfonica/Enfonica.Snippets
 
 packages=$@
 if [[ -z "$packages" ]]

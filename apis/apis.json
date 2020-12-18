@@ -1,9 +1,16 @@
 {
   "apis": [
     {
-      "id": "messaging",
+      "id": "Enfonica.Messaging.V1",
       "generator": "micro",
+      "package": "Enfonica",
       "protoPath": "enfonica/messaging/v1"
+    },
+    {
+      "id": "Enfonica.Numbering.V1Beta1",
+      "generator": "micro",
+      "package": "Enfonica",
+      "protoPath": "enfonica/numbering/v1beta1"
     }
   ]
 }
