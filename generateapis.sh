@@ -147,6 +147,9 @@ generate_microgenerator() {
   # the common resources proto. Clean up for now; this is being fixed in the generator.
   rm -rf $API_TMP_DIR/Google.Cloud{,.Snippets,.Tests}
 
+  # Fix copyright notices in generated clients
+  find $API_TMP_DIR -type f -name '*Client.g.cs' -exec sh -c 'sed -i "s/Google LLC/Enfonica Pty Ltd" "\$1"' -- {}" +
+
   DEST_SUB_PATH=${PACKAGE_ID//\./\/}
   DEST_PACKAGE=$API_OUT_DIR/$PACKAGE/$DEST_SUB_PATH
   DEST_SNIPPETS=$API_OUT_DIR/$PACKAGE/${DEST_SUB_PATH/\//.Snippets\/}
