@@ -16,6 +16,7 @@
 
 using gax = Google.Api.Gax;
 using gaxgrpc = Google.Api.Gax.Grpc;
+using enfgaxgrpc = Enfonica.Api.Gax.Grpc;
 using gaxgrpccore = Google.Api.Gax.Grpc.GrpcCore;
 using proto = Google.Protobuf;
 using grpccore = Grpc.Core;
@@ -142,7 +143,7 @@ namespace Enfonica.Numbering.V1Beta1
     /// Builder class for <see cref="PhoneNumberInstancesClient"/> to provide simple configuration of credentials,
     /// endpoint etc.
     /// </summary>
-    public sealed partial class PhoneNumberInstancesClientBuilder : gaxgrpc::ClientBuilderBase<PhoneNumberInstancesClient>
+    public sealed partial class PhoneNumberInstancesClientBuilder : enfgaxgrpc::ClientBuilderBase<PhoneNumberInstancesClient>
     {
         /// <summary>The settings to use for RPCs, or <c>null</c> for the default settings.</summary>
         public PhoneNumberInstancesSettings Settings { get; set; }
@@ -190,7 +191,7 @@ namespace Enfonica.Numbering.V1Beta1
         protected override scg::IReadOnlyList<string> GetDefaultScopes() => PhoneNumberInstancesClient.DefaultScopes;
 
         /// <summary>Returns the channel pool to use when no other options are specified.</summary>
-        protected override gaxgrpc::ChannelPool GetChannelPool() => PhoneNumberInstancesClient.ChannelPool;
+        protected override enfgaxgrpc::ChannelPool GetChannelPool() => PhoneNumberInstancesClient.ChannelPool;
 
         /// <summary>Returns the default <see cref="gaxgrpc::GrpcAdapter"/>to use if not otherwise specified.</summary>
         protected override gaxgrpc::GrpcAdapter DefaultGrpcAdapter => gaxgrpccore::GrpcCoreAdapter.Instance;
@@ -211,7 +212,7 @@ namespace Enfonica.Numbering.V1Beta1
         /// <remarks>The default PhoneNumberInstances scopes are:<list type="bullet"></list></remarks>
         public static scg::IReadOnlyList<string> DefaultScopes { get; } = new sco::ReadOnlyCollection<string>(new string[] { });
 
-        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(DefaultScopes);
+        internal static enfgaxgrpc::ChannelPool ChannelPool { get; } = new enfgaxgrpc::ChannelPool(DefaultScopes);
 
         /// <summary>
         /// Asynchronously creates a <see cref="PhoneNumberInstancesClient"/> using the default credentials, endpoint

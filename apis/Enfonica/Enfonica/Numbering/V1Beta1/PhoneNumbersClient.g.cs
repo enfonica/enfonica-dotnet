@@ -16,6 +16,7 @@
 
 using gax = Google.Api.Gax;
 using gaxgrpc = Google.Api.Gax.Grpc;
+using enfgaxgrpc = Enfonica.Api.Gax.Grpc;
 using gaxgrpccore = Google.Api.Gax.Grpc.GrpcCore;
 using proto = Google.Protobuf;
 using grpccore = Grpc.Core;
@@ -135,7 +136,7 @@ namespace Enfonica.Numbering.V1Beta1
     /// <summary>
     /// Builder class for <see cref="PhoneNumbersClient"/> to provide simple configuration of credentials, endpoint etc.
     /// </summary>
-    public sealed partial class PhoneNumbersClientBuilder : gaxgrpc::ClientBuilderBase<PhoneNumbersClient>
+    public sealed partial class PhoneNumbersClientBuilder : enfgaxgrpc::ClientBuilderBase<PhoneNumbersClient>
     {
         /// <summary>The settings to use for RPCs, or <c>null</c> for the default settings.</summary>
         public PhoneNumbersSettings Settings { get; set; }
@@ -183,7 +184,7 @@ namespace Enfonica.Numbering.V1Beta1
         protected override scg::IReadOnlyList<string> GetDefaultScopes() => PhoneNumbersClient.DefaultScopes;
 
         /// <summary>Returns the channel pool to use when no other options are specified.</summary>
-        protected override gaxgrpc::ChannelPool GetChannelPool() => PhoneNumbersClient.ChannelPool;
+        protected override enfgaxgrpc::ChannelPool GetChannelPool() => PhoneNumbersClient.ChannelPool;
 
         /// <summary>Returns the default <see cref="gaxgrpc::GrpcAdapter"/>to use if not otherwise specified.</summary>
         protected override gaxgrpc::GrpcAdapter DefaultGrpcAdapter => gaxgrpccore::GrpcCoreAdapter.Instance;
@@ -204,7 +205,7 @@ namespace Enfonica.Numbering.V1Beta1
         /// <remarks>The default PhoneNumbers scopes are:<list type="bullet"></list></remarks>
         public static scg::IReadOnlyList<string> DefaultScopes { get; } = new sco::ReadOnlyCollection<string>(new string[] { });
 
-        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(DefaultScopes);
+        internal static enfgaxgrpc::ChannelPool ChannelPool { get; } = new enfgaxgrpc::ChannelPool(DefaultScopes);
 
         /// <summary>
         /// Asynchronously creates a <see cref="PhoneNumbersClient"/> using the default credentials, endpoint and

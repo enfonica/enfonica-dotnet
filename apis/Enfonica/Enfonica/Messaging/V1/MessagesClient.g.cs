@@ -16,6 +16,7 @@
 
 using gax = Google.Api.Gax;
 using gaxgrpc = Google.Api.Gax.Grpc;
+using enfgaxgrpc = Enfonica.Api.Gax.Grpc;
 using gaxgrpccore = Google.Api.Gax.Grpc.GrpcCore;
 using proto = Google.Protobuf;
 using grpccore = Grpc.Core;
@@ -96,7 +97,7 @@ namespace Enfonica.Messaging.V1
     /// <summary>
     /// Builder class for <see cref="MessagesClient"/> to provide simple configuration of credentials, endpoint etc.
     /// </summary>
-    public sealed partial class MessagesClientBuilder : gaxgrpc::ClientBuilderBase<MessagesClient>
+    public sealed partial class MessagesClientBuilder : enfgaxgrpc::ClientBuilderBase<MessagesClient>
     {
         /// <summary>The settings to use for RPCs, or <c>null</c> for the default settings.</summary>
         public MessagesSettings Settings { get; set; }
@@ -144,7 +145,7 @@ namespace Enfonica.Messaging.V1
         protected override scg::IReadOnlyList<string> GetDefaultScopes() => MessagesClient.DefaultScopes;
 
         /// <summary>Returns the channel pool to use when no other options are specified.</summary>
-        protected override gaxgrpc::ChannelPool GetChannelPool() => MessagesClient.ChannelPool;
+        protected override enfgaxgrpc::ChannelPool GetChannelPool() => MessagesClient.ChannelPool;
 
         /// <summary>Returns the default <see cref="gaxgrpc::GrpcAdapter"/>to use if not otherwise specified.</summary>
         protected override gaxgrpc::GrpcAdapter DefaultGrpcAdapter => gaxgrpccore::GrpcCoreAdapter.Instance;
@@ -173,7 +174,7 @@ namespace Enfonica.Messaging.V1
             "https://api.enfonica.com/auth/messaging",
         });
 
-        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(DefaultScopes);
+        internal static enfgaxgrpc::ChannelPool ChannelPool { get; } = new enfgaxgrpc::ChannelPool(DefaultScopes);
 
         /// <summary>
         /// Asynchronously creates a <see cref="MessagesClient"/> using the default credentials, endpoint and settings. 

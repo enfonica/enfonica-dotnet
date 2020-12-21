@@ -148,7 +148,12 @@ generate_microgenerator() {
   rm -rf $API_TMP_DIR/Google.Cloud{,.Snippets,.Tests}
 
   # Fix copyright notices in generated clients
-  find $API_TMP_DIR -type f -name '*Client.g.cs' -exec sh -c 'sed -i "s/Google LLC/Enfonica Pty Ltd" "\$1"' -- {}" +
+  find $API_TMP_DIR -type f -name '*Client.g.cs' -exec sh -c 'sed -i "s/Google LLC/Enfonica Pty Ltd/" "$1"' -- {} \;
+  # Introduce aliased namespace
+  find $API_TMP_DIR -type f -name '*Client.g.cs' -exec sh -c 'sed -i "s/using gaxgrpc = Google.Api.Gax.Grpc;/using gaxgrpc = Google.Api.Gax.Grpc;\nusing enfgaxgrpc = Enfonica.Api.Gax.Grpc;/" "$1"' -- {} \;
+  # Modify generated client to use Enfonica versions
+  find $API_TMP_DIR -type f -name '*Client.g.cs' -exec sh -c 'sed -i "s/gaxgrpc::ClientBuilderBase/enfgaxgrpc::ClientBuilderBase/g" "$1"' -- {} \;
+  find $API_TMP_DIR -type f -name '*Client.g.cs' -exec sh -c 'sed -i "s/gaxgrpc::ChannelPool/enfgaxgrpc::ChannelPool/g" "$1"' -- {} \;
 
   DEST_SUB_PATH=${PACKAGE_ID//\./\/}
   DEST_PACKAGE=$API_OUT_DIR/$PACKAGE/$DEST_SUB_PATH
