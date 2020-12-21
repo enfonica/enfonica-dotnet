@@ -20,7 +20,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using GoogleCredential = Enfonica.Api.Auth.OAuth2.GoogleCredential;
+using EnfonicaCredential = Enfonica.Api.Auth.OAuth2.EnfonicaCredential;
 
 namespace Enfonica.Api.Gax.Grpc
 {
@@ -64,7 +64,7 @@ namespace Enfonica.Api.Gax.Grpc
 
         private async Task<ChannelCredentials> CreateChannelCredentialsUncached()
         {
-            var appDefaultCredentials = await GoogleCredential.GetApplicationDefaultAsync().ConfigureAwait(false);
+            var appDefaultCredentials = await EnfonicaCredential.GetApplicationDefaultAsync().ConfigureAwait(false);
             if (appDefaultCredentials.IsCreateScopedRequired)
             {
                 appDefaultCredentials = appDefaultCredentials.CreateScoped(_scopes);

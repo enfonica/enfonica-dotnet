@@ -22,11 +22,11 @@ using Google.Apis.Auth.OAuth2;
 namespace Enfonica.Api.Auth.OAuth2
 {
     /// <summary>
-    /// Represents a Google credential. Defines functionality that
-    /// credential types that can be used as an underlying credential in <see cref="GoogleCredential"/>
+    /// Represents an Enfonica credential. Defines functionality that
+    /// credential types that can be used as an underlying credential in <see cref="EnfonicaCredential"/>
     /// should implement in contrast to <see cref="ICredential"/> that defines public functionality.
     /// </summary>
-    internal interface IGoogleCredential : ICredential, ITokenAccessWithHeaders
+    internal interface IEnfonicaCredential : ICredential, ITokenAccessWithHeaders
     {
         /// <summary>
         /// The ID of the project associated to this credential for the purposes of
@@ -41,6 +41,6 @@ namespace Enfonica.Api.Auth.OAuth2
         /// <param name="quotaProject">The quota project value for the new instance.</param>
         /// <returns>A new instance with the same type as this but with <see cref="QuotaProject"/>
         /// set to <paramref name="quotaProject"/>.</returns>
-        IGoogleCredential WithQuotaProject(string quotaProject);
+        IEnfonicaCredential WithQuotaProject(string quotaProject);
     }
 }

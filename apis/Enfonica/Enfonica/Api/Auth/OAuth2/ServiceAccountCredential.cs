@@ -56,7 +56,7 @@ namespace Enfonica.Api.Auth.OAuth2
     /// is used and when regular OAuth2 token is used.
     /// </para>
     /// </summary>
-    internal class ServiceAccountCredential : ServiceCredential, IOidcTokenProvider, IGoogleCredential
+    internal class ServiceAccountCredential : ServiceCredential, IOidcTokenProvider, IEnfonicaCredential
     {
         private const string Sha256Oid = "2.16.840.1.101.3.4.2.1";
         /// <summary>An initializer class for the service account credential. </summary>
@@ -92,7 +92,7 @@ namespace Enfonica.Api.Auth.OAuth2
 
             /// <summary>Constructs a new initializer using the given id.</summary>
             public Initializer(string id)
-                : this(id, GoogleAuthConsts.OidcTokenUrl) { }
+                : this(id, EnfonicaAuthConsts.OidcTokenUrl) { }
 
             /// <summary>Constructs a new initializer using the given id and the token server URL.</summary>
             public Initializer(string id, string tokenServerUrl) : base(tokenServerUrl)
@@ -183,7 +183,7 @@ namespace Enfonica.Api.Auth.OAuth2
         /// <returns>The credentials parsed from the service account key data.</returns>
         public static ServiceAccountCredential FromServiceAccountData(Stream credentialData)
         {
-            var credential = GoogleCredential.FromStream(credentialData);
+            var credential = EnfonicaCredential.FromStream(credentialData);
             var result = credential.UnderlyingCredential as ServiceAccountCredential;
             if (result == null)
             {
@@ -193,7 +193,7 @@ namespace Enfonica.Api.Auth.OAuth2
         }
 
         /// <inheritdoc/>
-        IGoogleCredential IGoogleCredential.WithQuotaProject(string quotaProject) =>
+        IEnfonicaCredential IEnfonicaCredential.WithQuotaProject(string quotaProject) =>
             new ServiceAccountCredential(new Initializer(this) { QuotaProject = quotaProject });
 
         /// <summary>
@@ -356,7 +356,7 @@ namespace Enfonica.Api.Auth.OAuth2
             {
                 Issuer = Id,
                 Subject = Id,
-                Audience = GoogleAuthConsts.OidcTokenUrl,
+                Audience = EnfonicaAuthConsts.OidcTokenUrl,
                 IssuedAtTimeSeconds = (long)(issueUtc - UnixEpoch).TotalSeconds,
                 ExpirationTimeSeconds = (long)(expiryUtc - UnixEpoch).TotalSeconds,
                 TargetAudience = options.TargetAudience

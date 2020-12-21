@@ -31,29 +31,28 @@ namespace Enfonica.Api.Auth.OAuth2
     /// <summary>
     /// Credential for authorizing calls using OAuth 2.0.
     /// It is a convenience wrapper that allows handling of different types of 
-    /// credentials (like <see cref="ServiceAccountCredential"/>, <see cref="ComputeCredential"/>
-    /// or <see cref="UserCredential"/>) in a unified way.
+    /// credentials (like <see cref="ServiceAccountCredential"/>) in a unified way.
     /// <para>
     /// See <see cref="GetApplicationDefaultAsync(CancellationToken)"/> for the credential retrieval logic.
     /// </para>
     /// </summary>
-    internal class GoogleCredential : ICredential, ITokenAccessWithHeaders, IOidcTokenProvider
+    public class EnfonicaCredential : ICredential, ITokenAccessWithHeaders, IOidcTokenProvider
     {
         /// <summary>Provider implements the logic for creating the application default credential.</summary>
         private static readonly DefaultCredentialProvider defaultCredentialProvider = new DefaultCredentialProvider();
 
         /// <summary>The underlying credential being wrapped by this object.</summary>
-        private protected readonly IGoogleCredential credential;
+        private protected readonly IEnfonicaCredential credential;
 
         /// <summary>Creates a new <c>GoogleCredential</c>.</summary>
-        internal GoogleCredential(IGoogleCredential credential) => this.credential = credential;
+        internal EnfonicaCredential(IEnfonicaCredential credential) => this.credential = credential;
 
         /// <summary>
         /// Returns the Application Default Credentials which are ambient credentials that identify and authorize
         /// the whole application. See <see cref="GetApplicationDefaultAsync(CancellationToken)"/> for more details.
         /// </summary>
         /// <returns>A task which completes with the application default credentials.</returns>
-        public static Task<GoogleCredential> GetApplicationDefaultAsync() =>
+        public static Task<EnfonicaCredential> GetApplicationDefaultAsync() =>
             defaultCredentialProvider.GetDefaultCredentialAsync();
 
         /// <summary>
@@ -73,19 +72,6 @@ namespace Enfonica.Api.Auth.OAuth2
         /// </item>
         /// <item>
         /// <description>
-        /// If you have installed the Google Cloud SDK on your machine and have run the command
-        /// <a href="https://cloud.google.com/sdk/gcloud/reference/auth/login">GCloud Auth Login</a>, your identity can
-        /// be used as a proxy to test code calling APIs from that machine.
-        /// </description>
-        /// </item>
-        /// <item>
-        /// <description>
-        /// If you are running in Google Compute Engine production, the built-in service account associated with the
-        /// virtual machine instance will be used.
-        /// </description>
-        /// </item>
-        /// <item>
-        /// <description>
         /// If all previous steps have failed, <c>InvalidOperationException</c> is thrown.
         /// </description>
         /// </item>
@@ -98,7 +84,7 @@ namespace Enfonica.Api.Auth.OAuth2
         /// </remarks>
         /// <param name="cancellationToken">Cancellation token for the operation.</param>
         /// <returns>A task which completes with the application default credentials.</returns>
-        public static Task<GoogleCredential> GetApplicationDefaultAsync(CancellationToken cancellationToken) =>
+        public static Task<EnfonicaCredential> GetApplicationDefaultAsync(CancellationToken cancellationToken) =>
             defaultCredentialProvider.GetDefaultCredentialAsync().WithCancellationToken(cancellationToken);
 
         /// <summary>
@@ -108,7 +94,7 @@ namespace Enfonica.Api.Auth.OAuth2
         /// It is highly preferable to call <see cref="GetApplicationDefaultAsync(CancellationToken)"/> where possible.</para>
         /// </summary>
         /// <returns>The application default credentials.</returns>
-        public static GoogleCredential GetApplicationDefault() => Task.Run(() => GetApplicationDefaultAsync()).Result;
+        public static EnfonicaCredential GetApplicationDefault() => Task.Run(() => GetApplicationDefaultAsync()).Result;
 
         /// <summary>
         /// Loads credential from stream containing JSON credential data.
@@ -117,7 +103,7 @@ namespace Enfonica.Api.Auth.OAuth2
         /// Console or a stored user credential using the format supported by the Cloud SDK.
         /// </para>
         /// </summary>
-        public static GoogleCredential FromStream(Stream stream) => defaultCredentialProvider.CreateDefaultCredentialFromStream(stream);
+        public static EnfonicaCredential FromStream(Stream stream) => defaultCredentialProvider.CreateDefaultCredentialFromStream(stream);
 
         /// <summary>
         /// Loads credential from stream containing JSON credential data.
@@ -126,7 +112,7 @@ namespace Enfonica.Api.Auth.OAuth2
         /// Console or a stored user credential using the format supported by the Cloud SDK.
         /// </para>
         /// </summary>
-        public static Task<GoogleCredential> FromStreamAsync(Stream stream, CancellationToken cancellationToken) =>
+        public static Task<EnfonicaCredential> FromStreamAsync(Stream stream, CancellationToken cancellationToken) =>
             defaultCredentialProvider.CreateDefaultCredentialFromStreamAsync(stream, cancellationToken);
 
         /// <summary>
@@ -138,7 +124,7 @@ namespace Enfonica.Api.Auth.OAuth2
         /// </summary>
         /// <param name="path">The path to the credential file.</param>
         /// <returns>The loaded credentials.</returns>
-        public static GoogleCredential FromFile(string path)
+        public static EnfonicaCredential FromFile(string path)
         {
             using (var f = File.OpenRead(path))
             {
@@ -156,7 +142,7 @@ namespace Enfonica.Api.Auth.OAuth2
         /// <param name="path">The path to the credential file.</param>
         /// <param name="cancellationToken">Cancellation token for the operation.</param>
         /// <returns>The loaded credentials.</returns>
-        public static async Task<GoogleCredential> FromFileAsync(string path, CancellationToken cancellationToken)
+        public static async Task<EnfonicaCredential> FromFileAsync(string path, CancellationToken cancellationToken)
         {
             using (var f = File.OpenRead(path))
             {
@@ -171,23 +157,23 @@ namespace Enfonica.Api.Auth.OAuth2
         /// Console or a stored user credential using the format supported by the Cloud SDK.
         /// </para>
         /// </summary>
-        public static GoogleCredential FromJson(string json) => defaultCredentialProvider.CreateDefaultCredentialFromJson(json);
+        public static EnfonicaCredential FromJson(string json) => defaultCredentialProvider.CreateDefaultCredentialFromJson(json);
 
         /// <summary>
-        /// Create a <see cref="GoogleCredential"/> directly from the provided access token.
+        /// Create a <see cref="EnfonicaCredential"/> directly from the provided access token.
         /// The access token will not be automatically refreshed.
         /// </summary>
         /// <param name="accessToken">The access token to use within this credential.</param>
         /// <param name="accessMethod">Optional. The <see cref="IAccessMethod"/> to use within this credential.
         /// If <c>null</c>, will default to <see cref="BearerToken.AuthorizationHeaderAccessMethod"/>.</param>
         /// <returns>A credential based on the provided access token.</returns>
-        public static GoogleCredential FromAccessToken(string accessToken, IAccessMethod accessMethod = null)
+        public static EnfonicaCredential FromAccessToken(string accessToken, IAccessMethod accessMethod = null)
         {
             accessMethod ??= new BearerToken.AuthorizationHeaderAccessMethod();
-            return new GoogleCredential(new AccessTokenCredential(accessToken, accessMethod));
+            return new EnfonicaCredential(new AccessTokenCredential(accessToken, accessMethod));
         }
 
-        internal class AccessTokenCredential : IGoogleCredential, IHttpExecuteInterceptor
+        internal class AccessTokenCredential : IEnfonicaCredential, IHttpExecuteInterceptor
         {
             private readonly string _accessToken;
             private readonly IAccessMethod _accessMethod;
@@ -203,7 +189,7 @@ namespace Enfonica.Api.Auth.OAuth2
             }
 
             /// <inheritdoc/>
-            IGoogleCredential IGoogleCredential.WithQuotaProject(string quotaProject) =>
+            IEnfonicaCredential IEnfonicaCredential.WithQuotaProject(string quotaProject) =>
                 new AccessTokenCredential(_accessToken, _accessMethod, quotaProject);
 
             public void Initialize(ConfigurableHttpClient httpClient) =>
@@ -266,13 +252,13 @@ namespace Enfonica.Api.Auth.OAuth2
         /// If the credential supports scopes, creates a copy with the specified scopes. Otherwise, it returns the same
         /// instance.
         /// </summary>
-        public virtual GoogleCredential CreateScoped(IEnumerable<string> scopes) => this;
+        public virtual EnfonicaCredential CreateScoped(IEnumerable<string> scopes) => this;
 
         /// <summary>
         /// If the credential supports scopes, creates a copy with the specified scopes. Otherwise, it returns the same
         /// instance.
         /// </summary>
-        public GoogleCredential CreateScoped(params string[] scopes) => CreateScoped((IEnumerable<string>)scopes);
+        public EnfonicaCredential CreateScoped(params string[] scopes) => CreateScoped((IEnumerable<string>)scopes);
 
         /// <summary>
         /// If the credential supports setting the user, creates a copy with the specified user.
@@ -282,15 +268,15 @@ namespace Enfonica.Api.Auth.OAuth2
         /// <param name="user">The user to set in the returned credential.</param>
         /// <returns>This credential with the user set to <paramref name="user"/>.</returns>
         /// <exception cref="InvalidOperationException">When the credential type doesn't support setting the user.</exception>
-        public virtual GoogleCredential CreateWithUser(string user) => throw new InvalidOperationException();
+        public virtual EnfonicaCredential CreateWithUser(string user) => throw new InvalidOperationException();
 
         /// <summary>
         /// Creates a copy of this credential with the specified quota project.
         /// </summary>
         /// <param name="quotaProject">The quota project to use for the copy. May be null.</param>
         /// <returns>A copy of this credential with <see cref="QuotaProject"/> set to <paramref name="quotaProject"/>.</returns>
-        public virtual GoogleCredential CreateWithQuotaProject(string quotaProject) =>
-            new GoogleCredential(credential.WithQuotaProject(quotaProject));
+        public virtual EnfonicaCredential CreateWithQuotaProject(string quotaProject) =>
+            new EnfonicaCredential(credential.WithQuotaProject(quotaProject));
 
         void IConfigurableHttpClientInitializer.Initialize(ConfigurableHttpClient httpClient)
         {
@@ -318,7 +304,7 @@ namespace Enfonica.Api.Auth.OAuth2
         public ICredential UnderlyingCredential => credential;
 
         /// <summary>Creates a <c>GoogleCredential</c> wrapping a <see cref="ServiceAccountCredential"/>.</summary>
-        public static GoogleCredential FromServiceAccountCredential(ServiceAccountCredential credential)
+        internal static EnfonicaCredential FromServiceAccountCredential(ServiceAccountCredential credential)
         {
             return new ServiceAccountGoogleCredential(credential);
         }
@@ -328,14 +314,14 @@ namespace Enfonica.Api.Auth.OAuth2
         /// We need this subclass because wrapping <c>ServiceAccountCredential</c> (unlike other wrapped credential
         /// types) requires special handling for <c>IsCreateScopedRequired</c> and <c>CreateScoped</c> members.
         /// </summary>
-        internal class ServiceAccountGoogleCredential : GoogleCredential
+        internal class ServiceAccountGoogleCredential : EnfonicaCredential
         {
             public ServiceAccountGoogleCredential(ServiceAccountCredential credential)
                 : base(credential) { }
 
             public override bool IsCreateScopedRequired => !(credential as ServiceAccountCredential).HasScopes;
 
-            public override GoogleCredential CreateScoped(IEnumerable<string> scopes)
+            public override EnfonicaCredential CreateScoped(IEnumerable<string> scopes)
             {
                 var serviceAccountCredential = credential as ServiceAccountCredential;
                 var initializer = new ServiceAccountCredential.Initializer(serviceAccountCredential)
@@ -345,7 +331,7 @@ namespace Enfonica.Api.Auth.OAuth2
                 return new ServiceAccountGoogleCredential(new ServiceAccountCredential(initializer));
             }
 
-            public override GoogleCredential CreateWithUser(string user)
+            public override EnfonicaCredential CreateWithUser(string user)
             {
                 var serviceAccountCredential = credential as ServiceAccountCredential;
                 var initializer = new ServiceAccountCredential.Initializer(serviceAccountCredential)
@@ -355,7 +341,7 @@ namespace Enfonica.Api.Auth.OAuth2
                 return new ServiceAccountGoogleCredential(new ServiceAccountCredential(initializer));
             }
 
-            public override GoogleCredential CreateWithQuotaProject(string quotaProject) =>
+            public override EnfonicaCredential CreateWithQuotaProject(string quotaProject) =>
                 new ServiceAccountGoogleCredential(credential.WithQuotaProject(quotaProject) as ServiceAccountCredential);
         }
     }

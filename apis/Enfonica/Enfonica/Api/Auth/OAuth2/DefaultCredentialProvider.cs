@@ -52,12 +52,12 @@ namespace Enfonica.Api.Auth.OAuth2
             "https://developers.google.com/accounts/docs/application-default-credentials"; // todo: change
 
         /// <summary>Caches result from first call to <c>GetApplicationDefaultCredentialAsync</c> </summary>
-        private readonly Lazy<Task<GoogleCredential>> cachedCredentialTask;
+        private readonly Lazy<Task<EnfonicaCredential>> cachedCredentialTask;
 
         /// <summary>Constructs a new default credential provider.</summary>
         public DefaultCredentialProvider()
         {
-            cachedCredentialTask = new Lazy<Task<GoogleCredential>>(CreateDefaultCredentialAsync);
+            cachedCredentialTask = new Lazy<Task<EnfonicaCredential>>(CreateDefaultCredentialAsync);
         }
 
         /// <summary>
@@ -65,10 +65,10 @@ namespace Enfonica.Api.Auth.OAuth2
         /// first invocation.
         /// See <see cref="M:Google.Apis.Auth.OAuth2.GoogleCredential.GetApplicationDefaultAsync"/> for details.
         /// </summary>
-        public Task<GoogleCredential> GetDefaultCredentialAsync() => cachedCredentialTask.Value;
+        public Task<EnfonicaCredential> GetDefaultCredentialAsync() => cachedCredentialTask.Value;
 
         /// <summary>Creates a new default credential.</summary>
-        private Task<GoogleCredential> CreateDefaultCredentialAsync()
+        private Task<EnfonicaCredential> CreateDefaultCredentialAsync()
         {
             // 1. First try the environment variable.
             string credentialPath = GetEnvironmentVariable(CredentialEnvironmentVariable);
@@ -101,7 +101,7 @@ namespace Enfonica.Api.Auth.OAuth2
         }
 
         /// <summary>Creates a default credential from a JSON file.</summary>
-        private GoogleCredential CreateDefaultCredentialFromFile(string credentialPath)
+        private EnfonicaCredential CreateDefaultCredentialFromFile(string credentialPath)
         {
             Logger.Debug("Loading Credential from file {0}", credentialPath);
 
@@ -112,7 +112,7 @@ namespace Enfonica.Api.Auth.OAuth2
         }
 
         /// <summary>Creates a default credential from a stream that contains JSON credential data.</summary>
-        internal GoogleCredential CreateDefaultCredentialFromStream(Stream stream)
+        internal EnfonicaCredential CreateDefaultCredentialFromStream(Stream stream)
         {
             JsonCredentialParameters credentialParameters;
             try
@@ -127,7 +127,7 @@ namespace Enfonica.Api.Auth.OAuth2
         }
 
         /// <summary>Creates a default credential from a stream that contains JSON credential data.</summary>
-        internal async Task<GoogleCredential> CreateDefaultCredentialFromStreamAsync(Stream stream, CancellationToken cancellationToken)
+        internal async Task<EnfonicaCredential> CreateDefaultCredentialFromStreamAsync(Stream stream, CancellationToken cancellationToken)
         {
             JsonCredentialParameters credentialParameters;
             try
@@ -144,7 +144,7 @@ namespace Enfonica.Api.Auth.OAuth2
         }
 
         /// <summary>Creates a default credential from a string that contains JSON credential data.</summary>
-        internal GoogleCredential CreateDefaultCredentialFromJson(string json)
+        internal EnfonicaCredential CreateDefaultCredentialFromJson(string json)
         {
             JsonCredentialParameters credentialParameters;
             try
@@ -160,12 +160,12 @@ namespace Enfonica.Api.Auth.OAuth2
 
 
         /// <summary>Creates a default credential from JSON data.</summary>
-        private static GoogleCredential CreateDefaultCredentialFromParameters(JsonCredentialParameters credentialParameters)
+        private static EnfonicaCredential CreateDefaultCredentialFromParameters(JsonCredentialParameters credentialParameters)
         {
             switch (credentialParameters.Type)
             {
                 case JsonCredentialParameters.ServiceAccountCredentialType:
-                    return GoogleCredential.FromServiceAccountCredential(
+                    return EnfonicaCredential.FromServiceAccountCredential(
                         CreateServiceAccountCredentialFromParameters(credentialParameters));
                 default:
                     throw new InvalidOperationException(
