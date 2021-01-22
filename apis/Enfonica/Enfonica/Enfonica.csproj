@@ -8,6 +8,7 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <Deterministic>true</Deterministic>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <NoWarn>1701;1702;NU5048</NoWarn>
 
     <Description>
       Enfonica client library to access the Enfonica APIs, which provide reliable cloud-based telecommunications services including Cloud SMS, Cloud Voice and Phone Numbers.
@@ -15,7 +16,7 @@
     <PackageTags>Enfonica;Cloud;SMS;Voice;Phone;Numbers</PackageTags>
     <Copyright>Copyright 2021 Enfonica Pty Ltd</Copyright>
     <PackageIconUrl>https://enfonica.com/images/enfonica-icon-64x64.png</PackageIconUrl>
-    <PackageLicenseUrl>https://www.apache.org/licenses/LICENSE-2.0</PackageLicenseUrl>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/enfonica/enfonica-dotnet</PackageProjectUrl>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/enfonica/enfonica-dotnet</RepositoryUrl>
