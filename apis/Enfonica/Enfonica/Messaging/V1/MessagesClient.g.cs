@@ -1,4 +1,4 @@
-// Copyright 2020 Enfonica Pty Ltd
+// Copyright 2021 Enfonica Pty Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -267,6 +267,130 @@ namespace Enfonica.Messaging.V1
             CreateMessageAsync(request, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
 
         /// <summary>
+        /// Creates a Message and queues it for sending.
+        /// Returns the created message.
+        /// 
+        /// The caller must have `messaging.messages.create` permission on the project.
+        /// </summary>
+        /// <param name="parent">
+        /// The resource name of the parent project to create the message under.
+        /// Must be of the form `projects/*`.
+        /// </param>
+        /// <param name="message">
+        /// The message resource to be created.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>The RPC response.</returns>
+        public virtual Message CreateMessage(string parent, Message message, gaxgrpc::CallSettings callSettings = null) =>
+            CreateMessage(new CreateMessageRequest
+            {
+                Parent = gax::GaxPreconditions.CheckNotNullOrEmpty(parent, nameof(parent)),
+                Message = gax::GaxPreconditions.CheckNotNull(message, nameof(message)),
+            }, callSettings);
+
+        /// <summary>
+        /// Creates a Message and queues it for sending.
+        /// Returns the created message.
+        /// 
+        /// The caller must have `messaging.messages.create` permission on the project.
+        /// </summary>
+        /// <param name="parent">
+        /// The resource name of the parent project to create the message under.
+        /// Must be of the form `projects/*`.
+        /// </param>
+        /// <param name="message">
+        /// The message resource to be created.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<Message> CreateMessageAsync(string parent, Message message, gaxgrpc::CallSettings callSettings = null) =>
+            CreateMessageAsync(new CreateMessageRequest
+            {
+                Parent = gax::GaxPreconditions.CheckNotNullOrEmpty(parent, nameof(parent)),
+                Message = gax::GaxPreconditions.CheckNotNull(message, nameof(message)),
+            }, callSettings);
+
+        /// <summary>
+        /// Creates a Message and queues it for sending.
+        /// Returns the created message.
+        /// 
+        /// The caller must have `messaging.messages.create` permission on the project.
+        /// </summary>
+        /// <param name="parent">
+        /// The resource name of the parent project to create the message under.
+        /// Must be of the form `projects/*`.
+        /// </param>
+        /// <param name="message">
+        /// The message resource to be created.
+        /// </param>
+        /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<Message> CreateMessageAsync(string parent, Message message, st::CancellationToken cancellationToken) =>
+            CreateMessageAsync(parent, message, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Creates a Message and queues it for sending.
+        /// Returns the created message.
+        /// 
+        /// The caller must have `messaging.messages.create` permission on the project.
+        /// </summary>
+        /// <param name="parent">
+        /// The resource name of the parent project to create the message under.
+        /// Must be of the form `projects/*`.
+        /// </param>
+        /// <param name="message">
+        /// The message resource to be created.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>The RPC response.</returns>
+        public virtual Message CreateMessage(ProjectName parent, Message message, gaxgrpc::CallSettings callSettings = null) =>
+            CreateMessage(new CreateMessageRequest
+            {
+                ParentAsProjectName = gax::GaxPreconditions.CheckNotNull(parent, nameof(parent)),
+                Message = gax::GaxPreconditions.CheckNotNull(message, nameof(message)),
+            }, callSettings);
+
+        /// <summary>
+        /// Creates a Message and queues it for sending.
+        /// Returns the created message.
+        /// 
+        /// The caller must have `messaging.messages.create` permission on the project.
+        /// </summary>
+        /// <param name="parent">
+        /// The resource name of the parent project to create the message under.
+        /// Must be of the form `projects/*`.
+        /// </param>
+        /// <param name="message">
+        /// The message resource to be created.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<Message> CreateMessageAsync(ProjectName parent, Message message, gaxgrpc::CallSettings callSettings = null) =>
+            CreateMessageAsync(new CreateMessageRequest
+            {
+                ParentAsProjectName = gax::GaxPreconditions.CheckNotNull(parent, nameof(parent)),
+                Message = gax::GaxPreconditions.CheckNotNull(message, nameof(message)),
+            }, callSettings);
+
+        /// <summary>
+        /// Creates a Message and queues it for sending.
+        /// Returns the created message.
+        /// 
+        /// The caller must have `messaging.messages.create` permission on the project.
+        /// </summary>
+        /// <param name="parent">
+        /// The resource name of the parent project to create the message under.
+        /// Must be of the form `projects/*`.
+        /// </param>
+        /// <param name="message">
+        /// The message resource to be created.
+        /// </param>
+        /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<Message> CreateMessageAsync(ProjectName parent, Message message, st::CancellationToken cancellationToken) =>
+            CreateMessageAsync(parent, message, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
         /// Retrieves a Message identified by the supplied resource name.
         /// 
         /// The caller must have `messaging.messages.get` permission on the project.
@@ -348,6 +472,54 @@ namespace Enfonica.Messaging.V1
             GetMessageAsync(name, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
 
         /// <summary>
+        /// Retrieves a Message identified by the supplied resource name.
+        /// 
+        /// The caller must have `messaging.messages.get` permission on the project.
+        /// </summary>
+        /// <param name="name">
+        /// The resource name of the Message to retrieve.
+        /// Must be of the form `projects/*/messages/*`.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>The RPC response.</returns>
+        public virtual Message GetMessage(MessageName name, gaxgrpc::CallSettings callSettings = null) =>
+            GetMessage(new GetMessageRequest
+            {
+                MessageName = gax::GaxPreconditions.CheckNotNull(name, nameof(name)),
+            }, callSettings);
+
+        /// <summary>
+        /// Retrieves a Message identified by the supplied resource name.
+        /// 
+        /// The caller must have `messaging.messages.get` permission on the project.
+        /// </summary>
+        /// <param name="name">
+        /// The resource name of the Message to retrieve.
+        /// Must be of the form `projects/*/messages/*`.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<Message> GetMessageAsync(MessageName name, gaxgrpc::CallSettings callSettings = null) =>
+            GetMessageAsync(new GetMessageRequest
+            {
+                MessageName = gax::GaxPreconditions.CheckNotNull(name, nameof(name)),
+            }, callSettings);
+
+        /// <summary>
+        /// Retrieves a Message identified by the supplied resource name.
+        /// 
+        /// The caller must have `messaging.messages.get` permission on the project.
+        /// </summary>
+        /// <param name="name">
+        /// The resource name of the Message to retrieve.
+        /// Must be of the form `projects/*/messages/*`.
+        /// </param>
+        /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<Message> GetMessageAsync(MessageName name, st::CancellationToken cancellationToken) =>
+            GetMessageAsync(name, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
         /// Lists the Messages of the specified project.
         /// List returns Messages sorted by create_time descending.
         /// 
@@ -370,6 +542,118 @@ namespace Enfonica.Messaging.V1
         /// <returns>A pageable asynchronous sequence of <see cref="Message"/> resources.</returns>
         public virtual gax::PagedAsyncEnumerable<ListMessagesResponse, Message> ListMessagesAsync(ListMessagesRequest request, gaxgrpc::CallSettings callSettings = null) =>
             throw new sys::NotImplementedException();
+
+        /// <summary>
+        /// Lists the Messages of the specified project.
+        /// List returns Messages sorted by create_time descending.
+        /// 
+        /// The caller must have `messaging.messages.list` permission on the project.
+        /// </summary>
+        /// <param name="parent">
+        /// The resource name of the parent of which to list messages.
+        /// Must be of the form `projects/*`.
+        /// </param>
+        /// <param name="pageToken">
+        /// The token returned from the previous request. A value of <c>null</c> or an empty string retrieves the first
+        /// page.
+        /// </param>
+        /// <param name="pageSize">
+        /// The size of page to request. The response will not be larger than this, but may be smaller. A value of
+        /// <c>null</c> or <c>0</c> uses a server-defined page size.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A pageable sequence of <see cref="Message"/> resources.</returns>
+        public virtual gax::PagedEnumerable<ListMessagesResponse, Message> ListMessages(string parent, string pageToken = null, int? pageSize = null, gaxgrpc::CallSettings callSettings = null) =>
+            ListMessages(new ListMessagesRequest
+            {
+                Parent = gax::GaxPreconditions.CheckNotNullOrEmpty(parent, nameof(parent)),
+                PageToken = pageToken ?? "",
+                PageSize = pageSize ?? 0,
+            }, callSettings);
+
+        /// <summary>
+        /// Lists the Messages of the specified project.
+        /// List returns Messages sorted by create_time descending.
+        /// 
+        /// The caller must have `messaging.messages.list` permission on the project.
+        /// </summary>
+        /// <param name="parent">
+        /// The resource name of the parent of which to list messages.
+        /// Must be of the form `projects/*`.
+        /// </param>
+        /// <param name="pageToken">
+        /// The token returned from the previous request. A value of <c>null</c> or an empty string retrieves the first
+        /// page.
+        /// </param>
+        /// <param name="pageSize">
+        /// The size of page to request. The response will not be larger than this, but may be smaller. A value of
+        /// <c>null</c> or <c>0</c> uses a server-defined page size.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A pageable asynchronous sequence of <see cref="Message"/> resources.</returns>
+        public virtual gax::PagedAsyncEnumerable<ListMessagesResponse, Message> ListMessagesAsync(string parent, string pageToken = null, int? pageSize = null, gaxgrpc::CallSettings callSettings = null) =>
+            ListMessagesAsync(new ListMessagesRequest
+            {
+                Parent = gax::GaxPreconditions.CheckNotNullOrEmpty(parent, nameof(parent)),
+                PageToken = pageToken ?? "",
+                PageSize = pageSize ?? 0,
+            }, callSettings);
+
+        /// <summary>
+        /// Lists the Messages of the specified project.
+        /// List returns Messages sorted by create_time descending.
+        /// 
+        /// The caller must have `messaging.messages.list` permission on the project.
+        /// </summary>
+        /// <param name="parent">
+        /// The resource name of the parent of which to list messages.
+        /// Must be of the form `projects/*`.
+        /// </param>
+        /// <param name="pageToken">
+        /// The token returned from the previous request. A value of <c>null</c> or an empty string retrieves the first
+        /// page.
+        /// </param>
+        /// <param name="pageSize">
+        /// The size of page to request. The response will not be larger than this, but may be smaller. A value of
+        /// <c>null</c> or <c>0</c> uses a server-defined page size.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A pageable sequence of <see cref="Message"/> resources.</returns>
+        public virtual gax::PagedEnumerable<ListMessagesResponse, Message> ListMessages(ProjectName parent, string pageToken = null, int? pageSize = null, gaxgrpc::CallSettings callSettings = null) =>
+            ListMessages(new ListMessagesRequest
+            {
+                ParentAsProjectName = gax::GaxPreconditions.CheckNotNull(parent, nameof(parent)),
+                PageToken = pageToken ?? "",
+                PageSize = pageSize ?? 0,
+            }, callSettings);
+
+        /// <summary>
+        /// Lists the Messages of the specified project.
+        /// List returns Messages sorted by create_time descending.
+        /// 
+        /// The caller must have `messaging.messages.list` permission on the project.
+        /// </summary>
+        /// <param name="parent">
+        /// The resource name of the parent of which to list messages.
+        /// Must be of the form `projects/*`.
+        /// </param>
+        /// <param name="pageToken">
+        /// The token returned from the previous request. A value of <c>null</c> or an empty string retrieves the first
+        /// page.
+        /// </param>
+        /// <param name="pageSize">
+        /// The size of page to request. The response will not be larger than this, but may be smaller. A value of
+        /// <c>null</c> or <c>0</c> uses a server-defined page size.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A pageable asynchronous sequence of <see cref="Message"/> resources.</returns>
+        public virtual gax::PagedAsyncEnumerable<ListMessagesResponse, Message> ListMessagesAsync(ProjectName parent, string pageToken = null, int? pageSize = null, gaxgrpc::CallSettings callSettings = null) =>
+            ListMessagesAsync(new ListMessagesRequest
+            {
+                ParentAsProjectName = gax::GaxPreconditions.CheckNotNull(parent, nameof(parent)),
+                PageToken = pageToken ?? "",
+                PageSize = pageSize ?? 0,
+            }, callSettings);
     }
 
     /// <summary>Messages client wrapper implementation, for convenient use.</summary>

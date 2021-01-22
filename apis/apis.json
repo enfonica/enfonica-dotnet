@@ -11,6 +11,12 @@
       "generator": "micro",
       "package": "Enfonica",
       "protoPath": "enfonica/numbering/v1beta1"
+    },
+    {
+      "id": "Enfonica.Voice.V1Beta1",
+      "generator": "micro",
+      "package": "Enfonica",
+      "protoPath": "enfonica/voice/v1beta1"
     }
   ]
 }

@@ -2,15 +2,9 @@
   "common_resources": [
     {
       "type": "resourcemanager.api.enfonica.com/Project",
-      "csharp_package_name": "Google.Api.Gax",
-      "csharp_namespace": "Google.Api.Gax.ResourceNames",
+      "csharp_package_name": "Enfonica",
+      "csharp_namespace": "Enfonica",
       "csharp_class_name":  "ProjectName"
-    },
-    {
-      "type": "billing.api.enfonica.com/BillingAccount",
-      "csharp_package_name": "Google.Api.Gax",
-      "csharp_namespace": "Google.Api.Gax.ResourceNames",
-      "csharp_class_name":  "BillingAccountName"
     }
   ]
 }

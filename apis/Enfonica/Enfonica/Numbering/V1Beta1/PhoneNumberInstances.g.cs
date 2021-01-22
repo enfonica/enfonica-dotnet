@@ -28,70 +28,81 @@ namespace Enfonica.Numbering.V1Beta1 {
             "dGFuY2VzLnByb3RvEhplbmZvbmljYS5udW1iZXJpbmcudjFiZXRhMRofZ29v",
             "Z2xlL3Byb3RvYnVmL3RpbWVzdGFtcC5wcm90bxogZ29vZ2xlL3Byb3RvYnVm",
             "L2ZpZWxkX21hc2sucHJvdG8aHGdvb2dsZS9hcGkvYW5ub3RhdGlvbnMucHJv",
-            "dG8aLmVuZm9uaWNhL251bWJlcmluZy92MWJldGExL3Bob25lX251bWJlcnMu",
-            "cHJvdG8i0QQKE1Bob25lTnVtYmVySW5zdGFuY2USDAoEbmFtZRgBIAEoCRI9",
-            "CgxwaG9uZV9udW1iZXIYAiABKAsyJy5lbmZvbmljYS5udW1iZXJpbmcudjFi",
-            "ZXRhMS5QaG9uZU51bWJlchIUCgxkaXNwbGF5X25hbWUYAyABKAkSSwoGbGFi",
-            "ZWxzGAQgAygLMjsuZW5mb25pY2EubnVtYmVyaW5nLnYxYmV0YTEuUGhvbmVO",
-            "dW1iZXJJbnN0YW5jZS5MYWJlbHNFbnRyeRIlCh1pbmNvbWluZ19tZXNzYWdl",
-            "X2hhbmRsZXJfdXJpcxgFIAMoCRIiChppbmNvbWluZ19jYWxsX2hhbmRsZXJf",
-            "dXJpcxgGIAMoCRIvCgtjcmVhdGVfdGltZRgKIAEoCzIaLmdvb2dsZS5wcm90",
-            "b2J1Zi5UaW1lc3RhbXASLwoLZGVsZXRlX3RpbWUYCyABKAsyGi5nb29nbGUu",
-            "cHJvdG9idWYuVGltZXN0YW1wElcKD2xpZmVjeWNsZV9zdGF0ZRgMIAEoDjI+",
-            "LmVuZm9uaWNhLm51bWJlcmluZy52MWJldGExLlBob25lTnVtYmVySW5zdGFu",
-            "Y2UuTGlmZWN5Y2xlU3RhdGUaLQoLTGFiZWxzRW50cnkSCwoDa2V5GAEgASgJ",
-            "Eg0KBXZhbHVlGAIgASgJOgI4ASJVCg5MaWZlY3ljbGVTdGF0ZRIbChdMSUZF",
-            "Q1lDTEVfU1RBVEVfVU5LTk9XThAAEgoKBkFDVElWRRABEgsKB0RFTEVURUQQ",
-            "AhINCglTVVNQRU5ERUQQAyKCAQogQ3JlYXRlUGhvbmVOdW1iZXJJbnN0YW5j",
-            "ZVJlcXVlc3QSDgoGcGFyZW50GAEgASgJEk4KFXBob25lX251bWJlcl9pbnN0",
-            "YW5jZRgCIAEoCzIvLmVuZm9uaWNhLm51bWJlcmluZy52MWJldGExLlBob25l",
-            "TnVtYmVySW5zdGFuY2UiLQodR2V0UGhvbmVOdW1iZXJJbnN0YW5jZVJlcXVl",
-            "c3QSDAoEbmFtZRgBIAEoCSKBAQofTGlzdFBob25lTnVtYmVySW5zdGFuY2Vz",
-            "UmVxdWVzdBIOCgZwYXJlbnQYASABKAkSEQoJcGFnZV9zaXplGAIgASgFEhIK",
-            "CnBhZ2VfdG9rZW4YAyABKAkSDgoGcHJlZml4GAQgASgJEhcKD2luY2x1ZGVf",
-            "ZGVsZXRlZBgFIAEoCCKMAQogTGlzdFBob25lTnVtYmVySW5zdGFuY2VzUmVz",
-            "cG9uc2USTwoWcGhvbmVfbnVtYmVyX2luc3RhbmNlcxgBIAMoCzIvLmVuZm9u",
-            "aWNhLm51bWJlcmluZy52MWJldGExLlBob25lTnVtYmVySW5zdGFuY2USFwoP",
-            "bmV4dF9wYWdlX3Rva2VuGAIgASgJIrEBCiBVcGRhdGVQaG9uZU51bWJlcklu",
-            "c3RhbmNlUmVxdWVzdBIMCgRuYW1lGAEgASgJEk4KFXBob25lX251bWJlcl9p",
-            "bnN0YW5jZRgCIAEoCzIvLmVuZm9uaWNhLm51bWJlcmluZy52MWJldGExLlBo",
-            "b25lTnVtYmVySW5zdGFuY2USLwoLdXBkYXRlX21hc2sYAyABKAsyGi5nb29n",
-            "bGUucHJvdG9idWYuRmllbGRNYXNrIjAKIERlbGV0ZVBob25lTnVtYmVySW5z",
-            "dGFuY2VSZXF1ZXN0EgwKBG5hbWUYASABKAkiUAooR2V0UHJvdmlzaW9uZWRQ",
-            "aG9uZU51bWJlckluc3RhbmNlUmVxdWVzdBIOCgZwYXJlbnQYASABKAkSFAoM",
-            "cGhvbmVfbnVtYmVyGAIgASgJMpsKChRQaG9uZU51bWJlckluc3RhbmNlcxLc",
-            "AQoZQ3JlYXRlUGhvbmVOdW1iZXJJbnN0YW5jZRI8LmVuZm9uaWNhLm51bWJl",
-            "cmluZy52MWJldGExLkNyZWF0ZVBob25lTnVtYmVySW5zdGFuY2VSZXF1ZXN0",
-            "Gi8uZW5mb25pY2EubnVtYmVyaW5nLnYxYmV0YTEuUGhvbmVOdW1iZXJJbnN0",
-            "YW5jZSJQgtPkkwJKIjEvdjFiZXRhMS97cGFyZW50PXByb2plY3RzLyp9L3Bo",
-            "b25lTnVtYmVySW5zdGFuY2VzOhVwaG9uZV9udW1iZXJfaW5zdGFuY2USvwEK",
-            "FkdldFBob25lTnVtYmVySW5zdGFuY2USOS5lbmZvbmljYS5udW1iZXJpbmcu",
-            "djFiZXRhMS5HZXRQaG9uZU51bWJlckluc3RhbmNlUmVxdWVzdBovLmVuZm9u",
-            "aWNhLm51bWJlcmluZy52MWJldGExLlBob25lTnVtYmVySW5zdGFuY2UiOYLT",
-            "5JMCMxIxL3YxYmV0YTEve25hbWU9cHJvamVjdHMvKi9waG9uZU51bWJlcklu",
-            "c3RhbmNlcy8qfRLQAQoYTGlzdFBob25lTnVtYmVySW5zdGFuY2VzEjsuZW5m",
-            "b25pY2EubnVtYmVyaW5nLnYxYmV0YTEuTGlzdFBob25lTnVtYmVySW5zdGFu",
-            "Y2VzUmVxdWVzdBo8LmVuZm9uaWNhLm51bWJlcmluZy52MWJldGExLkxpc3RQ",
-            "aG9uZU51bWJlckluc3RhbmNlc1Jlc3BvbnNlIjmC0+STAjMSMS92MWJldGEx",
-            "L3twYXJlbnQ9cHJvamVjdHMvKn0vcGhvbmVOdW1iZXJJbnN0YW5jZXMS3AEK",
-            "GVVwZGF0ZVBob25lTnVtYmVySW5zdGFuY2USPC5lbmZvbmljYS5udW1iZXJp",
-            "bmcudjFiZXRhMS5VcGRhdGVQaG9uZU51bWJlckluc3RhbmNlUmVxdWVzdBov",
-            "LmVuZm9uaWNhLm51bWJlcmluZy52MWJldGExLlBob25lTnVtYmVySW5zdGFu",
-            "Y2UiUILT5JMCSjIxL3YxYmV0YTEve25hbWU9cHJvamVjdHMvKi9waG9uZU51",
-            "bWJlckluc3RhbmNlcy8qfToVcGhvbmVfbnVtYmVyX2luc3RhbmNlEsUBChlE",
-            "ZWxldGVQaG9uZU51bWJlckluc3RhbmNlEjwuZW5mb25pY2EubnVtYmVyaW5n",
-            "LnYxYmV0YTEuRGVsZXRlUGhvbmVOdW1iZXJJbnN0YW5jZVJlcXVlc3QaLy5l",
-            "bmZvbmljYS5udW1iZXJpbmcudjFiZXRhMS5QaG9uZU51bWJlckluc3RhbmNl",
-            "IjmC0+STAjMqMS92MWJldGExL3tuYW1lPXByb2plY3RzLyovcGhvbmVOdW1i",
-            "ZXJJbnN0YW5jZXMvKn0S5wEKIUdldFByb3Zpc2lvbmVkUGhvbmVOdW1iZXJJ",
-            "bnN0YW5jZRJELmVuZm9uaWNhLm51bWJlcmluZy52MWJldGExLkdldFByb3Zp",
-            "c2lvbmVkUGhvbmVOdW1iZXJJbnN0YW5jZVJlcXVlc3QaLy5lbmZvbmljYS5u",
-            "dW1iZXJpbmcudjFiZXRhMS5QaG9uZU51bWJlckluc3RhbmNlIkuC0+STAkUi",
-            "QC92MWJldGExL3twYXJlbnQ9cHJvamVjdHMvKn0vcGhvbmVOdW1iZXJJbnN0",
-            "YW5jZXM6Z2V0UHJvdmlzaW9uZWQ6ASpCHaoCGkVuZm9uaWNhLk51bWJlcmlu",
-            "Zy5WMUJldGExYgZwcm90bzM="));
+            "dG8aF2dvb2dsZS9hcGkvY2xpZW50LnByb3RvGh9nb29nbGUvYXBpL2ZpZWxk",
+            "X2JlaGF2aW9yLnByb3RvGhlnb29nbGUvYXBpL3Jlc291cmNlLnByb3RvGi5l",
+            "bmZvbmljYS9udW1iZXJpbmcvdjFiZXRhMS9waG9uZV9udW1iZXJzLnByb3Rv",
+            "ItoFChNQaG9uZU51bWJlckluc3RhbmNlEgwKBG5hbWUYASABKAkSPQoMcGhv",
+            "bmVfbnVtYmVyGAIgASgLMicuZW5mb25pY2EubnVtYmVyaW5nLnYxYmV0YTEu",
+            "UGhvbmVOdW1iZXISFAoMZGlzcGxheV9uYW1lGAMgASgJEksKBmxhYmVscxgE",
+            "IAMoCzI7LmVuZm9uaWNhLm51bWJlcmluZy52MWJldGExLlBob25lTnVtYmVy",
+            "SW5zdGFuY2UuTGFiZWxzRW50cnkSJQodaW5jb21pbmdfbWVzc2FnZV9oYW5k",
+            "bGVyX3VyaXMYBSADKAkSIgoaaW5jb21pbmdfY2FsbF9oYW5kbGVyX3VyaXMY",
+            "BiADKAkSNAoLY3JlYXRlX3RpbWUYCiABKAsyGi5nb29nbGUucHJvdG9idWYu",
+            "VGltZXN0YW1wQgPgQQMSNAoLZGVsZXRlX3RpbWUYCyABKAsyGi5nb29nbGUu",
+            "cHJvdG9idWYuVGltZXN0YW1wQgPgQQMSXAoPbGlmZWN5Y2xlX3N0YXRlGAwg",
+            "ASgOMj4uZW5mb25pY2EubnVtYmVyaW5nLnYxYmV0YTEuUGhvbmVOdW1iZXJJ",
+            "bnN0YW5jZS5MaWZlY3ljbGVTdGF0ZUID4EEDGi0KC0xhYmVsc0VudHJ5EgsK",
+            "A2tleRgBIAEoCRINCgV2YWx1ZRgCIAEoCToCOAEiWQoOTGlmZWN5Y2xlU3Rh",
+            "dGUSHwobTElGRUNZQ0xFX1NUQVRFX1VOU1BFQ0lGSUVEEAASCgoGQUNUSVZF",
+            "EAESCwoHREVMRVRFRBACEg0KCVNVU1BFTkRFRBADOnTqQXEKLm51bWJlcmlu",
+            "Zy5hcGkuZW5mb25pY2EuY29tL1Bob25lTnVtYmVySW5zdGFuY2USP3Byb2pl",
+            "Y3RzL3twcm9qZWN0fS9waG9uZU51bWJlckluc3RhbmNlcy97cGhvbmVfbnVt",
+            "YmVyX2luc3RhbmNlfSK/AQogQ3JlYXRlUGhvbmVOdW1iZXJJbnN0YW5jZVJl",
+            "cXVlc3QSRgoGcGFyZW50GAEgASgJQjbgQQL6QTASLm51bWJlcmluZy5hcGku",
+            "ZW5mb25pY2EuY29tL1Bob25lTnVtYmVySW5zdGFuY2USUwoVcGhvbmVfbnVt",
+            "YmVyX2luc3RhbmNlGAIgASgLMi8uZW5mb25pY2EubnVtYmVyaW5nLnYxYmV0",
+            "YTEuUGhvbmVOdW1iZXJJbnN0YW5jZUID4EECImUKHUdldFBob25lTnVtYmVy",
+            "SW5zdGFuY2VSZXF1ZXN0EkQKBG5hbWUYASABKAlCNuBBAvpBMAoubnVtYmVy",
+            "aW5nLmFwaS5lbmZvbmljYS5jb20vUGhvbmVOdW1iZXJJbnN0YW5jZSK5AQof",
+            "TGlzdFBob25lTnVtYmVySW5zdGFuY2VzUmVxdWVzdBJGCgZwYXJlbnQYASAB",
+            "KAlCNuBBAvpBMBIubnVtYmVyaW5nLmFwaS5lbmZvbmljYS5jb20vUGhvbmVO",
+            "dW1iZXJJbnN0YW5jZRIRCglwYWdlX3NpemUYAiABKAUSEgoKcGFnZV90b2tl",
+            "bhgDIAEoCRIOCgZwcmVmaXgYBCABKAkSFwoPaW5jbHVkZV9kZWxldGVkGAUg",
+            "ASgIIowBCiBMaXN0UGhvbmVOdW1iZXJJbnN0YW5jZXNSZXNwb25zZRJPChZw",
+            "aG9uZV9udW1iZXJfaW5zdGFuY2VzGAEgAygLMi8uZW5mb25pY2EubnVtYmVy",
+            "aW5nLnYxYmV0YTEuUGhvbmVOdW1iZXJJbnN0YW5jZRIXCg9uZXh0X3BhZ2Vf",
+            "dG9rZW4YAiABKAki7gEKIFVwZGF0ZVBob25lTnVtYmVySW5zdGFuY2VSZXF1",
+            "ZXN0EkQKBG5hbWUYASABKAlCNuBBAvpBMAoubnVtYmVyaW5nLmFwaS5lbmZv",
+            "bmljYS5jb20vUGhvbmVOdW1iZXJJbnN0YW5jZRJTChVwaG9uZV9udW1iZXJf",
+            "aW5zdGFuY2UYAiABKAsyLy5lbmZvbmljYS5udW1iZXJpbmcudjFiZXRhMS5Q",
+            "aG9uZU51bWJlckluc3RhbmNlQgPgQQISLwoLdXBkYXRlX21hc2sYAyABKAsy",
+            "Gi5nb29nbGUucHJvdG9idWYuRmllbGRNYXNrImgKIERlbGV0ZVBob25lTnVt",
+            "YmVySW5zdGFuY2VSZXF1ZXN0EkQKBG5hbWUYASABKAlCNuBBAvpBMAoubnVt",
+            "YmVyaW5nLmFwaS5lbmZvbmljYS5jb20vUGhvbmVOdW1iZXJJbnN0YW5jZTLZ",
+            "CQoUUGhvbmVOdW1iZXJJbnN0YW5jZXMS+wEKGUNyZWF0ZVBob25lTnVtYmVy",
+            "SW5zdGFuY2USPC5lbmZvbmljYS5udW1iZXJpbmcudjFiZXRhMS5DcmVhdGVQ",
+            "aG9uZU51bWJlckluc3RhbmNlUmVxdWVzdBovLmVuZm9uaWNhLm51bWJlcmlu",
+            "Zy52MWJldGExLlBob25lTnVtYmVySW5zdGFuY2Uib4LT5JMCSiIxL3YxYmV0",
+            "YTEve3BhcmVudD1wcm9qZWN0cy8qfS9waG9uZU51bWJlckluc3RhbmNlczoV",
+            "cGhvbmVfbnVtYmVyX2luc3RhbmNl2kEccGFyZW50LHBob25lX251bWJlcl9p",
+            "bnN0YW5jZRLGAQoWR2V0UGhvbmVOdW1iZXJJbnN0YW5jZRI5LmVuZm9uaWNh",
+            "Lm51bWJlcmluZy52MWJldGExLkdldFBob25lTnVtYmVySW5zdGFuY2VSZXF1",
+            "ZXN0Gi8uZW5mb25pY2EubnVtYmVyaW5nLnYxYmV0YTEuUGhvbmVOdW1iZXJJ",
+            "bnN0YW5jZSJAgtPkkwIzEjEvdjFiZXRhMS97bmFtZT1wcm9qZWN0cy8qL3Bo",
+            "b25lTnVtYmVySW5zdGFuY2VzLyp92kEEbmFtZRLZAQoYTGlzdFBob25lTnVt",
+            "YmVySW5zdGFuY2VzEjsuZW5mb25pY2EubnVtYmVyaW5nLnYxYmV0YTEuTGlz",
+            "dFBob25lTnVtYmVySW5zdGFuY2VzUmVxdWVzdBo8LmVuZm9uaWNhLm51bWJl",
+            "cmluZy52MWJldGExLkxpc3RQaG9uZU51bWJlckluc3RhbmNlc1Jlc3BvbnNl",
+            "IkKC0+STAjMSMS92MWJldGExL3twYXJlbnQ9cHJvamVjdHMvKn0vcGhvbmVO",
+            "dW1iZXJJbnN0YW5jZXPaQQZwYXJlbnQShQIKGVVwZGF0ZVBob25lTnVtYmVy",
+            "SW5zdGFuY2USPC5lbmZvbmljYS5udW1iZXJpbmcudjFiZXRhMS5VcGRhdGVQ",
+            "aG9uZU51bWJlckluc3RhbmNlUmVxdWVzdBovLmVuZm9uaWNhLm51bWJlcmlu",
+            "Zy52MWJldGExLlBob25lTnVtYmVySW5zdGFuY2UieYLT5JMCSjIxL3YxYmV0",
+            "YTEve25hbWU9cHJvamVjdHMvKi9waG9uZU51bWJlckluc3RhbmNlcy8qfToV",
+            "cGhvbmVfbnVtYmVyX2luc3RhbmNl2kEmbmFtZSxwaG9uZV9udW1iZXJfaW5z",
+            "dGFuY2UsdXBkYXRlX21hc2sSzAEKGURlbGV0ZVBob25lTnVtYmVySW5zdGFu",
+            "Y2USPC5lbmZvbmljYS5udW1iZXJpbmcudjFiZXRhMS5EZWxldGVQaG9uZU51",
+            "bWJlckluc3RhbmNlUmVxdWVzdBovLmVuZm9uaWNhLm51bWJlcmluZy52MWJl",
+            "dGExLlBob25lTnVtYmVySW5zdGFuY2UiQILT5JMCMyoxL3YxYmV0YTEve25h",
+            "bWU9cHJvamVjdHMvKi9waG9uZU51bWJlckluc3RhbmNlcy8qfdpBBG5hbWUa",
+            "R8pBGm51bWJlcmluZy5hcGkuZW5mb25pY2EuY29t0kEnaHR0cHM6Ly9hcGku",
+            "ZW5mb25pY2EuY29tL2F1dGgvbnVtYmVyaW5nQqIBCh5jb20uZW5mb25pY2Eu",
+            "bnVtYmVyaW5nLnYxYmV0YTFCGVBob25lTnVtYmVySW5zdGFuY2VzUHJvdG9Q",
+            "AVo7Z2l0aHViLmNvbS9lbmZvbmljYS9lbmZvbmljYS1nby9udW1iZXJpbmcv",
+            "djFiZXRhMTtudW1iZXJpbmf4AQGiAgVFTkZPTqoCGkVuZm9uaWNhLk51bWJl",
+            "cmluZy5WMUJldGExYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.FieldMaskReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Enfonica.Numbering.V1Beta1.PhoneNumbersReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.FieldMaskReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Enfonica.Numbering.V1Beta1.PhoneNumbersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance), global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance.Parser, new[]{ "Name", "PhoneNumber", "DisplayName", "Labels", "IncomingMessageHandlerUris", "IncomingCallHandlerUris", "CreateTime", "DeleteTime", "LifecycleState" }, null, new[]{ typeof(global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance.Types.LifecycleState) }, null, new pbr::GeneratedClrTypeInfo[] { null, }),
             new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Numbering.V1Beta1.CreatePhoneNumberInstanceRequest), global::Enfonica.Numbering.V1Beta1.CreatePhoneNumberInstanceRequest.Parser, new[]{ "Parent", "PhoneNumberInstance" }, null, null, null, null),
@@ -99,8 +110,7 @@ namespace Enfonica.Numbering.V1Beta1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Numbering.V1Beta1.ListPhoneNumberInstancesRequest), global::Enfonica.Numbering.V1Beta1.ListPhoneNumberInstancesRequest.Parser, new[]{ "Parent", "PageSize", "PageToken", "Prefix", "IncludeDeleted" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Numbering.V1Beta1.ListPhoneNumberInstancesResponse), global::Enfonica.Numbering.V1Beta1.ListPhoneNumberInstancesResponse.Parser, new[]{ "PhoneNumberInstances", "NextPageToken" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Numbering.V1Beta1.UpdatePhoneNumberInstanceRequest), global::Enfonica.Numbering.V1Beta1.UpdatePhoneNumberInstanceRequest.Parser, new[]{ "Name", "PhoneNumberInstance", "UpdateMask" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Numbering.V1Beta1.DeletePhoneNumberInstanceRequest), global::Enfonica.Numbering.V1Beta1.DeletePhoneNumberInstanceRequest.Parser, new[]{ "Name" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Numbering.V1Beta1.GetProvisionedPhoneNumberInstanceRequest), global::Enfonica.Numbering.V1Beta1.GetProvisionedPhoneNumberInstanceRequest.Parser, new[]{ "Parent", "PhoneNumber" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Numbering.V1Beta1.DeletePhoneNumberInstanceRequest), global::Enfonica.Numbering.V1Beta1.DeletePhoneNumberInstanceRequest.Parser, new[]{ "Name" }, null, null, null, null)
           }));
     }
     #endregion
@@ -162,7 +172,6 @@ namespace Enfonica.Numbering.V1Beta1 {
     /// <summary>
     /// Resource name of the phone number instance. It must match the pattern
     /// `projects/*/phoneNumberInstances/*`
-    /// Output only.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Name {
@@ -192,7 +201,7 @@ namespace Enfonica.Numbering.V1Beta1 {
     private string displayName_ = "";
     /// <summary>
     /// The display name of the phone number for use in the UI.
-    /// Optional. Max length 100 characters.
+    /// Max length 100 characters.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string DisplayName {
@@ -265,7 +274,6 @@ namespace Enfonica.Numbering.V1Beta1 {
     private global::Google.Protobuf.WellKnownTypes.Timestamp createTime_;
     /// <summary>
     /// The creation time of the phone number instance.
-    /// Output only.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Protobuf.WellKnownTypes.Timestamp CreateTime {
@@ -280,7 +288,6 @@ namespace Enfonica.Numbering.V1Beta1 {
     private global::Google.Protobuf.WellKnownTypes.Timestamp deleteTime_;
     /// <summary>
     /// The deletion time of the phone number instance, if it has been deleted.
-    /// Output only.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Protobuf.WellKnownTypes.Timestamp DeleteTime {
@@ -292,10 +299,9 @@ namespace Enfonica.Numbering.V1Beta1 {
 
     /// <summary>Field number for the "lifecycle_state" field.</summary>
     public const int LifecycleStateFieldNumber = 12;
-    private global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance.Types.LifecycleState lifecycleState_ = global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance.Types.LifecycleState.Unknown;
+    private global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance.Types.LifecycleState lifecycleState_ = global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance.Types.LifecycleState.Unspecified;
     /// <summary>
     /// The state of the phone number instance in its lifecycle.
-    /// Output only.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance.Types.LifecycleState LifecycleState {
@@ -341,7 +347,7 @@ namespace Enfonica.Numbering.V1Beta1 {
       hash ^= incomingCallHandlerUris_.GetHashCode();
       if (createTime_ != null) hash ^= CreateTime.GetHashCode();
       if (deleteTime_ != null) hash ^= DeleteTime.GetHashCode();
-      if (LifecycleState != global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance.Types.LifecycleState.Unknown) hash ^= LifecycleState.GetHashCode();
+      if (LifecycleState != global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance.Types.LifecycleState.Unspecified) hash ^= LifecycleState.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -381,7 +387,7 @@ namespace Enfonica.Numbering.V1Beta1 {
         output.WriteRawTag(90);
         output.WriteMessage(DeleteTime);
       }
-      if (LifecycleState != global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance.Types.LifecycleState.Unknown) {
+      if (LifecycleState != global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance.Types.LifecycleState.Unspecified) {
         output.WriteRawTag(96);
         output.WriteEnum((int) LifecycleState);
       }
@@ -417,7 +423,7 @@ namespace Enfonica.Numbering.V1Beta1 {
         output.WriteRawTag(90);
         output.WriteMessage(DeleteTime);
       }
-      if (LifecycleState != global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance.Types.LifecycleState.Unknown) {
+      if (LifecycleState != global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance.Types.LifecycleState.Unspecified) {
         output.WriteRawTag(96);
         output.WriteEnum((int) LifecycleState);
       }
@@ -448,7 +454,7 @@ namespace Enfonica.Numbering.V1Beta1 {
       if (deleteTime_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(DeleteTime);
       }
-      if (LifecycleState != global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance.Types.LifecycleState.Unknown) {
+      if (LifecycleState != global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance.Types.LifecycleState.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) LifecycleState);
       }
       if (_unknownFields != null) {
@@ -489,7 +495,7 @@ namespace Enfonica.Numbering.V1Beta1 {
         }
         DeleteTime.MergeFrom(other.DeleteTime);
       }
-      if (other.LifecycleState != global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance.Types.LifecycleState.Unknown) {
+      if (other.LifecycleState != global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance.Types.LifecycleState.Unspecified) {
         LifecycleState = other.LifecycleState;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -626,7 +632,7 @@ namespace Enfonica.Numbering.V1Beta1 {
         /// <summary>
         /// Unspecified lifecycle state.
         /// </summary>
-        [pbr::OriginalName("LIFECYCLE_STATE_UNKNOWN")] Unknown = 0,
+        [pbr::OriginalName("LIFECYCLE_STATE_UNSPECIFIED")] Unspecified = 0,
         /// <summary>
         /// The phone number instance is active and can be used.
         /// </summary>
@@ -1117,7 +1123,7 @@ namespace Enfonica.Numbering.V1Beta1 {
     private int pageSize_;
     /// <summary>
     /// The maximum number of phone number instance to return in the response.
-    /// Optional, with a default value of 10 and maximum value of 100.
+    /// Default value of 10 and maximum value of 100.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int PageSize {
@@ -1133,7 +1139,6 @@ namespace Enfonica.Numbering.V1Beta1 {
     /// <summary>
     /// A pagination token returned from a previous call to `ListPhoneNumberInstances`
     /// that indicates where this listing should continue from.
-    /// Optional.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string PageToken {
@@ -1148,7 +1153,8 @@ namespace Enfonica.Numbering.V1Beta1 {
     private string prefix_ = "";
     /// <summary>
     /// The prefix, either in E164 or 0NSN, of numbers to retrieve.
-    /// Optional.
+    /// (-- api-linter: core::0132::request-unknown-fields=disabled
+    ///     aip.dev/not-precedent: List has additional fields in this package. --)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Prefix {
@@ -1163,7 +1169,9 @@ namespace Enfonica.Numbering.V1Beta1 {
     private bool includeDeleted_;
     /// <summary>
     /// Whether to include deleted phone numbers in the response.
-    /// Optional (default false).
+    /// Defaults to false.
+    /// (-- api-linter: core::0132::request-unknown-fields=disabled
+    ///     aip.dev/not-precedent: List has additional fields in this package. --)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool IncludeDeleted {
@@ -1454,7 +1462,6 @@ namespace Enfonica.Numbering.V1Beta1 {
     /// <summary>
     /// A pagination token returned from a previous call to `ListPhoneNumberInstances`
     /// that indicates from where listing should continue.
-    /// Optional.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string NextPageToken {
@@ -1650,6 +1657,8 @@ namespace Enfonica.Numbering.V1Beta1 {
     /// <summary>
     /// The name of the phone number instance to be updated.
     /// Must be of the form `projects/*/phoneNumberInstances/*`.
+    /// (-- api-linter: core::0134::request-unknown-fields=disabled
+    ///     aip.dev/not-precedent: Update has `name` in the request message in this beta. --)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Name {
@@ -2046,224 +2055,6 @@ namespace Enfonica.Numbering.V1Beta1 {
             break;
           case 10: {
             Name = input.ReadString();
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  /// <summary>
-  /// The GetProvisionedPhoneNumberInstance request message.
-  /// </summary>
-  public sealed partial class GetProvisionedPhoneNumberInstanceRequest : pb::IMessage<GetProvisionedPhoneNumberInstanceRequest>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<GetProvisionedPhoneNumberInstanceRequest> _parser = new pb::MessageParser<GetProvisionedPhoneNumberInstanceRequest>(() => new GetProvisionedPhoneNumberInstanceRequest());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<GetProvisionedPhoneNumberInstanceRequest> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Enfonica.Numbering.V1Beta1.PhoneNumberInstancesReflection.Descriptor.MessageTypes[7]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public GetProvisionedPhoneNumberInstanceRequest() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public GetProvisionedPhoneNumberInstanceRequest(GetProvisionedPhoneNumberInstanceRequest other) : this() {
-      parent_ = other.parent_;
-      phoneNumber_ = other.phoneNumber_;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public GetProvisionedPhoneNumberInstanceRequest Clone() {
-      return new GetProvisionedPhoneNumberInstanceRequest(this);
-    }
-
-    /// <summary>Field number for the "parent" field.</summary>
-    public const int ParentFieldNumber = 1;
-    private string parent_ = "";
-    /// <summary>
-    /// The parent to search under. This must be set as
-    /// `projects/-`.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Parent {
-      get { return parent_; }
-      set {
-        parent_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "phone_number" field.</summary>
-    public const int PhoneNumberFieldNumber = 2;
-    private string phoneNumber_ = "";
-    /// <summary>
-    /// The phone number of the instance to find, in +E164.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string PhoneNumber {
-      get { return phoneNumber_; }
-      set {
-        phoneNumber_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as GetProvisionedPhoneNumberInstanceRequest);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(GetProvisionedPhoneNumberInstanceRequest other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (Parent != other.Parent) return false;
-      if (PhoneNumber != other.PhoneNumber) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (Parent.Length != 0) hash ^= Parent.GetHashCode();
-      if (PhoneNumber.Length != 0) hash ^= PhoneNumber.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (Parent.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(Parent);
-      }
-      if (PhoneNumber.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(PhoneNumber);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Parent.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(Parent);
-      }
-      if (PhoneNumber.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(PhoneNumber);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (Parent.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Parent);
-      }
-      if (PhoneNumber.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(PhoneNumber);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(GetProvisionedPhoneNumberInstanceRequest other) {
-      if (other == null) {
-        return;
-      }
-      if (other.Parent.Length != 0) {
-        Parent = other.Parent;
-      }
-      if (other.PhoneNumber.Length != 0) {
-        PhoneNumber = other.PhoneNumber;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 10: {
-            Parent = input.ReadString();
-            break;
-          }
-          case 18: {
-            PhoneNumber = input.ReadString();
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            Parent = input.ReadString();
-            break;
-          }
-          case 18: {
-            PhoneNumber = input.ReadString();
             break;
           }
         }

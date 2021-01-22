@@ -1,4 +1,4 @@
-// Copyright 2020 Enfonica Pty Ltd
+// Copyright 2021 Enfonica Pty Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -19,6 +19,7 @@ using gaxgrpc = Google.Api.Gax.Grpc;
 using enfgaxgrpc = Enfonica.Api.Gax.Grpc;
 using gaxgrpccore = Google.Api.Gax.Grpc.GrpcCore;
 using proto = Google.Protobuf;
+using wkt = Google.Protobuf.WellKnownTypes;
 using grpccore = Grpc.Core;
 using grpcinter = Grpc.Core.Interceptors;
 using sys = System;
@@ -50,7 +51,6 @@ namespace Enfonica.Numbering.V1Beta1
             ListPhoneNumberInstancesSettings = existing.ListPhoneNumberInstancesSettings;
             UpdatePhoneNumberInstanceSettings = existing.UpdatePhoneNumberInstanceSettings;
             DeletePhoneNumberInstanceSettings = existing.DeletePhoneNumberInstanceSettings;
-            GetProvisionedPhoneNumberInstanceSettings = existing.GetProvisionedPhoneNumberInstanceSettings;
             OnCopy(existing);
         }
 
@@ -64,10 +64,10 @@ namespace Enfonica.Numbering.V1Beta1
         /// <remarks>
         /// <list type="bullet">
         /// <item><description>This call will not be retried.</description></item>
-        /// <item><description>No timeout is applied.</description></item>
+        /// <item><description>Timeout: 10 seconds.</description></item>
         /// </list>
         /// </remarks>
-        public gaxgrpc::CallSettings CreatePhoneNumberInstanceSettings { get; set; } = gaxgrpc::CallSettings.FromExpiration(gax::Expiration.None);
+        public gaxgrpc::CallSettings CreatePhoneNumberInstanceSettings { get; set; } = gaxgrpc::CallSettings.FromExpiration(gax::Expiration.FromTimeout(sys::TimeSpan.FromMilliseconds(10000)));
 
         /// <summary>
         /// <see cref="gaxgrpc::CallSettings"/> for synchronous and asynchronous calls to
@@ -77,10 +77,10 @@ namespace Enfonica.Numbering.V1Beta1
         /// <remarks>
         /// <list type="bullet">
         /// <item><description>This call will not be retried.</description></item>
-        /// <item><description>No timeout is applied.</description></item>
+        /// <item><description>Timeout: 10 seconds.</description></item>
         /// </list>
         /// </remarks>
-        public gaxgrpc::CallSettings GetPhoneNumberInstanceSettings { get; set; } = gaxgrpc::CallSettings.FromExpiration(gax::Expiration.None);
+        public gaxgrpc::CallSettings GetPhoneNumberInstanceSettings { get; set; } = gaxgrpc::CallSettings.FromExpiration(gax::Expiration.FromTimeout(sys::TimeSpan.FromMilliseconds(10000)));
 
         /// <summary>
         /// <see cref="gaxgrpc::CallSettings"/> for synchronous and asynchronous calls to
@@ -90,10 +90,10 @@ namespace Enfonica.Numbering.V1Beta1
         /// <remarks>
         /// <list type="bullet">
         /// <item><description>This call will not be retried.</description></item>
-        /// <item><description>No timeout is applied.</description></item>
+        /// <item><description>Timeout: 10 seconds.</description></item>
         /// </list>
         /// </remarks>
-        public gaxgrpc::CallSettings ListPhoneNumberInstancesSettings { get; set; } = gaxgrpc::CallSettings.FromExpiration(gax::Expiration.None);
+        public gaxgrpc::CallSettings ListPhoneNumberInstancesSettings { get; set; } = gaxgrpc::CallSettings.FromExpiration(gax::Expiration.FromTimeout(sys::TimeSpan.FromMilliseconds(10000)));
 
         /// <summary>
         /// <see cref="gaxgrpc::CallSettings"/> for synchronous and asynchronous calls to
@@ -103,10 +103,10 @@ namespace Enfonica.Numbering.V1Beta1
         /// <remarks>
         /// <list type="bullet">
         /// <item><description>This call will not be retried.</description></item>
-        /// <item><description>No timeout is applied.</description></item>
+        /// <item><description>Timeout: 10 seconds.</description></item>
         /// </list>
         /// </remarks>
-        public gaxgrpc::CallSettings UpdatePhoneNumberInstanceSettings { get; set; } = gaxgrpc::CallSettings.FromExpiration(gax::Expiration.None);
+        public gaxgrpc::CallSettings UpdatePhoneNumberInstanceSettings { get; set; } = gaxgrpc::CallSettings.FromExpiration(gax::Expiration.FromTimeout(sys::TimeSpan.FromMilliseconds(10000)));
 
         /// <summary>
         /// <see cref="gaxgrpc::CallSettings"/> for synchronous and asynchronous calls to
@@ -116,23 +116,10 @@ namespace Enfonica.Numbering.V1Beta1
         /// <remarks>
         /// <list type="bullet">
         /// <item><description>This call will not be retried.</description></item>
-        /// <item><description>No timeout is applied.</description></item>
+        /// <item><description>Timeout: 10 seconds.</description></item>
         /// </list>
         /// </remarks>
-        public gaxgrpc::CallSettings DeletePhoneNumberInstanceSettings { get; set; } = gaxgrpc::CallSettings.FromExpiration(gax::Expiration.None);
-
-        /// <summary>
-        /// <see cref="gaxgrpc::CallSettings"/> for synchronous and asynchronous calls to
-        /// <c>PhoneNumberInstancesClient.GetProvisionedPhoneNumberInstance</c> and
-        /// <c>PhoneNumberInstancesClient.GetProvisionedPhoneNumberInstanceAsync</c>.
-        /// </summary>
-        /// <remarks>
-        /// <list type="bullet">
-        /// <item><description>This call will not be retried.</description></item>
-        /// <item><description>No timeout is applied.</description></item>
-        /// </list>
-        /// </remarks>
-        public gaxgrpc::CallSettings GetProvisionedPhoneNumberInstanceSettings { get; set; } = gaxgrpc::CallSettings.FromExpiration(gax::Expiration.None);
+        public gaxgrpc::CallSettings DeletePhoneNumberInstanceSettings { get; set; } = gaxgrpc::CallSettings.FromExpiration(gax::Expiration.FromTimeout(sys::TimeSpan.FromMilliseconds(10000)));
 
         /// <summary>Creates a deep clone of this object, with all the same property values.</summary>
         /// <returns>A deep clone of this <see cref="PhoneNumberInstancesSettings"/> object.</returns>
@@ -204,13 +191,20 @@ namespace Enfonica.Numbering.V1Beta1
     public abstract partial class PhoneNumberInstancesClient
     {
         /// <summary>
-        /// The default endpoint for the PhoneNumberInstances service, which is a host of "" and a port of 443.
+        /// The default endpoint for the PhoneNumberInstances service, which is a host of "numbering.api.enfonica.com"
+        /// and a port of 443.
         /// </summary>
-        public static string DefaultEndpoint { get; } = ":443";
+        public static string DefaultEndpoint { get; } = "numbering.api.enfonica.com:443";
 
         /// <summary>The default PhoneNumberInstances scopes.</summary>
-        /// <remarks>The default PhoneNumberInstances scopes are:<list type="bullet"></list></remarks>
-        public static scg::IReadOnlyList<string> DefaultScopes { get; } = new sco::ReadOnlyCollection<string>(new string[] { });
+        /// <remarks>
+        /// The default PhoneNumberInstances scopes are:
+        /// <list type="bullet"><item><description>https://api.enfonica.com/auth/numbering</description></item></list>
+        /// </remarks>
+        public static scg::IReadOnlyList<string> DefaultScopes { get; } = new sco::ReadOnlyCollection<string>(new string[]
+        {
+            "https://api.enfonica.com/auth/numbering",
+        });
 
         internal static enfgaxgrpc::ChannelPool ChannelPool { get; } = new enfgaxgrpc::ChannelPool(DefaultScopes);
 
@@ -305,6 +299,130 @@ namespace Enfonica.Numbering.V1Beta1
             CreatePhoneNumberInstanceAsync(request, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
 
         /// <summary>
+        /// Creates a phone number instance.
+        /// 
+        /// The caller must have `numbering.phoneNumberInstances.create` permission on the project.
+        /// </summary>
+        /// <param name="parent">
+        /// The project under which to create the phone number instance
+        /// in the form `projects/*`.
+        /// </param>
+        /// <param name="phoneNumberInstance">
+        /// The phone number resource to be created.
+        /// At minimum, you must supply `phone_number.phone_number`.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>The RPC response.</returns>
+        public virtual PhoneNumberInstance CreatePhoneNumberInstance(string parent, PhoneNumberInstance phoneNumberInstance, gaxgrpc::CallSettings callSettings = null) =>
+            CreatePhoneNumberInstance(new CreatePhoneNumberInstanceRequest
+            {
+                Parent = gax::GaxPreconditions.CheckNotNullOrEmpty(parent, nameof(parent)),
+                PhoneNumberInstance = gax::GaxPreconditions.CheckNotNull(phoneNumberInstance, nameof(phoneNumberInstance)),
+            }, callSettings);
+
+        /// <summary>
+        /// Creates a phone number instance.
+        /// 
+        /// The caller must have `numbering.phoneNumberInstances.create` permission on the project.
+        /// </summary>
+        /// <param name="parent">
+        /// The project under which to create the phone number instance
+        /// in the form `projects/*`.
+        /// </param>
+        /// <param name="phoneNumberInstance">
+        /// The phone number resource to be created.
+        /// At minimum, you must supply `phone_number.phone_number`.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<PhoneNumberInstance> CreatePhoneNumberInstanceAsync(string parent, PhoneNumberInstance phoneNumberInstance, gaxgrpc::CallSettings callSettings = null) =>
+            CreatePhoneNumberInstanceAsync(new CreatePhoneNumberInstanceRequest
+            {
+                Parent = gax::GaxPreconditions.CheckNotNullOrEmpty(parent, nameof(parent)),
+                PhoneNumberInstance = gax::GaxPreconditions.CheckNotNull(phoneNumberInstance, nameof(phoneNumberInstance)),
+            }, callSettings);
+
+        /// <summary>
+        /// Creates a phone number instance.
+        /// 
+        /// The caller must have `numbering.phoneNumberInstances.create` permission on the project.
+        /// </summary>
+        /// <param name="parent">
+        /// The project under which to create the phone number instance
+        /// in the form `projects/*`.
+        /// </param>
+        /// <param name="phoneNumberInstance">
+        /// The phone number resource to be created.
+        /// At minimum, you must supply `phone_number.phone_number`.
+        /// </param>
+        /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<PhoneNumberInstance> CreatePhoneNumberInstanceAsync(string parent, PhoneNumberInstance phoneNumberInstance, st::CancellationToken cancellationToken) =>
+            CreatePhoneNumberInstanceAsync(parent, phoneNumberInstance, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Creates a phone number instance.
+        /// 
+        /// The caller must have `numbering.phoneNumberInstances.create` permission on the project.
+        /// </summary>
+        /// <param name="parent">
+        /// The project under which to create the phone number instance
+        /// in the form `projects/*`.
+        /// </param>
+        /// <param name="phoneNumberInstance">
+        /// The phone number resource to be created.
+        /// At minimum, you must supply `phone_number.phone_number`.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>The RPC response.</returns>
+        public virtual PhoneNumberInstance CreatePhoneNumberInstance(ProjectName parent, PhoneNumberInstance phoneNumberInstance, gaxgrpc::CallSettings callSettings = null) =>
+            CreatePhoneNumberInstance(new CreatePhoneNumberInstanceRequest
+            {
+                ParentAsProjectName = gax::GaxPreconditions.CheckNotNull(parent, nameof(parent)),
+                PhoneNumberInstance = gax::GaxPreconditions.CheckNotNull(phoneNumberInstance, nameof(phoneNumberInstance)),
+            }, callSettings);
+
+        /// <summary>
+        /// Creates a phone number instance.
+        /// 
+        /// The caller must have `numbering.phoneNumberInstances.create` permission on the project.
+        /// </summary>
+        /// <param name="parent">
+        /// The project under which to create the phone number instance
+        /// in the form `projects/*`.
+        /// </param>
+        /// <param name="phoneNumberInstance">
+        /// The phone number resource to be created.
+        /// At minimum, you must supply `phone_number.phone_number`.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<PhoneNumberInstance> CreatePhoneNumberInstanceAsync(ProjectName parent, PhoneNumberInstance phoneNumberInstance, gaxgrpc::CallSettings callSettings = null) =>
+            CreatePhoneNumberInstanceAsync(new CreatePhoneNumberInstanceRequest
+            {
+                ParentAsProjectName = gax::GaxPreconditions.CheckNotNull(parent, nameof(parent)),
+                PhoneNumberInstance = gax::GaxPreconditions.CheckNotNull(phoneNumberInstance, nameof(phoneNumberInstance)),
+            }, callSettings);
+
+        /// <summary>
+        /// Creates a phone number instance.
+        /// 
+        /// The caller must have `numbering.phoneNumberInstances.create` permission on the project.
+        /// </summary>
+        /// <param name="parent">
+        /// The project under which to create the phone number instance
+        /// in the form `projects/*`.
+        /// </param>
+        /// <param name="phoneNumberInstance">
+        /// The phone number resource to be created.
+        /// At minimum, you must supply `phone_number.phone_number`.
+        /// </param>
+        /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<PhoneNumberInstance> CreatePhoneNumberInstanceAsync(ProjectName parent, PhoneNumberInstance phoneNumberInstance, st::CancellationToken cancellationToken) =>
+            CreatePhoneNumberInstanceAsync(parent, phoneNumberInstance, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
         /// Retrieves a phone number instance identified by the supplied resource name.
         /// 
         /// The caller must have `numbering.phoneNumberInstances.get` permission on the project.
@@ -338,6 +456,102 @@ namespace Enfonica.Numbering.V1Beta1
             GetPhoneNumberInstanceAsync(request, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
 
         /// <summary>
+        /// Retrieves a phone number instance identified by the supplied resource name.
+        /// 
+        /// The caller must have `numbering.phoneNumberInstances.get` permission on the project.
+        /// </summary>
+        /// <param name="name">
+        /// The resource name of the phone number instance to retrieve.
+        /// Must be of the form `projects/*/phoneNumberInstances/*`.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>The RPC response.</returns>
+        public virtual PhoneNumberInstance GetPhoneNumberInstance(string name, gaxgrpc::CallSettings callSettings = null) =>
+            GetPhoneNumberInstance(new GetPhoneNumberInstanceRequest
+            {
+                Name = gax::GaxPreconditions.CheckNotNullOrEmpty(name, nameof(name)),
+            }, callSettings);
+
+        /// <summary>
+        /// Retrieves a phone number instance identified by the supplied resource name.
+        /// 
+        /// The caller must have `numbering.phoneNumberInstances.get` permission on the project.
+        /// </summary>
+        /// <param name="name">
+        /// The resource name of the phone number instance to retrieve.
+        /// Must be of the form `projects/*/phoneNumberInstances/*`.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<PhoneNumberInstance> GetPhoneNumberInstanceAsync(string name, gaxgrpc::CallSettings callSettings = null) =>
+            GetPhoneNumberInstanceAsync(new GetPhoneNumberInstanceRequest
+            {
+                Name = gax::GaxPreconditions.CheckNotNullOrEmpty(name, nameof(name)),
+            }, callSettings);
+
+        /// <summary>
+        /// Retrieves a phone number instance identified by the supplied resource name.
+        /// 
+        /// The caller must have `numbering.phoneNumberInstances.get` permission on the project.
+        /// </summary>
+        /// <param name="name">
+        /// The resource name of the phone number instance to retrieve.
+        /// Must be of the form `projects/*/phoneNumberInstances/*`.
+        /// </param>
+        /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<PhoneNumberInstance> GetPhoneNumberInstanceAsync(string name, st::CancellationToken cancellationToken) =>
+            GetPhoneNumberInstanceAsync(name, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Retrieves a phone number instance identified by the supplied resource name.
+        /// 
+        /// The caller must have `numbering.phoneNumberInstances.get` permission on the project.
+        /// </summary>
+        /// <param name="name">
+        /// The resource name of the phone number instance to retrieve.
+        /// Must be of the form `projects/*/phoneNumberInstances/*`.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>The RPC response.</returns>
+        public virtual PhoneNumberInstance GetPhoneNumberInstance(PhoneNumberInstanceName name, gaxgrpc::CallSettings callSettings = null) =>
+            GetPhoneNumberInstance(new GetPhoneNumberInstanceRequest
+            {
+                PhoneNumberInstanceName = gax::GaxPreconditions.CheckNotNull(name, nameof(name)),
+            }, callSettings);
+
+        /// <summary>
+        /// Retrieves a phone number instance identified by the supplied resource name.
+        /// 
+        /// The caller must have `numbering.phoneNumberInstances.get` permission on the project.
+        /// </summary>
+        /// <param name="name">
+        /// The resource name of the phone number instance to retrieve.
+        /// Must be of the form `projects/*/phoneNumberInstances/*`.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<PhoneNumberInstance> GetPhoneNumberInstanceAsync(PhoneNumberInstanceName name, gaxgrpc::CallSettings callSettings = null) =>
+            GetPhoneNumberInstanceAsync(new GetPhoneNumberInstanceRequest
+            {
+                PhoneNumberInstanceName = gax::GaxPreconditions.CheckNotNull(name, nameof(name)),
+            }, callSettings);
+
+        /// <summary>
+        /// Retrieves a phone number instance identified by the supplied resource name.
+        /// 
+        /// The caller must have `numbering.phoneNumberInstances.get` permission on the project.
+        /// </summary>
+        /// <param name="name">
+        /// The resource name of the phone number instance to retrieve.
+        /// Must be of the form `projects/*/phoneNumberInstances/*`.
+        /// </param>
+        /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<PhoneNumberInstance> GetPhoneNumberInstanceAsync(PhoneNumberInstanceName name, st::CancellationToken cancellationToken) =>
+            GetPhoneNumberInstanceAsync(name, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
         /// Lists all PhoneNumberInstances.
         /// List returns phone number instance sorted by create_time descending.
         /// 
@@ -362,9 +576,119 @@ namespace Enfonica.Numbering.V1Beta1
             throw new sys::NotImplementedException();
 
         /// <summary>
+        /// Lists all PhoneNumberInstances.
+        /// List returns phone number instance sorted by create_time descending.
+        /// 
+        /// The caller must have `numbering.phoneNumberInstances.list` permission on the project.
+        /// </summary>
+        /// <param name="parent">
+        /// The project under which to list phone number instance, in the form `projects/*`.
+        /// </param>
+        /// <param name="pageToken">
+        /// The token returned from the previous request. A value of <c>null</c> or an empty string retrieves the first
+        /// page.
+        /// </param>
+        /// <param name="pageSize">
+        /// The size of page to request. The response will not be larger than this, but may be smaller. A value of
+        /// <c>null</c> or <c>0</c> uses a server-defined page size.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A pageable sequence of <see cref="PhoneNumberInstance"/> resources.</returns>
+        public virtual gax::PagedEnumerable<ListPhoneNumberInstancesResponse, PhoneNumberInstance> ListPhoneNumberInstances(string parent, string pageToken = null, int? pageSize = null, gaxgrpc::CallSettings callSettings = null) =>
+            ListPhoneNumberInstances(new ListPhoneNumberInstancesRequest
+            {
+                Parent = gax::GaxPreconditions.CheckNotNullOrEmpty(parent, nameof(parent)),
+                PageToken = pageToken ?? "",
+                PageSize = pageSize ?? 0,
+            }, callSettings);
+
+        /// <summary>
+        /// Lists all PhoneNumberInstances.
+        /// List returns phone number instance sorted by create_time descending.
+        /// 
+        /// The caller must have `numbering.phoneNumberInstances.list` permission on the project.
+        /// </summary>
+        /// <param name="parent">
+        /// The project under which to list phone number instance, in the form `projects/*`.
+        /// </param>
+        /// <param name="pageToken">
+        /// The token returned from the previous request. A value of <c>null</c> or an empty string retrieves the first
+        /// page.
+        /// </param>
+        /// <param name="pageSize">
+        /// The size of page to request. The response will not be larger than this, but may be smaller. A value of
+        /// <c>null</c> or <c>0</c> uses a server-defined page size.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A pageable asynchronous sequence of <see cref="PhoneNumberInstance"/> resources.</returns>
+        public virtual gax::PagedAsyncEnumerable<ListPhoneNumberInstancesResponse, PhoneNumberInstance> ListPhoneNumberInstancesAsync(string parent, string pageToken = null, int? pageSize = null, gaxgrpc::CallSettings callSettings = null) =>
+            ListPhoneNumberInstancesAsync(new ListPhoneNumberInstancesRequest
+            {
+                Parent = gax::GaxPreconditions.CheckNotNullOrEmpty(parent, nameof(parent)),
+                PageToken = pageToken ?? "",
+                PageSize = pageSize ?? 0,
+            }, callSettings);
+
+        /// <summary>
+        /// Lists all PhoneNumberInstances.
+        /// List returns phone number instance sorted by create_time descending.
+        /// 
+        /// The caller must have `numbering.phoneNumberInstances.list` permission on the project.
+        /// </summary>
+        /// <param name="parent">
+        /// The project under which to list phone number instance, in the form `projects/*`.
+        /// </param>
+        /// <param name="pageToken">
+        /// The token returned from the previous request. A value of <c>null</c> or an empty string retrieves the first
+        /// page.
+        /// </param>
+        /// <param name="pageSize">
+        /// The size of page to request. The response will not be larger than this, but may be smaller. A value of
+        /// <c>null</c> or <c>0</c> uses a server-defined page size.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A pageable sequence of <see cref="PhoneNumberInstance"/> resources.</returns>
+        public virtual gax::PagedEnumerable<ListPhoneNumberInstancesResponse, PhoneNumberInstance> ListPhoneNumberInstances(ProjectName parent, string pageToken = null, int? pageSize = null, gaxgrpc::CallSettings callSettings = null) =>
+            ListPhoneNumberInstances(new ListPhoneNumberInstancesRequest
+            {
+                ParentAsProjectName = gax::GaxPreconditions.CheckNotNull(parent, nameof(parent)),
+                PageToken = pageToken ?? "",
+                PageSize = pageSize ?? 0,
+            }, callSettings);
+
+        /// <summary>
+        /// Lists all PhoneNumberInstances.
+        /// List returns phone number instance sorted by create_time descending.
+        /// 
+        /// The caller must have `numbering.phoneNumberInstances.list` permission on the project.
+        /// </summary>
+        /// <param name="parent">
+        /// The project under which to list phone number instance, in the form `projects/*`.
+        /// </param>
+        /// <param name="pageToken">
+        /// The token returned from the previous request. A value of <c>null</c> or an empty string retrieves the first
+        /// page.
+        /// </param>
+        /// <param name="pageSize">
+        /// The size of page to request. The response will not be larger than this, but may be smaller. A value of
+        /// <c>null</c> or <c>0</c> uses a server-defined page size.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A pageable asynchronous sequence of <see cref="PhoneNumberInstance"/> resources.</returns>
+        public virtual gax::PagedAsyncEnumerable<ListPhoneNumberInstancesResponse, PhoneNumberInstance> ListPhoneNumberInstancesAsync(ProjectName parent, string pageToken = null, int? pageSize = null, gaxgrpc::CallSettings callSettings = null) =>
+            ListPhoneNumberInstancesAsync(new ListPhoneNumberInstancesRequest
+            {
+                ParentAsProjectName = gax::GaxPreconditions.CheckNotNull(parent, nameof(parent)),
+                PageToken = pageToken ?? "",
+                PageSize = pageSize ?? 0,
+            }, callSettings);
+
+        /// <summary>
         /// Updates a phone number instance.
         /// 
         /// The caller must have `numbering.phoneNumberInstances.update` permission on the project.
+        /// (-- api-linter: core::0134::http-uri-name=disabled
+        /// aip.dev/not-precedent: Update has `name` in the request message in this beta. --)
         /// </summary>
         /// <param name="request">The request object containing all of the parameters for the API call.</param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
@@ -376,6 +700,8 @@ namespace Enfonica.Numbering.V1Beta1
         /// Updates a phone number instance.
         /// 
         /// The caller must have `numbering.phoneNumberInstances.update` permission on the project.
+        /// (-- api-linter: core::0134::http-uri-name=disabled
+        /// aip.dev/not-precedent: Update has `name` in the request message in this beta. --)
         /// </summary>
         /// <param name="request">The request object containing all of the parameters for the API call.</param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
@@ -387,12 +713,178 @@ namespace Enfonica.Numbering.V1Beta1
         /// Updates a phone number instance.
         /// 
         /// The caller must have `numbering.phoneNumberInstances.update` permission on the project.
+        /// (-- api-linter: core::0134::http-uri-name=disabled
+        /// aip.dev/not-precedent: Update has `name` in the request message in this beta. --)
         /// </summary>
         /// <param name="request">The request object containing all of the parameters for the API call.</param>
         /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
         /// <returns>A Task containing the RPC response.</returns>
         public virtual stt::Task<PhoneNumberInstance> UpdatePhoneNumberInstanceAsync(UpdatePhoneNumberInstanceRequest request, st::CancellationToken cancellationToken) =>
             UpdatePhoneNumberInstanceAsync(request, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Updates a phone number instance.
+        /// 
+        /// The caller must have `numbering.phoneNumberInstances.update` permission on the project.
+        /// (-- api-linter: core::0134::http-uri-name=disabled
+        /// aip.dev/not-precedent: Update has `name` in the request message in this beta. --)
+        /// </summary>
+        /// <param name="name">
+        /// The name of the phone number instance to be updated.
+        /// Must be of the form `projects/*/phoneNumberInstances/*`.
+        /// (-- api-linter: core::0134::request-unknown-fields=disabled
+        /// aip.dev/not-precedent: Update has `name` in the request message in this beta. --)
+        /// </param>
+        /// <param name="phoneNumberInstance">
+        /// The new definition of the PhoneNumberInstance.
+        /// </param>
+        /// <param name="updateMask">
+        /// Fields to be updated.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>The RPC response.</returns>
+        public virtual PhoneNumberInstance UpdatePhoneNumberInstance(string name, PhoneNumberInstance phoneNumberInstance, wkt::FieldMask updateMask, gaxgrpc::CallSettings callSettings = null) =>
+            UpdatePhoneNumberInstance(new UpdatePhoneNumberInstanceRequest
+            {
+                Name = gax::GaxPreconditions.CheckNotNullOrEmpty(name, nameof(name)),
+                PhoneNumberInstance = gax::GaxPreconditions.CheckNotNull(phoneNumberInstance, nameof(phoneNumberInstance)),
+                UpdateMask = updateMask,
+            }, callSettings);
+
+        /// <summary>
+        /// Updates a phone number instance.
+        /// 
+        /// The caller must have `numbering.phoneNumberInstances.update` permission on the project.
+        /// (-- api-linter: core::0134::http-uri-name=disabled
+        /// aip.dev/not-precedent: Update has `name` in the request message in this beta. --)
+        /// </summary>
+        /// <param name="name">
+        /// The name of the phone number instance to be updated.
+        /// Must be of the form `projects/*/phoneNumberInstances/*`.
+        /// (-- api-linter: core::0134::request-unknown-fields=disabled
+        /// aip.dev/not-precedent: Update has `name` in the request message in this beta. --)
+        /// </param>
+        /// <param name="phoneNumberInstance">
+        /// The new definition of the PhoneNumberInstance.
+        /// </param>
+        /// <param name="updateMask">
+        /// Fields to be updated.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<PhoneNumberInstance> UpdatePhoneNumberInstanceAsync(string name, PhoneNumberInstance phoneNumberInstance, wkt::FieldMask updateMask, gaxgrpc::CallSettings callSettings = null) =>
+            UpdatePhoneNumberInstanceAsync(new UpdatePhoneNumberInstanceRequest
+            {
+                Name = gax::GaxPreconditions.CheckNotNullOrEmpty(name, nameof(name)),
+                PhoneNumberInstance = gax::GaxPreconditions.CheckNotNull(phoneNumberInstance, nameof(phoneNumberInstance)),
+                UpdateMask = updateMask,
+            }, callSettings);
+
+        /// <summary>
+        /// Updates a phone number instance.
+        /// 
+        /// The caller must have `numbering.phoneNumberInstances.update` permission on the project.
+        /// (-- api-linter: core::0134::http-uri-name=disabled
+        /// aip.dev/not-precedent: Update has `name` in the request message in this beta. --)
+        /// </summary>
+        /// <param name="name">
+        /// The name of the phone number instance to be updated.
+        /// Must be of the form `projects/*/phoneNumberInstances/*`.
+        /// (-- api-linter: core::0134::request-unknown-fields=disabled
+        /// aip.dev/not-precedent: Update has `name` in the request message in this beta. --)
+        /// </param>
+        /// <param name="phoneNumberInstance">
+        /// The new definition of the PhoneNumberInstance.
+        /// </param>
+        /// <param name="updateMask">
+        /// Fields to be updated.
+        /// </param>
+        /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<PhoneNumberInstance> UpdatePhoneNumberInstanceAsync(string name, PhoneNumberInstance phoneNumberInstance, wkt::FieldMask updateMask, st::CancellationToken cancellationToken) =>
+            UpdatePhoneNumberInstanceAsync(name, phoneNumberInstance, updateMask, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Updates a phone number instance.
+        /// 
+        /// The caller must have `numbering.phoneNumberInstances.update` permission on the project.
+        /// (-- api-linter: core::0134::http-uri-name=disabled
+        /// aip.dev/not-precedent: Update has `name` in the request message in this beta. --)
+        /// </summary>
+        /// <param name="name">
+        /// The name of the phone number instance to be updated.
+        /// Must be of the form `projects/*/phoneNumberInstances/*`.
+        /// (-- api-linter: core::0134::request-unknown-fields=disabled
+        /// aip.dev/not-precedent: Update has `name` in the request message in this beta. --)
+        /// </param>
+        /// <param name="phoneNumberInstance">
+        /// The new definition of the PhoneNumberInstance.
+        /// </param>
+        /// <param name="updateMask">
+        /// Fields to be updated.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>The RPC response.</returns>
+        public virtual PhoneNumberInstance UpdatePhoneNumberInstance(PhoneNumberInstanceName name, PhoneNumberInstance phoneNumberInstance, wkt::FieldMask updateMask, gaxgrpc::CallSettings callSettings = null) =>
+            UpdatePhoneNumberInstance(new UpdatePhoneNumberInstanceRequest
+            {
+                PhoneNumberInstanceName = gax::GaxPreconditions.CheckNotNull(name, nameof(name)),
+                PhoneNumberInstance = gax::GaxPreconditions.CheckNotNull(phoneNumberInstance, nameof(phoneNumberInstance)),
+                UpdateMask = updateMask,
+            }, callSettings);
+
+        /// <summary>
+        /// Updates a phone number instance.
+        /// 
+        /// The caller must have `numbering.phoneNumberInstances.update` permission on the project.
+        /// (-- api-linter: core::0134::http-uri-name=disabled
+        /// aip.dev/not-precedent: Update has `name` in the request message in this beta. --)
+        /// </summary>
+        /// <param name="name">
+        /// The name of the phone number instance to be updated.
+        /// Must be of the form `projects/*/phoneNumberInstances/*`.
+        /// (-- api-linter: core::0134::request-unknown-fields=disabled
+        /// aip.dev/not-precedent: Update has `name` in the request message in this beta. --)
+        /// </param>
+        /// <param name="phoneNumberInstance">
+        /// The new definition of the PhoneNumberInstance.
+        /// </param>
+        /// <param name="updateMask">
+        /// Fields to be updated.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<PhoneNumberInstance> UpdatePhoneNumberInstanceAsync(PhoneNumberInstanceName name, PhoneNumberInstance phoneNumberInstance, wkt::FieldMask updateMask, gaxgrpc::CallSettings callSettings = null) =>
+            UpdatePhoneNumberInstanceAsync(new UpdatePhoneNumberInstanceRequest
+            {
+                PhoneNumberInstanceName = gax::GaxPreconditions.CheckNotNull(name, nameof(name)),
+                PhoneNumberInstance = gax::GaxPreconditions.CheckNotNull(phoneNumberInstance, nameof(phoneNumberInstance)),
+                UpdateMask = updateMask,
+            }, callSettings);
+
+        /// <summary>
+        /// Updates a phone number instance.
+        /// 
+        /// The caller must have `numbering.phoneNumberInstances.update` permission on the project.
+        /// (-- api-linter: core::0134::http-uri-name=disabled
+        /// aip.dev/not-precedent: Update has `name` in the request message in this beta. --)
+        /// </summary>
+        /// <param name="name">
+        /// The name of the phone number instance to be updated.
+        /// Must be of the form `projects/*/phoneNumberInstances/*`.
+        /// (-- api-linter: core::0134::request-unknown-fields=disabled
+        /// aip.dev/not-precedent: Update has `name` in the request message in this beta. --)
+        /// </param>
+        /// <param name="phoneNumberInstance">
+        /// The new definition of the PhoneNumberInstance.
+        /// </param>
+        /// <param name="updateMask">
+        /// Fields to be updated.
+        /// </param>
+        /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<PhoneNumberInstance> UpdatePhoneNumberInstanceAsync(PhoneNumberInstanceName name, PhoneNumberInstance phoneNumberInstance, wkt::FieldMask updateMask, st::CancellationToken cancellationToken) =>
+            UpdatePhoneNumberInstanceAsync(name, phoneNumberInstance, updateMask, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
 
         /// <summary>
         /// Deletes a phone number instance.
@@ -428,49 +920,100 @@ namespace Enfonica.Numbering.V1Beta1
             DeletePhoneNumberInstanceAsync(request, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
 
         /// <summary>
-        /// @Private
-        /// Gets the provisioned phone number instance based on the supplied phone number.
-        /// The instance returned will have a lifecycle state of either ACTIVE or SUSPENDED.
-        /// `parent` must be specified as `projects/-`.
-        /// If no provisioned instance is found, throws NOT_FOUND.
+        /// Deletes a phone number instance.
         /// 
-        /// The caller must auth with an Enfonica token.
+        /// The caller must have `numbering.phoneNumberInstances.delete` permission on the project.
         /// </summary>
-        /// <param name="request">The request object containing all of the parameters for the API call.</param>
+        /// <param name="name">
+        /// The resource name of the phone number instance to be deleted.
+        /// Must be of the form `projects/*/phoneNumberInstances/*`.
+        /// </param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
         /// <returns>The RPC response.</returns>
-        public virtual PhoneNumberInstance GetProvisionedPhoneNumberInstance(GetProvisionedPhoneNumberInstanceRequest request, gaxgrpc::CallSettings callSettings = null) =>
-            throw new sys::NotImplementedException();
+        public virtual PhoneNumberInstance DeletePhoneNumberInstance(string name, gaxgrpc::CallSettings callSettings = null) =>
+            DeletePhoneNumberInstance(new DeletePhoneNumberInstanceRequest
+            {
+                Name = gax::GaxPreconditions.CheckNotNullOrEmpty(name, nameof(name)),
+            }, callSettings);
 
         /// <summary>
-        /// @Private
-        /// Gets the provisioned phone number instance based on the supplied phone number.
-        /// The instance returned will have a lifecycle state of either ACTIVE or SUSPENDED.
-        /// `parent` must be specified as `projects/-`.
-        /// If no provisioned instance is found, throws NOT_FOUND.
+        /// Deletes a phone number instance.
         /// 
-        /// The caller must auth with an Enfonica token.
+        /// The caller must have `numbering.phoneNumberInstances.delete` permission on the project.
         /// </summary>
-        /// <param name="request">The request object containing all of the parameters for the API call.</param>
+        /// <param name="name">
+        /// The resource name of the phone number instance to be deleted.
+        /// Must be of the form `projects/*/phoneNumberInstances/*`.
+        /// </param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
         /// <returns>A Task containing the RPC response.</returns>
-        public virtual stt::Task<PhoneNumberInstance> GetProvisionedPhoneNumberInstanceAsync(GetProvisionedPhoneNumberInstanceRequest request, gaxgrpc::CallSettings callSettings = null) =>
-            throw new sys::NotImplementedException();
+        public virtual stt::Task<PhoneNumberInstance> DeletePhoneNumberInstanceAsync(string name, gaxgrpc::CallSettings callSettings = null) =>
+            DeletePhoneNumberInstanceAsync(new DeletePhoneNumberInstanceRequest
+            {
+                Name = gax::GaxPreconditions.CheckNotNullOrEmpty(name, nameof(name)),
+            }, callSettings);
 
         /// <summary>
-        /// @Private
-        /// Gets the provisioned phone number instance based on the supplied phone number.
-        /// The instance returned will have a lifecycle state of either ACTIVE or SUSPENDED.
-        /// `parent` must be specified as `projects/-`.
-        /// If no provisioned instance is found, throws NOT_FOUND.
+        /// Deletes a phone number instance.
         /// 
-        /// The caller must auth with an Enfonica token.
+        /// The caller must have `numbering.phoneNumberInstances.delete` permission on the project.
         /// </summary>
-        /// <param name="request">The request object containing all of the parameters for the API call.</param>
+        /// <param name="name">
+        /// The resource name of the phone number instance to be deleted.
+        /// Must be of the form `projects/*/phoneNumberInstances/*`.
+        /// </param>
         /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
         /// <returns>A Task containing the RPC response.</returns>
-        public virtual stt::Task<PhoneNumberInstance> GetProvisionedPhoneNumberInstanceAsync(GetProvisionedPhoneNumberInstanceRequest request, st::CancellationToken cancellationToken) =>
-            GetProvisionedPhoneNumberInstanceAsync(request, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+        public virtual stt::Task<PhoneNumberInstance> DeletePhoneNumberInstanceAsync(string name, st::CancellationToken cancellationToken) =>
+            DeletePhoneNumberInstanceAsync(name, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Deletes a phone number instance.
+        /// 
+        /// The caller must have `numbering.phoneNumberInstances.delete` permission on the project.
+        /// </summary>
+        /// <param name="name">
+        /// The resource name of the phone number instance to be deleted.
+        /// Must be of the form `projects/*/phoneNumberInstances/*`.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>The RPC response.</returns>
+        public virtual PhoneNumberInstance DeletePhoneNumberInstance(PhoneNumberInstanceName name, gaxgrpc::CallSettings callSettings = null) =>
+            DeletePhoneNumberInstance(new DeletePhoneNumberInstanceRequest
+            {
+                PhoneNumberInstanceName = gax::GaxPreconditions.CheckNotNull(name, nameof(name)),
+            }, callSettings);
+
+        /// <summary>
+        /// Deletes a phone number instance.
+        /// 
+        /// The caller must have `numbering.phoneNumberInstances.delete` permission on the project.
+        /// </summary>
+        /// <param name="name">
+        /// The resource name of the phone number instance to be deleted.
+        /// Must be of the form `projects/*/phoneNumberInstances/*`.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<PhoneNumberInstance> DeletePhoneNumberInstanceAsync(PhoneNumberInstanceName name, gaxgrpc::CallSettings callSettings = null) =>
+            DeletePhoneNumberInstanceAsync(new DeletePhoneNumberInstanceRequest
+            {
+                PhoneNumberInstanceName = gax::GaxPreconditions.CheckNotNull(name, nameof(name)),
+            }, callSettings);
+
+        /// <summary>
+        /// Deletes a phone number instance.
+        /// 
+        /// The caller must have `numbering.phoneNumberInstances.delete` permission on the project.
+        /// </summary>
+        /// <param name="name">
+        /// The resource name of the phone number instance to be deleted.
+        /// Must be of the form `projects/*/phoneNumberInstances/*`.
+        /// </param>
+        /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<PhoneNumberInstance> DeletePhoneNumberInstanceAsync(PhoneNumberInstanceName name, st::CancellationToken cancellationToken) =>
+            DeletePhoneNumberInstanceAsync(name, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
     }
 
     /// <summary>PhoneNumberInstances client wrapper implementation, for convenient use.</summary>
@@ -488,8 +1031,6 @@ namespace Enfonica.Numbering.V1Beta1
         private readonly gaxgrpc::ApiCall<UpdatePhoneNumberInstanceRequest, PhoneNumberInstance> _callUpdatePhoneNumberInstance;
 
         private readonly gaxgrpc::ApiCall<DeletePhoneNumberInstanceRequest, PhoneNumberInstance> _callDeletePhoneNumberInstance;
-
-        private readonly gaxgrpc::ApiCall<GetProvisionedPhoneNumberInstanceRequest, PhoneNumberInstance> _callGetProvisionedPhoneNumberInstance;
 
         /// <summary>
         /// Constructs a client wrapper for the PhoneNumberInstances service, with the specified gRPC client and
@@ -517,9 +1058,6 @@ namespace Enfonica.Numbering.V1Beta1
             _callDeletePhoneNumberInstance = clientHelper.BuildApiCall<DeletePhoneNumberInstanceRequest, PhoneNumberInstance>(grpcClient.DeletePhoneNumberInstanceAsync, grpcClient.DeletePhoneNumberInstance, effectiveSettings.DeletePhoneNumberInstanceSettings).WithGoogleRequestParam("name", request => request.Name);
             Modify_ApiCall(ref _callDeletePhoneNumberInstance);
             Modify_DeletePhoneNumberInstanceApiCall(ref _callDeletePhoneNumberInstance);
-            _callGetProvisionedPhoneNumberInstance = clientHelper.BuildApiCall<GetProvisionedPhoneNumberInstanceRequest, PhoneNumberInstance>(grpcClient.GetProvisionedPhoneNumberInstanceAsync, grpcClient.GetProvisionedPhoneNumberInstance, effectiveSettings.GetProvisionedPhoneNumberInstanceSettings).WithGoogleRequestParam("parent", request => request.Parent);
-            Modify_ApiCall(ref _callGetProvisionedPhoneNumberInstance);
-            Modify_GetProvisionedPhoneNumberInstanceApiCall(ref _callGetProvisionedPhoneNumberInstance);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);
         }
 
@@ -535,8 +1073,6 @@ namespace Enfonica.Numbering.V1Beta1
 
         partial void Modify_DeletePhoneNumberInstanceApiCall(ref gaxgrpc::ApiCall<DeletePhoneNumberInstanceRequest, PhoneNumberInstance> call);
 
-        partial void Modify_GetProvisionedPhoneNumberInstanceApiCall(ref gaxgrpc::ApiCall<GetProvisionedPhoneNumberInstanceRequest, PhoneNumberInstance> call);
-
         partial void OnConstruction(PhoneNumberInstances.PhoneNumberInstancesClient grpcClient, PhoneNumberInstancesSettings effectiveSettings, gaxgrpc::ClientHelper clientHelper);
 
         /// <summary>The underlying gRPC PhoneNumberInstances client</summary>
@@ -551,8 +1087,6 @@ namespace Enfonica.Numbering.V1Beta1
         partial void Modify_UpdatePhoneNumberInstanceRequest(ref UpdatePhoneNumberInstanceRequest request, ref gaxgrpc::CallSettings settings);
 
         partial void Modify_DeletePhoneNumberInstanceRequest(ref DeletePhoneNumberInstanceRequest request, ref gaxgrpc::CallSettings settings);
-
-        partial void Modify_GetProvisionedPhoneNumberInstanceRequest(ref GetProvisionedPhoneNumberInstanceRequest request, ref gaxgrpc::CallSettings settings);
 
         /// <summary>
         /// Creates a phone number instance.
@@ -644,6 +1178,8 @@ namespace Enfonica.Numbering.V1Beta1
         /// Updates a phone number instance.
         /// 
         /// The caller must have `numbering.phoneNumberInstances.update` permission on the project.
+        /// (-- api-linter: core::0134::http-uri-name=disabled
+        /// aip.dev/not-precedent: Update has `name` in the request message in this beta. --)
         /// </summary>
         /// <param name="request">The request object containing all of the parameters for the API call.</param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
@@ -658,6 +1194,8 @@ namespace Enfonica.Numbering.V1Beta1
         /// Updates a phone number instance.
         /// 
         /// The caller must have `numbering.phoneNumberInstances.update` permission on the project.
+        /// (-- api-linter: core::0134::http-uri-name=disabled
+        /// aip.dev/not-precedent: Update has `name` in the request message in this beta. --)
         /// </summary>
         /// <param name="request">The request object containing all of the parameters for the API call.</param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
@@ -694,42 +1232,6 @@ namespace Enfonica.Numbering.V1Beta1
         {
             Modify_DeletePhoneNumberInstanceRequest(ref request, ref callSettings);
             return _callDeletePhoneNumberInstance.Async(request, callSettings);
-        }
-
-        /// <summary>
-        /// @Private
-        /// Gets the provisioned phone number instance based on the supplied phone number.
-        /// The instance returned will have a lifecycle state of either ACTIVE or SUSPENDED.
-        /// `parent` must be specified as `projects/-`.
-        /// If no provisioned instance is found, throws NOT_FOUND.
-        /// 
-        /// The caller must auth with an Enfonica token.
-        /// </summary>
-        /// <param name="request">The request object containing all of the parameters for the API call.</param>
-        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
-        /// <returns>The RPC response.</returns>
-        public override PhoneNumberInstance GetProvisionedPhoneNumberInstance(GetProvisionedPhoneNumberInstanceRequest request, gaxgrpc::CallSettings callSettings = null)
-        {
-            Modify_GetProvisionedPhoneNumberInstanceRequest(ref request, ref callSettings);
-            return _callGetProvisionedPhoneNumberInstance.Sync(request, callSettings);
-        }
-
-        /// <summary>
-        /// @Private
-        /// Gets the provisioned phone number instance based on the supplied phone number.
-        /// The instance returned will have a lifecycle state of either ACTIVE or SUSPENDED.
-        /// `parent` must be specified as `projects/-`.
-        /// If no provisioned instance is found, throws NOT_FOUND.
-        /// 
-        /// The caller must auth with an Enfonica token.
-        /// </summary>
-        /// <param name="request">The request object containing all of the parameters for the API call.</param>
-        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
-        /// <returns>A Task containing the RPC response.</returns>
-        public override stt::Task<PhoneNumberInstance> GetProvisionedPhoneNumberInstanceAsync(GetProvisionedPhoneNumberInstanceRequest request, gaxgrpc::CallSettings callSettings = null)
-        {
-            Modify_GetProvisionedPhoneNumberInstanceRequest(ref request, ref callSettings);
-            return _callGetProvisionedPhoneNumberInstance.Async(request, callSettings);
         }
     }
 

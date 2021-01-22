@@ -28,51 +28,63 @@ namespace Enfonica.Messaging.V1 {
             "ZW5mb25pY2EubWVzc2FnaW5nLnYxGh9nb29nbGUvcHJvdG9idWYvdGltZXN0",
             "YW1wLnByb3RvGiBnb29nbGUvcHJvdG9idWYvZmllbGRfbWFzay5wcm90bxoc",
             "Z29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90bxofZ29vZ2xlL2FwaS9maWVs",
-            "ZF9iZWhhdmlvci5wcm90bxoXZ29vZ2xlL2FwaS9jbGllbnQucHJvdG8i4wIK",
-            "DFVuc3Vic2NyaWJlchIMCgRuYW1lGAEgASgJEg0KBXBob25lGAIgASgJElEK",
-            "EnVuc3Vic2NyaWJlX21ldGhvZBgDIAEoDjI1LmVuZm9uaWNhLm1lc3NhZ2lu",
-            "Zy52MS5VbnN1YnNjcmliZXIuVW5zdWJzY3JpYmVNZXRob2QSPwoGbGFiZWxz",
-            "GAQgAygLMi8uZW5mb25pY2EubWVzc2FnaW5nLnYxLlVuc3Vic2NyaWJlci5M",
-            "YWJlbHNFbnRyeRIvCgtjcmVhdGVfdGltZRgIIAEoCzIaLmdvb2dsZS5wcm90",
-            "b2J1Zi5UaW1lc3RhbXAaLQoLTGFiZWxzRW50cnkSCwoDa2V5GAEgASgJEg0K",
-            "BXZhbHVlGAIgASgJOgI4ASJCChFVbnN1YnNjcmliZU1ldGhvZBILCgdVTktO",
-            "T1dOEAASBwoDVVJMEAESCwoHTUVTU0FHRRACEgoKBk1BTlVBTBADImYKGUNy",
-            "ZWF0ZVVuc3Vic2NyaWJlclJlcXVlc3QSDgoGcGFyZW50GAEgASgJEjkKDHVu",
-            "c3Vic2NyaWJlchgCIAEoCzIjLmVuZm9uaWNhLm1lc3NhZ2luZy52MS5VbnN1",
-            "YnNjcmliZXIiJgoWR2V0VW5zdWJzY3JpYmVyUmVxdWVzdBIMCgRuYW1lGAEg",
-            "ASgJImAKGExpc3RVbnN1YnNjcmliZXJzUmVxdWVzdBIOCgZwYXJlbnQYASAB",
-            "KAkSEQoJcGFnZV9zaXplGAIgASgFEhIKCnBhZ2VfdG9rZW4YAyABKAkSDQoF",
-            "cGhvbmUYBCABKAkicAoZTGlzdFVuc3Vic2NyaWJlcnNSZXNwb25zZRI6Cg11",
-            "bnN1YnNjcmliZXJzGAEgAygLMiMuZW5mb25pY2EubWVzc2FnaW5nLnYxLlVu",
-            "c3Vic2NyaWJlchIXCg9uZXh0X3BhZ2VfdG9rZW4YAiABKAkihwEKGVVwZGF0",
-            "ZVVuc3Vic2NyaWJlclJlcXVlc3QSOQoMdW5zdWJzY3JpYmVyGAEgASgLMiMu",
-            "ZW5mb25pY2EubWVzc2FnaW5nLnYxLlVuc3Vic2NyaWJlchIvCgt1cGRhdGVf",
-            "bWFzaxgCIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5GaWVsZE1hc2siKQoZRGVs",
-            "ZXRlVW5zdWJzY3JpYmVyUmVxdWVzdBIMCgRuYW1lGAEgASgJMpcHCg1VbnN1",
-            "YnNjcmliZXJzEqgBChJDcmVhdGVVbnN1YnNjcmliZXISMC5lbmZvbmljYS5t",
-            "ZXNzYWdpbmcudjEuQ3JlYXRlVW5zdWJzY3JpYmVyUmVxdWVzdBojLmVuZm9u",
-            "aWNhLm1lc3NhZ2luZy52MS5VbnN1YnNjcmliZXIiO4LT5JMCNSIlL3YxL3tw",
-            "YXJlbnQ9cHJvamVjdHMvKn0vdW5zdWJzY3JpYmVyczoMdW5zdWJzY3JpYmVy",
-            "EpQBCg9HZXRVbnN1YnNjcmliZXISLS5lbmZvbmljYS5tZXNzYWdpbmcudjEu",
-            "R2V0VW5zdWJzY3JpYmVyUmVxdWVzdBojLmVuZm9uaWNhLm1lc3NhZ2luZy52",
-            "MS5VbnN1YnNjcmliZXIiLYLT5JMCJxIlL3YxL3tuYW1lPXByb2plY3RzLyov",
-            "dW5zdWJzY3JpYmVycy8qfRKlAQoRTGlzdFVuc3Vic2NyaWJlcnMSLy5lbmZv",
-            "bmljYS5tZXNzYWdpbmcudjEuTGlzdFVuc3Vic2NyaWJlcnNSZXF1ZXN0GjAu",
-            "ZW5mb25pY2EubWVzc2FnaW5nLnYxLkxpc3RVbnN1YnNjcmliZXJzUmVzcG9u",
-            "c2UiLYLT5JMCJxIlL3YxL3twYXJlbnQ9cHJvamVjdHMvKn0vdW5zdWJzY3Jp",
-            "YmVycxK1AQoSVXBkYXRlVW5zdWJzY3JpYmVyEjAuZW5mb25pY2EubWVzc2Fn",
-            "aW5nLnYxLlVwZGF0ZVVuc3Vic2NyaWJlclJlcXVlc3QaIy5lbmZvbmljYS5t",
-            "ZXNzYWdpbmcudjEuVW5zdWJzY3JpYmVyIkiC0+STAkIyMi92MS97dW5zdWJz",
-            "Y3JpYmVyLm5hbWU9cHJvamVjdHMvKi91bnN1YnNjcmliZXJzLyp9Ogx1bnN1",
-            "YnNjcmliZXISmgEKEkRlbGV0ZVVuc3Vic2NyaWJlchIwLmVuZm9uaWNhLm1l",
-            "c3NhZ2luZy52MS5EZWxldGVVbnN1YnNjcmliZXJSZXF1ZXN0GiMuZW5mb25p",
-            "Y2EubWVzc2FnaW5nLnYxLlVuc3Vic2NyaWJlciItgtPkkwInKiUvdjEve25h",
-            "bWU9cHJvamVjdHMvKi91bnN1YnNjcmliZXJzLyp9GkfKQRptZXNzYWdpbmcu",
-            "YXBpLmVuZm9uaWNhLmNvbdJBJ2h0dHBzOi8vYXBpLmVuZm9uaWNhLmNvbS9h",
-            "dXRoL21lc3NhZ2luZ0IYqgIVRW5mb25pY2EuTWVzc2FnaW5nLlYxYgZwcm90",
-            "bzM="));
+            "ZF9iZWhhdmlvci5wcm90bxoXZ29vZ2xlL2FwaS9jbGllbnQucHJvdG8aGWdv",
+            "b2dsZS9hcGkvcmVzb3VyY2UucHJvdG8i4wMKDFVuc3Vic2NyaWJlchIMCgRu",
+            "YW1lGAEgASgJEhIKBXBob25lGAIgASgJQgPgQQISUQoSdW5zdWJzY3JpYmVf",
+            "bWV0aG9kGAMgASgOMjUuZW5mb25pY2EubWVzc2FnaW5nLnYxLlVuc3Vic2Ny",
+            "aWJlci5VbnN1YnNjcmliZU1ldGhvZBI/CgZsYWJlbHMYBCADKAsyLy5lbmZv",
+            "bmljYS5tZXNzYWdpbmcudjEuVW5zdWJzY3JpYmVyLkxhYmVsc0VudHJ5EjQK",
+            "C2NyZWF0ZV90aW1lGAggASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFt",
+            "cEID4EEDGi0KC0xhYmVsc0VudHJ5EgsKA2tleRgBIAEoCRINCgV2YWx1ZRgC",
+            "IAEoCToCOAEiWQoRVW5zdWJzY3JpYmVNZXRob2QSIgoeVU5TVUJTQ1JJQkVf",
+            "TUVUSE9EX1VOU1BFQ0lGSUVEEAASBwoDVVJMEAESCwoHTUVTU0FHRRACEgoK",
+            "Bk1BTlVBTBADOl3qQVoKJ21lc3NhZ2luZy5hcGkuZW5mb25pY2EuY29tL1Vu",
+            "c3Vic2NyaWJlchIvcHJvamVjdHMve3Byb2plY3R9L3Vuc3Vic2NyaWJlcnMv",
+            "e3Vuc3Vic2NyaWJlcn0inAEKGUNyZWF0ZVVuc3Vic2NyaWJlclJlcXVlc3QS",
+            "PwoGcGFyZW50GAEgASgJQi/gQQL6QSkSJ21lc3NhZ2luZy5hcGkuZW5mb25p",
+            "Y2EuY29tL1Vuc3Vic2NyaWJlchI+Cgx1bnN1YnNjcmliZXIYAiABKAsyIy5l",
+            "bmZvbmljYS5tZXNzYWdpbmcudjEuVW5zdWJzY3JpYmVyQgPgQQIiVwoWR2V0",
+            "VW5zdWJzY3JpYmVyUmVxdWVzdBI9CgRuYW1lGAEgASgJQi/gQQL6QSkKJ21l",
+            "c3NhZ2luZy5hcGkuZW5mb25pY2EuY29tL1Vuc3Vic2NyaWJlciKRAQoYTGlz",
+            "dFVuc3Vic2NyaWJlcnNSZXF1ZXN0Ej8KBnBhcmVudBgBIAEoCUIv4EEC+kEp",
+            "EidtZXNzYWdpbmcuYXBpLmVuZm9uaWNhLmNvbS9VbnN1YnNjcmliZXISEQoJ",
+            "cGFnZV9zaXplGAIgASgFEhIKCnBhZ2VfdG9rZW4YAyABKAkSDQoFcGhvbmUY",
+            "BCABKAkicAoZTGlzdFVuc3Vic2NyaWJlcnNSZXNwb25zZRI6Cg11bnN1YnNj",
+            "cmliZXJzGAEgAygLMiMuZW5mb25pY2EubWVzc2FnaW5nLnYxLlVuc3Vic2Ny",
+            "aWJlchIXCg9uZXh0X3BhZ2VfdG9rZW4YAiABKAkijAEKGVVwZGF0ZVVuc3Vi",
+            "c2NyaWJlclJlcXVlc3QSPgoMdW5zdWJzY3JpYmVyGAEgASgLMiMuZW5mb25p",
+            "Y2EubWVzc2FnaW5nLnYxLlVuc3Vic2NyaWJlckID4EECEi8KC3VwZGF0ZV9t",
+            "YXNrGAIgASgLMhouZ29vZ2xlLnByb3RvYnVmLkZpZWxkTWFzayJaChlEZWxl",
+            "dGVVbnN1YnNjcmliZXJSZXF1ZXN0Ej0KBG5hbWUYASABKAlCL+BBAvpBKQon",
+            "bWVzc2FnaW5nLmFwaS5lbmZvbmljYS5jb20vVW5zdWJzY3JpYmVyMt8HCg1V",
+            "bnN1YnNjcmliZXJzEr4BChJDcmVhdGVVbnN1YnNjcmliZXISMC5lbmZvbmlj",
+            "YS5tZXNzYWdpbmcudjEuQ3JlYXRlVW5zdWJzY3JpYmVyUmVxdWVzdBojLmVu",
+            "Zm9uaWNhLm1lc3NhZ2luZy52MS5VbnN1YnNjcmliZXIiUYLT5JMCNSIlL3Yx",
+            "L3twYXJlbnQ9cHJvamVjdHMvKn0vdW5zdWJzY3JpYmVyczoMdW5zdWJzY3Jp",
+            "YmVy2kETcGFyZW50LHVuc3Vic2NyaWJlchKbAQoPR2V0VW5zdWJzY3JpYmVy",
+            "Ei0uZW5mb25pY2EubWVzc2FnaW5nLnYxLkdldFVuc3Vic2NyaWJlclJlcXVl",
+            "c3QaIy5lbmZvbmljYS5tZXNzYWdpbmcudjEuVW5zdWJzY3JpYmVyIjSC0+ST",
+            "AicSJS92MS97bmFtZT1wcm9qZWN0cy8qL3Vuc3Vic2NyaWJlcnMvKn3aQQRu",
+            "YW1lEq4BChFMaXN0VW5zdWJzY3JpYmVycxIvLmVuZm9uaWNhLm1lc3NhZ2lu",
+            "Zy52MS5MaXN0VW5zdWJzY3JpYmVyc1JlcXVlc3QaMC5lbmZvbmljYS5tZXNz",
+            "YWdpbmcudjEuTGlzdFVuc3Vic2NyaWJlcnNSZXNwb25zZSI2gtPkkwInEiUv",
+            "djEve3BhcmVudD1wcm9qZWN0cy8qfS91bnN1YnNjcmliZXJz2kEGcGFyZW50",
+            "EtABChJVcGRhdGVVbnN1YnNjcmliZXISMC5lbmZvbmljYS5tZXNzYWdpbmcu",
+            "djEuVXBkYXRlVW5zdWJzY3JpYmVyUmVxdWVzdBojLmVuZm9uaWNhLm1lc3Nh",
+            "Z2luZy52MS5VbnN1YnNjcmliZXIiY4LT5JMCQjIyL3YxL3t1bnN1YnNjcmli",
+            "ZXIubmFtZT1wcm9qZWN0cy8qL3Vuc3Vic2NyaWJlcnMvKn06DHVuc3Vic2Ny",
+            "aWJlctpBGHVuc3Vic2NyaWJlcix1cGRhdGVfbWFzaxKhAQoSRGVsZXRlVW5z",
+            "dWJzY3JpYmVyEjAuZW5mb25pY2EubWVzc2FnaW5nLnYxLkRlbGV0ZVVuc3Vi",
+            "c2NyaWJlclJlcXVlc3QaIy5lbmZvbmljYS5tZXNzYWdpbmcudjEuVW5zdWJz",
+            "Y3JpYmVyIjSC0+STAicqJS92MS97bmFtZT1wcm9qZWN0cy8qL3Vuc3Vic2Ny",
+            "aWJlcnMvKn3aQQRuYW1lGkfKQRptZXNzYWdpbmcuYXBpLmVuZm9uaWNhLmNv",
+            "bdJBJ2h0dHBzOi8vYXBpLmVuZm9uaWNhLmNvbS9hdXRoL21lc3NhZ2luZ0KM",
+            "AQoZY29tLmVuZm9uaWNhLm1lc3NhZ2luZy52MUISVW5zdWJzY3JpYmVyc1By",
+            "b3RvUAFaNmdpdGh1Yi5jb20vZW5mb25pY2EvZW5mb25pY2EtZ28vbWVzc2Fn",
+            "aW5nL3YxO21lc3NhZ2luZ/gBAaICBUVORk9OqgIVRW5mb25pY2EuTWVzc2Fn",
+            "aW5nLlYxYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.FieldMaskReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.FieldMaskReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Messaging.V1.Unsubscriber), global::Enfonica.Messaging.V1.Unsubscriber.Parser, new[]{ "Name", "Phone", "UnsubscribeMethod", "Labels", "CreateTime" }, null, new[]{ typeof(global::Enfonica.Messaging.V1.Unsubscriber.Types.UnsubscribeMethod) }, null, new pbr::GeneratedClrTypeInfo[] { null, }),
             new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Messaging.V1.CreateUnsubscriberRequest), global::Enfonica.Messaging.V1.CreateUnsubscriberRequest.Parser, new[]{ "Parent", "Unsubscriber" }, null, null, null, null),
@@ -137,7 +149,6 @@ namespace Enfonica.Messaging.V1 {
     private string name_ = "";
     /// <summary>
     /// Resource name of the unsubscriber. It must match the pattern `projects/*/unsubscribers/*`
-    /// Output only.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Name {
@@ -164,7 +175,7 @@ namespace Enfonica.Messaging.V1 {
 
     /// <summary>Field number for the "unsubscribe_method" field.</summary>
     public const int UnsubscribeMethodFieldNumber = 3;
-    private global::Enfonica.Messaging.V1.Unsubscriber.Types.UnsubscribeMethod unsubscribeMethod_ = global::Enfonica.Messaging.V1.Unsubscriber.Types.UnsubscribeMethod.Unknown;
+    private global::Enfonica.Messaging.V1.Unsubscriber.Types.UnsubscribeMethod unsubscribeMethod_ = global::Enfonica.Messaging.V1.Unsubscriber.Types.UnsubscribeMethod.Unspecified;
     /// <summary>
     /// The method that was used to unsubscribe.
     /// Can only be set on create.
@@ -199,7 +210,6 @@ namespace Enfonica.Messaging.V1 {
     private global::Google.Protobuf.WellKnownTypes.Timestamp createTime_;
     /// <summary>
     /// The creation time of the unsubscriber.
-    /// Output only.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Protobuf.WellKnownTypes.Timestamp CreateTime {
@@ -235,7 +245,7 @@ namespace Enfonica.Messaging.V1 {
       int hash = 1;
       if (Name.Length != 0) hash ^= Name.GetHashCode();
       if (Phone.Length != 0) hash ^= Phone.GetHashCode();
-      if (UnsubscribeMethod != global::Enfonica.Messaging.V1.Unsubscriber.Types.UnsubscribeMethod.Unknown) hash ^= UnsubscribeMethod.GetHashCode();
+      if (UnsubscribeMethod != global::Enfonica.Messaging.V1.Unsubscriber.Types.UnsubscribeMethod.Unspecified) hash ^= UnsubscribeMethod.GetHashCode();
       hash ^= Labels.GetHashCode();
       if (createTime_ != null) hash ^= CreateTime.GetHashCode();
       if (_unknownFields != null) {
@@ -262,7 +272,7 @@ namespace Enfonica.Messaging.V1 {
         output.WriteRawTag(18);
         output.WriteString(Phone);
       }
-      if (UnsubscribeMethod != global::Enfonica.Messaging.V1.Unsubscriber.Types.UnsubscribeMethod.Unknown) {
+      if (UnsubscribeMethod != global::Enfonica.Messaging.V1.Unsubscriber.Types.UnsubscribeMethod.Unspecified) {
         output.WriteRawTag(24);
         output.WriteEnum((int) UnsubscribeMethod);
       }
@@ -288,7 +298,7 @@ namespace Enfonica.Messaging.V1 {
         output.WriteRawTag(18);
         output.WriteString(Phone);
       }
-      if (UnsubscribeMethod != global::Enfonica.Messaging.V1.Unsubscriber.Types.UnsubscribeMethod.Unknown) {
+      if (UnsubscribeMethod != global::Enfonica.Messaging.V1.Unsubscriber.Types.UnsubscribeMethod.Unspecified) {
         output.WriteRawTag(24);
         output.WriteEnum((int) UnsubscribeMethod);
       }
@@ -312,7 +322,7 @@ namespace Enfonica.Messaging.V1 {
       if (Phone.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Phone);
       }
-      if (UnsubscribeMethod != global::Enfonica.Messaging.V1.Unsubscriber.Types.UnsubscribeMethod.Unknown) {
+      if (UnsubscribeMethod != global::Enfonica.Messaging.V1.Unsubscriber.Types.UnsubscribeMethod.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) UnsubscribeMethod);
       }
       size += labels_.CalculateSize(_map_labels_codec);
@@ -336,7 +346,7 @@ namespace Enfonica.Messaging.V1 {
       if (other.Phone.Length != 0) {
         Phone = other.Phone;
       }
-      if (other.UnsubscribeMethod != global::Enfonica.Messaging.V1.Unsubscriber.Types.UnsubscribeMethod.Unknown) {
+      if (other.UnsubscribeMethod != global::Enfonica.Messaging.V1.Unsubscriber.Types.UnsubscribeMethod.Unspecified) {
         UnsubscribeMethod = other.UnsubscribeMethod;
       }
       labels_.Add(other.labels_);
@@ -436,7 +446,7 @@ namespace Enfonica.Messaging.V1 {
         /// <summary>
         /// Unknown unsubscribe method.
         /// </summary>
-        [pbr::OriginalName("UNKNOWN")] Unknown = 0,
+        [pbr::OriginalName("UNSUBSCRIBE_METHOD_UNSPECIFIED")] Unspecified = 0,
         /// <summary>
         /// Unsubscribed by visiting a URL.
         /// </summary>
@@ -926,7 +936,7 @@ namespace Enfonica.Messaging.V1 {
     private int pageSize_;
     /// <summary>
     /// The maximum number of Unsubscribers to return in the response.
-    /// Optional, with a default value of 10 and maximum value of 100.
+    /// Default value is 10 and maximum value is 100.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int PageSize {
@@ -942,7 +952,6 @@ namespace Enfonica.Messaging.V1 {
     /// <summary>
     /// A pagination token returned from a previous call to `ListUnsubscribers`
     /// that indicates where this listing should continue from.
-    /// Optional.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string PageToken {
@@ -957,6 +966,8 @@ namespace Enfonica.Messaging.V1 {
     private string phone_ = "";
     /// <summary>
     /// Only return the unsubscriber that matches the phone number exactly.
+    /// (-- api-linter: core::0132::request-unknown-fields=disabled
+    ///     aip.dev/not-precedent: List has additional fields in this package. --)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Phone {
@@ -1223,7 +1234,6 @@ namespace Enfonica.Messaging.V1 {
     /// <summary>
     /// A pagination token returned from a previous call to `ListUnsubscribers`
     /// that indicates from where listing should continue.
-    /// Optional.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string NextPageToken {

@@ -92,12 +92,7 @@ generate_microgenerator() {
   fi
   COMMON_RESOURCES_OPTION=--gapic_opt=common-resources-config=$COMMON_RESOURCES_CONFIG
   
-  # Only specify common resource protos for GCP APIs
-  # COMMON_RESOURCES_PROTO=
-  # if [[ $PACKAGE_ID == Google.Cloud.* ]]
-  # then
-    COMMON_RESOURCES_PROTO=$GOOGLEAPIS/google/cloud/common_resources.proto
-  # fi
+  COMMON_RESOURCES_PROTO=$ENFONICAAPIS/enfonica/common_resources.proto
   
   # Message and service generation. This doesn't need the common resources,
   # and we don't want to pass in the common resources proto because we don't
@@ -148,7 +143,7 @@ generate_microgenerator() {
   rm -rf $API_TMP_DIR/Google.Cloud{,.Snippets,.Tests}
 
   # Fix copyright notices in generated clients
-  find $API_TMP_DIR -type f -name '*Client.g.cs' -exec sh -c 'sed -i "s/Google LLC/Enfonica Pty Ltd/" "$1"' -- {} \;
+  find $API_TMP_DIR -type f -name '*.g.cs' -exec sh -c 'sed -i "s/Google LLC/Enfonica Pty Ltd/" "$1"' -- {} \;
   # Introduce aliased namespace
   find $API_TMP_DIR -type f -name '*Client.g.cs' -exec sh -c 'sed -i "s/using gaxgrpc = Google.Api.Gax.Grpc;/using gaxgrpc = Google.Api.Gax.Grpc;\nusing enfgaxgrpc = Enfonica.Api.Gax.Grpc;/" "$1"' -- {} \;
   # Modify generated client to use Enfonica versions
@@ -169,6 +164,41 @@ generate_microgenerator() {
   mv $API_TMP_DIR/$PACKAGE_ID/*.g.cs $DEST_PACKAGE
   mv $API_TMP_DIR/$PACKAGE_ID.Snippets/*.g.cs $DEST_SNIPPETS
   mv $API_TMP_DIR/$PACKAGE_ID.Tests/*.g.cs $DEST_TESTS
+}
+
+generate_microgenerator_commonresourcenames() {
+  API_TMP_DIR=$OUTDIR/Common
+  API_OUT_DIR=apis
+
+  # Clean API tmp dir
+  rm -rf $API_TMP_DIR
+
+  COMMON_RESOURCES_PROTO=$ENFONICAAPIS/enfonica/common_resources.proto
+
+  # Generate common resource name classes
+  echo "Generating common resource name classes"
+  mkdir $API_TMP_DIR
+  $PROTOC \
+    --gapic_out=$API_TMP_DIR \
+    --plugin=protoc-gen-gapic=$GAPIC_PLUGIN \
+    -I $ENFONICAAPIS \
+    -I $GOOGLEAPIS \
+    -I $CORE_PROTOS_ROOT \
+    $COMMON_RESOURCES_PROTO \
+    2>&1 | grep -v "is unused" || true # Ignore import warnings (and grep exit code)
+
+  # The microgenerator currently creates Google.Cloud directories due to being given
+  # the common resources proto. Clean up for now; this is being fixed in the generator.
+  rm -rf $API_TMP_DIR/Google.Cloud{,.Snippets,.Tests}
+
+  # Fix copyright notices in generated code
+  find $API_TMP_DIR -type f -name '*.g.cs' -exec sh -c 'sed -i "s/Google LLC/Enfonica Pty Ltd/" "$1"' -- {} \;
+
+  DEST=$API_OUT_DIR/Enfonica/Enfonica
+
+  # Copy into the right place
+  mkdir -p $DEST
+  mv $API_TMP_DIR/Enfonica/*.g.cs $DEST
 }
 
 generate_proto() {
@@ -325,6 +355,8 @@ if [[ -z "$packages" ]]
 then
   packages=$($PYTHON3 tools/listapis.py apis/apis.json --test generator)
 fi
+
+generate_microgenerator_commonresourcenames
 
 for package in $packages
 do

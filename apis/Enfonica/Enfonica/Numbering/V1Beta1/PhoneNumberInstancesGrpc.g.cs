@@ -37,7 +37,6 @@ namespace Enfonica.Numbering.V1Beta1 {
     static readonly grpc::Marshaller<global::Enfonica.Numbering.V1Beta1.ListPhoneNumberInstancesResponse> __Marshaller_enfonica_numbering_v1beta1_ListPhoneNumberInstancesResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Enfonica.Numbering.V1Beta1.ListPhoneNumberInstancesResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Enfonica.Numbering.V1Beta1.UpdatePhoneNumberInstanceRequest> __Marshaller_enfonica_numbering_v1beta1_UpdatePhoneNumberInstanceRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Enfonica.Numbering.V1Beta1.UpdatePhoneNumberInstanceRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Enfonica.Numbering.V1Beta1.DeletePhoneNumberInstanceRequest> __Marshaller_enfonica_numbering_v1beta1_DeletePhoneNumberInstanceRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Enfonica.Numbering.V1Beta1.DeletePhoneNumberInstanceRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Enfonica.Numbering.V1Beta1.GetProvisionedPhoneNumberInstanceRequest> __Marshaller_enfonica_numbering_v1beta1_GetProvisionedPhoneNumberInstanceRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Enfonica.Numbering.V1Beta1.GetProvisionedPhoneNumberInstanceRequest.Parser.ParseFrom);
 
     static readonly grpc::Method<global::Enfonica.Numbering.V1Beta1.CreatePhoneNumberInstanceRequest, global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance> __Method_CreatePhoneNumberInstance = new grpc::Method<global::Enfonica.Numbering.V1Beta1.CreatePhoneNumberInstanceRequest, global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance>(
         grpc::MethodType.Unary,
@@ -72,13 +71,6 @@ namespace Enfonica.Numbering.V1Beta1 {
         __ServiceName,
         "DeletePhoneNumberInstance",
         __Marshaller_enfonica_numbering_v1beta1_DeletePhoneNumberInstanceRequest,
-        __Marshaller_enfonica_numbering_v1beta1_PhoneNumberInstance);
-
-    static readonly grpc::Method<global::Enfonica.Numbering.V1Beta1.GetProvisionedPhoneNumberInstanceRequest, global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance> __Method_GetProvisionedPhoneNumberInstance = new grpc::Method<global::Enfonica.Numbering.V1Beta1.GetProvisionedPhoneNumberInstanceRequest, global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "GetProvisionedPhoneNumberInstance",
-        __Marshaller_enfonica_numbering_v1beta1_GetProvisionedPhoneNumberInstanceRequest,
         __Marshaller_enfonica_numbering_v1beta1_PhoneNumberInstance);
 
     /// <summary>Service descriptor</summary>
@@ -135,6 +127,8 @@ namespace Enfonica.Numbering.V1Beta1 {
       /// Updates a phone number instance.
       ///
       /// The caller must have `numbering.phoneNumberInstances.update` permission on the project.
+      /// (-- api-linter: core::0134::http-uri-name=disabled
+      ///     aip.dev/not-precedent: Update has `name` in the request message in this beta. --)
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -153,23 +147,6 @@ namespace Enfonica.Numbering.V1Beta1 {
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       public virtual global::System.Threading.Tasks.Task<global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance> DeletePhoneNumberInstance(global::Enfonica.Numbering.V1Beta1.DeletePhoneNumberInstanceRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      /// <summary>
-      /// @Private
-      /// Gets the provisioned phone number instance based on the supplied phone number.
-      /// The instance returned will have a lifecycle state of either ACTIVE or SUSPENDED.
-      /// `parent` must be specified as `projects/-`.
-      /// If no provisioned instance is found, throws NOT_FOUND.
-      ///
-      /// The caller must auth with an Enfonica token.
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      public virtual global::System.Threading.Tasks.Task<global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance> GetProvisionedPhoneNumberInstance(global::Enfonica.Numbering.V1Beta1.GetProvisionedPhoneNumberInstanceRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -363,6 +340,8 @@ namespace Enfonica.Numbering.V1Beta1 {
       /// Updates a phone number instance.
       ///
       /// The caller must have `numbering.phoneNumberInstances.update` permission on the project.
+      /// (-- api-linter: core::0134::http-uri-name=disabled
+      ///     aip.dev/not-precedent: Update has `name` in the request message in this beta. --)
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -377,6 +356,8 @@ namespace Enfonica.Numbering.V1Beta1 {
       /// Updates a phone number instance.
       ///
       /// The caller must have `numbering.phoneNumberInstances.update` permission on the project.
+      /// (-- api-linter: core::0134::http-uri-name=disabled
+      ///     aip.dev/not-precedent: Update has `name` in the request message in this beta. --)
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -389,6 +370,8 @@ namespace Enfonica.Numbering.V1Beta1 {
       /// Updates a phone number instance.
       ///
       /// The caller must have `numbering.phoneNumberInstances.update` permission on the project.
+      /// (-- api-linter: core::0134::http-uri-name=disabled
+      ///     aip.dev/not-precedent: Update has `name` in the request message in this beta. --)
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -403,6 +386,8 @@ namespace Enfonica.Numbering.V1Beta1 {
       /// Updates a phone number instance.
       ///
       /// The caller must have `numbering.phoneNumberInstances.update` permission on the project.
+      /// (-- api-linter: core::0134::http-uri-name=disabled
+      ///     aip.dev/not-precedent: Update has `name` in the request message in this beta. --)
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -463,74 +448,6 @@ namespace Enfonica.Numbering.V1Beta1 {
       {
         return CallInvoker.AsyncUnaryCall(__Method_DeletePhoneNumberInstance, null, options, request);
       }
-      /// <summary>
-      /// @Private
-      /// Gets the provisioned phone number instance based on the supplied phone number.
-      /// The instance returned will have a lifecycle state of either ACTIVE or SUSPENDED.
-      /// `parent` must be specified as `projects/-`.
-      /// If no provisioned instance is found, throws NOT_FOUND.
-      ///
-      /// The caller must auth with an Enfonica token.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
-      public virtual global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance GetProvisionedPhoneNumberInstance(global::Enfonica.Numbering.V1Beta1.GetProvisionedPhoneNumberInstanceRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return GetProvisionedPhoneNumberInstance(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// @Private
-      /// Gets the provisioned phone number instance based on the supplied phone number.
-      /// The instance returned will have a lifecycle state of either ACTIVE or SUSPENDED.
-      /// `parent` must be specified as `projects/-`.
-      /// If no provisioned instance is found, throws NOT_FOUND.
-      ///
-      /// The caller must auth with an Enfonica token.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      public virtual global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance GetProvisionedPhoneNumberInstance(global::Enfonica.Numbering.V1Beta1.GetProvisionedPhoneNumberInstanceRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_GetProvisionedPhoneNumberInstance, null, options, request);
-      }
-      /// <summary>
-      /// @Private
-      /// Gets the provisioned phone number instance based on the supplied phone number.
-      /// The instance returned will have a lifecycle state of either ACTIVE or SUSPENDED.
-      /// `parent` must be specified as `projects/-`.
-      /// If no provisioned instance is found, throws NOT_FOUND.
-      ///
-      /// The caller must auth with an Enfonica token.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance> GetProvisionedPhoneNumberInstanceAsync(global::Enfonica.Numbering.V1Beta1.GetProvisionedPhoneNumberInstanceRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return GetProvisionedPhoneNumberInstanceAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// @Private
-      /// Gets the provisioned phone number instance based on the supplied phone number.
-      /// The instance returned will have a lifecycle state of either ACTIVE or SUSPENDED.
-      /// `parent` must be specified as `projects/-`.
-      /// If no provisioned instance is found, throws NOT_FOUND.
-      ///
-      /// The caller must auth with an Enfonica token.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
-      public virtual grpc::AsyncUnaryCall<global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance> GetProvisionedPhoneNumberInstanceAsync(global::Enfonica.Numbering.V1Beta1.GetProvisionedPhoneNumberInstanceRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_GetProvisionedPhoneNumberInstance, null, options, request);
-      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override PhoneNumberInstancesClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -547,8 +464,7 @@ namespace Enfonica.Numbering.V1Beta1 {
           .AddMethod(__Method_GetPhoneNumberInstance, serviceImpl.GetPhoneNumberInstance)
           .AddMethod(__Method_ListPhoneNumberInstances, serviceImpl.ListPhoneNumberInstances)
           .AddMethod(__Method_UpdatePhoneNumberInstance, serviceImpl.UpdatePhoneNumberInstance)
-          .AddMethod(__Method_DeletePhoneNumberInstance, serviceImpl.DeletePhoneNumberInstance)
-          .AddMethod(__Method_GetProvisionedPhoneNumberInstance, serviceImpl.GetProvisionedPhoneNumberInstance).Build();
+          .AddMethod(__Method_DeletePhoneNumberInstance, serviceImpl.DeletePhoneNumberInstance).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
@@ -562,7 +478,6 @@ namespace Enfonica.Numbering.V1Beta1 {
       serviceBinder.AddMethod(__Method_ListPhoneNumberInstances, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Enfonica.Numbering.V1Beta1.ListPhoneNumberInstancesRequest, global::Enfonica.Numbering.V1Beta1.ListPhoneNumberInstancesResponse>(serviceImpl.ListPhoneNumberInstances));
       serviceBinder.AddMethod(__Method_UpdatePhoneNumberInstance, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Enfonica.Numbering.V1Beta1.UpdatePhoneNumberInstanceRequest, global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance>(serviceImpl.UpdatePhoneNumberInstance));
       serviceBinder.AddMethod(__Method_DeletePhoneNumberInstance, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Enfonica.Numbering.V1Beta1.DeletePhoneNumberInstanceRequest, global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance>(serviceImpl.DeletePhoneNumberInstance));
-      serviceBinder.AddMethod(__Method_GetProvisionedPhoneNumberInstance, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Enfonica.Numbering.V1Beta1.GetProvisionedPhoneNumberInstanceRequest, global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance>(serviceImpl.GetProvisionedPhoneNumberInstance));
     }
 
   }

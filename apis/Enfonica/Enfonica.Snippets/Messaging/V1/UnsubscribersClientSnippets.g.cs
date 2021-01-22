@@ -1,4 +1,4 @@
-// Copyright 2020 Google LLC
+// Copyright 2021 Enfonica Pty Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -34,7 +34,7 @@ namespace Enfonica.Messaging.V1.Snippets
             // Initialize request argument(s)
             CreateUnsubscriberRequest request = new CreateUnsubscriberRequest
             {
-                Parent = "",
+                ParentAsProjectName = ProjectName.FromProject("[PROJECT]"),
                 Unsubscriber = new Unsubscriber(),
             };
             // Make the request
@@ -52,11 +52,69 @@ namespace Enfonica.Messaging.V1.Snippets
             // Initialize request argument(s)
             CreateUnsubscriberRequest request = new CreateUnsubscriberRequest
             {
-                Parent = "",
+                ParentAsProjectName = ProjectName.FromProject("[PROJECT]"),
                 Unsubscriber = new Unsubscriber(),
             };
             // Make the request
             Unsubscriber response = await unsubscribersClient.CreateUnsubscriberAsync(request);
+            // End snippet
+        }
+
+        /// <summary>Snippet for CreateUnsubscriber</summary>
+        public void CreateUnsubscriber()
+        {
+            // Snippet: CreateUnsubscriber(string, Unsubscriber, CallSettings)
+            // Create client
+            UnsubscribersClient unsubscribersClient = UnsubscribersClient.Create();
+            // Initialize request argument(s)
+            string parent = "projects/[PROJECT]";
+            Unsubscriber unsubscriber = new Unsubscriber();
+            // Make the request
+            Unsubscriber response = unsubscribersClient.CreateUnsubscriber(parent, unsubscriber);
+            // End snippet
+        }
+
+        /// <summary>Snippet for CreateUnsubscriberAsync</summary>
+        public async Task CreateUnsubscriberAsync()
+        {
+            // Snippet: CreateUnsubscriberAsync(string, Unsubscriber, CallSettings)
+            // Additional: CreateUnsubscriberAsync(string, Unsubscriber, CancellationToken)
+            // Create client
+            UnsubscribersClient unsubscribersClient = await UnsubscribersClient.CreateAsync();
+            // Initialize request argument(s)
+            string parent = "projects/[PROJECT]";
+            Unsubscriber unsubscriber = new Unsubscriber();
+            // Make the request
+            Unsubscriber response = await unsubscribersClient.CreateUnsubscriberAsync(parent, unsubscriber);
+            // End snippet
+        }
+
+        /// <summary>Snippet for CreateUnsubscriber</summary>
+        public void CreateUnsubscriberResourceNames()
+        {
+            // Snippet: CreateUnsubscriber(ProjectName, Unsubscriber, CallSettings)
+            // Create client
+            UnsubscribersClient unsubscribersClient = UnsubscribersClient.Create();
+            // Initialize request argument(s)
+            ProjectName parent = ProjectName.FromProject("[PROJECT]");
+            Unsubscriber unsubscriber = new Unsubscriber();
+            // Make the request
+            Unsubscriber response = unsubscribersClient.CreateUnsubscriber(parent, unsubscriber);
+            // End snippet
+        }
+
+        /// <summary>Snippet for CreateUnsubscriberAsync</summary>
+        public async Task CreateUnsubscriberResourceNamesAsync()
+        {
+            // Snippet: CreateUnsubscriberAsync(ProjectName, Unsubscriber, CallSettings)
+            // Additional: CreateUnsubscriberAsync(ProjectName, Unsubscriber, CancellationToken)
+            // Create client
+            UnsubscribersClient unsubscribersClient = await UnsubscribersClient.CreateAsync();
+            // Initialize request argument(s)
+            ProjectName parent = ProjectName.FromProject("[PROJECT]");
+            Unsubscriber unsubscriber = new Unsubscriber();
+            // Make the request
+            Unsubscriber response = await unsubscribersClient.CreateUnsubscriberAsync(parent, unsubscriber);
             // End snippet
         }
 
@@ -67,7 +125,10 @@ namespace Enfonica.Messaging.V1.Snippets
             // Create client
             UnsubscribersClient unsubscribersClient = UnsubscribersClient.Create();
             // Initialize request argument(s)
-            GetUnsubscriberRequest request = new GetUnsubscriberRequest { Name = "", };
+            GetUnsubscriberRequest request = new GetUnsubscriberRequest
+            {
+                UnsubscriberName = UnsubscriberName.FromProjectUnsubscriber("[PROJECT]", "[UNSUBSCRIBER]"),
+            };
             // Make the request
             Unsubscriber response = unsubscribersClient.GetUnsubscriber(request);
             // End snippet
@@ -81,9 +142,66 @@ namespace Enfonica.Messaging.V1.Snippets
             // Create client
             UnsubscribersClient unsubscribersClient = await UnsubscribersClient.CreateAsync();
             // Initialize request argument(s)
-            GetUnsubscriberRequest request = new GetUnsubscriberRequest { Name = "", };
+            GetUnsubscriberRequest request = new GetUnsubscriberRequest
+            {
+                UnsubscriberName = UnsubscriberName.FromProjectUnsubscriber("[PROJECT]", "[UNSUBSCRIBER]"),
+            };
             // Make the request
             Unsubscriber response = await unsubscribersClient.GetUnsubscriberAsync(request);
+            // End snippet
+        }
+
+        /// <summary>Snippet for GetUnsubscriber</summary>
+        public void GetUnsubscriber()
+        {
+            // Snippet: GetUnsubscriber(string, CallSettings)
+            // Create client
+            UnsubscribersClient unsubscribersClient = UnsubscribersClient.Create();
+            // Initialize request argument(s)
+            string name = "projects/[PROJECT]/unsubscribers/[UNSUBSCRIBER]";
+            // Make the request
+            Unsubscriber response = unsubscribersClient.GetUnsubscriber(name);
+            // End snippet
+        }
+
+        /// <summary>Snippet for GetUnsubscriberAsync</summary>
+        public async Task GetUnsubscriberAsync()
+        {
+            // Snippet: GetUnsubscriberAsync(string, CallSettings)
+            // Additional: GetUnsubscriberAsync(string, CancellationToken)
+            // Create client
+            UnsubscribersClient unsubscribersClient = await UnsubscribersClient.CreateAsync();
+            // Initialize request argument(s)
+            string name = "projects/[PROJECT]/unsubscribers/[UNSUBSCRIBER]";
+            // Make the request
+            Unsubscriber response = await unsubscribersClient.GetUnsubscriberAsync(name);
+            // End snippet
+        }
+
+        /// <summary>Snippet for GetUnsubscriber</summary>
+        public void GetUnsubscriberResourceNames()
+        {
+            // Snippet: GetUnsubscriber(UnsubscriberName, CallSettings)
+            // Create client
+            UnsubscribersClient unsubscribersClient = UnsubscribersClient.Create();
+            // Initialize request argument(s)
+            UnsubscriberName name = UnsubscriberName.FromProjectUnsubscriber("[PROJECT]", "[UNSUBSCRIBER]");
+            // Make the request
+            Unsubscriber response = unsubscribersClient.GetUnsubscriber(name);
+            // End snippet
+        }
+
+        /// <summary>Snippet for GetUnsubscriberAsync</summary>
+        public async Task GetUnsubscriberResourceNamesAsync()
+        {
+            // Snippet: GetUnsubscriberAsync(UnsubscriberName, CallSettings)
+            // Additional: GetUnsubscriberAsync(UnsubscriberName, CancellationToken)
+            // Create client
+            UnsubscribersClient unsubscribersClient = await UnsubscribersClient.CreateAsync();
+            // Initialize request argument(s)
+            UnsubscriberName name = UnsubscriberName.FromProjectUnsubscriber("[PROJECT]", "[UNSUBSCRIBER]");
+            // Make the request
+            Unsubscriber response = await unsubscribersClient.GetUnsubscriberAsync(name);
             // End snippet
         }
 
@@ -96,7 +214,7 @@ namespace Enfonica.Messaging.V1.Snippets
             // Initialize request argument(s)
             ListUnsubscribersRequest request = new ListUnsubscribersRequest
             {
-                Parent = "",
+                ParentAsProjectName = ProjectName.FromProject("[PROJECT]"),
                 Phone = "",
             };
             // Make the request
@@ -145,11 +263,191 @@ namespace Enfonica.Messaging.V1.Snippets
             // Initialize request argument(s)
             ListUnsubscribersRequest request = new ListUnsubscribersRequest
             {
-                Parent = "",
+                ParentAsProjectName = ProjectName.FromProject("[PROJECT]"),
                 Phone = "",
             };
             // Make the request
             PagedAsyncEnumerable<ListUnsubscribersResponse, Unsubscriber> response = unsubscribersClient.ListUnsubscribersAsync(request);
+
+            // Iterate over all response items, lazily performing RPCs as required
+            await response.ForEachAsync((Unsubscriber item) =>
+            {
+                // Do something with each item
+                Console.WriteLine(item);
+            });
+
+            // Or iterate over pages (of server-defined size), performing one RPC per page
+            await response.AsRawResponses().ForEachAsync((ListUnsubscribersResponse page) =>
+            {
+                // Do something with each page of items
+                Console.WriteLine("A page of results:");
+                foreach (Unsubscriber item in page)
+                {
+                    // Do something with each item
+                    Console.WriteLine(item);
+                }
+            });
+
+            // Or retrieve a single page of known size (unless it's the final page), performing as many RPCs as required
+            int pageSize = 10;
+            Page<Unsubscriber> singlePage = await response.ReadPageAsync(pageSize);
+            // Do something with the page of items
+            Console.WriteLine($"A page of {pageSize} results (unless it's the final page):");
+            foreach (Unsubscriber item in singlePage)
+            {
+                // Do something with each item
+                Console.WriteLine(item);
+            }
+            // Store the pageToken, for when the next page is required.
+            string nextPageToken = singlePage.NextPageToken;
+            // End snippet
+        }
+
+        /// <summary>Snippet for ListUnsubscribers</summary>
+        public void ListUnsubscribers()
+        {
+            // Snippet: ListUnsubscribers(string, string, int?, CallSettings)
+            // Create client
+            UnsubscribersClient unsubscribersClient = UnsubscribersClient.Create();
+            // Initialize request argument(s)
+            string parent = "projects/[PROJECT]";
+            // Make the request
+            PagedEnumerable<ListUnsubscribersResponse, Unsubscriber> response = unsubscribersClient.ListUnsubscribers(parent);
+
+            // Iterate over all response items, lazily performing RPCs as required
+            foreach (Unsubscriber item in response)
+            {
+                // Do something with each item
+                Console.WriteLine(item);
+            }
+
+            // Or iterate over pages (of server-defined size), performing one RPC per page
+            foreach (ListUnsubscribersResponse page in response.AsRawResponses())
+            {
+                // Do something with each page of items
+                Console.WriteLine("A page of results:");
+                foreach (Unsubscriber item in page)
+                {
+                    // Do something with each item
+                    Console.WriteLine(item);
+                }
+            }
+
+            // Or retrieve a single page of known size (unless it's the final page), performing as many RPCs as required
+            int pageSize = 10;
+            Page<Unsubscriber> singlePage = response.ReadPage(pageSize);
+            // Do something with the page of items
+            Console.WriteLine($"A page of {pageSize} results (unless it's the final page):");
+            foreach (Unsubscriber item in singlePage)
+            {
+                // Do something with each item
+                Console.WriteLine(item);
+            }
+            // Store the pageToken, for when the next page is required.
+            string nextPageToken = singlePage.NextPageToken;
+            // End snippet
+        }
+
+        /// <summary>Snippet for ListUnsubscribers</summary>
+        public async Task ListUnsubscribersAsync()
+        {
+            // Snippet: ListUnsubscribersAsync(string, string, int?, CallSettings)
+            // Create client
+            UnsubscribersClient unsubscribersClient = await UnsubscribersClient.CreateAsync();
+            // Initialize request argument(s)
+            string parent = "projects/[PROJECT]";
+            // Make the request
+            PagedAsyncEnumerable<ListUnsubscribersResponse, Unsubscriber> response = unsubscribersClient.ListUnsubscribersAsync(parent);
+
+            // Iterate over all response items, lazily performing RPCs as required
+            await response.ForEachAsync((Unsubscriber item) =>
+            {
+                // Do something with each item
+                Console.WriteLine(item);
+            });
+
+            // Or iterate over pages (of server-defined size), performing one RPC per page
+            await response.AsRawResponses().ForEachAsync((ListUnsubscribersResponse page) =>
+            {
+                // Do something with each page of items
+                Console.WriteLine("A page of results:");
+                foreach (Unsubscriber item in page)
+                {
+                    // Do something with each item
+                    Console.WriteLine(item);
+                }
+            });
+
+            // Or retrieve a single page of known size (unless it's the final page), performing as many RPCs as required
+            int pageSize = 10;
+            Page<Unsubscriber> singlePage = await response.ReadPageAsync(pageSize);
+            // Do something with the page of items
+            Console.WriteLine($"A page of {pageSize} results (unless it's the final page):");
+            foreach (Unsubscriber item in singlePage)
+            {
+                // Do something with each item
+                Console.WriteLine(item);
+            }
+            // Store the pageToken, for when the next page is required.
+            string nextPageToken = singlePage.NextPageToken;
+            // End snippet
+        }
+
+        /// <summary>Snippet for ListUnsubscribers</summary>
+        public void ListUnsubscribersResourceNames()
+        {
+            // Snippet: ListUnsubscribers(ProjectName, string, int?, CallSettings)
+            // Create client
+            UnsubscribersClient unsubscribersClient = UnsubscribersClient.Create();
+            // Initialize request argument(s)
+            ProjectName parent = ProjectName.FromProject("[PROJECT]");
+            // Make the request
+            PagedEnumerable<ListUnsubscribersResponse, Unsubscriber> response = unsubscribersClient.ListUnsubscribers(parent);
+
+            // Iterate over all response items, lazily performing RPCs as required
+            foreach (Unsubscriber item in response)
+            {
+                // Do something with each item
+                Console.WriteLine(item);
+            }
+
+            // Or iterate over pages (of server-defined size), performing one RPC per page
+            foreach (ListUnsubscribersResponse page in response.AsRawResponses())
+            {
+                // Do something with each page of items
+                Console.WriteLine("A page of results:");
+                foreach (Unsubscriber item in page)
+                {
+                    // Do something with each item
+                    Console.WriteLine(item);
+                }
+            }
+
+            // Or retrieve a single page of known size (unless it's the final page), performing as many RPCs as required
+            int pageSize = 10;
+            Page<Unsubscriber> singlePage = response.ReadPage(pageSize);
+            // Do something with the page of items
+            Console.WriteLine($"A page of {pageSize} results (unless it's the final page):");
+            foreach (Unsubscriber item in singlePage)
+            {
+                // Do something with each item
+                Console.WriteLine(item);
+            }
+            // Store the pageToken, for when the next page is required.
+            string nextPageToken = singlePage.NextPageToken;
+            // End snippet
+        }
+
+        /// <summary>Snippet for ListUnsubscribers</summary>
+        public async Task ListUnsubscribersResourceNamesAsync()
+        {
+            // Snippet: ListUnsubscribersAsync(ProjectName, string, int?, CallSettings)
+            // Create client
+            UnsubscribersClient unsubscribersClient = await UnsubscribersClient.CreateAsync();
+            // Initialize request argument(s)
+            ProjectName parent = ProjectName.FromProject("[PROJECT]");
+            // Make the request
+            PagedAsyncEnumerable<ListUnsubscribersResponse, Unsubscriber> response = unsubscribersClient.ListUnsubscribersAsync(parent);
 
             // Iterate over all response items, lazily performing RPCs as required
             await response.ForEachAsync((Unsubscriber item) =>
@@ -220,6 +518,35 @@ namespace Enfonica.Messaging.V1.Snippets
             // End snippet
         }
 
+        /// <summary>Snippet for UpdateUnsubscriber</summary>
+        public void UpdateUnsubscriber()
+        {
+            // Snippet: UpdateUnsubscriber(Unsubscriber, FieldMask, CallSettings)
+            // Create client
+            UnsubscribersClient unsubscribersClient = UnsubscribersClient.Create();
+            // Initialize request argument(s)
+            Unsubscriber unsubscriber = new Unsubscriber();
+            FieldMask updateMask = new FieldMask();
+            // Make the request
+            Unsubscriber response = unsubscribersClient.UpdateUnsubscriber(unsubscriber, updateMask);
+            // End snippet
+        }
+
+        /// <summary>Snippet for UpdateUnsubscriberAsync</summary>
+        public async Task UpdateUnsubscriberAsync()
+        {
+            // Snippet: UpdateUnsubscriberAsync(Unsubscriber, FieldMask, CallSettings)
+            // Additional: UpdateUnsubscriberAsync(Unsubscriber, FieldMask, CancellationToken)
+            // Create client
+            UnsubscribersClient unsubscribersClient = await UnsubscribersClient.CreateAsync();
+            // Initialize request argument(s)
+            Unsubscriber unsubscriber = new Unsubscriber();
+            FieldMask updateMask = new FieldMask();
+            // Make the request
+            Unsubscriber response = await unsubscribersClient.UpdateUnsubscriberAsync(unsubscriber, updateMask);
+            // End snippet
+        }
+
         /// <summary>Snippet for DeleteUnsubscriber</summary>
         public void DeleteUnsubscriberRequestObject()
         {
@@ -227,7 +554,10 @@ namespace Enfonica.Messaging.V1.Snippets
             // Create client
             UnsubscribersClient unsubscribersClient = UnsubscribersClient.Create();
             // Initialize request argument(s)
-            DeleteUnsubscriberRequest request = new DeleteUnsubscriberRequest { Name = "", };
+            DeleteUnsubscriberRequest request = new DeleteUnsubscriberRequest
+            {
+                UnsubscriberName = UnsubscriberName.FromProjectUnsubscriber("[PROJECT]", "[UNSUBSCRIBER]"),
+            };
             // Make the request
             Unsubscriber response = unsubscribersClient.DeleteUnsubscriber(request);
             // End snippet
@@ -241,9 +571,66 @@ namespace Enfonica.Messaging.V1.Snippets
             // Create client
             UnsubscribersClient unsubscribersClient = await UnsubscribersClient.CreateAsync();
             // Initialize request argument(s)
-            DeleteUnsubscriberRequest request = new DeleteUnsubscriberRequest { Name = "", };
+            DeleteUnsubscriberRequest request = new DeleteUnsubscriberRequest
+            {
+                UnsubscriberName = UnsubscriberName.FromProjectUnsubscriber("[PROJECT]", "[UNSUBSCRIBER]"),
+            };
             // Make the request
             Unsubscriber response = await unsubscribersClient.DeleteUnsubscriberAsync(request);
+            // End snippet
+        }
+
+        /// <summary>Snippet for DeleteUnsubscriber</summary>
+        public void DeleteUnsubscriber()
+        {
+            // Snippet: DeleteUnsubscriber(string, CallSettings)
+            // Create client
+            UnsubscribersClient unsubscribersClient = UnsubscribersClient.Create();
+            // Initialize request argument(s)
+            string name = "projects/[PROJECT]/unsubscribers/[UNSUBSCRIBER]";
+            // Make the request
+            Unsubscriber response = unsubscribersClient.DeleteUnsubscriber(name);
+            // End snippet
+        }
+
+        /// <summary>Snippet for DeleteUnsubscriberAsync</summary>
+        public async Task DeleteUnsubscriberAsync()
+        {
+            // Snippet: DeleteUnsubscriberAsync(string, CallSettings)
+            // Additional: DeleteUnsubscriberAsync(string, CancellationToken)
+            // Create client
+            UnsubscribersClient unsubscribersClient = await UnsubscribersClient.CreateAsync();
+            // Initialize request argument(s)
+            string name = "projects/[PROJECT]/unsubscribers/[UNSUBSCRIBER]";
+            // Make the request
+            Unsubscriber response = await unsubscribersClient.DeleteUnsubscriberAsync(name);
+            // End snippet
+        }
+
+        /// <summary>Snippet for DeleteUnsubscriber</summary>
+        public void DeleteUnsubscriberResourceNames()
+        {
+            // Snippet: DeleteUnsubscriber(UnsubscriberName, CallSettings)
+            // Create client
+            UnsubscribersClient unsubscribersClient = UnsubscribersClient.Create();
+            // Initialize request argument(s)
+            UnsubscriberName name = UnsubscriberName.FromProjectUnsubscriber("[PROJECT]", "[UNSUBSCRIBER]");
+            // Make the request
+            Unsubscriber response = unsubscribersClient.DeleteUnsubscriber(name);
+            // End snippet
+        }
+
+        /// <summary>Snippet for DeleteUnsubscriberAsync</summary>
+        public async Task DeleteUnsubscriberResourceNamesAsync()
+        {
+            // Snippet: DeleteUnsubscriberAsync(UnsubscriberName, CallSettings)
+            // Additional: DeleteUnsubscriberAsync(UnsubscriberName, CancellationToken)
+            // Create client
+            UnsubscribersClient unsubscribersClient = await UnsubscribersClient.CreateAsync();
+            // Initialize request argument(s)
+            UnsubscriberName name = UnsubscriberName.FromProjectUnsubscriber("[PROJECT]", "[UNSUBSCRIBER]");
+            // Make the request
+            Unsubscriber response = await unsubscribersClient.DeleteUnsubscriberAsync(name);
             // End snippet
         }
     }

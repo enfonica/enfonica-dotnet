@@ -14,10 +14,10 @@
 
 // Generated code. DO NOT EDIT!
 
-namespace Enfonica.Numbering.V1Beta1.Tests
+namespace Enfonica.Voice.V1Beta1.Tests
 {
     /// <summary>Generated unit tests.</summary>
-    public sealed class GeneratedPhoneNumbersClientTest
+    public sealed class GeneratedStreamsClientTest
     {
     }
 }

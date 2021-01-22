@@ -1,4 +1,4 @@
-// Copyright 2020 Enfonica Pty Ltd
+// Copyright 2021 Enfonica Pty Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -45,11 +45,6 @@ namespace Enfonica.Numbering.V1Beta1
         private PhoneNumbersSettings(PhoneNumbersSettings existing) : base(existing)
         {
             gax::GaxPreconditions.CheckNotNull(existing, nameof(existing));
-            CreatePhoneNumberSettings = existing.CreatePhoneNumberSettings;
-            GetPhoneNumberSettings = existing.GetPhoneNumberSettings;
-            ListPhoneNumbersSettings = existing.ListPhoneNumbersSettings;
-            UpdatePhoneNumberSettings = existing.UpdatePhoneNumberSettings;
-            DeletePhoneNumberSettings = existing.DeletePhoneNumberSettings;
             SearchPhoneNumbersSettings = existing.SearchPhoneNumbersSettings;
             OnCopy(existing);
         }
@@ -58,75 +53,15 @@ namespace Enfonica.Numbering.V1Beta1
 
         /// <summary>
         /// <see cref="gaxgrpc::CallSettings"/> for synchronous and asynchronous calls to
-        /// <c>PhoneNumbersClient.CreatePhoneNumber</c> and <c>PhoneNumbersClient.CreatePhoneNumberAsync</c>.
-        /// </summary>
-        /// <remarks>
-        /// <list type="bullet">
-        /// <item><description>This call will not be retried.</description></item>
-        /// <item><description>No timeout is applied.</description></item>
-        /// </list>
-        /// </remarks>
-        public gaxgrpc::CallSettings CreatePhoneNumberSettings { get; set; } = gaxgrpc::CallSettings.FromExpiration(gax::Expiration.None);
-
-        /// <summary>
-        /// <see cref="gaxgrpc::CallSettings"/> for synchronous and asynchronous calls to
-        /// <c>PhoneNumbersClient.GetPhoneNumber</c> and <c>PhoneNumbersClient.GetPhoneNumberAsync</c>.
-        /// </summary>
-        /// <remarks>
-        /// <list type="bullet">
-        /// <item><description>This call will not be retried.</description></item>
-        /// <item><description>No timeout is applied.</description></item>
-        /// </list>
-        /// </remarks>
-        public gaxgrpc::CallSettings GetPhoneNumberSettings { get; set; } = gaxgrpc::CallSettings.FromExpiration(gax::Expiration.None);
-
-        /// <summary>
-        /// <see cref="gaxgrpc::CallSettings"/> for synchronous and asynchronous calls to
-        /// <c>PhoneNumbersClient.ListPhoneNumbers</c> and <c>PhoneNumbersClient.ListPhoneNumbersAsync</c>.
-        /// </summary>
-        /// <remarks>
-        /// <list type="bullet">
-        /// <item><description>This call will not be retried.</description></item>
-        /// <item><description>No timeout is applied.</description></item>
-        /// </list>
-        /// </remarks>
-        public gaxgrpc::CallSettings ListPhoneNumbersSettings { get; set; } = gaxgrpc::CallSettings.FromExpiration(gax::Expiration.None);
-
-        /// <summary>
-        /// <see cref="gaxgrpc::CallSettings"/> for synchronous and asynchronous calls to
-        /// <c>PhoneNumbersClient.UpdatePhoneNumber</c> and <c>PhoneNumbersClient.UpdatePhoneNumberAsync</c>.
-        /// </summary>
-        /// <remarks>
-        /// <list type="bullet">
-        /// <item><description>This call will not be retried.</description></item>
-        /// <item><description>No timeout is applied.</description></item>
-        /// </list>
-        /// </remarks>
-        public gaxgrpc::CallSettings UpdatePhoneNumberSettings { get; set; } = gaxgrpc::CallSettings.FromExpiration(gax::Expiration.None);
-
-        /// <summary>
-        /// <see cref="gaxgrpc::CallSettings"/> for synchronous and asynchronous calls to
-        /// <c>PhoneNumbersClient.DeletePhoneNumber</c> and <c>PhoneNumbersClient.DeletePhoneNumberAsync</c>.
-        /// </summary>
-        /// <remarks>
-        /// <list type="bullet">
-        /// <item><description>This call will not be retried.</description></item>
-        /// <item><description>No timeout is applied.</description></item>
-        /// </list>
-        /// </remarks>
-        public gaxgrpc::CallSettings DeletePhoneNumberSettings { get; set; } = gaxgrpc::CallSettings.FromExpiration(gax::Expiration.None);
-
-        /// <summary>
-        /// <see cref="gaxgrpc::CallSettings"/> for synchronous and asynchronous calls to
         /// <c>PhoneNumbersClient.SearchPhoneNumbers</c> and <c>PhoneNumbersClient.SearchPhoneNumbersAsync</c>.
         /// </summary>
         /// <remarks>
         /// <list type="bullet">
         /// <item><description>This call will not be retried.</description></item>
-        /// <item><description>No timeout is applied.</description></item>
+        /// <item><description>Timeout: 10 seconds.</description></item>
         /// </list>
         /// </remarks>
-        public gaxgrpc::CallSettings SearchPhoneNumbersSettings { get; set; } = gaxgrpc::CallSettings.FromExpiration(gax::Expiration.None);
+        public gaxgrpc::CallSettings SearchPhoneNumbersSettings { get; set; } = gaxgrpc::CallSettings.FromExpiration(gax::Expiration.FromTimeout(sys::TimeSpan.FromMilliseconds(10000)));
 
         /// <summary>Creates a deep clone of this object, with all the same property values.</summary>
         /// <returns>A deep clone of this <see cref="PhoneNumbersSettings"/> object.</returns>
@@ -197,13 +132,20 @@ namespace Enfonica.Numbering.V1Beta1
     public abstract partial class PhoneNumbersClient
     {
         /// <summary>
-        /// The default endpoint for the PhoneNumbers service, which is a host of "" and a port of 443.
+        /// The default endpoint for the PhoneNumbers service, which is a host of "numbering.api.enfonica.com" and a
+        /// port of 443.
         /// </summary>
-        public static string DefaultEndpoint { get; } = ":443";
+        public static string DefaultEndpoint { get; } = "numbering.api.enfonica.com:443";
 
         /// <summary>The default PhoneNumbers scopes.</summary>
-        /// <remarks>The default PhoneNumbers scopes are:<list type="bullet"></list></remarks>
-        public static scg::IReadOnlyList<string> DefaultScopes { get; } = new sco::ReadOnlyCollection<string>(new string[] { });
+        /// <remarks>
+        /// The default PhoneNumbers scopes are:
+        /// <list type="bullet"><item><description>https://api.enfonica.com/auth/numbering</description></item></list>
+        /// </remarks>
+        public static scg::IReadOnlyList<string> DefaultScopes { get; } = new sco::ReadOnlyCollection<string>(new string[]
+        {
+            "https://api.enfonica.com/auth/numbering",
+        });
 
         internal static enfgaxgrpc::ChannelPool ChannelPool { get; } = new enfgaxgrpc::ChannelPool(DefaultScopes);
 
@@ -262,164 +204,6 @@ namespace Enfonica.Numbering.V1Beta1
         public virtual PhoneNumbers.PhoneNumbersClient GrpcClient => throw new sys::NotImplementedException();
 
         /// <summary>
-        /// Creates a phone number.
-        /// 
-        /// The caller must have `numbering.phoneNumbers.create` permission on global resources.
-        /// </summary>
-        /// <param name="request">The request object containing all of the parameters for the API call.</param>
-        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
-        /// <returns>The RPC response.</returns>
-        public virtual PhoneNumber CreatePhoneNumber(CreatePhoneNumberRequest request, gaxgrpc::CallSettings callSettings = null) =>
-            throw new sys::NotImplementedException();
-
-        /// <summary>
-        /// Creates a phone number.
-        /// 
-        /// The caller must have `numbering.phoneNumbers.create` permission on global resources.
-        /// </summary>
-        /// <param name="request">The request object containing all of the parameters for the API call.</param>
-        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
-        /// <returns>A Task containing the RPC response.</returns>
-        public virtual stt::Task<PhoneNumber> CreatePhoneNumberAsync(CreatePhoneNumberRequest request, gaxgrpc::CallSettings callSettings = null) =>
-            throw new sys::NotImplementedException();
-
-        /// <summary>
-        /// Creates a phone number.
-        /// 
-        /// The caller must have `numbering.phoneNumbers.create` permission on global resources.
-        /// </summary>
-        /// <param name="request">The request object containing all of the parameters for the API call.</param>
-        /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
-        /// <returns>A Task containing the RPC response.</returns>
-        public virtual stt::Task<PhoneNumber> CreatePhoneNumberAsync(CreatePhoneNumberRequest request, st::CancellationToken cancellationToken) =>
-            CreatePhoneNumberAsync(request, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
-
-        /// <summary>
-        /// Retrieves a phone number identified by the supplied resource name.
-        /// 
-        /// The caller must have `numbering.phoneNumbers.get` permission on global resources.
-        /// </summary>
-        /// <param name="request">The request object containing all of the parameters for the API call.</param>
-        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
-        /// <returns>The RPC response.</returns>
-        public virtual PhoneNumber GetPhoneNumber(GetPhoneNumberRequest request, gaxgrpc::CallSettings callSettings = null) =>
-            throw new sys::NotImplementedException();
-
-        /// <summary>
-        /// Retrieves a phone number identified by the supplied resource name.
-        /// 
-        /// The caller must have `numbering.phoneNumbers.get` permission on global resources.
-        /// </summary>
-        /// <param name="request">The request object containing all of the parameters for the API call.</param>
-        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
-        /// <returns>A Task containing the RPC response.</returns>
-        public virtual stt::Task<PhoneNumber> GetPhoneNumberAsync(GetPhoneNumberRequest request, gaxgrpc::CallSettings callSettings = null) =>
-            throw new sys::NotImplementedException();
-
-        /// <summary>
-        /// Retrieves a phone number identified by the supplied resource name.
-        /// 
-        /// The caller must have `numbering.phoneNumbers.get` permission on global resources.
-        /// </summary>
-        /// <param name="request">The request object containing all of the parameters for the API call.</param>
-        /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
-        /// <returns>A Task containing the RPC response.</returns>
-        public virtual stt::Task<PhoneNumber> GetPhoneNumberAsync(GetPhoneNumberRequest request, st::CancellationToken cancellationToken) =>
-            GetPhoneNumberAsync(request, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
-
-        /// <summary>
-        /// Lists all phone numbers.
-        /// 
-        /// List returns phone numbers sorted by create_time descending.
-        /// 
-        /// The caller must have `numbering.phoneNumbers.list` permission on global resources.
-        /// </summary>
-        /// <param name="request">The request object containing all of the parameters for the API call.</param>
-        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
-        /// <returns>A pageable sequence of <see cref="PhoneNumber"/> resources.</returns>
-        public virtual gax::PagedEnumerable<ListPhoneNumbersResponse, PhoneNumber> ListPhoneNumbers(ListPhoneNumbersRequest request, gaxgrpc::CallSettings callSettings = null) =>
-            throw new sys::NotImplementedException();
-
-        /// <summary>
-        /// Lists all phone numbers.
-        /// 
-        /// List returns phone numbers sorted by create_time descending.
-        /// 
-        /// The caller must have `numbering.phoneNumbers.list` permission on global resources.
-        /// </summary>
-        /// <param name="request">The request object containing all of the parameters for the API call.</param>
-        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
-        /// <returns>A pageable asynchronous sequence of <see cref="PhoneNumber"/> resources.</returns>
-        public virtual gax::PagedAsyncEnumerable<ListPhoneNumbersResponse, PhoneNumber> ListPhoneNumbersAsync(ListPhoneNumbersRequest request, gaxgrpc::CallSettings callSettings = null) =>
-            throw new sys::NotImplementedException();
-
-        /// <summary>
-        /// Updates a phone number.
-        /// 
-        /// The caller must have `numbering.phoneNumbers.update` permission on global resources.
-        /// </summary>
-        /// <param name="request">The request object containing all of the parameters for the API call.</param>
-        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
-        /// <returns>The RPC response.</returns>
-        public virtual PhoneNumber UpdatePhoneNumber(UpdatePhoneNumberRequest request, gaxgrpc::CallSettings callSettings = null) =>
-            throw new sys::NotImplementedException();
-
-        /// <summary>
-        /// Updates a phone number.
-        /// 
-        /// The caller must have `numbering.phoneNumbers.update` permission on global resources.
-        /// </summary>
-        /// <param name="request">The request object containing all of the parameters for the API call.</param>
-        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
-        /// <returns>A Task containing the RPC response.</returns>
-        public virtual stt::Task<PhoneNumber> UpdatePhoneNumberAsync(UpdatePhoneNumberRequest request, gaxgrpc::CallSettings callSettings = null) =>
-            throw new sys::NotImplementedException();
-
-        /// <summary>
-        /// Updates a phone number.
-        /// 
-        /// The caller must have `numbering.phoneNumbers.update` permission on global resources.
-        /// </summary>
-        /// <param name="request">The request object containing all of the parameters for the API call.</param>
-        /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
-        /// <returns>A Task containing the RPC response.</returns>
-        public virtual stt::Task<PhoneNumber> UpdatePhoneNumberAsync(UpdatePhoneNumberRequest request, st::CancellationToken cancellationToken) =>
-            UpdatePhoneNumberAsync(request, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
-
-        /// <summary>
-        /// Deletes a phone number.
-        /// 
-        /// The caller must have `numbering.phoneNumbers.delete` permission on global resources.
-        /// </summary>
-        /// <param name="request">The request object containing all of the parameters for the API call.</param>
-        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
-        /// <returns>The RPC response.</returns>
-        public virtual PhoneNumber DeletePhoneNumber(DeletePhoneNumberRequest request, gaxgrpc::CallSettings callSettings = null) =>
-            throw new sys::NotImplementedException();
-
-        /// <summary>
-        /// Deletes a phone number.
-        /// 
-        /// The caller must have `numbering.phoneNumbers.delete` permission on global resources.
-        /// </summary>
-        /// <param name="request">The request object containing all of the parameters for the API call.</param>
-        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
-        /// <returns>A Task containing the RPC response.</returns>
-        public virtual stt::Task<PhoneNumber> DeletePhoneNumberAsync(DeletePhoneNumberRequest request, gaxgrpc::CallSettings callSettings = null) =>
-            throw new sys::NotImplementedException();
-
-        /// <summary>
-        /// Deletes a phone number.
-        /// 
-        /// The caller must have `numbering.phoneNumbers.delete` permission on global resources.
-        /// </summary>
-        /// <param name="request">The request object containing all of the parameters for the API call.</param>
-        /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
-        /// <returns>A Task containing the RPC response.</returns>
-        public virtual stt::Task<PhoneNumber> DeletePhoneNumberAsync(DeletePhoneNumberRequest request, st::CancellationToken cancellationToken) =>
-            DeletePhoneNumberAsync(request, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
-
-        /// <summary>
         /// Searches available phone numbers with the specified filters.
         /// 
         /// Search returns phone numbers sorted by create_time descending.
@@ -452,16 +236,6 @@ namespace Enfonica.Numbering.V1Beta1
     /// </remarks>
     public sealed partial class PhoneNumbersClientImpl : PhoneNumbersClient
     {
-        private readonly gaxgrpc::ApiCall<CreatePhoneNumberRequest, PhoneNumber> _callCreatePhoneNumber;
-
-        private readonly gaxgrpc::ApiCall<GetPhoneNumberRequest, PhoneNumber> _callGetPhoneNumber;
-
-        private readonly gaxgrpc::ApiCall<ListPhoneNumbersRequest, ListPhoneNumbersResponse> _callListPhoneNumbers;
-
-        private readonly gaxgrpc::ApiCall<UpdatePhoneNumberRequest, PhoneNumber> _callUpdatePhoneNumber;
-
-        private readonly gaxgrpc::ApiCall<DeletePhoneNumberRequest, PhoneNumber> _callDeletePhoneNumber;
-
         private readonly gaxgrpc::ApiCall<SearchPhoneNumbersRequest, SearchPhoneNumbersResponse> _callSearchPhoneNumbers;
 
         /// <summary>
@@ -474,21 +248,6 @@ namespace Enfonica.Numbering.V1Beta1
             GrpcClient = grpcClient;
             PhoneNumbersSettings effectiveSettings = settings ?? PhoneNumbersSettings.GetDefault();
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
-            _callCreatePhoneNumber = clientHelper.BuildApiCall<CreatePhoneNumberRequest, PhoneNumber>(grpcClient.CreatePhoneNumberAsync, grpcClient.CreatePhoneNumber, effectiveSettings.CreatePhoneNumberSettings);
-            Modify_ApiCall(ref _callCreatePhoneNumber);
-            Modify_CreatePhoneNumberApiCall(ref _callCreatePhoneNumber);
-            _callGetPhoneNumber = clientHelper.BuildApiCall<GetPhoneNumberRequest, PhoneNumber>(grpcClient.GetPhoneNumberAsync, grpcClient.GetPhoneNumber, effectiveSettings.GetPhoneNumberSettings).WithGoogleRequestParam("name", request => request.Name);
-            Modify_ApiCall(ref _callGetPhoneNumber);
-            Modify_GetPhoneNumberApiCall(ref _callGetPhoneNumber);
-            _callListPhoneNumbers = clientHelper.BuildApiCall<ListPhoneNumbersRequest, ListPhoneNumbersResponse>(grpcClient.ListPhoneNumbersAsync, grpcClient.ListPhoneNumbers, effectiveSettings.ListPhoneNumbersSettings);
-            Modify_ApiCall(ref _callListPhoneNumbers);
-            Modify_ListPhoneNumbersApiCall(ref _callListPhoneNumbers);
-            _callUpdatePhoneNumber = clientHelper.BuildApiCall<UpdatePhoneNumberRequest, PhoneNumber>(grpcClient.UpdatePhoneNumberAsync, grpcClient.UpdatePhoneNumber, effectiveSettings.UpdatePhoneNumberSettings).WithGoogleRequestParam("name", request => request.Name);
-            Modify_ApiCall(ref _callUpdatePhoneNumber);
-            Modify_UpdatePhoneNumberApiCall(ref _callUpdatePhoneNumber);
-            _callDeletePhoneNumber = clientHelper.BuildApiCall<DeletePhoneNumberRequest, PhoneNumber>(grpcClient.DeletePhoneNumberAsync, grpcClient.DeletePhoneNumber, effectiveSettings.DeletePhoneNumberSettings).WithGoogleRequestParam("name", request => request.Name);
-            Modify_ApiCall(ref _callDeletePhoneNumber);
-            Modify_DeletePhoneNumberApiCall(ref _callDeletePhoneNumber);
             _callSearchPhoneNumbers = clientHelper.BuildApiCall<SearchPhoneNumbersRequest, SearchPhoneNumbersResponse>(grpcClient.SearchPhoneNumbersAsync, grpcClient.SearchPhoneNumbers, effectiveSettings.SearchPhoneNumbersSettings);
             Modify_ApiCall(ref _callSearchPhoneNumbers);
             Modify_SearchPhoneNumbersApiCall(ref _callSearchPhoneNumbers);
@@ -497,16 +256,6 @@ namespace Enfonica.Numbering.V1Beta1
 
         partial void Modify_ApiCall<TRequest, TResponse>(ref gaxgrpc::ApiCall<TRequest, TResponse> call) where TRequest : class, proto::IMessage<TRequest> where TResponse : class, proto::IMessage<TResponse>;
 
-        partial void Modify_CreatePhoneNumberApiCall(ref gaxgrpc::ApiCall<CreatePhoneNumberRequest, PhoneNumber> call);
-
-        partial void Modify_GetPhoneNumberApiCall(ref gaxgrpc::ApiCall<GetPhoneNumberRequest, PhoneNumber> call);
-
-        partial void Modify_ListPhoneNumbersApiCall(ref gaxgrpc::ApiCall<ListPhoneNumbersRequest, ListPhoneNumbersResponse> call);
-
-        partial void Modify_UpdatePhoneNumberApiCall(ref gaxgrpc::ApiCall<UpdatePhoneNumberRequest, PhoneNumber> call);
-
-        partial void Modify_DeletePhoneNumberApiCall(ref gaxgrpc::ApiCall<DeletePhoneNumberRequest, PhoneNumber> call);
-
         partial void Modify_SearchPhoneNumbersApiCall(ref gaxgrpc::ApiCall<SearchPhoneNumbersRequest, SearchPhoneNumbersResponse> call);
 
         partial void OnConstruction(PhoneNumbers.PhoneNumbersClient grpcClient, PhoneNumbersSettings effectiveSettings, gaxgrpc::ClientHelper clientHelper);
@@ -514,161 +263,7 @@ namespace Enfonica.Numbering.V1Beta1
         /// <summary>The underlying gRPC PhoneNumbers client</summary>
         public override PhoneNumbers.PhoneNumbersClient GrpcClient { get; }
 
-        partial void Modify_CreatePhoneNumberRequest(ref CreatePhoneNumberRequest request, ref gaxgrpc::CallSettings settings);
-
-        partial void Modify_GetPhoneNumberRequest(ref GetPhoneNumberRequest request, ref gaxgrpc::CallSettings settings);
-
-        partial void Modify_ListPhoneNumbersRequest(ref ListPhoneNumbersRequest request, ref gaxgrpc::CallSettings settings);
-
-        partial void Modify_UpdatePhoneNumberRequest(ref UpdatePhoneNumberRequest request, ref gaxgrpc::CallSettings settings);
-
-        partial void Modify_DeletePhoneNumberRequest(ref DeletePhoneNumberRequest request, ref gaxgrpc::CallSettings settings);
-
         partial void Modify_SearchPhoneNumbersRequest(ref SearchPhoneNumbersRequest request, ref gaxgrpc::CallSettings settings);
-
-        /// <summary>
-        /// Creates a phone number.
-        /// 
-        /// The caller must have `numbering.phoneNumbers.create` permission on global resources.
-        /// </summary>
-        /// <param name="request">The request object containing all of the parameters for the API call.</param>
-        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
-        /// <returns>The RPC response.</returns>
-        public override PhoneNumber CreatePhoneNumber(CreatePhoneNumberRequest request, gaxgrpc::CallSettings callSettings = null)
-        {
-            Modify_CreatePhoneNumberRequest(ref request, ref callSettings);
-            return _callCreatePhoneNumber.Sync(request, callSettings);
-        }
-
-        /// <summary>
-        /// Creates a phone number.
-        /// 
-        /// The caller must have `numbering.phoneNumbers.create` permission on global resources.
-        /// </summary>
-        /// <param name="request">The request object containing all of the parameters for the API call.</param>
-        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
-        /// <returns>A Task containing the RPC response.</returns>
-        public override stt::Task<PhoneNumber> CreatePhoneNumberAsync(CreatePhoneNumberRequest request, gaxgrpc::CallSettings callSettings = null)
-        {
-            Modify_CreatePhoneNumberRequest(ref request, ref callSettings);
-            return _callCreatePhoneNumber.Async(request, callSettings);
-        }
-
-        /// <summary>
-        /// Retrieves a phone number identified by the supplied resource name.
-        /// 
-        /// The caller must have `numbering.phoneNumbers.get` permission on global resources.
-        /// </summary>
-        /// <param name="request">The request object containing all of the parameters for the API call.</param>
-        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
-        /// <returns>The RPC response.</returns>
-        public override PhoneNumber GetPhoneNumber(GetPhoneNumberRequest request, gaxgrpc::CallSettings callSettings = null)
-        {
-            Modify_GetPhoneNumberRequest(ref request, ref callSettings);
-            return _callGetPhoneNumber.Sync(request, callSettings);
-        }
-
-        /// <summary>
-        /// Retrieves a phone number identified by the supplied resource name.
-        /// 
-        /// The caller must have `numbering.phoneNumbers.get` permission on global resources.
-        /// </summary>
-        /// <param name="request">The request object containing all of the parameters for the API call.</param>
-        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
-        /// <returns>A Task containing the RPC response.</returns>
-        public override stt::Task<PhoneNumber> GetPhoneNumberAsync(GetPhoneNumberRequest request, gaxgrpc::CallSettings callSettings = null)
-        {
-            Modify_GetPhoneNumberRequest(ref request, ref callSettings);
-            return _callGetPhoneNumber.Async(request, callSettings);
-        }
-
-        /// <summary>
-        /// Lists all phone numbers.
-        /// 
-        /// List returns phone numbers sorted by create_time descending.
-        /// 
-        /// The caller must have `numbering.phoneNumbers.list` permission on global resources.
-        /// </summary>
-        /// <param name="request">The request object containing all of the parameters for the API call.</param>
-        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
-        /// <returns>A pageable sequence of <see cref="PhoneNumber"/> resources.</returns>
-        public override gax::PagedEnumerable<ListPhoneNumbersResponse, PhoneNumber> ListPhoneNumbers(ListPhoneNumbersRequest request, gaxgrpc::CallSettings callSettings = null)
-        {
-            Modify_ListPhoneNumbersRequest(ref request, ref callSettings);
-            return new gaxgrpc::GrpcPagedEnumerable<ListPhoneNumbersRequest, ListPhoneNumbersResponse, PhoneNumber>(_callListPhoneNumbers, request, callSettings);
-        }
-
-        /// <summary>
-        /// Lists all phone numbers.
-        /// 
-        /// List returns phone numbers sorted by create_time descending.
-        /// 
-        /// The caller must have `numbering.phoneNumbers.list` permission on global resources.
-        /// </summary>
-        /// <param name="request">The request object containing all of the parameters for the API call.</param>
-        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
-        /// <returns>A pageable asynchronous sequence of <see cref="PhoneNumber"/> resources.</returns>
-        public override gax::PagedAsyncEnumerable<ListPhoneNumbersResponse, PhoneNumber> ListPhoneNumbersAsync(ListPhoneNumbersRequest request, gaxgrpc::CallSettings callSettings = null)
-        {
-            Modify_ListPhoneNumbersRequest(ref request, ref callSettings);
-            return new gaxgrpc::GrpcPagedAsyncEnumerable<ListPhoneNumbersRequest, ListPhoneNumbersResponse, PhoneNumber>(_callListPhoneNumbers, request, callSettings);
-        }
-
-        /// <summary>
-        /// Updates a phone number.
-        /// 
-        /// The caller must have `numbering.phoneNumbers.update` permission on global resources.
-        /// </summary>
-        /// <param name="request">The request object containing all of the parameters for the API call.</param>
-        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
-        /// <returns>The RPC response.</returns>
-        public override PhoneNumber UpdatePhoneNumber(UpdatePhoneNumberRequest request, gaxgrpc::CallSettings callSettings = null)
-        {
-            Modify_UpdatePhoneNumberRequest(ref request, ref callSettings);
-            return _callUpdatePhoneNumber.Sync(request, callSettings);
-        }
-
-        /// <summary>
-        /// Updates a phone number.
-        /// 
-        /// The caller must have `numbering.phoneNumbers.update` permission on global resources.
-        /// </summary>
-        /// <param name="request">The request object containing all of the parameters for the API call.</param>
-        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
-        /// <returns>A Task containing the RPC response.</returns>
-        public override stt::Task<PhoneNumber> UpdatePhoneNumberAsync(UpdatePhoneNumberRequest request, gaxgrpc::CallSettings callSettings = null)
-        {
-            Modify_UpdatePhoneNumberRequest(ref request, ref callSettings);
-            return _callUpdatePhoneNumber.Async(request, callSettings);
-        }
-
-        /// <summary>
-        /// Deletes a phone number.
-        /// 
-        /// The caller must have `numbering.phoneNumbers.delete` permission on global resources.
-        /// </summary>
-        /// <param name="request">The request object containing all of the parameters for the API call.</param>
-        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
-        /// <returns>The RPC response.</returns>
-        public override PhoneNumber DeletePhoneNumber(DeletePhoneNumberRequest request, gaxgrpc::CallSettings callSettings = null)
-        {
-            Modify_DeletePhoneNumberRequest(ref request, ref callSettings);
-            return _callDeletePhoneNumber.Sync(request, callSettings);
-        }
-
-        /// <summary>
-        /// Deletes a phone number.
-        /// 
-        /// The caller must have `numbering.phoneNumbers.delete` permission on global resources.
-        /// </summary>
-        /// <param name="request">The request object containing all of the parameters for the API call.</param>
-        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
-        /// <returns>A Task containing the RPC response.</returns>
-        public override stt::Task<PhoneNumber> DeletePhoneNumberAsync(DeletePhoneNumberRequest request, gaxgrpc::CallSettings callSettings = null)
-        {
-            Modify_DeletePhoneNumberRequest(ref request, ref callSettings);
-            return _callDeletePhoneNumber.Async(request, callSettings);
-        }
 
         /// <summary>
         /// Searches available phone numbers with the specified filters.
@@ -703,20 +298,8 @@ namespace Enfonica.Numbering.V1Beta1
         }
     }
 
-    public partial class ListPhoneNumbersRequest : gaxgrpc::IPageRequest
-    {
-    }
-
     public partial class SearchPhoneNumbersRequest : gaxgrpc::IPageRequest
     {
-    }
-
-    public partial class ListPhoneNumbersResponse : gaxgrpc::IPageResponse<PhoneNumber>
-    {
-        /// <summary>Returns an enumerator that iterates through the resources in this response.</summary>
-        public scg::IEnumerator<PhoneNumber> GetEnumerator() => PhoneNumbers.GetEnumerator();
-
-        sc::IEnumerator sc::IEnumerable.GetEnumerator() => GetEnumerator();
     }
 
     public partial class SearchPhoneNumbersResponse : gaxgrpc::IPageResponse<PhoneNumber>

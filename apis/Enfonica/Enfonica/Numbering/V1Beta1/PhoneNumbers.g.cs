@@ -27,78 +27,44 @@ namespace Enfonica.Numbering.V1Beta1 {
             "Ci5lbmZvbmljYS9udW1iZXJpbmcvdjFiZXRhMS9waG9uZV9udW1iZXJzLnBy",
             "b3RvEhplbmZvbmljYS5udW1iZXJpbmcudjFiZXRhMRofZ29vZ2xlL3Byb3Rv",
             "YnVmL3RpbWVzdGFtcC5wcm90bxogZ29vZ2xlL3Byb3RvYnVmL2ZpZWxkX21h",
-            "c2sucHJvdG8aHGdvb2dsZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8imQYKC1Bo",
-            "b25lTnVtYmVyEgwKBG5hbWUYASABKAkSFAoMcGhvbmVfbnVtYmVyGAIgASgJ",
-            "ElMKDGNhcGFiaWxpdGllcxgDIAMoDjI9LmVuZm9uaWNhLm51bWJlcmluZy52",
-            "MWJldGExLlBob25lTnVtYmVyLlBob25lTnVtYmVyQ2FwYWJpbGl0eRILCgNz",
-            "a3UYBCABKAkSDwoHY2FycmllchgFIAEoCRJMCgtudW1iZXJfdHlwZRgKIAEo",
-            "DjI3LmVuZm9uaWNhLm51bWJlcmluZy52MWJldGExLlBob25lTnVtYmVyLlBo",
-            "b25lTnVtYmVyVHlwZRIUCgxjb3VudHJ5X2NvZGUYCyABKAkSLwoLY3JlYXRl",
-            "X3RpbWUYDCABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEi8KC2Rl",
-            "bGV0ZV90aW1lGA0gASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBJH",
-            "CgVzdGF0ZRgOIAEoDjI4LmVuZm9uaWNhLm51bWJlcmluZy52MWJldGExLlBo",
-            "b25lTnVtYmVyLlBob25lTnVtYmVyU3RhdGUSGQoRbG9jYWxfYWNjZXNzX2Fy",
-            "ZWEYDyABKAkibwoQUGhvbmVOdW1iZXJTdGF0ZRIiCh5QSE9ORV9OVU1CRVJf",
-            "U1RBVEVfVU5TUEVDSUZJRUQQABINCglBVkFJTEFCTEUQARIKCgZJTl9VU0UQ",
-            "AhIPCgtRVUFSQU5USU5FRBADEgsKB0RFTEVURUQQBCJdChVQaG9uZU51bWJl",
-            "ckNhcGFiaWxpdHkSJwojUEhPTkVfTlVNQkVSX0NBUEFCSUxJVFlfVU5TUEVD",
-            "SUZJRUQQABIHCgNTTVMQARIHCgNNTVMQAhIJCgVWT0lDRRAEInkKD1Bob25l",
-            "TnVtYmVyVHlwZRIhCh1QSE9ORV9OVU1CRVJfVFlQRV9VTlNQRUNJRklFRBAA",
-            "EgkKBUxPQ0FMEAESDAoITkFUSU9OQUwQAhIKCgZNT0JJTEUQAxINCglUT0xM",
-            "X0ZSRUUQBBIPCgtTSEFSRURfUkFURRAFIlkKGENyZWF0ZVBob25lTnVtYmVy",
-            "UmVxdWVzdBI9CgxwaG9uZV9udW1iZXIYASABKAsyJy5lbmZvbmljYS5udW1i",
-            "ZXJpbmcudjFiZXRhMS5QaG9uZU51bWJlciIlChVHZXRQaG9uZU51bWJlclJl",
-            "cXVlc3QSDAoEbmFtZRgBIAEoCSJAChdMaXN0UGhvbmVOdW1iZXJzUmVxdWVz",
-            "dBIRCglwYWdlX3NpemUYASABKAUSEgoKcGFnZV90b2tlbhgCIAEoCSJzChhM",
-            "aXN0UGhvbmVOdW1iZXJzUmVzcG9uc2USPgoNcGhvbmVfbnVtYmVycxgBIAMo",
-            "CzInLmVuZm9uaWNhLm51bWJlcmluZy52MWJldGExLlBob25lTnVtYmVyEhcK",
-            "D25leHRfcGFnZV90b2tlbhgCIAEoCSKYAQoYVXBkYXRlUGhvbmVOdW1iZXJS",
-            "ZXF1ZXN0EgwKBG5hbWUYASABKAkSPQoMcGhvbmVfbnVtYmVyGAIgASgLMicu",
-            "ZW5mb25pY2EubnVtYmVyaW5nLnYxYmV0YTEuUGhvbmVOdW1iZXISLwoLdXBk",
-            "YXRlX21hc2sYAyABKAsyGi5nb29nbGUucHJvdG9idWYuRmllbGRNYXNrIigK",
-            "GERlbGV0ZVBob25lTnVtYmVyUmVxdWVzdBIMCgRuYW1lGAEgASgJIosCChlT",
-            "ZWFyY2hQaG9uZU51bWJlcnNSZXF1ZXN0EhEKCXBhZ2Vfc2l6ZRgBIAEoBRIS",
-            "CgpwYWdlX3Rva2VuGAIgASgJElMKDGNhcGFiaWxpdGllcxgDIAMoDjI9LmVu",
-            "Zm9uaWNhLm51bWJlcmluZy52MWJldGExLlBob25lTnVtYmVyLlBob25lTnVt",
-            "YmVyQ2FwYWJpbGl0eRJMCgtudW1iZXJfdHlwZRgEIAEoDjI3LmVuZm9uaWNh",
-            "Lm51bWJlcmluZy52MWJldGExLlBob25lTnVtYmVyLlBob25lTnVtYmVyVHlw",
-            "ZRIUCgxjb3VudHJ5X2NvZGUYBSABKAkSDgoGcHJlZml4GAYgASgJInUKGlNl",
-            "YXJjaFBob25lTnVtYmVyc1Jlc3BvbnNlEj4KDXBob25lX251bWJlcnMYASAD",
-            "KAsyJy5lbmZvbmljYS5udW1iZXJpbmcudjFiZXRhMS5QaG9uZU51bWJlchIX",
-            "Cg9uZXh0X3BhZ2VfdG9rZW4YAiABKAky2gcKDFBob25lTnVtYmVycxKfAQoR",
-            "Q3JlYXRlUGhvbmVOdW1iZXISNC5lbmZvbmljYS5udW1iZXJpbmcudjFiZXRh",
-            "MS5DcmVhdGVQaG9uZU51bWJlclJlcXVlc3QaJy5lbmZvbmljYS5udW1iZXJp",
-            "bmcudjFiZXRhMS5QaG9uZU51bWJlciIrgtPkkwIlIhUvdjFiZXRhMS9waG9u",
-            "ZU51bWJlcnM6DHBob25lX251bWJlchKUAQoOR2V0UGhvbmVOdW1iZXISMS5l",
-            "bmZvbmljYS5udW1iZXJpbmcudjFiZXRhMS5HZXRQaG9uZU51bWJlclJlcXVl",
-            "c3QaJy5lbmZvbmljYS5udW1iZXJpbmcudjFiZXRhMS5QaG9uZU51bWJlciIm",
-            "gtPkkwIgEh4vdjFiZXRhMS97bmFtZT1waG9uZU51bWJlcnMvKn0SnAEKEExp",
-            "c3RQaG9uZU51bWJlcnMSMy5lbmZvbmljYS5udW1iZXJpbmcudjFiZXRhMS5M",
-            "aXN0UGhvbmVOdW1iZXJzUmVxdWVzdBo0LmVuZm9uaWNhLm51bWJlcmluZy52",
-            "MWJldGExLkxpc3RQaG9uZU51bWJlcnNSZXNwb25zZSIdgtPkkwIXEhUvdjFi",
-            "ZXRhMS9waG9uZU51bWJlcnMSqAEKEVVwZGF0ZVBob25lTnVtYmVyEjQuZW5m",
-            "b25pY2EubnVtYmVyaW5nLnYxYmV0YTEuVXBkYXRlUGhvbmVOdW1iZXJSZXF1",
-            "ZXN0GicuZW5mb25pY2EubnVtYmVyaW5nLnYxYmV0YTEuUGhvbmVOdW1iZXIi",
-            "NILT5JMCLjIeL3YxYmV0YTEve25hbWU9cGhvbmVOdW1iZXJzLyp9OgxwaG9u",
-            "ZV9udW1iZXISmgEKEURlbGV0ZVBob25lTnVtYmVyEjQuZW5mb25pY2EubnVt",
-            "YmVyaW5nLnYxYmV0YTEuRGVsZXRlUGhvbmVOdW1iZXJSZXF1ZXN0GicuZW5m",
-            "b25pY2EubnVtYmVyaW5nLnYxYmV0YTEuUGhvbmVOdW1iZXIiJoLT5JMCICoe",
-            "L3YxYmV0YTEve25hbWU9cGhvbmVOdW1iZXJzLyp9EqkBChJTZWFyY2hQaG9u",
-            "ZU51bWJlcnMSNS5lbmZvbmljYS5udW1iZXJpbmcudjFiZXRhMS5TZWFyY2hQ",
-            "aG9uZU51bWJlcnNSZXF1ZXN0GjYuZW5mb25pY2EubnVtYmVyaW5nLnYxYmV0",
-            "YTEuU2VhcmNoUGhvbmVOdW1iZXJzUmVzcG9uc2UiJILT5JMCHhIcL3YxYmV0",
-            "YTEvcGhvbmVOdW1iZXJzOnNlYXJjaEIdqgIaRW5mb25pY2EuTnVtYmVyaW5n",
-            "LlYxQmV0YTFiBnByb3RvMw=="));
+            "c2sucHJvdG8aHGdvb2dsZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8aF2dvb2ds",
+            "ZS9hcGkvY2xpZW50LnByb3RvGh9nb29nbGUvYXBpL2ZpZWxkX2JlaGF2aW9y",
+            "LnByb3RvGhlnb29nbGUvYXBpL3Jlc291cmNlLnByb3RvIpsECgtQaG9uZU51",
+            "bWJlchIMCgRuYW1lGAEgASgJEhQKDHBob25lX251bWJlchgCIAEoCRJTCgxj",
+            "YXBhYmlsaXRpZXMYAyADKA4yPS5lbmZvbmljYS5udW1iZXJpbmcudjFiZXRh",
+            "MS5QaG9uZU51bWJlci5QaG9uZU51bWJlckNhcGFiaWxpdHkSCwoDc2t1GAQg",
+            "ASgJEkwKC251bWJlcl90eXBlGAogASgOMjcuZW5mb25pY2EubnVtYmVyaW5n",
+            "LnYxYmV0YTEuUGhvbmVOdW1iZXIuUGhvbmVOdW1iZXJUeXBlEhQKDGNvdW50",
+            "cnlfY29kZRgLIAEoCSJdChVQaG9uZU51bWJlckNhcGFiaWxpdHkSJwojUEhP",
+            "TkVfTlVNQkVSX0NBUEFCSUxJVFlfVU5TUEVDSUZJRUQQABIHCgNTTVMQARIH",
+            "CgNNTVMQAhIJCgVWT0lDRRAEInkKD1Bob25lTnVtYmVyVHlwZRIhCh1QSE9O",
+            "RV9OVU1CRVJfVFlQRV9VTlNQRUNJRklFRBAAEgkKBUxPQ0FMEAESDAoITkFU",
+            "SU9OQUwQAhIKCgZNT0JJTEUQAxINCglUT0xMX0ZSRUUQBBIPCgtTSEFSRURf",
+            "UkFURRAFOkjqQUUKJm51bWJlcmluZy5hcGkuZW5mb25pY2EuY29tL1Bob25l",
+            "TnVtYmVyEhtwaG9uZU51bWJlcnMve3Bob25lX251bWJlcn0ikAIKGVNlYXJj",
+            "aFBob25lTnVtYmVyc1JlcXVlc3QSEQoJcGFnZV9zaXplGAEgASgFEhIKCnBh",
+            "Z2VfdG9rZW4YAiABKAkSUwoMY2FwYWJpbGl0aWVzGAMgAygOMj0uZW5mb25p",
+            "Y2EubnVtYmVyaW5nLnYxYmV0YTEuUGhvbmVOdW1iZXIuUGhvbmVOdW1iZXJD",
+            "YXBhYmlsaXR5EkwKC251bWJlcl90eXBlGAQgASgOMjcuZW5mb25pY2EubnVt",
+            "YmVyaW5nLnYxYmV0YTEuUGhvbmVOdW1iZXIuUGhvbmVOdW1iZXJUeXBlEhkK",
+            "DGNvdW50cnlfY29kZRgFIAEoCUID4EECEg4KBnByZWZpeBgGIAEoCSJ1ChpT",
+            "ZWFyY2hQaG9uZU51bWJlcnNSZXNwb25zZRI+Cg1waG9uZV9udW1iZXJzGAEg",
+            "AygLMicuZW5mb25pY2EubnVtYmVyaW5nLnYxYmV0YTEuUGhvbmVOdW1iZXIS",
+            "FwoPbmV4dF9wYWdlX3Rva2VuGAIgASgJMoMCCgxQaG9uZU51bWJlcnMSqQEK",
+            "ElNlYXJjaFBob25lTnVtYmVycxI1LmVuZm9uaWNhLm51bWJlcmluZy52MWJl",
+            "dGExLlNlYXJjaFBob25lTnVtYmVyc1JlcXVlc3QaNi5lbmZvbmljYS5udW1i",
+            "ZXJpbmcudjFiZXRhMS5TZWFyY2hQaG9uZU51bWJlcnNSZXNwb25zZSIkgtPk",
+            "kwIeEhwvdjFiZXRhMS9waG9uZU51bWJlcnM6c2VhcmNoGkfKQRpudW1iZXJp",
+            "bmcuYXBpLmVuZm9uaWNhLmNvbdJBJ2h0dHBzOi8vYXBpLmVuZm9uaWNhLmNv",
+            "bS9hdXRoL251bWJlcmluZ0KaAQoeY29tLmVuZm9uaWNhLm51bWJlcmluZy52",
+            "MWJldGExQhFQaG9uZU51bWJlcnNQcm90b1ABWjtnaXRodWIuY29tL2VuZm9u",
+            "aWNhL2VuZm9uaWNhLWdvL251bWJlcmluZy92MWJldGExO251bWJlcmluZ/gB",
+            "AaICBUVORk9OqgIaRW5mb25pY2EuTnVtYmVyaW5nLlYxQmV0YTFiBnByb3Rv",
+            "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.FieldMaskReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.FieldMaskReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Numbering.V1Beta1.PhoneNumber), global::Enfonica.Numbering.V1Beta1.PhoneNumber.Parser, new[]{ "Name", "PhoneNumber_", "Capabilities", "Sku", "Carrier", "NumberType", "CountryCode", "CreateTime", "DeleteTime", "State", "LocalAccessArea" }, null, new[]{ typeof(global::Enfonica.Numbering.V1Beta1.PhoneNumber.Types.PhoneNumberState), typeof(global::Enfonica.Numbering.V1Beta1.PhoneNumber.Types.PhoneNumberCapability), typeof(global::Enfonica.Numbering.V1Beta1.PhoneNumber.Types.PhoneNumberType) }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Numbering.V1Beta1.CreatePhoneNumberRequest), global::Enfonica.Numbering.V1Beta1.CreatePhoneNumberRequest.Parser, new[]{ "PhoneNumber" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Numbering.V1Beta1.GetPhoneNumberRequest), global::Enfonica.Numbering.V1Beta1.GetPhoneNumberRequest.Parser, new[]{ "Name" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Numbering.V1Beta1.ListPhoneNumbersRequest), global::Enfonica.Numbering.V1Beta1.ListPhoneNumbersRequest.Parser, new[]{ "PageSize", "PageToken" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Numbering.V1Beta1.ListPhoneNumbersResponse), global::Enfonica.Numbering.V1Beta1.ListPhoneNumbersResponse.Parser, new[]{ "PhoneNumbers", "NextPageToken" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Numbering.V1Beta1.UpdatePhoneNumberRequest), global::Enfonica.Numbering.V1Beta1.UpdatePhoneNumberRequest.Parser, new[]{ "Name", "PhoneNumber", "UpdateMask" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Numbering.V1Beta1.DeletePhoneNumberRequest), global::Enfonica.Numbering.V1Beta1.DeletePhoneNumberRequest.Parser, new[]{ "Name" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Numbering.V1Beta1.PhoneNumber), global::Enfonica.Numbering.V1Beta1.PhoneNumber.Parser, new[]{ "Name", "PhoneNumber_", "Capabilities", "Sku", "NumberType", "CountryCode" }, null, new[]{ typeof(global::Enfonica.Numbering.V1Beta1.PhoneNumber.Types.PhoneNumberCapability), typeof(global::Enfonica.Numbering.V1Beta1.PhoneNumber.Types.PhoneNumberType) }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Numbering.V1Beta1.SearchPhoneNumbersRequest), global::Enfonica.Numbering.V1Beta1.SearchPhoneNumbersRequest.Parser, new[]{ "PageSize", "PageToken", "Capabilities", "NumberType", "CountryCode", "Prefix" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Numbering.V1Beta1.SearchPhoneNumbersResponse), global::Enfonica.Numbering.V1Beta1.SearchPhoneNumbersResponse.Parser, new[]{ "PhoneNumbers", "NextPageToken" }, null, null, null, null)
           }));
@@ -143,13 +109,8 @@ namespace Enfonica.Numbering.V1Beta1 {
       phoneNumber_ = other.phoneNumber_;
       capabilities_ = other.capabilities_.Clone();
       sku_ = other.sku_;
-      carrier_ = other.carrier_;
       numberType_ = other.numberType_;
       countryCode_ = other.countryCode_;
-      createTime_ = other.createTime_ != null ? other.createTime_.Clone() : null;
-      deleteTime_ = other.deleteTime_ != null ? other.deleteTime_.Clone() : null;
-      state_ = other.state_;
-      localAccessArea_ = other.localAccessArea_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -164,7 +125,6 @@ namespace Enfonica.Numbering.V1Beta1 {
     /// <summary>
     /// Resource name of the phone number. It must match the pattern
     /// `phoneNumbers/*`
-    /// Output only.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Name {
@@ -179,7 +139,6 @@ namespace Enfonica.Numbering.V1Beta1 {
     private string phoneNumber_ = "";
     /// <summary>
     /// The phone number, in +E164 format.
-    /// Can only be set on creation.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string PhoneNumber_ {
@@ -207,7 +166,6 @@ namespace Enfonica.Numbering.V1Beta1 {
     private string sku_ = "";
     /// <summary>
     /// The SKU that will be used to bill the phone number.
-    /// If not specified on CreatePhoneNumber, this will be automatically determined.
     /// In the form `services/*/skus/*`.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -218,28 +176,11 @@ namespace Enfonica.Numbering.V1Beta1 {
       }
     }
 
-    /// <summary>Field number for the "carrier" field.</summary>
-    public const int CarrierFieldNumber = 5;
-    private string carrier_ = "";
-    /// <summary>
-    /// @Private
-    /// The carrier that provides carriage of the phone number.
-    /// In the form `carriers/*`.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Carrier {
-      get { return carrier_; }
-      set {
-        carrier_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
     /// <summary>Field number for the "number_type" field.</summary>
     public const int NumberTypeFieldNumber = 10;
     private global::Enfonica.Numbering.V1Beta1.PhoneNumber.Types.PhoneNumberType numberType_ = global::Enfonica.Numbering.V1Beta1.PhoneNumber.Types.PhoneNumberType.Unspecified;
     /// <summary>
     /// The type of phone number.
-    /// Output only.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Enfonica.Numbering.V1Beta1.PhoneNumber.Types.PhoneNumberType NumberType {
@@ -255,78 +196,14 @@ namespace Enfonica.Numbering.V1Beta1 {
     /// <summary>
     /// The alpha-2 country code that identifies the country associated with
     /// the phone number.
-    /// Output only.
+    /// (-- api-linter: core::0143::standardized-codes=disabled
+    ///     aip.dev/not-precedent: Country code is used in this beta. --)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string CountryCode {
       get { return countryCode_; }
       set {
         countryCode_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "create_time" field.</summary>
-    public const int CreateTimeFieldNumber = 12;
-    private global::Google.Protobuf.WellKnownTypes.Timestamp createTime_;
-    /// <summary>
-    /// @Private
-    /// The creation time of the phone number.
-    /// Output only.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Google.Protobuf.WellKnownTypes.Timestamp CreateTime {
-      get { return createTime_; }
-      set {
-        createTime_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "delete_time" field.</summary>
-    public const int DeleteTimeFieldNumber = 13;
-    private global::Google.Protobuf.WellKnownTypes.Timestamp deleteTime_;
-    /// <summary>
-    /// @Private
-    /// The deletion time of the phone number.
-    /// Output only.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Google.Protobuf.WellKnownTypes.Timestamp DeleteTime {
-      get { return deleteTime_; }
-      set {
-        deleteTime_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "state" field.</summary>
-    public const int StateFieldNumber = 14;
-    private global::Enfonica.Numbering.V1Beta1.PhoneNumber.Types.PhoneNumberState state_ = global::Enfonica.Numbering.V1Beta1.PhoneNumber.Types.PhoneNumberState.Unspecified;
-    /// <summary>
-    /// @Private
-    /// The state of the phone number.
-    /// Output only.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Enfonica.Numbering.V1Beta1.PhoneNumber.Types.PhoneNumberState State {
-      get { return state_; }
-      set {
-        state_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "local_access_area" field.</summary>
-    public const int LocalAccessAreaFieldNumber = 15;
-    private string localAccessArea_ = "";
-    /// <summary>
-    /// @Private
-    /// The local access area, in the format `/localAccessGroups/*/areas/*`.
-    /// *Should* be set when number_type is LOCAL.
-    /// Output only.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string LocalAccessArea {
-      get { return localAccessArea_; }
-      set {
-        localAccessArea_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -347,13 +224,8 @@ namespace Enfonica.Numbering.V1Beta1 {
       if (PhoneNumber_ != other.PhoneNumber_) return false;
       if(!capabilities_.Equals(other.capabilities_)) return false;
       if (Sku != other.Sku) return false;
-      if (Carrier != other.Carrier) return false;
       if (NumberType != other.NumberType) return false;
       if (CountryCode != other.CountryCode) return false;
-      if (!object.Equals(CreateTime, other.CreateTime)) return false;
-      if (!object.Equals(DeleteTime, other.DeleteTime)) return false;
-      if (State != other.State) return false;
-      if (LocalAccessArea != other.LocalAccessArea) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -364,13 +236,8 @@ namespace Enfonica.Numbering.V1Beta1 {
       if (PhoneNumber_.Length != 0) hash ^= PhoneNumber_.GetHashCode();
       hash ^= capabilities_.GetHashCode();
       if (Sku.Length != 0) hash ^= Sku.GetHashCode();
-      if (Carrier.Length != 0) hash ^= Carrier.GetHashCode();
       if (NumberType != global::Enfonica.Numbering.V1Beta1.PhoneNumber.Types.PhoneNumberType.Unspecified) hash ^= NumberType.GetHashCode();
       if (CountryCode.Length != 0) hash ^= CountryCode.GetHashCode();
-      if (createTime_ != null) hash ^= CreateTime.GetHashCode();
-      if (deleteTime_ != null) hash ^= DeleteTime.GetHashCode();
-      if (State != global::Enfonica.Numbering.V1Beta1.PhoneNumber.Types.PhoneNumberState.Unspecified) hash ^= State.GetHashCode();
-      if (LocalAccessArea.Length != 0) hash ^= LocalAccessArea.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -400,10 +267,6 @@ namespace Enfonica.Numbering.V1Beta1 {
         output.WriteRawTag(34);
         output.WriteString(Sku);
       }
-      if (Carrier.Length != 0) {
-        output.WriteRawTag(42);
-        output.WriteString(Carrier);
-      }
       if (NumberType != global::Enfonica.Numbering.V1Beta1.PhoneNumber.Types.PhoneNumberType.Unspecified) {
         output.WriteRawTag(80);
         output.WriteEnum((int) NumberType);
@@ -411,22 +274,6 @@ namespace Enfonica.Numbering.V1Beta1 {
       if (CountryCode.Length != 0) {
         output.WriteRawTag(90);
         output.WriteString(CountryCode);
-      }
-      if (createTime_ != null) {
-        output.WriteRawTag(98);
-        output.WriteMessage(CreateTime);
-      }
-      if (deleteTime_ != null) {
-        output.WriteRawTag(106);
-        output.WriteMessage(DeleteTime);
-      }
-      if (State != global::Enfonica.Numbering.V1Beta1.PhoneNumber.Types.PhoneNumberState.Unspecified) {
-        output.WriteRawTag(112);
-        output.WriteEnum((int) State);
-      }
-      if (LocalAccessArea.Length != 0) {
-        output.WriteRawTag(122);
-        output.WriteString(LocalAccessArea);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -450,10 +297,6 @@ namespace Enfonica.Numbering.V1Beta1 {
         output.WriteRawTag(34);
         output.WriteString(Sku);
       }
-      if (Carrier.Length != 0) {
-        output.WriteRawTag(42);
-        output.WriteString(Carrier);
-      }
       if (NumberType != global::Enfonica.Numbering.V1Beta1.PhoneNumber.Types.PhoneNumberType.Unspecified) {
         output.WriteRawTag(80);
         output.WriteEnum((int) NumberType);
@@ -461,22 +304,6 @@ namespace Enfonica.Numbering.V1Beta1 {
       if (CountryCode.Length != 0) {
         output.WriteRawTag(90);
         output.WriteString(CountryCode);
-      }
-      if (createTime_ != null) {
-        output.WriteRawTag(98);
-        output.WriteMessage(CreateTime);
-      }
-      if (deleteTime_ != null) {
-        output.WriteRawTag(106);
-        output.WriteMessage(DeleteTime);
-      }
-      if (State != global::Enfonica.Numbering.V1Beta1.PhoneNumber.Types.PhoneNumberState.Unspecified) {
-        output.WriteRawTag(112);
-        output.WriteEnum((int) State);
-      }
-      if (LocalAccessArea.Length != 0) {
-        output.WriteRawTag(122);
-        output.WriteString(LocalAccessArea);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -497,26 +324,11 @@ namespace Enfonica.Numbering.V1Beta1 {
       if (Sku.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Sku);
       }
-      if (Carrier.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Carrier);
-      }
       if (NumberType != global::Enfonica.Numbering.V1Beta1.PhoneNumber.Types.PhoneNumberType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) NumberType);
       }
       if (CountryCode.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(CountryCode);
-      }
-      if (createTime_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CreateTime);
-      }
-      if (deleteTime_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(DeleteTime);
-      }
-      if (State != global::Enfonica.Numbering.V1Beta1.PhoneNumber.Types.PhoneNumberState.Unspecified) {
-        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) State);
-      }
-      if (LocalAccessArea.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(LocalAccessArea);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -539,32 +351,11 @@ namespace Enfonica.Numbering.V1Beta1 {
       if (other.Sku.Length != 0) {
         Sku = other.Sku;
       }
-      if (other.Carrier.Length != 0) {
-        Carrier = other.Carrier;
-      }
       if (other.NumberType != global::Enfonica.Numbering.V1Beta1.PhoneNumber.Types.PhoneNumberType.Unspecified) {
         NumberType = other.NumberType;
       }
       if (other.CountryCode.Length != 0) {
         CountryCode = other.CountryCode;
-      }
-      if (other.createTime_ != null) {
-        if (createTime_ == null) {
-          CreateTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-        }
-        CreateTime.MergeFrom(other.CreateTime);
-      }
-      if (other.deleteTime_ != null) {
-        if (deleteTime_ == null) {
-          DeleteTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-        }
-        DeleteTime.MergeFrom(other.DeleteTime);
-      }
-      if (other.State != global::Enfonica.Numbering.V1Beta1.PhoneNumber.Types.PhoneNumberState.Unspecified) {
-        State = other.State;
-      }
-      if (other.LocalAccessArea.Length != 0) {
-        LocalAccessArea = other.LocalAccessArea;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -597,38 +388,12 @@ namespace Enfonica.Numbering.V1Beta1 {
             Sku = input.ReadString();
             break;
           }
-          case 42: {
-            Carrier = input.ReadString();
-            break;
-          }
           case 80: {
             NumberType = (global::Enfonica.Numbering.V1Beta1.PhoneNumber.Types.PhoneNumberType) input.ReadEnum();
             break;
           }
           case 90: {
             CountryCode = input.ReadString();
-            break;
-          }
-          case 98: {
-            if (createTime_ == null) {
-              CreateTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-            }
-            input.ReadMessage(CreateTime);
-            break;
-          }
-          case 106: {
-            if (deleteTime_ == null) {
-              DeleteTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-            }
-            input.ReadMessage(DeleteTime);
-            break;
-          }
-          case 112: {
-            State = (global::Enfonica.Numbering.V1Beta1.PhoneNumber.Types.PhoneNumberState) input.ReadEnum();
-            break;
-          }
-          case 122: {
-            LocalAccessArea = input.ReadString();
             break;
           }
         }
@@ -662,38 +427,12 @@ namespace Enfonica.Numbering.V1Beta1 {
             Sku = input.ReadString();
             break;
           }
-          case 42: {
-            Carrier = input.ReadString();
-            break;
-          }
           case 80: {
             NumberType = (global::Enfonica.Numbering.V1Beta1.PhoneNumber.Types.PhoneNumberType) input.ReadEnum();
             break;
           }
           case 90: {
             CountryCode = input.ReadString();
-            break;
-          }
-          case 98: {
-            if (createTime_ == null) {
-              CreateTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-            }
-            input.ReadMessage(CreateTime);
-            break;
-          }
-          case 106: {
-            if (deleteTime_ == null) {
-              DeleteTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-            }
-            input.ReadMessage(DeleteTime);
-            break;
-          }
-          case 112: {
-            State = (global::Enfonica.Numbering.V1Beta1.PhoneNumber.Types.PhoneNumberState) input.ReadEnum();
-            break;
-          }
-          case 122: {
-            LocalAccessArea = input.ReadString();
             break;
           }
         }
@@ -705,33 +444,6 @@ namespace Enfonica.Numbering.V1Beta1 {
     /// <summary>Container for nested types declared in the PhoneNumber message type.</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static partial class Types {
-      /// <summary>
-      /// State of phone numbers.
-      /// </summary>
-      public enum PhoneNumberState {
-        /// <summary>
-        /// Unspecified state.
-        /// </summary>
-        [pbr::OriginalName("PHONE_NUMBER_STATE_UNSPECIFIED")] Unspecified = 0,
-        /// <summary>
-        /// The phone number is available to be provisioned.
-        /// </summary>
-        [pbr::OriginalName("AVAILABLE")] Available = 1,
-        /// <summary>
-        /// The phone number is currently in use.
-        /// </summary>
-        [pbr::OriginalName("IN_USE")] InUse = 2,
-        /// <summary>
-        /// The phone number has been quarantined. It is not in use but
-        /// it cannot be provisioned.
-        /// </summary>
-        [pbr::OriginalName("QUARANTINED")] Quarantined = 3,
-        /// <summary>
-        /// The phone number has been deleted and cannot be provisioned.
-        /// </summary>
-        [pbr::OriginalName("DELETED")] Deleted = 4,
-      }
-
       /// <summary>
       /// A capability of a phone number.
       /// </summary>
@@ -796,1255 +508,6 @@ namespace Enfonica.Numbering.V1Beta1 {
   }
 
   /// <summary>
-  /// Request to create a new phonenumber.
-  /// </summary>
-  public sealed partial class CreatePhoneNumberRequest : pb::IMessage<CreatePhoneNumberRequest>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<CreatePhoneNumberRequest> _parser = new pb::MessageParser<CreatePhoneNumberRequest>(() => new CreatePhoneNumberRequest());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<CreatePhoneNumberRequest> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Enfonica.Numbering.V1Beta1.PhoneNumbersReflection.Descriptor.MessageTypes[1]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CreatePhoneNumberRequest() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CreatePhoneNumberRequest(CreatePhoneNumberRequest other) : this() {
-      phoneNumber_ = other.phoneNumber_ != null ? other.phoneNumber_.Clone() : null;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CreatePhoneNumberRequest Clone() {
-      return new CreatePhoneNumberRequest(this);
-    }
-
-    /// <summary>Field number for the "phone_number" field.</summary>
-    public const int PhoneNumberFieldNumber = 1;
-    private global::Enfonica.Numbering.V1Beta1.PhoneNumber phoneNumber_;
-    /// <summary>
-    /// The phone number resource to be created.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Enfonica.Numbering.V1Beta1.PhoneNumber PhoneNumber {
-      get { return phoneNumber_; }
-      set {
-        phoneNumber_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as CreatePhoneNumberRequest);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(CreatePhoneNumberRequest other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (!object.Equals(PhoneNumber, other.PhoneNumber)) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (phoneNumber_ != null) hash ^= PhoneNumber.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (phoneNumber_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(PhoneNumber);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (phoneNumber_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(PhoneNumber);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (phoneNumber_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(PhoneNumber);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(CreatePhoneNumberRequest other) {
-      if (other == null) {
-        return;
-      }
-      if (other.phoneNumber_ != null) {
-        if (phoneNumber_ == null) {
-          PhoneNumber = new global::Enfonica.Numbering.V1Beta1.PhoneNumber();
-        }
-        PhoneNumber.MergeFrom(other.PhoneNumber);
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 10: {
-            if (phoneNumber_ == null) {
-              PhoneNumber = new global::Enfonica.Numbering.V1Beta1.PhoneNumber();
-            }
-            input.ReadMessage(PhoneNumber);
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            if (phoneNumber_ == null) {
-              PhoneNumber = new global::Enfonica.Numbering.V1Beta1.PhoneNumber();
-            }
-            input.ReadMessage(PhoneNumber);
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  /// <summary>
-  /// The GetPhoneNumber request message.
-  /// </summary>
-  public sealed partial class GetPhoneNumberRequest : pb::IMessage<GetPhoneNumberRequest>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<GetPhoneNumberRequest> _parser = new pb::MessageParser<GetPhoneNumberRequest>(() => new GetPhoneNumberRequest());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<GetPhoneNumberRequest> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Enfonica.Numbering.V1Beta1.PhoneNumbersReflection.Descriptor.MessageTypes[2]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public GetPhoneNumberRequest() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public GetPhoneNumberRequest(GetPhoneNumberRequest other) : this() {
-      name_ = other.name_;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public GetPhoneNumberRequest Clone() {
-      return new GetPhoneNumberRequest(this);
-    }
-
-    /// <summary>Field number for the "name" field.</summary>
-    public const int NameFieldNumber = 1;
-    private string name_ = "";
-    /// <summary>
-    /// The resource name of the PhoneNumber to retrieve.
-    /// Must be of the form `phoneNumbers/*`.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Name {
-      get { return name_; }
-      set {
-        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as GetPhoneNumberRequest);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(GetPhoneNumberRequest other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (Name != other.Name) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (Name.Length != 0) hash ^= Name.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (Name.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(Name);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Name.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(Name);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (Name.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(GetPhoneNumberRequest other) {
-      if (other == null) {
-        return;
-      }
-      if (other.Name.Length != 0) {
-        Name = other.Name;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 10: {
-            Name = input.ReadString();
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            Name = input.ReadString();
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  /// <summary>
-  /// The ListPhoneNumbers request.
-  /// </summary>
-  public sealed partial class ListPhoneNumbersRequest : pb::IMessage<ListPhoneNumbersRequest>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<ListPhoneNumbersRequest> _parser = new pb::MessageParser<ListPhoneNumbersRequest>(() => new ListPhoneNumbersRequest());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<ListPhoneNumbersRequest> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Enfonica.Numbering.V1Beta1.PhoneNumbersReflection.Descriptor.MessageTypes[3]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public ListPhoneNumbersRequest() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public ListPhoneNumbersRequest(ListPhoneNumbersRequest other) : this() {
-      pageSize_ = other.pageSize_;
-      pageToken_ = other.pageToken_;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public ListPhoneNumbersRequest Clone() {
-      return new ListPhoneNumbersRequest(this);
-    }
-
-    /// <summary>Field number for the "page_size" field.</summary>
-    public const int PageSizeFieldNumber = 1;
-    private int pageSize_;
-    /// <summary>
-    /// The maximum number of PhoneNumbers to return in the response.
-    /// Optional, with a default value of 10 and maximum value of 100.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int PageSize {
-      get { return pageSize_; }
-      set {
-        pageSize_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "page_token" field.</summary>
-    public const int PageTokenFieldNumber = 2;
-    private string pageToken_ = "";
-    /// <summary>
-    /// A pagination token returned from a previous call to `ListPhoneNumbers`
-    /// that indicates where this listing should continue from.
-    /// Optional.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string PageToken {
-      get { return pageToken_; }
-      set {
-        pageToken_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as ListPhoneNumbersRequest);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(ListPhoneNumbersRequest other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (PageSize != other.PageSize) return false;
-      if (PageToken != other.PageToken) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (PageSize != 0) hash ^= PageSize.GetHashCode();
-      if (PageToken.Length != 0) hash ^= PageToken.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (PageSize != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(PageSize);
-      }
-      if (PageToken.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(PageToken);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (PageSize != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(PageSize);
-      }
-      if (PageToken.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(PageToken);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (PageSize != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PageSize);
-      }
-      if (PageToken.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(PageToken);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(ListPhoneNumbersRequest other) {
-      if (other == null) {
-        return;
-      }
-      if (other.PageSize != 0) {
-        PageSize = other.PageSize;
-      }
-      if (other.PageToken.Length != 0) {
-        PageToken = other.PageToken;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 8: {
-            PageSize = input.ReadInt32();
-            break;
-          }
-          case 18: {
-            PageToken = input.ReadString();
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            PageSize = input.ReadInt32();
-            break;
-          }
-          case 18: {
-            PageToken = input.ReadString();
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  /// <summary>
-  /// The ListPhoneNumbers response.
-  /// </summary>
-  public sealed partial class ListPhoneNumbersResponse : pb::IMessage<ListPhoneNumbersResponse>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<ListPhoneNumbersResponse> _parser = new pb::MessageParser<ListPhoneNumbersResponse>(() => new ListPhoneNumbersResponse());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<ListPhoneNumbersResponse> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Enfonica.Numbering.V1Beta1.PhoneNumbersReflection.Descriptor.MessageTypes[4]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public ListPhoneNumbersResponse() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public ListPhoneNumbersResponse(ListPhoneNumbersResponse other) : this() {
-      phoneNumbers_ = other.phoneNumbers_.Clone();
-      nextPageToken_ = other.nextPageToken_;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public ListPhoneNumbersResponse Clone() {
-      return new ListPhoneNumbersResponse(this);
-    }
-
-    /// <summary>Field number for the "phone_numbers" field.</summary>
-    public const int PhoneNumbersFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Enfonica.Numbering.V1Beta1.PhoneNumber> _repeated_phoneNumbers_codec
-        = pb::FieldCodec.ForMessage(10, global::Enfonica.Numbering.V1Beta1.PhoneNumber.Parser);
-    private readonly pbc::RepeatedField<global::Enfonica.Numbering.V1Beta1.PhoneNumber> phoneNumbers_ = new pbc::RepeatedField<global::Enfonica.Numbering.V1Beta1.PhoneNumber>();
-    /// <summary>
-    /// A possibly paginated list of PhoneNumbers that are direct descendants of
-    /// the specified parent resource.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Enfonica.Numbering.V1Beta1.PhoneNumber> PhoneNumbers {
-      get { return phoneNumbers_; }
-    }
-
-    /// <summary>Field number for the "next_page_token" field.</summary>
-    public const int NextPageTokenFieldNumber = 2;
-    private string nextPageToken_ = "";
-    /// <summary>
-    /// A pagination token returned from a previous call to `ListPhoneNumbers`
-    /// that indicates from where listing should continue.
-    /// Optional.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string NextPageToken {
-      get { return nextPageToken_; }
-      set {
-        nextPageToken_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as ListPhoneNumbersResponse);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(ListPhoneNumbersResponse other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if(!phoneNumbers_.Equals(other.phoneNumbers_)) return false;
-      if (NextPageToken != other.NextPageToken) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      hash ^= phoneNumbers_.GetHashCode();
-      if (NextPageToken.Length != 0) hash ^= NextPageToken.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      phoneNumbers_.WriteTo(output, _repeated_phoneNumbers_codec);
-      if (NextPageToken.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(NextPageToken);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      phoneNumbers_.WriteTo(ref output, _repeated_phoneNumbers_codec);
-      if (NextPageToken.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(NextPageToken);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      size += phoneNumbers_.CalculateSize(_repeated_phoneNumbers_codec);
-      if (NextPageToken.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(NextPageToken);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(ListPhoneNumbersResponse other) {
-      if (other == null) {
-        return;
-      }
-      phoneNumbers_.Add(other.phoneNumbers_);
-      if (other.NextPageToken.Length != 0) {
-        NextPageToken = other.NextPageToken;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 10: {
-            phoneNumbers_.AddEntriesFrom(input, _repeated_phoneNumbers_codec);
-            break;
-          }
-          case 18: {
-            NextPageToken = input.ReadString();
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            phoneNumbers_.AddEntriesFrom(ref input, _repeated_phoneNumbers_codec);
-            break;
-          }
-          case 18: {
-            NextPageToken = input.ReadString();
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  /// <summary>
-  /// The request message for updating a phonenumber's properties.
-  /// </summary>
-  public sealed partial class UpdatePhoneNumberRequest : pb::IMessage<UpdatePhoneNumberRequest>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<UpdatePhoneNumberRequest> _parser = new pb::MessageParser<UpdatePhoneNumberRequest>(() => new UpdatePhoneNumberRequest());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<UpdatePhoneNumberRequest> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Enfonica.Numbering.V1Beta1.PhoneNumbersReflection.Descriptor.MessageTypes[5]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public UpdatePhoneNumberRequest() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public UpdatePhoneNumberRequest(UpdatePhoneNumberRequest other) : this() {
-      name_ = other.name_;
-      phoneNumber_ = other.phoneNumber_ != null ? other.phoneNumber_.Clone() : null;
-      updateMask_ = other.updateMask_ != null ? other.updateMask_.Clone() : null;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public UpdatePhoneNumberRequest Clone() {
-      return new UpdatePhoneNumberRequest(this);
-    }
-
-    /// <summary>Field number for the "name" field.</summary>
-    public const int NameFieldNumber = 1;
-    private string name_ = "";
-    /// <summary>
-    /// The name of the phone number to be updated.
-    /// Must be of the form `phoneNumbers/*`.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Name {
-      get { return name_; }
-      set {
-        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "phone_number" field.</summary>
-    public const int PhoneNumberFieldNumber = 2;
-    private global::Enfonica.Numbering.V1Beta1.PhoneNumber phoneNumber_;
-    /// <summary>
-    /// The new definition of the PhoneNumber.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Enfonica.Numbering.V1Beta1.PhoneNumber PhoneNumber {
-      get { return phoneNumber_; }
-      set {
-        phoneNumber_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "update_mask" field.</summary>
-    public const int UpdateMaskFieldNumber = 3;
-    private global::Google.Protobuf.WellKnownTypes.FieldMask updateMask_;
-    /// <summary>
-    /// Fields to be updated.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Google.Protobuf.WellKnownTypes.FieldMask UpdateMask {
-      get { return updateMask_; }
-      set {
-        updateMask_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as UpdatePhoneNumberRequest);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(UpdatePhoneNumberRequest other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (Name != other.Name) return false;
-      if (!object.Equals(PhoneNumber, other.PhoneNumber)) return false;
-      if (!object.Equals(UpdateMask, other.UpdateMask)) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (Name.Length != 0) hash ^= Name.GetHashCode();
-      if (phoneNumber_ != null) hash ^= PhoneNumber.GetHashCode();
-      if (updateMask_ != null) hash ^= UpdateMask.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (Name.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(Name);
-      }
-      if (phoneNumber_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(PhoneNumber);
-      }
-      if (updateMask_ != null) {
-        output.WriteRawTag(26);
-        output.WriteMessage(UpdateMask);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Name.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(Name);
-      }
-      if (phoneNumber_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(PhoneNumber);
-      }
-      if (updateMask_ != null) {
-        output.WriteRawTag(26);
-        output.WriteMessage(UpdateMask);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (Name.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
-      }
-      if (phoneNumber_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(PhoneNumber);
-      }
-      if (updateMask_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(UpdateMask);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(UpdatePhoneNumberRequest other) {
-      if (other == null) {
-        return;
-      }
-      if (other.Name.Length != 0) {
-        Name = other.Name;
-      }
-      if (other.phoneNumber_ != null) {
-        if (phoneNumber_ == null) {
-          PhoneNumber = new global::Enfonica.Numbering.V1Beta1.PhoneNumber();
-        }
-        PhoneNumber.MergeFrom(other.PhoneNumber);
-      }
-      if (other.updateMask_ != null) {
-        if (updateMask_ == null) {
-          UpdateMask = new global::Google.Protobuf.WellKnownTypes.FieldMask();
-        }
-        UpdateMask.MergeFrom(other.UpdateMask);
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 10: {
-            Name = input.ReadString();
-            break;
-          }
-          case 18: {
-            if (phoneNumber_ == null) {
-              PhoneNumber = new global::Enfonica.Numbering.V1Beta1.PhoneNumber();
-            }
-            input.ReadMessage(PhoneNumber);
-            break;
-          }
-          case 26: {
-            if (updateMask_ == null) {
-              UpdateMask = new global::Google.Protobuf.WellKnownTypes.FieldMask();
-            }
-            input.ReadMessage(UpdateMask);
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            Name = input.ReadString();
-            break;
-          }
-          case 18: {
-            if (phoneNumber_ == null) {
-              PhoneNumber = new global::Enfonica.Numbering.V1Beta1.PhoneNumber();
-            }
-            input.ReadMessage(PhoneNumber);
-            break;
-          }
-          case 26: {
-            if (updateMask_ == null) {
-              UpdateMask = new global::Google.Protobuf.WellKnownTypes.FieldMask();
-            }
-            input.ReadMessage(UpdateMask);
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  /// <summary>
-  /// The DeletePhoneNumber request message.
-  /// </summary>
-  public sealed partial class DeletePhoneNumberRequest : pb::IMessage<DeletePhoneNumberRequest>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<DeletePhoneNumberRequest> _parser = new pb::MessageParser<DeletePhoneNumberRequest>(() => new DeletePhoneNumberRequest());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<DeletePhoneNumberRequest> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Enfonica.Numbering.V1Beta1.PhoneNumbersReflection.Descriptor.MessageTypes[6]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public DeletePhoneNumberRequest() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public DeletePhoneNumberRequest(DeletePhoneNumberRequest other) : this() {
-      name_ = other.name_;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public DeletePhoneNumberRequest Clone() {
-      return new DeletePhoneNumberRequest(this);
-    }
-
-    /// <summary>Field number for the "name" field.</summary>
-    public const int NameFieldNumber = 1;
-    private string name_ = "";
-    /// <summary>
-    /// The resource name of the PhoneNumber to be deleted.
-    /// Must be of the form `phoneNumbers/*`.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Name {
-      get { return name_; }
-      set {
-        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as DeletePhoneNumberRequest);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(DeletePhoneNumberRequest other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (Name != other.Name) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (Name.Length != 0) hash ^= Name.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (Name.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(Name);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Name.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(Name);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (Name.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(DeletePhoneNumberRequest other) {
-      if (other == null) {
-        return;
-      }
-      if (other.Name.Length != 0) {
-        Name = other.Name;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 10: {
-            Name = input.ReadString();
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            Name = input.ReadString();
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  /// <summary>
   /// The SearchPhoneNumbers request.
   /// </summary>
   public sealed partial class SearchPhoneNumbersRequest : pb::IMessage<SearchPhoneNumbersRequest>
@@ -2059,7 +522,7 @@ namespace Enfonica.Numbering.V1Beta1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Enfonica.Numbering.V1Beta1.PhoneNumbersReflection.Descriptor.MessageTypes[7]; }
+      get { return global::Enfonica.Numbering.V1Beta1.PhoneNumbersReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2095,7 +558,7 @@ namespace Enfonica.Numbering.V1Beta1 {
     private int pageSize_;
     /// <summary>
     /// The maximum number of PhoneNumbers to return in the response.
-    /// Optional, with a default value of 10 and maximum value of 100.
+    /// Default value of 10 and maximum value of 100.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int PageSize {
@@ -2111,7 +574,6 @@ namespace Enfonica.Numbering.V1Beta1 {
     /// <summary>
     /// A pagination token returned from a previous call to `SearchPhoneNumbers`
     /// that indicates where this listing should continue from.
-    /// Optional.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string PageToken {
@@ -2127,7 +589,7 @@ namespace Enfonica.Numbering.V1Beta1 {
         = pb::FieldCodec.ForEnum(26, x => (int) x, x => (global::Enfonica.Numbering.V1Beta1.PhoneNumber.Types.PhoneNumberCapability) x);
     private readonly pbc::RepeatedField<global::Enfonica.Numbering.V1Beta1.PhoneNumber.Types.PhoneNumberCapability> capabilities_ = new pbc::RepeatedField<global::Enfonica.Numbering.V1Beta1.PhoneNumber.Types.PhoneNumberCapability>();
     /// <summary>
-    /// The capabilities that the phone number must have. Optional.
+    /// The capabilities that the phone number must have.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Enfonica.Numbering.V1Beta1.PhoneNumber.Types.PhoneNumberCapability> Capabilities {
@@ -2138,7 +600,7 @@ namespace Enfonica.Numbering.V1Beta1 {
     public const int NumberTypeFieldNumber = 4;
     private global::Enfonica.Numbering.V1Beta1.PhoneNumber.Types.PhoneNumberType numberType_ = global::Enfonica.Numbering.V1Beta1.PhoneNumber.Types.PhoneNumberType.Unspecified;
     /// <summary>
-    /// The type of phone number. Optional.
+    /// The type of phone number.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Enfonica.Numbering.V1Beta1.PhoneNumber.Types.PhoneNumberType NumberType {
@@ -2153,7 +615,9 @@ namespace Enfonica.Numbering.V1Beta1 {
     private string countryCode_ = "";
     /// <summary>
     /// The alpha-2 country code that identifies the country associated with
-    /// the phone number. Required.
+    /// the phone number.
+    /// (-- api-linter: core::0143::standardized-codes=disabled
+    ///     aip.dev/not-precedent: Country code is used in this beta. --)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string CountryCode {
@@ -2169,7 +633,6 @@ namespace Enfonica.Numbering.V1Beta1 {
     /// <summary>
     /// The prefix that the number must have after the country code. If the
     /// prefix starts with '0', it will be automatically removed.
-    /// Optional.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Prefix {
@@ -2429,7 +892,7 @@ namespace Enfonica.Numbering.V1Beta1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Enfonica.Numbering.V1Beta1.PhoneNumbersReflection.Descriptor.MessageTypes[8]; }
+      get { return global::Enfonica.Numbering.V1Beta1.PhoneNumbersReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2475,7 +938,6 @@ namespace Enfonica.Numbering.V1Beta1 {
     /// <summary>
     /// A pagination token returned from a previous call to `SearchPhoneNumbers`
     /// that indicates from where listing should continue.
-    /// Optional.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string NextPageToken {

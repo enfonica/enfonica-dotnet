@@ -1,4 +1,4 @@
-// Copyright 2020 Enfonica Pty Ltd
+// Copyright 2021 Enfonica Pty Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -19,6 +19,7 @@ using gaxgrpc = Google.Api.Gax.Grpc;
 using enfgaxgrpc = Enfonica.Api.Gax.Grpc;
 using gaxgrpccore = Google.Api.Gax.Grpc.GrpcCore;
 using proto = Google.Protobuf;
+using wkt = Google.Protobuf.WellKnownTypes;
 using grpccore = Grpc.Core;
 using grpcinter = Grpc.Core.Interceptors;
 using sys = System;
@@ -290,6 +291,124 @@ namespace Enfonica.Messaging.V1
             CreateUnsubscriberAsync(request, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
 
         /// <summary>
+        /// Creates an unsubscriber.
+        /// 
+        /// The caller must have `messaging.unsubscribers.create` permission on the project.
+        /// </summary>
+        /// <param name="parent">
+        /// The resource name of the parent project to create the unsubscriber under.
+        /// Must be of the form `projects/*`.
+        /// </param>
+        /// <param name="unsubscriber">
+        /// The unsubscriber resource to be created.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>The RPC response.</returns>
+        public virtual Unsubscriber CreateUnsubscriber(string parent, Unsubscriber unsubscriber, gaxgrpc::CallSettings callSettings = null) =>
+            CreateUnsubscriber(new CreateUnsubscriberRequest
+            {
+                Parent = gax::GaxPreconditions.CheckNotNullOrEmpty(parent, nameof(parent)),
+                Unsubscriber = gax::GaxPreconditions.CheckNotNull(unsubscriber, nameof(unsubscriber)),
+            }, callSettings);
+
+        /// <summary>
+        /// Creates an unsubscriber.
+        /// 
+        /// The caller must have `messaging.unsubscribers.create` permission on the project.
+        /// </summary>
+        /// <param name="parent">
+        /// The resource name of the parent project to create the unsubscriber under.
+        /// Must be of the form `projects/*`.
+        /// </param>
+        /// <param name="unsubscriber">
+        /// The unsubscriber resource to be created.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<Unsubscriber> CreateUnsubscriberAsync(string parent, Unsubscriber unsubscriber, gaxgrpc::CallSettings callSettings = null) =>
+            CreateUnsubscriberAsync(new CreateUnsubscriberRequest
+            {
+                Parent = gax::GaxPreconditions.CheckNotNullOrEmpty(parent, nameof(parent)),
+                Unsubscriber = gax::GaxPreconditions.CheckNotNull(unsubscriber, nameof(unsubscriber)),
+            }, callSettings);
+
+        /// <summary>
+        /// Creates an unsubscriber.
+        /// 
+        /// The caller must have `messaging.unsubscribers.create` permission on the project.
+        /// </summary>
+        /// <param name="parent">
+        /// The resource name of the parent project to create the unsubscriber under.
+        /// Must be of the form `projects/*`.
+        /// </param>
+        /// <param name="unsubscriber">
+        /// The unsubscriber resource to be created.
+        /// </param>
+        /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<Unsubscriber> CreateUnsubscriberAsync(string parent, Unsubscriber unsubscriber, st::CancellationToken cancellationToken) =>
+            CreateUnsubscriberAsync(parent, unsubscriber, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Creates an unsubscriber.
+        /// 
+        /// The caller must have `messaging.unsubscribers.create` permission on the project.
+        /// </summary>
+        /// <param name="parent">
+        /// The resource name of the parent project to create the unsubscriber under.
+        /// Must be of the form `projects/*`.
+        /// </param>
+        /// <param name="unsubscriber">
+        /// The unsubscriber resource to be created.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>The RPC response.</returns>
+        public virtual Unsubscriber CreateUnsubscriber(ProjectName parent, Unsubscriber unsubscriber, gaxgrpc::CallSettings callSettings = null) =>
+            CreateUnsubscriber(new CreateUnsubscriberRequest
+            {
+                ParentAsProjectName = gax::GaxPreconditions.CheckNotNull(parent, nameof(parent)),
+                Unsubscriber = gax::GaxPreconditions.CheckNotNull(unsubscriber, nameof(unsubscriber)),
+            }, callSettings);
+
+        /// <summary>
+        /// Creates an unsubscriber.
+        /// 
+        /// The caller must have `messaging.unsubscribers.create` permission on the project.
+        /// </summary>
+        /// <param name="parent">
+        /// The resource name of the parent project to create the unsubscriber under.
+        /// Must be of the form `projects/*`.
+        /// </param>
+        /// <param name="unsubscriber">
+        /// The unsubscriber resource to be created.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<Unsubscriber> CreateUnsubscriberAsync(ProjectName parent, Unsubscriber unsubscriber, gaxgrpc::CallSettings callSettings = null) =>
+            CreateUnsubscriberAsync(new CreateUnsubscriberRequest
+            {
+                ParentAsProjectName = gax::GaxPreconditions.CheckNotNull(parent, nameof(parent)),
+                Unsubscriber = gax::GaxPreconditions.CheckNotNull(unsubscriber, nameof(unsubscriber)),
+            }, callSettings);
+
+        /// <summary>
+        /// Creates an unsubscriber.
+        /// 
+        /// The caller must have `messaging.unsubscribers.create` permission on the project.
+        /// </summary>
+        /// <param name="parent">
+        /// The resource name of the parent project to create the unsubscriber under.
+        /// Must be of the form `projects/*`.
+        /// </param>
+        /// <param name="unsubscriber">
+        /// The unsubscriber resource to be created.
+        /// </param>
+        /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<Unsubscriber> CreateUnsubscriberAsync(ProjectName parent, Unsubscriber unsubscriber, st::CancellationToken cancellationToken) =>
+            CreateUnsubscriberAsync(parent, unsubscriber, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
         /// Retrieves a Unsubscriber identified by the supplied resource name.
         /// 
         /// The caller must have `messaging.unsubscribers.get` permission on the project.
@@ -323,6 +442,102 @@ namespace Enfonica.Messaging.V1
             GetUnsubscriberAsync(request, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
 
         /// <summary>
+        /// Retrieves a Unsubscriber identified by the supplied resource name.
+        /// 
+        /// The caller must have `messaging.unsubscribers.get` permission on the project.
+        /// </summary>
+        /// <param name="name">
+        /// The resource name of the Unsubscriber to retrieve.
+        /// Must be of the form `projects/*/unsubscribers/*`.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>The RPC response.</returns>
+        public virtual Unsubscriber GetUnsubscriber(string name, gaxgrpc::CallSettings callSettings = null) =>
+            GetUnsubscriber(new GetUnsubscriberRequest
+            {
+                Name = gax::GaxPreconditions.CheckNotNullOrEmpty(name, nameof(name)),
+            }, callSettings);
+
+        /// <summary>
+        /// Retrieves a Unsubscriber identified by the supplied resource name.
+        /// 
+        /// The caller must have `messaging.unsubscribers.get` permission on the project.
+        /// </summary>
+        /// <param name="name">
+        /// The resource name of the Unsubscriber to retrieve.
+        /// Must be of the form `projects/*/unsubscribers/*`.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<Unsubscriber> GetUnsubscriberAsync(string name, gaxgrpc::CallSettings callSettings = null) =>
+            GetUnsubscriberAsync(new GetUnsubscriberRequest
+            {
+                Name = gax::GaxPreconditions.CheckNotNullOrEmpty(name, nameof(name)),
+            }, callSettings);
+
+        /// <summary>
+        /// Retrieves a Unsubscriber identified by the supplied resource name.
+        /// 
+        /// The caller must have `messaging.unsubscribers.get` permission on the project.
+        /// </summary>
+        /// <param name="name">
+        /// The resource name of the Unsubscriber to retrieve.
+        /// Must be of the form `projects/*/unsubscribers/*`.
+        /// </param>
+        /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<Unsubscriber> GetUnsubscriberAsync(string name, st::CancellationToken cancellationToken) =>
+            GetUnsubscriberAsync(name, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Retrieves a Unsubscriber identified by the supplied resource name.
+        /// 
+        /// The caller must have `messaging.unsubscribers.get` permission on the project.
+        /// </summary>
+        /// <param name="name">
+        /// The resource name of the Unsubscriber to retrieve.
+        /// Must be of the form `projects/*/unsubscribers/*`.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>The RPC response.</returns>
+        public virtual Unsubscriber GetUnsubscriber(UnsubscriberName name, gaxgrpc::CallSettings callSettings = null) =>
+            GetUnsubscriber(new GetUnsubscriberRequest
+            {
+                UnsubscriberName = gax::GaxPreconditions.CheckNotNull(name, nameof(name)),
+            }, callSettings);
+
+        /// <summary>
+        /// Retrieves a Unsubscriber identified by the supplied resource name.
+        /// 
+        /// The caller must have `messaging.unsubscribers.get` permission on the project.
+        /// </summary>
+        /// <param name="name">
+        /// The resource name of the Unsubscriber to retrieve.
+        /// Must be of the form `projects/*/unsubscribers/*`.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<Unsubscriber> GetUnsubscriberAsync(UnsubscriberName name, gaxgrpc::CallSettings callSettings = null) =>
+            GetUnsubscriberAsync(new GetUnsubscriberRequest
+            {
+                UnsubscriberName = gax::GaxPreconditions.CheckNotNull(name, nameof(name)),
+            }, callSettings);
+
+        /// <summary>
+        /// Retrieves a Unsubscriber identified by the supplied resource name.
+        /// 
+        /// The caller must have `messaging.unsubscribers.get` permission on the project.
+        /// </summary>
+        /// <param name="name">
+        /// The resource name of the Unsubscriber to retrieve.
+        /// Must be of the form `projects/*/unsubscribers/*`.
+        /// </param>
+        /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<Unsubscriber> GetUnsubscriberAsync(UnsubscriberName name, st::CancellationToken cancellationToken) =>
+            GetUnsubscriberAsync(name, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
         /// Lists the Unsubscribers of the specified project.
         /// List returns Unsubscribers sorted by create_time descending.
         /// 
@@ -345,6 +560,118 @@ namespace Enfonica.Messaging.V1
         /// <returns>A pageable asynchronous sequence of <see cref="Unsubscriber"/> resources.</returns>
         public virtual gax::PagedAsyncEnumerable<ListUnsubscribersResponse, Unsubscriber> ListUnsubscribersAsync(ListUnsubscribersRequest request, gaxgrpc::CallSettings callSettings = null) =>
             throw new sys::NotImplementedException();
+
+        /// <summary>
+        /// Lists the Unsubscribers of the specified project.
+        /// List returns Unsubscribers sorted by create_time descending.
+        /// 
+        /// The caller must have `messaging.unsubscribers.list` permission on the project.
+        /// </summary>
+        /// <param name="parent">
+        /// The resource name of the parent of which to list unsubscribers.
+        /// Must be of the form `projects/*`.
+        /// </param>
+        /// <param name="pageToken">
+        /// The token returned from the previous request. A value of <c>null</c> or an empty string retrieves the first
+        /// page.
+        /// </param>
+        /// <param name="pageSize">
+        /// The size of page to request. The response will not be larger than this, but may be smaller. A value of
+        /// <c>null</c> or <c>0</c> uses a server-defined page size.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A pageable sequence of <see cref="Unsubscriber"/> resources.</returns>
+        public virtual gax::PagedEnumerable<ListUnsubscribersResponse, Unsubscriber> ListUnsubscribers(string parent, string pageToken = null, int? pageSize = null, gaxgrpc::CallSettings callSettings = null) =>
+            ListUnsubscribers(new ListUnsubscribersRequest
+            {
+                Parent = gax::GaxPreconditions.CheckNotNullOrEmpty(parent, nameof(parent)),
+                PageToken = pageToken ?? "",
+                PageSize = pageSize ?? 0,
+            }, callSettings);
+
+        /// <summary>
+        /// Lists the Unsubscribers of the specified project.
+        /// List returns Unsubscribers sorted by create_time descending.
+        /// 
+        /// The caller must have `messaging.unsubscribers.list` permission on the project.
+        /// </summary>
+        /// <param name="parent">
+        /// The resource name of the parent of which to list unsubscribers.
+        /// Must be of the form `projects/*`.
+        /// </param>
+        /// <param name="pageToken">
+        /// The token returned from the previous request. A value of <c>null</c> or an empty string retrieves the first
+        /// page.
+        /// </param>
+        /// <param name="pageSize">
+        /// The size of page to request. The response will not be larger than this, but may be smaller. A value of
+        /// <c>null</c> or <c>0</c> uses a server-defined page size.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A pageable asynchronous sequence of <see cref="Unsubscriber"/> resources.</returns>
+        public virtual gax::PagedAsyncEnumerable<ListUnsubscribersResponse, Unsubscriber> ListUnsubscribersAsync(string parent, string pageToken = null, int? pageSize = null, gaxgrpc::CallSettings callSettings = null) =>
+            ListUnsubscribersAsync(new ListUnsubscribersRequest
+            {
+                Parent = gax::GaxPreconditions.CheckNotNullOrEmpty(parent, nameof(parent)),
+                PageToken = pageToken ?? "",
+                PageSize = pageSize ?? 0,
+            }, callSettings);
+
+        /// <summary>
+        /// Lists the Unsubscribers of the specified project.
+        /// List returns Unsubscribers sorted by create_time descending.
+        /// 
+        /// The caller must have `messaging.unsubscribers.list` permission on the project.
+        /// </summary>
+        /// <param name="parent">
+        /// The resource name of the parent of which to list unsubscribers.
+        /// Must be of the form `projects/*`.
+        /// </param>
+        /// <param name="pageToken">
+        /// The token returned from the previous request. A value of <c>null</c> or an empty string retrieves the first
+        /// page.
+        /// </param>
+        /// <param name="pageSize">
+        /// The size of page to request. The response will not be larger than this, but may be smaller. A value of
+        /// <c>null</c> or <c>0</c> uses a server-defined page size.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A pageable sequence of <see cref="Unsubscriber"/> resources.</returns>
+        public virtual gax::PagedEnumerable<ListUnsubscribersResponse, Unsubscriber> ListUnsubscribers(ProjectName parent, string pageToken = null, int? pageSize = null, gaxgrpc::CallSettings callSettings = null) =>
+            ListUnsubscribers(new ListUnsubscribersRequest
+            {
+                ParentAsProjectName = gax::GaxPreconditions.CheckNotNull(parent, nameof(parent)),
+                PageToken = pageToken ?? "",
+                PageSize = pageSize ?? 0,
+            }, callSettings);
+
+        /// <summary>
+        /// Lists the Unsubscribers of the specified project.
+        /// List returns Unsubscribers sorted by create_time descending.
+        /// 
+        /// The caller must have `messaging.unsubscribers.list` permission on the project.
+        /// </summary>
+        /// <param name="parent">
+        /// The resource name of the parent of which to list unsubscribers.
+        /// Must be of the form `projects/*`.
+        /// </param>
+        /// <param name="pageToken">
+        /// The token returned from the previous request. A value of <c>null</c> or an empty string retrieves the first
+        /// page.
+        /// </param>
+        /// <param name="pageSize">
+        /// The size of page to request. The response will not be larger than this, but may be smaller. A value of
+        /// <c>null</c> or <c>0</c> uses a server-defined page size.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A pageable asynchronous sequence of <see cref="Unsubscriber"/> resources.</returns>
+        public virtual gax::PagedAsyncEnumerable<ListUnsubscribersResponse, Unsubscriber> ListUnsubscribersAsync(ProjectName parent, string pageToken = null, int? pageSize = null, gaxgrpc::CallSettings callSettings = null) =>
+            ListUnsubscribersAsync(new ListUnsubscribersRequest
+            {
+                ParentAsProjectName = gax::GaxPreconditions.CheckNotNull(parent, nameof(parent)),
+                PageToken = pageToken ?? "",
+                PageSize = pageSize ?? 0,
+            }, callSettings);
 
         /// <summary>
         /// Updates an unsubscriber.
@@ -380,6 +707,62 @@ namespace Enfonica.Messaging.V1
             UpdateUnsubscriberAsync(request, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
 
         /// <summary>
+        /// Updates an unsubscriber.
+        /// 
+        /// The caller must have `messaging.unsubscribers.update` permission on the project.
+        /// </summary>
+        /// <param name="unsubscriber">
+        /// The new definition of the Unsubscriber.
+        /// </param>
+        /// <param name="updateMask">
+        /// Fields to be updated. Only `labels` can be updated.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>The RPC response.</returns>
+        public virtual Unsubscriber UpdateUnsubscriber(Unsubscriber unsubscriber, wkt::FieldMask updateMask, gaxgrpc::CallSettings callSettings = null) =>
+            UpdateUnsubscriber(new UpdateUnsubscriberRequest
+            {
+                Unsubscriber = gax::GaxPreconditions.CheckNotNull(unsubscriber, nameof(unsubscriber)),
+                UpdateMask = updateMask,
+            }, callSettings);
+
+        /// <summary>
+        /// Updates an unsubscriber.
+        /// 
+        /// The caller must have `messaging.unsubscribers.update` permission on the project.
+        /// </summary>
+        /// <param name="unsubscriber">
+        /// The new definition of the Unsubscriber.
+        /// </param>
+        /// <param name="updateMask">
+        /// Fields to be updated. Only `labels` can be updated.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<Unsubscriber> UpdateUnsubscriberAsync(Unsubscriber unsubscriber, wkt::FieldMask updateMask, gaxgrpc::CallSettings callSettings = null) =>
+            UpdateUnsubscriberAsync(new UpdateUnsubscriberRequest
+            {
+                Unsubscriber = gax::GaxPreconditions.CheckNotNull(unsubscriber, nameof(unsubscriber)),
+                UpdateMask = updateMask,
+            }, callSettings);
+
+        /// <summary>
+        /// Updates an unsubscriber.
+        /// 
+        /// The caller must have `messaging.unsubscribers.update` permission on the project.
+        /// </summary>
+        /// <param name="unsubscriber">
+        /// The new definition of the Unsubscriber.
+        /// </param>
+        /// <param name="updateMask">
+        /// Fields to be updated. Only `labels` can be updated.
+        /// </param>
+        /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<Unsubscriber> UpdateUnsubscriberAsync(Unsubscriber unsubscriber, wkt::FieldMask updateMask, st::CancellationToken cancellationToken) =>
+            UpdateUnsubscriberAsync(unsubscriber, updateMask, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
         /// Deletes an unsubscriber.
         /// 
         /// The caller must have `messaging.unsubscribers.delete` permission on the project.
@@ -411,6 +794,102 @@ namespace Enfonica.Messaging.V1
         /// <returns>A Task containing the RPC response.</returns>
         public virtual stt::Task<Unsubscriber> DeleteUnsubscriberAsync(DeleteUnsubscriberRequest request, st::CancellationToken cancellationToken) =>
             DeleteUnsubscriberAsync(request, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Deletes an unsubscriber.
+        /// 
+        /// The caller must have `messaging.unsubscribers.delete` permission on the project.
+        /// </summary>
+        /// <param name="name">
+        /// The resource name of the Unsubscriber to be deleted.
+        /// Must be of the form `projects/*/unsubscribers/*`.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>The RPC response.</returns>
+        public virtual Unsubscriber DeleteUnsubscriber(string name, gaxgrpc::CallSettings callSettings = null) =>
+            DeleteUnsubscriber(new DeleteUnsubscriberRequest
+            {
+                Name = gax::GaxPreconditions.CheckNotNullOrEmpty(name, nameof(name)),
+            }, callSettings);
+
+        /// <summary>
+        /// Deletes an unsubscriber.
+        /// 
+        /// The caller must have `messaging.unsubscribers.delete` permission on the project.
+        /// </summary>
+        /// <param name="name">
+        /// The resource name of the Unsubscriber to be deleted.
+        /// Must be of the form `projects/*/unsubscribers/*`.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<Unsubscriber> DeleteUnsubscriberAsync(string name, gaxgrpc::CallSettings callSettings = null) =>
+            DeleteUnsubscriberAsync(new DeleteUnsubscriberRequest
+            {
+                Name = gax::GaxPreconditions.CheckNotNullOrEmpty(name, nameof(name)),
+            }, callSettings);
+
+        /// <summary>
+        /// Deletes an unsubscriber.
+        /// 
+        /// The caller must have `messaging.unsubscribers.delete` permission on the project.
+        /// </summary>
+        /// <param name="name">
+        /// The resource name of the Unsubscriber to be deleted.
+        /// Must be of the form `projects/*/unsubscribers/*`.
+        /// </param>
+        /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<Unsubscriber> DeleteUnsubscriberAsync(string name, st::CancellationToken cancellationToken) =>
+            DeleteUnsubscriberAsync(name, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Deletes an unsubscriber.
+        /// 
+        /// The caller must have `messaging.unsubscribers.delete` permission on the project.
+        /// </summary>
+        /// <param name="name">
+        /// The resource name of the Unsubscriber to be deleted.
+        /// Must be of the form `projects/*/unsubscribers/*`.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>The RPC response.</returns>
+        public virtual Unsubscriber DeleteUnsubscriber(UnsubscriberName name, gaxgrpc::CallSettings callSettings = null) =>
+            DeleteUnsubscriber(new DeleteUnsubscriberRequest
+            {
+                UnsubscriberName = gax::GaxPreconditions.CheckNotNull(name, nameof(name)),
+            }, callSettings);
+
+        /// <summary>
+        /// Deletes an unsubscriber.
+        /// 
+        /// The caller must have `messaging.unsubscribers.delete` permission on the project.
+        /// </summary>
+        /// <param name="name">
+        /// The resource name of the Unsubscriber to be deleted.
+        /// Must be of the form `projects/*/unsubscribers/*`.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<Unsubscriber> DeleteUnsubscriberAsync(UnsubscriberName name, gaxgrpc::CallSettings callSettings = null) =>
+            DeleteUnsubscriberAsync(new DeleteUnsubscriberRequest
+            {
+                UnsubscriberName = gax::GaxPreconditions.CheckNotNull(name, nameof(name)),
+            }, callSettings);
+
+        /// <summary>
+        /// Deletes an unsubscriber.
+        /// 
+        /// The caller must have `messaging.unsubscribers.delete` permission on the project.
+        /// </summary>
+        /// <param name="name">
+        /// The resource name of the Unsubscriber to be deleted.
+        /// Must be of the form `projects/*/unsubscribers/*`.
+        /// </param>
+        /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<Unsubscriber> DeleteUnsubscriberAsync(UnsubscriberName name, st::CancellationToken cancellationToken) =>
+            DeleteUnsubscriberAsync(name, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
     }
 
     /// <summary>Unsubscribers client wrapper implementation, for convenient use.</summary>

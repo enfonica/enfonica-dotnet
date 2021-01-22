@@ -28,61 +28,71 @@ namespace Enfonica.Messaging.V1 {
             "aWNhLm1lc3NhZ2luZy52MRofZ29vZ2xlL3Byb3RvYnVmL3RpbWVzdGFtcC5w",
             "cm90bxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90bxofZ29vZ2xlL2Fw",
             "aS9maWVsZF9iZWhhdmlvci5wcm90bxoXZ29vZ2xlL2FwaS9jbGllbnQucHJv",
-            "dG8aF2dvb2dsZS90eXBlL21vbmV5LnByb3RvIr0KCgdNZXNzYWdlEgwKBG5h",
-            "bWUYASABKAkSCgoCdG8YAiABKAkSDAoEZnJvbRgDIAEoCRIMCgRib2R5GAQg",
-            "ASgJEhkKEXN0YXR1c191cGRhdGVfdXJsGAUgASgJEhEKCXJlcGx5X3VybBgG",
-            "IAEoCRIfChd2YWxpZGl0eV9wZXJpb2Rfc2Vjb25kcxgHIAEoBRIWCg5zbWFy",
-            "dF9lbmNvZGluZxgIIAEoCBI6CgZsYWJlbHMYFCADKAsyKi5lbmZvbmljYS5t",
-            "ZXNzYWdpbmcudjEuTWVzc2FnZS5MYWJlbHNFbnRyeRJMCg5jbGFzc2lmaWNh",
-            "dGlvbhgVIAEoDjI0LmVuZm9uaWNhLm1lc3NhZ2luZy52MS5NZXNzYWdlLk1l",
-            "c3NhZ2VDbGFzc2lmaWNhdGlvbhJfChx1bnN1YnNjcmliZV9jb250ZW50X2Jl",
-            "aGF2aW9yGBYgASgOMjkuZW5mb25pY2EubWVzc2FnaW5nLnYxLk1lc3NhZ2Uu",
-            "VW5zdWJzY3JpYmVDb250ZW50QmVoYXZpb3ISOwoJZGlyZWN0aW9uGAogASgO",
-            "MiguZW5mb25pY2EubWVzc2FnaW5nLnYxLk1lc3NhZ2UuRGlyZWN0aW9uEhIK",
-            "CmVycm9yX2NvZGUYCyABKAkSFQoNZXJyb3JfbWVzc2FnZRgMIAEoCRIVCg1z",
-            "ZWdtZW50X2NvdW50GA0gASgFEiEKBXByaWNlGA4gASgLMhIuZ29vZ2xlLnR5",
-            "cGUuTW9uZXkSNQoGc3RhdHVzGA8gASgOMiUuZW5mb25pY2EubWVzc2FnaW5n",
-            "LnYxLk1lc3NhZ2UuU3RhdHVzEhcKD2NyZWF0ZV9pZGVudGl0eRgQIAEoCRIv",
-            "CgtjcmVhdGVfdGltZRgRIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3Rh",
-            "bXASLQoJc2VuZF90aW1lGBIgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVz",
-            "dGFtcBIwCgxkZWxpdmVyX3RpbWUYEyABKAsyGi5nb29nbGUucHJvdG9idWYu",
-            "VGltZXN0YW1wEkAKCGVuY29kaW5nGBcgASgOMi4uZW5mb25pY2EubWVzc2Fn",
-            "aW5nLnYxLk1lc3NhZ2UuTWVzc2FnZUVuY29kaW5nGi0KC0xhYmVsc0VudHJ5",
-            "EgsKA2tleRgBIAEoCRINCgV2YWx1ZRgCIAEoCToCOAEieQoGU3RhdHVzEhIK",
-            "DlNUQVRVU19VTktOT1dOEAASCgoGUVVFVUVEEAESCwoHU0VORElORxACEggK",
-            "BFNFTlQQAxIKCgZGQUlMRUQQBBINCglERUxJVkVSRUQQBRIPCgtVTkRFTElW",
-            "RVJFRBAGEgwKCFJFQ0VJVkVEEAciPgoJRGlyZWN0aW9uEhUKEURJUkVDVElP",
-            "Tl9VTktOT1dOEAASDAoIT1VUR09JTkcQARIMCghJTkNPTUlORxACIlwKFU1l",
-            "c3NhZ2VDbGFzc2lmaWNhdGlvbhIPCgtVTlNQRUNJRklFRBAAEhAKDFVOQ0xB",
-            "U1NJRklFRBABEhEKDVRSQU5TQUNUSU9OQUwQAhINCglNQVJLRVRJTkcQAyJX",
-            "ChpVbnN1YnNjcmliZUNvbnRlbnRCZWhhdmlvchIfChtVTlNVQlNDUklCRV9D",
-            "T05URU5UX1VOS05PV04QABIICgROT05FEAESDgoKQVBQRU5EX1VSTBACIkMK",
-            "D01lc3NhZ2VFbmNvZGluZxIcChhNRVNTQUdFX0VOQ09ESU5HX1VOS05PV04Q",
-            "ABIICgRHU003EAESCAoEVUNTMhACImEKFENyZWF0ZU1lc3NhZ2VSZXF1ZXN0",
-            "EhMKBnBhcmVudBgBIAEoCUID4EECEjQKB21lc3NhZ2UYAiABKAsyHi5lbmZv",
-            "bmljYS5tZXNzYWdpbmcudjEuTWVzc2FnZUID4EECIiYKEUdldE1lc3NhZ2VS",
-            "ZXF1ZXN0EhEKBG5hbWUYASABKAlCA+BBAiK5AQoTTGlzdE1lc3NhZ2VzUmVx",
-            "dWVzdBITCgZwYXJlbnQYASABKAlCA+BBAhIRCglwYWdlX3NpemUYAiABKAUS",
-            "EgoKcGFnZV90b2tlbhgDIAEoCRIzCgpzdGFydF90aW1lGAQgASgLMhouZ29v",
-            "Z2xlLnByb3RvYnVmLlRpbWVzdGFtcEID4EECEjEKCGVuZF90aW1lGAUgASgL",
-            "MhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcEID4EECImEKFExpc3RNZXNz",
-            "YWdlc1Jlc3BvbnNlEjAKCG1lc3NhZ2VzGAEgAygLMh4uZW5mb25pY2EubWVz",
-            "c2FnaW5nLnYxLk1lc3NhZ2USFwoPbmV4dF9wYWdlX3Rva2VuGAIgASgJMoME",
-            "CghNZXNzYWdlcxKPAQoNQ3JlYXRlTWVzc2FnZRIrLmVuZm9uaWNhLm1lc3Nh",
-            "Z2luZy52MS5DcmVhdGVNZXNzYWdlUmVxdWVzdBoeLmVuZm9uaWNhLm1lc3Nh",
-            "Z2luZy52MS5NZXNzYWdlIjGC0+STAisiIC92MS97cGFyZW50PXByb2plY3Rz",
-            "Lyp9L21lc3NhZ2VzOgdtZXNzYWdlEocBCgpHZXRNZXNzYWdlEiguZW5mb25p",
-            "Y2EubWVzc2FnaW5nLnYxLkdldE1lc3NhZ2VSZXF1ZXN0Gh4uZW5mb25pY2Eu",
-            "bWVzc2FnaW5nLnYxLk1lc3NhZ2UiL4LT5JMCIhIgL3YxL3tuYW1lPXByb2pl",
-            "Y3RzLyovbWVzc2FnZXMvKn3aQQRuYW1lEpEBCgxMaXN0TWVzc2FnZXMSKi5l",
-            "bmZvbmljYS5tZXNzYWdpbmcudjEuTGlzdE1lc3NhZ2VzUmVxdWVzdBorLmVu",
-            "Zm9uaWNhLm1lc3NhZ2luZy52MS5MaXN0TWVzc2FnZXNSZXNwb25zZSIogtPk",
-            "kwIiEiAvdjEve3BhcmVudD1wcm9qZWN0cy8qfS9tZXNzYWdlcxpHykEabWVz",
-            "c2FnaW5nLmFwaS5lbmZvbmljYS5jb23SQSdodHRwczovL2FwaS5lbmZvbmlj",
-            "YS5jb20vYXV0aC9tZXNzYWdpbmdCGKoCFUVuZm9uaWNhLk1lc3NhZ2luZy5W",
-            "MWIGcHJvdG8z"));
+            "dG8aGWdvb2dsZS9hcGkvcmVzb3VyY2UucHJvdG8aF2dvb2dsZS90eXBlL21v",
+            "bmV5LnByb3RvIvQLCgdNZXNzYWdlEgwKBG5hbWUYASABKAkSCgoCdG8YAiAB",
+            "KAkSDAoEZnJvbRgDIAEoCRIMCgRib2R5GAQgASgJEhkKEXN0YXR1c191cGRh",
+            "dGVfdXJsGAUgASgJEhEKCXJlcGx5X3VybBgGIAEoCRIfChd2YWxpZGl0eV9w",
+            "ZXJpb2Rfc2Vjb25kcxgHIAEoBRIWCg5zbWFydF9lbmNvZGluZxgIIAEoCBI6",
+            "CgZsYWJlbHMYFCADKAsyKi5lbmZvbmljYS5tZXNzYWdpbmcudjEuTWVzc2Fn",
+            "ZS5MYWJlbHNFbnRyeRJMCg5jbGFzc2lmaWNhdGlvbhgVIAEoDjI0LmVuZm9u",
+            "aWNhLm1lc3NhZ2luZy52MS5NZXNzYWdlLk1lc3NhZ2VDbGFzc2lmaWNhdGlv",
+            "bhJfChx1bnN1YnNjcmliZV9jb250ZW50X2JlaGF2aW9yGBYgASgOMjkuZW5m",
+            "b25pY2EubWVzc2FnaW5nLnYxLk1lc3NhZ2UuVW5zdWJzY3JpYmVDb250ZW50",
+            "QmVoYXZpb3ISQAoJZGlyZWN0aW9uGAogASgOMiguZW5mb25pY2EubWVzc2Fn",
+            "aW5nLnYxLk1lc3NhZ2UuRGlyZWN0aW9uQgPgQQMSFwoKZXJyb3JfY29kZRgL",
+            "IAEoCUID4EEDEhoKDWVycm9yX21lc3NhZ2UYDCABKAlCA+BBAxIaCg1zZWdt",
+            "ZW50X2NvdW50GA0gASgFQgPgQQMSJgoFcHJpY2UYDiABKAsyEi5nb29nbGUu",
+            "dHlwZS5Nb25leUID4EEDEjoKBnN0YXR1cxgPIAEoDjIlLmVuZm9uaWNhLm1l",
+            "c3NhZ2luZy52MS5NZXNzYWdlLlN0YXR1c0ID4EEDEhwKD2NyZWF0ZV9pZGVu",
+            "dGl0eRgQIAEoCUID4EEDEjQKC2NyZWF0ZV90aW1lGBEgASgLMhouZ29vZ2xl",
+            "LnByb3RvYnVmLlRpbWVzdGFtcEID4EEDEjIKCXNlbmRfdGltZRgSIAEoCzIa",
+            "Lmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCA+BBAxI1CgxkZWxpdmVyX3Rp",
+            "bWUYEyABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wQgPgQQMSRQoI",
+            "ZW5jb2RpbmcYFyABKA4yLi5lbmZvbmljYS5tZXNzYWdpbmcudjEuTWVzc2Fn",
+            "ZS5NZXNzYWdlRW5jb2RpbmdCA+BBAxotCgtMYWJlbHNFbnRyeRILCgNrZXkY",
+            "ASABKAkSDQoFdmFsdWUYAiABKAk6AjgBIn0KBlN0YXR1cxIWChJTVEFUVVNf",
+            "VU5TUEVDSUZJRUQQABIKCgZRVUVVRUQQARILCgdTRU5ESU5HEAISCAoEU0VO",
+            "VBADEgoKBkZBSUxFRBAEEg0KCURFTElWRVJFRBAFEg8KC1VOREVMSVZFUkVE",
+            "EAYSDAoIUkVDRUlWRUQQByJCCglEaXJlY3Rpb24SGQoVRElSRUNUSU9OX1VO",
+            "U1BFQ0lGSUVEEAASDAoIT1VUR09JTkcQARIMCghJTkNPTUlORxACInMKFU1l",
+            "c3NhZ2VDbGFzc2lmaWNhdGlvbhImCiJNRVNTQUdFX0NMQVNTSUZJQ0FUSU9O",
+            "X1VOU1BFQ0lGSUVEEAASEAoMVU5DTEFTU0lGSUVEEAESEQoNVFJBTlNBQ1RJ",
+            "T05BTBACEg0KCU1BUktFVElORxADImQKGlVuc3Vic2NyaWJlQ29udGVudEJl",
+            "aGF2aW9yEiwKKFVOU1VCU0NSSUJFX0NPTlRFTlRfQkVIQVZJT1JfVU5TUEVD",
+            "SUZJRUQQABIICgROT05FEAESDgoKQVBQRU5EX1VSTBACIkcKD01lc3NhZ2VF",
+            "bmNvZGluZxIgChxNRVNTQUdFX0VOQ09ESU5HX1VOU1BFQ0lGSUVEEAASCAoE",
+            "R1NNNxABEggKBFVDUzIQAjpO6kFLCiJtZXNzYWdpbmcuYXBpLmVuZm9uaWNh",
+            "LmNvbS9NZXNzYWdlEiVwcm9qZWN0cy97cHJvamVjdH0vbWVzc2FnZXMve21l",
+            "c3NhZ2V9IogBChRDcmVhdGVNZXNzYWdlUmVxdWVzdBI6CgZwYXJlbnQYASAB",
+            "KAlCKuBBAvpBJBIibWVzc2FnaW5nLmFwaS5lbmZvbmljYS5jb20vTWVzc2Fn",
+            "ZRI0CgdtZXNzYWdlGAIgASgLMh4uZW5mb25pY2EubWVzc2FnaW5nLnYxLk1l",
+            "c3NhZ2VCA+BBAiJNChFHZXRNZXNzYWdlUmVxdWVzdBI4CgRuYW1lGAEgASgJ",
+            "QirgQQL6QSQKIm1lc3NhZ2luZy5hcGkuZW5mb25pY2EuY29tL01lc3NhZ2Ui",
+            "4AEKE0xpc3RNZXNzYWdlc1JlcXVlc3QSOgoGcGFyZW50GAEgASgJQirgQQL6",
+            "QSQSIm1lc3NhZ2luZy5hcGkuZW5mb25pY2EuY29tL01lc3NhZ2USEQoJcGFn",
+            "ZV9zaXplGAIgASgFEhIKCnBhZ2VfdG9rZW4YAyABKAkSMwoKc3RhcnRfdGlt",
+            "ZRgEIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCA+BBAhIxCghl",
+            "bmRfdGltZRgFIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCA+BB",
+            "AiJhChRMaXN0TWVzc2FnZXNSZXNwb25zZRIwCghtZXNzYWdlcxgBIAMoCzIe",
+            "LmVuZm9uaWNhLm1lc3NhZ2luZy52MS5NZXNzYWdlEhcKD25leHRfcGFnZV90",
+            "b2tlbhgCIAEoCTKdBAoITWVzc2FnZXMSoAEKDUNyZWF0ZU1lc3NhZ2USKy5l",
+            "bmZvbmljYS5tZXNzYWdpbmcudjEuQ3JlYXRlTWVzc2FnZVJlcXVlc3QaHi5l",
+            "bmZvbmljYS5tZXNzYWdpbmcudjEuTWVzc2FnZSJCgtPkkwIrIiAvdjEve3Bh",
+            "cmVudD1wcm9qZWN0cy8qfS9tZXNzYWdlczoHbWVzc2FnZdpBDnBhcmVudCxt",
+            "ZXNzYWdlEocBCgpHZXRNZXNzYWdlEiguZW5mb25pY2EubWVzc2FnaW5nLnYx",
+            "LkdldE1lc3NhZ2VSZXF1ZXN0Gh4uZW5mb25pY2EubWVzc2FnaW5nLnYxLk1l",
+            "c3NhZ2UiL4LT5JMCIhIgL3YxL3tuYW1lPXByb2plY3RzLyovbWVzc2FnZXMv",
+            "Kn3aQQRuYW1lEpoBCgxMaXN0TWVzc2FnZXMSKi5lbmZvbmljYS5tZXNzYWdp",
+            "bmcudjEuTGlzdE1lc3NhZ2VzUmVxdWVzdBorLmVuZm9uaWNhLm1lc3NhZ2lu",
+            "Zy52MS5MaXN0TWVzc2FnZXNSZXNwb25zZSIxgtPkkwIiEiAvdjEve3BhcmVu",
+            "dD1wcm9qZWN0cy8qfS9tZXNzYWdlc9pBBnBhcmVudBpHykEabWVzc2FnaW5n",
+            "LmFwaS5lbmZvbmljYS5jb23SQSdodHRwczovL2FwaS5lbmZvbmljYS5jb20v",
+            "YXV0aC9tZXNzYWdpbmdChwEKGWNvbS5lbmZvbmljYS5tZXNzYWdpbmcudjFC",
+            "DU1lc3NhZ2VzUHJvdG9QAVo2Z2l0aHViLmNvbS9lbmZvbmljYS9lbmZvbmlj",
+            "YS1nby9tZXNzYWdpbmcvdjE7bWVzc2FnaW5n+AEBogIFRU5GT06qAhVFbmZv",
+            "bmljYS5NZXNzYWdpbmcuVjFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Type.MoneyReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Type.MoneyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Messaging.V1.Message), global::Enfonica.Messaging.V1.Message.Parser, new[]{ "Name", "To", "From", "Body", "StatusUpdateUrl", "ReplyUrl", "ValidityPeriodSeconds", "SmartEncoding", "Labels", "Classification", "UnsubscribeContentBehavior", "Direction", "ErrorCode", "ErrorMessage", "SegmentCount", "Price", "Status", "CreateIdentity", "CreateTime", "SendTime", "DeliverTime", "Encoding" }, null, new[]{ typeof(global::Enfonica.Messaging.V1.Message.Types.Status), typeof(global::Enfonica.Messaging.V1.Message.Types.Direction), typeof(global::Enfonica.Messaging.V1.Message.Types.MessageClassification), typeof(global::Enfonica.Messaging.V1.Message.Types.UnsubscribeContentBehavior), typeof(global::Enfonica.Messaging.V1.Message.Types.MessageEncoding) }, null, new pbr::GeneratedClrTypeInfo[] { null, }),
             new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Messaging.V1.CreateMessageRequest), global::Enfonica.Messaging.V1.CreateMessageRequest.Parser, new[]{ "Parent", "Message" }, null, null, null, null),
@@ -162,7 +172,6 @@ namespace Enfonica.Messaging.V1 {
     private string name_ = "";
     /// <summary>
     /// Resource name of the message. It must match the pattern `projects/*/messages/*`
-    /// Output only.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Name {
@@ -177,6 +186,8 @@ namespace Enfonica.Messaging.V1 {
     private string to_ = "";
     /// <summary>
     /// The recipient phone number in +E164.
+    /// (-- api-linter: core::0140::prepositions=disabled
+    ///     aip.dev/not-precedent: Not a preposition. --)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string To {
@@ -191,6 +202,10 @@ namespace Enfonica.Messaging.V1 {
     private string from_ = "";
     /// <summary>
     /// The phone number in +E164 or alphanumeric sender ID that initiated the message.
+    /// (-- api-linter: core::0140::prepositions=disabled
+    ///     aip.dev/not-precedent: Not a preposition. --)
+    /// (-- api-linter: core::0140::reserved-words=disabled
+    ///     aip.dev/not-precedent: `from` is a core concept in Enfonica APIs. --)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string From {
@@ -222,7 +237,8 @@ namespace Enfonica.Messaging.V1 {
     /// <summary>
     /// The URL where status updates should be sent.
     /// TODO: define better.
-    /// Optional.
+    /// (-- api-linter: core::0140::uri=disabled
+    ///     aip.dev/not-precedent: url is used in this package. --)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string StatusUpdateUrl {
@@ -239,7 +255,8 @@ namespace Enfonica.Messaging.V1 {
     /// The URL where replies should be sent. This overrides any message handler URLs defined
     /// against the phone number receiving the reply.
     /// TODO: define better.
-    /// Optional.
+    /// (-- api-linter: core::0140::uri=disabled
+    ///     aip.dev/not-precedent: url is used in this package. --)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string ReplyUrl {
@@ -256,7 +273,8 @@ namespace Enfonica.Messaging.V1 {
     /// How long the message can stay in Enfonica's outgoing message queue, in seconds. Once the
     /// message has been accepted by carriers, we cannot guarantee the message will not
     /// be queued after this period.
-    /// Optional.
+    /// (-- api-linter: core::0142::time-field-type=disabled
+    ///     aip.dev/not-precedent: Not a timestamp. --)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int ValidityPeriodSeconds {
@@ -311,7 +329,7 @@ namespace Enfonica.Messaging.V1 {
 
     /// <summary>Field number for the "unsubscribe_content_behavior" field.</summary>
     public const int UnsubscribeContentBehaviorFieldNumber = 22;
-    private global::Enfonica.Messaging.V1.Message.Types.UnsubscribeContentBehavior unsubscribeContentBehavior_ = global::Enfonica.Messaging.V1.Message.Types.UnsubscribeContentBehavior.UnsubscribeContentUnknown;
+    private global::Enfonica.Messaging.V1.Message.Types.UnsubscribeContentBehavior unsubscribeContentBehavior_ = global::Enfonica.Messaging.V1.Message.Types.UnsubscribeContentBehavior.Unspecified;
     /// <summary>
     /// Whether the `body` should be modified to include content indicatig how to unsubscribe.
     /// </summary>
@@ -325,11 +343,10 @@ namespace Enfonica.Messaging.V1 {
 
     /// <summary>Field number for the "direction" field.</summary>
     public const int DirectionFieldNumber = 10;
-    private global::Enfonica.Messaging.V1.Message.Types.Direction direction_ = global::Enfonica.Messaging.V1.Message.Types.Direction.Unknown;
+    private global::Enfonica.Messaging.V1.Message.Types.Direction direction_ = global::Enfonica.Messaging.V1.Message.Types.Direction.Unspecified;
     /// <summary>
     /// The direction of the message. Can be `outgoing` for messages that are sent or `incoming`
     /// for messages that are received.
-    /// Output only.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Enfonica.Messaging.V1.Message.Types.Direction Direction {
@@ -345,7 +362,6 @@ namespace Enfonica.Messaging.V1 {
     /// <summary>
     /// If the outgoing message failed to be delivered, the reason why.
     /// todo: should this be an enum?
-    /// Output only.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string ErrorCode {
@@ -361,7 +377,6 @@ namespace Enfonica.Messaging.V1 {
     /// <summary>
     /// The human readable message associated with the error.
     /// todo: do we need this if error code is an enum?
-    /// Output only.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string ErrorMessage {
@@ -377,7 +392,6 @@ namespace Enfonica.Messaging.V1 {
     /// <summary>
     /// The number of segments that make up the body.
     /// todo: explain this.
-    /// Output only.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int SegmentCount {
@@ -393,7 +407,6 @@ namespace Enfonica.Messaging.V1 {
     /// <summary>
     /// The price of this message. This may not be populated until a certain stage in the message
     /// lifecycle.  todo: is this right? how does/will this work?
-    /// Output only.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Type.Money Price {
@@ -405,9 +418,11 @@ namespace Enfonica.Messaging.V1 {
 
     /// <summary>Field number for the "status" field.</summary>
     public const int StatusFieldNumber = 15;
-    private global::Enfonica.Messaging.V1.Message.Types.Status status_ = global::Enfonica.Messaging.V1.Message.Types.Status.Unknown;
+    private global::Enfonica.Messaging.V1.Message.Types.Status status_ = global::Enfonica.Messaging.V1.Message.Types.Status.Unspecified;
     /// <summary>
     /// The current status of the message.
+    /// (-- api-linter: core::0216::synonyms=disabled
+    ///     aip.dev/not-precedent: `status` is used instead of `state` in this package. --)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Enfonica.Messaging.V1.Message.Types.Status Status {
@@ -423,7 +438,6 @@ namespace Enfonica.Messaging.V1 {
     /// <summary>
     /// The identity that created the message.  This may be your user or service account,
     /// or identities used internally by Enfonica products. todo: is this right? should we do this?
-    /// Output only.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string CreateIdentity {
@@ -438,7 +452,6 @@ namespace Enfonica.Messaging.V1 {
     private global::Google.Protobuf.WellKnownTypes.Timestamp createTime_;
     /// <summary>
     /// The creation time of the message.
-    /// Output only.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Protobuf.WellKnownTypes.Timestamp CreateTime {
@@ -453,7 +466,6 @@ namespace Enfonica.Messaging.V1 {
     private global::Google.Protobuf.WellKnownTypes.Timestamp sendTime_;
     /// <summary>
     /// The time the message was sent. Only set for outgoing message.
-    /// Output only.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Protobuf.WellKnownTypes.Timestamp SendTime {
@@ -468,7 +480,6 @@ namespace Enfonica.Messaging.V1 {
     private global::Google.Protobuf.WellKnownTypes.Timestamp deliverTime_;
     /// <summary>
     /// The time when delivery was confirmed for the message. Only set for outgoing message.
-    /// Output only.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Protobuf.WellKnownTypes.Timestamp DeliverTime {
@@ -480,10 +491,9 @@ namespace Enfonica.Messaging.V1 {
 
     /// <summary>Field number for the "encoding" field.</summary>
     public const int EncodingFieldNumber = 23;
-    private global::Enfonica.Messaging.V1.Message.Types.MessageEncoding encoding_ = global::Enfonica.Messaging.V1.Message.Types.MessageEncoding.Unknown;
+    private global::Enfonica.Messaging.V1.Message.Types.MessageEncoding encoding_ = global::Enfonica.Messaging.V1.Message.Types.MessageEncoding.Unspecified;
     /// <summary>
     /// The encoding used for the body.
-    /// Output only.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Enfonica.Messaging.V1.Message.Types.MessageEncoding Encoding {
@@ -544,18 +554,18 @@ namespace Enfonica.Messaging.V1 {
       if (SmartEncoding != false) hash ^= SmartEncoding.GetHashCode();
       hash ^= Labels.GetHashCode();
       if (Classification != global::Enfonica.Messaging.V1.Message.Types.MessageClassification.Unspecified) hash ^= Classification.GetHashCode();
-      if (UnsubscribeContentBehavior != global::Enfonica.Messaging.V1.Message.Types.UnsubscribeContentBehavior.UnsubscribeContentUnknown) hash ^= UnsubscribeContentBehavior.GetHashCode();
-      if (Direction != global::Enfonica.Messaging.V1.Message.Types.Direction.Unknown) hash ^= Direction.GetHashCode();
+      if (UnsubscribeContentBehavior != global::Enfonica.Messaging.V1.Message.Types.UnsubscribeContentBehavior.Unspecified) hash ^= UnsubscribeContentBehavior.GetHashCode();
+      if (Direction != global::Enfonica.Messaging.V1.Message.Types.Direction.Unspecified) hash ^= Direction.GetHashCode();
       if (ErrorCode.Length != 0) hash ^= ErrorCode.GetHashCode();
       if (ErrorMessage.Length != 0) hash ^= ErrorMessage.GetHashCode();
       if (SegmentCount != 0) hash ^= SegmentCount.GetHashCode();
       if (price_ != null) hash ^= Price.GetHashCode();
-      if (Status != global::Enfonica.Messaging.V1.Message.Types.Status.Unknown) hash ^= Status.GetHashCode();
+      if (Status != global::Enfonica.Messaging.V1.Message.Types.Status.Unspecified) hash ^= Status.GetHashCode();
       if (CreateIdentity.Length != 0) hash ^= CreateIdentity.GetHashCode();
       if (createTime_ != null) hash ^= CreateTime.GetHashCode();
       if (sendTime_ != null) hash ^= SendTime.GetHashCode();
       if (deliverTime_ != null) hash ^= DeliverTime.GetHashCode();
-      if (Encoding != global::Enfonica.Messaging.V1.Message.Types.MessageEncoding.Unknown) hash ^= Encoding.GetHashCode();
+      if (Encoding != global::Enfonica.Messaging.V1.Message.Types.MessageEncoding.Unspecified) hash ^= Encoding.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -604,7 +614,7 @@ namespace Enfonica.Messaging.V1 {
         output.WriteRawTag(64);
         output.WriteBool(SmartEncoding);
       }
-      if (Direction != global::Enfonica.Messaging.V1.Message.Types.Direction.Unknown) {
+      if (Direction != global::Enfonica.Messaging.V1.Message.Types.Direction.Unspecified) {
         output.WriteRawTag(80);
         output.WriteEnum((int) Direction);
       }
@@ -624,7 +634,7 @@ namespace Enfonica.Messaging.V1 {
         output.WriteRawTag(114);
         output.WriteMessage(Price);
       }
-      if (Status != global::Enfonica.Messaging.V1.Message.Types.Status.Unknown) {
+      if (Status != global::Enfonica.Messaging.V1.Message.Types.Status.Unspecified) {
         output.WriteRawTag(120);
         output.WriteEnum((int) Status);
       }
@@ -649,11 +659,11 @@ namespace Enfonica.Messaging.V1 {
         output.WriteRawTag(168, 1);
         output.WriteEnum((int) Classification);
       }
-      if (UnsubscribeContentBehavior != global::Enfonica.Messaging.V1.Message.Types.UnsubscribeContentBehavior.UnsubscribeContentUnknown) {
+      if (UnsubscribeContentBehavior != global::Enfonica.Messaging.V1.Message.Types.UnsubscribeContentBehavior.Unspecified) {
         output.WriteRawTag(176, 1);
         output.WriteEnum((int) UnsubscribeContentBehavior);
       }
-      if (Encoding != global::Enfonica.Messaging.V1.Message.Types.MessageEncoding.Unknown) {
+      if (Encoding != global::Enfonica.Messaging.V1.Message.Types.MessageEncoding.Unspecified) {
         output.WriteRawTag(184, 1);
         output.WriteEnum((int) Encoding);
       }
@@ -698,7 +708,7 @@ namespace Enfonica.Messaging.V1 {
         output.WriteRawTag(64);
         output.WriteBool(SmartEncoding);
       }
-      if (Direction != global::Enfonica.Messaging.V1.Message.Types.Direction.Unknown) {
+      if (Direction != global::Enfonica.Messaging.V1.Message.Types.Direction.Unspecified) {
         output.WriteRawTag(80);
         output.WriteEnum((int) Direction);
       }
@@ -718,7 +728,7 @@ namespace Enfonica.Messaging.V1 {
         output.WriteRawTag(114);
         output.WriteMessage(Price);
       }
-      if (Status != global::Enfonica.Messaging.V1.Message.Types.Status.Unknown) {
+      if (Status != global::Enfonica.Messaging.V1.Message.Types.Status.Unspecified) {
         output.WriteRawTag(120);
         output.WriteEnum((int) Status);
       }
@@ -743,11 +753,11 @@ namespace Enfonica.Messaging.V1 {
         output.WriteRawTag(168, 1);
         output.WriteEnum((int) Classification);
       }
-      if (UnsubscribeContentBehavior != global::Enfonica.Messaging.V1.Message.Types.UnsubscribeContentBehavior.UnsubscribeContentUnknown) {
+      if (UnsubscribeContentBehavior != global::Enfonica.Messaging.V1.Message.Types.UnsubscribeContentBehavior.Unspecified) {
         output.WriteRawTag(176, 1);
         output.WriteEnum((int) UnsubscribeContentBehavior);
       }
-      if (Encoding != global::Enfonica.Messaging.V1.Message.Types.MessageEncoding.Unknown) {
+      if (Encoding != global::Enfonica.Messaging.V1.Message.Types.MessageEncoding.Unspecified) {
         output.WriteRawTag(184, 1);
         output.WriteEnum((int) Encoding);
       }
@@ -788,10 +798,10 @@ namespace Enfonica.Messaging.V1 {
       if (Classification != global::Enfonica.Messaging.V1.Message.Types.MessageClassification.Unspecified) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) Classification);
       }
-      if (UnsubscribeContentBehavior != global::Enfonica.Messaging.V1.Message.Types.UnsubscribeContentBehavior.UnsubscribeContentUnknown) {
+      if (UnsubscribeContentBehavior != global::Enfonica.Messaging.V1.Message.Types.UnsubscribeContentBehavior.Unspecified) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) UnsubscribeContentBehavior);
       }
-      if (Direction != global::Enfonica.Messaging.V1.Message.Types.Direction.Unknown) {
+      if (Direction != global::Enfonica.Messaging.V1.Message.Types.Direction.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Direction);
       }
       if (ErrorCode.Length != 0) {
@@ -806,7 +816,7 @@ namespace Enfonica.Messaging.V1 {
       if (price_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Price);
       }
-      if (Status != global::Enfonica.Messaging.V1.Message.Types.Status.Unknown) {
+      if (Status != global::Enfonica.Messaging.V1.Message.Types.Status.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Status);
       }
       if (CreateIdentity.Length != 0) {
@@ -821,7 +831,7 @@ namespace Enfonica.Messaging.V1 {
       if (deliverTime_ != null) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(DeliverTime);
       }
-      if (Encoding != global::Enfonica.Messaging.V1.Message.Types.MessageEncoding.Unknown) {
+      if (Encoding != global::Enfonica.Messaging.V1.Message.Types.MessageEncoding.Unspecified) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) Encoding);
       }
       if (_unknownFields != null) {
@@ -863,10 +873,10 @@ namespace Enfonica.Messaging.V1 {
       if (other.Classification != global::Enfonica.Messaging.V1.Message.Types.MessageClassification.Unspecified) {
         Classification = other.Classification;
       }
-      if (other.UnsubscribeContentBehavior != global::Enfonica.Messaging.V1.Message.Types.UnsubscribeContentBehavior.UnsubscribeContentUnknown) {
+      if (other.UnsubscribeContentBehavior != global::Enfonica.Messaging.V1.Message.Types.UnsubscribeContentBehavior.Unspecified) {
         UnsubscribeContentBehavior = other.UnsubscribeContentBehavior;
       }
-      if (other.Direction != global::Enfonica.Messaging.V1.Message.Types.Direction.Unknown) {
+      if (other.Direction != global::Enfonica.Messaging.V1.Message.Types.Direction.Unspecified) {
         Direction = other.Direction;
       }
       if (other.ErrorCode.Length != 0) {
@@ -884,7 +894,7 @@ namespace Enfonica.Messaging.V1 {
         }
         Price.MergeFrom(other.Price);
       }
-      if (other.Status != global::Enfonica.Messaging.V1.Message.Types.Status.Unknown) {
+      if (other.Status != global::Enfonica.Messaging.V1.Message.Types.Status.Unspecified) {
         Status = other.Status;
       }
       if (other.CreateIdentity.Length != 0) {
@@ -908,7 +918,7 @@ namespace Enfonica.Messaging.V1 {
         }
         DeliverTime.MergeFrom(other.DeliverTime);
       }
-      if (other.Encoding != global::Enfonica.Messaging.V1.Message.Types.MessageEncoding.Unknown) {
+      if (other.Encoding != global::Enfonica.Messaging.V1.Message.Types.MessageEncoding.Unspecified) {
         Encoding = other.Encoding;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -1150,12 +1160,14 @@ namespace Enfonica.Messaging.V1 {
     public static partial class Types {
       /// <summary>
       /// The status of a message.
+      /// (-- api-linter: core::0216::synonyms=disabled
+      ///     aip.dev/not-precedent: `Status` is used instead of `State` in this package. --)
       /// </summary>
       public enum Status {
         /// <summary>
         /// Unspecified status.
         /// </summary>
-        [pbr::OriginalName("STATUS_UNKNOWN")] Unknown = 0,
+        [pbr::OriginalName("STATUS_UNSPECIFIED")] Unspecified = 0,
         /// <summary>
         /// The message has been queued for sending.
         /// </summary>
@@ -1196,7 +1208,7 @@ namespace Enfonica.Messaging.V1 {
         /// <summary>
         /// Unspecified direction.
         /// </summary>
-        [pbr::OriginalName("DIRECTION_UNKNOWN")] Unknown = 0,
+        [pbr::OriginalName("DIRECTION_UNSPECIFIED")] Unspecified = 0,
         /// <summary>
         /// An outgoing message.
         /// </summary>
@@ -1214,7 +1226,7 @@ namespace Enfonica.Messaging.V1 {
         /// <summary>
         /// Unspecified.
         /// </summary>
-        [pbr::OriginalName("UNSPECIFIED")] Unspecified = 0,
+        [pbr::OriginalName("MESSAGE_CLASSIFICATION_UNSPECIFIED")] Unspecified = 0,
         /// <summary>
         /// The message is not classified. This message will be checked against unsubscribers
         /// before being sent.
@@ -1239,7 +1251,7 @@ namespace Enfonica.Messaging.V1 {
         /// <summary>
         /// Unspecified.
         /// </summary>
-        [pbr::OriginalName("UNSUBSCRIBE_CONTENT_UNKNOWN")] UnsubscribeContentUnknown = 0,
+        [pbr::OriginalName("UNSUBSCRIBE_CONTENT_BEHAVIOR_UNSPECIFIED")] Unspecified = 0,
         /// <summary>
         /// Do not insert any unsubscribe content within the message.
         /// </summary>
@@ -1265,7 +1277,7 @@ namespace Enfonica.Messaging.V1 {
         /// <summary>
         /// Unknown message encoding.
         /// </summary>
-        [pbr::OriginalName("MESSAGE_ENCODING_UNKNOWN")] Unknown = 0,
+        [pbr::OriginalName("MESSAGE_ENCODING_UNSPECIFIED")] Unspecified = 0,
         /// <summary>
         /// GSM 7-bit encoding.
         /// </summary>
@@ -1752,7 +1764,7 @@ namespace Enfonica.Messaging.V1 {
     private int pageSize_;
     /// <summary>
     /// The maximum number of Messages to return in the response.
-    /// Optional, with a default value of 10 and maximum value of 100.
+    /// Default value is 10 and maximum value is 100.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int PageSize {
@@ -1768,7 +1780,6 @@ namespace Enfonica.Messaging.V1 {
     /// <summary>
     /// A pagination token returned from a previous call to `ListMessages`
     /// that indicates where this listing should continue from.
-    /// Optional.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string PageToken {
@@ -1784,6 +1795,8 @@ namespace Enfonica.Messaging.V1 {
     /// <summary>
     /// The timestamp (inclusive) from which to retrieve messages. The
     /// create_time of the Message is used.
+    /// (-- api-linter: core::0132::request-unknown-fields=disabled
+    ///     aip.dev/not-precedent: List has additional fields in this package. --)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Protobuf.WellKnownTypes.Timestamp StartTime {
@@ -1799,6 +1812,8 @@ namespace Enfonica.Messaging.V1 {
     /// <summary>
     /// The timestamp (exclusive) until which to retrieve messages. The
     /// create_time of the Message is used.
+    /// (-- api-linter: core::0132::request-unknown-fields=disabled
+    ///     aip.dev/not-precedent: List has additional fields in this package. --)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Protobuf.WellKnownTypes.Timestamp EndTime {
@@ -2107,7 +2122,6 @@ namespace Enfonica.Messaging.V1 {
     /// <summary>
     /// A pagination token returned from a previous call to `ListMessages`
     /// that indicates from where listing should continue.
-    /// Optional.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string NextPageToken {

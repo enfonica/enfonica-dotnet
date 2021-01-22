@@ -1,4 +1,4 @@
-// Copyright 2020 Google LLC
+// Copyright 2021 Enfonica Pty Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -34,12 +34,12 @@ namespace Enfonica.Messaging.V1.Tests
             moq::Mock<Messages.MessagesClient> mockGrpcClient = new moq::Mock<Messages.MessagesClient>(moq::MockBehavior.Strict);
             CreateMessageRequest request = new CreateMessageRequest
             {
-                Parent = "parent7858e4d0",
+                ParentAsProjectName = ProjectName.FromProject("[PROJECT]"),
                 Message = new Message(),
             };
             Message expectedResponse = new Message
             {
-                Name = "name1c9368b0",
+                MessageName = MessageName.FromProjectMessage("[PROJECT]", "[MESSAGE]"),
                 To = "to03e2b601",
                 From = "fromf8078ad9",
                 Body = "body682d1a84",
@@ -81,12 +81,12 @@ namespace Enfonica.Messaging.V1.Tests
             moq::Mock<Messages.MessagesClient> mockGrpcClient = new moq::Mock<Messages.MessagesClient>(moq::MockBehavior.Strict);
             CreateMessageRequest request = new CreateMessageRequest
             {
-                Parent = "parent7858e4d0",
+                ParentAsProjectName = ProjectName.FromProject("[PROJECT]"),
                 Message = new Message(),
             };
             Message expectedResponse = new Message
             {
-                Name = "name1c9368b0",
+                MessageName = MessageName.FromProjectMessage("[PROJECT]", "[MESSAGE]"),
                 To = "to03e2b601",
                 From = "fromf8078ad9",
                 Body = "body682d1a84",
@@ -125,16 +125,208 @@ namespace Enfonica.Messaging.V1.Tests
         }
 
         [xunit::FactAttribute]
+        public void CreateMessage()
+        {
+            moq::Mock<Messages.MessagesClient> mockGrpcClient = new moq::Mock<Messages.MessagesClient>(moq::MockBehavior.Strict);
+            CreateMessageRequest request = new CreateMessageRequest
+            {
+                ParentAsProjectName = ProjectName.FromProject("[PROJECT]"),
+                Message = new Message(),
+            };
+            Message expectedResponse = new Message
+            {
+                MessageName = MessageName.FromProjectMessage("[PROJECT]", "[MESSAGE]"),
+                To = "to03e2b601",
+                From = "fromf8078ad9",
+                Body = "body682d1a84",
+                StatusUpdateUrl = "status_update_url6240cc54",
+                ReplyUrl = "reply_urla9dcb82b",
+                ValidityPeriodSeconds = 1525204720,
+                SmartEncoding = true,
+                Direction = Message.Types.Direction.Incoming,
+                ErrorCode = "error_code42bd958e",
+                ErrorMessage = "error_messaged73952bd",
+                SegmentCount = 45476232,
+                Price = new gt::Money(),
+                Status = Message.Types.Status.Sending,
+                CreateIdentity = "create_identityc92d734f",
+                CreateTime = new wkt::Timestamp(),
+                SendTime = new wkt::Timestamp(),
+                DeliverTime = new wkt::Timestamp(),
+                Labels =
+                {
+                    {
+                        "key8a0b6e3c",
+                        "value60c16320"
+                    },
+                },
+                Classification = Message.Types.MessageClassification.Marketing,
+                UnsubscribeContentBehavior = Message.Types.UnsubscribeContentBehavior.AppendUrl,
+                Encoding = Message.Types.MessageEncoding.Gsm7,
+            };
+            mockGrpcClient.Setup(x => x.CreateMessage(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            MessagesClient client = new MessagesClientImpl(mockGrpcClient.Object, null);
+            Message response = client.CreateMessage(request.Parent, request.Message);
+            xunit::Assert.Same(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [xunit::FactAttribute]
+        public async stt::Task CreateMessageAsync()
+        {
+            moq::Mock<Messages.MessagesClient> mockGrpcClient = new moq::Mock<Messages.MessagesClient>(moq::MockBehavior.Strict);
+            CreateMessageRequest request = new CreateMessageRequest
+            {
+                ParentAsProjectName = ProjectName.FromProject("[PROJECT]"),
+                Message = new Message(),
+            };
+            Message expectedResponse = new Message
+            {
+                MessageName = MessageName.FromProjectMessage("[PROJECT]", "[MESSAGE]"),
+                To = "to03e2b601",
+                From = "fromf8078ad9",
+                Body = "body682d1a84",
+                StatusUpdateUrl = "status_update_url6240cc54",
+                ReplyUrl = "reply_urla9dcb82b",
+                ValidityPeriodSeconds = 1525204720,
+                SmartEncoding = true,
+                Direction = Message.Types.Direction.Incoming,
+                ErrorCode = "error_code42bd958e",
+                ErrorMessage = "error_messaged73952bd",
+                SegmentCount = 45476232,
+                Price = new gt::Money(),
+                Status = Message.Types.Status.Sending,
+                CreateIdentity = "create_identityc92d734f",
+                CreateTime = new wkt::Timestamp(),
+                SendTime = new wkt::Timestamp(),
+                DeliverTime = new wkt::Timestamp(),
+                Labels =
+                {
+                    {
+                        "key8a0b6e3c",
+                        "value60c16320"
+                    },
+                },
+                Classification = Message.Types.MessageClassification.Marketing,
+                UnsubscribeContentBehavior = Message.Types.UnsubscribeContentBehavior.AppendUrl,
+                Encoding = Message.Types.MessageEncoding.Gsm7,
+            };
+            mockGrpcClient.Setup(x => x.CreateMessageAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<Message>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            MessagesClient client = new MessagesClientImpl(mockGrpcClient.Object, null);
+            Message responseCallSettings = await client.CreateMessageAsync(request.Parent, request.Message, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            xunit::Assert.Same(expectedResponse, responseCallSettings);
+            Message responseCancellationToken = await client.CreateMessageAsync(request.Parent, request.Message, st::CancellationToken.None);
+            xunit::Assert.Same(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [xunit::FactAttribute]
+        public void CreateMessageResourceNames()
+        {
+            moq::Mock<Messages.MessagesClient> mockGrpcClient = new moq::Mock<Messages.MessagesClient>(moq::MockBehavior.Strict);
+            CreateMessageRequest request = new CreateMessageRequest
+            {
+                ParentAsProjectName = ProjectName.FromProject("[PROJECT]"),
+                Message = new Message(),
+            };
+            Message expectedResponse = new Message
+            {
+                MessageName = MessageName.FromProjectMessage("[PROJECT]", "[MESSAGE]"),
+                To = "to03e2b601",
+                From = "fromf8078ad9",
+                Body = "body682d1a84",
+                StatusUpdateUrl = "status_update_url6240cc54",
+                ReplyUrl = "reply_urla9dcb82b",
+                ValidityPeriodSeconds = 1525204720,
+                SmartEncoding = true,
+                Direction = Message.Types.Direction.Incoming,
+                ErrorCode = "error_code42bd958e",
+                ErrorMessage = "error_messaged73952bd",
+                SegmentCount = 45476232,
+                Price = new gt::Money(),
+                Status = Message.Types.Status.Sending,
+                CreateIdentity = "create_identityc92d734f",
+                CreateTime = new wkt::Timestamp(),
+                SendTime = new wkt::Timestamp(),
+                DeliverTime = new wkt::Timestamp(),
+                Labels =
+                {
+                    {
+                        "key8a0b6e3c",
+                        "value60c16320"
+                    },
+                },
+                Classification = Message.Types.MessageClassification.Marketing,
+                UnsubscribeContentBehavior = Message.Types.UnsubscribeContentBehavior.AppendUrl,
+                Encoding = Message.Types.MessageEncoding.Gsm7,
+            };
+            mockGrpcClient.Setup(x => x.CreateMessage(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            MessagesClient client = new MessagesClientImpl(mockGrpcClient.Object, null);
+            Message response = client.CreateMessage(request.ParentAsProjectName, request.Message);
+            xunit::Assert.Same(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [xunit::FactAttribute]
+        public async stt::Task CreateMessageResourceNamesAsync()
+        {
+            moq::Mock<Messages.MessagesClient> mockGrpcClient = new moq::Mock<Messages.MessagesClient>(moq::MockBehavior.Strict);
+            CreateMessageRequest request = new CreateMessageRequest
+            {
+                ParentAsProjectName = ProjectName.FromProject("[PROJECT]"),
+                Message = new Message(),
+            };
+            Message expectedResponse = new Message
+            {
+                MessageName = MessageName.FromProjectMessage("[PROJECT]", "[MESSAGE]"),
+                To = "to03e2b601",
+                From = "fromf8078ad9",
+                Body = "body682d1a84",
+                StatusUpdateUrl = "status_update_url6240cc54",
+                ReplyUrl = "reply_urla9dcb82b",
+                ValidityPeriodSeconds = 1525204720,
+                SmartEncoding = true,
+                Direction = Message.Types.Direction.Incoming,
+                ErrorCode = "error_code42bd958e",
+                ErrorMessage = "error_messaged73952bd",
+                SegmentCount = 45476232,
+                Price = new gt::Money(),
+                Status = Message.Types.Status.Sending,
+                CreateIdentity = "create_identityc92d734f",
+                CreateTime = new wkt::Timestamp(),
+                SendTime = new wkt::Timestamp(),
+                DeliverTime = new wkt::Timestamp(),
+                Labels =
+                {
+                    {
+                        "key8a0b6e3c",
+                        "value60c16320"
+                    },
+                },
+                Classification = Message.Types.MessageClassification.Marketing,
+                UnsubscribeContentBehavior = Message.Types.UnsubscribeContentBehavior.AppendUrl,
+                Encoding = Message.Types.MessageEncoding.Gsm7,
+            };
+            mockGrpcClient.Setup(x => x.CreateMessageAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<Message>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            MessagesClient client = new MessagesClientImpl(mockGrpcClient.Object, null);
+            Message responseCallSettings = await client.CreateMessageAsync(request.ParentAsProjectName, request.Message, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            xunit::Assert.Same(expectedResponse, responseCallSettings);
+            Message responseCancellationToken = await client.CreateMessageAsync(request.ParentAsProjectName, request.Message, st::CancellationToken.None);
+            xunit::Assert.Same(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [xunit::FactAttribute]
         public void GetMessageRequestObject()
         {
             moq::Mock<Messages.MessagesClient> mockGrpcClient = new moq::Mock<Messages.MessagesClient>(moq::MockBehavior.Strict);
             GetMessageRequest request = new GetMessageRequest
             {
-                Name = "name1c9368b0",
+                MessageName = MessageName.FromProjectMessage("[PROJECT]", "[MESSAGE]"),
             };
             Message expectedResponse = new Message
             {
-                Name = "name1c9368b0",
+                MessageName = MessageName.FromProjectMessage("[PROJECT]", "[MESSAGE]"),
                 To = "to03e2b601",
                 From = "fromf8078ad9",
                 Body = "body682d1a84",
@@ -176,11 +368,11 @@ namespace Enfonica.Messaging.V1.Tests
             moq::Mock<Messages.MessagesClient> mockGrpcClient = new moq::Mock<Messages.MessagesClient>(moq::MockBehavior.Strict);
             GetMessageRequest request = new GetMessageRequest
             {
-                Name = "name1c9368b0",
+                MessageName = MessageName.FromProjectMessage("[PROJECT]", "[MESSAGE]"),
             };
             Message expectedResponse = new Message
             {
-                Name = "name1c9368b0",
+                MessageName = MessageName.FromProjectMessage("[PROJECT]", "[MESSAGE]"),
                 To = "to03e2b601",
                 From = "fromf8078ad9",
                 Body = "body682d1a84",
@@ -224,11 +416,11 @@ namespace Enfonica.Messaging.V1.Tests
             moq::Mock<Messages.MessagesClient> mockGrpcClient = new moq::Mock<Messages.MessagesClient>(moq::MockBehavior.Strict);
             GetMessageRequest request = new GetMessageRequest
             {
-                Name = "name1c9368b0",
+                MessageName = MessageName.FromProjectMessage("[PROJECT]", "[MESSAGE]"),
             };
             Message expectedResponse = new Message
             {
-                Name = "name1c9368b0",
+                MessageName = MessageName.FromProjectMessage("[PROJECT]", "[MESSAGE]"),
                 To = "to03e2b601",
                 From = "fromf8078ad9",
                 Body = "body682d1a84",
@@ -270,11 +462,11 @@ namespace Enfonica.Messaging.V1.Tests
             moq::Mock<Messages.MessagesClient> mockGrpcClient = new moq::Mock<Messages.MessagesClient>(moq::MockBehavior.Strict);
             GetMessageRequest request = new GetMessageRequest
             {
-                Name = "name1c9368b0",
+                MessageName = MessageName.FromProjectMessage("[PROJECT]", "[MESSAGE]"),
             };
             Message expectedResponse = new Message
             {
-                Name = "name1c9368b0",
+                MessageName = MessageName.FromProjectMessage("[PROJECT]", "[MESSAGE]"),
                 To = "to03e2b601",
                 From = "fromf8078ad9",
                 Body = "body682d1a84",
@@ -308,6 +500,100 @@ namespace Enfonica.Messaging.V1.Tests
             Message responseCallSettings = await client.GetMessageAsync(request.Name, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             xunit::Assert.Same(expectedResponse, responseCallSettings);
             Message responseCancellationToken = await client.GetMessageAsync(request.Name, st::CancellationToken.None);
+            xunit::Assert.Same(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [xunit::FactAttribute]
+        public void GetMessageResourceNames()
+        {
+            moq::Mock<Messages.MessagesClient> mockGrpcClient = new moq::Mock<Messages.MessagesClient>(moq::MockBehavior.Strict);
+            GetMessageRequest request = new GetMessageRequest
+            {
+                MessageName = MessageName.FromProjectMessage("[PROJECT]", "[MESSAGE]"),
+            };
+            Message expectedResponse = new Message
+            {
+                MessageName = MessageName.FromProjectMessage("[PROJECT]", "[MESSAGE]"),
+                To = "to03e2b601",
+                From = "fromf8078ad9",
+                Body = "body682d1a84",
+                StatusUpdateUrl = "status_update_url6240cc54",
+                ReplyUrl = "reply_urla9dcb82b",
+                ValidityPeriodSeconds = 1525204720,
+                SmartEncoding = true,
+                Direction = Message.Types.Direction.Incoming,
+                ErrorCode = "error_code42bd958e",
+                ErrorMessage = "error_messaged73952bd",
+                SegmentCount = 45476232,
+                Price = new gt::Money(),
+                Status = Message.Types.Status.Sending,
+                CreateIdentity = "create_identityc92d734f",
+                CreateTime = new wkt::Timestamp(),
+                SendTime = new wkt::Timestamp(),
+                DeliverTime = new wkt::Timestamp(),
+                Labels =
+                {
+                    {
+                        "key8a0b6e3c",
+                        "value60c16320"
+                    },
+                },
+                Classification = Message.Types.MessageClassification.Marketing,
+                UnsubscribeContentBehavior = Message.Types.UnsubscribeContentBehavior.AppendUrl,
+                Encoding = Message.Types.MessageEncoding.Gsm7,
+            };
+            mockGrpcClient.Setup(x => x.GetMessage(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            MessagesClient client = new MessagesClientImpl(mockGrpcClient.Object, null);
+            Message response = client.GetMessage(request.MessageName);
+            xunit::Assert.Same(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [xunit::FactAttribute]
+        public async stt::Task GetMessageResourceNamesAsync()
+        {
+            moq::Mock<Messages.MessagesClient> mockGrpcClient = new moq::Mock<Messages.MessagesClient>(moq::MockBehavior.Strict);
+            GetMessageRequest request = new GetMessageRequest
+            {
+                MessageName = MessageName.FromProjectMessage("[PROJECT]", "[MESSAGE]"),
+            };
+            Message expectedResponse = new Message
+            {
+                MessageName = MessageName.FromProjectMessage("[PROJECT]", "[MESSAGE]"),
+                To = "to03e2b601",
+                From = "fromf8078ad9",
+                Body = "body682d1a84",
+                StatusUpdateUrl = "status_update_url6240cc54",
+                ReplyUrl = "reply_urla9dcb82b",
+                ValidityPeriodSeconds = 1525204720,
+                SmartEncoding = true,
+                Direction = Message.Types.Direction.Incoming,
+                ErrorCode = "error_code42bd958e",
+                ErrorMessage = "error_messaged73952bd",
+                SegmentCount = 45476232,
+                Price = new gt::Money(),
+                Status = Message.Types.Status.Sending,
+                CreateIdentity = "create_identityc92d734f",
+                CreateTime = new wkt::Timestamp(),
+                SendTime = new wkt::Timestamp(),
+                DeliverTime = new wkt::Timestamp(),
+                Labels =
+                {
+                    {
+                        "key8a0b6e3c",
+                        "value60c16320"
+                    },
+                },
+                Classification = Message.Types.MessageClassification.Marketing,
+                UnsubscribeContentBehavior = Message.Types.UnsubscribeContentBehavior.AppendUrl,
+                Encoding = Message.Types.MessageEncoding.Gsm7,
+            };
+            mockGrpcClient.Setup(x => x.GetMessageAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<Message>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            MessagesClient client = new MessagesClientImpl(mockGrpcClient.Object, null);
+            Message responseCallSettings = await client.GetMessageAsync(request.MessageName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            xunit::Assert.Same(expectedResponse, responseCallSettings);
+            Message responseCancellationToken = await client.GetMessageAsync(request.MessageName, st::CancellationToken.None);
             xunit::Assert.Same(expectedResponse, responseCancellationToken);
             mockGrpcClient.VerifyAll();
         }

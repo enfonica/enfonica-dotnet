@@ -1,4 +1,4 @@
-// Copyright 2020 Google LLC
+// Copyright 2021 Enfonica Pty Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -33,14 +33,14 @@ namespace Enfonica.Messaging.V1.Tests
             moq::Mock<Unsubscribers.UnsubscribersClient> mockGrpcClient = new moq::Mock<Unsubscribers.UnsubscribersClient>(moq::MockBehavior.Strict);
             CreateUnsubscriberRequest request = new CreateUnsubscriberRequest
             {
-                Parent = "parent7858e4d0",
+                ParentAsProjectName = ProjectName.FromProject("[PROJECT]"),
                 Unsubscriber = new Unsubscriber(),
             };
             Unsubscriber expectedResponse = new Unsubscriber
             {
-                Name = "name1c9368b0",
+                UnsubscriberName = UnsubscriberName.FromProjectUnsubscriber("[PROJECT]", "[UNSUBSCRIBER]"),
                 Phone = "phonee72fa4f7",
-                UnsubscribeMethod = Unsubscriber.Types.UnsubscribeMethod.Unknown,
+                UnsubscribeMethod = Unsubscriber.Types.UnsubscribeMethod.Unspecified,
                 Labels =
                 {
                     {
@@ -63,14 +63,14 @@ namespace Enfonica.Messaging.V1.Tests
             moq::Mock<Unsubscribers.UnsubscribersClient> mockGrpcClient = new moq::Mock<Unsubscribers.UnsubscribersClient>(moq::MockBehavior.Strict);
             CreateUnsubscriberRequest request = new CreateUnsubscriberRequest
             {
-                Parent = "parent7858e4d0",
+                ParentAsProjectName = ProjectName.FromProject("[PROJECT]"),
                 Unsubscriber = new Unsubscriber(),
             };
             Unsubscriber expectedResponse = new Unsubscriber
             {
-                Name = "name1c9368b0",
+                UnsubscriberName = UnsubscriberName.FromProjectUnsubscriber("[PROJECT]", "[UNSUBSCRIBER]"),
                 Phone = "phonee72fa4f7",
-                UnsubscribeMethod = Unsubscriber.Types.UnsubscribeMethod.Unknown,
+                UnsubscribeMethod = Unsubscriber.Types.UnsubscribeMethod.Unspecified,
                 Labels =
                 {
                     {
@@ -90,18 +90,142 @@ namespace Enfonica.Messaging.V1.Tests
         }
 
         [xunit::FactAttribute]
+        public void CreateUnsubscriber()
+        {
+            moq::Mock<Unsubscribers.UnsubscribersClient> mockGrpcClient = new moq::Mock<Unsubscribers.UnsubscribersClient>(moq::MockBehavior.Strict);
+            CreateUnsubscriberRequest request = new CreateUnsubscriberRequest
+            {
+                ParentAsProjectName = ProjectName.FromProject("[PROJECT]"),
+                Unsubscriber = new Unsubscriber(),
+            };
+            Unsubscriber expectedResponse = new Unsubscriber
+            {
+                UnsubscriberName = UnsubscriberName.FromProjectUnsubscriber("[PROJECT]", "[UNSUBSCRIBER]"),
+                Phone = "phonee72fa4f7",
+                UnsubscribeMethod = Unsubscriber.Types.UnsubscribeMethod.Unspecified,
+                Labels =
+                {
+                    {
+                        "key8a0b6e3c",
+                        "value60c16320"
+                    },
+                },
+                CreateTime = new wkt::Timestamp(),
+            };
+            mockGrpcClient.Setup(x => x.CreateUnsubscriber(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            UnsubscribersClient client = new UnsubscribersClientImpl(mockGrpcClient.Object, null);
+            Unsubscriber response = client.CreateUnsubscriber(request.Parent, request.Unsubscriber);
+            xunit::Assert.Same(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [xunit::FactAttribute]
+        public async stt::Task CreateUnsubscriberAsync()
+        {
+            moq::Mock<Unsubscribers.UnsubscribersClient> mockGrpcClient = new moq::Mock<Unsubscribers.UnsubscribersClient>(moq::MockBehavior.Strict);
+            CreateUnsubscriberRequest request = new CreateUnsubscriberRequest
+            {
+                ParentAsProjectName = ProjectName.FromProject("[PROJECT]"),
+                Unsubscriber = new Unsubscriber(),
+            };
+            Unsubscriber expectedResponse = new Unsubscriber
+            {
+                UnsubscriberName = UnsubscriberName.FromProjectUnsubscriber("[PROJECT]", "[UNSUBSCRIBER]"),
+                Phone = "phonee72fa4f7",
+                UnsubscribeMethod = Unsubscriber.Types.UnsubscribeMethod.Unspecified,
+                Labels =
+                {
+                    {
+                        "key8a0b6e3c",
+                        "value60c16320"
+                    },
+                },
+                CreateTime = new wkt::Timestamp(),
+            };
+            mockGrpcClient.Setup(x => x.CreateUnsubscriberAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<Unsubscriber>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            UnsubscribersClient client = new UnsubscribersClientImpl(mockGrpcClient.Object, null);
+            Unsubscriber responseCallSettings = await client.CreateUnsubscriberAsync(request.Parent, request.Unsubscriber, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            xunit::Assert.Same(expectedResponse, responseCallSettings);
+            Unsubscriber responseCancellationToken = await client.CreateUnsubscriberAsync(request.Parent, request.Unsubscriber, st::CancellationToken.None);
+            xunit::Assert.Same(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [xunit::FactAttribute]
+        public void CreateUnsubscriberResourceNames()
+        {
+            moq::Mock<Unsubscribers.UnsubscribersClient> mockGrpcClient = new moq::Mock<Unsubscribers.UnsubscribersClient>(moq::MockBehavior.Strict);
+            CreateUnsubscriberRequest request = new CreateUnsubscriberRequest
+            {
+                ParentAsProjectName = ProjectName.FromProject("[PROJECT]"),
+                Unsubscriber = new Unsubscriber(),
+            };
+            Unsubscriber expectedResponse = new Unsubscriber
+            {
+                UnsubscriberName = UnsubscriberName.FromProjectUnsubscriber("[PROJECT]", "[UNSUBSCRIBER]"),
+                Phone = "phonee72fa4f7",
+                UnsubscribeMethod = Unsubscriber.Types.UnsubscribeMethod.Unspecified,
+                Labels =
+                {
+                    {
+                        "key8a0b6e3c",
+                        "value60c16320"
+                    },
+                },
+                CreateTime = new wkt::Timestamp(),
+            };
+            mockGrpcClient.Setup(x => x.CreateUnsubscriber(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            UnsubscribersClient client = new UnsubscribersClientImpl(mockGrpcClient.Object, null);
+            Unsubscriber response = client.CreateUnsubscriber(request.ParentAsProjectName, request.Unsubscriber);
+            xunit::Assert.Same(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [xunit::FactAttribute]
+        public async stt::Task CreateUnsubscriberResourceNamesAsync()
+        {
+            moq::Mock<Unsubscribers.UnsubscribersClient> mockGrpcClient = new moq::Mock<Unsubscribers.UnsubscribersClient>(moq::MockBehavior.Strict);
+            CreateUnsubscriberRequest request = new CreateUnsubscriberRequest
+            {
+                ParentAsProjectName = ProjectName.FromProject("[PROJECT]"),
+                Unsubscriber = new Unsubscriber(),
+            };
+            Unsubscriber expectedResponse = new Unsubscriber
+            {
+                UnsubscriberName = UnsubscriberName.FromProjectUnsubscriber("[PROJECT]", "[UNSUBSCRIBER]"),
+                Phone = "phonee72fa4f7",
+                UnsubscribeMethod = Unsubscriber.Types.UnsubscribeMethod.Unspecified,
+                Labels =
+                {
+                    {
+                        "key8a0b6e3c",
+                        "value60c16320"
+                    },
+                },
+                CreateTime = new wkt::Timestamp(),
+            };
+            mockGrpcClient.Setup(x => x.CreateUnsubscriberAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<Unsubscriber>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            UnsubscribersClient client = new UnsubscribersClientImpl(mockGrpcClient.Object, null);
+            Unsubscriber responseCallSettings = await client.CreateUnsubscriberAsync(request.ParentAsProjectName, request.Unsubscriber, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            xunit::Assert.Same(expectedResponse, responseCallSettings);
+            Unsubscriber responseCancellationToken = await client.CreateUnsubscriberAsync(request.ParentAsProjectName, request.Unsubscriber, st::CancellationToken.None);
+            xunit::Assert.Same(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [xunit::FactAttribute]
         public void GetUnsubscriberRequestObject()
         {
             moq::Mock<Unsubscribers.UnsubscribersClient> mockGrpcClient = new moq::Mock<Unsubscribers.UnsubscribersClient>(moq::MockBehavior.Strict);
             GetUnsubscriberRequest request = new GetUnsubscriberRequest
             {
-                Name = "name1c9368b0",
+                UnsubscriberName = UnsubscriberName.FromProjectUnsubscriber("[PROJECT]", "[UNSUBSCRIBER]"),
             };
             Unsubscriber expectedResponse = new Unsubscriber
             {
-                Name = "name1c9368b0",
+                UnsubscriberName = UnsubscriberName.FromProjectUnsubscriber("[PROJECT]", "[UNSUBSCRIBER]"),
                 Phone = "phonee72fa4f7",
-                UnsubscribeMethod = Unsubscriber.Types.UnsubscribeMethod.Unknown,
+                UnsubscribeMethod = Unsubscriber.Types.UnsubscribeMethod.Unspecified,
                 Labels =
                 {
                     {
@@ -124,13 +248,13 @@ namespace Enfonica.Messaging.V1.Tests
             moq::Mock<Unsubscribers.UnsubscribersClient> mockGrpcClient = new moq::Mock<Unsubscribers.UnsubscribersClient>(moq::MockBehavior.Strict);
             GetUnsubscriberRequest request = new GetUnsubscriberRequest
             {
-                Name = "name1c9368b0",
+                UnsubscriberName = UnsubscriberName.FromProjectUnsubscriber("[PROJECT]", "[UNSUBSCRIBER]"),
             };
             Unsubscriber expectedResponse = new Unsubscriber
             {
-                Name = "name1c9368b0",
+                UnsubscriberName = UnsubscriberName.FromProjectUnsubscriber("[PROJECT]", "[UNSUBSCRIBER]"),
                 Phone = "phonee72fa4f7",
-                UnsubscribeMethod = Unsubscriber.Types.UnsubscribeMethod.Unknown,
+                UnsubscribeMethod = Unsubscriber.Types.UnsubscribeMethod.Unspecified,
                 Labels =
                 {
                     {
@@ -150,6 +274,126 @@ namespace Enfonica.Messaging.V1.Tests
         }
 
         [xunit::FactAttribute]
+        public void GetUnsubscriber()
+        {
+            moq::Mock<Unsubscribers.UnsubscribersClient> mockGrpcClient = new moq::Mock<Unsubscribers.UnsubscribersClient>(moq::MockBehavior.Strict);
+            GetUnsubscriberRequest request = new GetUnsubscriberRequest
+            {
+                UnsubscriberName = UnsubscriberName.FromProjectUnsubscriber("[PROJECT]", "[UNSUBSCRIBER]"),
+            };
+            Unsubscriber expectedResponse = new Unsubscriber
+            {
+                UnsubscriberName = UnsubscriberName.FromProjectUnsubscriber("[PROJECT]", "[UNSUBSCRIBER]"),
+                Phone = "phonee72fa4f7",
+                UnsubscribeMethod = Unsubscriber.Types.UnsubscribeMethod.Unspecified,
+                Labels =
+                {
+                    {
+                        "key8a0b6e3c",
+                        "value60c16320"
+                    },
+                },
+                CreateTime = new wkt::Timestamp(),
+            };
+            mockGrpcClient.Setup(x => x.GetUnsubscriber(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            UnsubscribersClient client = new UnsubscribersClientImpl(mockGrpcClient.Object, null);
+            Unsubscriber response = client.GetUnsubscriber(request.Name);
+            xunit::Assert.Same(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [xunit::FactAttribute]
+        public async stt::Task GetUnsubscriberAsync()
+        {
+            moq::Mock<Unsubscribers.UnsubscribersClient> mockGrpcClient = new moq::Mock<Unsubscribers.UnsubscribersClient>(moq::MockBehavior.Strict);
+            GetUnsubscriberRequest request = new GetUnsubscriberRequest
+            {
+                UnsubscriberName = UnsubscriberName.FromProjectUnsubscriber("[PROJECT]", "[UNSUBSCRIBER]"),
+            };
+            Unsubscriber expectedResponse = new Unsubscriber
+            {
+                UnsubscriberName = UnsubscriberName.FromProjectUnsubscriber("[PROJECT]", "[UNSUBSCRIBER]"),
+                Phone = "phonee72fa4f7",
+                UnsubscribeMethod = Unsubscriber.Types.UnsubscribeMethod.Unspecified,
+                Labels =
+                {
+                    {
+                        "key8a0b6e3c",
+                        "value60c16320"
+                    },
+                },
+                CreateTime = new wkt::Timestamp(),
+            };
+            mockGrpcClient.Setup(x => x.GetUnsubscriberAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<Unsubscriber>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            UnsubscribersClient client = new UnsubscribersClientImpl(mockGrpcClient.Object, null);
+            Unsubscriber responseCallSettings = await client.GetUnsubscriberAsync(request.Name, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            xunit::Assert.Same(expectedResponse, responseCallSettings);
+            Unsubscriber responseCancellationToken = await client.GetUnsubscriberAsync(request.Name, st::CancellationToken.None);
+            xunit::Assert.Same(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [xunit::FactAttribute]
+        public void GetUnsubscriberResourceNames()
+        {
+            moq::Mock<Unsubscribers.UnsubscribersClient> mockGrpcClient = new moq::Mock<Unsubscribers.UnsubscribersClient>(moq::MockBehavior.Strict);
+            GetUnsubscriberRequest request = new GetUnsubscriberRequest
+            {
+                UnsubscriberName = UnsubscriberName.FromProjectUnsubscriber("[PROJECT]", "[UNSUBSCRIBER]"),
+            };
+            Unsubscriber expectedResponse = new Unsubscriber
+            {
+                UnsubscriberName = UnsubscriberName.FromProjectUnsubscriber("[PROJECT]", "[UNSUBSCRIBER]"),
+                Phone = "phonee72fa4f7",
+                UnsubscribeMethod = Unsubscriber.Types.UnsubscribeMethod.Unspecified,
+                Labels =
+                {
+                    {
+                        "key8a0b6e3c",
+                        "value60c16320"
+                    },
+                },
+                CreateTime = new wkt::Timestamp(),
+            };
+            mockGrpcClient.Setup(x => x.GetUnsubscriber(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            UnsubscribersClient client = new UnsubscribersClientImpl(mockGrpcClient.Object, null);
+            Unsubscriber response = client.GetUnsubscriber(request.UnsubscriberName);
+            xunit::Assert.Same(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [xunit::FactAttribute]
+        public async stt::Task GetUnsubscriberResourceNamesAsync()
+        {
+            moq::Mock<Unsubscribers.UnsubscribersClient> mockGrpcClient = new moq::Mock<Unsubscribers.UnsubscribersClient>(moq::MockBehavior.Strict);
+            GetUnsubscriberRequest request = new GetUnsubscriberRequest
+            {
+                UnsubscriberName = UnsubscriberName.FromProjectUnsubscriber("[PROJECT]", "[UNSUBSCRIBER]"),
+            };
+            Unsubscriber expectedResponse = new Unsubscriber
+            {
+                UnsubscriberName = UnsubscriberName.FromProjectUnsubscriber("[PROJECT]", "[UNSUBSCRIBER]"),
+                Phone = "phonee72fa4f7",
+                UnsubscribeMethod = Unsubscriber.Types.UnsubscribeMethod.Unspecified,
+                Labels =
+                {
+                    {
+                        "key8a0b6e3c",
+                        "value60c16320"
+                    },
+                },
+                CreateTime = new wkt::Timestamp(),
+            };
+            mockGrpcClient.Setup(x => x.GetUnsubscriberAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<Unsubscriber>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            UnsubscribersClient client = new UnsubscribersClientImpl(mockGrpcClient.Object, null);
+            Unsubscriber responseCallSettings = await client.GetUnsubscriberAsync(request.UnsubscriberName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            xunit::Assert.Same(expectedResponse, responseCallSettings);
+            Unsubscriber responseCancellationToken = await client.GetUnsubscriberAsync(request.UnsubscriberName, st::CancellationToken.None);
+            xunit::Assert.Same(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [xunit::FactAttribute]
         public void UpdateUnsubscriberRequestObject()
         {
             moq::Mock<Unsubscribers.UnsubscribersClient> mockGrpcClient = new moq::Mock<Unsubscribers.UnsubscribersClient>(moq::MockBehavior.Strict);
@@ -160,9 +404,9 @@ namespace Enfonica.Messaging.V1.Tests
             };
             Unsubscriber expectedResponse = new Unsubscriber
             {
-                Name = "name1c9368b0",
+                UnsubscriberName = UnsubscriberName.FromProjectUnsubscriber("[PROJECT]", "[UNSUBSCRIBER]"),
                 Phone = "phonee72fa4f7",
-                UnsubscribeMethod = Unsubscriber.Types.UnsubscribeMethod.Unknown,
+                UnsubscribeMethod = Unsubscriber.Types.UnsubscribeMethod.Unspecified,
                 Labels =
                 {
                     {
@@ -190,9 +434,9 @@ namespace Enfonica.Messaging.V1.Tests
             };
             Unsubscriber expectedResponse = new Unsubscriber
             {
-                Name = "name1c9368b0",
+                UnsubscriberName = UnsubscriberName.FromProjectUnsubscriber("[PROJECT]", "[UNSUBSCRIBER]"),
                 Phone = "phonee72fa4f7",
-                UnsubscribeMethod = Unsubscriber.Types.UnsubscribeMethod.Unknown,
+                UnsubscribeMethod = Unsubscriber.Types.UnsubscribeMethod.Unspecified,
                 Labels =
                 {
                     {
@@ -212,18 +456,80 @@ namespace Enfonica.Messaging.V1.Tests
         }
 
         [xunit::FactAttribute]
+        public void UpdateUnsubscriber()
+        {
+            moq::Mock<Unsubscribers.UnsubscribersClient> mockGrpcClient = new moq::Mock<Unsubscribers.UnsubscribersClient>(moq::MockBehavior.Strict);
+            UpdateUnsubscriberRequest request = new UpdateUnsubscriberRequest
+            {
+                Unsubscriber = new Unsubscriber(),
+                UpdateMask = new wkt::FieldMask(),
+            };
+            Unsubscriber expectedResponse = new Unsubscriber
+            {
+                UnsubscriberName = UnsubscriberName.FromProjectUnsubscriber("[PROJECT]", "[UNSUBSCRIBER]"),
+                Phone = "phonee72fa4f7",
+                UnsubscribeMethod = Unsubscriber.Types.UnsubscribeMethod.Unspecified,
+                Labels =
+                {
+                    {
+                        "key8a0b6e3c",
+                        "value60c16320"
+                    },
+                },
+                CreateTime = new wkt::Timestamp(),
+            };
+            mockGrpcClient.Setup(x => x.UpdateUnsubscriber(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            UnsubscribersClient client = new UnsubscribersClientImpl(mockGrpcClient.Object, null);
+            Unsubscriber response = client.UpdateUnsubscriber(request.Unsubscriber, request.UpdateMask);
+            xunit::Assert.Same(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [xunit::FactAttribute]
+        public async stt::Task UpdateUnsubscriberAsync()
+        {
+            moq::Mock<Unsubscribers.UnsubscribersClient> mockGrpcClient = new moq::Mock<Unsubscribers.UnsubscribersClient>(moq::MockBehavior.Strict);
+            UpdateUnsubscriberRequest request = new UpdateUnsubscriberRequest
+            {
+                Unsubscriber = new Unsubscriber(),
+                UpdateMask = new wkt::FieldMask(),
+            };
+            Unsubscriber expectedResponse = new Unsubscriber
+            {
+                UnsubscriberName = UnsubscriberName.FromProjectUnsubscriber("[PROJECT]", "[UNSUBSCRIBER]"),
+                Phone = "phonee72fa4f7",
+                UnsubscribeMethod = Unsubscriber.Types.UnsubscribeMethod.Unspecified,
+                Labels =
+                {
+                    {
+                        "key8a0b6e3c",
+                        "value60c16320"
+                    },
+                },
+                CreateTime = new wkt::Timestamp(),
+            };
+            mockGrpcClient.Setup(x => x.UpdateUnsubscriberAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<Unsubscriber>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            UnsubscribersClient client = new UnsubscribersClientImpl(mockGrpcClient.Object, null);
+            Unsubscriber responseCallSettings = await client.UpdateUnsubscriberAsync(request.Unsubscriber, request.UpdateMask, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            xunit::Assert.Same(expectedResponse, responseCallSettings);
+            Unsubscriber responseCancellationToken = await client.UpdateUnsubscriberAsync(request.Unsubscriber, request.UpdateMask, st::CancellationToken.None);
+            xunit::Assert.Same(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [xunit::FactAttribute]
         public void DeleteUnsubscriberRequestObject()
         {
             moq::Mock<Unsubscribers.UnsubscribersClient> mockGrpcClient = new moq::Mock<Unsubscribers.UnsubscribersClient>(moq::MockBehavior.Strict);
             DeleteUnsubscriberRequest request = new DeleteUnsubscriberRequest
             {
-                Name = "name1c9368b0",
+                UnsubscriberName = UnsubscriberName.FromProjectUnsubscriber("[PROJECT]", "[UNSUBSCRIBER]"),
             };
             Unsubscriber expectedResponse = new Unsubscriber
             {
-                Name = "name1c9368b0",
+                UnsubscriberName = UnsubscriberName.FromProjectUnsubscriber("[PROJECT]", "[UNSUBSCRIBER]"),
                 Phone = "phonee72fa4f7",
-                UnsubscribeMethod = Unsubscriber.Types.UnsubscribeMethod.Unknown,
+                UnsubscribeMethod = Unsubscriber.Types.UnsubscribeMethod.Unspecified,
                 Labels =
                 {
                     {
@@ -246,13 +552,13 @@ namespace Enfonica.Messaging.V1.Tests
             moq::Mock<Unsubscribers.UnsubscribersClient> mockGrpcClient = new moq::Mock<Unsubscribers.UnsubscribersClient>(moq::MockBehavior.Strict);
             DeleteUnsubscriberRequest request = new DeleteUnsubscriberRequest
             {
-                Name = "name1c9368b0",
+                UnsubscriberName = UnsubscriberName.FromProjectUnsubscriber("[PROJECT]", "[UNSUBSCRIBER]"),
             };
             Unsubscriber expectedResponse = new Unsubscriber
             {
-                Name = "name1c9368b0",
+                UnsubscriberName = UnsubscriberName.FromProjectUnsubscriber("[PROJECT]", "[UNSUBSCRIBER]"),
                 Phone = "phonee72fa4f7",
-                UnsubscribeMethod = Unsubscriber.Types.UnsubscribeMethod.Unknown,
+                UnsubscribeMethod = Unsubscriber.Types.UnsubscribeMethod.Unspecified,
                 Labels =
                 {
                     {
@@ -267,6 +573,126 @@ namespace Enfonica.Messaging.V1.Tests
             Unsubscriber responseCallSettings = await client.DeleteUnsubscriberAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             xunit::Assert.Same(expectedResponse, responseCallSettings);
             Unsubscriber responseCancellationToken = await client.DeleteUnsubscriberAsync(request, st::CancellationToken.None);
+            xunit::Assert.Same(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [xunit::FactAttribute]
+        public void DeleteUnsubscriber()
+        {
+            moq::Mock<Unsubscribers.UnsubscribersClient> mockGrpcClient = new moq::Mock<Unsubscribers.UnsubscribersClient>(moq::MockBehavior.Strict);
+            DeleteUnsubscriberRequest request = new DeleteUnsubscriberRequest
+            {
+                UnsubscriberName = UnsubscriberName.FromProjectUnsubscriber("[PROJECT]", "[UNSUBSCRIBER]"),
+            };
+            Unsubscriber expectedResponse = new Unsubscriber
+            {
+                UnsubscriberName = UnsubscriberName.FromProjectUnsubscriber("[PROJECT]", "[UNSUBSCRIBER]"),
+                Phone = "phonee72fa4f7",
+                UnsubscribeMethod = Unsubscriber.Types.UnsubscribeMethod.Unspecified,
+                Labels =
+                {
+                    {
+                        "key8a0b6e3c",
+                        "value60c16320"
+                    },
+                },
+                CreateTime = new wkt::Timestamp(),
+            };
+            mockGrpcClient.Setup(x => x.DeleteUnsubscriber(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            UnsubscribersClient client = new UnsubscribersClientImpl(mockGrpcClient.Object, null);
+            Unsubscriber response = client.DeleteUnsubscriber(request.Name);
+            xunit::Assert.Same(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [xunit::FactAttribute]
+        public async stt::Task DeleteUnsubscriberAsync()
+        {
+            moq::Mock<Unsubscribers.UnsubscribersClient> mockGrpcClient = new moq::Mock<Unsubscribers.UnsubscribersClient>(moq::MockBehavior.Strict);
+            DeleteUnsubscriberRequest request = new DeleteUnsubscriberRequest
+            {
+                UnsubscriberName = UnsubscriberName.FromProjectUnsubscriber("[PROJECT]", "[UNSUBSCRIBER]"),
+            };
+            Unsubscriber expectedResponse = new Unsubscriber
+            {
+                UnsubscriberName = UnsubscriberName.FromProjectUnsubscriber("[PROJECT]", "[UNSUBSCRIBER]"),
+                Phone = "phonee72fa4f7",
+                UnsubscribeMethod = Unsubscriber.Types.UnsubscribeMethod.Unspecified,
+                Labels =
+                {
+                    {
+                        "key8a0b6e3c",
+                        "value60c16320"
+                    },
+                },
+                CreateTime = new wkt::Timestamp(),
+            };
+            mockGrpcClient.Setup(x => x.DeleteUnsubscriberAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<Unsubscriber>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            UnsubscribersClient client = new UnsubscribersClientImpl(mockGrpcClient.Object, null);
+            Unsubscriber responseCallSettings = await client.DeleteUnsubscriberAsync(request.Name, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            xunit::Assert.Same(expectedResponse, responseCallSettings);
+            Unsubscriber responseCancellationToken = await client.DeleteUnsubscriberAsync(request.Name, st::CancellationToken.None);
+            xunit::Assert.Same(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [xunit::FactAttribute]
+        public void DeleteUnsubscriberResourceNames()
+        {
+            moq::Mock<Unsubscribers.UnsubscribersClient> mockGrpcClient = new moq::Mock<Unsubscribers.UnsubscribersClient>(moq::MockBehavior.Strict);
+            DeleteUnsubscriberRequest request = new DeleteUnsubscriberRequest
+            {
+                UnsubscriberName = UnsubscriberName.FromProjectUnsubscriber("[PROJECT]", "[UNSUBSCRIBER]"),
+            };
+            Unsubscriber expectedResponse = new Unsubscriber
+            {
+                UnsubscriberName = UnsubscriberName.FromProjectUnsubscriber("[PROJECT]", "[UNSUBSCRIBER]"),
+                Phone = "phonee72fa4f7",
+                UnsubscribeMethod = Unsubscriber.Types.UnsubscribeMethod.Unspecified,
+                Labels =
+                {
+                    {
+                        "key8a0b6e3c",
+                        "value60c16320"
+                    },
+                },
+                CreateTime = new wkt::Timestamp(),
+            };
+            mockGrpcClient.Setup(x => x.DeleteUnsubscriber(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            UnsubscribersClient client = new UnsubscribersClientImpl(mockGrpcClient.Object, null);
+            Unsubscriber response = client.DeleteUnsubscriber(request.UnsubscriberName);
+            xunit::Assert.Same(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [xunit::FactAttribute]
+        public async stt::Task DeleteUnsubscriberResourceNamesAsync()
+        {
+            moq::Mock<Unsubscribers.UnsubscribersClient> mockGrpcClient = new moq::Mock<Unsubscribers.UnsubscribersClient>(moq::MockBehavior.Strict);
+            DeleteUnsubscriberRequest request = new DeleteUnsubscriberRequest
+            {
+                UnsubscriberName = UnsubscriberName.FromProjectUnsubscriber("[PROJECT]", "[UNSUBSCRIBER]"),
+            };
+            Unsubscriber expectedResponse = new Unsubscriber
+            {
+                UnsubscriberName = UnsubscriberName.FromProjectUnsubscriber("[PROJECT]", "[UNSUBSCRIBER]"),
+                Phone = "phonee72fa4f7",
+                UnsubscribeMethod = Unsubscriber.Types.UnsubscribeMethod.Unspecified,
+                Labels =
+                {
+                    {
+                        "key8a0b6e3c",
+                        "value60c16320"
+                    },
+                },
+                CreateTime = new wkt::Timestamp(),
+            };
+            mockGrpcClient.Setup(x => x.DeleteUnsubscriberAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<Unsubscriber>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            UnsubscribersClient client = new UnsubscribersClientImpl(mockGrpcClient.Object, null);
+            Unsubscriber responseCallSettings = await client.DeleteUnsubscriberAsync(request.UnsubscriberName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            xunit::Assert.Same(expectedResponse, responseCallSettings);
+            Unsubscriber responseCancellationToken = await client.DeleteUnsubscriberAsync(request.UnsubscriberName, st::CancellationToken.None);
             xunit::Assert.Same(expectedResponse, responseCancellationToken);
             mockGrpcClient.VerifyAll();
         }
