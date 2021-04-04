@@ -162,7 +162,7 @@ namespace Enfonica.Voice.V1Beta1.Snippets
             // End snippet
         }
 
-        /// <summary>Snippet for ListRecordings</summary>
+        /// <summary>Snippet for ListRecordingsAsync</summary>
         public async Task ListRecordingsRequestObjectAsync()
         {
             // Snippet: ListRecordingsAsync(ListRecordingsRequest, CallSettings)
@@ -256,7 +256,7 @@ namespace Enfonica.Voice.V1Beta1.Snippets
             // End snippet
         }
 
-        /// <summary>Snippet for ListRecordings</summary>
+        /// <summary>Snippet for ListRecordingsAsync</summary>
         public async Task ListRecordingsAsync()
         {
             // Snippet: ListRecordingsAsync(string, string, int?, CallSettings)
@@ -346,7 +346,7 @@ namespace Enfonica.Voice.V1Beta1.Snippets
             // End snippet
         }
 
-        /// <summary>Snippet for ListRecordings</summary>
+        /// <summary>Snippet for ListRecordingsAsync</summary>
         public async Task ListRecordingsResourceNamesAsync()
         {
             // Snippet: ListRecordingsAsync(CallName, string, int?, CallSettings)

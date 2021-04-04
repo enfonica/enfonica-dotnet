@@ -217,6 +217,7 @@ namespace Enfonica.Messaging.V1.Snippets
                 ParentAsProjectName = ProjectName.FromProject("[PROJECT]"),
                 StartTime = new Timestamp(),
                 EndTime = new Timestamp(),
+                Filter = "",
             };
             // Make the request
             PagedEnumerable<ListMessagesResponse, Message> response = messagesClient.ListMessages(request);
@@ -255,7 +256,7 @@ namespace Enfonica.Messaging.V1.Snippets
             // End snippet
         }
 
-        /// <summary>Snippet for ListMessages</summary>
+        /// <summary>Snippet for ListMessagesAsync</summary>
         public async Task ListMessagesRequestObjectAsync()
         {
             // Snippet: ListMessagesAsync(ListMessagesRequest, CallSettings)
@@ -267,6 +268,7 @@ namespace Enfonica.Messaging.V1.Snippets
                 ParentAsProjectName = ProjectName.FromProject("[PROJECT]"),
                 StartTime = new Timestamp(),
                 EndTime = new Timestamp(),
+                Filter = "",
             };
             // Make the request
             PagedAsyncEnumerable<ListMessagesResponse, Message> response = messagesClient.ListMessagesAsync(request);
@@ -350,7 +352,7 @@ namespace Enfonica.Messaging.V1.Snippets
             // End snippet
         }
 
-        /// <summary>Snippet for ListMessages</summary>
+        /// <summary>Snippet for ListMessagesAsync</summary>
         public async Task ListMessagesAsync()
         {
             // Snippet: ListMessagesAsync(string, string, int?, CallSettings)
@@ -440,7 +442,7 @@ namespace Enfonica.Messaging.V1.Snippets
             // End snippet
         }
 
-        /// <summary>Snippet for ListMessages</summary>
+        /// <summary>Snippet for ListMessagesAsync</summary>
         public async Task ListMessagesResourceNamesAsync()
         {
             // Snippet: ListMessagesAsync(ProjectName, string, int?, CallSettings)

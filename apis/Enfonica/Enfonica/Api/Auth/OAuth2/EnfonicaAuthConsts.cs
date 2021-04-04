@@ -1,5 +1,5 @@
 ﻿/*
-Copyright 2020 Enfonica Pty Ltd
+Copyright 2021 Enfonica Pty Ltd
 Modified: changed namespace and modified to support Enfonica auth.
 
 Copyright 2013 Google Inc
@@ -25,6 +25,6 @@ namespace Enfonica.Api.Auth.OAuth2
     internal static class EnfonicaAuthConsts
     {
         /// <summary>The OpenID Connect authorization token server URL.</summary>
-        public const string OidcTokenUrl = "https://oauth2.api.stag.enfonica.com/token";
+        public static string OidcTokenUrl { get; internal set; } = "https://oauth2.api.enfonica.com/token";
     }
 }

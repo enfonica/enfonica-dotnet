@@ -15,6 +15,8 @@
 // Generated code. DO NOT EDIT!
 
 using gaxgrpc = Google.Api.Gax.Grpc;
+using wkt = Google.Protobuf.WellKnownTypes;
+using gt = Google.Type;
 using grpccore = Grpc.Core;
 using moq = Moq;
 using st = System.Threading;
@@ -37,6 +39,32 @@ namespace Enfonica.Voice.V1Beta1.Tests
             Call expectedResponse = new Call
             {
                 CallName = CallName.FromProjectCall("[PROJECT]", "[CALL]"),
+                To = "to03e2b601",
+                From = "fromf8078ad9",
+                IsPrivate = false,
+                StatusUpdateUri = "status_update_uri3a86d5cb",
+                HandleUri = "handle_uri8831a329",
+                ValidityPeriodSeconds = 1525204720,
+                Labels =
+                {
+                    {
+                        "key8a0b6e3c",
+                        "value60c16320"
+                    },
+                },
+                Transport = Call.Types.Transport.Sip,
+                Direction = Call.Types.Direction.Incoming,
+                ErrorCode = "error_code42bd958e",
+                ErrorMessage = "error_messaged73952bd",
+                Price = new gt::Money(),
+                State = Call.Types.State.Busy,
+                CreateTime = new wkt::Timestamp(),
+                StartTime = new wkt::Timestamp(),
+                RingTime = new wkt::Timestamp(),
+                AnswerTime = new wkt::Timestamp(),
+                EndTime = new wkt::Timestamp(),
+                Bridged = true,
+                OriginatingCall = "originating_call9e182b53",
             };
             mockGrpcClient.Setup(x => x.GetCall(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             CallsClient client = new CallsClientImpl(mockGrpcClient.Object, null);
@@ -56,6 +84,32 @@ namespace Enfonica.Voice.V1Beta1.Tests
             Call expectedResponse = new Call
             {
                 CallName = CallName.FromProjectCall("[PROJECT]", "[CALL]"),
+                To = "to03e2b601",
+                From = "fromf8078ad9",
+                IsPrivate = false,
+                StatusUpdateUri = "status_update_uri3a86d5cb",
+                HandleUri = "handle_uri8831a329",
+                ValidityPeriodSeconds = 1525204720,
+                Labels =
+                {
+                    {
+                        "key8a0b6e3c",
+                        "value60c16320"
+                    },
+                },
+                Transport = Call.Types.Transport.Sip,
+                Direction = Call.Types.Direction.Incoming,
+                ErrorCode = "error_code42bd958e",
+                ErrorMessage = "error_messaged73952bd",
+                Price = new gt::Money(),
+                State = Call.Types.State.Busy,
+                CreateTime = new wkt::Timestamp(),
+                StartTime = new wkt::Timestamp(),
+                RingTime = new wkt::Timestamp(),
+                AnswerTime = new wkt::Timestamp(),
+                EndTime = new wkt::Timestamp(),
+                Bridged = true,
+                OriginatingCall = "originating_call9e182b53",
             };
             mockGrpcClient.Setup(x => x.GetCallAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<Call>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CallsClient client = new CallsClientImpl(mockGrpcClient.Object, null);
@@ -77,6 +131,32 @@ namespace Enfonica.Voice.V1Beta1.Tests
             Call expectedResponse = new Call
             {
                 CallName = CallName.FromProjectCall("[PROJECT]", "[CALL]"),
+                To = "to03e2b601",
+                From = "fromf8078ad9",
+                IsPrivate = false,
+                StatusUpdateUri = "status_update_uri3a86d5cb",
+                HandleUri = "handle_uri8831a329",
+                ValidityPeriodSeconds = 1525204720,
+                Labels =
+                {
+                    {
+                        "key8a0b6e3c",
+                        "value60c16320"
+                    },
+                },
+                Transport = Call.Types.Transport.Sip,
+                Direction = Call.Types.Direction.Incoming,
+                ErrorCode = "error_code42bd958e",
+                ErrorMessage = "error_messaged73952bd",
+                Price = new gt::Money(),
+                State = Call.Types.State.Busy,
+                CreateTime = new wkt::Timestamp(),
+                StartTime = new wkt::Timestamp(),
+                RingTime = new wkt::Timestamp(),
+                AnswerTime = new wkt::Timestamp(),
+                EndTime = new wkt::Timestamp(),
+                Bridged = true,
+                OriginatingCall = "originating_call9e182b53",
             };
             mockGrpcClient.Setup(x => x.GetCall(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             CallsClient client = new CallsClientImpl(mockGrpcClient.Object, null);
@@ -96,6 +176,32 @@ namespace Enfonica.Voice.V1Beta1.Tests
             Call expectedResponse = new Call
             {
                 CallName = CallName.FromProjectCall("[PROJECT]", "[CALL]"),
+                To = "to03e2b601",
+                From = "fromf8078ad9",
+                IsPrivate = false,
+                StatusUpdateUri = "status_update_uri3a86d5cb",
+                HandleUri = "handle_uri8831a329",
+                ValidityPeriodSeconds = 1525204720,
+                Labels =
+                {
+                    {
+                        "key8a0b6e3c",
+                        "value60c16320"
+                    },
+                },
+                Transport = Call.Types.Transport.Sip,
+                Direction = Call.Types.Direction.Incoming,
+                ErrorCode = "error_code42bd958e",
+                ErrorMessage = "error_messaged73952bd",
+                Price = new gt::Money(),
+                State = Call.Types.State.Busy,
+                CreateTime = new wkt::Timestamp(),
+                StartTime = new wkt::Timestamp(),
+                RingTime = new wkt::Timestamp(),
+                AnswerTime = new wkt::Timestamp(),
+                EndTime = new wkt::Timestamp(),
+                Bridged = true,
+                OriginatingCall = "originating_call9e182b53",
             };
             mockGrpcClient.Setup(x => x.GetCallAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<Call>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CallsClient client = new CallsClientImpl(mockGrpcClient.Object, null);
@@ -117,6 +223,32 @@ namespace Enfonica.Voice.V1Beta1.Tests
             Call expectedResponse = new Call
             {
                 CallName = CallName.FromProjectCall("[PROJECT]", "[CALL]"),
+                To = "to03e2b601",
+                From = "fromf8078ad9",
+                IsPrivate = false,
+                StatusUpdateUri = "status_update_uri3a86d5cb",
+                HandleUri = "handle_uri8831a329",
+                ValidityPeriodSeconds = 1525204720,
+                Labels =
+                {
+                    {
+                        "key8a0b6e3c",
+                        "value60c16320"
+                    },
+                },
+                Transport = Call.Types.Transport.Sip,
+                Direction = Call.Types.Direction.Incoming,
+                ErrorCode = "error_code42bd958e",
+                ErrorMessage = "error_messaged73952bd",
+                Price = new gt::Money(),
+                State = Call.Types.State.Busy,
+                CreateTime = new wkt::Timestamp(),
+                StartTime = new wkt::Timestamp(),
+                RingTime = new wkt::Timestamp(),
+                AnswerTime = new wkt::Timestamp(),
+                EndTime = new wkt::Timestamp(),
+                Bridged = true,
+                OriginatingCall = "originating_call9e182b53",
             };
             mockGrpcClient.Setup(x => x.GetCall(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             CallsClient client = new CallsClientImpl(mockGrpcClient.Object, null);
@@ -136,6 +268,32 @@ namespace Enfonica.Voice.V1Beta1.Tests
             Call expectedResponse = new Call
             {
                 CallName = CallName.FromProjectCall("[PROJECT]", "[CALL]"),
+                To = "to03e2b601",
+                From = "fromf8078ad9",
+                IsPrivate = false,
+                StatusUpdateUri = "status_update_uri3a86d5cb",
+                HandleUri = "handle_uri8831a329",
+                ValidityPeriodSeconds = 1525204720,
+                Labels =
+                {
+                    {
+                        "key8a0b6e3c",
+                        "value60c16320"
+                    },
+                },
+                Transport = Call.Types.Transport.Sip,
+                Direction = Call.Types.Direction.Incoming,
+                ErrorCode = "error_code42bd958e",
+                ErrorMessage = "error_messaged73952bd",
+                Price = new gt::Money(),
+                State = Call.Types.State.Busy,
+                CreateTime = new wkt::Timestamp(),
+                StartTime = new wkt::Timestamp(),
+                RingTime = new wkt::Timestamp(),
+                AnswerTime = new wkt::Timestamp(),
+                EndTime = new wkt::Timestamp(),
+                Bridged = true,
+                OriginatingCall = "originating_call9e182b53",
             };
             mockGrpcClient.Setup(x => x.GetCallAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<Call>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CallsClient client = new CallsClientImpl(mockGrpcClient.Object, null);

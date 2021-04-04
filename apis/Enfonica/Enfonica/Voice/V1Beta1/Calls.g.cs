@@ -29,34 +29,57 @@ namespace Enfonica.Voice.V1Beta1 {
             "b3RvGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvGhdnb29nbGUvdHlw",
             "ZS9tb25leS5wcm90bxoZZ29vZ2xlL2FwaS9yZXNvdXJjZS5wcm90bxofZ29v",
             "Z2xlL2FwaS9maWVsZF9iZWhhdmlvci5wcm90bxoXZ29vZ2xlL2FwaS9jbGll",
-            "bnQucHJvdG8iVwoEQ2FsbBIMCgRuYW1lGAEgASgJOkHqQT4KG3ZvaWNlLmFw",
-            "aS5lbmZvbmljYS5jb20vQ2FsbBIfcHJvamVjdHMve3Byb2plY3R9L2NhbGxz",
-            "L3tjYWxsfSJDCg5HZXRDYWxsUmVxdWVzdBIxCgRuYW1lGAEgASgJQiPgQQL6",
-            "QR0KG3ZvaWNlLmFwaS5lbmZvbmljYS5jb20vQ2FsbCLMAQoQTGlzdENhbGxz",
-            "UmVxdWVzdBIzCgZwYXJlbnQYASABKAlCI+BBAvpBHRIbdm9pY2UuYXBpLmVu",
-            "Zm9uaWNhLmNvbS9DYWxsEhEKCXBhZ2Vfc2l6ZRgCIAEoBRISCgpwYWdlX3Rv",
-            "a2VuGAMgASgJEi4KCnN0YXJ0X3RpbWUYBCABKAsyGi5nb29nbGUucHJvdG9i",
-            "dWYuVGltZXN0YW1wEiwKCGVuZF90aW1lGAUgASgLMhouZ29vZ2xlLnByb3Rv",
-            "YnVmLlRpbWVzdGFtcCJZChFMaXN0Q2FsbHNSZXNwb25zZRIrCgVjYWxscxgB",
-            "IAMoCzIcLmVuZm9uaWNhLnZvaWNlLnYxYmV0YTEuQ2FsbBIXCg9uZXh0X3Bh",
-            "Z2VfdG9rZW4YAiABKAky5QIKBUNhbGxzEoIBCgdHZXRDYWxsEiYuZW5mb25p",
-            "Y2Eudm9pY2UudjFiZXRhMS5HZXRDYWxsUmVxdWVzdBocLmVuZm9uaWNhLnZv",
-            "aWNlLnYxYmV0YTEuQ2FsbCIxgtPkkwIkEiIvdjFiZXRhMS97bmFtZT1wcm9q",
-            "ZWN0cy8qL2NhbGxzLyp92kEEbmFtZRKVAQoJTGlzdENhbGxzEiguZW5mb25p",
-            "Y2Eudm9pY2UudjFiZXRhMS5MaXN0Q2FsbHNSZXF1ZXN0GikuZW5mb25pY2Eu",
-            "dm9pY2UudjFiZXRhMS5MaXN0Q2FsbHNSZXNwb25zZSIzgtPkkwIkEiIvdjFi",
-            "ZXRhMS97cGFyZW50PXByb2plY3RzLyp9L2NhbGxz2kEGcGFyZW50Gj/KQRZ2",
-            "b2ljZS5hcGkuZW5mb25pY2EuY29t0kEjaHR0cHM6Ly9hcGkuZW5mb25pY2Eu",
-            "Y29tL2F1dGgvdm9pY2VCgwEKGmNvbS5lbmZvbmljYS52b2ljZS52MWJldGEx",
-            "QgpDYWxsc1Byb3RvUAFaM2dpdGh1Yi5jb20vZW5mb25pY2EvZW5mb25pY2Et",
-            "Z28vdm9pY2UvdjFiZXRhMTt2b2ljZfgBAaICBUVORk9OqgIWRW5mb25pY2Eu",
-            "Vm9pY2UuVjFCZXRhMWIGcHJvdG8z"));
+            "bnQucHJvdG8iyAkKBENhbGwSDAoEbmFtZRgBIAEoCRIPCgJ0bxgCIAEoCUID",
+            "4EECEhEKBGZyb20YAyABKAlCA+BBAhISCgppc19wcml2YXRlGAQgASgIEhkK",
+            "EXN0YXR1c191cGRhdGVfdXJpGAUgASgJEhcKCmhhbmRsZV91cmkYBiABKAlC",
+            "A+BBAhIfChd2YWxpZGl0eV9wZXJpb2Rfc2Vjb25kcxgHIAEoBRI4CgZsYWJl",
+            "bHMYCCADKAsyKC5lbmZvbmljYS52b2ljZS52MWJldGExLkNhbGwuTGFiZWxz",
+            "RW50cnkSPgoJdHJhbnNwb3J0GAkgASgOMiYuZW5mb25pY2Eudm9pY2UudjFi",
+            "ZXRhMS5DYWxsLlRyYW5zcG9ydEID4EEDEj4KCWRpcmVjdGlvbhgKIAEoDjIm",
+            "LmVuZm9uaWNhLnZvaWNlLnYxYmV0YTEuQ2FsbC5EaXJlY3Rpb25CA+BBAxIX",
+            "CgplcnJvcl9jb2RlGAsgASgJQgPgQQMSGgoNZXJyb3JfbWVzc2FnZRgMIAEo",
+            "CUID4EEDEiYKBXByaWNlGA0gASgLMhIuZ29vZ2xlLnR5cGUuTW9uZXlCA+BB",
+            "AxI2CgVzdGF0ZRgOIAEoDjIiLmVuZm9uaWNhLnZvaWNlLnYxYmV0YTEuQ2Fs",
+            "bC5TdGF0ZUID4EEDEjQKC2NyZWF0ZV90aW1lGBAgASgLMhouZ29vZ2xlLnBy",
+            "b3RvYnVmLlRpbWVzdGFtcEID4EEDEjMKCnN0YXJ0X3RpbWUYESABKAsyGi5n",
+            "b29nbGUucHJvdG9idWYuVGltZXN0YW1wQgPgQQMSMgoJcmluZ190aW1lGBIg",
+            "ASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcEID4EEDEjQKC2Fuc3dl",
+            "cl90aW1lGBMgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcEID4EED",
+            "EjEKCGVuZF90aW1lGBQgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFt",
+            "cEID4EEDEhQKB2JyaWRnZWQYFSABKAhCA+BBAxIdChBvcmlnaW5hdGluZ19j",
+            "YWxsGBYgASgJQgPgQQMaLQoLTGFiZWxzRW50cnkSCwoDa2V5GAEgASgJEg0K",
+            "BXZhbHVlGAIgASgJOgI4ASKbAQoFU3RhdGUSFQoRU1RBVEVfVU5TUEVDSUZJ",
+            "RUQQABIKCgZRVUVVRUQQARIMCghTVEFSVElORxACEgsKB1JJTkdJTkcQAxIP",
+            "CgtJTl9QUk9HUkVTUxAEEg0KCUNPTVBMRVRFRBAFEgoKBkZBSUxFRBAGEhAK",
+            "DE5PVF9BTlNXRVJFRBAHEggKBEJVU1kQCBIMCghSRUpFQ1RFRBAJIkIKCURp",
+            "cmVjdGlvbhIZChVESVJFQ1RJT05fVU5TUEVDSUZJRUQQABIMCghPVVRHT0lO",
+            "RxABEgwKCElOQ09NSU5HEAIiRQoJVHJhbnNwb3J0EhkKFVRSQU5TUE9SVF9V",
+            "TlNQRUNJRklFRBAAEggKBFBTVE4QARIKCgZDTElFTlQQAhIHCgNTSVAQAzpB",
+            "6kE+Cht2b2ljZS5hcGkuZW5mb25pY2EuY29tL0NhbGwSH3Byb2plY3RzL3tw",
+            "cm9qZWN0fS9jYWxscy97Y2FsbH0iQwoOR2V0Q2FsbFJlcXVlc3QSMQoEbmFt",
+            "ZRgBIAEoCUIj4EEC+kEdCht2b2ljZS5hcGkuZW5mb25pY2EuY29tL0NhbGwi",
+            "fgoQTGlzdENhbGxzUmVxdWVzdBIzCgZwYXJlbnQYASABKAlCI+BBAvpBHRIb",
+            "dm9pY2UuYXBpLmVuZm9uaWNhLmNvbS9DYWxsEhEKCXBhZ2Vfc2l6ZRgCIAEo",
+            "BRISCgpwYWdlX3Rva2VuGAMgASgJEg4KBmZpbHRlchgEIAEoCSJZChFMaXN0",
+            "Q2FsbHNSZXNwb25zZRIrCgVjYWxscxgBIAMoCzIcLmVuZm9uaWNhLnZvaWNl",
+            "LnYxYmV0YTEuQ2FsbBIXCg9uZXh0X3BhZ2VfdG9rZW4YAiABKAky5QIKBUNh",
+            "bGxzEoIBCgdHZXRDYWxsEiYuZW5mb25pY2Eudm9pY2UudjFiZXRhMS5HZXRD",
+            "YWxsUmVxdWVzdBocLmVuZm9uaWNhLnZvaWNlLnYxYmV0YTEuQ2FsbCIxgtPk",
+            "kwIkEiIvdjFiZXRhMS97bmFtZT1wcm9qZWN0cy8qL2NhbGxzLyp92kEEbmFt",
+            "ZRKVAQoJTGlzdENhbGxzEiguZW5mb25pY2Eudm9pY2UudjFiZXRhMS5MaXN0",
+            "Q2FsbHNSZXF1ZXN0GikuZW5mb25pY2Eudm9pY2UudjFiZXRhMS5MaXN0Q2Fs",
+            "bHNSZXNwb25zZSIzgtPkkwIkEiIvdjFiZXRhMS97cGFyZW50PXByb2plY3Rz",
+            "Lyp9L2NhbGxz2kEGcGFyZW50Gj/KQRZ2b2ljZS5hcGkuZW5mb25pY2EuY29t",
+            "0kEjaHR0cHM6Ly9hcGkuZW5mb25pY2EuY29tL2F1dGgvdm9pY2VCgwEKGmNv",
+            "bS5lbmZvbmljYS52b2ljZS52MWJldGExQgpDYWxsc1Byb3RvUAFaM2dpdGh1",
+            "Yi5jb20vZW5mb25pY2EvZW5mb25pY2EtZ28vdm9pY2UvdjFiZXRhMTt2b2lj",
+            "ZfgBAaICBUVORk9OqgIWRW5mb25pY2EuVm9pY2UuVjFCZXRhMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Type.MoneyReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Voice.V1Beta1.Call), global::Enfonica.Voice.V1Beta1.Call.Parser, new[]{ "Name" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Voice.V1Beta1.Call), global::Enfonica.Voice.V1Beta1.Call.Parser, new[]{ "Name", "To", "From", "IsPrivate", "StatusUpdateUri", "HandleUri", "ValidityPeriodSeconds", "Labels", "Transport", "Direction", "ErrorCode", "ErrorMessage", "Price", "State", "CreateTime", "StartTime", "RingTime", "AnswerTime", "EndTime", "Bridged", "OriginatingCall" }, null, new[]{ typeof(global::Enfonica.Voice.V1Beta1.Call.Types.State), typeof(global::Enfonica.Voice.V1Beta1.Call.Types.Direction), typeof(global::Enfonica.Voice.V1Beta1.Call.Types.Transport) }, null, new pbr::GeneratedClrTypeInfo[] { null, }),
             new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Voice.V1Beta1.GetCallRequest), global::Enfonica.Voice.V1Beta1.GetCallRequest.Parser, new[]{ "Name" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Voice.V1Beta1.ListCallsRequest), global::Enfonica.Voice.V1Beta1.ListCallsRequest.Parser, new[]{ "Parent", "PageSize", "PageToken", "StartTime", "EndTime" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Voice.V1Beta1.ListCallsRequest), global::Enfonica.Voice.V1Beta1.ListCallsRequest.Parser, new[]{ "Parent", "PageSize", "PageToken", "Filter" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Voice.V1Beta1.ListCallsResponse), global::Enfonica.Voice.V1Beta1.ListCallsResponse.Parser, new[]{ "Calls", "NextPageToken" }, null, null, null, null)
           }));
     }
@@ -97,6 +120,26 @@ namespace Enfonica.Voice.V1Beta1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public Call(Call other) : this() {
       name_ = other.name_;
+      to_ = other.to_;
+      from_ = other.from_;
+      isPrivate_ = other.isPrivate_;
+      statusUpdateUri_ = other.statusUpdateUri_;
+      handleUri_ = other.handleUri_;
+      validityPeriodSeconds_ = other.validityPeriodSeconds_;
+      labels_ = other.labels_.Clone();
+      transport_ = other.transport_;
+      direction_ = other.direction_;
+      errorCode_ = other.errorCode_;
+      errorMessage_ = other.errorMessage_;
+      price_ = other.price_ != null ? other.price_.Clone() : null;
+      state_ = other.state_;
+      createTime_ = other.createTime_ != null ? other.createTime_.Clone() : null;
+      startTime_ = other.startTime_ != null ? other.startTime_.Clone() : null;
+      ringTime_ = other.ringTime_ != null ? other.ringTime_.Clone() : null;
+      answerTime_ = other.answerTime_ != null ? other.answerTime_.Clone() : null;
+      endTime_ = other.endTime_ != null ? other.endTime_.Clone() : null;
+      bridged_ = other.bridged_;
+      originatingCall_ = other.originatingCall_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -119,6 +162,307 @@ namespace Enfonica.Voice.V1Beta1 {
       }
     }
 
+    /// <summary>Field number for the "to" field.</summary>
+    public const int ToFieldNumber = 2;
+    private string to_ = "";
+    /// <summary>
+    /// The recipient phone number in +E164.
+    /// (-- api-linter: core::0140::prepositions=disabled
+    ///     aip.dev/not-precedent: Not a preposition. --)
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string To {
+      get { return to_; }
+      set {
+        to_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "from" field.</summary>
+    public const int FromFieldNumber = 3;
+    private string from_ = "";
+    /// <summary>
+    /// The phone number in +E164 that initiated the call (the Caller ID / CLI).
+    /// `from` is required on Create, but its value may be hidden in subsequent
+    /// Get/List calls if `private` is true.
+    /// (-- api-linter: core::0140::prepositions=disabled
+    ///     aip.dev/not-precedent: Not a preposition. --)
+    /// (-- api-linter: core::0140::reserved-words=disabled
+    ///     aip.dev/not-precedent: `from` is a core concept in Enfonica APIs. --)
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string From {
+      get { return from_; }
+      set {
+        from_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "is_private" field.</summary>
+    public const int IsPrivateFieldNumber = 4;
+    private bool isPrivate_;
+    /// <summary>
+    /// Whether the Caller ID is private.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IsPrivate {
+      get { return isPrivate_; }
+      set {
+        isPrivate_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "status_update_uri" field.</summary>
+    public const int StatusUpdateUriFieldNumber = 5;
+    private string statusUpdateUri_ = "";
+    /// <summary>
+    /// The URL where status updates should be sent.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string StatusUpdateUri {
+      get { return statusUpdateUri_; }
+      set {
+        statusUpdateUri_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "handle_uri" field.</summary>
+    public const int HandleUriFieldNumber = 6;
+    private string handleUri_ = "";
+    /// <summary>
+    /// The URL where VoiceML requests should be made to control the call.
+    /// Required when creating a call using the API, but may not be present
+    /// otherwise.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string HandleUri {
+      get { return handleUri_; }
+      set {
+        handleUri_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "validity_period_seconds" field.</summary>
+    public const int ValidityPeriodSecondsFieldNumber = 7;
+    private int validityPeriodSeconds_;
+    /// <summary>
+    /// The maximum amount of time the call is allowed to spend in Enfonica's outgoing
+    /// call queue, in seconds. If it is queued for longer than this, then it will be
+    /// aborted.
+    /// (-- api-linter: core::0142::time-field-type=disabled
+    ///     aip.dev/not-precedent: Not a timestamp. --)
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int ValidityPeriodSeconds {
+      get { return validityPeriodSeconds_; }
+      set {
+        validityPeriodSeconds_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "labels" field.</summary>
+    public const int LabelsFieldNumber = 8;
+    private static readonly pbc::MapField<string, string>.Codec _map_labels_codec
+        = new pbc::MapField<string, string>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForString(18, ""), 66);
+    private readonly pbc::MapField<string, string> labels_ = new pbc::MapField<string, string>();
+    /// <summary>
+    /// You can store any arbitrary data against labels. The maximum number of keys is 50.
+    /// The maximum length of all keys and values combined is 10kB.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::MapField<string, string> Labels {
+      get { return labels_; }
+    }
+
+    /// <summary>Field number for the "transport" field.</summary>
+    public const int TransportFieldNumber = 9;
+    private global::Enfonica.Voice.V1Beta1.Call.Types.Transport transport_ = global::Enfonica.Voice.V1Beta1.Call.Types.Transport.Unspecified;
+    /// <summary>
+    /// The transport that carried this call.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Enfonica.Voice.V1Beta1.Call.Types.Transport Transport {
+      get { return transport_; }
+      set {
+        transport_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "direction" field.</summary>
+    public const int DirectionFieldNumber = 10;
+    private global::Enfonica.Voice.V1Beta1.Call.Types.Direction direction_ = global::Enfonica.Voice.V1Beta1.Call.Types.Direction.Unspecified;
+    /// <summary>
+    /// The direction of the call. Can be `outgoing` for calls that are sent or `incoming`
+    /// for calls that are received.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Enfonica.Voice.V1Beta1.Call.Types.Direction Direction {
+      get { return direction_; }
+      set {
+        direction_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "error_code" field.</summary>
+    public const int ErrorCodeFieldNumber = 11;
+    private string errorCode_ = "";
+    /// <summary>
+    /// If the outgoing call failed to be delivered, the reason why.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string ErrorCode {
+      get { return errorCode_; }
+      set {
+        errorCode_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "error_message" field.</summary>
+    public const int ErrorMessageFieldNumber = 12;
+    private string errorMessage_ = "";
+    /// <summary>
+    /// The human readable call associated with the error.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string ErrorMessage {
+      get { return errorMessage_; }
+      set {
+        errorMessage_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "price" field.</summary>
+    public const int PriceFieldNumber = 13;
+    private global::Google.Type.Money price_;
+    /// <summary>
+    /// The price of this call. This may not be populated until a certain stage in the call
+    /// lifecycle.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Type.Money Price {
+      get { return price_; }
+      set {
+        price_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "state" field.</summary>
+    public const int StateFieldNumber = 14;
+    private global::Enfonica.Voice.V1Beta1.Call.Types.State state_ = global::Enfonica.Voice.V1Beta1.Call.Types.State.Unspecified;
+    /// <summary>
+    /// The current state of the call.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Enfonica.Voice.V1Beta1.Call.Types.State State {
+      get { return state_; }
+      set {
+        state_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "create_time" field.</summary>
+    public const int CreateTimeFieldNumber = 16;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp createTime_;
+    /// <summary>
+    /// The creation time of the call.
+    /// Output only.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp CreateTime {
+      get { return createTime_; }
+      set {
+        createTime_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "start_time" field.</summary>
+    public const int StartTimeFieldNumber = 17;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp startTime_;
+    /// <summary>
+    /// The time the call was started.
+    /// For an incoming call, this is the same as `create_time`.
+    /// For an outgoing call, this is the time that the call attempt commenced.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp StartTime {
+      get { return startTime_; }
+      set {
+        startTime_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "ring_time" field.</summary>
+    public const int RingTimeFieldNumber = 18;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp ringTime_;
+    /// <summary>
+    /// The time the call started ringing. Only set for outgoing call.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp RingTime {
+      get { return ringTime_; }
+      set {
+        ringTime_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "answer_time" field.</summary>
+    public const int AnswerTimeFieldNumber = 19;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp answerTime_;
+    /// <summary>
+    /// The time the call was answered.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp AnswerTime {
+      get { return answerTime_; }
+      set {
+        answerTime_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "end_time" field.</summary>
+    public const int EndTimeFieldNumber = 20;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp endTime_;
+    /// <summary>
+    /// The time the call finished.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp EndTime {
+      get { return endTime_; }
+      set {
+        endTime_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "bridged" field.</summary>
+    public const int BridgedFieldNumber = 21;
+    private bool bridged_;
+    /// <summary>
+    /// Was the call bridged with another call at any point?
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Bridged {
+      get { return bridged_; }
+      set {
+        bridged_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "originating_call" field.</summary>
+    public const int OriginatingCallFieldNumber = 22;
+    private string originatingCall_ = "";
+    /// <summary>
+    /// The name of the call that originated this call, set
+    /// for outgoing calls that were created during the execution of another call,
+    /// of the form `projects/*/calls/*`.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string OriginatingCall {
+      get { return originatingCall_; }
+      set {
+        originatingCall_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as Call);
@@ -133,6 +477,26 @@ namespace Enfonica.Voice.V1Beta1 {
         return true;
       }
       if (Name != other.Name) return false;
+      if (To != other.To) return false;
+      if (From != other.From) return false;
+      if (IsPrivate != other.IsPrivate) return false;
+      if (StatusUpdateUri != other.StatusUpdateUri) return false;
+      if (HandleUri != other.HandleUri) return false;
+      if (ValidityPeriodSeconds != other.ValidityPeriodSeconds) return false;
+      if (!Labels.Equals(other.Labels)) return false;
+      if (Transport != other.Transport) return false;
+      if (Direction != other.Direction) return false;
+      if (ErrorCode != other.ErrorCode) return false;
+      if (ErrorMessage != other.ErrorMessage) return false;
+      if (!object.Equals(Price, other.Price)) return false;
+      if (State != other.State) return false;
+      if (!object.Equals(CreateTime, other.CreateTime)) return false;
+      if (!object.Equals(StartTime, other.StartTime)) return false;
+      if (!object.Equals(RingTime, other.RingTime)) return false;
+      if (!object.Equals(AnswerTime, other.AnswerTime)) return false;
+      if (!object.Equals(EndTime, other.EndTime)) return false;
+      if (Bridged != other.Bridged) return false;
+      if (OriginatingCall != other.OriginatingCall) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -140,6 +504,26 @@ namespace Enfonica.Voice.V1Beta1 {
     public override int GetHashCode() {
       int hash = 1;
       if (Name.Length != 0) hash ^= Name.GetHashCode();
+      if (To.Length != 0) hash ^= To.GetHashCode();
+      if (From.Length != 0) hash ^= From.GetHashCode();
+      if (IsPrivate != false) hash ^= IsPrivate.GetHashCode();
+      if (StatusUpdateUri.Length != 0) hash ^= StatusUpdateUri.GetHashCode();
+      if (HandleUri.Length != 0) hash ^= HandleUri.GetHashCode();
+      if (ValidityPeriodSeconds != 0) hash ^= ValidityPeriodSeconds.GetHashCode();
+      hash ^= Labels.GetHashCode();
+      if (Transport != global::Enfonica.Voice.V1Beta1.Call.Types.Transport.Unspecified) hash ^= Transport.GetHashCode();
+      if (Direction != global::Enfonica.Voice.V1Beta1.Call.Types.Direction.Unspecified) hash ^= Direction.GetHashCode();
+      if (ErrorCode.Length != 0) hash ^= ErrorCode.GetHashCode();
+      if (ErrorMessage.Length != 0) hash ^= ErrorMessage.GetHashCode();
+      if (price_ != null) hash ^= Price.GetHashCode();
+      if (State != global::Enfonica.Voice.V1Beta1.Call.Types.State.Unspecified) hash ^= State.GetHashCode();
+      if (createTime_ != null) hash ^= CreateTime.GetHashCode();
+      if (startTime_ != null) hash ^= StartTime.GetHashCode();
+      if (ringTime_ != null) hash ^= RingTime.GetHashCode();
+      if (answerTime_ != null) hash ^= AnswerTime.GetHashCode();
+      if (endTime_ != null) hash ^= EndTime.GetHashCode();
+      if (Bridged != false) hash ^= Bridged.GetHashCode();
+      if (OriginatingCall.Length != 0) hash ^= OriginatingCall.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -160,6 +544,83 @@ namespace Enfonica.Voice.V1Beta1 {
         output.WriteRawTag(10);
         output.WriteString(Name);
       }
+      if (To.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(To);
+      }
+      if (From.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(From);
+      }
+      if (IsPrivate != false) {
+        output.WriteRawTag(32);
+        output.WriteBool(IsPrivate);
+      }
+      if (StatusUpdateUri.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(StatusUpdateUri);
+      }
+      if (HandleUri.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteString(HandleUri);
+      }
+      if (ValidityPeriodSeconds != 0) {
+        output.WriteRawTag(56);
+        output.WriteInt32(ValidityPeriodSeconds);
+      }
+      labels_.WriteTo(output, _map_labels_codec);
+      if (Transport != global::Enfonica.Voice.V1Beta1.Call.Types.Transport.Unspecified) {
+        output.WriteRawTag(72);
+        output.WriteEnum((int) Transport);
+      }
+      if (Direction != global::Enfonica.Voice.V1Beta1.Call.Types.Direction.Unspecified) {
+        output.WriteRawTag(80);
+        output.WriteEnum((int) Direction);
+      }
+      if (ErrorCode.Length != 0) {
+        output.WriteRawTag(90);
+        output.WriteString(ErrorCode);
+      }
+      if (ErrorMessage.Length != 0) {
+        output.WriteRawTag(98);
+        output.WriteString(ErrorMessage);
+      }
+      if (price_ != null) {
+        output.WriteRawTag(106);
+        output.WriteMessage(Price);
+      }
+      if (State != global::Enfonica.Voice.V1Beta1.Call.Types.State.Unspecified) {
+        output.WriteRawTag(112);
+        output.WriteEnum((int) State);
+      }
+      if (createTime_ != null) {
+        output.WriteRawTag(130, 1);
+        output.WriteMessage(CreateTime);
+      }
+      if (startTime_ != null) {
+        output.WriteRawTag(138, 1);
+        output.WriteMessage(StartTime);
+      }
+      if (ringTime_ != null) {
+        output.WriteRawTag(146, 1);
+        output.WriteMessage(RingTime);
+      }
+      if (answerTime_ != null) {
+        output.WriteRawTag(154, 1);
+        output.WriteMessage(AnswerTime);
+      }
+      if (endTime_ != null) {
+        output.WriteRawTag(162, 1);
+        output.WriteMessage(EndTime);
+      }
+      if (Bridged != false) {
+        output.WriteRawTag(168, 1);
+        output.WriteBool(Bridged);
+      }
+      if (OriginatingCall.Length != 0) {
+        output.WriteRawTag(178, 1);
+        output.WriteString(OriginatingCall);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -173,6 +634,83 @@ namespace Enfonica.Voice.V1Beta1 {
         output.WriteRawTag(10);
         output.WriteString(Name);
       }
+      if (To.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(To);
+      }
+      if (From.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(From);
+      }
+      if (IsPrivate != false) {
+        output.WriteRawTag(32);
+        output.WriteBool(IsPrivate);
+      }
+      if (StatusUpdateUri.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(StatusUpdateUri);
+      }
+      if (HandleUri.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteString(HandleUri);
+      }
+      if (ValidityPeriodSeconds != 0) {
+        output.WriteRawTag(56);
+        output.WriteInt32(ValidityPeriodSeconds);
+      }
+      labels_.WriteTo(ref output, _map_labels_codec);
+      if (Transport != global::Enfonica.Voice.V1Beta1.Call.Types.Transport.Unspecified) {
+        output.WriteRawTag(72);
+        output.WriteEnum((int) Transport);
+      }
+      if (Direction != global::Enfonica.Voice.V1Beta1.Call.Types.Direction.Unspecified) {
+        output.WriteRawTag(80);
+        output.WriteEnum((int) Direction);
+      }
+      if (ErrorCode.Length != 0) {
+        output.WriteRawTag(90);
+        output.WriteString(ErrorCode);
+      }
+      if (ErrorMessage.Length != 0) {
+        output.WriteRawTag(98);
+        output.WriteString(ErrorMessage);
+      }
+      if (price_ != null) {
+        output.WriteRawTag(106);
+        output.WriteMessage(Price);
+      }
+      if (State != global::Enfonica.Voice.V1Beta1.Call.Types.State.Unspecified) {
+        output.WriteRawTag(112);
+        output.WriteEnum((int) State);
+      }
+      if (createTime_ != null) {
+        output.WriteRawTag(130, 1);
+        output.WriteMessage(CreateTime);
+      }
+      if (startTime_ != null) {
+        output.WriteRawTag(138, 1);
+        output.WriteMessage(StartTime);
+      }
+      if (ringTime_ != null) {
+        output.WriteRawTag(146, 1);
+        output.WriteMessage(RingTime);
+      }
+      if (answerTime_ != null) {
+        output.WriteRawTag(154, 1);
+        output.WriteMessage(AnswerTime);
+      }
+      if (endTime_ != null) {
+        output.WriteRawTag(162, 1);
+        output.WriteMessage(EndTime);
+      }
+      if (Bridged != false) {
+        output.WriteRawTag(168, 1);
+        output.WriteBool(Bridged);
+      }
+      if (OriginatingCall.Length != 0) {
+        output.WriteRawTag(178, 1);
+        output.WriteString(OriginatingCall);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -184,6 +722,64 @@ namespace Enfonica.Voice.V1Beta1 {
       int size = 0;
       if (Name.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
+      }
+      if (To.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(To);
+      }
+      if (From.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(From);
+      }
+      if (IsPrivate != false) {
+        size += 1 + 1;
+      }
+      if (StatusUpdateUri.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(StatusUpdateUri);
+      }
+      if (HandleUri.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(HandleUri);
+      }
+      if (ValidityPeriodSeconds != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ValidityPeriodSeconds);
+      }
+      size += labels_.CalculateSize(_map_labels_codec);
+      if (Transport != global::Enfonica.Voice.V1Beta1.Call.Types.Transport.Unspecified) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Transport);
+      }
+      if (Direction != global::Enfonica.Voice.V1Beta1.Call.Types.Direction.Unspecified) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Direction);
+      }
+      if (ErrorCode.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ErrorCode);
+      }
+      if (ErrorMessage.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ErrorMessage);
+      }
+      if (price_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Price);
+      }
+      if (State != global::Enfonica.Voice.V1Beta1.Call.Types.State.Unspecified) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) State);
+      }
+      if (createTime_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(CreateTime);
+      }
+      if (startTime_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(StartTime);
+      }
+      if (ringTime_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(RingTime);
+      }
+      if (answerTime_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(AnswerTime);
+      }
+      if (endTime_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(EndTime);
+      }
+      if (Bridged != false) {
+        size += 2 + 1;
+      }
+      if (OriginatingCall.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(OriginatingCall);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -198,6 +794,82 @@ namespace Enfonica.Voice.V1Beta1 {
       }
       if (other.Name.Length != 0) {
         Name = other.Name;
+      }
+      if (other.To.Length != 0) {
+        To = other.To;
+      }
+      if (other.From.Length != 0) {
+        From = other.From;
+      }
+      if (other.IsPrivate != false) {
+        IsPrivate = other.IsPrivate;
+      }
+      if (other.StatusUpdateUri.Length != 0) {
+        StatusUpdateUri = other.StatusUpdateUri;
+      }
+      if (other.HandleUri.Length != 0) {
+        HandleUri = other.HandleUri;
+      }
+      if (other.ValidityPeriodSeconds != 0) {
+        ValidityPeriodSeconds = other.ValidityPeriodSeconds;
+      }
+      labels_.Add(other.labels_);
+      if (other.Transport != global::Enfonica.Voice.V1Beta1.Call.Types.Transport.Unspecified) {
+        Transport = other.Transport;
+      }
+      if (other.Direction != global::Enfonica.Voice.V1Beta1.Call.Types.Direction.Unspecified) {
+        Direction = other.Direction;
+      }
+      if (other.ErrorCode.Length != 0) {
+        ErrorCode = other.ErrorCode;
+      }
+      if (other.ErrorMessage.Length != 0) {
+        ErrorMessage = other.ErrorMessage;
+      }
+      if (other.price_ != null) {
+        if (price_ == null) {
+          Price = new global::Google.Type.Money();
+        }
+        Price.MergeFrom(other.Price);
+      }
+      if (other.State != global::Enfonica.Voice.V1Beta1.Call.Types.State.Unspecified) {
+        State = other.State;
+      }
+      if (other.createTime_ != null) {
+        if (createTime_ == null) {
+          CreateTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        CreateTime.MergeFrom(other.CreateTime);
+      }
+      if (other.startTime_ != null) {
+        if (startTime_ == null) {
+          StartTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        StartTime.MergeFrom(other.StartTime);
+      }
+      if (other.ringTime_ != null) {
+        if (ringTime_ == null) {
+          RingTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        RingTime.MergeFrom(other.RingTime);
+      }
+      if (other.answerTime_ != null) {
+        if (answerTime_ == null) {
+          AnswerTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        AnswerTime.MergeFrom(other.AnswerTime);
+      }
+      if (other.endTime_ != null) {
+        if (endTime_ == null) {
+          EndTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        EndTime.MergeFrom(other.EndTime);
+      }
+      if (other.Bridged != false) {
+        Bridged = other.Bridged;
+      }
+      if (other.OriginatingCall.Length != 0) {
+        OriginatingCall = other.OriginatingCall;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -215,6 +887,104 @@ namespace Enfonica.Voice.V1Beta1 {
             break;
           case 10: {
             Name = input.ReadString();
+            break;
+          }
+          case 18: {
+            To = input.ReadString();
+            break;
+          }
+          case 26: {
+            From = input.ReadString();
+            break;
+          }
+          case 32: {
+            IsPrivate = input.ReadBool();
+            break;
+          }
+          case 42: {
+            StatusUpdateUri = input.ReadString();
+            break;
+          }
+          case 50: {
+            HandleUri = input.ReadString();
+            break;
+          }
+          case 56: {
+            ValidityPeriodSeconds = input.ReadInt32();
+            break;
+          }
+          case 66: {
+            labels_.AddEntriesFrom(input, _map_labels_codec);
+            break;
+          }
+          case 72: {
+            Transport = (global::Enfonica.Voice.V1Beta1.Call.Types.Transport) input.ReadEnum();
+            break;
+          }
+          case 80: {
+            Direction = (global::Enfonica.Voice.V1Beta1.Call.Types.Direction) input.ReadEnum();
+            break;
+          }
+          case 90: {
+            ErrorCode = input.ReadString();
+            break;
+          }
+          case 98: {
+            ErrorMessage = input.ReadString();
+            break;
+          }
+          case 106: {
+            if (price_ == null) {
+              Price = new global::Google.Type.Money();
+            }
+            input.ReadMessage(Price);
+            break;
+          }
+          case 112: {
+            State = (global::Enfonica.Voice.V1Beta1.Call.Types.State) input.ReadEnum();
+            break;
+          }
+          case 130: {
+            if (createTime_ == null) {
+              CreateTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(CreateTime);
+            break;
+          }
+          case 138: {
+            if (startTime_ == null) {
+              StartTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(StartTime);
+            break;
+          }
+          case 146: {
+            if (ringTime_ == null) {
+              RingTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(RingTime);
+            break;
+          }
+          case 154: {
+            if (answerTime_ == null) {
+              AnswerTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(AnswerTime);
+            break;
+          }
+          case 162: {
+            if (endTime_ == null) {
+              EndTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(EndTime);
+            break;
+          }
+          case 168: {
+            Bridged = input.ReadBool();
+            break;
+          }
+          case 178: {
+            OriginatingCall = input.ReadString();
             break;
           }
         }
@@ -235,10 +1005,202 @@ namespace Enfonica.Voice.V1Beta1 {
             Name = input.ReadString();
             break;
           }
+          case 18: {
+            To = input.ReadString();
+            break;
+          }
+          case 26: {
+            From = input.ReadString();
+            break;
+          }
+          case 32: {
+            IsPrivate = input.ReadBool();
+            break;
+          }
+          case 42: {
+            StatusUpdateUri = input.ReadString();
+            break;
+          }
+          case 50: {
+            HandleUri = input.ReadString();
+            break;
+          }
+          case 56: {
+            ValidityPeriodSeconds = input.ReadInt32();
+            break;
+          }
+          case 66: {
+            labels_.AddEntriesFrom(ref input, _map_labels_codec);
+            break;
+          }
+          case 72: {
+            Transport = (global::Enfonica.Voice.V1Beta1.Call.Types.Transport) input.ReadEnum();
+            break;
+          }
+          case 80: {
+            Direction = (global::Enfonica.Voice.V1Beta1.Call.Types.Direction) input.ReadEnum();
+            break;
+          }
+          case 90: {
+            ErrorCode = input.ReadString();
+            break;
+          }
+          case 98: {
+            ErrorMessage = input.ReadString();
+            break;
+          }
+          case 106: {
+            if (price_ == null) {
+              Price = new global::Google.Type.Money();
+            }
+            input.ReadMessage(Price);
+            break;
+          }
+          case 112: {
+            State = (global::Enfonica.Voice.V1Beta1.Call.Types.State) input.ReadEnum();
+            break;
+          }
+          case 130: {
+            if (createTime_ == null) {
+              CreateTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(CreateTime);
+            break;
+          }
+          case 138: {
+            if (startTime_ == null) {
+              StartTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(StartTime);
+            break;
+          }
+          case 146: {
+            if (ringTime_ == null) {
+              RingTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(RingTime);
+            break;
+          }
+          case 154: {
+            if (answerTime_ == null) {
+              AnswerTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(AnswerTime);
+            break;
+          }
+          case 162: {
+            if (endTime_ == null) {
+              EndTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(EndTime);
+            break;
+          }
+          case 168: {
+            Bridged = input.ReadBool();
+            break;
+          }
+          case 178: {
+            OriginatingCall = input.ReadString();
+            break;
+          }
         }
       }
     }
     #endif
+
+    #region Nested types
+    /// <summary>Container for nested types declared in the Call message type.</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static partial class Types {
+      /// <summary>
+      /// The state of a call.
+      /// </summary>
+      public enum State {
+        /// <summary>
+        /// Unspecified status.
+        /// </summary>
+        [pbr::OriginalName("STATE_UNSPECIFIED")] Unspecified = 0,
+        /// <summary>
+        /// The call has been queued.
+        /// </summary>
+        [pbr::OriginalName("QUEUED")] Queued = 1,
+        /// <summary>
+        /// The call is being attempted.
+        /// </summary>
+        [pbr::OriginalName("STARTING")] Starting = 2,
+        /// <summary>
+        /// The remote party is ringing.
+        /// </summary>
+        [pbr::OriginalName("RINGING")] Ringing = 3,
+        /// <summary>
+        /// The call has been answered.
+        /// </summary>
+        [pbr::OriginalName("IN_PROGRESS")] InProgress = 4,
+        /// <summary>
+        /// The call was answered and is now finished.
+        /// </summary>
+        [pbr::OriginalName("COMPLETED")] Completed = 5,
+        /// <summary>
+        /// The call could not be made.
+        /// </summary>
+        [pbr::OriginalName("FAILED")] Failed = 6,
+        /// <summary>
+        /// The call was not answered. This is the same as the call waiting to
+        /// be answered and timing out.
+        /// </summary>
+        [pbr::OriginalName("NOT_ANSWERED")] NotAnswered = 7,
+        /// <summary>
+        /// The remote party indicated they were busy.
+        /// </summary>
+        [pbr::OriginalName("BUSY")] Busy = 8,
+        /// <summary>
+        /// The call was not answered and it was actively rejected.
+        /// </summary>
+        [pbr::OriginalName("REJECTED")] Rejected = 9,
+      }
+
+      /// <summary>
+      /// The direction of a call.
+      /// </summary>
+      public enum Direction {
+        /// <summary>
+        /// Unspecified direction.
+        /// </summary>
+        [pbr::OriginalName("DIRECTION_UNSPECIFIED")] Unspecified = 0,
+        /// <summary>
+        /// An outgoing call.
+        /// </summary>
+        [pbr::OriginalName("OUTGOING")] Outgoing = 1,
+        /// <summary>
+        /// An incoming call
+        /// </summary>
+        [pbr::OriginalName("INCOMING")] Incoming = 2,
+      }
+
+      /// <summary>
+      /// The transport of a call.
+      /// </summary>
+      public enum Transport {
+        /// <summary>
+        /// Unspecified transport.
+        /// </summary>
+        [pbr::OriginalName("TRANSPORT_UNSPECIFIED")] Unspecified = 0,
+        /// <summary>
+        /// The call was transported over PSTN (Public Switched Telephone Network).
+        /// </summary>
+        [pbr::OriginalName("PSTN")] Pstn = 1,
+        /// <summary>
+        /// The call was transported over an Enfonica Client (WebRTC).
+        /// </summary>
+        [pbr::OriginalName("CLIENT")] Client = 2,
+        /// <summary>
+        /// The call was transported over SIP.
+        /// </summary>
+        [pbr::OriginalName("SIP")] Sip = 3,
+      }
+
+    }
+    #endregion
 
   }
 
@@ -456,8 +1418,7 @@ namespace Enfonica.Voice.V1Beta1 {
       parent_ = other.parent_;
       pageSize_ = other.pageSize_;
       pageToken_ = other.pageToken_;
-      startTime_ = other.startTime_ != null ? other.startTime_.Clone() : null;
-      endTime_ = other.endTime_ != null ? other.endTime_.Clone() : null;
+      filter_ = other.filter_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -511,37 +1472,31 @@ namespace Enfonica.Voice.V1Beta1 {
       }
     }
 
-    /// <summary>Field number for the "start_time" field.</summary>
-    public const int StartTimeFieldNumber = 4;
-    private global::Google.Protobuf.WellKnownTypes.Timestamp startTime_;
+    /// <summary>Field number for the "filter" field.</summary>
+    public const int FilterFieldNumber = 4;
+    private string filter_ = "";
     /// <summary>
-    /// The timestamp (inclusive) from which to retrieve calls. The
-    /// create_time of the Call is used.
-    /// (-- api-linter: core::0132::request-unknown-fields=disabled
-    ///     aip.dev/not-precedent: List has additional fields in this package. --)
+    /// Filter string to specify which results should be returned.
+    ///
+    /// The following fields can be filtered:
+    /// - `createTime`
+    /// - `to`
+    /// - `from`
+    /// - `state`
+    /// - `direction`
+    /// - `transport`
+    ///
+    /// For example:
+    /// createTime >= '2021-01-01T06:00:00.0Z' AND createTime &lt; '2021-02-01' AND
+    /// state = COMPLETED OR state = BUSY AND to = '+61*' OR from = '+61*'
+    ///
+    /// Note that OR has higher precendence than AND.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Google.Protobuf.WellKnownTypes.Timestamp StartTime {
-      get { return startTime_; }
+    public string Filter {
+      get { return filter_; }
       set {
-        startTime_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "end_time" field.</summary>
-    public const int EndTimeFieldNumber = 5;
-    private global::Google.Protobuf.WellKnownTypes.Timestamp endTime_;
-    /// <summary>
-    /// The timestamp (exclusive) until which to retrieve calls. The
-    /// create_time of the Call is used.
-    /// (-- api-linter: core::0132::request-unknown-fields=disabled
-    ///     aip.dev/not-precedent: List has additional fields in this package. --)
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Google.Protobuf.WellKnownTypes.Timestamp EndTime {
-      get { return endTime_; }
-      set {
-        endTime_ = value;
+        filter_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -561,8 +1516,7 @@ namespace Enfonica.Voice.V1Beta1 {
       if (Parent != other.Parent) return false;
       if (PageSize != other.PageSize) return false;
       if (PageToken != other.PageToken) return false;
-      if (!object.Equals(StartTime, other.StartTime)) return false;
-      if (!object.Equals(EndTime, other.EndTime)) return false;
+      if (Filter != other.Filter) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -572,8 +1526,7 @@ namespace Enfonica.Voice.V1Beta1 {
       if (Parent.Length != 0) hash ^= Parent.GetHashCode();
       if (PageSize != 0) hash ^= PageSize.GetHashCode();
       if (PageToken.Length != 0) hash ^= PageToken.GetHashCode();
-      if (startTime_ != null) hash ^= StartTime.GetHashCode();
-      if (endTime_ != null) hash ^= EndTime.GetHashCode();
+      if (Filter.Length != 0) hash ^= Filter.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -602,13 +1555,9 @@ namespace Enfonica.Voice.V1Beta1 {
         output.WriteRawTag(26);
         output.WriteString(PageToken);
       }
-      if (startTime_ != null) {
+      if (Filter.Length != 0) {
         output.WriteRawTag(34);
-        output.WriteMessage(StartTime);
-      }
-      if (endTime_ != null) {
-        output.WriteRawTag(42);
-        output.WriteMessage(EndTime);
+        output.WriteString(Filter);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -631,13 +1580,9 @@ namespace Enfonica.Voice.V1Beta1 {
         output.WriteRawTag(26);
         output.WriteString(PageToken);
       }
-      if (startTime_ != null) {
+      if (Filter.Length != 0) {
         output.WriteRawTag(34);
-        output.WriteMessage(StartTime);
-      }
-      if (endTime_ != null) {
-        output.WriteRawTag(42);
-        output.WriteMessage(EndTime);
+        output.WriteString(Filter);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -657,11 +1602,8 @@ namespace Enfonica.Voice.V1Beta1 {
       if (PageToken.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(PageToken);
       }
-      if (startTime_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(StartTime);
-      }
-      if (endTime_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(EndTime);
+      if (Filter.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Filter);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -683,17 +1625,8 @@ namespace Enfonica.Voice.V1Beta1 {
       if (other.PageToken.Length != 0) {
         PageToken = other.PageToken;
       }
-      if (other.startTime_ != null) {
-        if (startTime_ == null) {
-          StartTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-        }
-        StartTime.MergeFrom(other.StartTime);
-      }
-      if (other.endTime_ != null) {
-        if (endTime_ == null) {
-          EndTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-        }
-        EndTime.MergeFrom(other.EndTime);
+      if (other.Filter.Length != 0) {
+        Filter = other.Filter;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -722,17 +1655,7 @@ namespace Enfonica.Voice.V1Beta1 {
             break;
           }
           case 34: {
-            if (startTime_ == null) {
-              StartTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-            }
-            input.ReadMessage(StartTime);
-            break;
-          }
-          case 42: {
-            if (endTime_ == null) {
-              EndTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-            }
-            input.ReadMessage(EndTime);
+            Filter = input.ReadString();
             break;
           }
         }
@@ -762,17 +1685,7 @@ namespace Enfonica.Voice.V1Beta1 {
             break;
           }
           case 34: {
-            if (startTime_ == null) {
-              StartTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-            }
-            input.ReadMessage(StartTime);
-            break;
-          }
-          case 42: {
-            if (endTime_ == null) {
-              EndTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-            }
-            input.ReadMessage(EndTime);
+            Filter = input.ReadString();
             break;
           }
         }

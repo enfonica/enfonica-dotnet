@@ -78,7 +78,7 @@ namespace Enfonica.Numbering.V1Beta1.Snippets
             // End snippet
         }
 
-        /// <summary>Snippet for SearchPhoneNumbers</summary>
+        /// <summary>Snippet for SearchPhoneNumbersAsync</summary>
         public async Task SearchPhoneNumbersRequestObjectAsync()
         {
             // Snippet: SearchPhoneNumbersAsync(SearchPhoneNumbersRequest, CallSettings)

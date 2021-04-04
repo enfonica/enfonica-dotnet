@@ -31,80 +31,84 @@ namespace Enfonica.Numbering.V1Beta1 {
             "dG8aF2dvb2dsZS9hcGkvY2xpZW50LnByb3RvGh9nb29nbGUvYXBpL2ZpZWxk",
             "X2JlaGF2aW9yLnByb3RvGhlnb29nbGUvYXBpL3Jlc291cmNlLnByb3RvGi5l",
             "bmZvbmljYS9udW1iZXJpbmcvdjFiZXRhMS9waG9uZV9udW1iZXJzLnByb3Rv",
-            "ItoFChNQaG9uZU51bWJlckluc3RhbmNlEgwKBG5hbWUYASABKAkSPQoMcGhv",
+            "IpkHChNQaG9uZU51bWJlckluc3RhbmNlEgwKBG5hbWUYASABKAkSPQoMcGhv",
             "bmVfbnVtYmVyGAIgASgLMicuZW5mb25pY2EubnVtYmVyaW5nLnYxYmV0YTEu",
             "UGhvbmVOdW1iZXISFAoMZGlzcGxheV9uYW1lGAMgASgJEksKBmxhYmVscxgE",
             "IAMoCzI7LmVuZm9uaWNhLm51bWJlcmluZy52MWJldGExLlBob25lTnVtYmVy",
             "SW5zdGFuY2UuTGFiZWxzRW50cnkSJQodaW5jb21pbmdfbWVzc2FnZV9oYW5k",
             "bGVyX3VyaXMYBSADKAkSIgoaaW5jb21pbmdfY2FsbF9oYW5kbGVyX3VyaXMY",
-            "BiADKAkSNAoLY3JlYXRlX3RpbWUYCiABKAsyGi5nb29nbGUucHJvdG9idWYu",
-            "VGltZXN0YW1wQgPgQQMSNAoLZGVsZXRlX3RpbWUYCyABKAsyGi5nb29nbGUu",
-            "cHJvdG9idWYuVGltZXN0YW1wQgPgQQMSXAoPbGlmZWN5Y2xlX3N0YXRlGAwg",
-            "ASgOMj4uZW5mb25pY2EubnVtYmVyaW5nLnYxYmV0YTEuUGhvbmVOdW1iZXJJ",
-            "bnN0YW5jZS5MaWZlY3ljbGVTdGF0ZUID4EEDGi0KC0xhYmVsc0VudHJ5EgsK",
-            "A2tleRgBIAEoCRINCgV2YWx1ZRgCIAEoCToCOAEiWQoOTGlmZWN5Y2xlU3Rh",
-            "dGUSHwobTElGRUNZQ0xFX1NUQVRFX1VOU1BFQ0lGSUVEEAASCgoGQUNUSVZF",
-            "EAESCwoHREVMRVRFRBACEg0KCVNVU1BFTkRFRBADOnTqQXEKLm51bWJlcmlu",
-            "Zy5hcGkuZW5mb25pY2EuY29tL1Bob25lTnVtYmVySW5zdGFuY2USP3Byb2pl",
-            "Y3RzL3twcm9qZWN0fS9waG9uZU51bWJlckluc3RhbmNlcy97cGhvbmVfbnVt",
-            "YmVyX2luc3RhbmNlfSK/AQogQ3JlYXRlUGhvbmVOdW1iZXJJbnN0YW5jZVJl",
-            "cXVlc3QSRgoGcGFyZW50GAEgASgJQjbgQQL6QTASLm51bWJlcmluZy5hcGku",
-            "ZW5mb25pY2EuY29tL1Bob25lTnVtYmVySW5zdGFuY2USUwoVcGhvbmVfbnVt",
-            "YmVyX2luc3RhbmNlGAIgASgLMi8uZW5mb25pY2EubnVtYmVyaW5nLnYxYmV0",
-            "YTEuUGhvbmVOdW1iZXJJbnN0YW5jZUID4EECImUKHUdldFBob25lTnVtYmVy",
-            "SW5zdGFuY2VSZXF1ZXN0EkQKBG5hbWUYASABKAlCNuBBAvpBMAoubnVtYmVy",
-            "aW5nLmFwaS5lbmZvbmljYS5jb20vUGhvbmVOdW1iZXJJbnN0YW5jZSK5AQof",
-            "TGlzdFBob25lTnVtYmVySW5zdGFuY2VzUmVxdWVzdBJGCgZwYXJlbnQYASAB",
-            "KAlCNuBBAvpBMBIubnVtYmVyaW5nLmFwaS5lbmZvbmljYS5jb20vUGhvbmVO",
-            "dW1iZXJJbnN0YW5jZRIRCglwYWdlX3NpemUYAiABKAUSEgoKcGFnZV90b2tl",
-            "bhgDIAEoCRIOCgZwcmVmaXgYBCABKAkSFwoPaW5jbHVkZV9kZWxldGVkGAUg",
-            "ASgIIowBCiBMaXN0UGhvbmVOdW1iZXJJbnN0YW5jZXNSZXNwb25zZRJPChZw",
-            "aG9uZV9udW1iZXJfaW5zdGFuY2VzGAEgAygLMi8uZW5mb25pY2EubnVtYmVy",
-            "aW5nLnYxYmV0YTEuUGhvbmVOdW1iZXJJbnN0YW5jZRIXCg9uZXh0X3BhZ2Vf",
-            "dG9rZW4YAiABKAki7gEKIFVwZGF0ZVBob25lTnVtYmVySW5zdGFuY2VSZXF1",
-            "ZXN0EkQKBG5hbWUYASABKAlCNuBBAvpBMAoubnVtYmVyaW5nLmFwaS5lbmZv",
-            "bmljYS5jb20vUGhvbmVOdW1iZXJJbnN0YW5jZRJTChVwaG9uZV9udW1iZXJf",
-            "aW5zdGFuY2UYAiABKAsyLy5lbmZvbmljYS5udW1iZXJpbmcudjFiZXRhMS5Q",
-            "aG9uZU51bWJlckluc3RhbmNlQgPgQQISLwoLdXBkYXRlX21hc2sYAyABKAsy",
-            "Gi5nb29nbGUucHJvdG9idWYuRmllbGRNYXNrImgKIERlbGV0ZVBob25lTnVt",
-            "YmVySW5zdGFuY2VSZXF1ZXN0EkQKBG5hbWUYASABKAlCNuBBAvpBMAoubnVt",
-            "YmVyaW5nLmFwaS5lbmZvbmljYS5jb20vUGhvbmVOdW1iZXJJbnN0YW5jZTLZ",
-            "CQoUUGhvbmVOdW1iZXJJbnN0YW5jZXMS+wEKGUNyZWF0ZVBob25lTnVtYmVy",
-            "SW5zdGFuY2USPC5lbmZvbmljYS5udW1iZXJpbmcudjFiZXRhMS5DcmVhdGVQ",
-            "aG9uZU51bWJlckluc3RhbmNlUmVxdWVzdBovLmVuZm9uaWNhLm51bWJlcmlu",
-            "Zy52MWJldGExLlBob25lTnVtYmVySW5zdGFuY2Uib4LT5JMCSiIxL3YxYmV0",
-            "YTEve3BhcmVudD1wcm9qZWN0cy8qfS9waG9uZU51bWJlckluc3RhbmNlczoV",
-            "cGhvbmVfbnVtYmVyX2luc3RhbmNl2kEccGFyZW50LHBob25lX251bWJlcl9p",
-            "bnN0YW5jZRLGAQoWR2V0UGhvbmVOdW1iZXJJbnN0YW5jZRI5LmVuZm9uaWNh",
-            "Lm51bWJlcmluZy52MWJldGExLkdldFBob25lTnVtYmVySW5zdGFuY2VSZXF1",
-            "ZXN0Gi8uZW5mb25pY2EubnVtYmVyaW5nLnYxYmV0YTEuUGhvbmVOdW1iZXJJ",
-            "bnN0YW5jZSJAgtPkkwIzEjEvdjFiZXRhMS97bmFtZT1wcm9qZWN0cy8qL3Bo",
-            "b25lTnVtYmVySW5zdGFuY2VzLyp92kEEbmFtZRLZAQoYTGlzdFBob25lTnVt",
-            "YmVySW5zdGFuY2VzEjsuZW5mb25pY2EubnVtYmVyaW5nLnYxYmV0YTEuTGlz",
-            "dFBob25lTnVtYmVySW5zdGFuY2VzUmVxdWVzdBo8LmVuZm9uaWNhLm51bWJl",
-            "cmluZy52MWJldGExLkxpc3RQaG9uZU51bWJlckluc3RhbmNlc1Jlc3BvbnNl",
-            "IkKC0+STAjMSMS92MWJldGExL3twYXJlbnQ9cHJvamVjdHMvKn0vcGhvbmVO",
-            "dW1iZXJJbnN0YW5jZXPaQQZwYXJlbnQShQIKGVVwZGF0ZVBob25lTnVtYmVy",
-            "SW5zdGFuY2USPC5lbmZvbmljYS5udW1iZXJpbmcudjFiZXRhMS5VcGRhdGVQ",
-            "aG9uZU51bWJlckluc3RhbmNlUmVxdWVzdBovLmVuZm9uaWNhLm51bWJlcmlu",
-            "Zy52MWJldGExLlBob25lTnVtYmVySW5zdGFuY2UieYLT5JMCSjIxL3YxYmV0",
-            "YTEve25hbWU9cHJvamVjdHMvKi9waG9uZU51bWJlckluc3RhbmNlcy8qfToV",
-            "cGhvbmVfbnVtYmVyX2luc3RhbmNl2kEmbmFtZSxwaG9uZV9udW1iZXJfaW5z",
-            "dGFuY2UsdXBkYXRlX21hc2sSzAEKGURlbGV0ZVBob25lTnVtYmVySW5zdGFu",
-            "Y2USPC5lbmZvbmljYS5udW1iZXJpbmcudjFiZXRhMS5EZWxldGVQaG9uZU51",
-            "bWJlckluc3RhbmNlUmVxdWVzdBovLmVuZm9uaWNhLm51bWJlcmluZy52MWJl",
-            "dGExLlBob25lTnVtYmVySW5zdGFuY2UiQILT5JMCMyoxL3YxYmV0YTEve25h",
-            "bWU9cHJvamVjdHMvKi9waG9uZU51bWJlckluc3RhbmNlcy8qfdpBBG5hbWUa",
-            "R8pBGm51bWJlcmluZy5hcGkuZW5mb25pY2EuY29t0kEnaHR0cHM6Ly9hcGku",
-            "ZW5mb25pY2EuY29tL2F1dGgvbnVtYmVyaW5nQqIBCh5jb20uZW5mb25pY2Eu",
-            "bnVtYmVyaW5nLnYxYmV0YTFCGVBob25lTnVtYmVySW5zdGFuY2VzUHJvdG9Q",
-            "AVo7Z2l0aHViLmNvbS9lbmZvbmljYS9lbmZvbmljYS1nby9udW1iZXJpbmcv",
-            "djFiZXRhMTtudW1iZXJpbmf4AQGiAgVFTkZPTqoCGkVuZm9uaWNhLk51bWJl",
-            "cmluZy5WMUJldGExYgZwcm90bzM="));
+            "BiADKAkSYAoWY2FsbF9yZWNvcmRpbmdfdHJpZ2dlchgHIAEoDjJALmVuZm9u",
+            "aWNhLm51bWJlcmluZy52MWJldGExLlBob25lTnVtYmVySW5zdGFuY2UuUmVj",
+            "b3JkaW5nVHJpZ2dlchI0CgtjcmVhdGVfdGltZRgKIAEoCzIaLmdvb2dsZS5w",
+            "cm90b2J1Zi5UaW1lc3RhbXBCA+BBAxI0CgtkZWxldGVfdGltZRgLIAEoCzIa",
+            "Lmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCA+BBAxJcCg9saWZlY3ljbGVf",
+            "c3RhdGUYDCABKA4yPi5lbmZvbmljYS5udW1iZXJpbmcudjFiZXRhMS5QaG9u",
+            "ZU51bWJlckluc3RhbmNlLkxpZmVjeWNsZVN0YXRlQgPgQQMaLQoLTGFiZWxz",
+            "RW50cnkSCwoDa2V5GAEgASgJEg0KBXZhbHVlGAIgASgJOgI4ASJZCg5MaWZl",
+            "Y3ljbGVTdGF0ZRIfChtMSUZFQ1lDTEVfU1RBVEVfVU5TUEVDSUZJRUQQABIK",
+            "CgZBQ1RJVkUQARILCgdERUxFVEVEEAISDQoJU1VTUEVOREVEEAMiWwoQUmVj",
+            "b3JkaW5nVHJpZ2dlchIhCh1SRUNPUkRJTkdfVFJJR0dFUl9VTlNQRUNJRklF",
+            "RBAAEgwKCERJU0FCTEVEEAESCgoGQU5TV0VSEAISCgoGQlJJREdFEAM6dOpB",
+            "cQoubnVtYmVyaW5nLmFwaS5lbmZvbmljYS5jb20vUGhvbmVOdW1iZXJJbnN0",
+            "YW5jZRI/cHJvamVjdHMve3Byb2plY3R9L3Bob25lTnVtYmVySW5zdGFuY2Vz",
+            "L3twaG9uZV9udW1iZXJfaW5zdGFuY2V9Ir8BCiBDcmVhdGVQaG9uZU51bWJl",
+            "ckluc3RhbmNlUmVxdWVzdBJGCgZwYXJlbnQYASABKAlCNuBBAvpBMBIubnVt",
+            "YmVyaW5nLmFwaS5lbmZvbmljYS5jb20vUGhvbmVOdW1iZXJJbnN0YW5jZRJT",
+            "ChVwaG9uZV9udW1iZXJfaW5zdGFuY2UYAiABKAsyLy5lbmZvbmljYS5udW1i",
+            "ZXJpbmcudjFiZXRhMS5QaG9uZU51bWJlckluc3RhbmNlQgPgQQIiZQodR2V0",
+            "UGhvbmVOdW1iZXJJbnN0YW5jZVJlcXVlc3QSRAoEbmFtZRgBIAEoCUI24EEC",
+            "+kEwCi5udW1iZXJpbmcuYXBpLmVuZm9uaWNhLmNvbS9QaG9uZU51bWJlcklu",
+            "c3RhbmNlIrkBCh9MaXN0UGhvbmVOdW1iZXJJbnN0YW5jZXNSZXF1ZXN0EkYK",
+            "BnBhcmVudBgBIAEoCUI24EEC+kEwEi5udW1iZXJpbmcuYXBpLmVuZm9uaWNh",
+            "LmNvbS9QaG9uZU51bWJlckluc3RhbmNlEhEKCXBhZ2Vfc2l6ZRgCIAEoBRIS",
+            "CgpwYWdlX3Rva2VuGAMgASgJEg4KBnByZWZpeBgEIAEoCRIXCg9pbmNsdWRl",
+            "X2RlbGV0ZWQYBSABKAgijAEKIExpc3RQaG9uZU51bWJlckluc3RhbmNlc1Jl",
+            "c3BvbnNlEk8KFnBob25lX251bWJlcl9pbnN0YW5jZXMYASADKAsyLy5lbmZv",
+            "bmljYS5udW1iZXJpbmcudjFiZXRhMS5QaG9uZU51bWJlckluc3RhbmNlEhcK",
+            "D25leHRfcGFnZV90b2tlbhgCIAEoCSLuAQogVXBkYXRlUGhvbmVOdW1iZXJJ",
+            "bnN0YW5jZVJlcXVlc3QSRAoEbmFtZRgBIAEoCUI24EEC+kEwCi5udW1iZXJp",
+            "bmcuYXBpLmVuZm9uaWNhLmNvbS9QaG9uZU51bWJlckluc3RhbmNlElMKFXBo",
+            "b25lX251bWJlcl9pbnN0YW5jZRgCIAEoCzIvLmVuZm9uaWNhLm51bWJlcmlu",
+            "Zy52MWJldGExLlBob25lTnVtYmVySW5zdGFuY2VCA+BBAhIvCgt1cGRhdGVf",
+            "bWFzaxgDIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5GaWVsZE1hc2siaAogRGVs",
+            "ZXRlUGhvbmVOdW1iZXJJbnN0YW5jZVJlcXVlc3QSRAoEbmFtZRgBIAEoCUI2",
+            "4EEC+kEwCi5udW1iZXJpbmcuYXBpLmVuZm9uaWNhLmNvbS9QaG9uZU51bWJl",
+            "ckluc3RhbmNlMtkJChRQaG9uZU51bWJlckluc3RhbmNlcxL7AQoZQ3JlYXRl",
+            "UGhvbmVOdW1iZXJJbnN0YW5jZRI8LmVuZm9uaWNhLm51bWJlcmluZy52MWJl",
+            "dGExLkNyZWF0ZVBob25lTnVtYmVySW5zdGFuY2VSZXF1ZXN0Gi8uZW5mb25p",
+            "Y2EubnVtYmVyaW5nLnYxYmV0YTEuUGhvbmVOdW1iZXJJbnN0YW5jZSJvgtPk",
+            "kwJKIjEvdjFiZXRhMS97cGFyZW50PXByb2plY3RzLyp9L3Bob25lTnVtYmVy",
+            "SW5zdGFuY2VzOhVwaG9uZV9udW1iZXJfaW5zdGFuY2XaQRxwYXJlbnQscGhv",
+            "bmVfbnVtYmVyX2luc3RhbmNlEsYBChZHZXRQaG9uZU51bWJlckluc3RhbmNl",
+            "EjkuZW5mb25pY2EubnVtYmVyaW5nLnYxYmV0YTEuR2V0UGhvbmVOdW1iZXJJ",
+            "bnN0YW5jZVJlcXVlc3QaLy5lbmZvbmljYS5udW1iZXJpbmcudjFiZXRhMS5Q",
+            "aG9uZU51bWJlckluc3RhbmNlIkCC0+STAjMSMS92MWJldGExL3tuYW1lPXBy",
+            "b2plY3RzLyovcGhvbmVOdW1iZXJJbnN0YW5jZXMvKn3aQQRuYW1lEtkBChhM",
+            "aXN0UGhvbmVOdW1iZXJJbnN0YW5jZXMSOy5lbmZvbmljYS5udW1iZXJpbmcu",
+            "djFiZXRhMS5MaXN0UGhvbmVOdW1iZXJJbnN0YW5jZXNSZXF1ZXN0GjwuZW5m",
+            "b25pY2EubnVtYmVyaW5nLnYxYmV0YTEuTGlzdFBob25lTnVtYmVySW5zdGFu",
+            "Y2VzUmVzcG9uc2UiQoLT5JMCMxIxL3YxYmV0YTEve3BhcmVudD1wcm9qZWN0",
+            "cy8qfS9waG9uZU51bWJlckluc3RhbmNlc9pBBnBhcmVudBKFAgoZVXBkYXRl",
+            "UGhvbmVOdW1iZXJJbnN0YW5jZRI8LmVuZm9uaWNhLm51bWJlcmluZy52MWJl",
+            "dGExLlVwZGF0ZVBob25lTnVtYmVySW5zdGFuY2VSZXF1ZXN0Gi8uZW5mb25p",
+            "Y2EubnVtYmVyaW5nLnYxYmV0YTEuUGhvbmVOdW1iZXJJbnN0YW5jZSJ5gtPk",
+            "kwJKMjEvdjFiZXRhMS97bmFtZT1wcm9qZWN0cy8qL3Bob25lTnVtYmVySW5z",
+            "dGFuY2VzLyp9OhVwaG9uZV9udW1iZXJfaW5zdGFuY2XaQSZuYW1lLHBob25l",
+            "X251bWJlcl9pbnN0YW5jZSx1cGRhdGVfbWFzaxLMAQoZRGVsZXRlUGhvbmVO",
+            "dW1iZXJJbnN0YW5jZRI8LmVuZm9uaWNhLm51bWJlcmluZy52MWJldGExLkRl",
+            "bGV0ZVBob25lTnVtYmVySW5zdGFuY2VSZXF1ZXN0Gi8uZW5mb25pY2EubnVt",
+            "YmVyaW5nLnYxYmV0YTEuUGhvbmVOdW1iZXJJbnN0YW5jZSJAgtPkkwIzKjEv",
+            "djFiZXRhMS97bmFtZT1wcm9qZWN0cy8qL3Bob25lTnVtYmVySW5zdGFuY2Vz",
+            "Lyp92kEEbmFtZRpHykEabnVtYmVyaW5nLmFwaS5lbmZvbmljYS5jb23SQSdo",
+            "dHRwczovL2FwaS5lbmZvbmljYS5jb20vYXV0aC9udW1iZXJpbmdCogEKHmNv",
+            "bS5lbmZvbmljYS5udW1iZXJpbmcudjFiZXRhMUIZUGhvbmVOdW1iZXJJbnN0",
+            "YW5jZXNQcm90b1ABWjtnaXRodWIuY29tL2VuZm9uaWNhL2VuZm9uaWNhLWdv",
+            "L251bWJlcmluZy92MWJldGExO251bWJlcmluZ/gBAaICBUVORk9OqgIaRW5m",
+            "b25pY2EuTnVtYmVyaW5nLlYxQmV0YTFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.FieldMaskReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Enfonica.Numbering.V1Beta1.PhoneNumbersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance), global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance.Parser, new[]{ "Name", "PhoneNumber", "DisplayName", "Labels", "IncomingMessageHandlerUris", "IncomingCallHandlerUris", "CreateTime", "DeleteTime", "LifecycleState" }, null, new[]{ typeof(global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance.Types.LifecycleState) }, null, new pbr::GeneratedClrTypeInfo[] { null, }),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance), global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance.Parser, new[]{ "Name", "PhoneNumber", "DisplayName", "Labels", "IncomingMessageHandlerUris", "IncomingCallHandlerUris", "CallRecordingTrigger", "CreateTime", "DeleteTime", "LifecycleState" }, null, new[]{ typeof(global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance.Types.LifecycleState), typeof(global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance.Types.RecordingTrigger) }, null, new pbr::GeneratedClrTypeInfo[] { null, }),
             new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Numbering.V1Beta1.CreatePhoneNumberInstanceRequest), global::Enfonica.Numbering.V1Beta1.CreatePhoneNumberInstanceRequest.Parser, new[]{ "Parent", "PhoneNumberInstance" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Numbering.V1Beta1.GetPhoneNumberInstanceRequest), global::Enfonica.Numbering.V1Beta1.GetPhoneNumberInstanceRequest.Parser, new[]{ "Name" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Numbering.V1Beta1.ListPhoneNumberInstancesRequest), global::Enfonica.Numbering.V1Beta1.ListPhoneNumberInstancesRequest.Parser, new[]{ "Parent", "PageSize", "PageToken", "Prefix", "IncludeDeleted" }, null, null, null, null),
@@ -155,6 +159,7 @@ namespace Enfonica.Numbering.V1Beta1 {
       labels_ = other.labels_.Clone();
       incomingMessageHandlerUris_ = other.incomingMessageHandlerUris_.Clone();
       incomingCallHandlerUris_ = other.incomingCallHandlerUris_.Clone();
+      callRecordingTrigger_ = other.callRecordingTrigger_;
       createTime_ = other.createTime_ != null ? other.createTime_.Clone() : null;
       deleteTime_ = other.deleteTime_ != null ? other.deleteTime_.Clone() : null;
       lifecycleState_ = other.lifecycleState_;
@@ -269,6 +274,27 @@ namespace Enfonica.Numbering.V1Beta1 {
       get { return incomingCallHandlerUris_; }
     }
 
+    /// <summary>Field number for the "call_recording_trigger" field.</summary>
+    public const int CallRecordingTriggerFieldNumber = 7;
+    private global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance.Types.RecordingTrigger callRecordingTrigger_ = global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance.Types.RecordingTrigger.Unspecified;
+    /// <summary>
+    /// The trigger that will start call recording.
+    ///
+    /// You need to comply with certain laws and regulations, including those regarding
+    /// obtaining consent to record. Enfonica recommends that you consult with your legal
+    /// counsel to make sure that you are complying with all applicable laws in connection
+    /// with communications you record or store using Enfonica.
+    ///
+    /// Defaults to DISABLED.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance.Types.RecordingTrigger CallRecordingTrigger {
+      get { return callRecordingTrigger_; }
+      set {
+        callRecordingTrigger_ = value;
+      }
+    }
+
     /// <summary>Field number for the "create_time" field.</summary>
     public const int CreateTimeFieldNumber = 10;
     private global::Google.Protobuf.WellKnownTypes.Timestamp createTime_;
@@ -330,6 +356,7 @@ namespace Enfonica.Numbering.V1Beta1 {
       if (!Labels.Equals(other.Labels)) return false;
       if(!incomingMessageHandlerUris_.Equals(other.incomingMessageHandlerUris_)) return false;
       if(!incomingCallHandlerUris_.Equals(other.incomingCallHandlerUris_)) return false;
+      if (CallRecordingTrigger != other.CallRecordingTrigger) return false;
       if (!object.Equals(CreateTime, other.CreateTime)) return false;
       if (!object.Equals(DeleteTime, other.DeleteTime)) return false;
       if (LifecycleState != other.LifecycleState) return false;
@@ -345,6 +372,7 @@ namespace Enfonica.Numbering.V1Beta1 {
       hash ^= Labels.GetHashCode();
       hash ^= incomingMessageHandlerUris_.GetHashCode();
       hash ^= incomingCallHandlerUris_.GetHashCode();
+      if (CallRecordingTrigger != global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance.Types.RecordingTrigger.Unspecified) hash ^= CallRecordingTrigger.GetHashCode();
       if (createTime_ != null) hash ^= CreateTime.GetHashCode();
       if (deleteTime_ != null) hash ^= DeleteTime.GetHashCode();
       if (LifecycleState != global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance.Types.LifecycleState.Unspecified) hash ^= LifecycleState.GetHashCode();
@@ -379,6 +407,10 @@ namespace Enfonica.Numbering.V1Beta1 {
       labels_.WriteTo(output, _map_labels_codec);
       incomingMessageHandlerUris_.WriteTo(output, _repeated_incomingMessageHandlerUris_codec);
       incomingCallHandlerUris_.WriteTo(output, _repeated_incomingCallHandlerUris_codec);
+      if (CallRecordingTrigger != global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance.Types.RecordingTrigger.Unspecified) {
+        output.WriteRawTag(56);
+        output.WriteEnum((int) CallRecordingTrigger);
+      }
       if (createTime_ != null) {
         output.WriteRawTag(82);
         output.WriteMessage(CreateTime);
@@ -415,6 +447,10 @@ namespace Enfonica.Numbering.V1Beta1 {
       labels_.WriteTo(ref output, _map_labels_codec);
       incomingMessageHandlerUris_.WriteTo(ref output, _repeated_incomingMessageHandlerUris_codec);
       incomingCallHandlerUris_.WriteTo(ref output, _repeated_incomingCallHandlerUris_codec);
+      if (CallRecordingTrigger != global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance.Types.RecordingTrigger.Unspecified) {
+        output.WriteRawTag(56);
+        output.WriteEnum((int) CallRecordingTrigger);
+      }
       if (createTime_ != null) {
         output.WriteRawTag(82);
         output.WriteMessage(CreateTime);
@@ -448,6 +484,9 @@ namespace Enfonica.Numbering.V1Beta1 {
       size += labels_.CalculateSize(_map_labels_codec);
       size += incomingMessageHandlerUris_.CalculateSize(_repeated_incomingMessageHandlerUris_codec);
       size += incomingCallHandlerUris_.CalculateSize(_repeated_incomingCallHandlerUris_codec);
+      if (CallRecordingTrigger != global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance.Types.RecordingTrigger.Unspecified) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) CallRecordingTrigger);
+      }
       if (createTime_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(CreateTime);
       }
@@ -483,6 +522,9 @@ namespace Enfonica.Numbering.V1Beta1 {
       labels_.Add(other.labels_);
       incomingMessageHandlerUris_.Add(other.incomingMessageHandlerUris_);
       incomingCallHandlerUris_.Add(other.incomingCallHandlerUris_);
+      if (other.CallRecordingTrigger != global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance.Types.RecordingTrigger.Unspecified) {
+        CallRecordingTrigger = other.CallRecordingTrigger;
+      }
       if (other.createTime_ != null) {
         if (createTime_ == null) {
           CreateTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
@@ -537,6 +579,10 @@ namespace Enfonica.Numbering.V1Beta1 {
           }
           case 50: {
             incomingCallHandlerUris_.AddEntriesFrom(input, _repeated_incomingCallHandlerUris_codec);
+            break;
+          }
+          case 56: {
+            CallRecordingTrigger = (global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance.Types.RecordingTrigger) input.ReadEnum();
             break;
           }
           case 82: {
@@ -598,6 +644,10 @@ namespace Enfonica.Numbering.V1Beta1 {
             incomingCallHandlerUris_.AddEntriesFrom(ref input, _repeated_incomingCallHandlerUris_codec);
             break;
           }
+          case 56: {
+            CallRecordingTrigger = (global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance.Types.RecordingTrigger) input.ReadEnum();
+            break;
+          }
           case 82: {
             if (createTime_ == null) {
               CreateTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
@@ -645,6 +695,30 @@ namespace Enfonica.Numbering.V1Beta1 {
         /// The phone number instance has been suspended.
         /// </summary>
         [pbr::OriginalName("SUSPENDED")] Suspended = 3,
+      }
+
+      /// <summary>
+      /// The trigger to start call recording.
+      /// </summary>
+      public enum RecordingTrigger {
+        /// <summary>
+        /// Unspecified recording trigger.
+        /// </summary>
+        [pbr::OriginalName("RECORDING_TRIGGER_UNSPECIFIED")] Unspecified = 0,
+        /// <summary>
+        /// Recording is disabled for calls to this phone number instance.
+        /// </summary>
+        [pbr::OriginalName("DISABLED")] Disabled = 1,
+        /// <summary>
+        /// Recording will begin when calls to this phone number instance are answered.
+        /// </summary>
+        [pbr::OriginalName("ANSWER")] Answer = 2,
+        /// <summary>
+        /// Recording will begin when calls to this phone number instance are bridged.
+        /// This won't include any messages or menus played before the call was bridged.
+        /// This is useful if you want to record only conversations.
+        /// </summary>
+        [pbr::OriginalName("BRIDGE")] Bridge = 3,
       }
 
     }

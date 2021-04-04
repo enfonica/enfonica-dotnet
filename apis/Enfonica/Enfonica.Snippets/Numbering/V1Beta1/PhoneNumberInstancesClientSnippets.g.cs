@@ -255,7 +255,7 @@ namespace Enfonica.Numbering.V1Beta1.Snippets
             // End snippet
         }
 
-        /// <summary>Snippet for ListPhoneNumberInstances</summary>
+        /// <summary>Snippet for ListPhoneNumberInstancesAsync</summary>
         public async Task ListPhoneNumberInstancesRequestObjectAsync()
         {
             // Snippet: ListPhoneNumberInstancesAsync(ListPhoneNumberInstancesRequest, CallSettings)
@@ -350,7 +350,7 @@ namespace Enfonica.Numbering.V1Beta1.Snippets
             // End snippet
         }
 
-        /// <summary>Snippet for ListPhoneNumberInstances</summary>
+        /// <summary>Snippet for ListPhoneNumberInstancesAsync</summary>
         public async Task ListPhoneNumberInstancesAsync()
         {
             // Snippet: ListPhoneNumberInstancesAsync(string, string, int?, CallSettings)
@@ -440,7 +440,7 @@ namespace Enfonica.Numbering.V1Beta1.Snippets
             // End snippet
         }
 
-        /// <summary>Snippet for ListPhoneNumberInstances</summary>
+        /// <summary>Snippet for ListPhoneNumberInstancesAsync</summary>
         public async Task ListPhoneNumberInstancesResourceNamesAsync()
         {
             // Snippet: ListPhoneNumberInstancesAsync(ProjectName, string, int?, CallSettings)

@@ -68,36 +68,36 @@ namespace Enfonica.Messaging.V1 {
             "ZRI0CgdtZXNzYWdlGAIgASgLMh4uZW5mb25pY2EubWVzc2FnaW5nLnYxLk1l",
             "c3NhZ2VCA+BBAiJNChFHZXRNZXNzYWdlUmVxdWVzdBI4CgRuYW1lGAEgASgJ",
             "QirgQQL6QSQKIm1lc3NhZ2luZy5hcGkuZW5mb25pY2EuY29tL01lc3NhZ2Ui",
-            "4AEKE0xpc3RNZXNzYWdlc1JlcXVlc3QSOgoGcGFyZW50GAEgASgJQirgQQL6",
+            "5gEKE0xpc3RNZXNzYWdlc1JlcXVlc3QSOgoGcGFyZW50GAEgASgJQirgQQL6",
             "QSQSIm1lc3NhZ2luZy5hcGkuZW5mb25pY2EuY29tL01lc3NhZ2USEQoJcGFn",
-            "ZV9zaXplGAIgASgFEhIKCnBhZ2VfdG9rZW4YAyABKAkSMwoKc3RhcnRfdGlt",
-            "ZRgEIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCA+BBAhIxCghl",
-            "bmRfdGltZRgFIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCA+BB",
-            "AiJhChRMaXN0TWVzc2FnZXNSZXNwb25zZRIwCghtZXNzYWdlcxgBIAMoCzIe",
-            "LmVuZm9uaWNhLm1lc3NhZ2luZy52MS5NZXNzYWdlEhcKD25leHRfcGFnZV90",
-            "b2tlbhgCIAEoCTKdBAoITWVzc2FnZXMSoAEKDUNyZWF0ZU1lc3NhZ2USKy5l",
-            "bmZvbmljYS5tZXNzYWdpbmcudjEuQ3JlYXRlTWVzc2FnZVJlcXVlc3QaHi5l",
-            "bmZvbmljYS5tZXNzYWdpbmcudjEuTWVzc2FnZSJCgtPkkwIrIiAvdjEve3Bh",
-            "cmVudD1wcm9qZWN0cy8qfS9tZXNzYWdlczoHbWVzc2FnZdpBDnBhcmVudCxt",
-            "ZXNzYWdlEocBCgpHZXRNZXNzYWdlEiguZW5mb25pY2EubWVzc2FnaW5nLnYx",
-            "LkdldE1lc3NhZ2VSZXF1ZXN0Gh4uZW5mb25pY2EubWVzc2FnaW5nLnYxLk1l",
-            "c3NhZ2UiL4LT5JMCIhIgL3YxL3tuYW1lPXByb2plY3RzLyovbWVzc2FnZXMv",
-            "Kn3aQQRuYW1lEpoBCgxMaXN0TWVzc2FnZXMSKi5lbmZvbmljYS5tZXNzYWdp",
-            "bmcudjEuTGlzdE1lc3NhZ2VzUmVxdWVzdBorLmVuZm9uaWNhLm1lc3NhZ2lu",
-            "Zy52MS5MaXN0TWVzc2FnZXNSZXNwb25zZSIxgtPkkwIiEiAvdjEve3BhcmVu",
-            "dD1wcm9qZWN0cy8qfS9tZXNzYWdlc9pBBnBhcmVudBpHykEabWVzc2FnaW5n",
-            "LmFwaS5lbmZvbmljYS5jb23SQSdodHRwczovL2FwaS5lbmZvbmljYS5jb20v",
-            "YXV0aC9tZXNzYWdpbmdChwEKGWNvbS5lbmZvbmljYS5tZXNzYWdpbmcudjFC",
-            "DU1lc3NhZ2VzUHJvdG9QAVo2Z2l0aHViLmNvbS9lbmZvbmljYS9lbmZvbmlj",
-            "YS1nby9tZXNzYWdpbmcvdjE7bWVzc2FnaW5n+AEBogIFRU5GT06qAhVFbmZv",
-            "bmljYS5NZXNzYWdpbmcuVjFiBnByb3RvMw=="));
+            "ZV9zaXplGAIgASgFEhIKCnBhZ2VfdG9rZW4YAyABKAkSLgoKc3RhcnRfdGlt",
+            "ZRgEIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASLAoIZW5kX3Rp",
+            "bWUYBSABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEg4KBmZpbHRl",
+            "chgGIAEoCSJhChRMaXN0TWVzc2FnZXNSZXNwb25zZRIwCghtZXNzYWdlcxgB",
+            "IAMoCzIeLmVuZm9uaWNhLm1lc3NhZ2luZy52MS5NZXNzYWdlEhcKD25leHRf",
+            "cGFnZV90b2tlbhgCIAEoCTKdBAoITWVzc2FnZXMSoAEKDUNyZWF0ZU1lc3Nh",
+            "Z2USKy5lbmZvbmljYS5tZXNzYWdpbmcudjEuQ3JlYXRlTWVzc2FnZVJlcXVl",
+            "c3QaHi5lbmZvbmljYS5tZXNzYWdpbmcudjEuTWVzc2FnZSJCgtPkkwIrIiAv",
+            "djEve3BhcmVudD1wcm9qZWN0cy8qfS9tZXNzYWdlczoHbWVzc2FnZdpBDnBh",
+            "cmVudCxtZXNzYWdlEocBCgpHZXRNZXNzYWdlEiguZW5mb25pY2EubWVzc2Fn",
+            "aW5nLnYxLkdldE1lc3NhZ2VSZXF1ZXN0Gh4uZW5mb25pY2EubWVzc2FnaW5n",
+            "LnYxLk1lc3NhZ2UiL4LT5JMCIhIgL3YxL3tuYW1lPXByb2plY3RzLyovbWVz",
+            "c2FnZXMvKn3aQQRuYW1lEpoBCgxMaXN0TWVzc2FnZXMSKi5lbmZvbmljYS5t",
+            "ZXNzYWdpbmcudjEuTGlzdE1lc3NhZ2VzUmVxdWVzdBorLmVuZm9uaWNhLm1l",
+            "c3NhZ2luZy52MS5MaXN0TWVzc2FnZXNSZXNwb25zZSIxgtPkkwIiEiAvdjEv",
+            "e3BhcmVudD1wcm9qZWN0cy8qfS9tZXNzYWdlc9pBBnBhcmVudBpHykEabWVz",
+            "c2FnaW5nLmFwaS5lbmZvbmljYS5jb23SQSdodHRwczovL2FwaS5lbmZvbmlj",
+            "YS5jb20vYXV0aC9tZXNzYWdpbmdChwEKGWNvbS5lbmZvbmljYS5tZXNzYWdp",
+            "bmcudjFCDU1lc3NhZ2VzUHJvdG9QAVo2Z2l0aHViLmNvbS9lbmZvbmljYS9l",
+            "bmZvbmljYS1nby9tZXNzYWdpbmcvdjE7bWVzc2FnaW5n+AEBogIFRU5GT06q",
+            "AhVFbmZvbmljYS5NZXNzYWdpbmcuVjFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Type.MoneyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Messaging.V1.Message), global::Enfonica.Messaging.V1.Message.Parser, new[]{ "Name", "To", "From", "Body", "StatusUpdateUrl", "ReplyUrl", "ValidityPeriodSeconds", "SmartEncoding", "Labels", "Classification", "UnsubscribeContentBehavior", "Direction", "ErrorCode", "ErrorMessage", "SegmentCount", "Price", "Status", "CreateIdentity", "CreateTime", "SendTime", "DeliverTime", "Encoding" }, null, new[]{ typeof(global::Enfonica.Messaging.V1.Message.Types.Status), typeof(global::Enfonica.Messaging.V1.Message.Types.Direction), typeof(global::Enfonica.Messaging.V1.Message.Types.MessageClassification), typeof(global::Enfonica.Messaging.V1.Message.Types.UnsubscribeContentBehavior), typeof(global::Enfonica.Messaging.V1.Message.Types.MessageEncoding) }, null, new pbr::GeneratedClrTypeInfo[] { null, }),
             new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Messaging.V1.CreateMessageRequest), global::Enfonica.Messaging.V1.CreateMessageRequest.Parser, new[]{ "Parent", "Message" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Messaging.V1.GetMessageRequest), global::Enfonica.Messaging.V1.GetMessageRequest.Parser, new[]{ "Name" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Messaging.V1.ListMessagesRequest), global::Enfonica.Messaging.V1.ListMessagesRequest.Parser, new[]{ "Parent", "PageSize", "PageToken", "StartTime", "EndTime" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Messaging.V1.ListMessagesRequest), global::Enfonica.Messaging.V1.ListMessagesRequest.Parser, new[]{ "Parent", "PageSize", "PageToken", "StartTime", "EndTime", "Filter" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Messaging.V1.ListMessagesResponse), global::Enfonica.Messaging.V1.ListMessagesResponse.Parser, new[]{ "Messages", "NextPageToken" }, null, null, null, null)
           }));
     }
@@ -1736,6 +1736,7 @@ namespace Enfonica.Messaging.V1 {
       pageToken_ = other.pageToken_;
       startTime_ = other.startTime_ != null ? other.startTime_.Clone() : null;
       endTime_ = other.endTime_ != null ? other.endTime_.Clone() : null;
+      filter_ = other.filter_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1795,6 +1796,10 @@ namespace Enfonica.Messaging.V1 {
     /// <summary>
     /// The timestamp (inclusive) from which to retrieve messages. The
     /// create_time of the Message is used.
+    ///
+    /// This field is deprecated. Use `filter` instead. If a value is specified for
+    /// both `start_time` and `filter`, the call will fail.
+    ///
     /// (-- api-linter: core::0132::request-unknown-fields=disabled
     ///     aip.dev/not-precedent: List has additional fields in this package. --)
     /// </summary>
@@ -1812,6 +1817,10 @@ namespace Enfonica.Messaging.V1 {
     /// <summary>
     /// The timestamp (exclusive) until which to retrieve messages. The
     /// create_time of the Message is used.
+    ///
+    /// This field is deprecated. Use `filter` instead. If a value is specified for
+    /// both `end_time` and `filter`, the call will fail.
+    ///
     /// (-- api-linter: core::0132::request-unknown-fields=disabled
     ///     aip.dev/not-precedent: List has additional fields in this package. --)
     /// </summary>
@@ -1820,6 +1829,34 @@ namespace Enfonica.Messaging.V1 {
       get { return endTime_; }
       set {
         endTime_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "filter" field.</summary>
+    public const int FilterFieldNumber = 6;
+    private string filter_ = "";
+    /// <summary>
+    /// Filter string to specify which results should be returned.
+    ///
+    /// The following fields can be filtered:
+    /// - `createTime`
+    /// - `to`
+    /// - `from`
+    /// - `status`
+    /// - `direction`
+    /// - `encoding`
+    ///
+    /// For example:
+    /// createTime >= '2021-01-01T06:00:00.0Z' AND createTime &lt; '2021-02-01' AND
+    /// status = DELIVERED OR status = UNDELIVERED AND to = '+61*' OR from = '+61*'
+    ///
+    /// Note that OR has higher precendence than AND.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Filter {
+      get { return filter_; }
+      set {
+        filter_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -1841,6 +1878,7 @@ namespace Enfonica.Messaging.V1 {
       if (PageToken != other.PageToken) return false;
       if (!object.Equals(StartTime, other.StartTime)) return false;
       if (!object.Equals(EndTime, other.EndTime)) return false;
+      if (Filter != other.Filter) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1852,6 +1890,7 @@ namespace Enfonica.Messaging.V1 {
       if (PageToken.Length != 0) hash ^= PageToken.GetHashCode();
       if (startTime_ != null) hash ^= StartTime.GetHashCode();
       if (endTime_ != null) hash ^= EndTime.GetHashCode();
+      if (Filter.Length != 0) hash ^= Filter.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1888,6 +1927,10 @@ namespace Enfonica.Messaging.V1 {
         output.WriteRawTag(42);
         output.WriteMessage(EndTime);
       }
+      if (Filter.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteString(Filter);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1917,6 +1960,10 @@ namespace Enfonica.Messaging.V1 {
         output.WriteRawTag(42);
         output.WriteMessage(EndTime);
       }
+      if (Filter.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteString(Filter);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1940,6 +1987,9 @@ namespace Enfonica.Messaging.V1 {
       }
       if (endTime_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(EndTime);
+      }
+      if (Filter.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Filter);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1972,6 +2022,9 @@ namespace Enfonica.Messaging.V1 {
           EndTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
         }
         EndTime.MergeFrom(other.EndTime);
+      }
+      if (other.Filter.Length != 0) {
+        Filter = other.Filter;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -2013,6 +2066,10 @@ namespace Enfonica.Messaging.V1 {
             input.ReadMessage(EndTime);
             break;
           }
+          case 50: {
+            Filter = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -2051,6 +2108,10 @@ namespace Enfonica.Messaging.V1 {
               EndTime = new global::Google.Protobuf.WellKnownTypes.Timestamp();
             }
             input.ReadMessage(EndTime);
+            break;
+          }
+          case 50: {
+            Filter = input.ReadString();
             break;
           }
         }

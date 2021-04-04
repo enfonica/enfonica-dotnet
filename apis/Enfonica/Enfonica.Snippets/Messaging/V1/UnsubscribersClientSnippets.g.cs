@@ -254,7 +254,7 @@ namespace Enfonica.Messaging.V1.Snippets
             // End snippet
         }
 
-        /// <summary>Snippet for ListUnsubscribers</summary>
+        /// <summary>Snippet for ListUnsubscribersAsync</summary>
         public async Task ListUnsubscribersRequestObjectAsync()
         {
             // Snippet: ListUnsubscribersAsync(ListUnsubscribersRequest, CallSettings)
@@ -348,7 +348,7 @@ namespace Enfonica.Messaging.V1.Snippets
             // End snippet
         }
 
-        /// <summary>Snippet for ListUnsubscribers</summary>
+        /// <summary>Snippet for ListUnsubscribersAsync</summary>
         public async Task ListUnsubscribersAsync()
         {
             // Snippet: ListUnsubscribersAsync(string, string, int?, CallSettings)
@@ -438,7 +438,7 @@ namespace Enfonica.Messaging.V1.Snippets
             // End snippet
         }
 
-        /// <summary>Snippet for ListUnsubscribers</summary>
+        /// <summary>Snippet for ListUnsubscribersAsync</summary>
         public async Task ListUnsubscribersResourceNamesAsync()
         {
             // Snippet: ListUnsubscribersAsync(ProjectName, string, int?, CallSettings)

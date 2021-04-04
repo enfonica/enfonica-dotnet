@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Version>1.0.0-alpha01</Version>
+    <Version>1.0.0-alpha02</Version>
 
     <TargetFrameworks>netstandard2.0;net461</TargetFrameworks>
     <TargetFrameworks Condition="'$(OS)' != 'Windows_NT'">netstandard2.0</TargetFrameworks>
@@ -15,7 +15,7 @@
     </Description>
     <PackageTags>Enfonica;Cloud;SMS;Voice;Phone;Numbers</PackageTags>
     <Copyright>Copyright 2021 Enfonica Pty Ltd</Copyright>
-    <PackageIconUrl>https://enfonica.com/images/enfonica-icon-64x64.png</PackageIconUrl>
+    <PackageIconUrl>https://enfonica.com/static/enfonica-icon-64x64.png</PackageIconUrl>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/enfonica/enfonica-dotnet</PackageProjectUrl>
     <RepositoryType>git</RepositoryType>
@@ -24,9 +24,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Google.Api.Gax.Grpc.GrpcCore" Version="3.1.0" />
-    <PackageReference Include="Grpc.Core" Version="2.32.0" />
-    <PackageReference Include="Google.Protobuf" Version="3.13.0" />
+    <PackageReference Include="Google.Api.Gax.Grpc.GrpcCore" Version="[3.2.0, 4.0.0)" />
+    <PackageReference Include="Grpc.Core" Version="[2.31.0, 3.0.0)" PrivateAssets="None" />
   </ItemGroup>
 
 </Project>

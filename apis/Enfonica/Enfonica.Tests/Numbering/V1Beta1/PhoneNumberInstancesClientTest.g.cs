@@ -56,6 +56,7 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 {
                     "incoming_call_handler_uris2053249d",
                 },
+                CallRecordingTrigger = PhoneNumberInstance.Types.RecordingTrigger.Bridge,
                 CreateTime = new wkt::Timestamp(),
                 DeleteTime = new wkt::Timestamp(),
                 LifecycleState = PhoneNumberInstance.Types.LifecycleState.Unspecified,
@@ -96,6 +97,7 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 {
                     "incoming_call_handler_uris2053249d",
                 },
+                CallRecordingTrigger = PhoneNumberInstance.Types.RecordingTrigger.Bridge,
                 CreateTime = new wkt::Timestamp(),
                 DeleteTime = new wkt::Timestamp(),
                 LifecycleState = PhoneNumberInstance.Types.LifecycleState.Unspecified,
@@ -138,6 +140,7 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 {
                     "incoming_call_handler_uris2053249d",
                 },
+                CallRecordingTrigger = PhoneNumberInstance.Types.RecordingTrigger.Bridge,
                 CreateTime = new wkt::Timestamp(),
                 DeleteTime = new wkt::Timestamp(),
                 LifecycleState = PhoneNumberInstance.Types.LifecycleState.Unspecified,
@@ -178,6 +181,7 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 {
                     "incoming_call_handler_uris2053249d",
                 },
+                CallRecordingTrigger = PhoneNumberInstance.Types.RecordingTrigger.Bridge,
                 CreateTime = new wkt::Timestamp(),
                 DeleteTime = new wkt::Timestamp(),
                 LifecycleState = PhoneNumberInstance.Types.LifecycleState.Unspecified,
@@ -220,6 +224,7 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 {
                     "incoming_call_handler_uris2053249d",
                 },
+                CallRecordingTrigger = PhoneNumberInstance.Types.RecordingTrigger.Bridge,
                 CreateTime = new wkt::Timestamp(),
                 DeleteTime = new wkt::Timestamp(),
                 LifecycleState = PhoneNumberInstance.Types.LifecycleState.Unspecified,
@@ -260,6 +265,7 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 {
                     "incoming_call_handler_uris2053249d",
                 },
+                CallRecordingTrigger = PhoneNumberInstance.Types.RecordingTrigger.Bridge,
                 CreateTime = new wkt::Timestamp(),
                 DeleteTime = new wkt::Timestamp(),
                 LifecycleState = PhoneNumberInstance.Types.LifecycleState.Unspecified,
@@ -301,6 +307,7 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 {
                     "incoming_call_handler_uris2053249d",
                 },
+                CallRecordingTrigger = PhoneNumberInstance.Types.RecordingTrigger.Bridge,
                 CreateTime = new wkt::Timestamp(),
                 DeleteTime = new wkt::Timestamp(),
                 LifecycleState = PhoneNumberInstance.Types.LifecycleState.Unspecified,
@@ -340,6 +347,7 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 {
                     "incoming_call_handler_uris2053249d",
                 },
+                CallRecordingTrigger = PhoneNumberInstance.Types.RecordingTrigger.Bridge,
                 CreateTime = new wkt::Timestamp(),
                 DeleteTime = new wkt::Timestamp(),
                 LifecycleState = PhoneNumberInstance.Types.LifecycleState.Unspecified,
@@ -381,6 +389,7 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 {
                     "incoming_call_handler_uris2053249d",
                 },
+                CallRecordingTrigger = PhoneNumberInstance.Types.RecordingTrigger.Bridge,
                 CreateTime = new wkt::Timestamp(),
                 DeleteTime = new wkt::Timestamp(),
                 LifecycleState = PhoneNumberInstance.Types.LifecycleState.Unspecified,
@@ -420,6 +429,7 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 {
                     "incoming_call_handler_uris2053249d",
                 },
+                CallRecordingTrigger = PhoneNumberInstance.Types.RecordingTrigger.Bridge,
                 CreateTime = new wkt::Timestamp(),
                 DeleteTime = new wkt::Timestamp(),
                 LifecycleState = PhoneNumberInstance.Types.LifecycleState.Unspecified,
@@ -461,6 +471,7 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 {
                     "incoming_call_handler_uris2053249d",
                 },
+                CallRecordingTrigger = PhoneNumberInstance.Types.RecordingTrigger.Bridge,
                 CreateTime = new wkt::Timestamp(),
                 DeleteTime = new wkt::Timestamp(),
                 LifecycleState = PhoneNumberInstance.Types.LifecycleState.Unspecified,
@@ -500,6 +511,7 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 {
                     "incoming_call_handler_uris2053249d",
                 },
+                CallRecordingTrigger = PhoneNumberInstance.Types.RecordingTrigger.Bridge,
                 CreateTime = new wkt::Timestamp(),
                 DeleteTime = new wkt::Timestamp(),
                 LifecycleState = PhoneNumberInstance.Types.LifecycleState.Unspecified,
@@ -543,6 +555,7 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 {
                     "incoming_call_handler_uris2053249d",
                 },
+                CallRecordingTrigger = PhoneNumberInstance.Types.RecordingTrigger.Bridge,
                 CreateTime = new wkt::Timestamp(),
                 DeleteTime = new wkt::Timestamp(),
                 LifecycleState = PhoneNumberInstance.Types.LifecycleState.Unspecified,
@@ -584,6 +597,7 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 {
                     "incoming_call_handler_uris2053249d",
                 },
+                CallRecordingTrigger = PhoneNumberInstance.Types.RecordingTrigger.Bridge,
                 CreateTime = new wkt::Timestamp(),
                 DeleteTime = new wkt::Timestamp(),
                 LifecycleState = PhoneNumberInstance.Types.LifecycleState.Unspecified,
@@ -627,6 +641,7 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 {
                     "incoming_call_handler_uris2053249d",
                 },
+                CallRecordingTrigger = PhoneNumberInstance.Types.RecordingTrigger.Bridge,
                 CreateTime = new wkt::Timestamp(),
                 DeleteTime = new wkt::Timestamp(),
                 LifecycleState = PhoneNumberInstance.Types.LifecycleState.Unspecified,
@@ -668,6 +683,7 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 {
                     "incoming_call_handler_uris2053249d",
                 },
+                CallRecordingTrigger = PhoneNumberInstance.Types.RecordingTrigger.Bridge,
                 CreateTime = new wkt::Timestamp(),
                 DeleteTime = new wkt::Timestamp(),
                 LifecycleState = PhoneNumberInstance.Types.LifecycleState.Unspecified,
@@ -711,6 +727,7 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 {
                     "incoming_call_handler_uris2053249d",
                 },
+                CallRecordingTrigger = PhoneNumberInstance.Types.RecordingTrigger.Bridge,
                 CreateTime = new wkt::Timestamp(),
                 DeleteTime = new wkt::Timestamp(),
                 LifecycleState = PhoneNumberInstance.Types.LifecycleState.Unspecified,
@@ -752,6 +769,7 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 {
                     "incoming_call_handler_uris2053249d",
                 },
+                CallRecordingTrigger = PhoneNumberInstance.Types.RecordingTrigger.Bridge,
                 CreateTime = new wkt::Timestamp(),
                 DeleteTime = new wkt::Timestamp(),
                 LifecycleState = PhoneNumberInstance.Types.LifecycleState.Unspecified,
@@ -793,6 +811,7 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 {
                     "incoming_call_handler_uris2053249d",
                 },
+                CallRecordingTrigger = PhoneNumberInstance.Types.RecordingTrigger.Bridge,
                 CreateTime = new wkt::Timestamp(),
                 DeleteTime = new wkt::Timestamp(),
                 LifecycleState = PhoneNumberInstance.Types.LifecycleState.Unspecified,
@@ -832,6 +851,7 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 {
                     "incoming_call_handler_uris2053249d",
                 },
+                CallRecordingTrigger = PhoneNumberInstance.Types.RecordingTrigger.Bridge,
                 CreateTime = new wkt::Timestamp(),
                 DeleteTime = new wkt::Timestamp(),
                 LifecycleState = PhoneNumberInstance.Types.LifecycleState.Unspecified,
@@ -873,6 +893,7 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 {
                     "incoming_call_handler_uris2053249d",
                 },
+                CallRecordingTrigger = PhoneNumberInstance.Types.RecordingTrigger.Bridge,
                 CreateTime = new wkt::Timestamp(),
                 DeleteTime = new wkt::Timestamp(),
                 LifecycleState = PhoneNumberInstance.Types.LifecycleState.Unspecified,
@@ -912,6 +933,7 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 {
                     "incoming_call_handler_uris2053249d",
                 },
+                CallRecordingTrigger = PhoneNumberInstance.Types.RecordingTrigger.Bridge,
                 CreateTime = new wkt::Timestamp(),
                 DeleteTime = new wkt::Timestamp(),
                 LifecycleState = PhoneNumberInstance.Types.LifecycleState.Unspecified,
@@ -953,6 +975,7 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 {
                     "incoming_call_handler_uris2053249d",
                 },
+                CallRecordingTrigger = PhoneNumberInstance.Types.RecordingTrigger.Bridge,
                 CreateTime = new wkt::Timestamp(),
                 DeleteTime = new wkt::Timestamp(),
                 LifecycleState = PhoneNumberInstance.Types.LifecycleState.Unspecified,
@@ -992,6 +1015,7 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 {
                     "incoming_call_handler_uris2053249d",
                 },
+                CallRecordingTrigger = PhoneNumberInstance.Types.RecordingTrigger.Bridge,
                 CreateTime = new wkt::Timestamp(),
                 DeleteTime = new wkt::Timestamp(),
                 LifecycleState = PhoneNumberInstance.Types.LifecycleState.Unspecified,

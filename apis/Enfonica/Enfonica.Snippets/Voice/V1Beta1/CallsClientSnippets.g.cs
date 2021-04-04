@@ -17,7 +17,6 @@
 namespace Enfonica.Voice.V1Beta1.Snippets
 {
     using Google.Api.Gax;
-    using Google.Protobuf.WellKnownTypes;
     using System;
     using System.Linq;
     using System.Threading.Tasks;
@@ -122,8 +121,7 @@ namespace Enfonica.Voice.V1Beta1.Snippets
             ListCallsRequest request = new ListCallsRequest
             {
                 ParentAsProjectName = ProjectName.FromProject("[PROJECT]"),
-                StartTime = new Timestamp(),
-                EndTime = new Timestamp(),
+                Filter = "",
             };
             // Make the request
             PagedEnumerable<ListCallsResponse, Call> response = callsClient.ListCalls(request);
@@ -162,7 +160,7 @@ namespace Enfonica.Voice.V1Beta1.Snippets
             // End snippet
         }
 
-        /// <summary>Snippet for ListCalls</summary>
+        /// <summary>Snippet for ListCallsAsync</summary>
         public async Task ListCallsRequestObjectAsync()
         {
             // Snippet: ListCallsAsync(ListCallsRequest, CallSettings)
@@ -172,8 +170,7 @@ namespace Enfonica.Voice.V1Beta1.Snippets
             ListCallsRequest request = new ListCallsRequest
             {
                 ParentAsProjectName = ProjectName.FromProject("[PROJECT]"),
-                StartTime = new Timestamp(),
-                EndTime = new Timestamp(),
+                Filter = "",
             };
             // Make the request
             PagedAsyncEnumerable<ListCallsResponse, Call> response = callsClient.ListCallsAsync(request);
@@ -257,7 +254,7 @@ namespace Enfonica.Voice.V1Beta1.Snippets
             // End snippet
         }
 
-        /// <summary>Snippet for ListCalls</summary>
+        /// <summary>Snippet for ListCallsAsync</summary>
         public async Task ListCallsAsync()
         {
             // Snippet: ListCallsAsync(string, string, int?, CallSettings)
@@ -347,7 +344,7 @@ namespace Enfonica.Voice.V1Beta1.Snippets
             // End snippet
         }
 
-        /// <summary>Snippet for ListCalls</summary>
+        /// <summary>Snippet for ListCallsAsync</summary>
         public async Task ListCallsResourceNamesAsync()
         {
             // Snippet: ListCallsAsync(ProjectName, string, int?, CallSettings)
