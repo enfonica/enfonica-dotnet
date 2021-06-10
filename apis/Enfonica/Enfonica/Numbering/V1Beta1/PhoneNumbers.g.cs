@@ -41,31 +41,30 @@ namespace Enfonica.Numbering.V1Beta1 {
             "RV9OVU1CRVJfVFlQRV9VTlNQRUNJRklFRBAAEgkKBUxPQ0FMEAESDAoITkFU",
             "SU9OQUwQAhIKCgZNT0JJTEUQAxINCglUT0xMX0ZSRUUQBBIPCgtTSEFSRURf",
             "UkFURRAFOkjqQUUKJm51bWJlcmluZy5hcGkuZW5mb25pY2EuY29tL1Bob25l",
-            "TnVtYmVyEhtwaG9uZU51bWJlcnMve3Bob25lX251bWJlcn0ikAIKGVNlYXJj",
+            "TnVtYmVyEhtwaG9uZU51bWJlcnMve3Bob25lX251bWJlcn0i/wEKGVNlYXJj",
             "aFBob25lTnVtYmVyc1JlcXVlc3QSEQoJcGFnZV9zaXplGAEgASgFEhIKCnBh",
-            "Z2VfdG9rZW4YAiABKAkSUwoMY2FwYWJpbGl0aWVzGAMgAygOMj0uZW5mb25p",
-            "Y2EubnVtYmVyaW5nLnYxYmV0YTEuUGhvbmVOdW1iZXIuUGhvbmVOdW1iZXJD",
-            "YXBhYmlsaXR5EkwKC251bWJlcl90eXBlGAQgASgOMjcuZW5mb25pY2EubnVt",
-            "YmVyaW5nLnYxYmV0YTEuUGhvbmVOdW1iZXIuUGhvbmVOdW1iZXJUeXBlEhkK",
-            "DGNvdW50cnlfY29kZRgFIAEoCUID4EECEg4KBnByZWZpeBgGIAEoCSJ1ChpT",
-            "ZWFyY2hQaG9uZU51bWJlcnNSZXNwb25zZRI+Cg1waG9uZV9udW1iZXJzGAEg",
-            "AygLMicuZW5mb25pY2EubnVtYmVyaW5nLnYxYmV0YTEuUGhvbmVOdW1iZXIS",
-            "FwoPbmV4dF9wYWdlX3Rva2VuGAIgASgJMoMCCgxQaG9uZU51bWJlcnMSqQEK",
-            "ElNlYXJjaFBob25lTnVtYmVycxI1LmVuZm9uaWNhLm51bWJlcmluZy52MWJl",
-            "dGExLlNlYXJjaFBob25lTnVtYmVyc1JlcXVlc3QaNi5lbmZvbmljYS5udW1i",
-            "ZXJpbmcudjFiZXRhMS5TZWFyY2hQaG9uZU51bWJlcnNSZXNwb25zZSIkgtPk",
-            "kwIeEhwvdjFiZXRhMS9waG9uZU51bWJlcnM6c2VhcmNoGkfKQRpudW1iZXJp",
-            "bmcuYXBpLmVuZm9uaWNhLmNvbdJBJ2h0dHBzOi8vYXBpLmVuZm9uaWNhLmNv",
-            "bS9hdXRoL251bWJlcmluZ0KaAQoeY29tLmVuZm9uaWNhLm51bWJlcmluZy52",
-            "MWJldGExQhFQaG9uZU51bWJlcnNQcm90b1ABWjtnaXRodWIuY29tL2VuZm9u",
-            "aWNhL2VuZm9uaWNhLWdvL251bWJlcmluZy92MWJldGExO251bWJlcmluZ/gB",
-            "AaICBUVORk9OqgIaRW5mb25pY2EuTnVtYmVyaW5nLlYxQmV0YTFiBnByb3Rv",
-            "Mw=="));
+            "Z2VfdG9rZW4YAiABKAkSTAoLbnVtYmVyX3R5cGUYBCABKA4yNy5lbmZvbmlj",
+            "YS5udW1iZXJpbmcudjFiZXRhMS5QaG9uZU51bWJlci5QaG9uZU51bWJlclR5",
+            "cGUSGQoMY291bnRyeV9jb2RlGAUgASgJQgPgQQISDgoGcHJlZml4GAYgASgJ",
+            "EhYKDnN1cHBvcnRzX3ZvaWNlGAcgASgIEhQKDHN1cHBvcnRzX3NtcxgIIAEo",
+            "CBIUCgxzdXBwb3J0c19tbXMYCSABKAgidQoaU2VhcmNoUGhvbmVOdW1iZXJz",
+            "UmVzcG9uc2USPgoNcGhvbmVfbnVtYmVycxgBIAMoCzInLmVuZm9uaWNhLm51",
+            "bWJlcmluZy52MWJldGExLlBob25lTnVtYmVyEhcKD25leHRfcGFnZV90b2tl",
+            "bhgCIAEoCTKDAgoMUGhvbmVOdW1iZXJzEqkBChJTZWFyY2hQaG9uZU51bWJl",
+            "cnMSNS5lbmZvbmljYS5udW1iZXJpbmcudjFiZXRhMS5TZWFyY2hQaG9uZU51",
+            "bWJlcnNSZXF1ZXN0GjYuZW5mb25pY2EubnVtYmVyaW5nLnYxYmV0YTEuU2Vh",
+            "cmNoUGhvbmVOdW1iZXJzUmVzcG9uc2UiJILT5JMCHhIcL3YxYmV0YTEvcGhv",
+            "bmVOdW1iZXJzOnNlYXJjaBpHykEabnVtYmVyaW5nLmFwaS5lbmZvbmljYS5j",
+            "b23SQSdodHRwczovL2FwaS5lbmZvbmljYS5jb20vYXV0aC9udW1iZXJpbmdC",
+            "mgEKHmNvbS5lbmZvbmljYS5udW1iZXJpbmcudjFiZXRhMUIRUGhvbmVOdW1i",
+            "ZXJzUHJvdG9QAVo7Z2l0aHViLmNvbS9lbmZvbmljYS9lbmZvbmljYS1nby9u",
+            "dW1iZXJpbmcvdjFiZXRhMTtudW1iZXJpbmf4AQGiAgVFTkZPTqoCGkVuZm9u",
+            "aWNhLk51bWJlcmluZy5WMUJldGExYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.FieldMaskReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Numbering.V1Beta1.PhoneNumber), global::Enfonica.Numbering.V1Beta1.PhoneNumber.Parser, new[]{ "Name", "PhoneNumber_", "Capabilities", "Sku", "NumberType", "CountryCode" }, null, new[]{ typeof(global::Enfonica.Numbering.V1Beta1.PhoneNumber.Types.PhoneNumberCapability), typeof(global::Enfonica.Numbering.V1Beta1.PhoneNumber.Types.PhoneNumberType) }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Numbering.V1Beta1.SearchPhoneNumbersRequest), global::Enfonica.Numbering.V1Beta1.SearchPhoneNumbersRequest.Parser, new[]{ "PageSize", "PageToken", "Capabilities", "NumberType", "CountryCode", "Prefix" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Numbering.V1Beta1.SearchPhoneNumbersRequest), global::Enfonica.Numbering.V1Beta1.SearchPhoneNumbersRequest.Parser, new[]{ "PageSize", "PageToken", "NumberType", "CountryCode", "Prefix", "SupportsVoice", "SupportsSms", "SupportsMms" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Numbering.V1Beta1.SearchPhoneNumbersResponse), global::Enfonica.Numbering.V1Beta1.SearchPhoneNumbersResponse.Parser, new[]{ "PhoneNumbers", "NextPageToken" }, null, null, null, null)
           }));
     }
@@ -541,10 +540,12 @@ namespace Enfonica.Numbering.V1Beta1 {
     public SearchPhoneNumbersRequest(SearchPhoneNumbersRequest other) : this() {
       pageSize_ = other.pageSize_;
       pageToken_ = other.pageToken_;
-      capabilities_ = other.capabilities_.Clone();
       numberType_ = other.numberType_;
       countryCode_ = other.countryCode_;
       prefix_ = other.prefix_;
+      supportsVoice_ = other.supportsVoice_;
+      supportsSms_ = other.supportsSms_;
+      supportsMms_ = other.supportsMms_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -581,19 +582,6 @@ namespace Enfonica.Numbering.V1Beta1 {
       set {
         pageToken_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
-    }
-
-    /// <summary>Field number for the "capabilities" field.</summary>
-    public const int CapabilitiesFieldNumber = 3;
-    private static readonly pb::FieldCodec<global::Enfonica.Numbering.V1Beta1.PhoneNumber.Types.PhoneNumberCapability> _repeated_capabilities_codec
-        = pb::FieldCodec.ForEnum(26, x => (int) x, x => (global::Enfonica.Numbering.V1Beta1.PhoneNumber.Types.PhoneNumberCapability) x);
-    private readonly pbc::RepeatedField<global::Enfonica.Numbering.V1Beta1.PhoneNumber.Types.PhoneNumberCapability> capabilities_ = new pbc::RepeatedField<global::Enfonica.Numbering.V1Beta1.PhoneNumber.Types.PhoneNumberCapability>();
-    /// <summary>
-    /// The capabilities that the phone number must have.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Enfonica.Numbering.V1Beta1.PhoneNumber.Types.PhoneNumberCapability> Capabilities {
-      get { return capabilities_; }
     }
 
     /// <summary>Field number for the "number_type" field.</summary>
@@ -642,6 +630,48 @@ namespace Enfonica.Numbering.V1Beta1 {
       }
     }
 
+    /// <summary>Field number for the "supports_voice" field.</summary>
+    public const int SupportsVoiceFieldNumber = 7;
+    private bool supportsVoice_;
+    /// <summary>
+    /// If true, the phone number must support voice.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool SupportsVoice {
+      get { return supportsVoice_; }
+      set {
+        supportsVoice_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "supports_sms" field.</summary>
+    public const int SupportsSmsFieldNumber = 8;
+    private bool supportsSms_;
+    /// <summary>
+    /// If true, the phone number must support SMS.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool SupportsSms {
+      get { return supportsSms_; }
+      set {
+        supportsSms_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "supports_mms" field.</summary>
+    public const int SupportsMmsFieldNumber = 9;
+    private bool supportsMms_;
+    /// <summary>
+    /// If true, the phone number must support MMS.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool SupportsMms {
+      get { return supportsMms_; }
+      set {
+        supportsMms_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as SearchPhoneNumbersRequest);
@@ -657,10 +687,12 @@ namespace Enfonica.Numbering.V1Beta1 {
       }
       if (PageSize != other.PageSize) return false;
       if (PageToken != other.PageToken) return false;
-      if(!capabilities_.Equals(other.capabilities_)) return false;
       if (NumberType != other.NumberType) return false;
       if (CountryCode != other.CountryCode) return false;
       if (Prefix != other.Prefix) return false;
+      if (SupportsVoice != other.SupportsVoice) return false;
+      if (SupportsSms != other.SupportsSms) return false;
+      if (SupportsMms != other.SupportsMms) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -669,10 +701,12 @@ namespace Enfonica.Numbering.V1Beta1 {
       int hash = 1;
       if (PageSize != 0) hash ^= PageSize.GetHashCode();
       if (PageToken.Length != 0) hash ^= PageToken.GetHashCode();
-      hash ^= capabilities_.GetHashCode();
       if (NumberType != global::Enfonica.Numbering.V1Beta1.PhoneNumber.Types.PhoneNumberType.Unspecified) hash ^= NumberType.GetHashCode();
       if (CountryCode.Length != 0) hash ^= CountryCode.GetHashCode();
       if (Prefix.Length != 0) hash ^= Prefix.GetHashCode();
+      if (SupportsVoice != false) hash ^= SupportsVoice.GetHashCode();
+      if (SupportsSms != false) hash ^= SupportsSms.GetHashCode();
+      if (SupportsMms != false) hash ^= SupportsMms.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -697,7 +731,6 @@ namespace Enfonica.Numbering.V1Beta1 {
         output.WriteRawTag(18);
         output.WriteString(PageToken);
       }
-      capabilities_.WriteTo(output, _repeated_capabilities_codec);
       if (NumberType != global::Enfonica.Numbering.V1Beta1.PhoneNumber.Types.PhoneNumberType.Unspecified) {
         output.WriteRawTag(32);
         output.WriteEnum((int) NumberType);
@@ -709,6 +742,18 @@ namespace Enfonica.Numbering.V1Beta1 {
       if (Prefix.Length != 0) {
         output.WriteRawTag(50);
         output.WriteString(Prefix);
+      }
+      if (SupportsVoice != false) {
+        output.WriteRawTag(56);
+        output.WriteBool(SupportsVoice);
+      }
+      if (SupportsSms != false) {
+        output.WriteRawTag(64);
+        output.WriteBool(SupportsSms);
+      }
+      if (SupportsMms != false) {
+        output.WriteRawTag(72);
+        output.WriteBool(SupportsMms);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -727,7 +772,6 @@ namespace Enfonica.Numbering.V1Beta1 {
         output.WriteRawTag(18);
         output.WriteString(PageToken);
       }
-      capabilities_.WriteTo(ref output, _repeated_capabilities_codec);
       if (NumberType != global::Enfonica.Numbering.V1Beta1.PhoneNumber.Types.PhoneNumberType.Unspecified) {
         output.WriteRawTag(32);
         output.WriteEnum((int) NumberType);
@@ -739,6 +783,18 @@ namespace Enfonica.Numbering.V1Beta1 {
       if (Prefix.Length != 0) {
         output.WriteRawTag(50);
         output.WriteString(Prefix);
+      }
+      if (SupportsVoice != false) {
+        output.WriteRawTag(56);
+        output.WriteBool(SupportsVoice);
+      }
+      if (SupportsSms != false) {
+        output.WriteRawTag(64);
+        output.WriteBool(SupportsSms);
+      }
+      if (SupportsMms != false) {
+        output.WriteRawTag(72);
+        output.WriteBool(SupportsMms);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -755,7 +811,6 @@ namespace Enfonica.Numbering.V1Beta1 {
       if (PageToken.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(PageToken);
       }
-      size += capabilities_.CalculateSize(_repeated_capabilities_codec);
       if (NumberType != global::Enfonica.Numbering.V1Beta1.PhoneNumber.Types.PhoneNumberType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) NumberType);
       }
@@ -764,6 +819,15 @@ namespace Enfonica.Numbering.V1Beta1 {
       }
       if (Prefix.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Prefix);
+      }
+      if (SupportsVoice != false) {
+        size += 1 + 1;
+      }
+      if (SupportsSms != false) {
+        size += 1 + 1;
+      }
+      if (SupportsMms != false) {
+        size += 1 + 1;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -782,7 +846,6 @@ namespace Enfonica.Numbering.V1Beta1 {
       if (other.PageToken.Length != 0) {
         PageToken = other.PageToken;
       }
-      capabilities_.Add(other.capabilities_);
       if (other.NumberType != global::Enfonica.Numbering.V1Beta1.PhoneNumber.Types.PhoneNumberType.Unspecified) {
         NumberType = other.NumberType;
       }
@@ -791,6 +854,15 @@ namespace Enfonica.Numbering.V1Beta1 {
       }
       if (other.Prefix.Length != 0) {
         Prefix = other.Prefix;
+      }
+      if (other.SupportsVoice != false) {
+        SupportsVoice = other.SupportsVoice;
+      }
+      if (other.SupportsSms != false) {
+        SupportsSms = other.SupportsSms;
+      }
+      if (other.SupportsMms != false) {
+        SupportsMms = other.SupportsMms;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -814,11 +886,6 @@ namespace Enfonica.Numbering.V1Beta1 {
             PageToken = input.ReadString();
             break;
           }
-          case 26:
-          case 24: {
-            capabilities_.AddEntriesFrom(input, _repeated_capabilities_codec);
-            break;
-          }
           case 32: {
             NumberType = (global::Enfonica.Numbering.V1Beta1.PhoneNumber.Types.PhoneNumberType) input.ReadEnum();
             break;
@@ -829,6 +896,18 @@ namespace Enfonica.Numbering.V1Beta1 {
           }
           case 50: {
             Prefix = input.ReadString();
+            break;
+          }
+          case 56: {
+            SupportsVoice = input.ReadBool();
+            break;
+          }
+          case 64: {
+            SupportsSms = input.ReadBool();
+            break;
+          }
+          case 72: {
+            SupportsMms = input.ReadBool();
             break;
           }
         }
@@ -853,11 +932,6 @@ namespace Enfonica.Numbering.V1Beta1 {
             PageToken = input.ReadString();
             break;
           }
-          case 26:
-          case 24: {
-            capabilities_.AddEntriesFrom(ref input, _repeated_capabilities_codec);
-            break;
-          }
           case 32: {
             NumberType = (global::Enfonica.Numbering.V1Beta1.PhoneNumber.Types.PhoneNumberType) input.ReadEnum();
             break;
@@ -868,6 +942,18 @@ namespace Enfonica.Numbering.V1Beta1 {
           }
           case 50: {
             Prefix = input.ReadString();
+            break;
+          }
+          case 56: {
+            SupportsVoice = input.ReadBool();
+            break;
+          }
+          case 64: {
+            SupportsSms = input.ReadBool();
+            break;
+          }
+          case 72: {
+            SupportsMms = input.ReadBool();
             break;
           }
         }

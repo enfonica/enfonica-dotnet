@@ -29,12 +29,13 @@ namespace Enfonica.Voice.V1Beta1.Tests
     public sealed class GeneratedCallsClientTest
     {
         [xunit::FactAttribute]
-        public void GetCallRequestObject()
+        public void CreateCallRequestObject()
         {
             moq::Mock<Calls.CallsClient> mockGrpcClient = new moq::Mock<Calls.CallsClient>(moq::MockBehavior.Strict);
-            GetCallRequest request = new GetCallRequest
+            CreateCallRequest request = new CreateCallRequest
             {
-                CallName = CallName.FromProjectCall("[PROJECT]", "[CALL]"),
+                ParentAsProjectName = ProjectName.FromProject("[PROJECT]"),
+                Call = new Call(),
             };
             Call expectedResponse = new Call
             {
@@ -42,9 +43,6 @@ namespace Enfonica.Voice.V1Beta1.Tests
                 To = "to03e2b601",
                 From = "fromf8078ad9",
                 IsPrivate = false,
-                StatusUpdateUri = "status_update_uri3a86d5cb",
-                HandleUri = "handle_uri8831a329",
-                ValidityPeriodSeconds = 1525204720,
                 Labels =
                 {
                     {
@@ -65,6 +63,283 @@ namespace Enfonica.Voice.V1Beta1.Tests
                 EndTime = new wkt::Timestamp(),
                 Bridged = true,
                 OriginatingCall = "originating_call9e182b53",
+                CreateMethod = Call.Types.CreateMethod.Api,
+                Options = new Call.Types.ApiCallOptions(),
+            };
+            mockGrpcClient.Setup(x => x.CreateCall(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            CallsClient client = new CallsClientImpl(mockGrpcClient.Object, null);
+            Call response = client.CreateCall(request);
+            xunit::Assert.Same(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [xunit::FactAttribute]
+        public async stt::Task CreateCallRequestObjectAsync()
+        {
+            moq::Mock<Calls.CallsClient> mockGrpcClient = new moq::Mock<Calls.CallsClient>(moq::MockBehavior.Strict);
+            CreateCallRequest request = new CreateCallRequest
+            {
+                ParentAsProjectName = ProjectName.FromProject("[PROJECT]"),
+                Call = new Call(),
+            };
+            Call expectedResponse = new Call
+            {
+                CallName = CallName.FromProjectCall("[PROJECT]", "[CALL]"),
+                To = "to03e2b601",
+                From = "fromf8078ad9",
+                IsPrivate = false,
+                Labels =
+                {
+                    {
+                        "key8a0b6e3c",
+                        "value60c16320"
+                    },
+                },
+                Transport = Call.Types.Transport.Sip,
+                Direction = Call.Types.Direction.Incoming,
+                ErrorCode = "error_code42bd958e",
+                ErrorMessage = "error_messaged73952bd",
+                Price = new gt::Money(),
+                State = Call.Types.State.Busy,
+                CreateTime = new wkt::Timestamp(),
+                StartTime = new wkt::Timestamp(),
+                RingTime = new wkt::Timestamp(),
+                AnswerTime = new wkt::Timestamp(),
+                EndTime = new wkt::Timestamp(),
+                Bridged = true,
+                OriginatingCall = "originating_call9e182b53",
+                CreateMethod = Call.Types.CreateMethod.Api,
+                Options = new Call.Types.ApiCallOptions(),
+            };
+            mockGrpcClient.Setup(x => x.CreateCallAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<Call>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            CallsClient client = new CallsClientImpl(mockGrpcClient.Object, null);
+            Call responseCallSettings = await client.CreateCallAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            xunit::Assert.Same(expectedResponse, responseCallSettings);
+            Call responseCancellationToken = await client.CreateCallAsync(request, st::CancellationToken.None);
+            xunit::Assert.Same(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [xunit::FactAttribute]
+        public void CreateCall()
+        {
+            moq::Mock<Calls.CallsClient> mockGrpcClient = new moq::Mock<Calls.CallsClient>(moq::MockBehavior.Strict);
+            CreateCallRequest request = new CreateCallRequest
+            {
+                ParentAsProjectName = ProjectName.FromProject("[PROJECT]"),
+                Call = new Call(),
+            };
+            Call expectedResponse = new Call
+            {
+                CallName = CallName.FromProjectCall("[PROJECT]", "[CALL]"),
+                To = "to03e2b601",
+                From = "fromf8078ad9",
+                IsPrivate = false,
+                Labels =
+                {
+                    {
+                        "key8a0b6e3c",
+                        "value60c16320"
+                    },
+                },
+                Transport = Call.Types.Transport.Sip,
+                Direction = Call.Types.Direction.Incoming,
+                ErrorCode = "error_code42bd958e",
+                ErrorMessage = "error_messaged73952bd",
+                Price = new gt::Money(),
+                State = Call.Types.State.Busy,
+                CreateTime = new wkt::Timestamp(),
+                StartTime = new wkt::Timestamp(),
+                RingTime = new wkt::Timestamp(),
+                AnswerTime = new wkt::Timestamp(),
+                EndTime = new wkt::Timestamp(),
+                Bridged = true,
+                OriginatingCall = "originating_call9e182b53",
+                CreateMethod = Call.Types.CreateMethod.Api,
+                Options = new Call.Types.ApiCallOptions(),
+            };
+            mockGrpcClient.Setup(x => x.CreateCall(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            CallsClient client = new CallsClientImpl(mockGrpcClient.Object, null);
+            Call response = client.CreateCall(request.Parent, request.Call);
+            xunit::Assert.Same(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [xunit::FactAttribute]
+        public async stt::Task CreateCallAsync()
+        {
+            moq::Mock<Calls.CallsClient> mockGrpcClient = new moq::Mock<Calls.CallsClient>(moq::MockBehavior.Strict);
+            CreateCallRequest request = new CreateCallRequest
+            {
+                ParentAsProjectName = ProjectName.FromProject("[PROJECT]"),
+                Call = new Call(),
+            };
+            Call expectedResponse = new Call
+            {
+                CallName = CallName.FromProjectCall("[PROJECT]", "[CALL]"),
+                To = "to03e2b601",
+                From = "fromf8078ad9",
+                IsPrivate = false,
+                Labels =
+                {
+                    {
+                        "key8a0b6e3c",
+                        "value60c16320"
+                    },
+                },
+                Transport = Call.Types.Transport.Sip,
+                Direction = Call.Types.Direction.Incoming,
+                ErrorCode = "error_code42bd958e",
+                ErrorMessage = "error_messaged73952bd",
+                Price = new gt::Money(),
+                State = Call.Types.State.Busy,
+                CreateTime = new wkt::Timestamp(),
+                StartTime = new wkt::Timestamp(),
+                RingTime = new wkt::Timestamp(),
+                AnswerTime = new wkt::Timestamp(),
+                EndTime = new wkt::Timestamp(),
+                Bridged = true,
+                OriginatingCall = "originating_call9e182b53",
+                CreateMethod = Call.Types.CreateMethod.Api,
+                Options = new Call.Types.ApiCallOptions(),
+            };
+            mockGrpcClient.Setup(x => x.CreateCallAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<Call>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            CallsClient client = new CallsClientImpl(mockGrpcClient.Object, null);
+            Call responseCallSettings = await client.CreateCallAsync(request.Parent, request.Call, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            xunit::Assert.Same(expectedResponse, responseCallSettings);
+            Call responseCancellationToken = await client.CreateCallAsync(request.Parent, request.Call, st::CancellationToken.None);
+            xunit::Assert.Same(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [xunit::FactAttribute]
+        public void CreateCallResourceNames()
+        {
+            moq::Mock<Calls.CallsClient> mockGrpcClient = new moq::Mock<Calls.CallsClient>(moq::MockBehavior.Strict);
+            CreateCallRequest request = new CreateCallRequest
+            {
+                ParentAsProjectName = ProjectName.FromProject("[PROJECT]"),
+                Call = new Call(),
+            };
+            Call expectedResponse = new Call
+            {
+                CallName = CallName.FromProjectCall("[PROJECT]", "[CALL]"),
+                To = "to03e2b601",
+                From = "fromf8078ad9",
+                IsPrivate = false,
+                Labels =
+                {
+                    {
+                        "key8a0b6e3c",
+                        "value60c16320"
+                    },
+                },
+                Transport = Call.Types.Transport.Sip,
+                Direction = Call.Types.Direction.Incoming,
+                ErrorCode = "error_code42bd958e",
+                ErrorMessage = "error_messaged73952bd",
+                Price = new gt::Money(),
+                State = Call.Types.State.Busy,
+                CreateTime = new wkt::Timestamp(),
+                StartTime = new wkt::Timestamp(),
+                RingTime = new wkt::Timestamp(),
+                AnswerTime = new wkt::Timestamp(),
+                EndTime = new wkt::Timestamp(),
+                Bridged = true,
+                OriginatingCall = "originating_call9e182b53",
+                CreateMethod = Call.Types.CreateMethod.Api,
+                Options = new Call.Types.ApiCallOptions(),
+            };
+            mockGrpcClient.Setup(x => x.CreateCall(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            CallsClient client = new CallsClientImpl(mockGrpcClient.Object, null);
+            Call response = client.CreateCall(request.ParentAsProjectName, request.Call);
+            xunit::Assert.Same(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [xunit::FactAttribute]
+        public async stt::Task CreateCallResourceNamesAsync()
+        {
+            moq::Mock<Calls.CallsClient> mockGrpcClient = new moq::Mock<Calls.CallsClient>(moq::MockBehavior.Strict);
+            CreateCallRequest request = new CreateCallRequest
+            {
+                ParentAsProjectName = ProjectName.FromProject("[PROJECT]"),
+                Call = new Call(),
+            };
+            Call expectedResponse = new Call
+            {
+                CallName = CallName.FromProjectCall("[PROJECT]", "[CALL]"),
+                To = "to03e2b601",
+                From = "fromf8078ad9",
+                IsPrivate = false,
+                Labels =
+                {
+                    {
+                        "key8a0b6e3c",
+                        "value60c16320"
+                    },
+                },
+                Transport = Call.Types.Transport.Sip,
+                Direction = Call.Types.Direction.Incoming,
+                ErrorCode = "error_code42bd958e",
+                ErrorMessage = "error_messaged73952bd",
+                Price = new gt::Money(),
+                State = Call.Types.State.Busy,
+                CreateTime = new wkt::Timestamp(),
+                StartTime = new wkt::Timestamp(),
+                RingTime = new wkt::Timestamp(),
+                AnswerTime = new wkt::Timestamp(),
+                EndTime = new wkt::Timestamp(),
+                Bridged = true,
+                OriginatingCall = "originating_call9e182b53",
+                CreateMethod = Call.Types.CreateMethod.Api,
+                Options = new Call.Types.ApiCallOptions(),
+            };
+            mockGrpcClient.Setup(x => x.CreateCallAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<Call>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            CallsClient client = new CallsClientImpl(mockGrpcClient.Object, null);
+            Call responseCallSettings = await client.CreateCallAsync(request.ParentAsProjectName, request.Call, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            xunit::Assert.Same(expectedResponse, responseCallSettings);
+            Call responseCancellationToken = await client.CreateCallAsync(request.ParentAsProjectName, request.Call, st::CancellationToken.None);
+            xunit::Assert.Same(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [xunit::FactAttribute]
+        public void GetCallRequestObject()
+        {
+            moq::Mock<Calls.CallsClient> mockGrpcClient = new moq::Mock<Calls.CallsClient>(moq::MockBehavior.Strict);
+            GetCallRequest request = new GetCallRequest
+            {
+                CallName = CallName.FromProjectCall("[PROJECT]", "[CALL]"),
+            };
+            Call expectedResponse = new Call
+            {
+                CallName = CallName.FromProjectCall("[PROJECT]", "[CALL]"),
+                To = "to03e2b601",
+                From = "fromf8078ad9",
+                IsPrivate = false,
+                Labels =
+                {
+                    {
+                        "key8a0b6e3c",
+                        "value60c16320"
+                    },
+                },
+                Transport = Call.Types.Transport.Sip,
+                Direction = Call.Types.Direction.Incoming,
+                ErrorCode = "error_code42bd958e",
+                ErrorMessage = "error_messaged73952bd",
+                Price = new gt::Money(),
+                State = Call.Types.State.Busy,
+                CreateTime = new wkt::Timestamp(),
+                StartTime = new wkt::Timestamp(),
+                RingTime = new wkt::Timestamp(),
+                AnswerTime = new wkt::Timestamp(),
+                EndTime = new wkt::Timestamp(),
+                Bridged = true,
+                OriginatingCall = "originating_call9e182b53",
+                CreateMethod = Call.Types.CreateMethod.Api,
+                Options = new Call.Types.ApiCallOptions(),
             };
             mockGrpcClient.Setup(x => x.GetCall(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             CallsClient client = new CallsClientImpl(mockGrpcClient.Object, null);
@@ -87,9 +362,6 @@ namespace Enfonica.Voice.V1Beta1.Tests
                 To = "to03e2b601",
                 From = "fromf8078ad9",
                 IsPrivate = false,
-                StatusUpdateUri = "status_update_uri3a86d5cb",
-                HandleUri = "handle_uri8831a329",
-                ValidityPeriodSeconds = 1525204720,
                 Labels =
                 {
                     {
@@ -110,6 +382,8 @@ namespace Enfonica.Voice.V1Beta1.Tests
                 EndTime = new wkt::Timestamp(),
                 Bridged = true,
                 OriginatingCall = "originating_call9e182b53",
+                CreateMethod = Call.Types.CreateMethod.Api,
+                Options = new Call.Types.ApiCallOptions(),
             };
             mockGrpcClient.Setup(x => x.GetCallAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<Call>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CallsClient client = new CallsClientImpl(mockGrpcClient.Object, null);
@@ -134,9 +408,6 @@ namespace Enfonica.Voice.V1Beta1.Tests
                 To = "to03e2b601",
                 From = "fromf8078ad9",
                 IsPrivate = false,
-                StatusUpdateUri = "status_update_uri3a86d5cb",
-                HandleUri = "handle_uri8831a329",
-                ValidityPeriodSeconds = 1525204720,
                 Labels =
                 {
                     {
@@ -157,6 +428,8 @@ namespace Enfonica.Voice.V1Beta1.Tests
                 EndTime = new wkt::Timestamp(),
                 Bridged = true,
                 OriginatingCall = "originating_call9e182b53",
+                CreateMethod = Call.Types.CreateMethod.Api,
+                Options = new Call.Types.ApiCallOptions(),
             };
             mockGrpcClient.Setup(x => x.GetCall(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             CallsClient client = new CallsClientImpl(mockGrpcClient.Object, null);
@@ -179,9 +452,6 @@ namespace Enfonica.Voice.V1Beta1.Tests
                 To = "to03e2b601",
                 From = "fromf8078ad9",
                 IsPrivate = false,
-                StatusUpdateUri = "status_update_uri3a86d5cb",
-                HandleUri = "handle_uri8831a329",
-                ValidityPeriodSeconds = 1525204720,
                 Labels =
                 {
                     {
@@ -202,6 +472,8 @@ namespace Enfonica.Voice.V1Beta1.Tests
                 EndTime = new wkt::Timestamp(),
                 Bridged = true,
                 OriginatingCall = "originating_call9e182b53",
+                CreateMethod = Call.Types.CreateMethod.Api,
+                Options = new Call.Types.ApiCallOptions(),
             };
             mockGrpcClient.Setup(x => x.GetCallAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<Call>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CallsClient client = new CallsClientImpl(mockGrpcClient.Object, null);
@@ -226,9 +498,6 @@ namespace Enfonica.Voice.V1Beta1.Tests
                 To = "to03e2b601",
                 From = "fromf8078ad9",
                 IsPrivate = false,
-                StatusUpdateUri = "status_update_uri3a86d5cb",
-                HandleUri = "handle_uri8831a329",
-                ValidityPeriodSeconds = 1525204720,
                 Labels =
                 {
                     {
@@ -249,6 +518,8 @@ namespace Enfonica.Voice.V1Beta1.Tests
                 EndTime = new wkt::Timestamp(),
                 Bridged = true,
                 OriginatingCall = "originating_call9e182b53",
+                CreateMethod = Call.Types.CreateMethod.Api,
+                Options = new Call.Types.ApiCallOptions(),
             };
             mockGrpcClient.Setup(x => x.GetCall(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             CallsClient client = new CallsClientImpl(mockGrpcClient.Object, null);
@@ -271,9 +542,6 @@ namespace Enfonica.Voice.V1Beta1.Tests
                 To = "to03e2b601",
                 From = "fromf8078ad9",
                 IsPrivate = false,
-                StatusUpdateUri = "status_update_uri3a86d5cb",
-                HandleUri = "handle_uri8831a329",
-                ValidityPeriodSeconds = 1525204720,
                 Labels =
                 {
                     {
@@ -294,6 +562,8 @@ namespace Enfonica.Voice.V1Beta1.Tests
                 EndTime = new wkt::Timestamp(),
                 Bridged = true,
                 OriginatingCall = "originating_call9e182b53",
+                CreateMethod = Call.Types.CreateMethod.Api,
+                Options = new Call.Types.ApiCallOptions(),
             };
             mockGrpcClient.Setup(x => x.GetCallAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<Call>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CallsClient client = new CallsClientImpl(mockGrpcClient.Object, null);

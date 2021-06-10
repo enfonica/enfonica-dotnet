@@ -235,6 +235,18 @@ namespace Enfonica.Voice.V1Beta1
         }
     }
 
+    public partial class CreateCallRequest
+    {
+        /// <summary>
+        /// <see cref="ProjectName"/>-typed view over the <see cref="Parent"/> resource name property.
+        /// </summary>
+        public ProjectName ParentAsProjectName
+        {
+            get => string.IsNullOrEmpty(Parent) ? null : ProjectName.Parse(Parent, allowUnparsed: true);
+            set => Parent = value?.ToString() ?? "";
+        }
+    }
+
     public partial class GetCallRequest
     {
         /// <summary>

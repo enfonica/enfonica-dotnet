@@ -24,6 +24,99 @@ namespace Enfonica.Voice.V1Beta1.Snippets
     /// <summary>Generated snippets.</summary>
     public sealed class GeneratedCallsClientSnippets
     {
+        /// <summary>Snippet for CreateCall</summary>
+        public void CreateCallRequestObject()
+        {
+            // Snippet: CreateCall(CreateCallRequest, CallSettings)
+            // Create client
+            CallsClient callsClient = CallsClient.Create();
+            // Initialize request argument(s)
+            CreateCallRequest request = new CreateCallRequest
+            {
+                ParentAsProjectName = ProjectName.FromProject("[PROJECT]"),
+                Call = new Call(),
+            };
+            // Make the request
+            Call response = callsClient.CreateCall(request);
+            // End snippet
+        }
+
+        /// <summary>Snippet for CreateCallAsync</summary>
+        public async Task CreateCallRequestObjectAsync()
+        {
+            // Snippet: CreateCallAsync(CreateCallRequest, CallSettings)
+            // Additional: CreateCallAsync(CreateCallRequest, CancellationToken)
+            // Create client
+            CallsClient callsClient = await CallsClient.CreateAsync();
+            // Initialize request argument(s)
+            CreateCallRequest request = new CreateCallRequest
+            {
+                ParentAsProjectName = ProjectName.FromProject("[PROJECT]"),
+                Call = new Call(),
+            };
+            // Make the request
+            Call response = await callsClient.CreateCallAsync(request);
+            // End snippet
+        }
+
+        /// <summary>Snippet for CreateCall</summary>
+        public void CreateCall()
+        {
+            // Snippet: CreateCall(string, Call, CallSettings)
+            // Create client
+            CallsClient callsClient = CallsClient.Create();
+            // Initialize request argument(s)
+            string parent = "projects/[PROJECT]";
+            Call call = new Call();
+            // Make the request
+            Call response = callsClient.CreateCall(parent, call);
+            // End snippet
+        }
+
+        /// <summary>Snippet for CreateCallAsync</summary>
+        public async Task CreateCallAsync()
+        {
+            // Snippet: CreateCallAsync(string, Call, CallSettings)
+            // Additional: CreateCallAsync(string, Call, CancellationToken)
+            // Create client
+            CallsClient callsClient = await CallsClient.CreateAsync();
+            // Initialize request argument(s)
+            string parent = "projects/[PROJECT]";
+            Call call = new Call();
+            // Make the request
+            Call response = await callsClient.CreateCallAsync(parent, call);
+            // End snippet
+        }
+
+        /// <summary>Snippet for CreateCall</summary>
+        public void CreateCallResourceNames()
+        {
+            // Snippet: CreateCall(ProjectName, Call, CallSettings)
+            // Create client
+            CallsClient callsClient = CallsClient.Create();
+            // Initialize request argument(s)
+            ProjectName parent = ProjectName.FromProject("[PROJECT]");
+            Call call = new Call();
+            // Make the request
+            Call response = callsClient.CreateCall(parent, call);
+            // End snippet
+        }
+
+        /// <summary>Snippet for CreateCallAsync</summary>
+        public async Task CreateCallResourceNamesAsync()
+        {
+            // Snippet: CreateCallAsync(ProjectName, Call, CallSettings)
+            // Additional: CreateCallAsync(ProjectName, Call, CancellationToken)
+            // Create client
+            CallsClient callsClient = await CallsClient.CreateAsync();
+            // Initialize request argument(s)
+            ProjectName parent = ProjectName.FromProject("[PROJECT]");
+            Call call = new Call();
+            // Make the request
+            Call response = await callsClient.CreateCallAsync(parent, call);
+            // End snippet
+        }
+
         /// <summary>Snippet for GetCall</summary>
         public void GetCallRequestObject()
         {

@@ -29,55 +29,69 @@ namespace Enfonica.Voice.V1Beta1 {
             "b3RvGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvGhdnb29nbGUvdHlw",
             "ZS9tb25leS5wcm90bxoZZ29vZ2xlL2FwaS9yZXNvdXJjZS5wcm90bxofZ29v",
             "Z2xlL2FwaS9maWVsZF9iZWhhdmlvci5wcm90bxoXZ29vZ2xlL2FwaS9jbGll",
-            "bnQucHJvdG8iyAkKBENhbGwSDAoEbmFtZRgBIAEoCRIPCgJ0bxgCIAEoCUID",
-            "4EECEhEKBGZyb20YAyABKAlCA+BBAhISCgppc19wcml2YXRlGAQgASgIEhkK",
-            "EXN0YXR1c191cGRhdGVfdXJpGAUgASgJEhcKCmhhbmRsZV91cmkYBiABKAlC",
-            "A+BBAhIfChd2YWxpZGl0eV9wZXJpb2Rfc2Vjb25kcxgHIAEoBRI4CgZsYWJl",
-            "bHMYCCADKAsyKC5lbmZvbmljYS52b2ljZS52MWJldGExLkNhbGwuTGFiZWxz",
-            "RW50cnkSPgoJdHJhbnNwb3J0GAkgASgOMiYuZW5mb25pY2Eudm9pY2UudjFi",
-            "ZXRhMS5DYWxsLlRyYW5zcG9ydEID4EEDEj4KCWRpcmVjdGlvbhgKIAEoDjIm",
-            "LmVuZm9uaWNhLnZvaWNlLnYxYmV0YTEuQ2FsbC5EaXJlY3Rpb25CA+BBAxIX",
-            "CgplcnJvcl9jb2RlGAsgASgJQgPgQQMSGgoNZXJyb3JfbWVzc2FnZRgMIAEo",
-            "CUID4EEDEiYKBXByaWNlGA0gASgLMhIuZ29vZ2xlLnR5cGUuTW9uZXlCA+BB",
-            "AxI2CgVzdGF0ZRgOIAEoDjIiLmVuZm9uaWNhLnZvaWNlLnYxYmV0YTEuQ2Fs",
-            "bC5TdGF0ZUID4EEDEjQKC2NyZWF0ZV90aW1lGBAgASgLMhouZ29vZ2xlLnBy",
-            "b3RvYnVmLlRpbWVzdGFtcEID4EEDEjMKCnN0YXJ0X3RpbWUYESABKAsyGi5n",
-            "b29nbGUucHJvdG9idWYuVGltZXN0YW1wQgPgQQMSMgoJcmluZ190aW1lGBIg",
-            "ASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcEID4EEDEjQKC2Fuc3dl",
-            "cl90aW1lGBMgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcEID4EED",
-            "EjEKCGVuZF90aW1lGBQgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFt",
-            "cEID4EEDEhQKB2JyaWRnZWQYFSABKAhCA+BBAxIdChBvcmlnaW5hdGluZ19j",
-            "YWxsGBYgASgJQgPgQQMaLQoLTGFiZWxzRW50cnkSCwoDa2V5GAEgASgJEg0K",
-            "BXZhbHVlGAIgASgJOgI4ASKbAQoFU3RhdGUSFQoRU1RBVEVfVU5TUEVDSUZJ",
-            "RUQQABIKCgZRVUVVRUQQARIMCghTVEFSVElORxACEgsKB1JJTkdJTkcQAxIP",
-            "CgtJTl9QUk9HUkVTUxAEEg0KCUNPTVBMRVRFRBAFEgoKBkZBSUxFRBAGEhAK",
-            "DE5PVF9BTlNXRVJFRBAHEggKBEJVU1kQCBIMCghSRUpFQ1RFRBAJIkIKCURp",
-            "cmVjdGlvbhIZChVESVJFQ1RJT05fVU5TUEVDSUZJRUQQABIMCghPVVRHT0lO",
-            "RxABEgwKCElOQ09NSU5HEAIiRQoJVHJhbnNwb3J0EhkKFVRSQU5TUE9SVF9V",
-            "TlNQRUNJRklFRBAAEggKBFBTVE4QARIKCgZDTElFTlQQAhIHCgNTSVAQAzpB",
-            "6kE+Cht2b2ljZS5hcGkuZW5mb25pY2EuY29tL0NhbGwSH3Byb2plY3RzL3tw",
-            "cm9qZWN0fS9jYWxscy97Y2FsbH0iQwoOR2V0Q2FsbFJlcXVlc3QSMQoEbmFt",
-            "ZRgBIAEoCUIj4EEC+kEdCht2b2ljZS5hcGkuZW5mb25pY2EuY29tL0NhbGwi",
-            "fgoQTGlzdENhbGxzUmVxdWVzdBIzCgZwYXJlbnQYASABKAlCI+BBAvpBHRIb",
-            "dm9pY2UuYXBpLmVuZm9uaWNhLmNvbS9DYWxsEhEKCXBhZ2Vfc2l6ZRgCIAEo",
-            "BRISCgpwYWdlX3Rva2VuGAMgASgJEg4KBmZpbHRlchgEIAEoCSJZChFMaXN0",
-            "Q2FsbHNSZXNwb25zZRIrCgVjYWxscxgBIAMoCzIcLmVuZm9uaWNhLnZvaWNl",
-            "LnYxYmV0YTEuQ2FsbBIXCg9uZXh0X3BhZ2VfdG9rZW4YAiABKAky5QIKBUNh",
-            "bGxzEoIBCgdHZXRDYWxsEiYuZW5mb25pY2Eudm9pY2UudjFiZXRhMS5HZXRD",
-            "YWxsUmVxdWVzdBocLmVuZm9uaWNhLnZvaWNlLnYxYmV0YTEuQ2FsbCIxgtPk",
-            "kwIkEiIvdjFiZXRhMS97bmFtZT1wcm9qZWN0cy8qL2NhbGxzLyp92kEEbmFt",
-            "ZRKVAQoJTGlzdENhbGxzEiguZW5mb25pY2Eudm9pY2UudjFiZXRhMS5MaXN0",
-            "Q2FsbHNSZXF1ZXN0GikuZW5mb25pY2Eudm9pY2UudjFiZXRhMS5MaXN0Q2Fs",
-            "bHNSZXNwb25zZSIzgtPkkwIkEiIvdjFiZXRhMS97cGFyZW50PXByb2plY3Rz",
-            "Lyp9L2NhbGxz2kEGcGFyZW50Gj/KQRZ2b2ljZS5hcGkuZW5mb25pY2EuY29t",
-            "0kEjaHR0cHM6Ly9hcGkuZW5mb25pY2EuY29tL2F1dGgvdm9pY2VCgwEKGmNv",
-            "bS5lbmZvbmljYS52b2ljZS52MWJldGExQgpDYWxsc1Byb3RvUAFaM2dpdGh1",
-            "Yi5jb20vZW5mb25pY2EvZW5mb25pY2EtZ28vdm9pY2UvdjFiZXRhMTt2b2lj",
-            "ZfgBAaICBUVORk9OqgIWRW5mb25pY2EuVm9pY2UuVjFCZXRhMWIGcHJvdG8z"));
+            "bnQucHJvdG8iuQsKBENhbGwSDAoEbmFtZRgBIAEoCRIPCgJ0bxgCIAEoCUID",
+            "4EECEhEKBGZyb20YAyABKAlCA+BBAhISCgppc19wcml2YXRlGAQgASgIEjgK",
+            "BmxhYmVscxgIIAMoCzIoLmVuZm9uaWNhLnZvaWNlLnYxYmV0YTEuQ2FsbC5M",
+            "YWJlbHNFbnRyeRI+Cgl0cmFuc3BvcnQYCSABKA4yJi5lbmZvbmljYS52b2lj",
+            "ZS52MWJldGExLkNhbGwuVHJhbnNwb3J0QgPgQQMSPgoJZGlyZWN0aW9uGAog",
+            "ASgOMiYuZW5mb25pY2Eudm9pY2UudjFiZXRhMS5DYWxsLkRpcmVjdGlvbkID",
+            "4EEDEhcKCmVycm9yX2NvZGUYCyABKAlCA+BBAxIaCg1lcnJvcl9tZXNzYWdl",
+            "GAwgASgJQgPgQQMSJgoFcHJpY2UYDSABKAsyEi5nb29nbGUudHlwZS5Nb25l",
+            "eUID4EEDEjYKBXN0YXRlGA4gASgOMiIuZW5mb25pY2Eudm9pY2UudjFiZXRh",
+            "MS5DYWxsLlN0YXRlQgPgQQMSNAoLY3JlYXRlX3RpbWUYECABKAsyGi5nb29n",
+            "bGUucHJvdG9idWYuVGltZXN0YW1wQgPgQQMSMwoKc3RhcnRfdGltZRgRIAEo",
+            "CzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCA+BBAxIyCglyaW5nX3Rp",
+            "bWUYEiABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wQgPgQQMSNAoL",
+            "YW5zd2VyX3RpbWUYEyABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1w",
+            "QgPgQQMSMQoIZW5kX3RpbWUYFCABKAsyGi5nb29nbGUucHJvdG9idWYuVGlt",
+            "ZXN0YW1wQgPgQQMSFAoHYnJpZGdlZBgVIAEoCEID4EEDEh0KEG9yaWdpbmF0",
+            "aW5nX2NhbGwYFiABKAlCA+BBAxJFCg1jcmVhdGVfbWV0aG9kGBcgASgOMiku",
+            "ZW5mb25pY2Eudm9pY2UudjFiZXRhMS5DYWxsLkNyZWF0ZU1ldGhvZEID4EED",
+            "EkEKB29wdGlvbnMYGCABKAsyKy5lbmZvbmljYS52b2ljZS52MWJldGExLkNh",
+            "bGwuQXBpQ2FsbE9wdGlvbnNCA+BBAhpeCg5BcGlDYWxsT3B0aW9ucxIZCgxo",
+            "YW5kbGVyX3VyaXMYASADKAlCA+BBAhIYChBzdGF0ZV91cGRhdGVfdXJpGAIg",
+            "ASgJEhcKD3RpbWVvdXRfc2Vjb25kcxgDIAEoBRotCgtMYWJlbHNFbnRyeRIL",
+            "CgNrZXkYASABKAkSDQoFdmFsdWUYAiABKAk6AjgBIpsBCgVTdGF0ZRIVChFT",
+            "VEFURV9VTlNQRUNJRklFRBAAEgoKBlFVRVVFRBABEgwKCFNUQVJUSU5HEAIS",
+            "CwoHUklOR0lORxADEg8KC0lOX1BST0dSRVNTEAQSDQoJQ09NUExFVEVEEAUS",
+            "CgoGRkFJTEVEEAYSEAoMTk9UX0FOU1dFUkVEEAcSCAoEQlVTWRAIEgwKCFJF",
+            "SkVDVEVEEAkiQgoJRGlyZWN0aW9uEhkKFURJUkVDVElPTl9VTlNQRUNJRklF",
+            "RBAAEgwKCE9VVEdPSU5HEAESDAoISU5DT01JTkcQAiJFCglUcmFuc3BvcnQS",
+            "GQoVVFJBTlNQT1JUX1VOU1BFQ0lGSUVEEAASCAoEUFNUThABEgoKBkNMSUVO",
+            "VBACEgcKA1NJUBADIloKDENyZWF0ZU1ldGhvZBIdChlDUkVBVEVfTUVUSE9E",
+            "X1VOU1BFQ0lGSUVEEAASEQoNSU5DT01JTkdfQ0FMTBABEg8KC1BBUkVOVF9D",
+            "QUxMEAISBwoDQVBJEAM6QepBPgobdm9pY2UuYXBpLmVuZm9uaWNhLmNvbS9D",
+            "YWxsEh9wcm9qZWN0cy97cHJvamVjdH0vY2FsbHMve2NhbGx9InkKEUNyZWF0",
+            "ZUNhbGxSZXF1ZXN0EjMKBnBhcmVudBgBIAEoCUIj4EEC+kEdEht2b2ljZS5h",
+            "cGkuZW5mb25pY2EuY29tL0NhbGwSLwoEY2FsbBgCIAEoCzIcLmVuZm9uaWNh",
+            "LnZvaWNlLnYxYmV0YTEuQ2FsbEID4EECIkMKDkdldENhbGxSZXF1ZXN0EjEK",
+            "BG5hbWUYASABKAlCI+BBAvpBHQobdm9pY2UuYXBpLmVuZm9uaWNhLmNvbS9D",
+            "YWxsIn4KEExpc3RDYWxsc1JlcXVlc3QSMwoGcGFyZW50GAEgASgJQiPgQQL6",
+            "QR0SG3ZvaWNlLmFwaS5lbmZvbmljYS5jb20vQ2FsbBIRCglwYWdlX3NpemUY",
+            "AiABKAUSEgoKcGFnZV90b2tlbhgDIAEoCRIOCgZmaWx0ZXIYBCABKAkiWQoR",
+            "TGlzdENhbGxzUmVzcG9uc2USKwoFY2FsbHMYASADKAsyHC5lbmZvbmljYS52",
+            "b2ljZS52MWJldGExLkNhbGwSFwoPbmV4dF9wYWdlX3Rva2VuGAIgASgJMv0D",
+            "CgVDYWxscxKVAQoKQ3JlYXRlQ2FsbBIpLmVuZm9uaWNhLnZvaWNlLnYxYmV0",
+            "YTEuQ3JlYXRlQ2FsbFJlcXVlc3QaHC5lbmZvbmljYS52b2ljZS52MWJldGEx",
+            "LkNhbGwiPoLT5JMCKiIiL3YxYmV0YTEve3BhcmVudD1wcm9qZWN0cy8qfS9j",
+            "YWxsczoEY2FsbNpBC3BhcmVudCxjYWxsEoIBCgdHZXRDYWxsEiYuZW5mb25p",
+            "Y2Eudm9pY2UudjFiZXRhMS5HZXRDYWxsUmVxdWVzdBocLmVuZm9uaWNhLnZv",
+            "aWNlLnYxYmV0YTEuQ2FsbCIxgtPkkwIkEiIvdjFiZXRhMS97bmFtZT1wcm9q",
+            "ZWN0cy8qL2NhbGxzLyp92kEEbmFtZRKVAQoJTGlzdENhbGxzEiguZW5mb25p",
+            "Y2Eudm9pY2UudjFiZXRhMS5MaXN0Q2FsbHNSZXF1ZXN0GikuZW5mb25pY2Eu",
+            "dm9pY2UudjFiZXRhMS5MaXN0Q2FsbHNSZXNwb25zZSIzgtPkkwIkEiIvdjFi",
+            "ZXRhMS97cGFyZW50PXByb2plY3RzLyp9L2NhbGxz2kEGcGFyZW50Gj/KQRZ2",
+            "b2ljZS5hcGkuZW5mb25pY2EuY29t0kEjaHR0cHM6Ly9hcGkuZW5mb25pY2Eu",
+            "Y29tL2F1dGgvdm9pY2VCgwEKGmNvbS5lbmZvbmljYS52b2ljZS52MWJldGEx",
+            "QgpDYWxsc1Byb3RvUAFaM2dpdGh1Yi5jb20vZW5mb25pY2EvZW5mb25pY2Et",
+            "Z28vdm9pY2UvdjFiZXRhMTt2b2ljZfgBAaICBUVORk9OqgIWRW5mb25pY2Eu",
+            "Vm9pY2UuVjFCZXRhMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Type.MoneyReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Voice.V1Beta1.Call), global::Enfonica.Voice.V1Beta1.Call.Parser, new[]{ "Name", "To", "From", "IsPrivate", "StatusUpdateUri", "HandleUri", "ValidityPeriodSeconds", "Labels", "Transport", "Direction", "ErrorCode", "ErrorMessage", "Price", "State", "CreateTime", "StartTime", "RingTime", "AnswerTime", "EndTime", "Bridged", "OriginatingCall" }, null, new[]{ typeof(global::Enfonica.Voice.V1Beta1.Call.Types.State), typeof(global::Enfonica.Voice.V1Beta1.Call.Types.Direction), typeof(global::Enfonica.Voice.V1Beta1.Call.Types.Transport) }, null, new pbr::GeneratedClrTypeInfo[] { null, }),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Voice.V1Beta1.Call), global::Enfonica.Voice.V1Beta1.Call.Parser, new[]{ "Name", "To", "From", "IsPrivate", "Labels", "Transport", "Direction", "ErrorCode", "ErrorMessage", "Price", "State", "CreateTime", "StartTime", "RingTime", "AnswerTime", "EndTime", "Bridged", "OriginatingCall", "CreateMethod", "Options" }, null, new[]{ typeof(global::Enfonica.Voice.V1Beta1.Call.Types.State), typeof(global::Enfonica.Voice.V1Beta1.Call.Types.Direction), typeof(global::Enfonica.Voice.V1Beta1.Call.Types.Transport), typeof(global::Enfonica.Voice.V1Beta1.Call.Types.CreateMethod) }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Voice.V1Beta1.Call.Types.ApiCallOptions), global::Enfonica.Voice.V1Beta1.Call.Types.ApiCallOptions.Parser, new[]{ "HandlerUris", "StateUpdateUri", "TimeoutSeconds" }, null, null, null, null),
+            null, }),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Voice.V1Beta1.CreateCallRequest), global::Enfonica.Voice.V1Beta1.CreateCallRequest.Parser, new[]{ "Parent", "Call" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Voice.V1Beta1.GetCallRequest), global::Enfonica.Voice.V1Beta1.GetCallRequest.Parser, new[]{ "Name" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Voice.V1Beta1.ListCallsRequest), global::Enfonica.Voice.V1Beta1.ListCallsRequest.Parser, new[]{ "Parent", "PageSize", "PageToken", "Filter" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Voice.V1Beta1.ListCallsResponse), global::Enfonica.Voice.V1Beta1.ListCallsResponse.Parser, new[]{ "Calls", "NextPageToken" }, null, null, null, null)
@@ -123,9 +137,6 @@ namespace Enfonica.Voice.V1Beta1 {
       to_ = other.to_;
       from_ = other.from_;
       isPrivate_ = other.isPrivate_;
-      statusUpdateUri_ = other.statusUpdateUri_;
-      handleUri_ = other.handleUri_;
-      validityPeriodSeconds_ = other.validityPeriodSeconds_;
       labels_ = other.labels_.Clone();
       transport_ = other.transport_;
       direction_ = other.direction_;
@@ -140,6 +151,8 @@ namespace Enfonica.Voice.V1Beta1 {
       endTime_ = other.endTime_ != null ? other.endTime_.Clone() : null;
       bridged_ = other.bridged_;
       originatingCall_ = other.originatingCall_;
+      createMethod_ = other.createMethod_;
+      options_ = other.options_ != null ? other.options_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -152,7 +165,7 @@ namespace Enfonica.Voice.V1Beta1 {
     public const int NameFieldNumber = 1;
     private string name_ = "";
     /// <summary>
-    /// Resource name of the call. It must match the pattern `projects/*/calls/*`
+    /// Resource name of the call. It is of the form `projects/*/calls/*`
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Name {
@@ -209,54 +222,6 @@ namespace Enfonica.Voice.V1Beta1 {
       get { return isPrivate_; }
       set {
         isPrivate_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "status_update_uri" field.</summary>
-    public const int StatusUpdateUriFieldNumber = 5;
-    private string statusUpdateUri_ = "";
-    /// <summary>
-    /// The URL where status updates should be sent.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string StatusUpdateUri {
-      get { return statusUpdateUri_; }
-      set {
-        statusUpdateUri_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "handle_uri" field.</summary>
-    public const int HandleUriFieldNumber = 6;
-    private string handleUri_ = "";
-    /// <summary>
-    /// The URL where VoiceML requests should be made to control the call.
-    /// Required when creating a call using the API, but may not be present
-    /// otherwise.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string HandleUri {
-      get { return handleUri_; }
-      set {
-        handleUri_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "validity_period_seconds" field.</summary>
-    public const int ValidityPeriodSecondsFieldNumber = 7;
-    private int validityPeriodSeconds_;
-    /// <summary>
-    /// The maximum amount of time the call is allowed to spend in Enfonica's outgoing
-    /// call queue, in seconds. If it is queued for longer than this, then it will be
-    /// aborted.
-    /// (-- api-linter: core::0142::time-field-type=disabled
-    ///     aip.dev/not-precedent: Not a timestamp. --)
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int ValidityPeriodSeconds {
-      get { return validityPeriodSeconds_; }
-      set {
-        validityPeriodSeconds_ = value;
       }
     }
 
@@ -463,6 +428,35 @@ namespace Enfonica.Voice.V1Beta1 {
       }
     }
 
+    /// <summary>Field number for the "create_method" field.</summary>
+    public const int CreateMethodFieldNumber = 23;
+    private global::Enfonica.Voice.V1Beta1.Call.Types.CreateMethod createMethod_ = global::Enfonica.Voice.V1Beta1.Call.Types.CreateMethod.Unspecified;
+    /// <summary>
+    /// How this call started.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Enfonica.Voice.V1Beta1.Call.Types.CreateMethod CreateMethod {
+      get { return createMethod_; }
+      set {
+        createMethod_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "options" field.</summary>
+    public const int OptionsFieldNumber = 24;
+    private global::Enfonica.Voice.V1Beta1.Call.Types.ApiCallOptions options_;
+    /// <summary>
+    /// The options to use to handle this call. This is only required when a call is created
+    /// using the API.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Enfonica.Voice.V1Beta1.Call.Types.ApiCallOptions Options {
+      get { return options_; }
+      set {
+        options_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as Call);
@@ -480,9 +474,6 @@ namespace Enfonica.Voice.V1Beta1 {
       if (To != other.To) return false;
       if (From != other.From) return false;
       if (IsPrivate != other.IsPrivate) return false;
-      if (StatusUpdateUri != other.StatusUpdateUri) return false;
-      if (HandleUri != other.HandleUri) return false;
-      if (ValidityPeriodSeconds != other.ValidityPeriodSeconds) return false;
       if (!Labels.Equals(other.Labels)) return false;
       if (Transport != other.Transport) return false;
       if (Direction != other.Direction) return false;
@@ -497,6 +488,8 @@ namespace Enfonica.Voice.V1Beta1 {
       if (!object.Equals(EndTime, other.EndTime)) return false;
       if (Bridged != other.Bridged) return false;
       if (OriginatingCall != other.OriginatingCall) return false;
+      if (CreateMethod != other.CreateMethod) return false;
+      if (!object.Equals(Options, other.Options)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -507,9 +500,6 @@ namespace Enfonica.Voice.V1Beta1 {
       if (To.Length != 0) hash ^= To.GetHashCode();
       if (From.Length != 0) hash ^= From.GetHashCode();
       if (IsPrivate != false) hash ^= IsPrivate.GetHashCode();
-      if (StatusUpdateUri.Length != 0) hash ^= StatusUpdateUri.GetHashCode();
-      if (HandleUri.Length != 0) hash ^= HandleUri.GetHashCode();
-      if (ValidityPeriodSeconds != 0) hash ^= ValidityPeriodSeconds.GetHashCode();
       hash ^= Labels.GetHashCode();
       if (Transport != global::Enfonica.Voice.V1Beta1.Call.Types.Transport.Unspecified) hash ^= Transport.GetHashCode();
       if (Direction != global::Enfonica.Voice.V1Beta1.Call.Types.Direction.Unspecified) hash ^= Direction.GetHashCode();
@@ -524,6 +514,8 @@ namespace Enfonica.Voice.V1Beta1 {
       if (endTime_ != null) hash ^= EndTime.GetHashCode();
       if (Bridged != false) hash ^= Bridged.GetHashCode();
       if (OriginatingCall.Length != 0) hash ^= OriginatingCall.GetHashCode();
+      if (CreateMethod != global::Enfonica.Voice.V1Beta1.Call.Types.CreateMethod.Unspecified) hash ^= CreateMethod.GetHashCode();
+      if (options_ != null) hash ^= Options.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -555,18 +547,6 @@ namespace Enfonica.Voice.V1Beta1 {
       if (IsPrivate != false) {
         output.WriteRawTag(32);
         output.WriteBool(IsPrivate);
-      }
-      if (StatusUpdateUri.Length != 0) {
-        output.WriteRawTag(42);
-        output.WriteString(StatusUpdateUri);
-      }
-      if (HandleUri.Length != 0) {
-        output.WriteRawTag(50);
-        output.WriteString(HandleUri);
-      }
-      if (ValidityPeriodSeconds != 0) {
-        output.WriteRawTag(56);
-        output.WriteInt32(ValidityPeriodSeconds);
       }
       labels_.WriteTo(output, _map_labels_codec);
       if (Transport != global::Enfonica.Voice.V1Beta1.Call.Types.Transport.Unspecified) {
@@ -621,6 +601,14 @@ namespace Enfonica.Voice.V1Beta1 {
         output.WriteRawTag(178, 1);
         output.WriteString(OriginatingCall);
       }
+      if (CreateMethod != global::Enfonica.Voice.V1Beta1.Call.Types.CreateMethod.Unspecified) {
+        output.WriteRawTag(184, 1);
+        output.WriteEnum((int) CreateMethod);
+      }
+      if (options_ != null) {
+        output.WriteRawTag(194, 1);
+        output.WriteMessage(Options);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -645,18 +633,6 @@ namespace Enfonica.Voice.V1Beta1 {
       if (IsPrivate != false) {
         output.WriteRawTag(32);
         output.WriteBool(IsPrivate);
-      }
-      if (StatusUpdateUri.Length != 0) {
-        output.WriteRawTag(42);
-        output.WriteString(StatusUpdateUri);
-      }
-      if (HandleUri.Length != 0) {
-        output.WriteRawTag(50);
-        output.WriteString(HandleUri);
-      }
-      if (ValidityPeriodSeconds != 0) {
-        output.WriteRawTag(56);
-        output.WriteInt32(ValidityPeriodSeconds);
       }
       labels_.WriteTo(ref output, _map_labels_codec);
       if (Transport != global::Enfonica.Voice.V1Beta1.Call.Types.Transport.Unspecified) {
@@ -711,6 +687,14 @@ namespace Enfonica.Voice.V1Beta1 {
         output.WriteRawTag(178, 1);
         output.WriteString(OriginatingCall);
       }
+      if (CreateMethod != global::Enfonica.Voice.V1Beta1.Call.Types.CreateMethod.Unspecified) {
+        output.WriteRawTag(184, 1);
+        output.WriteEnum((int) CreateMethod);
+      }
+      if (options_ != null) {
+        output.WriteRawTag(194, 1);
+        output.WriteMessage(Options);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -731,15 +715,6 @@ namespace Enfonica.Voice.V1Beta1 {
       }
       if (IsPrivate != false) {
         size += 1 + 1;
-      }
-      if (StatusUpdateUri.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(StatusUpdateUri);
-      }
-      if (HandleUri.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(HandleUri);
-      }
-      if (ValidityPeriodSeconds != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ValidityPeriodSeconds);
       }
       size += labels_.CalculateSize(_map_labels_codec);
       if (Transport != global::Enfonica.Voice.V1Beta1.Call.Types.Transport.Unspecified) {
@@ -781,6 +756,12 @@ namespace Enfonica.Voice.V1Beta1 {
       if (OriginatingCall.Length != 0) {
         size += 2 + pb::CodedOutputStream.ComputeStringSize(OriginatingCall);
       }
+      if (CreateMethod != global::Enfonica.Voice.V1Beta1.Call.Types.CreateMethod.Unspecified) {
+        size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) CreateMethod);
+      }
+      if (options_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(Options);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -803,15 +784,6 @@ namespace Enfonica.Voice.V1Beta1 {
       }
       if (other.IsPrivate != false) {
         IsPrivate = other.IsPrivate;
-      }
-      if (other.StatusUpdateUri.Length != 0) {
-        StatusUpdateUri = other.StatusUpdateUri;
-      }
-      if (other.HandleUri.Length != 0) {
-        HandleUri = other.HandleUri;
-      }
-      if (other.ValidityPeriodSeconds != 0) {
-        ValidityPeriodSeconds = other.ValidityPeriodSeconds;
       }
       labels_.Add(other.labels_);
       if (other.Transport != global::Enfonica.Voice.V1Beta1.Call.Types.Transport.Unspecified) {
@@ -871,6 +843,15 @@ namespace Enfonica.Voice.V1Beta1 {
       if (other.OriginatingCall.Length != 0) {
         OriginatingCall = other.OriginatingCall;
       }
+      if (other.CreateMethod != global::Enfonica.Voice.V1Beta1.Call.Types.CreateMethod.Unspecified) {
+        CreateMethod = other.CreateMethod;
+      }
+      if (other.options_ != null) {
+        if (options_ == null) {
+          Options = new global::Enfonica.Voice.V1Beta1.Call.Types.ApiCallOptions();
+        }
+        Options.MergeFrom(other.Options);
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -899,18 +880,6 @@ namespace Enfonica.Voice.V1Beta1 {
           }
           case 32: {
             IsPrivate = input.ReadBool();
-            break;
-          }
-          case 42: {
-            StatusUpdateUri = input.ReadString();
-            break;
-          }
-          case 50: {
-            HandleUri = input.ReadString();
-            break;
-          }
-          case 56: {
-            ValidityPeriodSeconds = input.ReadInt32();
             break;
           }
           case 66: {
@@ -987,6 +956,17 @@ namespace Enfonica.Voice.V1Beta1 {
             OriginatingCall = input.ReadString();
             break;
           }
+          case 184: {
+            CreateMethod = (global::Enfonica.Voice.V1Beta1.Call.Types.CreateMethod) input.ReadEnum();
+            break;
+          }
+          case 194: {
+            if (options_ == null) {
+              Options = new global::Enfonica.Voice.V1Beta1.Call.Types.ApiCallOptions();
+            }
+            input.ReadMessage(Options);
+            break;
+          }
         }
       }
     #endif
@@ -1015,18 +995,6 @@ namespace Enfonica.Voice.V1Beta1 {
           }
           case 32: {
             IsPrivate = input.ReadBool();
-            break;
-          }
-          case 42: {
-            StatusUpdateUri = input.ReadString();
-            break;
-          }
-          case 50: {
-            HandleUri = input.ReadString();
-            break;
-          }
-          case 56: {
-            ValidityPeriodSeconds = input.ReadInt32();
             break;
           }
           case 66: {
@@ -1101,6 +1069,17 @@ namespace Enfonica.Voice.V1Beta1 {
           }
           case 178: {
             OriginatingCall = input.ReadString();
+            break;
+          }
+          case 184: {
+            CreateMethod = (global::Enfonica.Voice.V1Beta1.Call.Types.CreateMethod) input.ReadEnum();
+            break;
+          }
+          case 194: {
+            if (options_ == null) {
+              Options = new global::Enfonica.Voice.V1Beta1.Call.Types.ApiCallOptions();
+            }
+            input.ReadMessage(Options);
             break;
           }
         }
@@ -1199,8 +1178,509 @@ namespace Enfonica.Voice.V1Beta1 {
         [pbr::OriginalName("SIP")] Sip = 3,
       }
 
+      /// <summary>
+      /// How a call was created.
+      /// </summary>
+      public enum CreateMethod {
+        /// <summary>
+        /// Unspecified create method.
+        /// </summary>
+        [pbr::OriginalName("CREATE_METHOD_UNSPECIFIED")] Unspecified = 0,
+        /// <summary>
+        /// The call was created as a result of receiving an incoming call.
+        /// </summary>
+        [pbr::OriginalName("INCOMING_CALL")] IncomingCall = 1,
+        /// <summary>
+        /// The call was created by its parent call,
+        /// e.g. VoiceML `&lt;Call>` or `&lt;Redirect>`.
+        /// </summary>
+        [pbr::OriginalName("PARENT_CALL")] ParentCall = 2,
+        /// <summary>
+        /// The call was creating using the API.
+        /// </summary>
+        [pbr::OriginalName("API")] Api = 3,
+      }
+
+      /// <summary>
+      /// Options that are applied to the call when it is an outgoing call created
+      /// by the API.
+      /// </summary>
+      public sealed partial class ApiCallOptions : pb::IMessage<ApiCallOptions>
+      #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          , pb::IBufferMessage
+      #endif
+      {
+        private static readonly pb::MessageParser<ApiCallOptions> _parser = new pb::MessageParser<ApiCallOptions>(() => new ApiCallOptions());
+        private pb::UnknownFieldSet _unknownFields;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pb::MessageParser<ApiCallOptions> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Enfonica.Voice.V1Beta1.Call.Descriptor.NestedTypes[0]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public ApiCallOptions() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public ApiCallOptions(ApiCallOptions other) : this() {
+          handlerUris_ = other.handlerUris_.Clone();
+          stateUpdateUri_ = other.stateUpdateUri_;
+          timeoutSeconds_ = other.timeoutSeconds_;
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public ApiCallOptions Clone() {
+          return new ApiCallOptions(this);
+        }
+
+        /// <summary>Field number for the "handler_uris" field.</summary>
+        public const int HandlerUrisFieldNumber = 1;
+        private static readonly pb::FieldCodec<string> _repeated_handlerUris_codec
+            = pb::FieldCodec.ForString(10);
+        private readonly pbc::RepeatedField<string> handlerUris_ = new pbc::RepeatedField<string>();
+        /// <summary>
+        /// One or more URIs where VoiceML requests should be made to control the call.
+        /// The first URI will be attempted first, while the other URIs are only used
+        /// if the initial URI fails. Can be any supported URI.
+        /// Minimum 1 URI, maximum 5 URIs.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public pbc::RepeatedField<string> HandlerUris {
+          get { return handlerUris_; }
+        }
+
+        /// <summary>Field number for the "state_update_uri" field.</summary>
+        public const int StateUpdateUriFieldNumber = 2;
+        private string stateUpdateUri_ = "";
+        /// <summary>
+        /// The URL where state updates should be sent.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public string StateUpdateUri {
+          get { return stateUpdateUri_; }
+          set {
+            stateUpdateUri_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+          }
+        }
+
+        /// <summary>Field number for the "timeout_seconds" field.</summary>
+        public const int TimeoutSecondsFieldNumber = 3;
+        private int timeoutSeconds_;
+        /// <summary>
+        /// The maximum amount of time, in seconds, the call is allowed to attempt an endpoint.
+        /// Default 30 seconds. Minimum 1, maximum 600 seconds.
+        /// (-- api-linter: core::0142::time-field-type=disabled
+        ///     aip.dev/not-precedent: This is not a timestamp. --)
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int TimeoutSeconds {
+          get { return timeoutSeconds_; }
+          set {
+            timeoutSeconds_ = value;
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override bool Equals(object other) {
+          return Equals(other as ApiCallOptions);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Equals(ApiCallOptions other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if(!handlerUris_.Equals(other.handlerUris_)) return false;
+          if (StateUpdateUri != other.StateUpdateUri) return false;
+          if (TimeoutSeconds != other.TimeoutSeconds) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override int GetHashCode() {
+          int hash = 1;
+          hash ^= handlerUris_.GetHashCode();
+          if (StateUpdateUri.Length != 0) hash ^= StateUpdateUri.GetHashCode();
+          if (TimeoutSeconds != 0) hash ^= TimeoutSeconds.GetHashCode();
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void WriteTo(pb::CodedOutputStream output) {
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          output.WriteRawMessage(this);
+        #else
+          handlerUris_.WriteTo(output, _repeated_handlerUris_codec);
+          if (StateUpdateUri.Length != 0) {
+            output.WriteRawTag(18);
+            output.WriteString(StateUpdateUri);
+          }
+          if (TimeoutSeconds != 0) {
+            output.WriteRawTag(24);
+            output.WriteInt32(TimeoutSeconds);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        #endif
+        }
+
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+          handlerUris_.WriteTo(ref output, _repeated_handlerUris_codec);
+          if (StateUpdateUri.Length != 0) {
+            output.WriteRawTag(18);
+            output.WriteString(StateUpdateUri);
+          }
+          if (TimeoutSeconds != 0) {
+            output.WriteRawTag(24);
+            output.WriteInt32(TimeoutSeconds);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(ref output);
+          }
+        }
+        #endif
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int CalculateSize() {
+          int size = 0;
+          size += handlerUris_.CalculateSize(_repeated_handlerUris_codec);
+          if (StateUpdateUri.Length != 0) {
+            size += 1 + pb::CodedOutputStream.ComputeStringSize(StateUpdateUri);
+          }
+          if (TimeoutSeconds != 0) {
+            size += 1 + pb::CodedOutputStream.ComputeInt32Size(TimeoutSeconds);
+          }
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(ApiCallOptions other) {
+          if (other == null) {
+            return;
+          }
+          handlerUris_.Add(other.handlerUris_);
+          if (other.StateUpdateUri.Length != 0) {
+            StateUpdateUri = other.StateUpdateUri;
+          }
+          if (other.TimeoutSeconds != 0) {
+            TimeoutSeconds = other.TimeoutSeconds;
+          }
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(pb::CodedInputStream input) {
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          input.ReadRawMessage(this);
+        #else
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 10: {
+                handlerUris_.AddEntriesFrom(input, _repeated_handlerUris_codec);
+                break;
+              }
+              case 18: {
+                StateUpdateUri = input.ReadString();
+                break;
+              }
+              case 24: {
+                TimeoutSeconds = input.ReadInt32();
+                break;
+              }
+            }
+          }
+        #endif
+        }
+
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+                break;
+              case 10: {
+                handlerUris_.AddEntriesFrom(ref input, _repeated_handlerUris_codec);
+                break;
+              }
+              case 18: {
+                StateUpdateUri = input.ReadString();
+                break;
+              }
+              case 24: {
+                TimeoutSeconds = input.ReadInt32();
+                break;
+              }
+            }
+          }
+        }
+        #endif
+
+      }
+
     }
     #endregion
+
+  }
+
+  /// <summary>
+  /// Request to create a new call.
+  /// </summary>
+  public sealed partial class CreateCallRequest : pb::IMessage<CreateCallRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CreateCallRequest> _parser = new pb::MessageParser<CreateCallRequest>(() => new CreateCallRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CreateCallRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Enfonica.Voice.V1Beta1.CallsReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CreateCallRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CreateCallRequest(CreateCallRequest other) : this() {
+      parent_ = other.parent_;
+      call_ = other.call_ != null ? other.call_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CreateCallRequest Clone() {
+      return new CreateCallRequest(this);
+    }
+
+    /// <summary>Field number for the "parent" field.</summary>
+    public const int ParentFieldNumber = 1;
+    private string parent_ = "";
+    /// <summary>
+    /// The project under which to create the call in the form `projects/*`.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Parent {
+      get { return parent_; }
+      set {
+        parent_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "call" field.</summary>
+    public const int CallFieldNumber = 2;
+    private global::Enfonica.Voice.V1Beta1.Call call_;
+    /// <summary>
+    /// The call resource to be created.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Enfonica.Voice.V1Beta1.Call Call {
+      get { return call_; }
+      set {
+        call_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CreateCallRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CreateCallRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Parent != other.Parent) return false;
+      if (!object.Equals(Call, other.Call)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Parent.Length != 0) hash ^= Parent.GetHashCode();
+      if (call_ != null) hash ^= Call.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Parent.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Parent);
+      }
+      if (call_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Call);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Parent.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Parent);
+      }
+      if (call_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Call);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Parent.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Parent);
+      }
+      if (call_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Call);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CreateCallRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Parent.Length != 0) {
+        Parent = other.Parent;
+      }
+      if (other.call_ != null) {
+        if (call_ == null) {
+          Call = new global::Enfonica.Voice.V1Beta1.Call();
+        }
+        Call.MergeFrom(other.Call);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Parent = input.ReadString();
+            break;
+          }
+          case 18: {
+            if (call_ == null) {
+              Call = new global::Enfonica.Voice.V1Beta1.Call();
+            }
+            input.ReadMessage(Call);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Parent = input.ReadString();
+            break;
+          }
+          case 18: {
+            if (call_ == null) {
+              Call = new global::Enfonica.Voice.V1Beta1.Call();
+            }
+            input.ReadMessage(Call);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
@@ -1219,7 +1699,7 @@ namespace Enfonica.Voice.V1Beta1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Enfonica.Voice.V1Beta1.CallsReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Enfonica.Voice.V1Beta1.CallsReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1398,7 +1878,7 @@ namespace Enfonica.Voice.V1Beta1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Enfonica.Voice.V1Beta1.CallsReflection.Descriptor.MessageTypes[2]; }
+      get { return global::Enfonica.Voice.V1Beta1.CallsReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1710,7 +2190,7 @@ namespace Enfonica.Voice.V1Beta1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Enfonica.Voice.V1Beta1.CallsReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Enfonica.Voice.V1Beta1.CallsReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

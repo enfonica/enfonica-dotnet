@@ -33,13 +33,12 @@ namespace Enfonica.Numbering.V1Beta1.Snippets
             // Initialize request argument(s)
             SearchPhoneNumbersRequest request = new SearchPhoneNumbersRequest
             {
-                Capabilities =
-                {
-                    PhoneNumber.Types.PhoneNumberCapability.Unspecified,
-                },
                 NumberType = PhoneNumber.Types.PhoneNumberType.Unspecified,
                 CountryCode = "",
                 Prefix = "",
+                SupportsVoice = false,
+                SupportsSms = false,
+                SupportsMms = false,
             };
             // Make the request
             PagedEnumerable<SearchPhoneNumbersResponse, PhoneNumber> response = phoneNumbersClient.SearchPhoneNumbers(request);
@@ -87,13 +86,12 @@ namespace Enfonica.Numbering.V1Beta1.Snippets
             // Initialize request argument(s)
             SearchPhoneNumbersRequest request = new SearchPhoneNumbersRequest
             {
-                Capabilities =
-                {
-                    PhoneNumber.Types.PhoneNumberCapability.Unspecified,
-                },
                 NumberType = PhoneNumber.Types.PhoneNumberType.Unspecified,
                 CountryCode = "",
                 Prefix = "",
+                SupportsVoice = false,
+                SupportsSms = false,
+                SupportsMms = false,
             };
             // Make the request
             PagedAsyncEnumerable<SearchPhoneNumbersResponse, PhoneNumber> response = phoneNumbersClient.SearchPhoneNumbersAsync(request);

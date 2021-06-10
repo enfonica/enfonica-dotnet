@@ -45,12 +45,25 @@ namespace Enfonica.Voice.V1Beta1
         private CallsSettings(CallsSettings existing) : base(existing)
         {
             gax::GaxPreconditions.CheckNotNull(existing, nameof(existing));
+            CreateCallSettings = existing.CreateCallSettings;
             GetCallSettings = existing.GetCallSettings;
             ListCallsSettings = existing.ListCallsSettings;
             OnCopy(existing);
         }
 
         partial void OnCopy(CallsSettings existing);
+
+        /// <summary>
+        /// <see cref="gaxgrpc::CallSettings"/> for synchronous and asynchronous calls to <c>CallsClient.CreateCall</c>
+        /// and <c>CallsClient.CreateCallAsync</c>.
+        /// </summary>
+        /// <remarks>
+        /// <list type="bullet">
+        /// <item><description>This call will not be retried.</description></item>
+        /// <item><description>Timeout: 10 seconds.</description></item>
+        /// </list>
+        /// </remarks>
+        public gaxgrpc::CallSettings CreateCallSettings { get; set; } = gaxgrpc::CallSettings.FromExpiration(gax::Expiration.FromTimeout(sys::TimeSpan.FromMilliseconds(10000)));
 
         /// <summary>
         /// <see cref="gaxgrpc::CallSettings"/> for synchronous and asynchronous calls to <c>CallsClient.GetCall</c> and
@@ -214,6 +227,160 @@ namespace Enfonica.Voice.V1Beta1
 
         /// <summary>The underlying gRPC Calls client</summary>
         public virtual Calls.CallsClient GrpcClient => throw new sys::NotImplementedException();
+
+        /// <summary>
+        /// Creates a call in the state QUEUED. This will cause an outgoing call
+        /// to be started.
+        /// 
+        /// The caller must have `voice.calls.create` permission on the project.
+        /// </summary>
+        /// <param name="request">The request object containing all of the parameters for the API call.</param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>The RPC response.</returns>
+        public virtual Call CreateCall(CreateCallRequest request, gaxgrpc::CallSettings callSettings = null) =>
+            throw new sys::NotImplementedException();
+
+        /// <summary>
+        /// Creates a call in the state QUEUED. This will cause an outgoing call
+        /// to be started.
+        /// 
+        /// The caller must have `voice.calls.create` permission on the project.
+        /// </summary>
+        /// <param name="request">The request object containing all of the parameters for the API call.</param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<Call> CreateCallAsync(CreateCallRequest request, gaxgrpc::CallSettings callSettings = null) =>
+            throw new sys::NotImplementedException();
+
+        /// <summary>
+        /// Creates a call in the state QUEUED. This will cause an outgoing call
+        /// to be started.
+        /// 
+        /// The caller must have `voice.calls.create` permission on the project.
+        /// </summary>
+        /// <param name="request">The request object containing all of the parameters for the API call.</param>
+        /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<Call> CreateCallAsync(CreateCallRequest request, st::CancellationToken cancellationToken) =>
+            CreateCallAsync(request, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Creates a call in the state QUEUED. This will cause an outgoing call
+        /// to be started.
+        /// 
+        /// The caller must have `voice.calls.create` permission on the project.
+        /// </summary>
+        /// <param name="parent">
+        /// The project under which to create the call in the form `projects/*`.
+        /// </param>
+        /// <param name="call">
+        /// The call resource to be created.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>The RPC response.</returns>
+        public virtual Call CreateCall(string parent, Call call, gaxgrpc::CallSettings callSettings = null) =>
+            CreateCall(new CreateCallRequest
+            {
+                Parent = gax::GaxPreconditions.CheckNotNullOrEmpty(parent, nameof(parent)),
+                Call = gax::GaxPreconditions.CheckNotNull(call, nameof(call)),
+            }, callSettings);
+
+        /// <summary>
+        /// Creates a call in the state QUEUED. This will cause an outgoing call
+        /// to be started.
+        /// 
+        /// The caller must have `voice.calls.create` permission on the project.
+        /// </summary>
+        /// <param name="parent">
+        /// The project under which to create the call in the form `projects/*`.
+        /// </param>
+        /// <param name="call">
+        /// The call resource to be created.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<Call> CreateCallAsync(string parent, Call call, gaxgrpc::CallSettings callSettings = null) =>
+            CreateCallAsync(new CreateCallRequest
+            {
+                Parent = gax::GaxPreconditions.CheckNotNullOrEmpty(parent, nameof(parent)),
+                Call = gax::GaxPreconditions.CheckNotNull(call, nameof(call)),
+            }, callSettings);
+
+        /// <summary>
+        /// Creates a call in the state QUEUED. This will cause an outgoing call
+        /// to be started.
+        /// 
+        /// The caller must have `voice.calls.create` permission on the project.
+        /// </summary>
+        /// <param name="parent">
+        /// The project under which to create the call in the form `projects/*`.
+        /// </param>
+        /// <param name="call">
+        /// The call resource to be created.
+        /// </param>
+        /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<Call> CreateCallAsync(string parent, Call call, st::CancellationToken cancellationToken) =>
+            CreateCallAsync(parent, call, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Creates a call in the state QUEUED. This will cause an outgoing call
+        /// to be started.
+        /// 
+        /// The caller must have `voice.calls.create` permission on the project.
+        /// </summary>
+        /// <param name="parent">
+        /// The project under which to create the call in the form `projects/*`.
+        /// </param>
+        /// <param name="call">
+        /// The call resource to be created.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>The RPC response.</returns>
+        public virtual Call CreateCall(ProjectName parent, Call call, gaxgrpc::CallSettings callSettings = null) =>
+            CreateCall(new CreateCallRequest
+            {
+                ParentAsProjectName = gax::GaxPreconditions.CheckNotNull(parent, nameof(parent)),
+                Call = gax::GaxPreconditions.CheckNotNull(call, nameof(call)),
+            }, callSettings);
+
+        /// <summary>
+        /// Creates a call in the state QUEUED. This will cause an outgoing call
+        /// to be started.
+        /// 
+        /// The caller must have `voice.calls.create` permission on the project.
+        /// </summary>
+        /// <param name="parent">
+        /// The project under which to create the call in the form `projects/*`.
+        /// </param>
+        /// <param name="call">
+        /// The call resource to be created.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<Call> CreateCallAsync(ProjectName parent, Call call, gaxgrpc::CallSettings callSettings = null) =>
+            CreateCallAsync(new CreateCallRequest
+            {
+                ParentAsProjectName = gax::GaxPreconditions.CheckNotNull(parent, nameof(parent)),
+                Call = gax::GaxPreconditions.CheckNotNull(call, nameof(call)),
+            }, callSettings);
+
+        /// <summary>
+        /// Creates a call in the state QUEUED. This will cause an outgoing call
+        /// to be started.
+        /// 
+        /// The caller must have `voice.calls.create` permission on the project.
+        /// </summary>
+        /// <param name="parent">
+        /// The project under which to create the call in the form `projects/*`.
+        /// </param>
+        /// <param name="call">
+        /// The call resource to be created.
+        /// </param>
+        /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<Call> CreateCallAsync(ProjectName parent, Call call, st::CancellationToken cancellationToken) =>
+            CreateCallAsync(parent, call, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
 
         /// <summary>
         /// Retrieves a Call identified by the supplied resource name.
@@ -487,6 +654,8 @@ namespace Enfonica.Voice.V1Beta1
     /// </remarks>
     public sealed partial class CallsClientImpl : CallsClient
     {
+        private readonly gaxgrpc::ApiCall<CreateCallRequest, Call> _callCreateCall;
+
         private readonly gaxgrpc::ApiCall<GetCallRequest, Call> _callGetCall;
 
         private readonly gaxgrpc::ApiCall<ListCallsRequest, ListCallsResponse> _callListCalls;
@@ -501,6 +670,9 @@ namespace Enfonica.Voice.V1Beta1
             GrpcClient = grpcClient;
             CallsSettings effectiveSettings = settings ?? CallsSettings.GetDefault();
             gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
+            _callCreateCall = clientHelper.BuildApiCall<CreateCallRequest, Call>(grpcClient.CreateCallAsync, grpcClient.CreateCall, effectiveSettings.CreateCallSettings).WithGoogleRequestParam("parent", request => request.Parent);
+            Modify_ApiCall(ref _callCreateCall);
+            Modify_CreateCallApiCall(ref _callCreateCall);
             _callGetCall = clientHelper.BuildApiCall<GetCallRequest, Call>(grpcClient.GetCallAsync, grpcClient.GetCall, effectiveSettings.GetCallSettings).WithGoogleRequestParam("name", request => request.Name);
             Modify_ApiCall(ref _callGetCall);
             Modify_GetCallApiCall(ref _callGetCall);
@@ -512,6 +684,8 @@ namespace Enfonica.Voice.V1Beta1
 
         partial void Modify_ApiCall<TRequest, TResponse>(ref gaxgrpc::ApiCall<TRequest, TResponse> call) where TRequest : class, proto::IMessage<TRequest> where TResponse : class, proto::IMessage<TResponse>;
 
+        partial void Modify_CreateCallApiCall(ref gaxgrpc::ApiCall<CreateCallRequest, Call> call);
+
         partial void Modify_GetCallApiCall(ref gaxgrpc::ApiCall<GetCallRequest, Call> call);
 
         partial void Modify_ListCallsApiCall(ref gaxgrpc::ApiCall<ListCallsRequest, ListCallsResponse> call);
@@ -521,9 +695,41 @@ namespace Enfonica.Voice.V1Beta1
         /// <summary>The underlying gRPC Calls client</summary>
         public override Calls.CallsClient GrpcClient { get; }
 
+        partial void Modify_CreateCallRequest(ref CreateCallRequest request, ref gaxgrpc::CallSettings settings);
+
         partial void Modify_GetCallRequest(ref GetCallRequest request, ref gaxgrpc::CallSettings settings);
 
         partial void Modify_ListCallsRequest(ref ListCallsRequest request, ref gaxgrpc::CallSettings settings);
+
+        /// <summary>
+        /// Creates a call in the state QUEUED. This will cause an outgoing call
+        /// to be started.
+        /// 
+        /// The caller must have `voice.calls.create` permission on the project.
+        /// </summary>
+        /// <param name="request">The request object containing all of the parameters for the API call.</param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>The RPC response.</returns>
+        public override Call CreateCall(CreateCallRequest request, gaxgrpc::CallSettings callSettings = null)
+        {
+            Modify_CreateCallRequest(ref request, ref callSettings);
+            return _callCreateCall.Sync(request, callSettings);
+        }
+
+        /// <summary>
+        /// Creates a call in the state QUEUED. This will cause an outgoing call
+        /// to be started.
+        /// 
+        /// The caller must have `voice.calls.create` permission on the project.
+        /// </summary>
+        /// <param name="request">The request object containing all of the parameters for the API call.</param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public override stt::Task<Call> CreateCallAsync(CreateCallRequest request, gaxgrpc::CallSettings callSettings = null)
+        {
+            Modify_CreateCallRequest(ref request, ref callSettings);
+            return _callCreateCall.Async(request, callSettings);
+        }
 
         /// <summary>
         /// Retrieves a Call identified by the supplied resource name.

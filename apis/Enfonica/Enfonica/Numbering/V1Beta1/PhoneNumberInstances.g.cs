@@ -264,8 +264,12 @@ namespace Enfonica.Numbering.V1Beta1 {
     /// if the previous URIs fail.  If no URIs are specified, then no action is
     /// taken when receiving messages.
     ///
-    /// Currently URIs must be fully qualified HTTP/HTTPS URLs, but this may change
-    /// to include other types of URIs.
+    /// The following URIs are supported:
+    /// - absolute `http` and `https` URIs.
+    /// - `sip` URIs in the format sip:user@domain.com[:port]
+    /// - `tel` URIs in the format tel:+phone_number
+    ///
+    /// Additional URIs may be supported in the future.
     ///
     /// Maximum 5 URIs.
     /// </summary>

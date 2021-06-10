@@ -30,10 +30,18 @@ namespace Enfonica.Voice.V1Beta1 {
   {
     static readonly string __ServiceName = "enfonica.voice.v1beta1.Calls";
 
-    static readonly grpc::Marshaller<global::Enfonica.Voice.V1Beta1.GetCallRequest> __Marshaller_enfonica_voice_v1beta1_GetCallRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Enfonica.Voice.V1Beta1.GetCallRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Enfonica.Voice.V1Beta1.CreateCallRequest> __Marshaller_enfonica_voice_v1beta1_CreateCallRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Enfonica.Voice.V1Beta1.CreateCallRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Enfonica.Voice.V1Beta1.Call> __Marshaller_enfonica_voice_v1beta1_Call = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Enfonica.Voice.V1Beta1.Call.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Enfonica.Voice.V1Beta1.GetCallRequest> __Marshaller_enfonica_voice_v1beta1_GetCallRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Enfonica.Voice.V1Beta1.GetCallRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Enfonica.Voice.V1Beta1.ListCallsRequest> __Marshaller_enfonica_voice_v1beta1_ListCallsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Enfonica.Voice.V1Beta1.ListCallsRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Enfonica.Voice.V1Beta1.ListCallsResponse> __Marshaller_enfonica_voice_v1beta1_ListCallsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Enfonica.Voice.V1Beta1.ListCallsResponse.Parser.ParseFrom);
+
+    static readonly grpc::Method<global::Enfonica.Voice.V1Beta1.CreateCallRequest, global::Enfonica.Voice.V1Beta1.Call> __Method_CreateCall = new grpc::Method<global::Enfonica.Voice.V1Beta1.CreateCallRequest, global::Enfonica.Voice.V1Beta1.Call>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "CreateCall",
+        __Marshaller_enfonica_voice_v1beta1_CreateCallRequest,
+        __Marshaller_enfonica_voice_v1beta1_Call);
 
     static readonly grpc::Method<global::Enfonica.Voice.V1Beta1.GetCallRequest, global::Enfonica.Voice.V1Beta1.Call> __Method_GetCall = new grpc::Method<global::Enfonica.Voice.V1Beta1.GetCallRequest, global::Enfonica.Voice.V1Beta1.Call>(
         grpc::MethodType.Unary,
@@ -59,6 +67,20 @@ namespace Enfonica.Voice.V1Beta1 {
     [grpc::BindServiceMethod(typeof(Calls), "BindService")]
     public abstract partial class CallsBase
     {
+      /// <summary>
+      /// Creates a call in the state QUEUED. This will cause an outgoing call
+      /// to be started.
+      ///
+      /// The caller must have `voice.calls.create` permission on the project.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Enfonica.Voice.V1Beta1.Call> CreateCall(global::Enfonica.Voice.V1Beta1.CreateCallRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
       /// <summary>
       /// Retrieves a Call identified by the supplied resource name.
       ///
@@ -111,6 +133,62 @@ namespace Enfonica.Voice.V1Beta1 {
       {
       }
 
+      /// <summary>
+      /// Creates a call in the state QUEUED. This will cause an outgoing call
+      /// to be started.
+      ///
+      /// The caller must have `voice.calls.create` permission on the project.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Enfonica.Voice.V1Beta1.Call CreateCall(global::Enfonica.Voice.V1Beta1.CreateCallRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return CreateCall(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Creates a call in the state QUEUED. This will cause an outgoing call
+      /// to be started.
+      ///
+      /// The caller must have `voice.calls.create` permission on the project.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Enfonica.Voice.V1Beta1.Call CreateCall(global::Enfonica.Voice.V1Beta1.CreateCallRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_CreateCall, null, options, request);
+      }
+      /// <summary>
+      /// Creates a call in the state QUEUED. This will cause an outgoing call
+      /// to be started.
+      ///
+      /// The caller must have `voice.calls.create` permission on the project.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Enfonica.Voice.V1Beta1.Call> CreateCallAsync(global::Enfonica.Voice.V1Beta1.CreateCallRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return CreateCallAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Creates a call in the state QUEUED. This will cause an outgoing call
+      /// to be started.
+      ///
+      /// The caller must have `voice.calls.create` permission on the project.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Enfonica.Voice.V1Beta1.Call> CreateCallAsync(global::Enfonica.Voice.V1Beta1.CreateCallRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_CreateCall, null, options, request);
+      }
       /// <summary>
       /// Retrieves a Call identified by the supplied resource name.
       ///
@@ -231,6 +309,7 @@ namespace Enfonica.Voice.V1Beta1 {
     public static grpc::ServerServiceDefinition BindService(CallsBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
+          .AddMethod(__Method_CreateCall, serviceImpl.CreateCall)
           .AddMethod(__Method_GetCall, serviceImpl.GetCall)
           .AddMethod(__Method_ListCalls, serviceImpl.ListCalls).Build();
     }
@@ -241,6 +320,7 @@ namespace Enfonica.Voice.V1Beta1 {
     /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
     public static void BindService(grpc::ServiceBinderBase serviceBinder, CallsBase serviceImpl)
     {
+      serviceBinder.AddMethod(__Method_CreateCall, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Enfonica.Voice.V1Beta1.CreateCallRequest, global::Enfonica.Voice.V1Beta1.Call>(serviceImpl.CreateCall));
       serviceBinder.AddMethod(__Method_GetCall, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Enfonica.Voice.V1Beta1.GetCallRequest, global::Enfonica.Voice.V1Beta1.Call>(serviceImpl.GetCall));
       serviceBinder.AddMethod(__Method_ListCalls, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Enfonica.Voice.V1Beta1.ListCallsRequest, global::Enfonica.Voice.V1Beta1.ListCallsResponse>(serviceImpl.ListCalls));
     }
