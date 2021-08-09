@@ -29,67 +29,70 @@ namespace Enfonica.Voice.V1Beta1 {
             "b3RvGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvGhdnb29nbGUvdHlw",
             "ZS9tb25leS5wcm90bxoZZ29vZ2xlL2FwaS9yZXNvdXJjZS5wcm90bxofZ29v",
             "Z2xlL2FwaS9maWVsZF9iZWhhdmlvci5wcm90bxoXZ29vZ2xlL2FwaS9jbGll",
-            "bnQucHJvdG8iuQsKBENhbGwSDAoEbmFtZRgBIAEoCRIPCgJ0bxgCIAEoCUID",
-            "4EECEhEKBGZyb20YAyABKAlCA+BBAhISCgppc19wcml2YXRlGAQgASgIEjgK",
-            "BmxhYmVscxgIIAMoCzIoLmVuZm9uaWNhLnZvaWNlLnYxYmV0YTEuQ2FsbC5M",
-            "YWJlbHNFbnRyeRI+Cgl0cmFuc3BvcnQYCSABKA4yJi5lbmZvbmljYS52b2lj",
-            "ZS52MWJldGExLkNhbGwuVHJhbnNwb3J0QgPgQQMSPgoJZGlyZWN0aW9uGAog",
-            "ASgOMiYuZW5mb25pY2Eudm9pY2UudjFiZXRhMS5DYWxsLkRpcmVjdGlvbkID",
-            "4EEDEhcKCmVycm9yX2NvZGUYCyABKAlCA+BBAxIaCg1lcnJvcl9tZXNzYWdl",
-            "GAwgASgJQgPgQQMSJgoFcHJpY2UYDSABKAsyEi5nb29nbGUudHlwZS5Nb25l",
-            "eUID4EEDEjYKBXN0YXRlGA4gASgOMiIuZW5mb25pY2Eudm9pY2UudjFiZXRh",
-            "MS5DYWxsLlN0YXRlQgPgQQMSNAoLY3JlYXRlX3RpbWUYECABKAsyGi5nb29n",
-            "bGUucHJvdG9idWYuVGltZXN0YW1wQgPgQQMSMwoKc3RhcnRfdGltZRgRIAEo",
-            "CzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCA+BBAxIyCglyaW5nX3Rp",
-            "bWUYEiABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wQgPgQQMSNAoL",
-            "YW5zd2VyX3RpbWUYEyABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1w",
-            "QgPgQQMSMQoIZW5kX3RpbWUYFCABKAsyGi5nb29nbGUucHJvdG9idWYuVGlt",
-            "ZXN0YW1wQgPgQQMSFAoHYnJpZGdlZBgVIAEoCEID4EEDEh0KEG9yaWdpbmF0",
-            "aW5nX2NhbGwYFiABKAlCA+BBAxJFCg1jcmVhdGVfbWV0aG9kGBcgASgOMiku",
-            "ZW5mb25pY2Eudm9pY2UudjFiZXRhMS5DYWxsLkNyZWF0ZU1ldGhvZEID4EED",
-            "EkEKB29wdGlvbnMYGCABKAsyKy5lbmZvbmljYS52b2ljZS52MWJldGExLkNh",
-            "bGwuQXBpQ2FsbE9wdGlvbnNCA+BBAhpeCg5BcGlDYWxsT3B0aW9ucxIZCgxo",
-            "YW5kbGVyX3VyaXMYASADKAlCA+BBAhIYChBzdGF0ZV91cGRhdGVfdXJpGAIg",
-            "ASgJEhcKD3RpbWVvdXRfc2Vjb25kcxgDIAEoBRotCgtMYWJlbHNFbnRyeRIL",
-            "CgNrZXkYASABKAkSDQoFdmFsdWUYAiABKAk6AjgBIpsBCgVTdGF0ZRIVChFT",
-            "VEFURV9VTlNQRUNJRklFRBAAEgoKBlFVRVVFRBABEgwKCFNUQVJUSU5HEAIS",
-            "CwoHUklOR0lORxADEg8KC0lOX1BST0dSRVNTEAQSDQoJQ09NUExFVEVEEAUS",
-            "CgoGRkFJTEVEEAYSEAoMTk9UX0FOU1dFUkVEEAcSCAoEQlVTWRAIEgwKCFJF",
-            "SkVDVEVEEAkiQgoJRGlyZWN0aW9uEhkKFURJUkVDVElPTl9VTlNQRUNJRklF",
-            "RBAAEgwKCE9VVEdPSU5HEAESDAoISU5DT01JTkcQAiJFCglUcmFuc3BvcnQS",
-            "GQoVVFJBTlNQT1JUX1VOU1BFQ0lGSUVEEAASCAoEUFNUThABEgoKBkNMSUVO",
-            "VBACEgcKA1NJUBADIloKDENyZWF0ZU1ldGhvZBIdChlDUkVBVEVfTUVUSE9E",
-            "X1VOU1BFQ0lGSUVEEAASEQoNSU5DT01JTkdfQ0FMTBABEg8KC1BBUkVOVF9D",
-            "QUxMEAISBwoDQVBJEAM6QepBPgobdm9pY2UuYXBpLmVuZm9uaWNhLmNvbS9D",
-            "YWxsEh9wcm9qZWN0cy97cHJvamVjdH0vY2FsbHMve2NhbGx9InkKEUNyZWF0",
-            "ZUNhbGxSZXF1ZXN0EjMKBnBhcmVudBgBIAEoCUIj4EEC+kEdEht2b2ljZS5h",
-            "cGkuZW5mb25pY2EuY29tL0NhbGwSLwoEY2FsbBgCIAEoCzIcLmVuZm9uaWNh",
-            "LnZvaWNlLnYxYmV0YTEuQ2FsbEID4EECIkMKDkdldENhbGxSZXF1ZXN0EjEK",
-            "BG5hbWUYASABKAlCI+BBAvpBHQobdm9pY2UuYXBpLmVuZm9uaWNhLmNvbS9D",
-            "YWxsIn4KEExpc3RDYWxsc1JlcXVlc3QSMwoGcGFyZW50GAEgASgJQiPgQQL6",
-            "QR0SG3ZvaWNlLmFwaS5lbmZvbmljYS5jb20vQ2FsbBIRCglwYWdlX3NpemUY",
-            "AiABKAUSEgoKcGFnZV90b2tlbhgDIAEoCRIOCgZmaWx0ZXIYBCABKAkiWQoR",
-            "TGlzdENhbGxzUmVzcG9uc2USKwoFY2FsbHMYASADKAsyHC5lbmZvbmljYS52",
-            "b2ljZS52MWJldGExLkNhbGwSFwoPbmV4dF9wYWdlX3Rva2VuGAIgASgJMv0D",
-            "CgVDYWxscxKVAQoKQ3JlYXRlQ2FsbBIpLmVuZm9uaWNhLnZvaWNlLnYxYmV0",
-            "YTEuQ3JlYXRlQ2FsbFJlcXVlc3QaHC5lbmZvbmljYS52b2ljZS52MWJldGEx",
-            "LkNhbGwiPoLT5JMCKiIiL3YxYmV0YTEve3BhcmVudD1wcm9qZWN0cy8qfS9j",
-            "YWxsczoEY2FsbNpBC3BhcmVudCxjYWxsEoIBCgdHZXRDYWxsEiYuZW5mb25p",
-            "Y2Eudm9pY2UudjFiZXRhMS5HZXRDYWxsUmVxdWVzdBocLmVuZm9uaWNhLnZv",
-            "aWNlLnYxYmV0YTEuQ2FsbCIxgtPkkwIkEiIvdjFiZXRhMS97bmFtZT1wcm9q",
-            "ZWN0cy8qL2NhbGxzLyp92kEEbmFtZRKVAQoJTGlzdENhbGxzEiguZW5mb25p",
-            "Y2Eudm9pY2UudjFiZXRhMS5MaXN0Q2FsbHNSZXF1ZXN0GikuZW5mb25pY2Eu",
-            "dm9pY2UudjFiZXRhMS5MaXN0Q2FsbHNSZXNwb25zZSIzgtPkkwIkEiIvdjFi",
-            "ZXRhMS97cGFyZW50PXByb2plY3RzLyp9L2NhbGxz2kEGcGFyZW50Gj/KQRZ2",
-            "b2ljZS5hcGkuZW5mb25pY2EuY29t0kEjaHR0cHM6Ly9hcGkuZW5mb25pY2Eu",
-            "Y29tL2F1dGgvdm9pY2VCgwEKGmNvbS5lbmZvbmljYS52b2ljZS52MWJldGEx",
-            "QgpDYWxsc1Byb3RvUAFaM2dpdGh1Yi5jb20vZW5mb25pY2EvZW5mb25pY2Et",
-            "Z28vdm9pY2UvdjFiZXRhMTt2b2ljZfgBAaICBUVORk9OqgIWRW5mb25pY2Eu",
-            "Vm9pY2UuVjFCZXRhMWIGcHJvdG8z"));
+            "bnQucHJvdG8aMmVuZm9uaWNhL3ZvaWNlL3YxYmV0YTEvY2FsbF9yZWNvcmRp",
+            "bmdfY29uZmlnLnByb3RvIvoLCgRDYWxsEgwKBG5hbWUYASABKAkSDwoCdG8Y",
+            "AiABKAlCA+BBAhIRCgRmcm9tGAMgASgJQgPgQQISEgoKaXNfcHJpdmF0ZRgE",
+            "IAEoCBI4CgZsYWJlbHMYCCADKAsyKC5lbmZvbmljYS52b2ljZS52MWJldGEx",
+            "LkNhbGwuTGFiZWxzRW50cnkSPgoJdHJhbnNwb3J0GAkgASgOMiYuZW5mb25p",
+            "Y2Eudm9pY2UudjFiZXRhMS5DYWxsLlRyYW5zcG9ydEID4EEDEj4KCWRpcmVj",
+            "dGlvbhgKIAEoDjImLmVuZm9uaWNhLnZvaWNlLnYxYmV0YTEuQ2FsbC5EaXJl",
+            "Y3Rpb25CA+BBAxIXCgplcnJvcl9jb2RlGAsgASgJQgPgQQMSGgoNZXJyb3Jf",
+            "bWVzc2FnZRgMIAEoCUID4EEDEiYKBXByaWNlGA0gASgLMhIuZ29vZ2xlLnR5",
+            "cGUuTW9uZXlCA+BBAxI2CgVzdGF0ZRgOIAEoDjIiLmVuZm9uaWNhLnZvaWNl",
+            "LnYxYmV0YTEuQ2FsbC5TdGF0ZUID4EEDEjQKC2NyZWF0ZV90aW1lGBAgASgL",
+            "MhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcEID4EEDEjMKCnN0YXJ0X3Rp",
+            "bWUYESABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wQgPgQQMSMgoJ",
+            "cmluZ190aW1lGBIgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcEID",
+            "4EEDEjQKC2Fuc3dlcl90aW1lGBMgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRp",
+            "bWVzdGFtcEID4EEDEjEKCGVuZF90aW1lGBQgASgLMhouZ29vZ2xlLnByb3Rv",
+            "YnVmLlRpbWVzdGFtcEID4EEDEhQKB2JyaWRnZWQYFSABKAhCA+BBAxIdChBv",
+            "cmlnaW5hdGluZ19jYWxsGBYgASgJQgPgQQMSRQoNY3JlYXRlX21ldGhvZBgX",
+            "IAEoDjIpLmVuZm9uaWNhLnZvaWNlLnYxYmV0YTEuQ2FsbC5DcmVhdGVNZXRo",
+            "b2RCA+BBAxJBCgdvcHRpb25zGBggASgLMisuZW5mb25pY2Eudm9pY2UudjFi",
+            "ZXRhMS5DYWxsLkFwaUNhbGxPcHRpb25zQgPgQQIangEKDkFwaUNhbGxPcHRp",
+            "b25zEhkKDGhhbmRsZXJfdXJpcxgBIAMoCUID4EECEhgKEHN0YXRlX3VwZGF0",
+            "ZV91cmkYAiABKAkSFwoPdGltZW91dF9zZWNvbmRzGAMgASgFEj4KCXJlY29y",
+            "ZGluZxgEIAEoCzIrLmVuZm9uaWNhLnZvaWNlLnYxYmV0YTEuQ2FsbFJlY29y",
+            "ZGluZ0NvbmZpZxotCgtMYWJlbHNFbnRyeRILCgNrZXkYASABKAkSDQoFdmFs",
+            "dWUYAiABKAk6AjgBIpsBCgVTdGF0ZRIVChFTVEFURV9VTlNQRUNJRklFRBAA",
+            "EgoKBlFVRVVFRBABEgwKCFNUQVJUSU5HEAISCwoHUklOR0lORxADEg8KC0lO",
+            "X1BST0dSRVNTEAQSDQoJQ09NUExFVEVEEAUSCgoGRkFJTEVEEAYSEAoMTk9U",
+            "X0FOU1dFUkVEEAcSCAoEQlVTWRAIEgwKCFJFSkVDVEVEEAkiQgoJRGlyZWN0",
+            "aW9uEhkKFURJUkVDVElPTl9VTlNQRUNJRklFRBAAEgwKCE9VVEdPSU5HEAES",
+            "DAoISU5DT01JTkcQAiJFCglUcmFuc3BvcnQSGQoVVFJBTlNQT1JUX1VOU1BF",
+            "Q0lGSUVEEAASCAoEUFNUThABEgoKBkNMSUVOVBACEgcKA1NJUBADIloKDENy",
+            "ZWF0ZU1ldGhvZBIdChlDUkVBVEVfTUVUSE9EX1VOU1BFQ0lGSUVEEAASEQoN",
+            "SU5DT01JTkdfQ0FMTBABEg8KC1BBUkVOVF9DQUxMEAISBwoDQVBJEAM6QepB",
+            "Pgobdm9pY2UuYXBpLmVuZm9uaWNhLmNvbS9DYWxsEh9wcm9qZWN0cy97cHJv",
+            "amVjdH0vY2FsbHMve2NhbGx9InkKEUNyZWF0ZUNhbGxSZXF1ZXN0EjMKBnBh",
+            "cmVudBgBIAEoCUIj4EEC+kEdEht2b2ljZS5hcGkuZW5mb25pY2EuY29tL0Nh",
+            "bGwSLwoEY2FsbBgCIAEoCzIcLmVuZm9uaWNhLnZvaWNlLnYxYmV0YTEuQ2Fs",
+            "bEID4EECIkMKDkdldENhbGxSZXF1ZXN0EjEKBG5hbWUYASABKAlCI+BBAvpB",
+            "HQobdm9pY2UuYXBpLmVuZm9uaWNhLmNvbS9DYWxsIn4KEExpc3RDYWxsc1Jl",
+            "cXVlc3QSMwoGcGFyZW50GAEgASgJQiPgQQL6QR0SG3ZvaWNlLmFwaS5lbmZv",
+            "bmljYS5jb20vQ2FsbBIRCglwYWdlX3NpemUYAiABKAUSEgoKcGFnZV90b2tl",
+            "bhgDIAEoCRIOCgZmaWx0ZXIYBCABKAkiWQoRTGlzdENhbGxzUmVzcG9uc2US",
+            "KwoFY2FsbHMYASADKAsyHC5lbmZvbmljYS52b2ljZS52MWJldGExLkNhbGwS",
+            "FwoPbmV4dF9wYWdlX3Rva2VuGAIgASgJMv0DCgVDYWxscxKVAQoKQ3JlYXRl",
+            "Q2FsbBIpLmVuZm9uaWNhLnZvaWNlLnYxYmV0YTEuQ3JlYXRlQ2FsbFJlcXVl",
+            "c3QaHC5lbmZvbmljYS52b2ljZS52MWJldGExLkNhbGwiPoLT5JMCKiIiL3Yx",
+            "YmV0YTEve3BhcmVudD1wcm9qZWN0cy8qfS9jYWxsczoEY2FsbNpBC3BhcmVu",
+            "dCxjYWxsEoIBCgdHZXRDYWxsEiYuZW5mb25pY2Eudm9pY2UudjFiZXRhMS5H",
+            "ZXRDYWxsUmVxdWVzdBocLmVuZm9uaWNhLnZvaWNlLnYxYmV0YTEuQ2FsbCIx",
+            "gtPkkwIkEiIvdjFiZXRhMS97bmFtZT1wcm9qZWN0cy8qL2NhbGxzLyp92kEE",
+            "bmFtZRKVAQoJTGlzdENhbGxzEiguZW5mb25pY2Eudm9pY2UudjFiZXRhMS5M",
+            "aXN0Q2FsbHNSZXF1ZXN0GikuZW5mb25pY2Eudm9pY2UudjFiZXRhMS5MaXN0",
+            "Q2FsbHNSZXNwb25zZSIzgtPkkwIkEiIvdjFiZXRhMS97cGFyZW50PXByb2pl",
+            "Y3RzLyp9L2NhbGxz2kEGcGFyZW50Gj/KQRZ2b2ljZS5hcGkuZW5mb25pY2Eu",
+            "Y29t0kEjaHR0cHM6Ly9hcGkuZW5mb25pY2EuY29tL2F1dGgvdm9pY2VCgwEK",
+            "GmNvbS5lbmZvbmljYS52b2ljZS52MWJldGExQgpDYWxsc1Byb3RvUAFaM2dp",
+            "dGh1Yi5jb20vZW5mb25pY2EvZW5mb25pY2EtZ28vdm9pY2UvdjFiZXRhMTt2",
+            "b2ljZfgBAaICBUVORk9OqgIWRW5mb25pY2EuVm9pY2UuVjFCZXRhMWIGcHJv",
+            "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Type.MoneyReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Type.MoneyReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Enfonica.Voice.V1Beta1.CallRecordingConfigReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Voice.V1Beta1.Call), global::Enfonica.Voice.V1Beta1.Call.Parser, new[]{ "Name", "To", "From", "IsPrivate", "Labels", "Transport", "Direction", "ErrorCode", "ErrorMessage", "Price", "State", "CreateTime", "StartTime", "RingTime", "AnswerTime", "EndTime", "Bridged", "OriginatingCall", "CreateMethod", "Options" }, null, new[]{ typeof(global::Enfonica.Voice.V1Beta1.Call.Types.State), typeof(global::Enfonica.Voice.V1Beta1.Call.Types.Direction), typeof(global::Enfonica.Voice.V1Beta1.Call.Types.Transport), typeof(global::Enfonica.Voice.V1Beta1.Call.Types.CreateMethod) }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Voice.V1Beta1.Call.Types.ApiCallOptions), global::Enfonica.Voice.V1Beta1.Call.Types.ApiCallOptions.Parser, new[]{ "HandlerUris", "StateUpdateUri", "TimeoutSeconds" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Voice.V1Beta1.Call), global::Enfonica.Voice.V1Beta1.Call.Parser, new[]{ "Name", "To", "From", "IsPrivate", "Labels", "Transport", "Direction", "ErrorCode", "ErrorMessage", "Price", "State", "CreateTime", "StartTime", "RingTime", "AnswerTime", "EndTime", "Bridged", "OriginatingCall", "CreateMethod", "Options" }, null, new[]{ typeof(global::Enfonica.Voice.V1Beta1.Call.Types.State), typeof(global::Enfonica.Voice.V1Beta1.Call.Types.Direction), typeof(global::Enfonica.Voice.V1Beta1.Call.Types.Transport), typeof(global::Enfonica.Voice.V1Beta1.Call.Types.CreateMethod) }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Voice.V1Beta1.Call.Types.ApiCallOptions), global::Enfonica.Voice.V1Beta1.Call.Types.ApiCallOptions.Parser, new[]{ "HandlerUris", "StateUpdateUri", "TimeoutSeconds", "Recording" }, null, null, null, null),
             null, }),
             new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Voice.V1Beta1.CreateCallRequest), global::Enfonica.Voice.V1Beta1.CreateCallRequest.Parser, new[]{ "Parent", "Call" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Voice.V1Beta1.GetCallRequest), global::Enfonica.Voice.V1Beta1.GetCallRequest.Parser, new[]{ "Name" }, null, null, null, null),
@@ -1237,6 +1240,7 @@ namespace Enfonica.Voice.V1Beta1 {
           handlerUris_ = other.handlerUris_.Clone();
           stateUpdateUri_ = other.stateUpdateUri_;
           timeoutSeconds_ = other.timeoutSeconds_;
+          recording_ = other.recording_ != null ? other.recording_.Clone() : null;
           _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
         }
 
@@ -1292,6 +1296,21 @@ namespace Enfonica.Voice.V1Beta1 {
           }
         }
 
+        /// <summary>Field number for the "recording" field.</summary>
+        public const int RecordingFieldNumber = 4;
+        private global::Enfonica.Voice.V1Beta1.CallRecordingConfig recording_;
+        /// <summary>
+        /// The configuration of call recording. If not specified, no call recording
+        /// will be configured.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public global::Enfonica.Voice.V1Beta1.CallRecordingConfig Recording {
+          get { return recording_; }
+          set {
+            recording_ = value;
+          }
+        }
+
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public override bool Equals(object other) {
           return Equals(other as ApiCallOptions);
@@ -1308,6 +1327,7 @@ namespace Enfonica.Voice.V1Beta1 {
           if(!handlerUris_.Equals(other.handlerUris_)) return false;
           if (StateUpdateUri != other.StateUpdateUri) return false;
           if (TimeoutSeconds != other.TimeoutSeconds) return false;
+          if (!object.Equals(Recording, other.Recording)) return false;
           return Equals(_unknownFields, other._unknownFields);
         }
 
@@ -1317,6 +1337,7 @@ namespace Enfonica.Voice.V1Beta1 {
           hash ^= handlerUris_.GetHashCode();
           if (StateUpdateUri.Length != 0) hash ^= StateUpdateUri.GetHashCode();
           if (TimeoutSeconds != 0) hash ^= TimeoutSeconds.GetHashCode();
+          if (recording_ != null) hash ^= Recording.GetHashCode();
           if (_unknownFields != null) {
             hash ^= _unknownFields.GetHashCode();
           }
@@ -1342,6 +1363,10 @@ namespace Enfonica.Voice.V1Beta1 {
             output.WriteRawTag(24);
             output.WriteInt32(TimeoutSeconds);
           }
+          if (recording_ != null) {
+            output.WriteRawTag(34);
+            output.WriteMessage(Recording);
+          }
           if (_unknownFields != null) {
             _unknownFields.WriteTo(output);
           }
@@ -1360,6 +1385,10 @@ namespace Enfonica.Voice.V1Beta1 {
             output.WriteRawTag(24);
             output.WriteInt32(TimeoutSeconds);
           }
+          if (recording_ != null) {
+            output.WriteRawTag(34);
+            output.WriteMessage(Recording);
+          }
           if (_unknownFields != null) {
             _unknownFields.WriteTo(ref output);
           }
@@ -1375,6 +1404,9 @@ namespace Enfonica.Voice.V1Beta1 {
           }
           if (TimeoutSeconds != 0) {
             size += 1 + pb::CodedOutputStream.ComputeInt32Size(TimeoutSeconds);
+          }
+          if (recording_ != null) {
+            size += 1 + pb::CodedOutputStream.ComputeMessageSize(Recording);
           }
           if (_unknownFields != null) {
             size += _unknownFields.CalculateSize();
@@ -1393,6 +1425,12 @@ namespace Enfonica.Voice.V1Beta1 {
           }
           if (other.TimeoutSeconds != 0) {
             TimeoutSeconds = other.TimeoutSeconds;
+          }
+          if (other.recording_ != null) {
+            if (recording_ == null) {
+              Recording = new global::Enfonica.Voice.V1Beta1.CallRecordingConfig();
+            }
+            Recording.MergeFrom(other.Recording);
           }
           _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
         }
@@ -1420,6 +1458,13 @@ namespace Enfonica.Voice.V1Beta1 {
                 TimeoutSeconds = input.ReadInt32();
                 break;
               }
+              case 34: {
+                if (recording_ == null) {
+                  Recording = new global::Enfonica.Voice.V1Beta1.CallRecordingConfig();
+                }
+                input.ReadMessage(Recording);
+                break;
+              }
             }
           }
         #endif
@@ -1444,6 +1489,13 @@ namespace Enfonica.Voice.V1Beta1 {
               }
               case 24: {
                 TimeoutSeconds = input.ReadInt32();
+                break;
+              }
+              case 34: {
+                if (recording_ == null) {
+                  Recording = new global::Enfonica.Voice.V1Beta1.CallRecordingConfig();
+                }
+                input.ReadMessage(Recording);
                 break;
               }
             }

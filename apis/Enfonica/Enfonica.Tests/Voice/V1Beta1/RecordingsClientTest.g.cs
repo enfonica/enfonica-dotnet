@@ -45,7 +45,7 @@ namespace Enfonica.Voice.V1Beta1.Tests
                 ChannelCount = 613767397,
                 PostProcessing =
                 {
-                    Recording.Types.PostProcessing.TrimSilence,
+                    PostProcessing.TrimSilence,
                 },
                 ErrorCode = Recording.Types.ErrorCode.Unspecified,
                 Audio =
@@ -81,7 +81,7 @@ namespace Enfonica.Voice.V1Beta1.Tests
                 ChannelCount = 613767397,
                 PostProcessing =
                 {
-                    Recording.Types.PostProcessing.TrimSilence,
+                    PostProcessing.TrimSilence,
                 },
                 ErrorCode = Recording.Types.ErrorCode.Unspecified,
                 Audio =
@@ -118,7 +118,7 @@ namespace Enfonica.Voice.V1Beta1.Tests
                 ChannelCount = 613767397,
                 PostProcessing =
                 {
-                    Recording.Types.PostProcessing.TrimSilence,
+                    PostProcessing.TrimSilence,
                 },
                 ErrorCode = Recording.Types.ErrorCode.Unspecified,
                 Audio =
@@ -153,7 +153,7 @@ namespace Enfonica.Voice.V1Beta1.Tests
                 ChannelCount = 613767397,
                 PostProcessing =
                 {
-                    Recording.Types.PostProcessing.TrimSilence,
+                    PostProcessing.TrimSilence,
                 },
                 ErrorCode = Recording.Types.ErrorCode.Unspecified,
                 Audio =
@@ -190,7 +190,7 @@ namespace Enfonica.Voice.V1Beta1.Tests
                 ChannelCount = 613767397,
                 PostProcessing =
                 {
-                    Recording.Types.PostProcessing.TrimSilence,
+                    PostProcessing.TrimSilence,
                 },
                 ErrorCode = Recording.Types.ErrorCode.Unspecified,
                 Audio =
@@ -225,7 +225,7 @@ namespace Enfonica.Voice.V1Beta1.Tests
                 ChannelCount = 613767397,
                 PostProcessing =
                 {
-                    Recording.Types.PostProcessing.TrimSilence,
+                    PostProcessing.TrimSilence,
                 },
                 ErrorCode = Recording.Types.ErrorCode.Unspecified,
                 Audio =
@@ -262,7 +262,7 @@ namespace Enfonica.Voice.V1Beta1.Tests
                 ChannelCount = 613767397,
                 PostProcessing =
                 {
-                    Recording.Types.PostProcessing.TrimSilence,
+                    PostProcessing.TrimSilence,
                 },
                 ErrorCode = Recording.Types.ErrorCode.Unspecified,
                 Audio =
@@ -297,7 +297,7 @@ namespace Enfonica.Voice.V1Beta1.Tests
                 ChannelCount = 613767397,
                 PostProcessing =
                 {
-                    Recording.Types.PostProcessing.TrimSilence,
+                    PostProcessing.TrimSilence,
                 },
                 ErrorCode = Recording.Types.ErrorCode.Unspecified,
                 Audio =
@@ -334,7 +334,7 @@ namespace Enfonica.Voice.V1Beta1.Tests
                 ChannelCount = 613767397,
                 PostProcessing =
                 {
-                    Recording.Types.PostProcessing.TrimSilence,
+                    PostProcessing.TrimSilence,
                 },
                 ErrorCode = Recording.Types.ErrorCode.Unspecified,
                 Audio =
@@ -369,7 +369,7 @@ namespace Enfonica.Voice.V1Beta1.Tests
                 ChannelCount = 613767397,
                 PostProcessing =
                 {
-                    Recording.Types.PostProcessing.TrimSilence,
+                    PostProcessing.TrimSilence,
                 },
                 ErrorCode = Recording.Types.ErrorCode.Unspecified,
                 Audio =
@@ -406,7 +406,7 @@ namespace Enfonica.Voice.V1Beta1.Tests
                 ChannelCount = 613767397,
                 PostProcessing =
                 {
-                    Recording.Types.PostProcessing.TrimSilence,
+                    PostProcessing.TrimSilence,
                 },
                 ErrorCode = Recording.Types.ErrorCode.Unspecified,
                 Audio =
@@ -441,7 +441,7 @@ namespace Enfonica.Voice.V1Beta1.Tests
                 ChannelCount = 613767397,
                 PostProcessing =
                 {
-                    Recording.Types.PostProcessing.TrimSilence,
+                    PostProcessing.TrimSilence,
                 },
                 ErrorCode = Recording.Types.ErrorCode.Unspecified,
                 Audio =
