@@ -9,6 +9,7 @@
  * https://developers.google.com/open-source/licenses/bsd
  */
 
+using Enfonica.Api.Auth.OAuth2;
 using Google.Api.Gax;
 using Google.Api.Gax.Grpc;
 using Google.Apis.Auth.OAuth2;
@@ -62,7 +63,7 @@ namespace Enfonica.Api.Gax.Grpc
         /// </summary>
         /// <remarks>
         /// <para>
-        /// To use a GoogleCredential for credentials, set this property using a method group conversion, e.g.
+        /// To use a EnfonicaCredential for credentials, set this property using a method group conversion, e.g.
         /// <c>TokenAccessMethod = credential.GetAccessTokenForRequestAsync</c>
         /// </para>
         /// </remarks>
@@ -346,12 +347,12 @@ namespace Enfonica.Api.Gax.Grpc
             {
                 return new DelegatedTokenAccess(TokenAccessMethod, QuotaProject).ToChannelCredentials();
             }
-            GoogleCredential unscoped =
-                CredentialsPath != null ? GoogleCredential.FromFile(CredentialsPath) :
-                JsonCredentials != null ? GoogleCredential.FromJson(JsonCredentials) :
-                GoogleCredential.GetApplicationDefault();
-            GoogleCredential scoped = unscoped.CreateScoped(Scopes ?? GetDefaultScopes());
-            GoogleCredential maybeWithProject = QuotaProject is null ? scoped : scoped.CreateWithQuotaProject(QuotaProject);
+            EnfonicaCredential unscoped =
+                CredentialsPath != null ? EnfonicaCredential.FromFile(CredentialsPath) :
+                JsonCredentials != null ? EnfonicaCredential.FromJson(JsonCredentials) :
+                EnfonicaCredential.GetApplicationDefault();
+            EnfonicaCredential scoped = unscoped.CreateScoped(Scopes ?? GetDefaultScopes());
+            EnfonicaCredential maybeWithProject = QuotaProject is null ? scoped : scoped.CreateWithQuotaProject(QuotaProject);
             return maybeWithProject.ToChannelCredentials();
         }
 
@@ -369,12 +370,12 @@ namespace Enfonica.Api.Gax.Grpc
             {
                 return new DelegatedTokenAccess(TokenAccessMethod, QuotaProject).ToChannelCredentials();
             }
-            GoogleCredential unscoped =
-                CredentialsPath != null ? await GoogleCredential.FromFileAsync(CredentialsPath, cancellationToken).ConfigureAwait(false) :
-                JsonCredentials != null ? GoogleCredential.FromJson(JsonCredentials) :
-                await GoogleCredential.GetApplicationDefaultAsync(cancellationToken).ConfigureAwait(false);
-            GoogleCredential scoped = unscoped.CreateScoped(Scopes ?? GetDefaultScopes());
-            GoogleCredential maybeWithProject = QuotaProject is null ? scoped : scoped.CreateWithQuotaProject(QuotaProject);
+            EnfonicaCredential unscoped =
+                CredentialsPath != null ? await EnfonicaCredential.FromFileAsync(CredentialsPath, cancellationToken).ConfigureAwait(false) :
+                JsonCredentials != null ? EnfonicaCredential.FromJson(JsonCredentials) :
+                await EnfonicaCredential.GetApplicationDefaultAsync(cancellationToken).ConfigureAwait(false);
+            EnfonicaCredential scoped = unscoped.CreateScoped(Scopes ?? GetDefaultScopes());
+            EnfonicaCredential maybeWithProject = QuotaProject is null ? scoped : scoped.CreateWithQuotaProject(QuotaProject);
             return maybeWithProject.ToChannelCredentials();
         }
 
