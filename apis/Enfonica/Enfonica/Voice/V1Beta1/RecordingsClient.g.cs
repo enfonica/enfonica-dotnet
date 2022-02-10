@@ -1,4 +1,4 @@
-// Copyright 2021 Enfonica Pty Ltd
+// Copyright 2022 Enfonica Pty Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -102,6 +102,12 @@ namespace Enfonica.Voice.V1Beta1
         /// <summary>The settings to use for RPCs, or <c>null</c> for the default settings.</summary>
         public RecordingsSettings Settings { get; set; }
 
+        /// <summary>Creates a new builder with default settings.</summary>
+        public RecordingsClientBuilder()
+        {
+            UseJwtAccessWithScopes = RecordingsClient.UseJwtAccessWithScopes;
+        }
+
         partial void InterceptBuild(ref RecordingsClient client);
 
         partial void InterceptBuildAsync(st::CancellationToken cancellationToken, ref stt::Task<RecordingsClient> task);
@@ -173,7 +179,19 @@ namespace Enfonica.Voice.V1Beta1
             "https://api.enfonica.com/auth/voice",
         });
 
-        internal static enfgaxgrpc::ChannelPool ChannelPool { get; } = new enfgaxgrpc::ChannelPool(DefaultScopes);
+        internal static enfgaxgrpc::ChannelPool ChannelPool { get; } = new enfgaxgrpc::ChannelPool(DefaultScopes, UseJwtAccessWithScopes);
+
+        internal static bool UseJwtAccessWithScopes
+        {
+            get
+            {
+                bool useJwtAccessWithScopes = true;
+                MaybeUseJwtAccessWithScopes(ref useJwtAccessWithScopes);
+                return useJwtAccessWithScopes;
+            }
+        }
+
+        static partial void MaybeUseJwtAccessWithScopes(ref bool useJwtAccessWithScopes);
 
         /// <summary>
         /// Asynchronously creates a <see cref="RecordingsClient"/> using the default credentials, endpoint and

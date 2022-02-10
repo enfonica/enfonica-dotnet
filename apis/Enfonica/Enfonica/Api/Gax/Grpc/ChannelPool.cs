@@ -52,7 +52,8 @@ namespace Enfonica.Api.Gax.Grpc
         /// if they require any.
         /// </summary>
         /// <param name="scopes">The scopes to apply. Must not be null, and must not contain null references. May be empty.</param>
-        public ChannelPool(IEnumerable<string> scopes)
+        /// <param name="useJwtAccessWithScopes">Not used.</param>
+        public ChannelPool(IEnumerable<string> scopes, bool useJwtAccessWithScopes)
         {
             // Always take a copy of the provided scopes, then check the copy doesn't contain any nulls.
             _scopes = GaxPreconditions.CheckNotNull(scopes, nameof(scopes)).ToList();

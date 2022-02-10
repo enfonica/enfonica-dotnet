@@ -1,4 +1,4 @@
-// Copyright 2021 Enfonica Pty Ltd
+// Copyright 2022 Enfonica Pty Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -65,6 +65,10 @@ namespace Enfonica.Voice.V1Beta1.Tests
                 OriginatingCall = "originating_call9e182b53",
                 CreateMethod = Call.Types.CreateMethod.Api,
                 Options = new Call.Types.ApiCallOptions(),
+                FromLocation = new NumberLocation(),
+                FromZone = "from_zone76a01c8c",
+                SipCallId = "sip_call_ide9ff1d69",
+                AnswerDuration = new wkt::Duration(),
             };
             mockGrpcClient.Setup(x => x.CreateCall(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             CallsClient client = new CallsClientImpl(mockGrpcClient.Object, null);
@@ -110,6 +114,10 @@ namespace Enfonica.Voice.V1Beta1.Tests
                 OriginatingCall = "originating_call9e182b53",
                 CreateMethod = Call.Types.CreateMethod.Api,
                 Options = new Call.Types.ApiCallOptions(),
+                FromLocation = new NumberLocation(),
+                FromZone = "from_zone76a01c8c",
+                SipCallId = "sip_call_ide9ff1d69",
+                AnswerDuration = new wkt::Duration(),
             };
             mockGrpcClient.Setup(x => x.CreateCallAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<Call>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CallsClient client = new CallsClientImpl(mockGrpcClient.Object, null);
@@ -157,6 +165,10 @@ namespace Enfonica.Voice.V1Beta1.Tests
                 OriginatingCall = "originating_call9e182b53",
                 CreateMethod = Call.Types.CreateMethod.Api,
                 Options = new Call.Types.ApiCallOptions(),
+                FromLocation = new NumberLocation(),
+                FromZone = "from_zone76a01c8c",
+                SipCallId = "sip_call_ide9ff1d69",
+                AnswerDuration = new wkt::Duration(),
             };
             mockGrpcClient.Setup(x => x.CreateCall(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             CallsClient client = new CallsClientImpl(mockGrpcClient.Object, null);
@@ -202,6 +214,10 @@ namespace Enfonica.Voice.V1Beta1.Tests
                 OriginatingCall = "originating_call9e182b53",
                 CreateMethod = Call.Types.CreateMethod.Api,
                 Options = new Call.Types.ApiCallOptions(),
+                FromLocation = new NumberLocation(),
+                FromZone = "from_zone76a01c8c",
+                SipCallId = "sip_call_ide9ff1d69",
+                AnswerDuration = new wkt::Duration(),
             };
             mockGrpcClient.Setup(x => x.CreateCallAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<Call>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CallsClient client = new CallsClientImpl(mockGrpcClient.Object, null);
@@ -249,6 +265,10 @@ namespace Enfonica.Voice.V1Beta1.Tests
                 OriginatingCall = "originating_call9e182b53",
                 CreateMethod = Call.Types.CreateMethod.Api,
                 Options = new Call.Types.ApiCallOptions(),
+                FromLocation = new NumberLocation(),
+                FromZone = "from_zone76a01c8c",
+                SipCallId = "sip_call_ide9ff1d69",
+                AnswerDuration = new wkt::Duration(),
             };
             mockGrpcClient.Setup(x => x.CreateCall(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             CallsClient client = new CallsClientImpl(mockGrpcClient.Object, null);
@@ -294,6 +314,10 @@ namespace Enfonica.Voice.V1Beta1.Tests
                 OriginatingCall = "originating_call9e182b53",
                 CreateMethod = Call.Types.CreateMethod.Api,
                 Options = new Call.Types.ApiCallOptions(),
+                FromLocation = new NumberLocation(),
+                FromZone = "from_zone76a01c8c",
+                SipCallId = "sip_call_ide9ff1d69",
+                AnswerDuration = new wkt::Duration(),
             };
             mockGrpcClient.Setup(x => x.CreateCallAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<Call>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CallsClient client = new CallsClientImpl(mockGrpcClient.Object, null);
@@ -340,6 +364,10 @@ namespace Enfonica.Voice.V1Beta1.Tests
                 OriginatingCall = "originating_call9e182b53",
                 CreateMethod = Call.Types.CreateMethod.Api,
                 Options = new Call.Types.ApiCallOptions(),
+                FromLocation = new NumberLocation(),
+                FromZone = "from_zone76a01c8c",
+                SipCallId = "sip_call_ide9ff1d69",
+                AnswerDuration = new wkt::Duration(),
             };
             mockGrpcClient.Setup(x => x.GetCall(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             CallsClient client = new CallsClientImpl(mockGrpcClient.Object, null);
@@ -384,6 +412,10 @@ namespace Enfonica.Voice.V1Beta1.Tests
                 OriginatingCall = "originating_call9e182b53",
                 CreateMethod = Call.Types.CreateMethod.Api,
                 Options = new Call.Types.ApiCallOptions(),
+                FromLocation = new NumberLocation(),
+                FromZone = "from_zone76a01c8c",
+                SipCallId = "sip_call_ide9ff1d69",
+                AnswerDuration = new wkt::Duration(),
             };
             mockGrpcClient.Setup(x => x.GetCallAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<Call>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CallsClient client = new CallsClientImpl(mockGrpcClient.Object, null);
@@ -430,6 +462,10 @@ namespace Enfonica.Voice.V1Beta1.Tests
                 OriginatingCall = "originating_call9e182b53",
                 CreateMethod = Call.Types.CreateMethod.Api,
                 Options = new Call.Types.ApiCallOptions(),
+                FromLocation = new NumberLocation(),
+                FromZone = "from_zone76a01c8c",
+                SipCallId = "sip_call_ide9ff1d69",
+                AnswerDuration = new wkt::Duration(),
             };
             mockGrpcClient.Setup(x => x.GetCall(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             CallsClient client = new CallsClientImpl(mockGrpcClient.Object, null);
@@ -474,6 +510,10 @@ namespace Enfonica.Voice.V1Beta1.Tests
                 OriginatingCall = "originating_call9e182b53",
                 CreateMethod = Call.Types.CreateMethod.Api,
                 Options = new Call.Types.ApiCallOptions(),
+                FromLocation = new NumberLocation(),
+                FromZone = "from_zone76a01c8c",
+                SipCallId = "sip_call_ide9ff1d69",
+                AnswerDuration = new wkt::Duration(),
             };
             mockGrpcClient.Setup(x => x.GetCallAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<Call>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CallsClient client = new CallsClientImpl(mockGrpcClient.Object, null);
@@ -520,6 +560,10 @@ namespace Enfonica.Voice.V1Beta1.Tests
                 OriginatingCall = "originating_call9e182b53",
                 CreateMethod = Call.Types.CreateMethod.Api,
                 Options = new Call.Types.ApiCallOptions(),
+                FromLocation = new NumberLocation(),
+                FromZone = "from_zone76a01c8c",
+                SipCallId = "sip_call_ide9ff1d69",
+                AnswerDuration = new wkt::Duration(),
             };
             mockGrpcClient.Setup(x => x.GetCall(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             CallsClient client = new CallsClientImpl(mockGrpcClient.Object, null);
@@ -564,6 +608,10 @@ namespace Enfonica.Voice.V1Beta1.Tests
                 OriginatingCall = "originating_call9e182b53",
                 CreateMethod = Call.Types.CreateMethod.Api,
                 Options = new Call.Types.ApiCallOptions(),
+                FromLocation = new NumberLocation(),
+                FromZone = "from_zone76a01c8c",
+                SipCallId = "sip_call_ide9ff1d69",
+                AnswerDuration = new wkt::Duration(),
             };
             mockGrpcClient.Setup(x => x.GetCallAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<Call>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CallsClient client = new CallsClientImpl(mockGrpcClient.Object, null);

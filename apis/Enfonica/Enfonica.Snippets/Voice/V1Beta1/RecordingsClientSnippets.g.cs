@@ -1,4 +1,4 @@
-// Copyright 2021 Enfonica Pty Ltd
+// Copyright 2022 Enfonica Pty Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -22,7 +22,7 @@ namespace Enfonica.Voice.V1Beta1.Snippets
     using System.Threading.Tasks;
 
     /// <summary>Generated snippets.</summary>
-    public sealed class GeneratedRecordingsClientSnippets
+    public sealed class AllGeneratedRecordingsClientSnippets
     {
         /// <summary>Snippet for GetRecording</summary>
         public void GetRecordingRequestObject()

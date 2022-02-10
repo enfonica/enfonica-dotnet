@@ -26,74 +26,82 @@ namespace Enfonica.Voice.V1Beta1 {
           string.Concat(
             "CiJlbmZvbmljYS92b2ljZS92MWJldGExL2NhbGxzLnByb3RvEhZlbmZvbmlj",
             "YS52b2ljZS52MWJldGExGh9nb29nbGUvcHJvdG9idWYvdGltZXN0YW1wLnBy",
-            "b3RvGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvGhdnb29nbGUvdHlw",
-            "ZS9tb25leS5wcm90bxoZZ29vZ2xlL2FwaS9yZXNvdXJjZS5wcm90bxofZ29v",
-            "Z2xlL2FwaS9maWVsZF9iZWhhdmlvci5wcm90bxoXZ29vZ2xlL2FwaS9jbGll",
-            "bnQucHJvdG8aMmVuZm9uaWNhL3ZvaWNlL3YxYmV0YTEvY2FsbF9yZWNvcmRp",
-            "bmdfY29uZmlnLnByb3RvIvoLCgRDYWxsEgwKBG5hbWUYASABKAkSDwoCdG8Y",
-            "AiABKAlCA+BBAhIRCgRmcm9tGAMgASgJQgPgQQISEgoKaXNfcHJpdmF0ZRgE",
-            "IAEoCBI4CgZsYWJlbHMYCCADKAsyKC5lbmZvbmljYS52b2ljZS52MWJldGEx",
-            "LkNhbGwuTGFiZWxzRW50cnkSPgoJdHJhbnNwb3J0GAkgASgOMiYuZW5mb25p",
-            "Y2Eudm9pY2UudjFiZXRhMS5DYWxsLlRyYW5zcG9ydEID4EEDEj4KCWRpcmVj",
-            "dGlvbhgKIAEoDjImLmVuZm9uaWNhLnZvaWNlLnYxYmV0YTEuQ2FsbC5EaXJl",
-            "Y3Rpb25CA+BBAxIXCgplcnJvcl9jb2RlGAsgASgJQgPgQQMSGgoNZXJyb3Jf",
-            "bWVzc2FnZRgMIAEoCUID4EEDEiYKBXByaWNlGA0gASgLMhIuZ29vZ2xlLnR5",
-            "cGUuTW9uZXlCA+BBAxI2CgVzdGF0ZRgOIAEoDjIiLmVuZm9uaWNhLnZvaWNl",
-            "LnYxYmV0YTEuQ2FsbC5TdGF0ZUID4EEDEjQKC2NyZWF0ZV90aW1lGBAgASgL",
-            "MhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcEID4EEDEjMKCnN0YXJ0X3Rp",
-            "bWUYESABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wQgPgQQMSMgoJ",
-            "cmluZ190aW1lGBIgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcEID",
-            "4EEDEjQKC2Fuc3dlcl90aW1lGBMgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRp",
-            "bWVzdGFtcEID4EEDEjEKCGVuZF90aW1lGBQgASgLMhouZ29vZ2xlLnByb3Rv",
-            "YnVmLlRpbWVzdGFtcEID4EEDEhQKB2JyaWRnZWQYFSABKAhCA+BBAxIdChBv",
-            "cmlnaW5hdGluZ19jYWxsGBYgASgJQgPgQQMSRQoNY3JlYXRlX21ldGhvZBgX",
-            "IAEoDjIpLmVuZm9uaWNhLnZvaWNlLnYxYmV0YTEuQ2FsbC5DcmVhdGVNZXRo",
-            "b2RCA+BBAxJBCgdvcHRpb25zGBggASgLMisuZW5mb25pY2Eudm9pY2UudjFi",
-            "ZXRhMS5DYWxsLkFwaUNhbGxPcHRpb25zQgPgQQIangEKDkFwaUNhbGxPcHRp",
-            "b25zEhkKDGhhbmRsZXJfdXJpcxgBIAMoCUID4EECEhgKEHN0YXRlX3VwZGF0",
-            "ZV91cmkYAiABKAkSFwoPdGltZW91dF9zZWNvbmRzGAMgASgFEj4KCXJlY29y",
-            "ZGluZxgEIAEoCzIrLmVuZm9uaWNhLnZvaWNlLnYxYmV0YTEuQ2FsbFJlY29y",
-            "ZGluZ0NvbmZpZxotCgtMYWJlbHNFbnRyeRILCgNrZXkYASABKAkSDQoFdmFs",
-            "dWUYAiABKAk6AjgBIpsBCgVTdGF0ZRIVChFTVEFURV9VTlNQRUNJRklFRBAA",
-            "EgoKBlFVRVVFRBABEgwKCFNUQVJUSU5HEAISCwoHUklOR0lORxADEg8KC0lO",
-            "X1BST0dSRVNTEAQSDQoJQ09NUExFVEVEEAUSCgoGRkFJTEVEEAYSEAoMTk9U",
-            "X0FOU1dFUkVEEAcSCAoEQlVTWRAIEgwKCFJFSkVDVEVEEAkiQgoJRGlyZWN0",
-            "aW9uEhkKFURJUkVDVElPTl9VTlNQRUNJRklFRBAAEgwKCE9VVEdPSU5HEAES",
-            "DAoISU5DT01JTkcQAiJFCglUcmFuc3BvcnQSGQoVVFJBTlNQT1JUX1VOU1BF",
-            "Q0lGSUVEEAASCAoEUFNUThABEgoKBkNMSUVOVBACEgcKA1NJUBADIloKDENy",
-            "ZWF0ZU1ldGhvZBIdChlDUkVBVEVfTUVUSE9EX1VOU1BFQ0lGSUVEEAASEQoN",
-            "SU5DT01JTkdfQ0FMTBABEg8KC1BBUkVOVF9DQUxMEAISBwoDQVBJEAM6QepB",
-            "Pgobdm9pY2UuYXBpLmVuZm9uaWNhLmNvbS9DYWxsEh9wcm9qZWN0cy97cHJv",
-            "amVjdH0vY2FsbHMve2NhbGx9InkKEUNyZWF0ZUNhbGxSZXF1ZXN0EjMKBnBh",
-            "cmVudBgBIAEoCUIj4EEC+kEdEht2b2ljZS5hcGkuZW5mb25pY2EuY29tL0Nh",
-            "bGwSLwoEY2FsbBgCIAEoCzIcLmVuZm9uaWNhLnZvaWNlLnYxYmV0YTEuQ2Fs",
-            "bEID4EECIkMKDkdldENhbGxSZXF1ZXN0EjEKBG5hbWUYASABKAlCI+BBAvpB",
-            "HQobdm9pY2UuYXBpLmVuZm9uaWNhLmNvbS9DYWxsIn4KEExpc3RDYWxsc1Jl",
-            "cXVlc3QSMwoGcGFyZW50GAEgASgJQiPgQQL6QR0SG3ZvaWNlLmFwaS5lbmZv",
-            "bmljYS5jb20vQ2FsbBIRCglwYWdlX3NpemUYAiABKAUSEgoKcGFnZV90b2tl",
-            "bhgDIAEoCRIOCgZmaWx0ZXIYBCABKAkiWQoRTGlzdENhbGxzUmVzcG9uc2US",
-            "KwoFY2FsbHMYASADKAsyHC5lbmZvbmljYS52b2ljZS52MWJldGExLkNhbGwS",
-            "FwoPbmV4dF9wYWdlX3Rva2VuGAIgASgJMv0DCgVDYWxscxKVAQoKQ3JlYXRl",
-            "Q2FsbBIpLmVuZm9uaWNhLnZvaWNlLnYxYmV0YTEuQ3JlYXRlQ2FsbFJlcXVl",
-            "c3QaHC5lbmZvbmljYS52b2ljZS52MWJldGExLkNhbGwiPoLT5JMCKiIiL3Yx",
-            "YmV0YTEve3BhcmVudD1wcm9qZWN0cy8qfS9jYWxsczoEY2FsbNpBC3BhcmVu",
-            "dCxjYWxsEoIBCgdHZXRDYWxsEiYuZW5mb25pY2Eudm9pY2UudjFiZXRhMS5H",
-            "ZXRDYWxsUmVxdWVzdBocLmVuZm9uaWNhLnZvaWNlLnYxYmV0YTEuQ2FsbCIx",
-            "gtPkkwIkEiIvdjFiZXRhMS97bmFtZT1wcm9qZWN0cy8qL2NhbGxzLyp92kEE",
-            "bmFtZRKVAQoJTGlzdENhbGxzEiguZW5mb25pY2Eudm9pY2UudjFiZXRhMS5M",
-            "aXN0Q2FsbHNSZXF1ZXN0GikuZW5mb25pY2Eudm9pY2UudjFiZXRhMS5MaXN0",
-            "Q2FsbHNSZXNwb25zZSIzgtPkkwIkEiIvdjFiZXRhMS97cGFyZW50PXByb2pl",
-            "Y3RzLyp9L2NhbGxz2kEGcGFyZW50Gj/KQRZ2b2ljZS5hcGkuZW5mb25pY2Eu",
-            "Y29t0kEjaHR0cHM6Ly9hcGkuZW5mb25pY2EuY29tL2F1dGgvdm9pY2VCgwEK",
-            "GmNvbS5lbmZvbmljYS52b2ljZS52MWJldGExQgpDYWxsc1Byb3RvUAFaM2dp",
-            "dGh1Yi5jb20vZW5mb25pY2EvZW5mb25pY2EtZ28vdm9pY2UvdjFiZXRhMTt2",
-            "b2ljZfgBAaICBUVORk9OqgIWRW5mb25pY2EuVm9pY2UuVjFCZXRhMWIGcHJv",
-            "dG8z"));
+            "b3RvGh5nb29nbGUvcHJvdG9idWYvZHVyYXRpb24ucHJvdG8aHGdvb2dsZS9h",
+            "cGkvYW5ub3RhdGlvbnMucHJvdG8aF2dvb2dsZS90eXBlL21vbmV5LnByb3Rv",
+            "Ghlnb29nbGUvYXBpL3Jlc291cmNlLnByb3RvGh9nb29nbGUvYXBpL2ZpZWxk",
+            "X2JlaGF2aW9yLnByb3RvGhdnb29nbGUvYXBpL2NsaWVudC5wcm90bxoYZ29v",
+            "Z2xlL3R5cGUvbGF0bG5nLnByb3RvGjJlbmZvbmljYS92b2ljZS92MWJldGEx",
+            "L2NhbGxfcmVjb3JkaW5nX2NvbmZpZy5wcm90byKfDQoEQ2FsbBIMCgRuYW1l",
+            "GAEgASgJEg8KAnRvGAIgASgJQgPgQQISEQoEZnJvbRgDIAEoCUID4EECEj0K",
+            "DWZyb21fbG9jYXRpb24YGSABKAsyJi5lbmZvbmljYS52b2ljZS52MWJldGEx",
+            "Lk51bWJlckxvY2F0aW9uEhEKCWZyb21fem9uZRgaIAEoCRISCgppc19wcml2",
+            "YXRlGAQgASgIEjgKBmxhYmVscxgIIAMoCzIoLmVuZm9uaWNhLnZvaWNlLnYx",
+            "YmV0YTEuQ2FsbC5MYWJlbHNFbnRyeRI+Cgl0cmFuc3BvcnQYCSABKA4yJi5l",
+            "bmZvbmljYS52b2ljZS52MWJldGExLkNhbGwuVHJhbnNwb3J0QgPgQQMSPgoJ",
+            "ZGlyZWN0aW9uGAogASgOMiYuZW5mb25pY2Eudm9pY2UudjFiZXRhMS5DYWxs",
+            "LkRpcmVjdGlvbkID4EEDEhcKCmVycm9yX2NvZGUYCyABKAlCA+BBAxIaCg1l",
+            "cnJvcl9tZXNzYWdlGAwgASgJQgPgQQMSJgoFcHJpY2UYDSABKAsyEi5nb29n",
+            "bGUudHlwZS5Nb25leUID4EEDEjYKBXN0YXRlGA4gASgOMiIuZW5mb25pY2Eu",
+            "dm9pY2UudjFiZXRhMS5DYWxsLlN0YXRlQgPgQQMSNAoLY3JlYXRlX3RpbWUY",
+            "ECABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wQgPgQQMSMwoKc3Rh",
+            "cnRfdGltZRgRIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCA+BB",
+            "AxIyCglyaW5nX3RpbWUYEiABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0",
+            "YW1wQgPgQQMSNAoLYW5zd2VyX3RpbWUYEyABKAsyGi5nb29nbGUucHJvdG9i",
+            "dWYuVGltZXN0YW1wQgPgQQMSMQoIZW5kX3RpbWUYFCABKAsyGi5nb29nbGUu",
+            "cHJvdG9idWYuVGltZXN0YW1wQgPgQQMSFAoHYnJpZGdlZBgVIAEoCEID4EED",
+            "Eh0KEG9yaWdpbmF0aW5nX2NhbGwYFiABKAlCA+BBAxJFCg1jcmVhdGVfbWV0",
+            "aG9kGBcgASgOMikuZW5mb25pY2Eudm9pY2UudjFiZXRhMS5DYWxsLkNyZWF0",
+            "ZU1ldGhvZEID4EEDEkEKB29wdGlvbnMYGCABKAsyKy5lbmZvbmljYS52b2lj",
+            "ZS52MWJldGExLkNhbGwuQXBpQ2FsbE9wdGlvbnNCA+BBAhIYCgtzaXBfY2Fs",
+            "bF9pZBgbIAEoCUID4EEDEjcKD2Fuc3dlcl9kdXJhdGlvbhgcIAEoCzIZLmdv",
+            "b2dsZS5wcm90b2J1Zi5EdXJhdGlvbkID4EEDGp4BCg5BcGlDYWxsT3B0aW9u",
+            "cxIZCgxoYW5kbGVyX3VyaXMYASADKAlCA+BBAhIYChBzdGF0ZV91cGRhdGVf",
+            "dXJpGAIgASgJEhcKD3RpbWVvdXRfc2Vjb25kcxgDIAEoBRI+CglyZWNvcmRp",
+            "bmcYBCABKAsyKy5lbmZvbmljYS52b2ljZS52MWJldGExLkNhbGxSZWNvcmRp",
+            "bmdDb25maWcaLQoLTGFiZWxzRW50cnkSCwoDa2V5GAEgASgJEg0KBXZhbHVl",
+            "GAIgASgJOgI4ASKbAQoFU3RhdGUSFQoRU1RBVEVfVU5TUEVDSUZJRUQQABIK",
+            "CgZRVUVVRUQQARIMCghTVEFSVElORxACEgsKB1JJTkdJTkcQAxIPCgtJTl9Q",
+            "Uk9HUkVTUxAEEg0KCUNPTVBMRVRFRBAFEgoKBkZBSUxFRBAGEhAKDE5PVF9B",
+            "TlNXRVJFRBAHEggKBEJVU1kQCBIMCghSRUpFQ1RFRBAJIkIKCURpcmVjdGlv",
+            "bhIZChVESVJFQ1RJT05fVU5TUEVDSUZJRUQQABIMCghPVVRHT0lORxABEgwK",
+            "CElOQ09NSU5HEAIiRQoJVHJhbnNwb3J0EhkKFVRSQU5TUE9SVF9VTlNQRUNJ",
+            "RklFRBAAEggKBFBTVE4QARIKCgZDTElFTlQQAhIHCgNTSVAQAyJaCgxDcmVh",
+            "dGVNZXRob2QSHQoZQ1JFQVRFX01FVEhPRF9VTlNQRUNJRklFRBAAEhEKDUlO",
+            "Q09NSU5HX0NBTEwQARIPCgtQQVJFTlRfQ0FMTBACEgcKA0FQSRADOkHqQT4K",
+            "G3ZvaWNlLmFwaS5lbmZvbmljYS5jb20vQ2FsbBIfcHJvamVjdHMve3Byb2pl",
+            "Y3R9L2NhbGxzL3tjYWxsfSJ+Cg5OdW1iZXJMb2NhdGlvbhITCgtyZWdpb25f",
+            "Y29kZRgBIAEoCRIbChNhZG1pbmlzdHJhdGl2ZV9hcmVhGAIgASgJEhAKCGxv",
+            "Y2FsaXR5GAMgASgJEigKC2Nvb3JkaW5hdGVzGAQgASgLMhMuZ29vZ2xlLnR5",
+            "cGUuTGF0TG5nInkKEUNyZWF0ZUNhbGxSZXF1ZXN0EjMKBnBhcmVudBgBIAEo",
+            "CUIj4EEC+kEdEht2b2ljZS5hcGkuZW5mb25pY2EuY29tL0NhbGwSLwoEY2Fs",
+            "bBgCIAEoCzIcLmVuZm9uaWNhLnZvaWNlLnYxYmV0YTEuQ2FsbEID4EECIkMK",
+            "DkdldENhbGxSZXF1ZXN0EjEKBG5hbWUYASABKAlCI+BBAvpBHQobdm9pY2Uu",
+            "YXBpLmVuZm9uaWNhLmNvbS9DYWxsIn4KEExpc3RDYWxsc1JlcXVlc3QSMwoG",
+            "cGFyZW50GAEgASgJQiPgQQL6QR0SG3ZvaWNlLmFwaS5lbmZvbmljYS5jb20v",
+            "Q2FsbBIRCglwYWdlX3NpemUYAiABKAUSEgoKcGFnZV90b2tlbhgDIAEoCRIO",
+            "CgZmaWx0ZXIYBCABKAkiWQoRTGlzdENhbGxzUmVzcG9uc2USKwoFY2FsbHMY",
+            "ASADKAsyHC5lbmZvbmljYS52b2ljZS52MWJldGExLkNhbGwSFwoPbmV4dF9w",
+            "YWdlX3Rva2VuGAIgASgJMv0DCgVDYWxscxKVAQoKQ3JlYXRlQ2FsbBIpLmVu",
+            "Zm9uaWNhLnZvaWNlLnYxYmV0YTEuQ3JlYXRlQ2FsbFJlcXVlc3QaHC5lbmZv",
+            "bmljYS52b2ljZS52MWJldGExLkNhbGwiPoLT5JMCKiIiL3YxYmV0YTEve3Bh",
+            "cmVudD1wcm9qZWN0cy8qfS9jYWxsczoEY2FsbNpBC3BhcmVudCxjYWxsEoIB",
+            "CgdHZXRDYWxsEiYuZW5mb25pY2Eudm9pY2UudjFiZXRhMS5HZXRDYWxsUmVx",
+            "dWVzdBocLmVuZm9uaWNhLnZvaWNlLnYxYmV0YTEuQ2FsbCIxgtPkkwIkEiIv",
+            "djFiZXRhMS97bmFtZT1wcm9qZWN0cy8qL2NhbGxzLyp92kEEbmFtZRKVAQoJ",
+            "TGlzdENhbGxzEiguZW5mb25pY2Eudm9pY2UudjFiZXRhMS5MaXN0Q2FsbHNS",
+            "ZXF1ZXN0GikuZW5mb25pY2Eudm9pY2UudjFiZXRhMS5MaXN0Q2FsbHNSZXNw",
+            "b25zZSIzgtPkkwIkEiIvdjFiZXRhMS97cGFyZW50PXByb2plY3RzLyp9L2Nh",
+            "bGxz2kEGcGFyZW50Gj/KQRZ2b2ljZS5hcGkuZW5mb25pY2EuY29t0kEjaHR0",
+            "cHM6Ly9hcGkuZW5mb25pY2EuY29tL2F1dGgvdm9pY2VCgwEKGmNvbS5lbmZv",
+            "bmljYS52b2ljZS52MWJldGExQgpDYWxsc1Byb3RvUAFaM2dpdGh1Yi5jb20v",
+            "ZW5mb25pY2EvZW5mb25pY2EtZ28vdm9pY2UvdjFiZXRhMTt2b2ljZfgBAaIC",
+            "BUVORk9OqgIWRW5mb25pY2EuVm9pY2UuVjFCZXRhMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Type.MoneyReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Enfonica.Voice.V1Beta1.CallRecordingConfigReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.DurationReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Type.MoneyReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Type.LatlngReflection.Descriptor, global::Enfonica.Voice.V1Beta1.CallRecordingConfigReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Voice.V1Beta1.Call), global::Enfonica.Voice.V1Beta1.Call.Parser, new[]{ "Name", "To", "From", "IsPrivate", "Labels", "Transport", "Direction", "ErrorCode", "ErrorMessage", "Price", "State", "CreateTime", "StartTime", "RingTime", "AnswerTime", "EndTime", "Bridged", "OriginatingCall", "CreateMethod", "Options" }, null, new[]{ typeof(global::Enfonica.Voice.V1Beta1.Call.Types.State), typeof(global::Enfonica.Voice.V1Beta1.Call.Types.Direction), typeof(global::Enfonica.Voice.V1Beta1.Call.Types.Transport), typeof(global::Enfonica.Voice.V1Beta1.Call.Types.CreateMethod) }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Voice.V1Beta1.Call.Types.ApiCallOptions), global::Enfonica.Voice.V1Beta1.Call.Types.ApiCallOptions.Parser, new[]{ "HandlerUris", "StateUpdateUri", "TimeoutSeconds", "Recording" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Voice.V1Beta1.Call), global::Enfonica.Voice.V1Beta1.Call.Parser, new[]{ "Name", "To", "From", "FromLocation", "FromZone", "IsPrivate", "Labels", "Transport", "Direction", "ErrorCode", "ErrorMessage", "Price", "State", "CreateTime", "StartTime", "RingTime", "AnswerTime", "EndTime", "Bridged", "OriginatingCall", "CreateMethod", "Options", "SipCallId", "AnswerDuration" }, null, new[]{ typeof(global::Enfonica.Voice.V1Beta1.Call.Types.State), typeof(global::Enfonica.Voice.V1Beta1.Call.Types.Direction), typeof(global::Enfonica.Voice.V1Beta1.Call.Types.Transport), typeof(global::Enfonica.Voice.V1Beta1.Call.Types.CreateMethod) }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Voice.V1Beta1.Call.Types.ApiCallOptions), global::Enfonica.Voice.V1Beta1.Call.Types.ApiCallOptions.Parser, new[]{ "HandlerUris", "StateUpdateUri", "TimeoutSeconds", "Recording" }, null, null, null, null),
             null, }),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Voice.V1Beta1.NumberLocation), global::Enfonica.Voice.V1Beta1.NumberLocation.Parser, new[]{ "RegionCode", "AdministrativeArea", "Locality", "Coordinates" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Voice.V1Beta1.CreateCallRequest), global::Enfonica.Voice.V1Beta1.CreateCallRequest.Parser, new[]{ "Parent", "Call" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Voice.V1Beta1.GetCallRequest), global::Enfonica.Voice.V1Beta1.GetCallRequest.Parser, new[]{ "Name" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Voice.V1Beta1.ListCallsRequest), global::Enfonica.Voice.V1Beta1.ListCallsRequest.Parser, new[]{ "Parent", "PageSize", "PageToken", "Filter" }, null, null, null, null),
@@ -139,6 +147,8 @@ namespace Enfonica.Voice.V1Beta1 {
       name_ = other.name_;
       to_ = other.to_;
       from_ = other.from_;
+      fromLocation_ = other.fromLocation_ != null ? other.fromLocation_.Clone() : null;
+      fromZone_ = other.fromZone_;
       isPrivate_ = other.isPrivate_;
       labels_ = other.labels_.Clone();
       transport_ = other.transport_;
@@ -156,6 +166,8 @@ namespace Enfonica.Voice.V1Beta1 {
       originatingCall_ = other.originatingCall_;
       createMethod_ = other.createMethod_;
       options_ = other.options_ != null ? other.options_.Clone() : null;
+      sipCallId_ = other.sipCallId_;
+      answerDuration_ = other.answerDuration_ != null ? other.answerDuration_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -182,7 +194,14 @@ namespace Enfonica.Voice.V1Beta1 {
     public const int ToFieldNumber = 2;
     private string to_ = "";
     /// <summary>
-    /// The recipient phone number in +E164.
+    /// The recipient of the call.
+    ///
+    /// For PSTN calls, this is the phone number in +E164 format.
+    ///
+    /// For calls to a SIP domain, this is the URI in the To header, in the format
+    /// `sip:user-or-number@domain`.
+    ///
+    /// When placing outgoing API calls, only PSTN is supported.
     /// (-- api-linter: core::0140::prepositions=disabled
     ///     aip.dev/not-precedent: Not a preposition. --)
     /// </summary>
@@ -198,9 +217,16 @@ namespace Enfonica.Voice.V1Beta1 {
     public const int FromFieldNumber = 3;
     private string from_ = "";
     /// <summary>
-    /// The phone number in +E164 that initiated the call (the Caller ID / CLI).
-    /// `from` is required on Create, but its value may be hidden in subsequent
-    /// Get/List calls if `private` is true.
+    /// The originator of the call.
+    ///
+    /// For PSTN calls, this is the CLI (Caller ID) in +E164 format. When placing
+    /// outgoing API calls, this is required.
+    ///
+    /// For calls to a SIP domain, this is the URI in the From header, in the
+    /// format `sip:user-or-number@domain`.
+    ///
+    /// This field will not be set if the CLI originated from the PSTN and
+    /// `is_private` is true.
     /// (-- api-linter: core::0140::prepositions=disabled
     ///     aip.dev/not-precedent: Not a preposition. --)
     /// (-- api-linter: core::0140::reserved-words=disabled
@@ -211,6 +237,41 @@ namespace Enfonica.Voice.V1Beta1 {
       get { return from_; }
       set {
         from_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "from_location" field.</summary>
+    public const int FromLocationFieldNumber = 25;
+    private global::Enfonica.Voice.V1Beta1.NumberLocation fromLocation_;
+    /// <summary>
+    /// The approximate location where the call originated from. Only set for
+    /// INCOMING calls (this may be changed in the future).
+    /// (-- api-linter: core::0140::prepositions=disabled
+    ///     aip.dev/not-precedent: Not a preposition. --)
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Enfonica.Voice.V1Beta1.NumberLocation FromLocation {
+      get { return fromLocation_; }
+      set {
+        fromLocation_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "from_zone" field.</summary>
+    public const int FromZoneFieldNumber = 26;
+    private string fromZone_ = "";
+    /// <summary>
+    /// The zone associated with the `from` phone number, if applicable. Only
+    /// applicable for PSTN. Only set for INCOMING calls (this may be changed in
+    /// the future).
+    /// (-- api-linter: core::0140::prepositions=disabled
+    ///     aip.dev/not-precedent: Not a preposition. --)
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string FromZone {
+      get { return fromZone_; }
+      set {
+        fromZone_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -303,8 +364,13 @@ namespace Enfonica.Voice.V1Beta1 {
     public const int PriceFieldNumber = 13;
     private global::Google.Type.Money price_;
     /// <summary>
-    /// The price of this call. This may not be populated until a certain stage in the call
-    /// lifecycle.
+    /// The price of this call. This may be set at various times. Generally,
+    /// it is available when the call reaches a terminal state, either immediately
+    /// or shortly afterwards.
+    ///
+    /// This price is the price of the call itself, and does not include charges
+    /// from the consumption of other paid services, such as text-to-speech and
+    /// transcription.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Type.Money Price {
@@ -460,6 +526,35 @@ namespace Enfonica.Voice.V1Beta1 {
       }
     }
 
+    /// <summary>Field number for the "sip_call_id" field.</summary>
+    public const int SipCallIdFieldNumber = 27;
+    private string sipCallId_ = "";
+    /// <summary>
+    /// The `Call-ID` header of the call. Only set when transport is SIP.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string SipCallId {
+      get { return sipCallId_; }
+      set {
+        sipCallId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "answer_duration" field.</summary>
+    public const int AnswerDurationFieldNumber = 28;
+    private global::Google.Protobuf.WellKnownTypes.Duration answerDuration_;
+    /// <summary>
+    /// The duration for which the call was answered. If the call was not answered
+    /// or it has not reached a terminal state, this field will not be set.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Protobuf.WellKnownTypes.Duration AnswerDuration {
+      get { return answerDuration_; }
+      set {
+        answerDuration_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as Call);
@@ -476,6 +571,8 @@ namespace Enfonica.Voice.V1Beta1 {
       if (Name != other.Name) return false;
       if (To != other.To) return false;
       if (From != other.From) return false;
+      if (!object.Equals(FromLocation, other.FromLocation)) return false;
+      if (FromZone != other.FromZone) return false;
       if (IsPrivate != other.IsPrivate) return false;
       if (!Labels.Equals(other.Labels)) return false;
       if (Transport != other.Transport) return false;
@@ -493,6 +590,8 @@ namespace Enfonica.Voice.V1Beta1 {
       if (OriginatingCall != other.OriginatingCall) return false;
       if (CreateMethod != other.CreateMethod) return false;
       if (!object.Equals(Options, other.Options)) return false;
+      if (SipCallId != other.SipCallId) return false;
+      if (!object.Equals(AnswerDuration, other.AnswerDuration)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -502,6 +601,8 @@ namespace Enfonica.Voice.V1Beta1 {
       if (Name.Length != 0) hash ^= Name.GetHashCode();
       if (To.Length != 0) hash ^= To.GetHashCode();
       if (From.Length != 0) hash ^= From.GetHashCode();
+      if (fromLocation_ != null) hash ^= FromLocation.GetHashCode();
+      if (FromZone.Length != 0) hash ^= FromZone.GetHashCode();
       if (IsPrivate != false) hash ^= IsPrivate.GetHashCode();
       hash ^= Labels.GetHashCode();
       if (Transport != global::Enfonica.Voice.V1Beta1.Call.Types.Transport.Unspecified) hash ^= Transport.GetHashCode();
@@ -519,6 +620,8 @@ namespace Enfonica.Voice.V1Beta1 {
       if (OriginatingCall.Length != 0) hash ^= OriginatingCall.GetHashCode();
       if (CreateMethod != global::Enfonica.Voice.V1Beta1.Call.Types.CreateMethod.Unspecified) hash ^= CreateMethod.GetHashCode();
       if (options_ != null) hash ^= Options.GetHashCode();
+      if (SipCallId.Length != 0) hash ^= SipCallId.GetHashCode();
+      if (answerDuration_ != null) hash ^= AnswerDuration.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -612,6 +715,22 @@ namespace Enfonica.Voice.V1Beta1 {
         output.WriteRawTag(194, 1);
         output.WriteMessage(Options);
       }
+      if (fromLocation_ != null) {
+        output.WriteRawTag(202, 1);
+        output.WriteMessage(FromLocation);
+      }
+      if (FromZone.Length != 0) {
+        output.WriteRawTag(210, 1);
+        output.WriteString(FromZone);
+      }
+      if (SipCallId.Length != 0) {
+        output.WriteRawTag(218, 1);
+        output.WriteString(SipCallId);
+      }
+      if (answerDuration_ != null) {
+        output.WriteRawTag(226, 1);
+        output.WriteMessage(AnswerDuration);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -698,6 +817,22 @@ namespace Enfonica.Voice.V1Beta1 {
         output.WriteRawTag(194, 1);
         output.WriteMessage(Options);
       }
+      if (fromLocation_ != null) {
+        output.WriteRawTag(202, 1);
+        output.WriteMessage(FromLocation);
+      }
+      if (FromZone.Length != 0) {
+        output.WriteRawTag(210, 1);
+        output.WriteString(FromZone);
+      }
+      if (SipCallId.Length != 0) {
+        output.WriteRawTag(218, 1);
+        output.WriteString(SipCallId);
+      }
+      if (answerDuration_ != null) {
+        output.WriteRawTag(226, 1);
+        output.WriteMessage(AnswerDuration);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -715,6 +850,12 @@ namespace Enfonica.Voice.V1Beta1 {
       }
       if (From.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(From);
+      }
+      if (fromLocation_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(FromLocation);
+      }
+      if (FromZone.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(FromZone);
       }
       if (IsPrivate != false) {
         size += 1 + 1;
@@ -765,6 +906,12 @@ namespace Enfonica.Voice.V1Beta1 {
       if (options_ != null) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(Options);
       }
+      if (SipCallId.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(SipCallId);
+      }
+      if (answerDuration_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(AnswerDuration);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -784,6 +931,15 @@ namespace Enfonica.Voice.V1Beta1 {
       }
       if (other.From.Length != 0) {
         From = other.From;
+      }
+      if (other.fromLocation_ != null) {
+        if (fromLocation_ == null) {
+          FromLocation = new global::Enfonica.Voice.V1Beta1.NumberLocation();
+        }
+        FromLocation.MergeFrom(other.FromLocation);
+      }
+      if (other.FromZone.Length != 0) {
+        FromZone = other.FromZone;
       }
       if (other.IsPrivate != false) {
         IsPrivate = other.IsPrivate;
@@ -854,6 +1010,15 @@ namespace Enfonica.Voice.V1Beta1 {
           Options = new global::Enfonica.Voice.V1Beta1.Call.Types.ApiCallOptions();
         }
         Options.MergeFrom(other.Options);
+      }
+      if (other.SipCallId.Length != 0) {
+        SipCallId = other.SipCallId;
+      }
+      if (other.answerDuration_ != null) {
+        if (answerDuration_ == null) {
+          AnswerDuration = new global::Google.Protobuf.WellKnownTypes.Duration();
+        }
+        AnswerDuration.MergeFrom(other.AnswerDuration);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -970,6 +1135,28 @@ namespace Enfonica.Voice.V1Beta1 {
             input.ReadMessage(Options);
             break;
           }
+          case 202: {
+            if (fromLocation_ == null) {
+              FromLocation = new global::Enfonica.Voice.V1Beta1.NumberLocation();
+            }
+            input.ReadMessage(FromLocation);
+            break;
+          }
+          case 210: {
+            FromZone = input.ReadString();
+            break;
+          }
+          case 218: {
+            SipCallId = input.ReadString();
+            break;
+          }
+          case 226: {
+            if (answerDuration_ == null) {
+              AnswerDuration = new global::Google.Protobuf.WellKnownTypes.Duration();
+            }
+            input.ReadMessage(AnswerDuration);
+            break;
+          }
         }
       }
     #endif
@@ -1083,6 +1270,28 @@ namespace Enfonica.Voice.V1Beta1 {
               Options = new global::Enfonica.Voice.V1Beta1.Call.Types.ApiCallOptions();
             }
             input.ReadMessage(Options);
+            break;
+          }
+          case 202: {
+            if (fromLocation_ == null) {
+              FromLocation = new global::Enfonica.Voice.V1Beta1.NumberLocation();
+            }
+            input.ReadMessage(FromLocation);
+            break;
+          }
+          case 210: {
+            FromZone = input.ReadString();
+            break;
+          }
+          case 218: {
+            SipCallId = input.ReadString();
+            break;
+          }
+          case 226: {
+            if (answerDuration_ == null) {
+              AnswerDuration = new global::Google.Protobuf.WellKnownTypes.Duration();
+            }
+            input.ReadMessage(AnswerDuration);
             break;
           }
         }
@@ -1511,6 +1720,316 @@ namespace Enfonica.Voice.V1Beta1 {
   }
 
   /// <summary>
+  /// Location information for a phone number.
+  /// </summary>
+  public sealed partial class NumberLocation : pb::IMessage<NumberLocation>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<NumberLocation> _parser = new pb::MessageParser<NumberLocation>(() => new NumberLocation());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<NumberLocation> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Enfonica.Voice.V1Beta1.CallsReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public NumberLocation() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public NumberLocation(NumberLocation other) : this() {
+      regionCode_ = other.regionCode_;
+      administrativeArea_ = other.administrativeArea_;
+      locality_ = other.locality_;
+      coordinates_ = other.coordinates_ != null ? other.coordinates_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public NumberLocation Clone() {
+      return new NumberLocation(this);
+    }
+
+    /// <summary>Field number for the "region_code" field.</summary>
+    public const int RegionCodeFieldNumber = 1;
+    private string regionCode_ = "";
+    /// <summary>
+    /// CLDR region code of the country/region. See http://cldr.unicode.org/ and
+    /// http://www.unicode.org/cldr/charts/30/supplemental/territory_information.html
+    /// for details. Example: "AU" for Australia.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string RegionCode {
+      get { return regionCode_; }
+      set {
+        regionCode_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "administrative_area" field.</summary>
+    public const int AdministrativeAreaFieldNumber = 2;
+    private string administrativeArea_ = "";
+    /// <summary>
+    /// If known, the highest administrative subdivision of a country or region.
+    /// For example, this can be a state, a territory, a province, an oblast, or a
+    /// prefecture.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string AdministrativeArea {
+      get { return administrativeArea_; }
+      set {
+        administrativeArea_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "locality" field.</summary>
+    public const int LocalityFieldNumber = 3;
+    private string locality_ = "";
+    /// <summary>
+    /// If known, the locality associated with the phone number.
+    /// Generally refers to the city/town portion of the address.
+    /// Examples: AU suburb, US city, IT comune, UK post town.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Locality {
+      get { return locality_; }
+      set {
+        locality_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "coordinates" field.</summary>
+    public const int CoordinatesFieldNumber = 4;
+    private global::Google.Type.LatLng coordinates_;
+    /// <summary>
+    /// If known, the approximate coordinates of the location.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Type.LatLng Coordinates {
+      get { return coordinates_; }
+      set {
+        coordinates_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as NumberLocation);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(NumberLocation other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (RegionCode != other.RegionCode) return false;
+      if (AdministrativeArea != other.AdministrativeArea) return false;
+      if (Locality != other.Locality) return false;
+      if (!object.Equals(Coordinates, other.Coordinates)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (RegionCode.Length != 0) hash ^= RegionCode.GetHashCode();
+      if (AdministrativeArea.Length != 0) hash ^= AdministrativeArea.GetHashCode();
+      if (Locality.Length != 0) hash ^= Locality.GetHashCode();
+      if (coordinates_ != null) hash ^= Coordinates.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (RegionCode.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(RegionCode);
+      }
+      if (AdministrativeArea.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(AdministrativeArea);
+      }
+      if (Locality.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Locality);
+      }
+      if (coordinates_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(Coordinates);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (RegionCode.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(RegionCode);
+      }
+      if (AdministrativeArea.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(AdministrativeArea);
+      }
+      if (Locality.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Locality);
+      }
+      if (coordinates_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(Coordinates);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (RegionCode.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(RegionCode);
+      }
+      if (AdministrativeArea.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(AdministrativeArea);
+      }
+      if (Locality.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Locality);
+      }
+      if (coordinates_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Coordinates);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(NumberLocation other) {
+      if (other == null) {
+        return;
+      }
+      if (other.RegionCode.Length != 0) {
+        RegionCode = other.RegionCode;
+      }
+      if (other.AdministrativeArea.Length != 0) {
+        AdministrativeArea = other.AdministrativeArea;
+      }
+      if (other.Locality.Length != 0) {
+        Locality = other.Locality;
+      }
+      if (other.coordinates_ != null) {
+        if (coordinates_ == null) {
+          Coordinates = new global::Google.Type.LatLng();
+        }
+        Coordinates.MergeFrom(other.Coordinates);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            RegionCode = input.ReadString();
+            break;
+          }
+          case 18: {
+            AdministrativeArea = input.ReadString();
+            break;
+          }
+          case 26: {
+            Locality = input.ReadString();
+            break;
+          }
+          case 34: {
+            if (coordinates_ == null) {
+              Coordinates = new global::Google.Type.LatLng();
+            }
+            input.ReadMessage(Coordinates);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            RegionCode = input.ReadString();
+            break;
+          }
+          case 18: {
+            AdministrativeArea = input.ReadString();
+            break;
+          }
+          case 26: {
+            Locality = input.ReadString();
+            break;
+          }
+          case 34: {
+            if (coordinates_ == null) {
+              Coordinates = new global::Google.Type.LatLng();
+            }
+            input.ReadMessage(Coordinates);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
   /// Request to create a new call.
   /// </summary>
   public sealed partial class CreateCallRequest : pb::IMessage<CreateCallRequest>
@@ -1525,7 +2044,7 @@ namespace Enfonica.Voice.V1Beta1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Enfonica.Voice.V1Beta1.CallsReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Enfonica.Voice.V1Beta1.CallsReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1751,7 +2270,7 @@ namespace Enfonica.Voice.V1Beta1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Enfonica.Voice.V1Beta1.CallsReflection.Descriptor.MessageTypes[2]; }
+      get { return global::Enfonica.Voice.V1Beta1.CallsReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1930,7 +2449,7 @@ namespace Enfonica.Voice.V1Beta1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Enfonica.Voice.V1Beta1.CallsReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Enfonica.Voice.V1Beta1.CallsReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2242,7 +2761,7 @@ namespace Enfonica.Voice.V1Beta1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Enfonica.Voice.V1Beta1.CallsReflection.Descriptor.MessageTypes[4]; }
+      get { return global::Enfonica.Voice.V1Beta1.CallsReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

@@ -1,4 +1,4 @@
-// Copyright 2021 Enfonica Pty Ltd
+// Copyright 2022 Enfonica Pty Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -23,7 +23,7 @@ namespace Enfonica.Messaging.V1.Snippets
     using System.Threading.Tasks;
 
     /// <summary>Generated snippets.</summary>
-    public sealed class GeneratedMessagesClientSnippets
+    public sealed class AllGeneratedMessagesClientSnippets
     {
         /// <summary>Snippet for CreateMessage</summary>
         public void CreateMessageRequestObject()

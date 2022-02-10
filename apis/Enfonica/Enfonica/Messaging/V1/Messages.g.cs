@@ -29,68 +29,68 @@ namespace Enfonica.Messaging.V1 {
             "cm90bxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90bxofZ29vZ2xlL2Fw",
             "aS9maWVsZF9iZWhhdmlvci5wcm90bxoXZ29vZ2xlL2FwaS9jbGllbnQucHJv",
             "dG8aGWdvb2dsZS9hcGkvcmVzb3VyY2UucHJvdG8aF2dvb2dsZS90eXBlL21v",
-            "bmV5LnByb3RvIvQLCgdNZXNzYWdlEgwKBG5hbWUYASABKAkSCgoCdG8YAiAB",
-            "KAkSDAoEZnJvbRgDIAEoCRIMCgRib2R5GAQgASgJEhkKEXN0YXR1c191cGRh",
-            "dGVfdXJsGAUgASgJEhEKCXJlcGx5X3VybBgGIAEoCRIfChd2YWxpZGl0eV9w",
-            "ZXJpb2Rfc2Vjb25kcxgHIAEoBRIWCg5zbWFydF9lbmNvZGluZxgIIAEoCBI6",
-            "CgZsYWJlbHMYFCADKAsyKi5lbmZvbmljYS5tZXNzYWdpbmcudjEuTWVzc2Fn",
-            "ZS5MYWJlbHNFbnRyeRJMCg5jbGFzc2lmaWNhdGlvbhgVIAEoDjI0LmVuZm9u",
-            "aWNhLm1lc3NhZ2luZy52MS5NZXNzYWdlLk1lc3NhZ2VDbGFzc2lmaWNhdGlv",
-            "bhJfChx1bnN1YnNjcmliZV9jb250ZW50X2JlaGF2aW9yGBYgASgOMjkuZW5m",
-            "b25pY2EubWVzc2FnaW5nLnYxLk1lc3NhZ2UuVW5zdWJzY3JpYmVDb250ZW50",
-            "QmVoYXZpb3ISQAoJZGlyZWN0aW9uGAogASgOMiguZW5mb25pY2EubWVzc2Fn",
-            "aW5nLnYxLk1lc3NhZ2UuRGlyZWN0aW9uQgPgQQMSFwoKZXJyb3JfY29kZRgL",
-            "IAEoCUID4EEDEhoKDWVycm9yX21lc3NhZ2UYDCABKAlCA+BBAxIaCg1zZWdt",
-            "ZW50X2NvdW50GA0gASgFQgPgQQMSJgoFcHJpY2UYDiABKAsyEi5nb29nbGUu",
-            "dHlwZS5Nb25leUID4EEDEjoKBnN0YXR1cxgPIAEoDjIlLmVuZm9uaWNhLm1l",
-            "c3NhZ2luZy52MS5NZXNzYWdlLlN0YXR1c0ID4EEDEhwKD2NyZWF0ZV9pZGVu",
-            "dGl0eRgQIAEoCUID4EEDEjQKC2NyZWF0ZV90aW1lGBEgASgLMhouZ29vZ2xl",
-            "LnByb3RvYnVmLlRpbWVzdGFtcEID4EEDEjIKCXNlbmRfdGltZRgSIAEoCzIa",
-            "Lmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCA+BBAxI1CgxkZWxpdmVyX3Rp",
-            "bWUYEyABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wQgPgQQMSRQoI",
-            "ZW5jb2RpbmcYFyABKA4yLi5lbmZvbmljYS5tZXNzYWdpbmcudjEuTWVzc2Fn",
-            "ZS5NZXNzYWdlRW5jb2RpbmdCA+BBAxotCgtMYWJlbHNFbnRyeRILCgNrZXkY",
-            "ASABKAkSDQoFdmFsdWUYAiABKAk6AjgBIn0KBlN0YXR1cxIWChJTVEFUVVNf",
-            "VU5TUEVDSUZJRUQQABIKCgZRVUVVRUQQARILCgdTRU5ESU5HEAISCAoEU0VO",
-            "VBADEgoKBkZBSUxFRBAEEg0KCURFTElWRVJFRBAFEg8KC1VOREVMSVZFUkVE",
-            "EAYSDAoIUkVDRUlWRUQQByJCCglEaXJlY3Rpb24SGQoVRElSRUNUSU9OX1VO",
-            "U1BFQ0lGSUVEEAASDAoIT1VUR09JTkcQARIMCghJTkNPTUlORxACInMKFU1l",
-            "c3NhZ2VDbGFzc2lmaWNhdGlvbhImCiJNRVNTQUdFX0NMQVNTSUZJQ0FUSU9O",
-            "X1VOU1BFQ0lGSUVEEAASEAoMVU5DTEFTU0lGSUVEEAESEQoNVFJBTlNBQ1RJ",
-            "T05BTBACEg0KCU1BUktFVElORxADImQKGlVuc3Vic2NyaWJlQ29udGVudEJl",
-            "aGF2aW9yEiwKKFVOU1VCU0NSSUJFX0NPTlRFTlRfQkVIQVZJT1JfVU5TUEVD",
-            "SUZJRUQQABIICgROT05FEAESDgoKQVBQRU5EX1VSTBACIkcKD01lc3NhZ2VF",
-            "bmNvZGluZxIgChxNRVNTQUdFX0VOQ09ESU5HX1VOU1BFQ0lGSUVEEAASCAoE",
-            "R1NNNxABEggKBFVDUzIQAjpO6kFLCiJtZXNzYWdpbmcuYXBpLmVuZm9uaWNh",
-            "LmNvbS9NZXNzYWdlEiVwcm9qZWN0cy97cHJvamVjdH0vbWVzc2FnZXMve21l",
-            "c3NhZ2V9IogBChRDcmVhdGVNZXNzYWdlUmVxdWVzdBI6CgZwYXJlbnQYASAB",
-            "KAlCKuBBAvpBJBIibWVzc2FnaW5nLmFwaS5lbmZvbmljYS5jb20vTWVzc2Fn",
-            "ZRI0CgdtZXNzYWdlGAIgASgLMh4uZW5mb25pY2EubWVzc2FnaW5nLnYxLk1l",
-            "c3NhZ2VCA+BBAiJNChFHZXRNZXNzYWdlUmVxdWVzdBI4CgRuYW1lGAEgASgJ",
-            "QirgQQL6QSQKIm1lc3NhZ2luZy5hcGkuZW5mb25pY2EuY29tL01lc3NhZ2Ui",
-            "5gEKE0xpc3RNZXNzYWdlc1JlcXVlc3QSOgoGcGFyZW50GAEgASgJQirgQQL6",
-            "QSQSIm1lc3NhZ2luZy5hcGkuZW5mb25pY2EuY29tL01lc3NhZ2USEQoJcGFn",
-            "ZV9zaXplGAIgASgFEhIKCnBhZ2VfdG9rZW4YAyABKAkSLgoKc3RhcnRfdGlt",
-            "ZRgEIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASLAoIZW5kX3Rp",
-            "bWUYBSABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEg4KBmZpbHRl",
-            "chgGIAEoCSJhChRMaXN0TWVzc2FnZXNSZXNwb25zZRIwCghtZXNzYWdlcxgB",
-            "IAMoCzIeLmVuZm9uaWNhLm1lc3NhZ2luZy52MS5NZXNzYWdlEhcKD25leHRf",
-            "cGFnZV90b2tlbhgCIAEoCTKdBAoITWVzc2FnZXMSoAEKDUNyZWF0ZU1lc3Nh",
-            "Z2USKy5lbmZvbmljYS5tZXNzYWdpbmcudjEuQ3JlYXRlTWVzc2FnZVJlcXVl",
-            "c3QaHi5lbmZvbmljYS5tZXNzYWdpbmcudjEuTWVzc2FnZSJCgtPkkwIrIiAv",
-            "djEve3BhcmVudD1wcm9qZWN0cy8qfS9tZXNzYWdlczoHbWVzc2FnZdpBDnBh",
-            "cmVudCxtZXNzYWdlEocBCgpHZXRNZXNzYWdlEiguZW5mb25pY2EubWVzc2Fn",
-            "aW5nLnYxLkdldE1lc3NhZ2VSZXF1ZXN0Gh4uZW5mb25pY2EubWVzc2FnaW5n",
-            "LnYxLk1lc3NhZ2UiL4LT5JMCIhIgL3YxL3tuYW1lPXByb2plY3RzLyovbWVz",
-            "c2FnZXMvKn3aQQRuYW1lEpoBCgxMaXN0TWVzc2FnZXMSKi5lbmZvbmljYS5t",
-            "ZXNzYWdpbmcudjEuTGlzdE1lc3NhZ2VzUmVxdWVzdBorLmVuZm9uaWNhLm1l",
-            "c3NhZ2luZy52MS5MaXN0TWVzc2FnZXNSZXNwb25zZSIxgtPkkwIiEiAvdjEv",
-            "e3BhcmVudD1wcm9qZWN0cy8qfS9tZXNzYWdlc9pBBnBhcmVudBpHykEabWVz",
-            "c2FnaW5nLmFwaS5lbmZvbmljYS5jb23SQSdodHRwczovL2FwaS5lbmZvbmlj",
-            "YS5jb20vYXV0aC9tZXNzYWdpbmdChwEKGWNvbS5lbmZvbmljYS5tZXNzYWdp",
-            "bmcudjFCDU1lc3NhZ2VzUHJvdG9QAVo2Z2l0aHViLmNvbS9lbmZvbmljYS9l",
-            "bmZvbmljYS1nby9tZXNzYWdpbmcvdjE7bWVzc2FnaW5n+AEBogIFRU5GT06q",
-            "AhVFbmZvbmljYS5NZXNzYWdpbmcuVjFiBnByb3RvMw=="));
+            "bmV5LnByb3RvIv4LCgdNZXNzYWdlEgwKBG5hbWUYASABKAkSDwoCdG8YAiAB",
+            "KAlCA+BBAhIRCgRmcm9tGAMgASgJQgPgQQISDAoEYm9keRgEIAEoCRIZChFz",
+            "dGF0dXNfdXBkYXRlX3VybBgFIAEoCRIRCglyZXBseV91cmwYBiABKAkSHwoX",
+            "dmFsaWRpdHlfcGVyaW9kX3NlY29uZHMYByABKAUSFgoOc21hcnRfZW5jb2Rp",
+            "bmcYCCABKAgSOgoGbGFiZWxzGBQgAygLMiouZW5mb25pY2EubWVzc2FnaW5n",
+            "LnYxLk1lc3NhZ2UuTGFiZWxzRW50cnkSTAoOY2xhc3NpZmljYXRpb24YFSAB",
+            "KA4yNC5lbmZvbmljYS5tZXNzYWdpbmcudjEuTWVzc2FnZS5NZXNzYWdlQ2xh",
+            "c3NpZmljYXRpb24SXwocdW5zdWJzY3JpYmVfY29udGVudF9iZWhhdmlvchgW",
+            "IAEoDjI5LmVuZm9uaWNhLm1lc3NhZ2luZy52MS5NZXNzYWdlLlVuc3Vic2Ny",
+            "aWJlQ29udGVudEJlaGF2aW9yEkAKCWRpcmVjdGlvbhgKIAEoDjIoLmVuZm9u",
+            "aWNhLm1lc3NhZ2luZy52MS5NZXNzYWdlLkRpcmVjdGlvbkID4EEDEhcKCmVy",
+            "cm9yX2NvZGUYCyABKAlCA+BBAxIaCg1lcnJvcl9tZXNzYWdlGAwgASgJQgPg",
+            "QQMSGgoNc2VnbWVudF9jb3VudBgNIAEoBUID4EEDEiYKBXByaWNlGA4gASgL",
+            "MhIuZ29vZ2xlLnR5cGUuTW9uZXlCA+BBAxI6CgZzdGF0dXMYDyABKA4yJS5l",
+            "bmZvbmljYS5tZXNzYWdpbmcudjEuTWVzc2FnZS5TdGF0dXNCA+BBAxIcCg9j",
+            "cmVhdGVfaWRlbnRpdHkYECABKAlCA+BBAxI0CgtjcmVhdGVfdGltZRgRIAEo",
+            "CzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCA+BBAxIyCglzZW5kX3Rp",
+            "bWUYEiABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wQgPgQQMSNQoM",
+            "ZGVsaXZlcl90aW1lGBMgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFt",
+            "cEID4EEDEkUKCGVuY29kaW5nGBcgASgOMi4uZW5mb25pY2EubWVzc2FnaW5n",
+            "LnYxLk1lc3NhZ2UuTWVzc2FnZUVuY29kaW5nQgPgQQMaLQoLTGFiZWxzRW50",
+            "cnkSCwoDa2V5GAEgASgJEg0KBXZhbHVlGAIgASgJOgI4ASJ9CgZTdGF0dXMS",
+            "FgoSU1RBVFVTX1VOU1BFQ0lGSUVEEAASCgoGUVVFVUVEEAESCwoHU0VORElO",
+            "RxACEggKBFNFTlQQAxIKCgZGQUlMRUQQBBINCglERUxJVkVSRUQQBRIPCgtV",
+            "TkRFTElWRVJFRBAGEgwKCFJFQ0VJVkVEEAciQgoJRGlyZWN0aW9uEhkKFURJ",
+            "UkVDVElPTl9VTlNQRUNJRklFRBAAEgwKCE9VVEdPSU5HEAESDAoISU5DT01J",
+            "TkcQAiJzChVNZXNzYWdlQ2xhc3NpZmljYXRpb24SJgoiTUVTU0FHRV9DTEFT",
+            "U0lGSUNBVElPTl9VTlNQRUNJRklFRBAAEhAKDFVOQ0xBU1NJRklFRBABEhEK",
+            "DVRSQU5TQUNUSU9OQUwQAhINCglNQVJLRVRJTkcQAyJkChpVbnN1YnNjcmli",
+            "ZUNvbnRlbnRCZWhhdmlvchIsCihVTlNVQlNDUklCRV9DT05URU5UX0JFSEFW",
+            "SU9SX1VOU1BFQ0lGSUVEEAASCAoETk9ORRABEg4KCkFQUEVORF9VUkwQAiJH",
+            "Cg9NZXNzYWdlRW5jb2RpbmcSIAocTUVTU0FHRV9FTkNPRElOR19VTlNQRUNJ",
+            "RklFRBAAEggKBEdTTTcQARIICgRVQ1MyEAI6TupBSwoibWVzc2FnaW5nLmFw",
+            "aS5lbmZvbmljYS5jb20vTWVzc2FnZRIlcHJvamVjdHMve3Byb2plY3R9L21l",
+            "c3NhZ2VzL3ttZXNzYWdlfSKIAQoUQ3JlYXRlTWVzc2FnZVJlcXVlc3QSOgoG",
+            "cGFyZW50GAEgASgJQirgQQL6QSQSIm1lc3NhZ2luZy5hcGkuZW5mb25pY2Eu",
+            "Y29tL01lc3NhZ2USNAoHbWVzc2FnZRgCIAEoCzIeLmVuZm9uaWNhLm1lc3Nh",
+            "Z2luZy52MS5NZXNzYWdlQgPgQQIiTQoRR2V0TWVzc2FnZVJlcXVlc3QSOAoE",
+            "bmFtZRgBIAEoCUIq4EEC+kEkCiJtZXNzYWdpbmcuYXBpLmVuZm9uaWNhLmNv",
+            "bS9NZXNzYWdlIuYBChNMaXN0TWVzc2FnZXNSZXF1ZXN0EjoKBnBhcmVudBgB",
+            "IAEoCUIq4EEC+kEkEiJtZXNzYWdpbmcuYXBpLmVuZm9uaWNhLmNvbS9NZXNz",
+            "YWdlEhEKCXBhZ2Vfc2l6ZRgCIAEoBRISCgpwYWdlX3Rva2VuGAMgASgJEi4K",
+            "CnN0YXJ0X3RpbWUYBCABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1w",
+            "EiwKCGVuZF90aW1lGAUgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFt",
+            "cBIOCgZmaWx0ZXIYBiABKAkiYQoUTGlzdE1lc3NhZ2VzUmVzcG9uc2USMAoI",
+            "bWVzc2FnZXMYASADKAsyHi5lbmZvbmljYS5tZXNzYWdpbmcudjEuTWVzc2Fn",
+            "ZRIXCg9uZXh0X3BhZ2VfdG9rZW4YAiABKAkynQQKCE1lc3NhZ2VzEqABCg1D",
+            "cmVhdGVNZXNzYWdlEisuZW5mb25pY2EubWVzc2FnaW5nLnYxLkNyZWF0ZU1l",
+            "c3NhZ2VSZXF1ZXN0Gh4uZW5mb25pY2EubWVzc2FnaW5nLnYxLk1lc3NhZ2Ui",
+            "QoLT5JMCKyIgL3YxL3twYXJlbnQ9cHJvamVjdHMvKn0vbWVzc2FnZXM6B21l",
+            "c3NhZ2XaQQ5wYXJlbnQsbWVzc2FnZRKHAQoKR2V0TWVzc2FnZRIoLmVuZm9u",
+            "aWNhLm1lc3NhZ2luZy52MS5HZXRNZXNzYWdlUmVxdWVzdBoeLmVuZm9uaWNh",
+            "Lm1lc3NhZ2luZy52MS5NZXNzYWdlIi+C0+STAiISIC92MS97bmFtZT1wcm9q",
+            "ZWN0cy8qL21lc3NhZ2VzLyp92kEEbmFtZRKaAQoMTGlzdE1lc3NhZ2VzEiou",
+            "ZW5mb25pY2EubWVzc2FnaW5nLnYxLkxpc3RNZXNzYWdlc1JlcXVlc3QaKy5l",
+            "bmZvbmljYS5tZXNzYWdpbmcudjEuTGlzdE1lc3NhZ2VzUmVzcG9uc2UiMYLT",
+            "5JMCIhIgL3YxL3twYXJlbnQ9cHJvamVjdHMvKn0vbWVzc2FnZXPaQQZwYXJl",
+            "bnQaR8pBGm1lc3NhZ2luZy5hcGkuZW5mb25pY2EuY29t0kEnaHR0cHM6Ly9h",
+            "cGkuZW5mb25pY2EuY29tL2F1dGgvbWVzc2FnaW5nQocBChljb20uZW5mb25p",
+            "Y2EubWVzc2FnaW5nLnYxQg1NZXNzYWdlc1Byb3RvUAFaNmdpdGh1Yi5jb20v",
+            "ZW5mb25pY2EvZW5mb25pY2EtZ28vbWVzc2FnaW5nL3YxO21lc3NhZ2luZ/gB",
+            "AaICBUVORk9OqgIVRW5mb25pY2EuTWVzc2FnaW5nLlYxYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Type.MoneyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -235,8 +235,8 @@ namespace Enfonica.Messaging.V1 {
     public const int StatusUpdateUrlFieldNumber = 5;
     private string statusUpdateUrl_ = "";
     /// <summary>
-    /// The URL where status updates should be sent.
-    /// TODO: define better.
+    /// The URL where [status updates webhooks](https://enfonica.com/docs/cloud-sms/webhooks/#message-status-update)
+    /// should be sent.
     /// (-- api-linter: core::0140::uri=disabled
     ///     aip.dev/not-precedent: url is used in this package. --)
     /// </summary>
@@ -252,9 +252,9 @@ namespace Enfonica.Messaging.V1 {
     public const int ReplyUrlFieldNumber = 6;
     private string replyUrl_ = "";
     /// <summary>
-    /// The URL where replies should be sent. This overrides any message handler URLs defined
-    /// against the phone number receiving the reply.
-    /// TODO: define better.
+    /// The URL where replies, in the form of [incoming message webhooks](https://enfonica.com/docs/cloud-sms/webhooks/#incoming-message)
+    /// should be sent. This overrides any message handler URLs defined against the
+    /// phone number receiving the reply.
     /// (-- api-linter: core::0140::uri=disabled
     ///     aip.dev/not-precedent: url is used in this package. --)
     /// </summary>
@@ -361,7 +361,6 @@ namespace Enfonica.Messaging.V1 {
     private string errorCode_ = "";
     /// <summary>
     /// If the outgoing message failed to be delivered, the reason why.
-    /// todo: should this be an enum?
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string ErrorCode {
@@ -376,7 +375,6 @@ namespace Enfonica.Messaging.V1 {
     private string errorMessage_ = "";
     /// <summary>
     /// The human readable message associated with the error.
-    /// todo: do we need this if error code is an enum?
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string ErrorMessage {
@@ -391,7 +389,6 @@ namespace Enfonica.Messaging.V1 {
     private int segmentCount_;
     /// <summary>
     /// The number of segments that make up the body.
-    /// todo: explain this.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int SegmentCount {
@@ -406,7 +403,7 @@ namespace Enfonica.Messaging.V1 {
     private global::Google.Type.Money price_;
     /// <summary>
     /// The price of this message. This may not be populated until a certain stage in the message
-    /// lifecycle.  todo: is this right? how does/will this work?
+    /// lifecycle.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Type.Money Price {
@@ -437,7 +434,7 @@ namespace Enfonica.Messaging.V1 {
     private string createIdentity_ = "";
     /// <summary>
     /// The identity that created the message.  This may be your user or service account,
-    /// or identities used internally by Enfonica products. todo: is this right? should we do this?
+    /// or identities used internally by Enfonica products.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string CreateIdentity {
@@ -1802,6 +1799,7 @@ namespace Enfonica.Messaging.V1 {
     ///
     /// (-- api-linter: core::0132::request-unknown-fields=disabled
     ///     aip.dev/not-precedent: List has additional fields in this package. --)
+    /// (-- deprecated --)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Protobuf.WellKnownTypes.Timestamp StartTime {
@@ -1823,6 +1821,7 @@ namespace Enfonica.Messaging.V1 {
     ///
     /// (-- api-linter: core::0132::request-unknown-fields=disabled
     ///     aip.dev/not-precedent: List has additional fields in this package. --)
+    /// (-- deprecated --)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Protobuf.WellKnownTypes.Timestamp EndTime {
@@ -2181,8 +2180,9 @@ namespace Enfonica.Messaging.V1 {
     public const int NextPageTokenFieldNumber = 2;
     private string nextPageToken_ = "";
     /// <summary>
-    /// A pagination token returned from a previous call to `ListMessages`
-    /// that indicates from where listing should continue.
+    /// If this is set, it indicates there are additional results and contains the
+    /// token to retrieve the next page of results. To use this, pass it in the
+    /// `page_token` field when calling `ListMessages`.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string NextPageToken {

@@ -20,132 +20,144 @@ using sys = System;
 
 namespace Enfonica.Voice.V1Beta1
 {
-    /// <summary>Resource name for the <c>Call</c> resource.</summary>
-    public sealed partial class CallName : gax::IResourceName, sys::IEquatable<CallName>
+    /// <summary>Resource name for the <c>SipInfo</c> resource.</summary>
+    public sealed partial class SipInfoName : gax::IResourceName, sys::IEquatable<SipInfoName>
     {
-        /// <summary>The possible contents of <see cref="CallName"/>.</summary>
+        /// <summary>The possible contents of <see cref="SipInfoName"/>.</summary>
         public enum ResourceNameType
         {
             /// <summary>An unparsed resource name.</summary>
             Unparsed = 0,
 
-            /// <summary>A resource name with pattern <c>projects/{project}/calls/{call}</c>.</summary>
+            /// <summary>A resource name with pattern <c>projects/{project}/calls/{call}/sipInfo</c>.</summary>
             ProjectCall = 1,
         }
 
-        private static gax::PathTemplate s_projectCall = new gax::PathTemplate("projects/{project}/calls/{call}");
+        private static gax::PathTemplate s_projectCall = new gax::PathTemplate("projects/{project}/calls/{call}/sipInfo");
 
-        /// <summary>Creates a <see cref="CallName"/> containing an unparsed resource name.</summary>
+        /// <summary>Creates a <see cref="SipInfoName"/> containing an unparsed resource name.</summary>
         /// <param name="unparsedResourceName">The unparsed resource name. Must not be <c>null</c>.</param>
         /// <returns>
-        /// A new instance of <see cref="CallName"/> containing the provided <paramref name="unparsedResourceName"/>.
+        /// A new instance of <see cref="SipInfoName"/> containing the provided <paramref name="unparsedResourceName"/>.
         /// </returns>
-        public static CallName FromUnparsed(gax::UnparsedResourceName unparsedResourceName) =>
-            new CallName(ResourceNameType.Unparsed, gax::GaxPreconditions.CheckNotNull(unparsedResourceName, nameof(unparsedResourceName)));
-
-        /// <summary>Creates a <see cref="CallName"/> with the pattern <c>projects/{project}/calls/{call}</c>.</summary>
-        /// <param name="projectId">The <c>Project</c> ID. Must not be <c>null</c> or empty.</param>
-        /// <param name="callId">The <c>Call</c> ID. Must not be <c>null</c> or empty.</param>
-        /// <returns>A new instance of <see cref="CallName"/> constructed from the provided ids.</returns>
-        public static CallName FromProjectCall(string projectId, string callId) =>
-            new CallName(ResourceNameType.ProjectCall, projectId: gax::GaxPreconditions.CheckNotNullOrEmpty(projectId, nameof(projectId)), callId: gax::GaxPreconditions.CheckNotNullOrEmpty(callId, nameof(callId)));
+        public static SipInfoName FromUnparsed(gax::UnparsedResourceName unparsedResourceName) =>
+            new SipInfoName(ResourceNameType.Unparsed, gax::GaxPreconditions.CheckNotNull(unparsedResourceName, nameof(unparsedResourceName)));
 
         /// <summary>
-        /// Formats the IDs into the string representation of this <see cref="CallName"/> with pattern
-        /// <c>projects/{project}/calls/{call}</c>.
+        /// Creates a <see cref="SipInfoName"/> with the pattern <c>projects/{project}/calls/{call}/sipInfo</c>.
+        /// </summary>
+        /// <param name="projectId">The <c>Project</c> ID. Must not be <c>null</c> or empty.</param>
+        /// <param name="callId">The <c>Call</c> ID. Must not be <c>null</c> or empty.</param>
+        /// <returns>A new instance of <see cref="SipInfoName"/> constructed from the provided ids.</returns>
+        public static SipInfoName FromProjectCall(string projectId, string callId) =>
+            new SipInfoName(ResourceNameType.ProjectCall, projectId: gax::GaxPreconditions.CheckNotNullOrEmpty(projectId, nameof(projectId)), callId: gax::GaxPreconditions.CheckNotNullOrEmpty(callId, nameof(callId)));
+
+        /// <summary>
+        /// Formats the IDs into the string representation of this <see cref="SipInfoName"/> with pattern
+        /// <c>projects/{project}/calls/{call}/sipInfo</c>.
         /// </summary>
         /// <param name="projectId">The <c>Project</c> ID. Must not be <c>null</c> or empty.</param>
         /// <param name="callId">The <c>Call</c> ID. Must not be <c>null</c> or empty.</param>
         /// <returns>
-        /// The string representation of this <see cref="CallName"/> with pattern <c>projects/{project}/calls/{call}</c>
-        /// .
+        /// The string representation of this <see cref="SipInfoName"/> with pattern
+        /// <c>projects/{project}/calls/{call}/sipInfo</c>.
         /// </returns>
         public static string Format(string projectId, string callId) => FormatProjectCall(projectId, callId);
 
         /// <summary>
-        /// Formats the IDs into the string representation of this <see cref="CallName"/> with pattern
-        /// <c>projects/{project}/calls/{call}</c>.
+        /// Formats the IDs into the string representation of this <see cref="SipInfoName"/> with pattern
+        /// <c>projects/{project}/calls/{call}/sipInfo</c>.
         /// </summary>
         /// <param name="projectId">The <c>Project</c> ID. Must not be <c>null</c> or empty.</param>
         /// <param name="callId">The <c>Call</c> ID. Must not be <c>null</c> or empty.</param>
         /// <returns>
-        /// The string representation of this <see cref="CallName"/> with pattern <c>projects/{project}/calls/{call}</c>
-        /// .
+        /// The string representation of this <see cref="SipInfoName"/> with pattern
+        /// <c>projects/{project}/calls/{call}/sipInfo</c>.
         /// </returns>
         public static string FormatProjectCall(string projectId, string callId) =>
             s_projectCall.Expand(gax::GaxPreconditions.CheckNotNullOrEmpty(projectId, nameof(projectId)), gax::GaxPreconditions.CheckNotNullOrEmpty(callId, nameof(callId)));
 
-        /// <summary>Parses the given resource name string into a new <see cref="CallName"/> instance.</summary>
+        /// <summary>Parses the given resource name string into a new <see cref="SipInfoName"/> instance.</summary>
         /// <remarks>
         /// To parse successfully, the resource name must be formatted as one of the following:
-        /// <list type="bullet"><item><description><c>projects/{project}/calls/{call}</c></description></item></list>
+        /// <list type="bullet">
+        /// <item><description><c>projects/{project}/calls/{call}/sipInfo</c></description></item>
+        /// </list>
         /// </remarks>
-        /// <param name="callName">The resource name in string form. Must not be <c>null</c>.</param>
-        /// <returns>The parsed <see cref="CallName"/> if successful.</returns>
-        public static CallName Parse(string callName) => Parse(callName, false);
+        /// <param name="sipInfoName">The resource name in string form. Must not be <c>null</c>.</param>
+        /// <returns>The parsed <see cref="SipInfoName"/> if successful.</returns>
+        public static SipInfoName Parse(string sipInfoName) => Parse(sipInfoName, false);
 
         /// <summary>
-        /// Parses the given resource name string into a new <see cref="CallName"/> instance; optionally allowing an
+        /// Parses the given resource name string into a new <see cref="SipInfoName"/> instance; optionally allowing an
         /// unparseable resource name.
         /// </summary>
         /// <remarks>
         /// To parse successfully, the resource name must be formatted as one of the following:
-        /// <list type="bullet"><item><description><c>projects/{project}/calls/{call}</c></description></item></list>
+        /// <list type="bullet">
+        /// <item><description><c>projects/{project}/calls/{call}/sipInfo</c></description></item>
+        /// </list>
         /// Or may be in any format if <paramref name="allowUnparsed"/> is <c>true</c>.
         /// </remarks>
-        /// <param name="callName">The resource name in string form. Must not be <c>null</c>.</param>
+        /// <param name="sipInfoName">The resource name in string form. Must not be <c>null</c>.</param>
         /// <param name="allowUnparsed">
         /// If <c>true</c> will successfully store an unparseable resource name into the <see cref="UnparsedResource"/>
         /// property; otherwise will throw an <see cref="sys::ArgumentException"/> if an unparseable resource name is
         /// specified.
         /// </param>
-        /// <returns>The parsed <see cref="CallName"/> if successful.</returns>
-        public static CallName Parse(string callName, bool allowUnparsed) =>
-            TryParse(callName, allowUnparsed, out CallName result) ? result : throw new sys::ArgumentException("The given resource-name matches no pattern.");
-
-        /// <summary>Tries to parse the given resource name string into a new <see cref="CallName"/> instance.</summary>
-        /// <remarks>
-        /// To parse successfully, the resource name must be formatted as one of the following:
-        /// <list type="bullet"><item><description><c>projects/{project}/calls/{call}</c></description></item></list>
-        /// </remarks>
-        /// <param name="callName">The resource name in string form. Must not be <c>null</c>.</param>
-        /// <param name="result">
-        /// When this method returns, the parsed <see cref="CallName"/>, or <c>null</c> if parsing failed.
-        /// </param>
-        /// <returns><c>true</c> if the name was parsed successfully; <c>false</c> otherwise.</returns>
-        public static bool TryParse(string callName, out CallName result) => TryParse(callName, false, out result);
+        /// <returns>The parsed <see cref="SipInfoName"/> if successful.</returns>
+        public static SipInfoName Parse(string sipInfoName, bool allowUnparsed) =>
+            TryParse(sipInfoName, allowUnparsed, out SipInfoName result) ? result : throw new sys::ArgumentException("The given resource-name matches no pattern.");
 
         /// <summary>
-        /// Tries to parse the given resource name string into a new <see cref="CallName"/> instance; optionally
+        /// Tries to parse the given resource name string into a new <see cref="SipInfoName"/> instance.
+        /// </summary>
+        /// <remarks>
+        /// To parse successfully, the resource name must be formatted as one of the following:
+        /// <list type="bullet">
+        /// <item><description><c>projects/{project}/calls/{call}/sipInfo</c></description></item>
+        /// </list>
+        /// </remarks>
+        /// <param name="sipInfoName">The resource name in string form. Must not be <c>null</c>.</param>
+        /// <param name="result">
+        /// When this method returns, the parsed <see cref="SipInfoName"/>, or <c>null</c> if parsing failed.
+        /// </param>
+        /// <returns><c>true</c> if the name was parsed successfully; <c>false</c> otherwise.</returns>
+        public static bool TryParse(string sipInfoName, out SipInfoName result) => TryParse(sipInfoName, false, out result);
+
+        /// <summary>
+        /// Tries to parse the given resource name string into a new <see cref="SipInfoName"/> instance; optionally
         /// allowing an unparseable resource name.
         /// </summary>
         /// <remarks>
         /// To parse successfully, the resource name must be formatted as one of the following:
-        /// <list type="bullet"><item><description><c>projects/{project}/calls/{call}</c></description></item></list>
+        /// <list type="bullet">
+        /// <item><description><c>projects/{project}/calls/{call}/sipInfo</c></description></item>
+        /// </list>
         /// Or may be in any format if <paramref name="allowUnparsed"/> is <c>true</c>.
         /// </remarks>
-        /// <param name="callName">The resource name in string form. Must not be <c>null</c>.</param>
+        /// <param name="sipInfoName">The resource name in string form. Must not be <c>null</c>.</param>
         /// <param name="allowUnparsed">
         /// If <c>true</c> will successfully store an unparseable resource name into the <see cref="UnparsedResource"/>
         /// property; otherwise will throw an <see cref="sys::ArgumentException"/> if an unparseable resource name is
         /// specified.
         /// </param>
         /// <param name="result">
-        /// When this method returns, the parsed <see cref="CallName"/>, or <c>null</c> if parsing failed.
+        /// When this method returns, the parsed <see cref="SipInfoName"/>, or <c>null</c> if parsing failed.
         /// </param>
         /// <returns><c>true</c> if the name was parsed successfully; <c>false</c> otherwise.</returns>
-        public static bool TryParse(string callName, bool allowUnparsed, out CallName result)
+        public static bool TryParse(string sipInfoName, bool allowUnparsed, out SipInfoName result)
         {
-            gax::GaxPreconditions.CheckNotNull(callName, nameof(callName));
+            gax::GaxPreconditions.CheckNotNull(sipInfoName, nameof(sipInfoName));
             gax::TemplatedResourceName resourceName;
-            if (s_projectCall.TryParseName(callName, out resourceName))
+            if (s_projectCall.TryParseName(sipInfoName, out resourceName))
             {
                 result = FromProjectCall(resourceName[0], resourceName[1]);
                 return true;
             }
             if (allowUnparsed)
             {
-                if (gax::UnparsedResourceName.TryParse(callName, out gax::UnparsedResourceName unparsedResourceName))
+                if (gax::UnparsedResourceName.TryParse(sipInfoName, out gax::UnparsedResourceName unparsedResourceName))
                 {
                     result = FromUnparsed(unparsedResourceName);
                     return true;
@@ -155,7 +167,7 @@ namespace Enfonica.Voice.V1Beta1
             return false;
         }
 
-        private CallName(ResourceNameType type, gax::UnparsedResourceName unparsedResourceName = null, string callId = null, string projectId = null)
+        private SipInfoName(ResourceNameType type, gax::UnparsedResourceName unparsedResourceName = null, string callId = null, string projectId = null)
         {
             Type = type;
             UnparsedResource = unparsedResourceName;
@@ -164,12 +176,12 @@ namespace Enfonica.Voice.V1Beta1
         }
 
         /// <summary>
-        /// Constructs a new instance of a <see cref="CallName"/> class from the component parts of pattern
-        /// <c>projects/{project}/calls/{call}</c>
+        /// Constructs a new instance of a <see cref="SipInfoName"/> class from the component parts of pattern
+        /// <c>projects/{project}/calls/{call}/sipInfo</c>
         /// </summary>
         /// <param name="projectId">The <c>Project</c> ID. Must not be <c>null</c> or empty.</param>
         /// <param name="callId">The <c>Call</c> ID. Must not be <c>null</c> or empty.</param>
-        public CallName(string projectId, string callId) : this(ResourceNameType.ProjectCall, projectId: gax::GaxPreconditions.CheckNotNullOrEmpty(projectId, nameof(projectId)), callId: gax::GaxPreconditions.CheckNotNullOrEmpty(callId, nameof(callId)))
+        public SipInfoName(string projectId, string callId) : this(ResourceNameType.ProjectCall, projectId: gax::GaxPreconditions.CheckNotNullOrEmpty(projectId, nameof(projectId)), callId: gax::GaxPreconditions.CheckNotNullOrEmpty(callId, nameof(callId)))
         {
         }
 
@@ -211,63 +223,39 @@ namespace Enfonica.Voice.V1Beta1
         public override int GetHashCode() => ToString().GetHashCode();
 
         /// <inheritdoc/>
-        public override bool Equals(object obj) => Equals(obj as CallName);
+        public override bool Equals(object obj) => Equals(obj as SipInfoName);
 
         /// <inheritdoc/>
-        public bool Equals(CallName other) => ToString() == other?.ToString();
+        public bool Equals(SipInfoName other) => ToString() == other?.ToString();
 
         /// <inheritdoc/>
-        public static bool operator ==(CallName a, CallName b) => ReferenceEquals(a, b) || (a?.Equals(b) ?? false);
+        public static bool operator ==(SipInfoName a, SipInfoName b) => ReferenceEquals(a, b) || (a?.Equals(b) ?? false);
 
         /// <inheritdoc/>
-        public static bool operator !=(CallName a, CallName b) => !(a == b);
+        public static bool operator !=(SipInfoName a, SipInfoName b) => !(a == b);
     }
 
-    public partial class Call
+    public partial class SipInfo
     {
         /// <summary>
-        /// <see cref="evv::CallName"/>-typed view over the <see cref="Name"/> resource name property.
+        /// <see cref="evv::SipInfoName"/>-typed view over the <see cref="Name"/> resource name property.
         /// </summary>
-        public evv::CallName CallName
+        public evv::SipInfoName SipInfoName
         {
-            get => string.IsNullOrEmpty(Name) ? null : evv::CallName.Parse(Name, allowUnparsed: true);
+            get => string.IsNullOrEmpty(Name) ? null : evv::SipInfoName.Parse(Name, allowUnparsed: true);
             set => Name = value?.ToString() ?? "";
         }
     }
 
-    public partial class CreateCallRequest
+    public partial class GetSipInfoRequest
     {
         /// <summary>
-        /// <see cref="ProjectName"/>-typed view over the <see cref="Parent"/> resource name property.
+        /// <see cref="evv::SipInfoName"/>-typed view over the <see cref="Name"/> resource name property.
         /// </summary>
-        public ProjectName ParentAsProjectName
+        public evv::SipInfoName SipInfoName
         {
-            get => string.IsNullOrEmpty(Parent) ? null : ProjectName.Parse(Parent, allowUnparsed: true);
-            set => Parent = value?.ToString() ?? "";
-        }
-    }
-
-    public partial class GetCallRequest
-    {
-        /// <summary>
-        /// <see cref="evv::CallName"/>-typed view over the <see cref="Name"/> resource name property.
-        /// </summary>
-        public evv::CallName CallName
-        {
-            get => string.IsNullOrEmpty(Name) ? null : evv::CallName.Parse(Name, allowUnparsed: true);
+            get => string.IsNullOrEmpty(Name) ? null : evv::SipInfoName.Parse(Name, allowUnparsed: true);
             set => Name = value?.ToString() ?? "";
-        }
-    }
-
-    public partial class ListCallsRequest
-    {
-        /// <summary>
-        /// <see cref="ProjectName"/>-typed view over the <see cref="Parent"/> resource name property.
-        /// </summary>
-        public ProjectName ParentAsProjectName
-        {
-            get => string.IsNullOrEmpty(Parent) ? null : ProjectName.Parse(Parent, allowUnparsed: true);
-            set => Parent = value?.ToString() ?? "";
         }
     }
 }

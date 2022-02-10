@@ -129,7 +129,7 @@ install_microgenerator() {
   then
       git -C $GENERATOR_ROOT pull -q
   else
-      git clone https://github.com/googleapis/gapic-generator-csharp $GENERATOR_ROOT -b master --depth 1
+      git clone https://github.com/googleapis/gapic-generator-csharp $GENERATOR_ROOT -b main --depth 1
   fi
 
   (cd $GENERATOR_ROOT; dotnet publish -v quiet -nologo -clp:NoSummary -c Release --self-contained --runtime=$RUNTIME Google.Api.Generator)

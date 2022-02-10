@@ -1,4 +1,4 @@
-// Copyright 2021 Enfonica Pty Ltd
+// Copyright 2022 Enfonica Pty Ltd
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -59,7 +59,8 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 CallRecordingTrigger = PhoneNumberInstance.Types.RecordingTrigger.Bridge,
                 CreateTime = new wkt::Timestamp(),
                 DeleteTime = new wkt::Timestamp(),
-                LifecycleState = PhoneNumberInstance.Types.LifecycleState.Unspecified,
+                LifecycleState = PhoneNumberInstance.Types.LifecycleState.Pending,
+                ActivateTime = new wkt::Timestamp(),
             };
             mockGrpcClient.Setup(x => x.CreatePhoneNumberInstance(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
@@ -100,7 +101,8 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 CallRecordingTrigger = PhoneNumberInstance.Types.RecordingTrigger.Bridge,
                 CreateTime = new wkt::Timestamp(),
                 DeleteTime = new wkt::Timestamp(),
-                LifecycleState = PhoneNumberInstance.Types.LifecycleState.Unspecified,
+                LifecycleState = PhoneNumberInstance.Types.LifecycleState.Pending,
+                ActivateTime = new wkt::Timestamp(),
             };
             mockGrpcClient.Setup(x => x.CreatePhoneNumberInstanceAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<PhoneNumberInstance>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
@@ -143,7 +145,8 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 CallRecordingTrigger = PhoneNumberInstance.Types.RecordingTrigger.Bridge,
                 CreateTime = new wkt::Timestamp(),
                 DeleteTime = new wkt::Timestamp(),
-                LifecycleState = PhoneNumberInstance.Types.LifecycleState.Unspecified,
+                LifecycleState = PhoneNumberInstance.Types.LifecycleState.Pending,
+                ActivateTime = new wkt::Timestamp(),
             };
             mockGrpcClient.Setup(x => x.CreatePhoneNumberInstance(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
@@ -184,7 +187,8 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 CallRecordingTrigger = PhoneNumberInstance.Types.RecordingTrigger.Bridge,
                 CreateTime = new wkt::Timestamp(),
                 DeleteTime = new wkt::Timestamp(),
-                LifecycleState = PhoneNumberInstance.Types.LifecycleState.Unspecified,
+                LifecycleState = PhoneNumberInstance.Types.LifecycleState.Pending,
+                ActivateTime = new wkt::Timestamp(),
             };
             mockGrpcClient.Setup(x => x.CreatePhoneNumberInstanceAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<PhoneNumberInstance>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
@@ -227,7 +231,8 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 CallRecordingTrigger = PhoneNumberInstance.Types.RecordingTrigger.Bridge,
                 CreateTime = new wkt::Timestamp(),
                 DeleteTime = new wkt::Timestamp(),
-                LifecycleState = PhoneNumberInstance.Types.LifecycleState.Unspecified,
+                LifecycleState = PhoneNumberInstance.Types.LifecycleState.Pending,
+                ActivateTime = new wkt::Timestamp(),
             };
             mockGrpcClient.Setup(x => x.CreatePhoneNumberInstance(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
@@ -268,7 +273,8 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 CallRecordingTrigger = PhoneNumberInstance.Types.RecordingTrigger.Bridge,
                 CreateTime = new wkt::Timestamp(),
                 DeleteTime = new wkt::Timestamp(),
-                LifecycleState = PhoneNumberInstance.Types.LifecycleState.Unspecified,
+                LifecycleState = PhoneNumberInstance.Types.LifecycleState.Pending,
+                ActivateTime = new wkt::Timestamp(),
             };
             mockGrpcClient.Setup(x => x.CreatePhoneNumberInstanceAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<PhoneNumberInstance>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
@@ -310,7 +316,8 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 CallRecordingTrigger = PhoneNumberInstance.Types.RecordingTrigger.Bridge,
                 CreateTime = new wkt::Timestamp(),
                 DeleteTime = new wkt::Timestamp(),
-                LifecycleState = PhoneNumberInstance.Types.LifecycleState.Unspecified,
+                LifecycleState = PhoneNumberInstance.Types.LifecycleState.Pending,
+                ActivateTime = new wkt::Timestamp(),
             };
             mockGrpcClient.Setup(x => x.GetPhoneNumberInstance(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
@@ -350,7 +357,8 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 CallRecordingTrigger = PhoneNumberInstance.Types.RecordingTrigger.Bridge,
                 CreateTime = new wkt::Timestamp(),
                 DeleteTime = new wkt::Timestamp(),
-                LifecycleState = PhoneNumberInstance.Types.LifecycleState.Unspecified,
+                LifecycleState = PhoneNumberInstance.Types.LifecycleState.Pending,
+                ActivateTime = new wkt::Timestamp(),
             };
             mockGrpcClient.Setup(x => x.GetPhoneNumberInstanceAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<PhoneNumberInstance>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
@@ -392,7 +400,8 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 CallRecordingTrigger = PhoneNumberInstance.Types.RecordingTrigger.Bridge,
                 CreateTime = new wkt::Timestamp(),
                 DeleteTime = new wkt::Timestamp(),
-                LifecycleState = PhoneNumberInstance.Types.LifecycleState.Unspecified,
+                LifecycleState = PhoneNumberInstance.Types.LifecycleState.Pending,
+                ActivateTime = new wkt::Timestamp(),
             };
             mockGrpcClient.Setup(x => x.GetPhoneNumberInstance(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
@@ -432,7 +441,8 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 CallRecordingTrigger = PhoneNumberInstance.Types.RecordingTrigger.Bridge,
                 CreateTime = new wkt::Timestamp(),
                 DeleteTime = new wkt::Timestamp(),
-                LifecycleState = PhoneNumberInstance.Types.LifecycleState.Unspecified,
+                LifecycleState = PhoneNumberInstance.Types.LifecycleState.Pending,
+                ActivateTime = new wkt::Timestamp(),
             };
             mockGrpcClient.Setup(x => x.GetPhoneNumberInstanceAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<PhoneNumberInstance>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
@@ -474,7 +484,8 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 CallRecordingTrigger = PhoneNumberInstance.Types.RecordingTrigger.Bridge,
                 CreateTime = new wkt::Timestamp(),
                 DeleteTime = new wkt::Timestamp(),
-                LifecycleState = PhoneNumberInstance.Types.LifecycleState.Unspecified,
+                LifecycleState = PhoneNumberInstance.Types.LifecycleState.Pending,
+                ActivateTime = new wkt::Timestamp(),
             };
             mockGrpcClient.Setup(x => x.GetPhoneNumberInstance(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
@@ -514,7 +525,8 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 CallRecordingTrigger = PhoneNumberInstance.Types.RecordingTrigger.Bridge,
                 CreateTime = new wkt::Timestamp(),
                 DeleteTime = new wkt::Timestamp(),
-                LifecycleState = PhoneNumberInstance.Types.LifecycleState.Unspecified,
+                LifecycleState = PhoneNumberInstance.Types.LifecycleState.Pending,
+                ActivateTime = new wkt::Timestamp(),
             };
             mockGrpcClient.Setup(x => x.GetPhoneNumberInstanceAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<PhoneNumberInstance>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
@@ -558,7 +570,8 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 CallRecordingTrigger = PhoneNumberInstance.Types.RecordingTrigger.Bridge,
                 CreateTime = new wkt::Timestamp(),
                 DeleteTime = new wkt::Timestamp(),
-                LifecycleState = PhoneNumberInstance.Types.LifecycleState.Unspecified,
+                LifecycleState = PhoneNumberInstance.Types.LifecycleState.Pending,
+                ActivateTime = new wkt::Timestamp(),
             };
             mockGrpcClient.Setup(x => x.UpdatePhoneNumberInstance(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
@@ -600,7 +613,8 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 CallRecordingTrigger = PhoneNumberInstance.Types.RecordingTrigger.Bridge,
                 CreateTime = new wkt::Timestamp(),
                 DeleteTime = new wkt::Timestamp(),
-                LifecycleState = PhoneNumberInstance.Types.LifecycleState.Unspecified,
+                LifecycleState = PhoneNumberInstance.Types.LifecycleState.Pending,
+                ActivateTime = new wkt::Timestamp(),
             };
             mockGrpcClient.Setup(x => x.UpdatePhoneNumberInstanceAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<PhoneNumberInstance>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
@@ -644,7 +658,8 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 CallRecordingTrigger = PhoneNumberInstance.Types.RecordingTrigger.Bridge,
                 CreateTime = new wkt::Timestamp(),
                 DeleteTime = new wkt::Timestamp(),
-                LifecycleState = PhoneNumberInstance.Types.LifecycleState.Unspecified,
+                LifecycleState = PhoneNumberInstance.Types.LifecycleState.Pending,
+                ActivateTime = new wkt::Timestamp(),
             };
             mockGrpcClient.Setup(x => x.UpdatePhoneNumberInstance(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
@@ -686,7 +701,8 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 CallRecordingTrigger = PhoneNumberInstance.Types.RecordingTrigger.Bridge,
                 CreateTime = new wkt::Timestamp(),
                 DeleteTime = new wkt::Timestamp(),
-                LifecycleState = PhoneNumberInstance.Types.LifecycleState.Unspecified,
+                LifecycleState = PhoneNumberInstance.Types.LifecycleState.Pending,
+                ActivateTime = new wkt::Timestamp(),
             };
             mockGrpcClient.Setup(x => x.UpdatePhoneNumberInstanceAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<PhoneNumberInstance>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
@@ -730,7 +746,8 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 CallRecordingTrigger = PhoneNumberInstance.Types.RecordingTrigger.Bridge,
                 CreateTime = new wkt::Timestamp(),
                 DeleteTime = new wkt::Timestamp(),
-                LifecycleState = PhoneNumberInstance.Types.LifecycleState.Unspecified,
+                LifecycleState = PhoneNumberInstance.Types.LifecycleState.Pending,
+                ActivateTime = new wkt::Timestamp(),
             };
             mockGrpcClient.Setup(x => x.UpdatePhoneNumberInstance(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
@@ -772,7 +789,8 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 CallRecordingTrigger = PhoneNumberInstance.Types.RecordingTrigger.Bridge,
                 CreateTime = new wkt::Timestamp(),
                 DeleteTime = new wkt::Timestamp(),
-                LifecycleState = PhoneNumberInstance.Types.LifecycleState.Unspecified,
+                LifecycleState = PhoneNumberInstance.Types.LifecycleState.Pending,
+                ActivateTime = new wkt::Timestamp(),
             };
             mockGrpcClient.Setup(x => x.UpdatePhoneNumberInstanceAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<PhoneNumberInstance>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
@@ -814,7 +832,8 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 CallRecordingTrigger = PhoneNumberInstance.Types.RecordingTrigger.Bridge,
                 CreateTime = new wkt::Timestamp(),
                 DeleteTime = new wkt::Timestamp(),
-                LifecycleState = PhoneNumberInstance.Types.LifecycleState.Unspecified,
+                LifecycleState = PhoneNumberInstance.Types.LifecycleState.Pending,
+                ActivateTime = new wkt::Timestamp(),
             };
             mockGrpcClient.Setup(x => x.DeletePhoneNumberInstance(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
@@ -854,7 +873,8 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 CallRecordingTrigger = PhoneNumberInstance.Types.RecordingTrigger.Bridge,
                 CreateTime = new wkt::Timestamp(),
                 DeleteTime = new wkt::Timestamp(),
-                LifecycleState = PhoneNumberInstance.Types.LifecycleState.Unspecified,
+                LifecycleState = PhoneNumberInstance.Types.LifecycleState.Pending,
+                ActivateTime = new wkt::Timestamp(),
             };
             mockGrpcClient.Setup(x => x.DeletePhoneNumberInstanceAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<PhoneNumberInstance>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
@@ -896,7 +916,8 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 CallRecordingTrigger = PhoneNumberInstance.Types.RecordingTrigger.Bridge,
                 CreateTime = new wkt::Timestamp(),
                 DeleteTime = new wkt::Timestamp(),
-                LifecycleState = PhoneNumberInstance.Types.LifecycleState.Unspecified,
+                LifecycleState = PhoneNumberInstance.Types.LifecycleState.Pending,
+                ActivateTime = new wkt::Timestamp(),
             };
             mockGrpcClient.Setup(x => x.DeletePhoneNumberInstance(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
@@ -936,7 +957,8 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 CallRecordingTrigger = PhoneNumberInstance.Types.RecordingTrigger.Bridge,
                 CreateTime = new wkt::Timestamp(),
                 DeleteTime = new wkt::Timestamp(),
-                LifecycleState = PhoneNumberInstance.Types.LifecycleState.Unspecified,
+                LifecycleState = PhoneNumberInstance.Types.LifecycleState.Pending,
+                ActivateTime = new wkt::Timestamp(),
             };
             mockGrpcClient.Setup(x => x.DeletePhoneNumberInstanceAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<PhoneNumberInstance>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
@@ -978,7 +1000,8 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 CallRecordingTrigger = PhoneNumberInstance.Types.RecordingTrigger.Bridge,
                 CreateTime = new wkt::Timestamp(),
                 DeleteTime = new wkt::Timestamp(),
-                LifecycleState = PhoneNumberInstance.Types.LifecycleState.Unspecified,
+                LifecycleState = PhoneNumberInstance.Types.LifecycleState.Pending,
+                ActivateTime = new wkt::Timestamp(),
             };
             mockGrpcClient.Setup(x => x.DeletePhoneNumberInstance(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
@@ -1018,7 +1041,8 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 CallRecordingTrigger = PhoneNumberInstance.Types.RecordingTrigger.Bridge,
                 CreateTime = new wkt::Timestamp(),
                 DeleteTime = new wkt::Timestamp(),
-                LifecycleState = PhoneNumberInstance.Types.LifecycleState.Unspecified,
+                LifecycleState = PhoneNumberInstance.Types.LifecycleState.Pending,
+                ActivateTime = new wkt::Timestamp(),
             };
             mockGrpcClient.Setup(x => x.DeletePhoneNumberInstanceAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<PhoneNumberInstance>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);

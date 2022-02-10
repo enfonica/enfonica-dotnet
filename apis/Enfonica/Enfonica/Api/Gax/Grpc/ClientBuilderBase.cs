@@ -84,6 +84,11 @@ namespace Enfonica.Api.Gax.Grpc
         /// </summary>
         public GrpcAdapter GrpcAdapter { get; set; }
 
+        /// <summary>
+        /// Not used.
+        /// </summary>
+        internal bool UseJwtAccessWithScopes { get; set; }
+
         private EmulatorDetection _emulatorDetection = EmulatorDetection.None;
         /// <summary>
         /// The emulator detection policy to apply when building a client. Derived classes which support

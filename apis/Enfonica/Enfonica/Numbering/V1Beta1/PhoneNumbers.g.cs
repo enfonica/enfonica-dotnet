@@ -29,41 +29,42 @@ namespace Enfonica.Numbering.V1Beta1 {
             "YnVmL3RpbWVzdGFtcC5wcm90bxogZ29vZ2xlL3Byb3RvYnVmL2ZpZWxkX21h",
             "c2sucHJvdG8aHGdvb2dsZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8aF2dvb2ds",
             "ZS9hcGkvY2xpZW50LnByb3RvGh9nb29nbGUvYXBpL2ZpZWxkX2JlaGF2aW9y",
-            "LnByb3RvGhlnb29nbGUvYXBpL3Jlc291cmNlLnByb3RvIpsECgtQaG9uZU51",
+            "LnByb3RvGhlnb29nbGUvYXBpL3Jlc291cmNlLnByb3RvIrMECgtQaG9uZU51",
             "bWJlchIMCgRuYW1lGAEgASgJEhQKDHBob25lX251bWJlchgCIAEoCRJTCgxj",
             "YXBhYmlsaXRpZXMYAyADKA4yPS5lbmZvbmljYS5udW1iZXJpbmcudjFiZXRh",
             "MS5QaG9uZU51bWJlci5QaG9uZU51bWJlckNhcGFiaWxpdHkSCwoDc2t1GAQg",
-            "ASgJEkwKC251bWJlcl90eXBlGAogASgOMjcuZW5mb25pY2EubnVtYmVyaW5n",
-            "LnYxYmV0YTEuUGhvbmVOdW1iZXIuUGhvbmVOdW1iZXJUeXBlEhQKDGNvdW50",
-            "cnlfY29kZRgLIAEoCSJdChVQaG9uZU51bWJlckNhcGFiaWxpdHkSJwojUEhP",
-            "TkVfTlVNQkVSX0NBUEFCSUxJVFlfVU5TUEVDSUZJRUQQABIHCgNTTVMQARIH",
-            "CgNNTVMQAhIJCgVWT0lDRRAEInkKD1Bob25lTnVtYmVyVHlwZRIhCh1QSE9O",
-            "RV9OVU1CRVJfVFlQRV9VTlNQRUNJRklFRBAAEgkKBUxPQ0FMEAESDAoITkFU",
-            "SU9OQUwQAhIKCgZNT0JJTEUQAxINCglUT0xMX0ZSRUUQBBIPCgtTSEFSRURf",
-            "UkFURRAFOkjqQUUKJm51bWJlcmluZy5hcGkuZW5mb25pY2EuY29tL1Bob25l",
-            "TnVtYmVyEhtwaG9uZU51bWJlcnMve3Bob25lX251bWJlcn0i/wEKGVNlYXJj",
-            "aFBob25lTnVtYmVyc1JlcXVlc3QSEQoJcGFnZV9zaXplGAEgASgFEhIKCnBh",
-            "Z2VfdG9rZW4YAiABKAkSTAoLbnVtYmVyX3R5cGUYBCABKA4yNy5lbmZvbmlj",
-            "YS5udW1iZXJpbmcudjFiZXRhMS5QaG9uZU51bWJlci5QaG9uZU51bWJlclR5",
-            "cGUSGQoMY291bnRyeV9jb2RlGAUgASgJQgPgQQISDgoGcHJlZml4GAYgASgJ",
-            "EhYKDnN1cHBvcnRzX3ZvaWNlGAcgASgIEhQKDHN1cHBvcnRzX3NtcxgIIAEo",
-            "CBIUCgxzdXBwb3J0c19tbXMYCSABKAgidQoaU2VhcmNoUGhvbmVOdW1iZXJz",
-            "UmVzcG9uc2USPgoNcGhvbmVfbnVtYmVycxgBIAMoCzInLmVuZm9uaWNhLm51",
-            "bWJlcmluZy52MWJldGExLlBob25lTnVtYmVyEhcKD25leHRfcGFnZV90b2tl",
-            "bhgCIAEoCTKDAgoMUGhvbmVOdW1iZXJzEqkBChJTZWFyY2hQaG9uZU51bWJl",
-            "cnMSNS5lbmZvbmljYS5udW1iZXJpbmcudjFiZXRhMS5TZWFyY2hQaG9uZU51",
-            "bWJlcnNSZXF1ZXN0GjYuZW5mb25pY2EubnVtYmVyaW5nLnYxYmV0YTEuU2Vh",
-            "cmNoUGhvbmVOdW1iZXJzUmVzcG9uc2UiJILT5JMCHhIcL3YxYmV0YTEvcGhv",
-            "bmVOdW1iZXJzOnNlYXJjaBpHykEabnVtYmVyaW5nLmFwaS5lbmZvbmljYS5j",
-            "b23SQSdodHRwczovL2FwaS5lbmZvbmljYS5jb20vYXV0aC9udW1iZXJpbmdC",
-            "mgEKHmNvbS5lbmZvbmljYS5udW1iZXJpbmcudjFiZXRhMUIRUGhvbmVOdW1i",
-            "ZXJzUHJvdG9QAVo7Z2l0aHViLmNvbS9lbmZvbmljYS9lbmZvbmljYS1nby9u",
-            "dW1iZXJpbmcvdjFiZXRhMTtudW1iZXJpbmf4AQGiAgVFTkZPTqoCGkVuZm9u",
-            "aWNhLk51bWJlcmluZy5WMUJldGExYgZwcm90bzM="));
+            "ASgJEhYKDmFjdGl2YXRpb25fc2t1GAUgASgJEkwKC251bWJlcl90eXBlGAog",
+            "ASgOMjcuZW5mb25pY2EubnVtYmVyaW5nLnYxYmV0YTEuUGhvbmVOdW1iZXIu",
+            "UGhvbmVOdW1iZXJUeXBlEhQKDGNvdW50cnlfY29kZRgLIAEoCSJdChVQaG9u",
+            "ZU51bWJlckNhcGFiaWxpdHkSJwojUEhPTkVfTlVNQkVSX0NBUEFCSUxJVFlf",
+            "VU5TUEVDSUZJRUQQABIHCgNTTVMQARIHCgNNTVMQAhIJCgVWT0lDRRAEInkK",
+            "D1Bob25lTnVtYmVyVHlwZRIhCh1QSE9ORV9OVU1CRVJfVFlQRV9VTlNQRUNJ",
+            "RklFRBAAEgkKBUxPQ0FMEAESDAoITkFUSU9OQUwQAhIKCgZNT0JJTEUQAxIN",
+            "CglUT0xMX0ZSRUUQBBIPCgtTSEFSRURfUkFURRAFOkjqQUUKJm51bWJlcmlu",
+            "Zy5hcGkuZW5mb25pY2EuY29tL1Bob25lTnVtYmVyEhtwaG9uZU51bWJlcnMv",
+            "e3Bob25lX251bWJlcn0i/wEKGVNlYXJjaFBob25lTnVtYmVyc1JlcXVlc3QS",
+            "EQoJcGFnZV9zaXplGAEgASgFEhIKCnBhZ2VfdG9rZW4YAiABKAkSTAoLbnVt",
+            "YmVyX3R5cGUYBCABKA4yNy5lbmZvbmljYS5udW1iZXJpbmcudjFiZXRhMS5Q",
+            "aG9uZU51bWJlci5QaG9uZU51bWJlclR5cGUSGQoMY291bnRyeV9jb2RlGAUg",
+            "ASgJQgPgQQISDgoGcHJlZml4GAYgASgJEhYKDnN1cHBvcnRzX3ZvaWNlGAcg",
+            "ASgIEhQKDHN1cHBvcnRzX3NtcxgIIAEoCBIUCgxzdXBwb3J0c19tbXMYCSAB",
+            "KAgidQoaU2VhcmNoUGhvbmVOdW1iZXJzUmVzcG9uc2USPgoNcGhvbmVfbnVt",
+            "YmVycxgBIAMoCzInLmVuZm9uaWNhLm51bWJlcmluZy52MWJldGExLlBob25l",
+            "TnVtYmVyEhcKD25leHRfcGFnZV90b2tlbhgCIAEoCTKDAgoMUGhvbmVOdW1i",
+            "ZXJzEqkBChJTZWFyY2hQaG9uZU51bWJlcnMSNS5lbmZvbmljYS5udW1iZXJp",
+            "bmcudjFiZXRhMS5TZWFyY2hQaG9uZU51bWJlcnNSZXF1ZXN0GjYuZW5mb25p",
+            "Y2EubnVtYmVyaW5nLnYxYmV0YTEuU2VhcmNoUGhvbmVOdW1iZXJzUmVzcG9u",
+            "c2UiJILT5JMCHhIcL3YxYmV0YTEvcGhvbmVOdW1iZXJzOnNlYXJjaBpHykEa",
+            "bnVtYmVyaW5nLmFwaS5lbmZvbmljYS5jb23SQSdodHRwczovL2FwaS5lbmZv",
+            "bmljYS5jb20vYXV0aC9udW1iZXJpbmdCmgEKHmNvbS5lbmZvbmljYS5udW1i",
+            "ZXJpbmcudjFiZXRhMUIRUGhvbmVOdW1iZXJzUHJvdG9QAVo7Z2l0aHViLmNv",
+            "bS9lbmZvbmljYS9lbmZvbmljYS1nby9udW1iZXJpbmcvdjFiZXRhMTtudW1i",
+            "ZXJpbmf4AQGiAgVFTkZPTqoCGkVuZm9uaWNhLk51bWJlcmluZy5WMUJldGEx",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.FieldMaskReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Numbering.V1Beta1.PhoneNumber), global::Enfonica.Numbering.V1Beta1.PhoneNumber.Parser, new[]{ "Name", "PhoneNumber_", "Capabilities", "Sku", "NumberType", "CountryCode" }, null, new[]{ typeof(global::Enfonica.Numbering.V1Beta1.PhoneNumber.Types.PhoneNumberCapability), typeof(global::Enfonica.Numbering.V1Beta1.PhoneNumber.Types.PhoneNumberType) }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Numbering.V1Beta1.PhoneNumber), global::Enfonica.Numbering.V1Beta1.PhoneNumber.Parser, new[]{ "Name", "PhoneNumber_", "Capabilities", "Sku", "ActivationSku", "NumberType", "CountryCode" }, null, new[]{ typeof(global::Enfonica.Numbering.V1Beta1.PhoneNumber.Types.PhoneNumberCapability), typeof(global::Enfonica.Numbering.V1Beta1.PhoneNumber.Types.PhoneNumberType) }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Numbering.V1Beta1.SearchPhoneNumbersRequest), global::Enfonica.Numbering.V1Beta1.SearchPhoneNumbersRequest.Parser, new[]{ "PageSize", "PageToken", "NumberType", "CountryCode", "Prefix", "SupportsVoice", "SupportsSms", "SupportsMms" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Enfonica.Numbering.V1Beta1.SearchPhoneNumbersResponse), global::Enfonica.Numbering.V1Beta1.SearchPhoneNumbersResponse.Parser, new[]{ "PhoneNumbers", "NextPageToken" }, null, null, null, null)
           }));
@@ -108,6 +109,7 @@ namespace Enfonica.Numbering.V1Beta1 {
       phoneNumber_ = other.phoneNumber_;
       capabilities_ = other.capabilities_.Clone();
       sku_ = other.sku_;
+      activationSku_ = other.activationSku_;
       numberType_ = other.numberType_;
       countryCode_ = other.countryCode_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -164,14 +166,32 @@ namespace Enfonica.Numbering.V1Beta1 {
     public const int SkuFieldNumber = 4;
     private string sku_ = "";
     /// <summary>
-    /// The SKU that will be used to bill the phone number.
-    /// In the form `services/*/skus/*`.
+    /// The SKU that will be used to bill the phone number for the monthly service
+    /// charge. In the form `services/*/skus/*`.
+    /// Output only.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Sku {
       get { return sku_; }
       set {
         sku_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "activation_sku" field.</summary>
+    public const int ActivationSkuFieldNumber = 5;
+    private string activationSku_ = "";
+    /// <summary>
+    /// The SKU that will be used to bill the phone number for the once-off
+    /// activation charge. In the form `services/*/skus/*`. If not set, there is
+    /// no activation charge.
+    /// Output only.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string ActivationSku {
+      get { return activationSku_; }
+      set {
+        activationSku_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -223,6 +243,7 @@ namespace Enfonica.Numbering.V1Beta1 {
       if (PhoneNumber_ != other.PhoneNumber_) return false;
       if(!capabilities_.Equals(other.capabilities_)) return false;
       if (Sku != other.Sku) return false;
+      if (ActivationSku != other.ActivationSku) return false;
       if (NumberType != other.NumberType) return false;
       if (CountryCode != other.CountryCode) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -235,6 +256,7 @@ namespace Enfonica.Numbering.V1Beta1 {
       if (PhoneNumber_.Length != 0) hash ^= PhoneNumber_.GetHashCode();
       hash ^= capabilities_.GetHashCode();
       if (Sku.Length != 0) hash ^= Sku.GetHashCode();
+      if (ActivationSku.Length != 0) hash ^= ActivationSku.GetHashCode();
       if (NumberType != global::Enfonica.Numbering.V1Beta1.PhoneNumber.Types.PhoneNumberType.Unspecified) hash ^= NumberType.GetHashCode();
       if (CountryCode.Length != 0) hash ^= CountryCode.GetHashCode();
       if (_unknownFields != null) {
@@ -266,6 +288,10 @@ namespace Enfonica.Numbering.V1Beta1 {
         output.WriteRawTag(34);
         output.WriteString(Sku);
       }
+      if (ActivationSku.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(ActivationSku);
+      }
       if (NumberType != global::Enfonica.Numbering.V1Beta1.PhoneNumber.Types.PhoneNumberType.Unspecified) {
         output.WriteRawTag(80);
         output.WriteEnum((int) NumberType);
@@ -296,6 +322,10 @@ namespace Enfonica.Numbering.V1Beta1 {
         output.WriteRawTag(34);
         output.WriteString(Sku);
       }
+      if (ActivationSku.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(ActivationSku);
+      }
       if (NumberType != global::Enfonica.Numbering.V1Beta1.PhoneNumber.Types.PhoneNumberType.Unspecified) {
         output.WriteRawTag(80);
         output.WriteEnum((int) NumberType);
@@ -323,6 +353,9 @@ namespace Enfonica.Numbering.V1Beta1 {
       if (Sku.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Sku);
       }
+      if (ActivationSku.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ActivationSku);
+      }
       if (NumberType != global::Enfonica.Numbering.V1Beta1.PhoneNumber.Types.PhoneNumberType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) NumberType);
       }
@@ -349,6 +382,9 @@ namespace Enfonica.Numbering.V1Beta1 {
       capabilities_.Add(other.capabilities_);
       if (other.Sku.Length != 0) {
         Sku = other.Sku;
+      }
+      if (other.ActivationSku.Length != 0) {
+        ActivationSku = other.ActivationSku;
       }
       if (other.NumberType != global::Enfonica.Numbering.V1Beta1.PhoneNumber.Types.PhoneNumberType.Unspecified) {
         NumberType = other.NumberType;
@@ -385,6 +421,10 @@ namespace Enfonica.Numbering.V1Beta1 {
           }
           case 34: {
             Sku = input.ReadString();
+            break;
+          }
+          case 42: {
+            ActivationSku = input.ReadString();
             break;
           }
           case 80: {
@@ -424,6 +464,10 @@ namespace Enfonica.Numbering.V1Beta1 {
           }
           case 34: {
             Sku = input.ReadString();
+            break;
+          }
+          case 42: {
+            ActivationSku = input.ReadString();
             break;
           }
           case 80: {
