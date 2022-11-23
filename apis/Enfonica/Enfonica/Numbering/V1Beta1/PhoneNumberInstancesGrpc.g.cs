@@ -3,7 +3,7 @@
 //     source: enfonica/numbering/v1beta1/phone_number_instances.proto
 // </auto-generated>
 // Original file comments:
-// Copyright 2020 Enfonica Pty Ltd
+// Copyright 2022 Enfonica Pty Ltd
 // 
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -24,7 +24,7 @@ using grpc = global::Grpc.Core;
 
 namespace Enfonica.Numbering.V1Beta1 {
   /// <summary>
-  /// Manages PhoneNumberInstances.
+  /// Manages phone number instances.
   /// </summary>
   public static partial class PhoneNumberInstances
   {
@@ -37,6 +37,9 @@ namespace Enfonica.Numbering.V1Beta1 {
     static readonly grpc::Marshaller<global::Enfonica.Numbering.V1Beta1.ListPhoneNumberInstancesResponse> __Marshaller_enfonica_numbering_v1beta1_ListPhoneNumberInstancesResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Enfonica.Numbering.V1Beta1.ListPhoneNumberInstancesResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Enfonica.Numbering.V1Beta1.UpdatePhoneNumberInstanceRequest> __Marshaller_enfonica_numbering_v1beta1_UpdatePhoneNumberInstanceRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Enfonica.Numbering.V1Beta1.UpdatePhoneNumberInstanceRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Enfonica.Numbering.V1Beta1.DeletePhoneNumberInstanceRequest> __Marshaller_enfonica_numbering_v1beta1_DeletePhoneNumberInstanceRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Enfonica.Numbering.V1Beta1.DeletePhoneNumberInstanceRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Enfonica.Numbering.V1Beta1.MovePhoneNumberInstanceRequest> __Marshaller_enfonica_numbering_v1beta1_MovePhoneNumberInstanceRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Enfonica.Numbering.V1Beta1.MovePhoneNumberInstanceRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Enfonica.Numbering.V1Beta1.SplitRangeRequest> __Marshaller_enfonica_numbering_v1beta1_SplitRangeRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Enfonica.Numbering.V1Beta1.SplitRangeRequest.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Enfonica.Numbering.V1Beta1.SplitRangeResponse> __Marshaller_enfonica_numbering_v1beta1_SplitRangeResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Enfonica.Numbering.V1Beta1.SplitRangeResponse.Parser.ParseFrom);
 
     static readonly grpc::Method<global::Enfonica.Numbering.V1Beta1.CreatePhoneNumberInstanceRequest, global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance> __Method_CreatePhoneNumberInstance = new grpc::Method<global::Enfonica.Numbering.V1Beta1.CreatePhoneNumberInstanceRequest, global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance>(
         grpc::MethodType.Unary,
@@ -73,6 +76,20 @@ namespace Enfonica.Numbering.V1Beta1 {
         __Marshaller_enfonica_numbering_v1beta1_DeletePhoneNumberInstanceRequest,
         __Marshaller_enfonica_numbering_v1beta1_PhoneNumberInstance);
 
+    static readonly grpc::Method<global::Enfonica.Numbering.V1Beta1.MovePhoneNumberInstanceRequest, global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance> __Method_MovePhoneNumberInstance = new grpc::Method<global::Enfonica.Numbering.V1Beta1.MovePhoneNumberInstanceRequest, global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "MovePhoneNumberInstance",
+        __Marshaller_enfonica_numbering_v1beta1_MovePhoneNumberInstanceRequest,
+        __Marshaller_enfonica_numbering_v1beta1_PhoneNumberInstance);
+
+    static readonly grpc::Method<global::Enfonica.Numbering.V1Beta1.SplitRangeRequest, global::Enfonica.Numbering.V1Beta1.SplitRangeResponse> __Method_SplitRange = new grpc::Method<global::Enfonica.Numbering.V1Beta1.SplitRangeRequest, global::Enfonica.Numbering.V1Beta1.SplitRangeResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "SplitRange",
+        __Marshaller_enfonica_numbering_v1beta1_SplitRangeRequest,
+        __Marshaller_enfonica_numbering_v1beta1_SplitRangeResponse);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -84,7 +101,8 @@ namespace Enfonica.Numbering.V1Beta1 {
     public abstract partial class PhoneNumberInstancesBase
     {
       /// <summary>
-      /// Creates a phone number instance.
+      /// Creates a phone number instance. This provisions a phone number against a
+      /// project.
       ///
       /// The caller must have `numbering.phoneNumberInstances.create` permission on the project.
       /// </summary>
@@ -110,8 +128,9 @@ namespace Enfonica.Numbering.V1Beta1 {
       }
 
       /// <summary>
-      /// Lists all PhoneNumberInstances.
-      /// List returns phone number instance sorted by create_time descending.
+      /// Lists all phone number instances.
+      ///
+      /// List returns phone number instances sorted by `create_time` descending.
       ///
       /// The caller must have `numbering.phoneNumberInstances.list` permission on the project.
       /// </summary>
@@ -139,7 +158,7 @@ namespace Enfonica.Numbering.V1Beta1 {
       }
 
       /// <summary>
-      /// Deletes a phone number instance.
+      /// Deletes a phone number instance. This disconnects the phone number.
       ///
       /// The caller must have `numbering.phoneNumberInstances.delete` permission on the project.
       /// </summary>
@@ -147,6 +166,49 @@ namespace Enfonica.Numbering.V1Beta1 {
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       public virtual global::System.Threading.Tasks.Task<global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance> DeletePhoneNumberInstance(global::Enfonica.Numbering.V1Beta1.DeletePhoneNumberInstanceRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Moves the phone number instance to another project.
+      ///
+      /// Warning: moving a phone number instance may cause the current configuration
+      /// of the phone number instance to stop working. Any connected flows or SIP
+      /// domains will need to be reconfigured in the destination project. Any
+      /// programmable handler will need to accept the signing key of the destination
+      /// project.
+      ///
+      /// The caller must have `numbering.phoneNumberInstances.move` permission on
+      /// both the source and destination projects.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance> MovePhoneNumberInstance(global::Enfonica.Numbering.V1Beta1.MovePhoneNumberInstanceRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Splits a phone number range into two ranges.
+      ///
+      /// To split a range, you specify how many numbers to keep in this range. These
+      /// numbers are taken from the start of the range. The remaining numbers will
+      /// be moved into a new range.
+      ///
+      /// For example, if you have a range +61255501100-99 and you split it with a
+      /// `size` of 20, then:
+      /// - the original range will be modified to +61255501100-19 (size 20)
+      /// - a new range will be created with +61255501120-99 (size 80)
+      ///
+      /// The caller must have `numbering.phoneNumberInstances.splitRange` permission
+      /// on the project.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Enfonica.Numbering.V1Beta1.SplitRangeResponse> SplitRange(global::Enfonica.Numbering.V1Beta1.SplitRangeRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -177,7 +239,8 @@ namespace Enfonica.Numbering.V1Beta1 {
       }
 
       /// <summary>
-      /// Creates a phone number instance.
+      /// Creates a phone number instance. This provisions a phone number against a
+      /// project.
       ///
       /// The caller must have `numbering.phoneNumberInstances.create` permission on the project.
       /// </summary>
@@ -191,7 +254,8 @@ namespace Enfonica.Numbering.V1Beta1 {
         return CreatePhoneNumberInstance(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Creates a phone number instance.
+      /// Creates a phone number instance. This provisions a phone number against a
+      /// project.
       ///
       /// The caller must have `numbering.phoneNumberInstances.create` permission on the project.
       /// </summary>
@@ -203,7 +267,8 @@ namespace Enfonica.Numbering.V1Beta1 {
         return CallInvoker.BlockingUnaryCall(__Method_CreatePhoneNumberInstance, null, options, request);
       }
       /// <summary>
-      /// Creates a phone number instance.
+      /// Creates a phone number instance. This provisions a phone number against a
+      /// project.
       ///
       /// The caller must have `numbering.phoneNumberInstances.create` permission on the project.
       /// </summary>
@@ -217,7 +282,8 @@ namespace Enfonica.Numbering.V1Beta1 {
         return CreatePhoneNumberInstanceAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Creates a phone number instance.
+      /// Creates a phone number instance. This provisions a phone number against a
+      /// project.
       ///
       /// The caller must have `numbering.phoneNumberInstances.create` permission on the project.
       /// </summary>
@@ -281,8 +347,9 @@ namespace Enfonica.Numbering.V1Beta1 {
         return CallInvoker.AsyncUnaryCall(__Method_GetPhoneNumberInstance, null, options, request);
       }
       /// <summary>
-      /// Lists all PhoneNumberInstances.
-      /// List returns phone number instance sorted by create_time descending.
+      /// Lists all phone number instances.
+      ///
+      /// List returns phone number instances sorted by `create_time` descending.
       ///
       /// The caller must have `numbering.phoneNumberInstances.list` permission on the project.
       /// </summary>
@@ -296,8 +363,9 @@ namespace Enfonica.Numbering.V1Beta1 {
         return ListPhoneNumberInstances(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Lists all PhoneNumberInstances.
-      /// List returns phone number instance sorted by create_time descending.
+      /// Lists all phone number instances.
+      ///
+      /// List returns phone number instances sorted by `create_time` descending.
       ///
       /// The caller must have `numbering.phoneNumberInstances.list` permission on the project.
       /// </summary>
@@ -309,8 +377,9 @@ namespace Enfonica.Numbering.V1Beta1 {
         return CallInvoker.BlockingUnaryCall(__Method_ListPhoneNumberInstances, null, options, request);
       }
       /// <summary>
-      /// Lists all PhoneNumberInstances.
-      /// List returns phone number instance sorted by create_time descending.
+      /// Lists all phone number instances.
+      ///
+      /// List returns phone number instances sorted by `create_time` descending.
       ///
       /// The caller must have `numbering.phoneNumberInstances.list` permission on the project.
       /// </summary>
@@ -324,8 +393,9 @@ namespace Enfonica.Numbering.V1Beta1 {
         return ListPhoneNumberInstancesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Lists all PhoneNumberInstances.
-      /// List returns phone number instance sorted by create_time descending.
+      /// Lists all phone number instances.
+      ///
+      /// List returns phone number instances sorted by `create_time` descending.
       ///
       /// The caller must have `numbering.phoneNumberInstances.list` permission on the project.
       /// </summary>
@@ -397,7 +467,7 @@ namespace Enfonica.Numbering.V1Beta1 {
         return CallInvoker.AsyncUnaryCall(__Method_UpdatePhoneNumberInstance, null, options, request);
       }
       /// <summary>
-      /// Deletes a phone number instance.
+      /// Deletes a phone number instance. This disconnects the phone number.
       ///
       /// The caller must have `numbering.phoneNumberInstances.delete` permission on the project.
       /// </summary>
@@ -411,7 +481,7 @@ namespace Enfonica.Numbering.V1Beta1 {
         return DeletePhoneNumberInstance(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Deletes a phone number instance.
+      /// Deletes a phone number instance. This disconnects the phone number.
       ///
       /// The caller must have `numbering.phoneNumberInstances.delete` permission on the project.
       /// </summary>
@@ -423,7 +493,7 @@ namespace Enfonica.Numbering.V1Beta1 {
         return CallInvoker.BlockingUnaryCall(__Method_DeletePhoneNumberInstance, null, options, request);
       }
       /// <summary>
-      /// Deletes a phone number instance.
+      /// Deletes a phone number instance. This disconnects the phone number.
       ///
       /// The caller must have `numbering.phoneNumberInstances.delete` permission on the project.
       /// </summary>
@@ -437,7 +507,7 @@ namespace Enfonica.Numbering.V1Beta1 {
         return DeletePhoneNumberInstanceAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Deletes a phone number instance.
+      /// Deletes a phone number instance. This disconnects the phone number.
       ///
       /// The caller must have `numbering.phoneNumberInstances.delete` permission on the project.
       /// </summary>
@@ -447,6 +517,178 @@ namespace Enfonica.Numbering.V1Beta1 {
       public virtual grpc::AsyncUnaryCall<global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance> DeletePhoneNumberInstanceAsync(global::Enfonica.Numbering.V1Beta1.DeletePhoneNumberInstanceRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_DeletePhoneNumberInstance, null, options, request);
+      }
+      /// <summary>
+      /// Moves the phone number instance to another project.
+      ///
+      /// Warning: moving a phone number instance may cause the current configuration
+      /// of the phone number instance to stop working. Any connected flows or SIP
+      /// domains will need to be reconfigured in the destination project. Any
+      /// programmable handler will need to accept the signing key of the destination
+      /// project.
+      ///
+      /// The caller must have `numbering.phoneNumberInstances.move` permission on
+      /// both the source and destination projects.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance MovePhoneNumberInstance(global::Enfonica.Numbering.V1Beta1.MovePhoneNumberInstanceRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return MovePhoneNumberInstance(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Moves the phone number instance to another project.
+      ///
+      /// Warning: moving a phone number instance may cause the current configuration
+      /// of the phone number instance to stop working. Any connected flows or SIP
+      /// domains will need to be reconfigured in the destination project. Any
+      /// programmable handler will need to accept the signing key of the destination
+      /// project.
+      ///
+      /// The caller must have `numbering.phoneNumberInstances.move` permission on
+      /// both the source and destination projects.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance MovePhoneNumberInstance(global::Enfonica.Numbering.V1Beta1.MovePhoneNumberInstanceRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_MovePhoneNumberInstance, null, options, request);
+      }
+      /// <summary>
+      /// Moves the phone number instance to another project.
+      ///
+      /// Warning: moving a phone number instance may cause the current configuration
+      /// of the phone number instance to stop working. Any connected flows or SIP
+      /// domains will need to be reconfigured in the destination project. Any
+      /// programmable handler will need to accept the signing key of the destination
+      /// project.
+      ///
+      /// The caller must have `numbering.phoneNumberInstances.move` permission on
+      /// both the source and destination projects.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance> MovePhoneNumberInstanceAsync(global::Enfonica.Numbering.V1Beta1.MovePhoneNumberInstanceRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return MovePhoneNumberInstanceAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Moves the phone number instance to another project.
+      ///
+      /// Warning: moving a phone number instance may cause the current configuration
+      /// of the phone number instance to stop working. Any connected flows or SIP
+      /// domains will need to be reconfigured in the destination project. Any
+      /// programmable handler will need to accept the signing key of the destination
+      /// project.
+      ///
+      /// The caller must have `numbering.phoneNumberInstances.move` permission on
+      /// both the source and destination projects.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance> MovePhoneNumberInstanceAsync(global::Enfonica.Numbering.V1Beta1.MovePhoneNumberInstanceRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_MovePhoneNumberInstance, null, options, request);
+      }
+      /// <summary>
+      /// Splits a phone number range into two ranges.
+      ///
+      /// To split a range, you specify how many numbers to keep in this range. These
+      /// numbers are taken from the start of the range. The remaining numbers will
+      /// be moved into a new range.
+      ///
+      /// For example, if you have a range +61255501100-99 and you split it with a
+      /// `size` of 20, then:
+      /// - the original range will be modified to +61255501100-19 (size 20)
+      /// - a new range will be created with +61255501120-99 (size 80)
+      ///
+      /// The caller must have `numbering.phoneNumberInstances.splitRange` permission
+      /// on the project.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Enfonica.Numbering.V1Beta1.SplitRangeResponse SplitRange(global::Enfonica.Numbering.V1Beta1.SplitRangeRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return SplitRange(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Splits a phone number range into two ranges.
+      ///
+      /// To split a range, you specify how many numbers to keep in this range. These
+      /// numbers are taken from the start of the range. The remaining numbers will
+      /// be moved into a new range.
+      ///
+      /// For example, if you have a range +61255501100-99 and you split it with a
+      /// `size` of 20, then:
+      /// - the original range will be modified to +61255501100-19 (size 20)
+      /// - a new range will be created with +61255501120-99 (size 80)
+      ///
+      /// The caller must have `numbering.phoneNumberInstances.splitRange` permission
+      /// on the project.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Enfonica.Numbering.V1Beta1.SplitRangeResponse SplitRange(global::Enfonica.Numbering.V1Beta1.SplitRangeRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_SplitRange, null, options, request);
+      }
+      /// <summary>
+      /// Splits a phone number range into two ranges.
+      ///
+      /// To split a range, you specify how many numbers to keep in this range. These
+      /// numbers are taken from the start of the range. The remaining numbers will
+      /// be moved into a new range.
+      ///
+      /// For example, if you have a range +61255501100-99 and you split it with a
+      /// `size` of 20, then:
+      /// - the original range will be modified to +61255501100-19 (size 20)
+      /// - a new range will be created with +61255501120-99 (size 80)
+      ///
+      /// The caller must have `numbering.phoneNumberInstances.splitRange` permission
+      /// on the project.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Enfonica.Numbering.V1Beta1.SplitRangeResponse> SplitRangeAsync(global::Enfonica.Numbering.V1Beta1.SplitRangeRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return SplitRangeAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Splits a phone number range into two ranges.
+      ///
+      /// To split a range, you specify how many numbers to keep in this range. These
+      /// numbers are taken from the start of the range. The remaining numbers will
+      /// be moved into a new range.
+      ///
+      /// For example, if you have a range +61255501100-99 and you split it with a
+      /// `size` of 20, then:
+      /// - the original range will be modified to +61255501100-19 (size 20)
+      /// - a new range will be created with +61255501120-99 (size 80)
+      ///
+      /// The caller must have `numbering.phoneNumberInstances.splitRange` permission
+      /// on the project.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Enfonica.Numbering.V1Beta1.SplitRangeResponse> SplitRangeAsync(global::Enfonica.Numbering.V1Beta1.SplitRangeRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_SplitRange, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override PhoneNumberInstancesClient NewInstance(ClientBaseConfiguration configuration)
@@ -464,7 +706,9 @@ namespace Enfonica.Numbering.V1Beta1 {
           .AddMethod(__Method_GetPhoneNumberInstance, serviceImpl.GetPhoneNumberInstance)
           .AddMethod(__Method_ListPhoneNumberInstances, serviceImpl.ListPhoneNumberInstances)
           .AddMethod(__Method_UpdatePhoneNumberInstance, serviceImpl.UpdatePhoneNumberInstance)
-          .AddMethod(__Method_DeletePhoneNumberInstance, serviceImpl.DeletePhoneNumberInstance).Build();
+          .AddMethod(__Method_DeletePhoneNumberInstance, serviceImpl.DeletePhoneNumberInstance)
+          .AddMethod(__Method_MovePhoneNumberInstance, serviceImpl.MovePhoneNumberInstance)
+          .AddMethod(__Method_SplitRange, serviceImpl.SplitRange).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
@@ -478,6 +722,8 @@ namespace Enfonica.Numbering.V1Beta1 {
       serviceBinder.AddMethod(__Method_ListPhoneNumberInstances, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Enfonica.Numbering.V1Beta1.ListPhoneNumberInstancesRequest, global::Enfonica.Numbering.V1Beta1.ListPhoneNumberInstancesResponse>(serviceImpl.ListPhoneNumberInstances));
       serviceBinder.AddMethod(__Method_UpdatePhoneNumberInstance, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Enfonica.Numbering.V1Beta1.UpdatePhoneNumberInstanceRequest, global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance>(serviceImpl.UpdatePhoneNumberInstance));
       serviceBinder.AddMethod(__Method_DeletePhoneNumberInstance, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Enfonica.Numbering.V1Beta1.DeletePhoneNumberInstanceRequest, global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance>(serviceImpl.DeletePhoneNumberInstance));
+      serviceBinder.AddMethod(__Method_MovePhoneNumberInstance, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Enfonica.Numbering.V1Beta1.MovePhoneNumberInstanceRequest, global::Enfonica.Numbering.V1Beta1.PhoneNumberInstance>(serviceImpl.MovePhoneNumberInstance));
+      serviceBinder.AddMethod(__Method_SplitRange, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Enfonica.Numbering.V1Beta1.SplitRangeRequest, global::Enfonica.Numbering.V1Beta1.SplitRangeResponse>(serviceImpl.SplitRange));
     }
 
   }

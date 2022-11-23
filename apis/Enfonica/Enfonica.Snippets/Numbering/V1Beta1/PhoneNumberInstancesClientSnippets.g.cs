@@ -670,5 +670,193 @@ namespace Enfonica.Numbering.V1Beta1.Snippets
             PhoneNumberInstance response = await phoneNumberInstancesClient.DeletePhoneNumberInstanceAsync(name);
             // End snippet
         }
+
+        /// <summary>Snippet for MovePhoneNumberInstance</summary>
+        public void MovePhoneNumberInstanceRequestObject()
+        {
+            // Snippet: MovePhoneNumberInstance(MovePhoneNumberInstanceRequest, CallSettings)
+            // Create client
+            PhoneNumberInstancesClient phoneNumberInstancesClient = PhoneNumberInstancesClient.Create();
+            // Initialize request argument(s)
+            MovePhoneNumberInstanceRequest request = new MovePhoneNumberInstanceRequest
+            {
+                PhoneNumberInstanceName = PhoneNumberInstanceName.FromProjectPhoneNumberInstance("[PROJECT]", "[PHONE_NUMBER_INSTANCE]"),
+                DestinationParentAsProjectName = ProjectName.FromProject("[PROJECT]"),
+                RegulatoryListingAsRegulatoryListingName = RegulatoryListingName.FromProjectRegulatoryListing("[PROJECT]", "[REGULATORY_LISTING]"),
+            };
+            // Make the request
+            PhoneNumberInstance response = phoneNumberInstancesClient.MovePhoneNumberInstance(request);
+            // End snippet
+        }
+
+        /// <summary>Snippet for MovePhoneNumberInstanceAsync</summary>
+        public async Task MovePhoneNumberInstanceRequestObjectAsync()
+        {
+            // Snippet: MovePhoneNumberInstanceAsync(MovePhoneNumberInstanceRequest, CallSettings)
+            // Additional: MovePhoneNumberInstanceAsync(MovePhoneNumberInstanceRequest, CancellationToken)
+            // Create client
+            PhoneNumberInstancesClient phoneNumberInstancesClient = await PhoneNumberInstancesClient.CreateAsync();
+            // Initialize request argument(s)
+            MovePhoneNumberInstanceRequest request = new MovePhoneNumberInstanceRequest
+            {
+                PhoneNumberInstanceName = PhoneNumberInstanceName.FromProjectPhoneNumberInstance("[PROJECT]", "[PHONE_NUMBER_INSTANCE]"),
+                DestinationParentAsProjectName = ProjectName.FromProject("[PROJECT]"),
+                RegulatoryListingAsRegulatoryListingName = RegulatoryListingName.FromProjectRegulatoryListing("[PROJECT]", "[REGULATORY_LISTING]"),
+            };
+            // Make the request
+            PhoneNumberInstance response = await phoneNumberInstancesClient.MovePhoneNumberInstanceAsync(request);
+            // End snippet
+        }
+
+        /// <summary>Snippet for MovePhoneNumberInstance</summary>
+        public void MovePhoneNumberInstance()
+        {
+            // Snippet: MovePhoneNumberInstance(string, string, CallSettings)
+            // Create client
+            PhoneNumberInstancesClient phoneNumberInstancesClient = PhoneNumberInstancesClient.Create();
+            // Initialize request argument(s)
+            string name = "projects/[PROJECT]/phoneNumberInstances/[PHONE_NUMBER_INSTANCE]";
+            string destinationParent = "projects/[PROJECT]";
+            // Make the request
+            PhoneNumberInstance response = phoneNumberInstancesClient.MovePhoneNumberInstance(name, destinationParent);
+            // End snippet
+        }
+
+        /// <summary>Snippet for MovePhoneNumberInstanceAsync</summary>
+        public async Task MovePhoneNumberInstanceAsync()
+        {
+            // Snippet: MovePhoneNumberInstanceAsync(string, string, CallSettings)
+            // Additional: MovePhoneNumberInstanceAsync(string, string, CancellationToken)
+            // Create client
+            PhoneNumberInstancesClient phoneNumberInstancesClient = await PhoneNumberInstancesClient.CreateAsync();
+            // Initialize request argument(s)
+            string name = "projects/[PROJECT]/phoneNumberInstances/[PHONE_NUMBER_INSTANCE]";
+            string destinationParent = "projects/[PROJECT]";
+            // Make the request
+            PhoneNumberInstance response = await phoneNumberInstancesClient.MovePhoneNumberInstanceAsync(name, destinationParent);
+            // End snippet
+        }
+
+        /// <summary>Snippet for MovePhoneNumberInstance</summary>
+        public void MovePhoneNumberInstanceResourceNames()
+        {
+            // Snippet: MovePhoneNumberInstance(PhoneNumberInstanceName, ProjectName, CallSettings)
+            // Create client
+            PhoneNumberInstancesClient phoneNumberInstancesClient = PhoneNumberInstancesClient.Create();
+            // Initialize request argument(s)
+            PhoneNumberInstanceName name = PhoneNumberInstanceName.FromProjectPhoneNumberInstance("[PROJECT]", "[PHONE_NUMBER_INSTANCE]");
+            ProjectName destinationParent = ProjectName.FromProject("[PROJECT]");
+            // Make the request
+            PhoneNumberInstance response = phoneNumberInstancesClient.MovePhoneNumberInstance(name, destinationParent);
+            // End snippet
+        }
+
+        /// <summary>Snippet for MovePhoneNumberInstanceAsync</summary>
+        public async Task MovePhoneNumberInstanceResourceNamesAsync()
+        {
+            // Snippet: MovePhoneNumberInstanceAsync(PhoneNumberInstanceName, ProjectName, CallSettings)
+            // Additional: MovePhoneNumberInstanceAsync(PhoneNumberInstanceName, ProjectName, CancellationToken)
+            // Create client
+            PhoneNumberInstancesClient phoneNumberInstancesClient = await PhoneNumberInstancesClient.CreateAsync();
+            // Initialize request argument(s)
+            PhoneNumberInstanceName name = PhoneNumberInstanceName.FromProjectPhoneNumberInstance("[PROJECT]", "[PHONE_NUMBER_INSTANCE]");
+            ProjectName destinationParent = ProjectName.FromProject("[PROJECT]");
+            // Make the request
+            PhoneNumberInstance response = await phoneNumberInstancesClient.MovePhoneNumberInstanceAsync(name, destinationParent);
+            // End snippet
+        }
+
+        /// <summary>Snippet for SplitRange</summary>
+        public void SplitRangeRequestObject()
+        {
+            // Snippet: SplitRange(SplitRangeRequest, CallSettings)
+            // Create client
+            PhoneNumberInstancesClient phoneNumberInstancesClient = PhoneNumberInstancesClient.Create();
+            // Initialize request argument(s)
+            SplitRangeRequest request = new SplitRangeRequest
+            {
+                PhoneNumberInstanceAsPhoneNumberInstanceName = PhoneNumberInstanceName.FromProjectPhoneNumberInstance("[PROJECT]", "[PHONE_NUMBER_INSTANCE]"),
+                Size = 0,
+            };
+            // Make the request
+            SplitRangeResponse response = phoneNumberInstancesClient.SplitRange(request);
+            // End snippet
+        }
+
+        /// <summary>Snippet for SplitRangeAsync</summary>
+        public async Task SplitRangeRequestObjectAsync()
+        {
+            // Snippet: SplitRangeAsync(SplitRangeRequest, CallSettings)
+            // Additional: SplitRangeAsync(SplitRangeRequest, CancellationToken)
+            // Create client
+            PhoneNumberInstancesClient phoneNumberInstancesClient = await PhoneNumberInstancesClient.CreateAsync();
+            // Initialize request argument(s)
+            SplitRangeRequest request = new SplitRangeRequest
+            {
+                PhoneNumberInstanceAsPhoneNumberInstanceName = PhoneNumberInstanceName.FromProjectPhoneNumberInstance("[PROJECT]", "[PHONE_NUMBER_INSTANCE]"),
+                Size = 0,
+            };
+            // Make the request
+            SplitRangeResponse response = await phoneNumberInstancesClient.SplitRangeAsync(request);
+            // End snippet
+        }
+
+        /// <summary>Snippet for SplitRange</summary>
+        public void SplitRange()
+        {
+            // Snippet: SplitRange(string, int, CallSettings)
+            // Create client
+            PhoneNumberInstancesClient phoneNumberInstancesClient = PhoneNumberInstancesClient.Create();
+            // Initialize request argument(s)
+            string phoneNumberInstance = "projects/[PROJECT]/phoneNumberInstances/[PHONE_NUMBER_INSTANCE]";
+            int size = 0;
+            // Make the request
+            SplitRangeResponse response = phoneNumberInstancesClient.SplitRange(phoneNumberInstance, size);
+            // End snippet
+        }
+
+        /// <summary>Snippet for SplitRangeAsync</summary>
+        public async Task SplitRangeAsync()
+        {
+            // Snippet: SplitRangeAsync(string, int, CallSettings)
+            // Additional: SplitRangeAsync(string, int, CancellationToken)
+            // Create client
+            PhoneNumberInstancesClient phoneNumberInstancesClient = await PhoneNumberInstancesClient.CreateAsync();
+            // Initialize request argument(s)
+            string phoneNumberInstance = "projects/[PROJECT]/phoneNumberInstances/[PHONE_NUMBER_INSTANCE]";
+            int size = 0;
+            // Make the request
+            SplitRangeResponse response = await phoneNumberInstancesClient.SplitRangeAsync(phoneNumberInstance, size);
+            // End snippet
+        }
+
+        /// <summary>Snippet for SplitRange</summary>
+        public void SplitRangeResourceNames()
+        {
+            // Snippet: SplitRange(PhoneNumberInstanceName, int, CallSettings)
+            // Create client
+            PhoneNumberInstancesClient phoneNumberInstancesClient = PhoneNumberInstancesClient.Create();
+            // Initialize request argument(s)
+            PhoneNumberInstanceName phoneNumberInstance = PhoneNumberInstanceName.FromProjectPhoneNumberInstance("[PROJECT]", "[PHONE_NUMBER_INSTANCE]");
+            int size = 0;
+            // Make the request
+            SplitRangeResponse response = phoneNumberInstancesClient.SplitRange(phoneNumberInstance, size);
+            // End snippet
+        }
+
+        /// <summary>Snippet for SplitRangeAsync</summary>
+        public async Task SplitRangeResourceNamesAsync()
+        {
+            // Snippet: SplitRangeAsync(PhoneNumberInstanceName, int, CallSettings)
+            // Additional: SplitRangeAsync(PhoneNumberInstanceName, int, CancellationToken)
+            // Create client
+            PhoneNumberInstancesClient phoneNumberInstancesClient = await PhoneNumberInstancesClient.CreateAsync();
+            // Initialize request argument(s)
+            PhoneNumberInstanceName phoneNumberInstance = PhoneNumberInstanceName.FromProjectPhoneNumberInstance("[PROJECT]", "[PHONE_NUMBER_INSTANCE]");
+            int size = 0;
+            // Make the request
+            SplitRangeResponse response = await phoneNumberInstancesClient.SplitRangeAsync(phoneNumberInstance, size);
+            // End snippet
+        }
     }
 }

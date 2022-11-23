@@ -51,6 +51,8 @@ namespace Enfonica.Numbering.V1Beta1
             ListPhoneNumberInstancesSettings = existing.ListPhoneNumberInstancesSettings;
             UpdatePhoneNumberInstanceSettings = existing.UpdatePhoneNumberInstanceSettings;
             DeletePhoneNumberInstanceSettings = existing.DeletePhoneNumberInstanceSettings;
+            MovePhoneNumberInstanceSettings = existing.MovePhoneNumberInstanceSettings;
+            SplitRangeSettings = existing.SplitRangeSettings;
             OnCopy(existing);
         }
 
@@ -120,6 +122,31 @@ namespace Enfonica.Numbering.V1Beta1
         /// </list>
         /// </remarks>
         public gaxgrpc::CallSettings DeletePhoneNumberInstanceSettings { get; set; } = gaxgrpc::CallSettings.FromExpiration(gax::Expiration.FromTimeout(sys::TimeSpan.FromMilliseconds(10000)));
+
+        /// <summary>
+        /// <see cref="gaxgrpc::CallSettings"/> for synchronous and asynchronous calls to
+        /// <c>PhoneNumberInstancesClient.MovePhoneNumberInstance</c> and
+        /// <c>PhoneNumberInstancesClient.MovePhoneNumberInstanceAsync</c>.
+        /// </summary>
+        /// <remarks>
+        /// <list type="bullet">
+        /// <item><description>This call will not be retried.</description></item>
+        /// <item><description>Timeout: 10 seconds.</description></item>
+        /// </list>
+        /// </remarks>
+        public gaxgrpc::CallSettings MovePhoneNumberInstanceSettings { get; set; } = gaxgrpc::CallSettings.FromExpiration(gax::Expiration.FromTimeout(sys::TimeSpan.FromMilliseconds(10000)));
+
+        /// <summary>
+        /// <see cref="gaxgrpc::CallSettings"/> for synchronous and asynchronous calls to
+        /// <c>PhoneNumberInstancesClient.SplitRange</c> and <c>PhoneNumberInstancesClient.SplitRangeAsync</c>.
+        /// </summary>
+        /// <remarks>
+        /// <list type="bullet">
+        /// <item><description>This call will not be retried.</description></item>
+        /// <item><description>Timeout: 10 seconds.</description></item>
+        /// </list>
+        /// </remarks>
+        public gaxgrpc::CallSettings SplitRangeSettings { get; set; } = gaxgrpc::CallSettings.FromExpiration(gax::Expiration.FromTimeout(sys::TimeSpan.FromMilliseconds(10000)));
 
         /// <summary>Creates a deep clone of this object, with all the same property values.</summary>
         /// <returns>A deep clone of this <see cref="PhoneNumberInstancesSettings"/> object.</returns>
@@ -192,7 +219,7 @@ namespace Enfonica.Numbering.V1Beta1
 
     /// <summary>PhoneNumberInstances client wrapper, for convenient use.</summary>
     /// <remarks>
-    /// Manages PhoneNumberInstances.
+    /// Manages phone number instances.
     /// </remarks>
     public abstract partial class PhoneNumberInstancesClient
     {
@@ -284,7 +311,8 @@ namespace Enfonica.Numbering.V1Beta1
         public virtual PhoneNumberInstances.PhoneNumberInstancesClient GrpcClient => throw new sys::NotImplementedException();
 
         /// <summary>
-        /// Creates a phone number instance.
+        /// Creates a phone number instance. This provisions a phone number against a
+        /// project.
         /// 
         /// The caller must have `numbering.phoneNumberInstances.create` permission on the project.
         /// </summary>
@@ -295,7 +323,8 @@ namespace Enfonica.Numbering.V1Beta1
             throw new sys::NotImplementedException();
 
         /// <summary>
-        /// Creates a phone number instance.
+        /// Creates a phone number instance. This provisions a phone number against a
+        /// project.
         /// 
         /// The caller must have `numbering.phoneNumberInstances.create` permission on the project.
         /// </summary>
@@ -306,7 +335,8 @@ namespace Enfonica.Numbering.V1Beta1
             throw new sys::NotImplementedException();
 
         /// <summary>
-        /// Creates a phone number instance.
+        /// Creates a phone number instance. This provisions a phone number against a
+        /// project.
         /// 
         /// The caller must have `numbering.phoneNumberInstances.create` permission on the project.
         /// </summary>
@@ -317,7 +347,8 @@ namespace Enfonica.Numbering.V1Beta1
             CreatePhoneNumberInstanceAsync(request, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
 
         /// <summary>
-        /// Creates a phone number instance.
+        /// Creates a phone number instance. This provisions a phone number against a
+        /// project.
         /// 
         /// The caller must have `numbering.phoneNumberInstances.create` permission on the project.
         /// </summary>
@@ -339,7 +370,8 @@ namespace Enfonica.Numbering.V1Beta1
             }, callSettings);
 
         /// <summary>
-        /// Creates a phone number instance.
+        /// Creates a phone number instance. This provisions a phone number against a
+        /// project.
         /// 
         /// The caller must have `numbering.phoneNumberInstances.create` permission on the project.
         /// </summary>
@@ -361,7 +393,8 @@ namespace Enfonica.Numbering.V1Beta1
             }, callSettings);
 
         /// <summary>
-        /// Creates a phone number instance.
+        /// Creates a phone number instance. This provisions a phone number against a
+        /// project.
         /// 
         /// The caller must have `numbering.phoneNumberInstances.create` permission on the project.
         /// </summary>
@@ -379,7 +412,8 @@ namespace Enfonica.Numbering.V1Beta1
             CreatePhoneNumberInstanceAsync(parent, phoneNumberInstance, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
 
         /// <summary>
-        /// Creates a phone number instance.
+        /// Creates a phone number instance. This provisions a phone number against a
+        /// project.
         /// 
         /// The caller must have `numbering.phoneNumberInstances.create` permission on the project.
         /// </summary>
@@ -401,7 +435,8 @@ namespace Enfonica.Numbering.V1Beta1
             }, callSettings);
 
         /// <summary>
-        /// Creates a phone number instance.
+        /// Creates a phone number instance. This provisions a phone number against a
+        /// project.
         /// 
         /// The caller must have `numbering.phoneNumberInstances.create` permission on the project.
         /// </summary>
@@ -423,7 +458,8 @@ namespace Enfonica.Numbering.V1Beta1
             }, callSettings);
 
         /// <summary>
-        /// Creates a phone number instance.
+        /// Creates a phone number instance. This provisions a phone number against a
+        /// project.
         /// 
         /// The caller must have `numbering.phoneNumberInstances.create` permission on the project.
         /// </summary>
@@ -570,8 +606,9 @@ namespace Enfonica.Numbering.V1Beta1
             GetPhoneNumberInstanceAsync(name, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
 
         /// <summary>
-        /// Lists all PhoneNumberInstances.
-        /// List returns phone number instance sorted by create_time descending.
+        /// Lists all phone number instances.
+        /// 
+        /// List returns phone number instances sorted by `create_time` descending.
         /// 
         /// The caller must have `numbering.phoneNumberInstances.list` permission on the project.
         /// </summary>
@@ -582,8 +619,9 @@ namespace Enfonica.Numbering.V1Beta1
             throw new sys::NotImplementedException();
 
         /// <summary>
-        /// Lists all PhoneNumberInstances.
-        /// List returns phone number instance sorted by create_time descending.
+        /// Lists all phone number instances.
+        /// 
+        /// List returns phone number instances sorted by `create_time` descending.
         /// 
         /// The caller must have `numbering.phoneNumberInstances.list` permission on the project.
         /// </summary>
@@ -594,8 +632,9 @@ namespace Enfonica.Numbering.V1Beta1
             throw new sys::NotImplementedException();
 
         /// <summary>
-        /// Lists all PhoneNumberInstances.
-        /// List returns phone number instance sorted by create_time descending.
+        /// Lists all phone number instances.
+        /// 
+        /// List returns phone number instances sorted by `create_time` descending.
         /// 
         /// The caller must have `numbering.phoneNumberInstances.list` permission on the project.
         /// </summary>
@@ -621,8 +660,9 @@ namespace Enfonica.Numbering.V1Beta1
             }, callSettings);
 
         /// <summary>
-        /// Lists all PhoneNumberInstances.
-        /// List returns phone number instance sorted by create_time descending.
+        /// Lists all phone number instances.
+        /// 
+        /// List returns phone number instances sorted by `create_time` descending.
         /// 
         /// The caller must have `numbering.phoneNumberInstances.list` permission on the project.
         /// </summary>
@@ -648,8 +688,9 @@ namespace Enfonica.Numbering.V1Beta1
             }, callSettings);
 
         /// <summary>
-        /// Lists all PhoneNumberInstances.
-        /// List returns phone number instance sorted by create_time descending.
+        /// Lists all phone number instances.
+        /// 
+        /// List returns phone number instances sorted by `create_time` descending.
         /// 
         /// The caller must have `numbering.phoneNumberInstances.list` permission on the project.
         /// </summary>
@@ -675,8 +716,9 @@ namespace Enfonica.Numbering.V1Beta1
             }, callSettings);
 
         /// <summary>
-        /// Lists all PhoneNumberInstances.
-        /// List returns phone number instance sorted by create_time descending.
+        /// Lists all phone number instances.
+        /// 
+        /// List returns phone number instances sorted by `create_time` descending.
         /// 
         /// The caller must have `numbering.phoneNumberInstances.list` permission on the project.
         /// </summary>
@@ -905,7 +947,7 @@ namespace Enfonica.Numbering.V1Beta1
             UpdatePhoneNumberInstanceAsync(name, phoneNumberInstance, updateMask, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
 
         /// <summary>
-        /// Deletes a phone number instance.
+        /// Deletes a phone number instance. This disconnects the phone number.
         /// 
         /// The caller must have `numbering.phoneNumberInstances.delete` permission on the project.
         /// </summary>
@@ -916,7 +958,7 @@ namespace Enfonica.Numbering.V1Beta1
             throw new sys::NotImplementedException();
 
         /// <summary>
-        /// Deletes a phone number instance.
+        /// Deletes a phone number instance. This disconnects the phone number.
         /// 
         /// The caller must have `numbering.phoneNumberInstances.delete` permission on the project.
         /// </summary>
@@ -927,7 +969,7 @@ namespace Enfonica.Numbering.V1Beta1
             throw new sys::NotImplementedException();
 
         /// <summary>
-        /// Deletes a phone number instance.
+        /// Deletes a phone number instance. This disconnects the phone number.
         /// 
         /// The caller must have `numbering.phoneNumberInstances.delete` permission on the project.
         /// </summary>
@@ -938,7 +980,7 @@ namespace Enfonica.Numbering.V1Beta1
             DeletePhoneNumberInstanceAsync(request, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
 
         /// <summary>
-        /// Deletes a phone number instance.
+        /// Deletes a phone number instance. This disconnects the phone number.
         /// 
         /// The caller must have `numbering.phoneNumberInstances.delete` permission on the project.
         /// </summary>
@@ -955,7 +997,7 @@ namespace Enfonica.Numbering.V1Beta1
             }, callSettings);
 
         /// <summary>
-        /// Deletes a phone number instance.
+        /// Deletes a phone number instance. This disconnects the phone number.
         /// 
         /// The caller must have `numbering.phoneNumberInstances.delete` permission on the project.
         /// </summary>
@@ -972,7 +1014,7 @@ namespace Enfonica.Numbering.V1Beta1
             }, callSettings);
 
         /// <summary>
-        /// Deletes a phone number instance.
+        /// Deletes a phone number instance. This disconnects the phone number.
         /// 
         /// The caller must have `numbering.phoneNumberInstances.delete` permission on the project.
         /// </summary>
@@ -986,7 +1028,7 @@ namespace Enfonica.Numbering.V1Beta1
             DeletePhoneNumberInstanceAsync(name, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
 
         /// <summary>
-        /// Deletes a phone number instance.
+        /// Deletes a phone number instance. This disconnects the phone number.
         /// 
         /// The caller must have `numbering.phoneNumberInstances.delete` permission on the project.
         /// </summary>
@@ -1003,7 +1045,7 @@ namespace Enfonica.Numbering.V1Beta1
             }, callSettings);
 
         /// <summary>
-        /// Deletes a phone number instance.
+        /// Deletes a phone number instance. This disconnects the phone number.
         /// 
         /// The caller must have `numbering.phoneNumberInstances.delete` permission on the project.
         /// </summary>
@@ -1020,7 +1062,7 @@ namespace Enfonica.Numbering.V1Beta1
             }, callSettings);
 
         /// <summary>
-        /// Deletes a phone number instance.
+        /// Deletes a phone number instance. This disconnects the phone number.
         /// 
         /// The caller must have `numbering.phoneNumberInstances.delete` permission on the project.
         /// </summary>
@@ -1032,11 +1074,478 @@ namespace Enfonica.Numbering.V1Beta1
         /// <returns>A Task containing the RPC response.</returns>
         public virtual stt::Task<PhoneNumberInstance> DeletePhoneNumberInstanceAsync(PhoneNumberInstanceName name, st::CancellationToken cancellationToken) =>
             DeletePhoneNumberInstanceAsync(name, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Moves the phone number instance to another project.
+        /// 
+        /// Warning: moving a phone number instance may cause the current configuration
+        /// of the phone number instance to stop working. Any connected flows or SIP
+        /// domains will need to be reconfigured in the destination project. Any
+        /// programmable handler will need to accept the signing key of the destination
+        /// project.
+        /// 
+        /// The caller must have `numbering.phoneNumberInstances.move` permission on
+        /// both the source and destination projects.
+        /// </summary>
+        /// <param name="request">The request object containing all of the parameters for the API call.</param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>The RPC response.</returns>
+        public virtual PhoneNumberInstance MovePhoneNumberInstance(MovePhoneNumberInstanceRequest request, gaxgrpc::CallSettings callSettings = null) =>
+            throw new sys::NotImplementedException();
+
+        /// <summary>
+        /// Moves the phone number instance to another project.
+        /// 
+        /// Warning: moving a phone number instance may cause the current configuration
+        /// of the phone number instance to stop working. Any connected flows or SIP
+        /// domains will need to be reconfigured in the destination project. Any
+        /// programmable handler will need to accept the signing key of the destination
+        /// project.
+        /// 
+        /// The caller must have `numbering.phoneNumberInstances.move` permission on
+        /// both the source and destination projects.
+        /// </summary>
+        /// <param name="request">The request object containing all of the parameters for the API call.</param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<PhoneNumberInstance> MovePhoneNumberInstanceAsync(MovePhoneNumberInstanceRequest request, gaxgrpc::CallSettings callSettings = null) =>
+            throw new sys::NotImplementedException();
+
+        /// <summary>
+        /// Moves the phone number instance to another project.
+        /// 
+        /// Warning: moving a phone number instance may cause the current configuration
+        /// of the phone number instance to stop working. Any connected flows or SIP
+        /// domains will need to be reconfigured in the destination project. Any
+        /// programmable handler will need to accept the signing key of the destination
+        /// project.
+        /// 
+        /// The caller must have `numbering.phoneNumberInstances.move` permission on
+        /// both the source and destination projects.
+        /// </summary>
+        /// <param name="request">The request object containing all of the parameters for the API call.</param>
+        /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<PhoneNumberInstance> MovePhoneNumberInstanceAsync(MovePhoneNumberInstanceRequest request, st::CancellationToken cancellationToken) =>
+            MovePhoneNumberInstanceAsync(request, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Moves the phone number instance to another project.
+        /// 
+        /// Warning: moving a phone number instance may cause the current configuration
+        /// of the phone number instance to stop working. Any connected flows or SIP
+        /// domains will need to be reconfigured in the destination project. Any
+        /// programmable handler will need to accept the signing key of the destination
+        /// project.
+        /// 
+        /// The caller must have `numbering.phoneNumberInstances.move` permission on
+        /// both the source and destination projects.
+        /// </summary>
+        /// <param name="name">
+        /// The name of the phone number instance to move.
+        /// Must be of the form `projects/*/phoneNumberInstances/*`.
+        /// </param>
+        /// <param name="destinationParent">
+        /// The new parent project to move the phone number instance to.
+        /// Must be of the form `projects/*`.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>The RPC response.</returns>
+        public virtual PhoneNumberInstance MovePhoneNumberInstance(string name, string destinationParent, gaxgrpc::CallSettings callSettings = null) =>
+            MovePhoneNumberInstance(new MovePhoneNumberInstanceRequest
+            {
+                Name = gax::GaxPreconditions.CheckNotNullOrEmpty(name, nameof(name)),
+                DestinationParent = gax::GaxPreconditions.CheckNotNullOrEmpty(destinationParent, nameof(destinationParent)),
+            }, callSettings);
+
+        /// <summary>
+        /// Moves the phone number instance to another project.
+        /// 
+        /// Warning: moving a phone number instance may cause the current configuration
+        /// of the phone number instance to stop working. Any connected flows or SIP
+        /// domains will need to be reconfigured in the destination project. Any
+        /// programmable handler will need to accept the signing key of the destination
+        /// project.
+        /// 
+        /// The caller must have `numbering.phoneNumberInstances.move` permission on
+        /// both the source and destination projects.
+        /// </summary>
+        /// <param name="name">
+        /// The name of the phone number instance to move.
+        /// Must be of the form `projects/*/phoneNumberInstances/*`.
+        /// </param>
+        /// <param name="destinationParent">
+        /// The new parent project to move the phone number instance to.
+        /// Must be of the form `projects/*`.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<PhoneNumberInstance> MovePhoneNumberInstanceAsync(string name, string destinationParent, gaxgrpc::CallSettings callSettings = null) =>
+            MovePhoneNumberInstanceAsync(new MovePhoneNumberInstanceRequest
+            {
+                Name = gax::GaxPreconditions.CheckNotNullOrEmpty(name, nameof(name)),
+                DestinationParent = gax::GaxPreconditions.CheckNotNullOrEmpty(destinationParent, nameof(destinationParent)),
+            }, callSettings);
+
+        /// <summary>
+        /// Moves the phone number instance to another project.
+        /// 
+        /// Warning: moving a phone number instance may cause the current configuration
+        /// of the phone number instance to stop working. Any connected flows or SIP
+        /// domains will need to be reconfigured in the destination project. Any
+        /// programmable handler will need to accept the signing key of the destination
+        /// project.
+        /// 
+        /// The caller must have `numbering.phoneNumberInstances.move` permission on
+        /// both the source and destination projects.
+        /// </summary>
+        /// <param name="name">
+        /// The name of the phone number instance to move.
+        /// Must be of the form `projects/*/phoneNumberInstances/*`.
+        /// </param>
+        /// <param name="destinationParent">
+        /// The new parent project to move the phone number instance to.
+        /// Must be of the form `projects/*`.
+        /// </param>
+        /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<PhoneNumberInstance> MovePhoneNumberInstanceAsync(string name, string destinationParent, st::CancellationToken cancellationToken) =>
+            MovePhoneNumberInstanceAsync(name, destinationParent, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Moves the phone number instance to another project.
+        /// 
+        /// Warning: moving a phone number instance may cause the current configuration
+        /// of the phone number instance to stop working. Any connected flows or SIP
+        /// domains will need to be reconfigured in the destination project. Any
+        /// programmable handler will need to accept the signing key of the destination
+        /// project.
+        /// 
+        /// The caller must have `numbering.phoneNumberInstances.move` permission on
+        /// both the source and destination projects.
+        /// </summary>
+        /// <param name="name">
+        /// The name of the phone number instance to move.
+        /// Must be of the form `projects/*/phoneNumberInstances/*`.
+        /// </param>
+        /// <param name="destinationParent">
+        /// The new parent project to move the phone number instance to.
+        /// Must be of the form `projects/*`.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>The RPC response.</returns>
+        public virtual PhoneNumberInstance MovePhoneNumberInstance(PhoneNumberInstanceName name, ProjectName destinationParent, gaxgrpc::CallSettings callSettings = null) =>
+            MovePhoneNumberInstance(new MovePhoneNumberInstanceRequest
+            {
+                PhoneNumberInstanceName = gax::GaxPreconditions.CheckNotNull(name, nameof(name)),
+                DestinationParentAsProjectName = gax::GaxPreconditions.CheckNotNull(destinationParent, nameof(destinationParent)),
+            }, callSettings);
+
+        /// <summary>
+        /// Moves the phone number instance to another project.
+        /// 
+        /// Warning: moving a phone number instance may cause the current configuration
+        /// of the phone number instance to stop working. Any connected flows or SIP
+        /// domains will need to be reconfigured in the destination project. Any
+        /// programmable handler will need to accept the signing key of the destination
+        /// project.
+        /// 
+        /// The caller must have `numbering.phoneNumberInstances.move` permission on
+        /// both the source and destination projects.
+        /// </summary>
+        /// <param name="name">
+        /// The name of the phone number instance to move.
+        /// Must be of the form `projects/*/phoneNumberInstances/*`.
+        /// </param>
+        /// <param name="destinationParent">
+        /// The new parent project to move the phone number instance to.
+        /// Must be of the form `projects/*`.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<PhoneNumberInstance> MovePhoneNumberInstanceAsync(PhoneNumberInstanceName name, ProjectName destinationParent, gaxgrpc::CallSettings callSettings = null) =>
+            MovePhoneNumberInstanceAsync(new MovePhoneNumberInstanceRequest
+            {
+                PhoneNumberInstanceName = gax::GaxPreconditions.CheckNotNull(name, nameof(name)),
+                DestinationParentAsProjectName = gax::GaxPreconditions.CheckNotNull(destinationParent, nameof(destinationParent)),
+            }, callSettings);
+
+        /// <summary>
+        /// Moves the phone number instance to another project.
+        /// 
+        /// Warning: moving a phone number instance may cause the current configuration
+        /// of the phone number instance to stop working. Any connected flows or SIP
+        /// domains will need to be reconfigured in the destination project. Any
+        /// programmable handler will need to accept the signing key of the destination
+        /// project.
+        /// 
+        /// The caller must have `numbering.phoneNumberInstances.move` permission on
+        /// both the source and destination projects.
+        /// </summary>
+        /// <param name="name">
+        /// The name of the phone number instance to move.
+        /// Must be of the form `projects/*/phoneNumberInstances/*`.
+        /// </param>
+        /// <param name="destinationParent">
+        /// The new parent project to move the phone number instance to.
+        /// Must be of the form `projects/*`.
+        /// </param>
+        /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<PhoneNumberInstance> MovePhoneNumberInstanceAsync(PhoneNumberInstanceName name, ProjectName destinationParent, st::CancellationToken cancellationToken) =>
+            MovePhoneNumberInstanceAsync(name, destinationParent, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Splits a phone number range into two ranges.
+        /// 
+        /// To split a range, you specify how many numbers to keep in this range. These
+        /// numbers are taken from the start of the range. The remaining numbers will
+        /// be moved into a new range.
+        /// 
+        /// For example, if you have a range +61255501100-99 and you split it with a
+        /// `size` of 20, then:
+        /// - the original range will be modified to +61255501100-19 (size 20)
+        /// - a new range will be created with +61255501120-99 (size 80)
+        /// 
+        /// The caller must have `numbering.phoneNumberInstances.splitRange` permission
+        /// on the project.
+        /// </summary>
+        /// <param name="request">The request object containing all of the parameters for the API call.</param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>The RPC response.</returns>
+        public virtual SplitRangeResponse SplitRange(SplitRangeRequest request, gaxgrpc::CallSettings callSettings = null) =>
+            throw new sys::NotImplementedException();
+
+        /// <summary>
+        /// Splits a phone number range into two ranges.
+        /// 
+        /// To split a range, you specify how many numbers to keep in this range. These
+        /// numbers are taken from the start of the range. The remaining numbers will
+        /// be moved into a new range.
+        /// 
+        /// For example, if you have a range +61255501100-99 and you split it with a
+        /// `size` of 20, then:
+        /// - the original range will be modified to +61255501100-19 (size 20)
+        /// - a new range will be created with +61255501120-99 (size 80)
+        /// 
+        /// The caller must have `numbering.phoneNumberInstances.splitRange` permission
+        /// on the project.
+        /// </summary>
+        /// <param name="request">The request object containing all of the parameters for the API call.</param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<SplitRangeResponse> SplitRangeAsync(SplitRangeRequest request, gaxgrpc::CallSettings callSettings = null) =>
+            throw new sys::NotImplementedException();
+
+        /// <summary>
+        /// Splits a phone number range into two ranges.
+        /// 
+        /// To split a range, you specify how many numbers to keep in this range. These
+        /// numbers are taken from the start of the range. The remaining numbers will
+        /// be moved into a new range.
+        /// 
+        /// For example, if you have a range +61255501100-99 and you split it with a
+        /// `size` of 20, then:
+        /// - the original range will be modified to +61255501100-19 (size 20)
+        /// - a new range will be created with +61255501120-99 (size 80)
+        /// 
+        /// The caller must have `numbering.phoneNumberInstances.splitRange` permission
+        /// on the project.
+        /// </summary>
+        /// <param name="request">The request object containing all of the parameters for the API call.</param>
+        /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<SplitRangeResponse> SplitRangeAsync(SplitRangeRequest request, st::CancellationToken cancellationToken) =>
+            SplitRangeAsync(request, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Splits a phone number range into two ranges.
+        /// 
+        /// To split a range, you specify how many numbers to keep in this range. These
+        /// numbers are taken from the start of the range. The remaining numbers will
+        /// be moved into a new range.
+        /// 
+        /// For example, if you have a range +61255501100-99 and you split it with a
+        /// `size` of 20, then:
+        /// - the original range will be modified to +61255501100-19 (size 20)
+        /// - a new range will be created with +61255501120-99 (size 80)
+        /// 
+        /// The caller must have `numbering.phoneNumberInstances.splitRange` permission
+        /// on the project.
+        /// </summary>
+        /// <param name="phoneNumberInstance">
+        /// The name of the phone number instance to split. It must represent a
+        /// range. Must be of the form `projects/*/phoneNumberInstances/*`.
+        /// </param>
+        /// <param name="size">
+        /// The quantity of numbers to keep in the range of the specified phone number
+        /// instance. The remaining numbers will be moved to a new range.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>The RPC response.</returns>
+        public virtual SplitRangeResponse SplitRange(string phoneNumberInstance, int size, gaxgrpc::CallSettings callSettings = null) =>
+            SplitRange(new SplitRangeRequest
+            {
+                PhoneNumberInstance = gax::GaxPreconditions.CheckNotNullOrEmpty(phoneNumberInstance, nameof(phoneNumberInstance)),
+                Size = size,
+            }, callSettings);
+
+        /// <summary>
+        /// Splits a phone number range into two ranges.
+        /// 
+        /// To split a range, you specify how many numbers to keep in this range. These
+        /// numbers are taken from the start of the range. The remaining numbers will
+        /// be moved into a new range.
+        /// 
+        /// For example, if you have a range +61255501100-99 and you split it with a
+        /// `size` of 20, then:
+        /// - the original range will be modified to +61255501100-19 (size 20)
+        /// - a new range will be created with +61255501120-99 (size 80)
+        /// 
+        /// The caller must have `numbering.phoneNumberInstances.splitRange` permission
+        /// on the project.
+        /// </summary>
+        /// <param name="phoneNumberInstance">
+        /// The name of the phone number instance to split. It must represent a
+        /// range. Must be of the form `projects/*/phoneNumberInstances/*`.
+        /// </param>
+        /// <param name="size">
+        /// The quantity of numbers to keep in the range of the specified phone number
+        /// instance. The remaining numbers will be moved to a new range.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<SplitRangeResponse> SplitRangeAsync(string phoneNumberInstance, int size, gaxgrpc::CallSettings callSettings = null) =>
+            SplitRangeAsync(new SplitRangeRequest
+            {
+                PhoneNumberInstance = gax::GaxPreconditions.CheckNotNullOrEmpty(phoneNumberInstance, nameof(phoneNumberInstance)),
+                Size = size,
+            }, callSettings);
+
+        /// <summary>
+        /// Splits a phone number range into two ranges.
+        /// 
+        /// To split a range, you specify how many numbers to keep in this range. These
+        /// numbers are taken from the start of the range. The remaining numbers will
+        /// be moved into a new range.
+        /// 
+        /// For example, if you have a range +61255501100-99 and you split it with a
+        /// `size` of 20, then:
+        /// - the original range will be modified to +61255501100-19 (size 20)
+        /// - a new range will be created with +61255501120-99 (size 80)
+        /// 
+        /// The caller must have `numbering.phoneNumberInstances.splitRange` permission
+        /// on the project.
+        /// </summary>
+        /// <param name="phoneNumberInstance">
+        /// The name of the phone number instance to split. It must represent a
+        /// range. Must be of the form `projects/*/phoneNumberInstances/*`.
+        /// </param>
+        /// <param name="size">
+        /// The quantity of numbers to keep in the range of the specified phone number
+        /// instance. The remaining numbers will be moved to a new range.
+        /// </param>
+        /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<SplitRangeResponse> SplitRangeAsync(string phoneNumberInstance, int size, st::CancellationToken cancellationToken) =>
+            SplitRangeAsync(phoneNumberInstance, size, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Splits a phone number range into two ranges.
+        /// 
+        /// To split a range, you specify how many numbers to keep in this range. These
+        /// numbers are taken from the start of the range. The remaining numbers will
+        /// be moved into a new range.
+        /// 
+        /// For example, if you have a range +61255501100-99 and you split it with a
+        /// `size` of 20, then:
+        /// - the original range will be modified to +61255501100-19 (size 20)
+        /// - a new range will be created with +61255501120-99 (size 80)
+        /// 
+        /// The caller must have `numbering.phoneNumberInstances.splitRange` permission
+        /// on the project.
+        /// </summary>
+        /// <param name="phoneNumberInstance">
+        /// The name of the phone number instance to split. It must represent a
+        /// range. Must be of the form `projects/*/phoneNumberInstances/*`.
+        /// </param>
+        /// <param name="size">
+        /// The quantity of numbers to keep in the range of the specified phone number
+        /// instance. The remaining numbers will be moved to a new range.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>The RPC response.</returns>
+        public virtual SplitRangeResponse SplitRange(PhoneNumberInstanceName phoneNumberInstance, int size, gaxgrpc::CallSettings callSettings = null) =>
+            SplitRange(new SplitRangeRequest
+            {
+                PhoneNumberInstanceAsPhoneNumberInstanceName = gax::GaxPreconditions.CheckNotNull(phoneNumberInstance, nameof(phoneNumberInstance)),
+                Size = size,
+            }, callSettings);
+
+        /// <summary>
+        /// Splits a phone number range into two ranges.
+        /// 
+        /// To split a range, you specify how many numbers to keep in this range. These
+        /// numbers are taken from the start of the range. The remaining numbers will
+        /// be moved into a new range.
+        /// 
+        /// For example, if you have a range +61255501100-99 and you split it with a
+        /// `size` of 20, then:
+        /// - the original range will be modified to +61255501100-19 (size 20)
+        /// - a new range will be created with +61255501120-99 (size 80)
+        /// 
+        /// The caller must have `numbering.phoneNumberInstances.splitRange` permission
+        /// on the project.
+        /// </summary>
+        /// <param name="phoneNumberInstance">
+        /// The name of the phone number instance to split. It must represent a
+        /// range. Must be of the form `projects/*/phoneNumberInstances/*`.
+        /// </param>
+        /// <param name="size">
+        /// The quantity of numbers to keep in the range of the specified phone number
+        /// instance. The remaining numbers will be moved to a new range.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<SplitRangeResponse> SplitRangeAsync(PhoneNumberInstanceName phoneNumberInstance, int size, gaxgrpc::CallSettings callSettings = null) =>
+            SplitRangeAsync(new SplitRangeRequest
+            {
+                PhoneNumberInstanceAsPhoneNumberInstanceName = gax::GaxPreconditions.CheckNotNull(phoneNumberInstance, nameof(phoneNumberInstance)),
+                Size = size,
+            }, callSettings);
+
+        /// <summary>
+        /// Splits a phone number range into two ranges.
+        /// 
+        /// To split a range, you specify how many numbers to keep in this range. These
+        /// numbers are taken from the start of the range. The remaining numbers will
+        /// be moved into a new range.
+        /// 
+        /// For example, if you have a range +61255501100-99 and you split it with a
+        /// `size` of 20, then:
+        /// - the original range will be modified to +61255501100-19 (size 20)
+        /// - a new range will be created with +61255501120-99 (size 80)
+        /// 
+        /// The caller must have `numbering.phoneNumberInstances.splitRange` permission
+        /// on the project.
+        /// </summary>
+        /// <param name="phoneNumberInstance">
+        /// The name of the phone number instance to split. It must represent a
+        /// range. Must be of the form `projects/*/phoneNumberInstances/*`.
+        /// </param>
+        /// <param name="size">
+        /// The quantity of numbers to keep in the range of the specified phone number
+        /// instance. The remaining numbers will be moved to a new range.
+        /// </param>
+        /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<SplitRangeResponse> SplitRangeAsync(PhoneNumberInstanceName phoneNumberInstance, int size, st::CancellationToken cancellationToken) =>
+            SplitRangeAsync(phoneNumberInstance, size, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
     }
 
     /// <summary>PhoneNumberInstances client wrapper implementation, for convenient use.</summary>
     /// <remarks>
-    /// Manages PhoneNumberInstances.
+    /// Manages phone number instances.
     /// </remarks>
     public sealed partial class PhoneNumberInstancesClientImpl : PhoneNumberInstancesClient
     {
@@ -1049,6 +1558,10 @@ namespace Enfonica.Numbering.V1Beta1
         private readonly gaxgrpc::ApiCall<UpdatePhoneNumberInstanceRequest, PhoneNumberInstance> _callUpdatePhoneNumberInstance;
 
         private readonly gaxgrpc::ApiCall<DeletePhoneNumberInstanceRequest, PhoneNumberInstance> _callDeletePhoneNumberInstance;
+
+        private readonly gaxgrpc::ApiCall<MovePhoneNumberInstanceRequest, PhoneNumberInstance> _callMovePhoneNumberInstance;
+
+        private readonly gaxgrpc::ApiCall<SplitRangeRequest, SplitRangeResponse> _callSplitRange;
 
         /// <summary>
         /// Constructs a client wrapper for the PhoneNumberInstances service, with the specified gRPC client and
@@ -1076,6 +1589,12 @@ namespace Enfonica.Numbering.V1Beta1
             _callDeletePhoneNumberInstance = clientHelper.BuildApiCall<DeletePhoneNumberInstanceRequest, PhoneNumberInstance>(grpcClient.DeletePhoneNumberInstanceAsync, grpcClient.DeletePhoneNumberInstance, effectiveSettings.DeletePhoneNumberInstanceSettings).WithGoogleRequestParam("name", request => request.Name);
             Modify_ApiCall(ref _callDeletePhoneNumberInstance);
             Modify_DeletePhoneNumberInstanceApiCall(ref _callDeletePhoneNumberInstance);
+            _callMovePhoneNumberInstance = clientHelper.BuildApiCall<MovePhoneNumberInstanceRequest, PhoneNumberInstance>(grpcClient.MovePhoneNumberInstanceAsync, grpcClient.MovePhoneNumberInstance, effectiveSettings.MovePhoneNumberInstanceSettings).WithGoogleRequestParam("name", request => request.Name);
+            Modify_ApiCall(ref _callMovePhoneNumberInstance);
+            Modify_MovePhoneNumberInstanceApiCall(ref _callMovePhoneNumberInstance);
+            _callSplitRange = clientHelper.BuildApiCall<SplitRangeRequest, SplitRangeResponse>(grpcClient.SplitRangeAsync, grpcClient.SplitRange, effectiveSettings.SplitRangeSettings).WithGoogleRequestParam("phone_number_instance", request => request.PhoneNumberInstance);
+            Modify_ApiCall(ref _callSplitRange);
+            Modify_SplitRangeApiCall(ref _callSplitRange);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);
         }
 
@@ -1090,6 +1609,10 @@ namespace Enfonica.Numbering.V1Beta1
         partial void Modify_UpdatePhoneNumberInstanceApiCall(ref gaxgrpc::ApiCall<UpdatePhoneNumberInstanceRequest, PhoneNumberInstance> call);
 
         partial void Modify_DeletePhoneNumberInstanceApiCall(ref gaxgrpc::ApiCall<DeletePhoneNumberInstanceRequest, PhoneNumberInstance> call);
+
+        partial void Modify_MovePhoneNumberInstanceApiCall(ref gaxgrpc::ApiCall<MovePhoneNumberInstanceRequest, PhoneNumberInstance> call);
+
+        partial void Modify_SplitRangeApiCall(ref gaxgrpc::ApiCall<SplitRangeRequest, SplitRangeResponse> call);
 
         partial void OnConstruction(PhoneNumberInstances.PhoneNumberInstancesClient grpcClient, PhoneNumberInstancesSettings effectiveSettings, gaxgrpc::ClientHelper clientHelper);
 
@@ -1106,8 +1629,13 @@ namespace Enfonica.Numbering.V1Beta1
 
         partial void Modify_DeletePhoneNumberInstanceRequest(ref DeletePhoneNumberInstanceRequest request, ref gaxgrpc::CallSettings settings);
 
+        partial void Modify_MovePhoneNumberInstanceRequest(ref MovePhoneNumberInstanceRequest request, ref gaxgrpc::CallSettings settings);
+
+        partial void Modify_SplitRangeRequest(ref SplitRangeRequest request, ref gaxgrpc::CallSettings settings);
+
         /// <summary>
-        /// Creates a phone number instance.
+        /// Creates a phone number instance. This provisions a phone number against a
+        /// project.
         /// 
         /// The caller must have `numbering.phoneNumberInstances.create` permission on the project.
         /// </summary>
@@ -1121,7 +1649,8 @@ namespace Enfonica.Numbering.V1Beta1
         }
 
         /// <summary>
-        /// Creates a phone number instance.
+        /// Creates a phone number instance. This provisions a phone number against a
+        /// project.
         /// 
         /// The caller must have `numbering.phoneNumberInstances.create` permission on the project.
         /// </summary>
@@ -1163,8 +1692,9 @@ namespace Enfonica.Numbering.V1Beta1
         }
 
         /// <summary>
-        /// Lists all PhoneNumberInstances.
-        /// List returns phone number instance sorted by create_time descending.
+        /// Lists all phone number instances.
+        /// 
+        /// List returns phone number instances sorted by `create_time` descending.
         /// 
         /// The caller must have `numbering.phoneNumberInstances.list` permission on the project.
         /// </summary>
@@ -1178,8 +1708,9 @@ namespace Enfonica.Numbering.V1Beta1
         }
 
         /// <summary>
-        /// Lists all PhoneNumberInstances.
-        /// List returns phone number instance sorted by create_time descending.
+        /// Lists all phone number instances.
+        /// 
+        /// List returns phone number instances sorted by `create_time` descending.
         /// 
         /// The caller must have `numbering.phoneNumberInstances.list` permission on the project.
         /// </summary>
@@ -1225,7 +1756,7 @@ namespace Enfonica.Numbering.V1Beta1
         }
 
         /// <summary>
-        /// Deletes a phone number instance.
+        /// Deletes a phone number instance. This disconnects the phone number.
         /// 
         /// The caller must have `numbering.phoneNumberInstances.delete` permission on the project.
         /// </summary>
@@ -1239,7 +1770,7 @@ namespace Enfonica.Numbering.V1Beta1
         }
 
         /// <summary>
-        /// Deletes a phone number instance.
+        /// Deletes a phone number instance. This disconnects the phone number.
         /// 
         /// The caller must have `numbering.phoneNumberInstances.delete` permission on the project.
         /// </summary>
@@ -1250,6 +1781,96 @@ namespace Enfonica.Numbering.V1Beta1
         {
             Modify_DeletePhoneNumberInstanceRequest(ref request, ref callSettings);
             return _callDeletePhoneNumberInstance.Async(request, callSettings);
+        }
+
+        /// <summary>
+        /// Moves the phone number instance to another project.
+        /// 
+        /// Warning: moving a phone number instance may cause the current configuration
+        /// of the phone number instance to stop working. Any connected flows or SIP
+        /// domains will need to be reconfigured in the destination project. Any
+        /// programmable handler will need to accept the signing key of the destination
+        /// project.
+        /// 
+        /// The caller must have `numbering.phoneNumberInstances.move` permission on
+        /// both the source and destination projects.
+        /// </summary>
+        /// <param name="request">The request object containing all of the parameters for the API call.</param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>The RPC response.</returns>
+        public override PhoneNumberInstance MovePhoneNumberInstance(MovePhoneNumberInstanceRequest request, gaxgrpc::CallSettings callSettings = null)
+        {
+            Modify_MovePhoneNumberInstanceRequest(ref request, ref callSettings);
+            return _callMovePhoneNumberInstance.Sync(request, callSettings);
+        }
+
+        /// <summary>
+        /// Moves the phone number instance to another project.
+        /// 
+        /// Warning: moving a phone number instance may cause the current configuration
+        /// of the phone number instance to stop working. Any connected flows or SIP
+        /// domains will need to be reconfigured in the destination project. Any
+        /// programmable handler will need to accept the signing key of the destination
+        /// project.
+        /// 
+        /// The caller must have `numbering.phoneNumberInstances.move` permission on
+        /// both the source and destination projects.
+        /// </summary>
+        /// <param name="request">The request object containing all of the parameters for the API call.</param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public override stt::Task<PhoneNumberInstance> MovePhoneNumberInstanceAsync(MovePhoneNumberInstanceRequest request, gaxgrpc::CallSettings callSettings = null)
+        {
+            Modify_MovePhoneNumberInstanceRequest(ref request, ref callSettings);
+            return _callMovePhoneNumberInstance.Async(request, callSettings);
+        }
+
+        /// <summary>
+        /// Splits a phone number range into two ranges.
+        /// 
+        /// To split a range, you specify how many numbers to keep in this range. These
+        /// numbers are taken from the start of the range. The remaining numbers will
+        /// be moved into a new range.
+        /// 
+        /// For example, if you have a range +61255501100-99 and you split it with a
+        /// `size` of 20, then:
+        /// - the original range will be modified to +61255501100-19 (size 20)
+        /// - a new range will be created with +61255501120-99 (size 80)
+        /// 
+        /// The caller must have `numbering.phoneNumberInstances.splitRange` permission
+        /// on the project.
+        /// </summary>
+        /// <param name="request">The request object containing all of the parameters for the API call.</param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>The RPC response.</returns>
+        public override SplitRangeResponse SplitRange(SplitRangeRequest request, gaxgrpc::CallSettings callSettings = null)
+        {
+            Modify_SplitRangeRequest(ref request, ref callSettings);
+            return _callSplitRange.Sync(request, callSettings);
+        }
+
+        /// <summary>
+        /// Splits a phone number range into two ranges.
+        /// 
+        /// To split a range, you specify how many numbers to keep in this range. These
+        /// numbers are taken from the start of the range. The remaining numbers will
+        /// be moved into a new range.
+        /// 
+        /// For example, if you have a range +61255501100-99 and you split it with a
+        /// `size` of 20, then:
+        /// - the original range will be modified to +61255501100-19 (size 20)
+        /// - a new range will be created with +61255501120-99 (size 80)
+        /// 
+        /// The caller must have `numbering.phoneNumberInstances.splitRange` permission
+        /// on the project.
+        /// </summary>
+        /// <param name="request">The request object containing all of the parameters for the API call.</param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public override stt::Task<SplitRangeResponse> SplitRangeAsync(SplitRangeRequest request, gaxgrpc::CallSettings callSettings = null)
+        {
+            Modify_SplitRangeRequest(ref request, ref callSettings);
+            return _callSplitRange.Async(request, callSettings);
         }
     }
 

@@ -274,6 +274,29 @@ namespace Enfonica.Numbering.V1Beta1
             get => string.IsNullOrEmpty(Name) ? null : env::PhoneNumberInstanceName.Parse(Name, allowUnparsed: true);
             set => Name = value?.ToString() ?? "";
         }
+
+        /// <summary>
+        /// <see cref="RegulatoryListingName"/>-typed view over the <see cref="RegulatoryListing"/> resource name
+        /// property.
+        /// </summary>
+        public RegulatoryListingName RegulatoryListingAsRegulatoryListingName
+        {
+            get => string.IsNullOrEmpty(RegulatoryListing) ? null : RegulatoryListingName.Parse(RegulatoryListing, allowUnparsed: true);
+            set => RegulatoryListing = value?.ToString() ?? "";
+        }
+    }
+
+    public partial class PhoneNumberRange
+    {
+        /// <summary>
+        /// <see cref="PhoneNumberInstanceName"/>-typed view over the <see cref="PrimaryPhoneNumberInstance"/> resource
+        /// name property.
+        /// </summary>
+        public PhoneNumberInstanceName PrimaryPhoneNumberInstanceAsPhoneNumberInstanceName
+        {
+            get => string.IsNullOrEmpty(PrimaryPhoneNumberInstance) ? null : PhoneNumberInstanceName.Parse(PrimaryPhoneNumberInstance, allowUnparsed: true);
+            set => PrimaryPhoneNumberInstance = value?.ToString() ?? "";
+        }
     }
 
     public partial class CreatePhoneNumberInstanceRequest
@@ -333,6 +356,50 @@ namespace Enfonica.Numbering.V1Beta1
         {
             get => string.IsNullOrEmpty(Name) ? null : env::PhoneNumberInstanceName.Parse(Name, allowUnparsed: true);
             set => Name = value?.ToString() ?? "";
+        }
+    }
+
+    public partial class MovePhoneNumberInstanceRequest
+    {
+        /// <summary>
+        /// <see cref="env::PhoneNumberInstanceName"/>-typed view over the <see cref="Name"/> resource name property.
+        /// </summary>
+        public env::PhoneNumberInstanceName PhoneNumberInstanceName
+        {
+            get => string.IsNullOrEmpty(Name) ? null : env::PhoneNumberInstanceName.Parse(Name, allowUnparsed: true);
+            set => Name = value?.ToString() ?? "";
+        }
+
+        /// <summary>
+        /// <see cref="ProjectName"/>-typed view over the <see cref="DestinationParent"/> resource name property.
+        /// </summary>
+        public ProjectName DestinationParentAsProjectName
+        {
+            get => string.IsNullOrEmpty(DestinationParent) ? null : ProjectName.Parse(DestinationParent, allowUnparsed: true);
+            set => DestinationParent = value?.ToString() ?? "";
+        }
+
+        /// <summary>
+        /// <see cref="RegulatoryListingName"/>-typed view over the <see cref="RegulatoryListing"/> resource name
+        /// property.
+        /// </summary>
+        public RegulatoryListingName RegulatoryListingAsRegulatoryListingName
+        {
+            get => string.IsNullOrEmpty(RegulatoryListing) ? null : RegulatoryListingName.Parse(RegulatoryListing, allowUnparsed: true);
+            set => RegulatoryListing = value?.ToString() ?? "";
+        }
+    }
+
+    public partial class SplitRangeRequest
+    {
+        /// <summary>
+        /// <see cref="PhoneNumberInstanceName"/>-typed view over the <see cref="PhoneNumberInstance"/> resource name
+        /// property.
+        /// </summary>
+        public PhoneNumberInstanceName PhoneNumberInstanceAsPhoneNumberInstanceName
+        {
+            get => string.IsNullOrEmpty(PhoneNumberInstance) ? null : PhoneNumberInstanceName.Parse(PhoneNumberInstance, allowUnparsed: true);
+            set => PhoneNumberInstance = value?.ToString() ?? "";
         }
     }
 }

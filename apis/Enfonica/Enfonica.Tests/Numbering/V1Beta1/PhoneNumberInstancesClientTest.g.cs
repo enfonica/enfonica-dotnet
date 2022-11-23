@@ -61,6 +61,9 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 DeleteTime = new wkt::Timestamp(),
                 LifecycleState = PhoneNumberInstance.Types.LifecycleState.Pending,
                 ActivateTime = new wkt::Timestamp(),
+                Range = new PhoneNumberRange(),
+                RegulatoryListingAsRegulatoryListingName = RegulatoryListingName.FromProjectRegulatoryListing("[PROJECT]", "[REGULATORY_LISTING]"),
+                Compliant = false,
             };
             mockGrpcClient.Setup(x => x.CreatePhoneNumberInstance(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
@@ -103,6 +106,9 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 DeleteTime = new wkt::Timestamp(),
                 LifecycleState = PhoneNumberInstance.Types.LifecycleState.Pending,
                 ActivateTime = new wkt::Timestamp(),
+                Range = new PhoneNumberRange(),
+                RegulatoryListingAsRegulatoryListingName = RegulatoryListingName.FromProjectRegulatoryListing("[PROJECT]", "[REGULATORY_LISTING]"),
+                Compliant = false,
             };
             mockGrpcClient.Setup(x => x.CreatePhoneNumberInstanceAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<PhoneNumberInstance>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
@@ -147,6 +153,9 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 DeleteTime = new wkt::Timestamp(),
                 LifecycleState = PhoneNumberInstance.Types.LifecycleState.Pending,
                 ActivateTime = new wkt::Timestamp(),
+                Range = new PhoneNumberRange(),
+                RegulatoryListingAsRegulatoryListingName = RegulatoryListingName.FromProjectRegulatoryListing("[PROJECT]", "[REGULATORY_LISTING]"),
+                Compliant = false,
             };
             mockGrpcClient.Setup(x => x.CreatePhoneNumberInstance(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
@@ -189,6 +198,9 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 DeleteTime = new wkt::Timestamp(),
                 LifecycleState = PhoneNumberInstance.Types.LifecycleState.Pending,
                 ActivateTime = new wkt::Timestamp(),
+                Range = new PhoneNumberRange(),
+                RegulatoryListingAsRegulatoryListingName = RegulatoryListingName.FromProjectRegulatoryListing("[PROJECT]", "[REGULATORY_LISTING]"),
+                Compliant = false,
             };
             mockGrpcClient.Setup(x => x.CreatePhoneNumberInstanceAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<PhoneNumberInstance>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
@@ -233,6 +245,9 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 DeleteTime = new wkt::Timestamp(),
                 LifecycleState = PhoneNumberInstance.Types.LifecycleState.Pending,
                 ActivateTime = new wkt::Timestamp(),
+                Range = new PhoneNumberRange(),
+                RegulatoryListingAsRegulatoryListingName = RegulatoryListingName.FromProjectRegulatoryListing("[PROJECT]", "[REGULATORY_LISTING]"),
+                Compliant = false,
             };
             mockGrpcClient.Setup(x => x.CreatePhoneNumberInstance(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
@@ -275,6 +290,9 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 DeleteTime = new wkt::Timestamp(),
                 LifecycleState = PhoneNumberInstance.Types.LifecycleState.Pending,
                 ActivateTime = new wkt::Timestamp(),
+                Range = new PhoneNumberRange(),
+                RegulatoryListingAsRegulatoryListingName = RegulatoryListingName.FromProjectRegulatoryListing("[PROJECT]", "[REGULATORY_LISTING]"),
+                Compliant = false,
             };
             mockGrpcClient.Setup(x => x.CreatePhoneNumberInstanceAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<PhoneNumberInstance>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
@@ -318,6 +336,9 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 DeleteTime = new wkt::Timestamp(),
                 LifecycleState = PhoneNumberInstance.Types.LifecycleState.Pending,
                 ActivateTime = new wkt::Timestamp(),
+                Range = new PhoneNumberRange(),
+                RegulatoryListingAsRegulatoryListingName = RegulatoryListingName.FromProjectRegulatoryListing("[PROJECT]", "[REGULATORY_LISTING]"),
+                Compliant = false,
             };
             mockGrpcClient.Setup(x => x.GetPhoneNumberInstance(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
@@ -359,6 +380,9 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 DeleteTime = new wkt::Timestamp(),
                 LifecycleState = PhoneNumberInstance.Types.LifecycleState.Pending,
                 ActivateTime = new wkt::Timestamp(),
+                Range = new PhoneNumberRange(),
+                RegulatoryListingAsRegulatoryListingName = RegulatoryListingName.FromProjectRegulatoryListing("[PROJECT]", "[REGULATORY_LISTING]"),
+                Compliant = false,
             };
             mockGrpcClient.Setup(x => x.GetPhoneNumberInstanceAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<PhoneNumberInstance>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
@@ -402,6 +426,9 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 DeleteTime = new wkt::Timestamp(),
                 LifecycleState = PhoneNumberInstance.Types.LifecycleState.Pending,
                 ActivateTime = new wkt::Timestamp(),
+                Range = new PhoneNumberRange(),
+                RegulatoryListingAsRegulatoryListingName = RegulatoryListingName.FromProjectRegulatoryListing("[PROJECT]", "[REGULATORY_LISTING]"),
+                Compliant = false,
             };
             mockGrpcClient.Setup(x => x.GetPhoneNumberInstance(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
@@ -443,6 +470,9 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 DeleteTime = new wkt::Timestamp(),
                 LifecycleState = PhoneNumberInstance.Types.LifecycleState.Pending,
                 ActivateTime = new wkt::Timestamp(),
+                Range = new PhoneNumberRange(),
+                RegulatoryListingAsRegulatoryListingName = RegulatoryListingName.FromProjectRegulatoryListing("[PROJECT]", "[REGULATORY_LISTING]"),
+                Compliant = false,
             };
             mockGrpcClient.Setup(x => x.GetPhoneNumberInstanceAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<PhoneNumberInstance>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
@@ -486,6 +516,9 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 DeleteTime = new wkt::Timestamp(),
                 LifecycleState = PhoneNumberInstance.Types.LifecycleState.Pending,
                 ActivateTime = new wkt::Timestamp(),
+                Range = new PhoneNumberRange(),
+                RegulatoryListingAsRegulatoryListingName = RegulatoryListingName.FromProjectRegulatoryListing("[PROJECT]", "[REGULATORY_LISTING]"),
+                Compliant = false,
             };
             mockGrpcClient.Setup(x => x.GetPhoneNumberInstance(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
@@ -527,6 +560,9 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 DeleteTime = new wkt::Timestamp(),
                 LifecycleState = PhoneNumberInstance.Types.LifecycleState.Pending,
                 ActivateTime = new wkt::Timestamp(),
+                Range = new PhoneNumberRange(),
+                RegulatoryListingAsRegulatoryListingName = RegulatoryListingName.FromProjectRegulatoryListing("[PROJECT]", "[REGULATORY_LISTING]"),
+                Compliant = false,
             };
             mockGrpcClient.Setup(x => x.GetPhoneNumberInstanceAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<PhoneNumberInstance>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
@@ -572,6 +608,9 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 DeleteTime = new wkt::Timestamp(),
                 LifecycleState = PhoneNumberInstance.Types.LifecycleState.Pending,
                 ActivateTime = new wkt::Timestamp(),
+                Range = new PhoneNumberRange(),
+                RegulatoryListingAsRegulatoryListingName = RegulatoryListingName.FromProjectRegulatoryListing("[PROJECT]", "[REGULATORY_LISTING]"),
+                Compliant = false,
             };
             mockGrpcClient.Setup(x => x.UpdatePhoneNumberInstance(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
@@ -615,6 +654,9 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 DeleteTime = new wkt::Timestamp(),
                 LifecycleState = PhoneNumberInstance.Types.LifecycleState.Pending,
                 ActivateTime = new wkt::Timestamp(),
+                Range = new PhoneNumberRange(),
+                RegulatoryListingAsRegulatoryListingName = RegulatoryListingName.FromProjectRegulatoryListing("[PROJECT]", "[REGULATORY_LISTING]"),
+                Compliant = false,
             };
             mockGrpcClient.Setup(x => x.UpdatePhoneNumberInstanceAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<PhoneNumberInstance>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
@@ -660,6 +702,9 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 DeleteTime = new wkt::Timestamp(),
                 LifecycleState = PhoneNumberInstance.Types.LifecycleState.Pending,
                 ActivateTime = new wkt::Timestamp(),
+                Range = new PhoneNumberRange(),
+                RegulatoryListingAsRegulatoryListingName = RegulatoryListingName.FromProjectRegulatoryListing("[PROJECT]", "[REGULATORY_LISTING]"),
+                Compliant = false,
             };
             mockGrpcClient.Setup(x => x.UpdatePhoneNumberInstance(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
@@ -703,6 +748,9 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 DeleteTime = new wkt::Timestamp(),
                 LifecycleState = PhoneNumberInstance.Types.LifecycleState.Pending,
                 ActivateTime = new wkt::Timestamp(),
+                Range = new PhoneNumberRange(),
+                RegulatoryListingAsRegulatoryListingName = RegulatoryListingName.FromProjectRegulatoryListing("[PROJECT]", "[REGULATORY_LISTING]"),
+                Compliant = false,
             };
             mockGrpcClient.Setup(x => x.UpdatePhoneNumberInstanceAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<PhoneNumberInstance>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
@@ -748,6 +796,9 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 DeleteTime = new wkt::Timestamp(),
                 LifecycleState = PhoneNumberInstance.Types.LifecycleState.Pending,
                 ActivateTime = new wkt::Timestamp(),
+                Range = new PhoneNumberRange(),
+                RegulatoryListingAsRegulatoryListingName = RegulatoryListingName.FromProjectRegulatoryListing("[PROJECT]", "[REGULATORY_LISTING]"),
+                Compliant = false,
             };
             mockGrpcClient.Setup(x => x.UpdatePhoneNumberInstance(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
@@ -791,6 +842,9 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 DeleteTime = new wkt::Timestamp(),
                 LifecycleState = PhoneNumberInstance.Types.LifecycleState.Pending,
                 ActivateTime = new wkt::Timestamp(),
+                Range = new PhoneNumberRange(),
+                RegulatoryListingAsRegulatoryListingName = RegulatoryListingName.FromProjectRegulatoryListing("[PROJECT]", "[REGULATORY_LISTING]"),
+                Compliant = false,
             };
             mockGrpcClient.Setup(x => x.UpdatePhoneNumberInstanceAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<PhoneNumberInstance>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
@@ -834,6 +888,9 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 DeleteTime = new wkt::Timestamp(),
                 LifecycleState = PhoneNumberInstance.Types.LifecycleState.Pending,
                 ActivateTime = new wkt::Timestamp(),
+                Range = new PhoneNumberRange(),
+                RegulatoryListingAsRegulatoryListingName = RegulatoryListingName.FromProjectRegulatoryListing("[PROJECT]", "[REGULATORY_LISTING]"),
+                Compliant = false,
             };
             mockGrpcClient.Setup(x => x.DeletePhoneNumberInstance(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
@@ -875,6 +932,9 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 DeleteTime = new wkt::Timestamp(),
                 LifecycleState = PhoneNumberInstance.Types.LifecycleState.Pending,
                 ActivateTime = new wkt::Timestamp(),
+                Range = new PhoneNumberRange(),
+                RegulatoryListingAsRegulatoryListingName = RegulatoryListingName.FromProjectRegulatoryListing("[PROJECT]", "[REGULATORY_LISTING]"),
+                Compliant = false,
             };
             mockGrpcClient.Setup(x => x.DeletePhoneNumberInstanceAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<PhoneNumberInstance>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
@@ -918,6 +978,9 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 DeleteTime = new wkt::Timestamp(),
                 LifecycleState = PhoneNumberInstance.Types.LifecycleState.Pending,
                 ActivateTime = new wkt::Timestamp(),
+                Range = new PhoneNumberRange(),
+                RegulatoryListingAsRegulatoryListingName = RegulatoryListingName.FromProjectRegulatoryListing("[PROJECT]", "[REGULATORY_LISTING]"),
+                Compliant = false,
             };
             mockGrpcClient.Setup(x => x.DeletePhoneNumberInstance(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
@@ -959,6 +1022,9 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 DeleteTime = new wkt::Timestamp(),
                 LifecycleState = PhoneNumberInstance.Types.LifecycleState.Pending,
                 ActivateTime = new wkt::Timestamp(),
+                Range = new PhoneNumberRange(),
+                RegulatoryListingAsRegulatoryListingName = RegulatoryListingName.FromProjectRegulatoryListing("[PROJECT]", "[REGULATORY_LISTING]"),
+                Compliant = false,
             };
             mockGrpcClient.Setup(x => x.DeletePhoneNumberInstanceAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<PhoneNumberInstance>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
@@ -1002,6 +1068,9 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 DeleteTime = new wkt::Timestamp(),
                 LifecycleState = PhoneNumberInstance.Types.LifecycleState.Pending,
                 ActivateTime = new wkt::Timestamp(),
+                Range = new PhoneNumberRange(),
+                RegulatoryListingAsRegulatoryListingName = RegulatoryListingName.FromProjectRegulatoryListing("[PROJECT]", "[REGULATORY_LISTING]"),
+                Compliant = false,
             };
             mockGrpcClient.Setup(x => x.DeletePhoneNumberInstance(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
@@ -1043,12 +1112,425 @@ namespace Enfonica.Numbering.V1Beta1.Tests
                 DeleteTime = new wkt::Timestamp(),
                 LifecycleState = PhoneNumberInstance.Types.LifecycleState.Pending,
                 ActivateTime = new wkt::Timestamp(),
+                Range = new PhoneNumberRange(),
+                RegulatoryListingAsRegulatoryListingName = RegulatoryListingName.FromProjectRegulatoryListing("[PROJECT]", "[REGULATORY_LISTING]"),
+                Compliant = false,
             };
             mockGrpcClient.Setup(x => x.DeletePhoneNumberInstanceAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<PhoneNumberInstance>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
             PhoneNumberInstance responseCallSettings = await client.DeletePhoneNumberInstanceAsync(request.PhoneNumberInstanceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             xunit::Assert.Same(expectedResponse, responseCallSettings);
             PhoneNumberInstance responseCancellationToken = await client.DeletePhoneNumberInstanceAsync(request.PhoneNumberInstanceName, st::CancellationToken.None);
+            xunit::Assert.Same(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [xunit::FactAttribute]
+        public void MovePhoneNumberInstanceRequestObject()
+        {
+            moq::Mock<PhoneNumberInstances.PhoneNumberInstancesClient> mockGrpcClient = new moq::Mock<PhoneNumberInstances.PhoneNumberInstancesClient>(moq::MockBehavior.Strict);
+            MovePhoneNumberInstanceRequest request = new MovePhoneNumberInstanceRequest
+            {
+                PhoneNumberInstanceName = PhoneNumberInstanceName.FromProjectPhoneNumberInstance("[PROJECT]", "[PHONE_NUMBER_INSTANCE]"),
+                DestinationParentAsProjectName = ProjectName.FromProject("[PROJECT]"),
+                RegulatoryListingAsRegulatoryListingName = RegulatoryListingName.FromProjectRegulatoryListing("[PROJECT]", "[REGULATORY_LISTING]"),
+            };
+            PhoneNumberInstance expectedResponse = new PhoneNumberInstance
+            {
+                PhoneNumberInstanceName = PhoneNumberInstanceName.FromProjectPhoneNumberInstance("[PROJECT]", "[PHONE_NUMBER_INSTANCE]"),
+                PhoneNumber = new PhoneNumber(),
+                DisplayName = "display_name137f65c2",
+                Labels =
+                {
+                    {
+                        "key8a0b6e3c",
+                        "value60c16320"
+                    },
+                },
+                IncomingMessageHandlerUris =
+                {
+                    "incoming_message_handler_uris72108376",
+                },
+                IncomingCallHandlerUris =
+                {
+                    "incoming_call_handler_uris2053249d",
+                },
+                CallRecordingTrigger = PhoneNumberInstance.Types.RecordingTrigger.Bridge,
+                CreateTime = new wkt::Timestamp(),
+                DeleteTime = new wkt::Timestamp(),
+                LifecycleState = PhoneNumberInstance.Types.LifecycleState.Pending,
+                ActivateTime = new wkt::Timestamp(),
+                Range = new PhoneNumberRange(),
+                RegulatoryListingAsRegulatoryListingName = RegulatoryListingName.FromProjectRegulatoryListing("[PROJECT]", "[REGULATORY_LISTING]"),
+                Compliant = false,
+            };
+            mockGrpcClient.Setup(x => x.MovePhoneNumberInstance(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
+            PhoneNumberInstance response = client.MovePhoneNumberInstance(request);
+            xunit::Assert.Same(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [xunit::FactAttribute]
+        public async stt::Task MovePhoneNumberInstanceRequestObjectAsync()
+        {
+            moq::Mock<PhoneNumberInstances.PhoneNumberInstancesClient> mockGrpcClient = new moq::Mock<PhoneNumberInstances.PhoneNumberInstancesClient>(moq::MockBehavior.Strict);
+            MovePhoneNumberInstanceRequest request = new MovePhoneNumberInstanceRequest
+            {
+                PhoneNumberInstanceName = PhoneNumberInstanceName.FromProjectPhoneNumberInstance("[PROJECT]", "[PHONE_NUMBER_INSTANCE]"),
+                DestinationParentAsProjectName = ProjectName.FromProject("[PROJECT]"),
+                RegulatoryListingAsRegulatoryListingName = RegulatoryListingName.FromProjectRegulatoryListing("[PROJECT]", "[REGULATORY_LISTING]"),
+            };
+            PhoneNumberInstance expectedResponse = new PhoneNumberInstance
+            {
+                PhoneNumberInstanceName = PhoneNumberInstanceName.FromProjectPhoneNumberInstance("[PROJECT]", "[PHONE_NUMBER_INSTANCE]"),
+                PhoneNumber = new PhoneNumber(),
+                DisplayName = "display_name137f65c2",
+                Labels =
+                {
+                    {
+                        "key8a0b6e3c",
+                        "value60c16320"
+                    },
+                },
+                IncomingMessageHandlerUris =
+                {
+                    "incoming_message_handler_uris72108376",
+                },
+                IncomingCallHandlerUris =
+                {
+                    "incoming_call_handler_uris2053249d",
+                },
+                CallRecordingTrigger = PhoneNumberInstance.Types.RecordingTrigger.Bridge,
+                CreateTime = new wkt::Timestamp(),
+                DeleteTime = new wkt::Timestamp(),
+                LifecycleState = PhoneNumberInstance.Types.LifecycleState.Pending,
+                ActivateTime = new wkt::Timestamp(),
+                Range = new PhoneNumberRange(),
+                RegulatoryListingAsRegulatoryListingName = RegulatoryListingName.FromProjectRegulatoryListing("[PROJECT]", "[REGULATORY_LISTING]"),
+                Compliant = false,
+            };
+            mockGrpcClient.Setup(x => x.MovePhoneNumberInstanceAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<PhoneNumberInstance>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
+            PhoneNumberInstance responseCallSettings = await client.MovePhoneNumberInstanceAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            xunit::Assert.Same(expectedResponse, responseCallSettings);
+            PhoneNumberInstance responseCancellationToken = await client.MovePhoneNumberInstanceAsync(request, st::CancellationToken.None);
+            xunit::Assert.Same(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [xunit::FactAttribute]
+        public void MovePhoneNumberInstance()
+        {
+            moq::Mock<PhoneNumberInstances.PhoneNumberInstancesClient> mockGrpcClient = new moq::Mock<PhoneNumberInstances.PhoneNumberInstancesClient>(moq::MockBehavior.Strict);
+            MovePhoneNumberInstanceRequest request = new MovePhoneNumberInstanceRequest
+            {
+                PhoneNumberInstanceName = PhoneNumberInstanceName.FromProjectPhoneNumberInstance("[PROJECT]", "[PHONE_NUMBER_INSTANCE]"),
+                DestinationParentAsProjectName = ProjectName.FromProject("[PROJECT]"),
+            };
+            PhoneNumberInstance expectedResponse = new PhoneNumberInstance
+            {
+                PhoneNumberInstanceName = PhoneNumberInstanceName.FromProjectPhoneNumberInstance("[PROJECT]", "[PHONE_NUMBER_INSTANCE]"),
+                PhoneNumber = new PhoneNumber(),
+                DisplayName = "display_name137f65c2",
+                Labels =
+                {
+                    {
+                        "key8a0b6e3c",
+                        "value60c16320"
+                    },
+                },
+                IncomingMessageHandlerUris =
+                {
+                    "incoming_message_handler_uris72108376",
+                },
+                IncomingCallHandlerUris =
+                {
+                    "incoming_call_handler_uris2053249d",
+                },
+                CallRecordingTrigger = PhoneNumberInstance.Types.RecordingTrigger.Bridge,
+                CreateTime = new wkt::Timestamp(),
+                DeleteTime = new wkt::Timestamp(),
+                LifecycleState = PhoneNumberInstance.Types.LifecycleState.Pending,
+                ActivateTime = new wkt::Timestamp(),
+                Range = new PhoneNumberRange(),
+                RegulatoryListingAsRegulatoryListingName = RegulatoryListingName.FromProjectRegulatoryListing("[PROJECT]", "[REGULATORY_LISTING]"),
+                Compliant = false,
+            };
+            mockGrpcClient.Setup(x => x.MovePhoneNumberInstance(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
+            PhoneNumberInstance response = client.MovePhoneNumberInstance(request.Name, request.DestinationParent);
+            xunit::Assert.Same(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [xunit::FactAttribute]
+        public async stt::Task MovePhoneNumberInstanceAsync()
+        {
+            moq::Mock<PhoneNumberInstances.PhoneNumberInstancesClient> mockGrpcClient = new moq::Mock<PhoneNumberInstances.PhoneNumberInstancesClient>(moq::MockBehavior.Strict);
+            MovePhoneNumberInstanceRequest request = new MovePhoneNumberInstanceRequest
+            {
+                PhoneNumberInstanceName = PhoneNumberInstanceName.FromProjectPhoneNumberInstance("[PROJECT]", "[PHONE_NUMBER_INSTANCE]"),
+                DestinationParentAsProjectName = ProjectName.FromProject("[PROJECT]"),
+            };
+            PhoneNumberInstance expectedResponse = new PhoneNumberInstance
+            {
+                PhoneNumberInstanceName = PhoneNumberInstanceName.FromProjectPhoneNumberInstance("[PROJECT]", "[PHONE_NUMBER_INSTANCE]"),
+                PhoneNumber = new PhoneNumber(),
+                DisplayName = "display_name137f65c2",
+                Labels =
+                {
+                    {
+                        "key8a0b6e3c",
+                        "value60c16320"
+                    },
+                },
+                IncomingMessageHandlerUris =
+                {
+                    "incoming_message_handler_uris72108376",
+                },
+                IncomingCallHandlerUris =
+                {
+                    "incoming_call_handler_uris2053249d",
+                },
+                CallRecordingTrigger = PhoneNumberInstance.Types.RecordingTrigger.Bridge,
+                CreateTime = new wkt::Timestamp(),
+                DeleteTime = new wkt::Timestamp(),
+                LifecycleState = PhoneNumberInstance.Types.LifecycleState.Pending,
+                ActivateTime = new wkt::Timestamp(),
+                Range = new PhoneNumberRange(),
+                RegulatoryListingAsRegulatoryListingName = RegulatoryListingName.FromProjectRegulatoryListing("[PROJECT]", "[REGULATORY_LISTING]"),
+                Compliant = false,
+            };
+            mockGrpcClient.Setup(x => x.MovePhoneNumberInstanceAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<PhoneNumberInstance>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
+            PhoneNumberInstance responseCallSettings = await client.MovePhoneNumberInstanceAsync(request.Name, request.DestinationParent, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            xunit::Assert.Same(expectedResponse, responseCallSettings);
+            PhoneNumberInstance responseCancellationToken = await client.MovePhoneNumberInstanceAsync(request.Name, request.DestinationParent, st::CancellationToken.None);
+            xunit::Assert.Same(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [xunit::FactAttribute]
+        public void MovePhoneNumberInstanceResourceNames()
+        {
+            moq::Mock<PhoneNumberInstances.PhoneNumberInstancesClient> mockGrpcClient = new moq::Mock<PhoneNumberInstances.PhoneNumberInstancesClient>(moq::MockBehavior.Strict);
+            MovePhoneNumberInstanceRequest request = new MovePhoneNumberInstanceRequest
+            {
+                PhoneNumberInstanceName = PhoneNumberInstanceName.FromProjectPhoneNumberInstance("[PROJECT]", "[PHONE_NUMBER_INSTANCE]"),
+                DestinationParentAsProjectName = ProjectName.FromProject("[PROJECT]"),
+            };
+            PhoneNumberInstance expectedResponse = new PhoneNumberInstance
+            {
+                PhoneNumberInstanceName = PhoneNumberInstanceName.FromProjectPhoneNumberInstance("[PROJECT]", "[PHONE_NUMBER_INSTANCE]"),
+                PhoneNumber = new PhoneNumber(),
+                DisplayName = "display_name137f65c2",
+                Labels =
+                {
+                    {
+                        "key8a0b6e3c",
+                        "value60c16320"
+                    },
+                },
+                IncomingMessageHandlerUris =
+                {
+                    "incoming_message_handler_uris72108376",
+                },
+                IncomingCallHandlerUris =
+                {
+                    "incoming_call_handler_uris2053249d",
+                },
+                CallRecordingTrigger = PhoneNumberInstance.Types.RecordingTrigger.Bridge,
+                CreateTime = new wkt::Timestamp(),
+                DeleteTime = new wkt::Timestamp(),
+                LifecycleState = PhoneNumberInstance.Types.LifecycleState.Pending,
+                ActivateTime = new wkt::Timestamp(),
+                Range = new PhoneNumberRange(),
+                RegulatoryListingAsRegulatoryListingName = RegulatoryListingName.FromProjectRegulatoryListing("[PROJECT]", "[REGULATORY_LISTING]"),
+                Compliant = false,
+            };
+            mockGrpcClient.Setup(x => x.MovePhoneNumberInstance(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
+            PhoneNumberInstance response = client.MovePhoneNumberInstance(request.PhoneNumberInstanceName, request.DestinationParentAsProjectName);
+            xunit::Assert.Same(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [xunit::FactAttribute]
+        public async stt::Task MovePhoneNumberInstanceResourceNamesAsync()
+        {
+            moq::Mock<PhoneNumberInstances.PhoneNumberInstancesClient> mockGrpcClient = new moq::Mock<PhoneNumberInstances.PhoneNumberInstancesClient>(moq::MockBehavior.Strict);
+            MovePhoneNumberInstanceRequest request = new MovePhoneNumberInstanceRequest
+            {
+                PhoneNumberInstanceName = PhoneNumberInstanceName.FromProjectPhoneNumberInstance("[PROJECT]", "[PHONE_NUMBER_INSTANCE]"),
+                DestinationParentAsProjectName = ProjectName.FromProject("[PROJECT]"),
+            };
+            PhoneNumberInstance expectedResponse = new PhoneNumberInstance
+            {
+                PhoneNumberInstanceName = PhoneNumberInstanceName.FromProjectPhoneNumberInstance("[PROJECT]", "[PHONE_NUMBER_INSTANCE]"),
+                PhoneNumber = new PhoneNumber(),
+                DisplayName = "display_name137f65c2",
+                Labels =
+                {
+                    {
+                        "key8a0b6e3c",
+                        "value60c16320"
+                    },
+                },
+                IncomingMessageHandlerUris =
+                {
+                    "incoming_message_handler_uris72108376",
+                },
+                IncomingCallHandlerUris =
+                {
+                    "incoming_call_handler_uris2053249d",
+                },
+                CallRecordingTrigger = PhoneNumberInstance.Types.RecordingTrigger.Bridge,
+                CreateTime = new wkt::Timestamp(),
+                DeleteTime = new wkt::Timestamp(),
+                LifecycleState = PhoneNumberInstance.Types.LifecycleState.Pending,
+                ActivateTime = new wkt::Timestamp(),
+                Range = new PhoneNumberRange(),
+                RegulatoryListingAsRegulatoryListingName = RegulatoryListingName.FromProjectRegulatoryListing("[PROJECT]", "[REGULATORY_LISTING]"),
+                Compliant = false,
+            };
+            mockGrpcClient.Setup(x => x.MovePhoneNumberInstanceAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<PhoneNumberInstance>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
+            PhoneNumberInstance responseCallSettings = await client.MovePhoneNumberInstanceAsync(request.PhoneNumberInstanceName, request.DestinationParentAsProjectName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            xunit::Assert.Same(expectedResponse, responseCallSettings);
+            PhoneNumberInstance responseCancellationToken = await client.MovePhoneNumberInstanceAsync(request.PhoneNumberInstanceName, request.DestinationParentAsProjectName, st::CancellationToken.None);
+            xunit::Assert.Same(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [xunit::FactAttribute]
+        public void SplitRangeRequestObject()
+        {
+            moq::Mock<PhoneNumberInstances.PhoneNumberInstancesClient> mockGrpcClient = new moq::Mock<PhoneNumberInstances.PhoneNumberInstancesClient>(moq::MockBehavior.Strict);
+            SplitRangeRequest request = new SplitRangeRequest
+            {
+                PhoneNumberInstanceAsPhoneNumberInstanceName = PhoneNumberInstanceName.FromProjectPhoneNumberInstance("[PROJECT]", "[PHONE_NUMBER_INSTANCE]"),
+                Size = -1218396681,
+            };
+            SplitRangeResponse expectedResponse = new SplitRangeResponse
+            {
+                First = new PhoneNumberInstance(),
+                Second = new PhoneNumberInstance(),
+            };
+            mockGrpcClient.Setup(x => x.SplitRange(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
+            SplitRangeResponse response = client.SplitRange(request);
+            xunit::Assert.Same(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [xunit::FactAttribute]
+        public async stt::Task SplitRangeRequestObjectAsync()
+        {
+            moq::Mock<PhoneNumberInstances.PhoneNumberInstancesClient> mockGrpcClient = new moq::Mock<PhoneNumberInstances.PhoneNumberInstancesClient>(moq::MockBehavior.Strict);
+            SplitRangeRequest request = new SplitRangeRequest
+            {
+                PhoneNumberInstanceAsPhoneNumberInstanceName = PhoneNumberInstanceName.FromProjectPhoneNumberInstance("[PROJECT]", "[PHONE_NUMBER_INSTANCE]"),
+                Size = -1218396681,
+            };
+            SplitRangeResponse expectedResponse = new SplitRangeResponse
+            {
+                First = new PhoneNumberInstance(),
+                Second = new PhoneNumberInstance(),
+            };
+            mockGrpcClient.Setup(x => x.SplitRangeAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<SplitRangeResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
+            SplitRangeResponse responseCallSettings = await client.SplitRangeAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            xunit::Assert.Same(expectedResponse, responseCallSettings);
+            SplitRangeResponse responseCancellationToken = await client.SplitRangeAsync(request, st::CancellationToken.None);
+            xunit::Assert.Same(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [xunit::FactAttribute]
+        public void SplitRange()
+        {
+            moq::Mock<PhoneNumberInstances.PhoneNumberInstancesClient> mockGrpcClient = new moq::Mock<PhoneNumberInstances.PhoneNumberInstancesClient>(moq::MockBehavior.Strict);
+            SplitRangeRequest request = new SplitRangeRequest
+            {
+                PhoneNumberInstanceAsPhoneNumberInstanceName = PhoneNumberInstanceName.FromProjectPhoneNumberInstance("[PROJECT]", "[PHONE_NUMBER_INSTANCE]"),
+                Size = -1218396681,
+            };
+            SplitRangeResponse expectedResponse = new SplitRangeResponse
+            {
+                First = new PhoneNumberInstance(),
+                Second = new PhoneNumberInstance(),
+            };
+            mockGrpcClient.Setup(x => x.SplitRange(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
+            SplitRangeResponse response = client.SplitRange(request.PhoneNumberInstance, request.Size);
+            xunit::Assert.Same(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [xunit::FactAttribute]
+        public async stt::Task SplitRangeAsync()
+        {
+            moq::Mock<PhoneNumberInstances.PhoneNumberInstancesClient> mockGrpcClient = new moq::Mock<PhoneNumberInstances.PhoneNumberInstancesClient>(moq::MockBehavior.Strict);
+            SplitRangeRequest request = new SplitRangeRequest
+            {
+                PhoneNumberInstanceAsPhoneNumberInstanceName = PhoneNumberInstanceName.FromProjectPhoneNumberInstance("[PROJECT]", "[PHONE_NUMBER_INSTANCE]"),
+                Size = -1218396681,
+            };
+            SplitRangeResponse expectedResponse = new SplitRangeResponse
+            {
+                First = new PhoneNumberInstance(),
+                Second = new PhoneNumberInstance(),
+            };
+            mockGrpcClient.Setup(x => x.SplitRangeAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<SplitRangeResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
+            SplitRangeResponse responseCallSettings = await client.SplitRangeAsync(request.PhoneNumberInstance, request.Size, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            xunit::Assert.Same(expectedResponse, responseCallSettings);
+            SplitRangeResponse responseCancellationToken = await client.SplitRangeAsync(request.PhoneNumberInstance, request.Size, st::CancellationToken.None);
+            xunit::Assert.Same(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [xunit::FactAttribute]
+        public void SplitRangeResourceNames()
+        {
+            moq::Mock<PhoneNumberInstances.PhoneNumberInstancesClient> mockGrpcClient = new moq::Mock<PhoneNumberInstances.PhoneNumberInstancesClient>(moq::MockBehavior.Strict);
+            SplitRangeRequest request = new SplitRangeRequest
+            {
+                PhoneNumberInstanceAsPhoneNumberInstanceName = PhoneNumberInstanceName.FromProjectPhoneNumberInstance("[PROJECT]", "[PHONE_NUMBER_INSTANCE]"),
+                Size = -1218396681,
+            };
+            SplitRangeResponse expectedResponse = new SplitRangeResponse
+            {
+                First = new PhoneNumberInstance(),
+                Second = new PhoneNumberInstance(),
+            };
+            mockGrpcClient.Setup(x => x.SplitRange(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
+            SplitRangeResponse response = client.SplitRange(request.PhoneNumberInstanceAsPhoneNumberInstanceName, request.Size);
+            xunit::Assert.Same(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [xunit::FactAttribute]
+        public async stt::Task SplitRangeResourceNamesAsync()
+        {
+            moq::Mock<PhoneNumberInstances.PhoneNumberInstancesClient> mockGrpcClient = new moq::Mock<PhoneNumberInstances.PhoneNumberInstancesClient>(moq::MockBehavior.Strict);
+            SplitRangeRequest request = new SplitRangeRequest
+            {
+                PhoneNumberInstanceAsPhoneNumberInstanceName = PhoneNumberInstanceName.FromProjectPhoneNumberInstance("[PROJECT]", "[PHONE_NUMBER_INSTANCE]"),
+                Size = -1218396681,
+            };
+            SplitRangeResponse expectedResponse = new SplitRangeResponse
+            {
+                First = new PhoneNumberInstance(),
+                Second = new PhoneNumberInstance(),
+            };
+            mockGrpcClient.Setup(x => x.SplitRangeAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<SplitRangeResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            PhoneNumberInstancesClient client = new PhoneNumberInstancesClientImpl(mockGrpcClient.Object, null);
+            SplitRangeResponse responseCallSettings = await client.SplitRangeAsync(request.PhoneNumberInstanceAsPhoneNumberInstanceName, request.Size, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            xunit::Assert.Same(expectedResponse, responseCallSettings);
+            SplitRangeResponse responseCancellationToken = await client.SplitRangeAsync(request.PhoneNumberInstanceAsPhoneNumberInstanceName, request.Size, st::CancellationToken.None);
             xunit::Assert.Same(expectedResponse, responseCancellationToken);
             mockGrpcClient.VerifyAll();
         }
